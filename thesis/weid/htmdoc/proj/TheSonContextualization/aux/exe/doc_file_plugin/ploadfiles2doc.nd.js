@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require("path");
 
 //var Uti = require("../../../../../../../utis/zfrqCalc/Uti.Module").Uti;
-//require("../../../doc_files/_pload/_tables/")
+//require("../../../doc_files/d_pload/d_tables/")
 //require("../../../doc.html");
 
 
@@ -33,7 +33,7 @@ tabler.prototype.parse_fname = function (sfn) {
     var ext = bas.ext.toLowerCase();
     //console.log(ext, "ext")
 
-    var mat = sfn.match(/^_(\d{2})_(.+)\./);
+    var mat = sfn.match(/^(\d{2})_(.+)\./); //01_ab.png
     var idx = 0;
     var str = "";
     if (mat) {
@@ -52,10 +52,10 @@ tabler.prototype.parse_fname = function (sfn) {
 tabler.prototype.gen_img_holder = function (sfn, idx, str) {
     var pfile = this.m_srcDir + sfn + ".htm";
     var cap = fs.readFileSync(pfile, "utf8");
-    var fname = `./doc_files/_pload/_img/${sfn}`;
+    var fname = `./doc_files/d_pload/d_img/${sfn}`;
     var tmp = `
         <figure figtype="img" id="Figure-${idx}" name="Figure-${idx}" title=''>
-          <img alt="image"  title="${fname}">&nbsp;</img>
+          <img alt="image"  src="${fname}">&nbsp;</img>
           <figcaption>Figure-${idx}: ${cap}</figcaption>
         </figure><br><br><br>\n`;
     //console.log(tmp);
@@ -66,7 +66,7 @@ tabler.prototype.gen_tab_holder = function (sfn, idx, str) {
     var pfile = this.m_srcDir + sfn + ".htm";
     var cap = fs.readFileSync(pfile, "utf8");
   
-    var fname = `./doc_files/_pload/_tables/${sfn}`;
+    var fname = `./doc_files/d_pload/d_tables/${sfn}`;
     var tmp = `
         <figure figtype="table">
           <div id="Table-${idx}" name="Table-${idx}">Table-${idx}</div>
@@ -116,8 +116,8 @@ var opts = {
 //console.log(result);
 var tab = new tabler();
 
-tab.gen("../../../doc_files/d_pload/_img/");
+tab.gen("../../../doc_files/d_pload/d_img/");
 tab.m_str += `\n<span page_break_before="true"></span>\n`;
 tab.m_str += `\n<h3></h3>\n`;
-tab.gen("../../../doc_files/d_pload/_tables/");
+tab.gen("../../../doc_files/d_pload/d_tables/");
 tab.outp("../../../doc.html");
