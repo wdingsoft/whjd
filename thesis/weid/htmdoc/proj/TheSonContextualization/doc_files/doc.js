@@ -75,7 +75,7 @@ $(function () {
 
     //pdf_page_number_uti.ruler(true);
 
-    var jsfile = "./doc_files/_em_key_words/_items_page_size.json.js";
+    var jsfile = "./doc_files/em_key_words/items_page_size_json.js";
     table_of_content.InitIndex(jsfile);
 
     escap_uti.esc_keydown();
