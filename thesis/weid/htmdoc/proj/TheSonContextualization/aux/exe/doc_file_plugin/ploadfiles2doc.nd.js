@@ -116,8 +116,8 @@ var opts = {
 //console.log(result);
 var tab = new tabler();
 
-tab.gen("../../../doc_files/_pload/_img/");
+tab.gen("../../../doc_files/d_pload/_img/");
 tab.m_str += `\n<span page_break_before="true"></span>\n`;
 tab.m_str += `\n<h3></h3>\n`;
-tab.gen("../../../doc_files/_pload/_tables/");
+tab.gen("../../../doc_files/d_pload/_tables/");
 tab.outp("../../../doc.html");
