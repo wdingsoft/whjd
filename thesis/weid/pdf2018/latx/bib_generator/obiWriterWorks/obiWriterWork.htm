@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<title>obiWW</title>
+		<link href="" rel="stylesheet" type="text/css" />
+		<script src="../../../_js/jquery.min.js"></script>
+
+		<script src="./obiWriterWork.js"></script>
+
+
+<style type="text/css">
+#menu{
+	position: fixed;
+	top:0;
+	left: 0px;
+	background-color: #cccc00;	
+}
+#out{
+	position: fixed;
+	top:0;
+	right: 20px;
+	background-color: #cc77cc;
+}
+img{
+ max-height: 25px;
+ min-height: 25;
+}
+.zoomin{
+  max-height: 150px;
+}		
+.selectedimg{
+  
+  max-height: 50px;
+  text-decoration: line-through;
+  background-color: #ff0000;
+}
+.ftypimgSelect{
+	background-color: #777777;
+}
+.edi{
+	border:1px solid #ffff00;
+	margin-left: 1px;
+}
+.Required{
+	background-color: #ffff00;
+}
+.popupped{
+	border:3px solid #0000ff;
+}
+caption{
+	text-align:left;
+	background-color: #aaaaaa;
+}
+.ErrTable{
+	background-color: #ff0000;
+}
+</style>
+
+</head>
+
+<script>
+
+$(document).ready(function(){   
+
+	var out="";
+	var worksArr=[];
+	var iCheckArr=[-1];
+	var WriterNameArr={};
+
+	$.each(obiWriterWork,function(iArr, obj){
+		$.each(obj,function(sWriterName,WorksArr){
+			$.each(WorksArr, function(i,aWork){
+				$.each(aWork, function(title,arr){
+
+					WriterNameArr[sWriterName]="-";
+
+					var idx=parseInt(arr[0]);
+					var sidx=""+arr[0];
+					while(sidx.length<5){sidx="0"+sidx;}
+
+
+					var str="<a class='ids'>"+sidx+sWriterName+" : </a><a class='title'>"+title+"</a>";
+					
+					//worksArr[idx]=title+"@"+sWriterName;	
+
+					if(iCheckArr.indexOf(idx)>=0){
+						str+="<font color='red'>Duplicated</font>";
+					}
+					else{
+						iCheckArr.push(idx);		
+					}
+					worksArr.push(str);
+				})
+
+			})
+		})
+	});
+	worksArr.sort();
+
+	var idx=0;
+	$.each(WriterNameArr, function(name,val){
+		out+=idx+":"+name+"\n";
+		idx++;
+	})
+	$("#out").val(out);
+
+
+	var ss="";
+	$.each(worksArr,function(i,val){
+		i++;
+		var sidx="<a class='ids'>"+i+" : </a>";
+		ss+=sidx+val+"<br>";
+	});
+	$("#base").html(ss);
+	//Init();
+
+	$("#cha2pin").click(function(){
+		$(".ids").toggle("");
+	});
+    
+});
+
+</script>
+
+<body>
+	<textarea id="out"></textarea> 
+<div id="menu">
+	<button id="cha2pin">Toggle</button>	
+	
+</div>
+	<hr>
+
+	<div id="baseNew"></div>
+
+	<hr>
+	<div id="base"></div>
+
+
+	</body>
+</html>

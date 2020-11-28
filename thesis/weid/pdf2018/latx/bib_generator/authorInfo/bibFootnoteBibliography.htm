@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>biDesk</title>
+    <base target="_blank" />
+    <link href="" rel="stylesheet" type="text/css" />
+    <script src="../../../_js/jquery.min.js"></script>
+    <script src="../../../_js/jquery.tablesorter.js"></script>
+
+    <script srcxx="../../../_js/jquery.tableindexer.js"></script>
+    <script src="../../../_js/table_Indexer.js"></script>
+
+
+
+    <script src="./latexBibTmpl.js"></script>
+    <script src="./bibDat/footnote_bibliography.json.js"></script>
+
+
+    <script src="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
+
+
+    <style type="text/css">
+        #menu {
+            position: fixed;
+            top: 0;
+            right: 10px;
+            background-color: #cccc00;
+        }
+
+        #out {
+            position: float;
+            top: 20;
+            right: 20px;
+            background-color: #eeeeee;
+            width: 100%;
+            height: 500px;
+        }
+
+        .edi {
+            border: 1px solid #ffff00;
+            margin-left: 1px;
+            width: 100%;
+            min-width: 4px;
+            background-color: #a4dbe1;
+            font-size: 12pt;
+        }
+
+        .Required {
+            background-color: #ff0000;
+        }
+
+        .popupped {
+            border: 5px solid #0000ff;
+            background-color: #cccc00;
+        }
+
+        caption {
+            text-align: left;
+            background-color: #aaaaaa;
+        }
+
+        select {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .hili {
+            background-color: aqua;
+        }
+
+        .rowhi {
+            background-color: #eeeeee;
+        }
+
+        th {
+            background-color: #aaaaaa;
+        }
+
+        .fixedTitle {
+            position: fixed;
+        }
+
+        .fxwd {
+            width: 10px;
+            font-size: 7px;
+            overflow-wrap: break-word;
+        }
+    </style>
+
+</head>
+
+<script>
+    $(function () {
+        GenTable(footnote_bibliography);
+        table_sort();
+    });
+    function GenTable(footbiblio) {
+        var i = 0;
+        var st = "<table border='1'><thead><tr><th>#</th><th>id</th><th>foot</th><th>bibliography</th></tr></thead>";
+        st += "<tbody>";
+        Object.keys(footbiblio).forEach(function (id) {
+            if (id.indexOf("-") === 0) return;
+            var obj = footbiblio[id];
+            st += `<tr><td>${i++}</td><td>${id}</td><td>${obj.footno}</td><td>${obj.biblio}</td></tr>`;
+        });
+        st += "</tbody></table>";
+
+        $("#taber").html(st).find("td").bind("click",function(){
+            var txt = $("#out").val()+"\n\n"+$(this).text();
+            $("#out").val(txt);
+            $(this).toggleClass("hili");
+        });
+    }
+</script>
+
+<body>
+    <p>run ../nodjs/footnot_ms_htm.nd.js will generate the json.js file.</p>
+    <textarea id="out">ss</textarea>
+    <div id="taber"></div>
+
+
+    <hr>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <p>.</p>
+    <script>
+        $(function () {
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>

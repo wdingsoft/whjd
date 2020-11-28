@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<title>biDesk</title>
+	<link href="" rel="stylesheet" type="text/css" />
+	<script src="../../../_js/jquery.min.js"></script>
+
+	<script src="./latexBibTmpl.js"></script>
+	<script src="./latexBibTmpl_Uti.js"></script>
+	<script srcxxxxxxxxxxxxxxx="./bibDat/BibDat_OBI.json.js"></script>
+	<script src="./authorInfo_Utils.js"></script>
+
+	<script src="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
+
+
+	<style type="text/css">
+		#panel,#menuToggler {
+			position: fixed;
+			top: 0;
+			right: 10px;
+			background-color: #cccc00;
+		}
+
+		#out {
+			position: float;
+			top: 20;
+			right: 20px;
+			background-color: #eeeeee;
+			width: 100%;
+			height: 500px;
+		}
+
+		.edi {
+			border: 1px solid #ffff00;
+			margin-left: 1px;
+			width: 100%;
+			min-width: 4px;
+			background-color: rgb(105, 122, 125);
+			color: white;
+			font-size: 12pt;
+		}
+
+		.Required {
+			background-color: #fc6f84;
+		}
+
+		.popupped {
+			border: 5px solid #81b8c9;
+			background-color: #cccc00;
+		}
+
+		caption {
+			text-align: left;
+			background-color: #aaaaaa;
+		}
+
+		select {
+			font-size: 11px;
+			background-color: rgb(210, 214, 228);
+		}
+		.edtd{
+			width: 700px;
+		}
+		table{
+			margin-top: 100px;
+		}
+	</style>
+
+</head>
+
+<script>
+	$(document).ready(function () {
+
+		$("#menuToggler").click(function(){
+			$(this).next().slideToggle();
+		});
+		
+		$("#toggleall").click(function(){
+			$("input").each(function(){
+				$(this).next().slideToggle();
+			})
+		})
+	});
+
+	function GenTable() {
+		var tbs = Gen_TabStr(latexBibTmpl_InputTable);
+		$("#taber").html(tbs).find("td").bind("click", function () {
+			var txt = $(this).text().trim();
+			if (txt === "uid") {
+				AutoGenUID();
+			}
+			if (txt.toLowerCase().indexOf("url") >= 0) {
+				var surl = $(this).next().find("input").val();
+				window.open(surl);
+			}
+		}).find("input").bind("keyup", function () {
+			var edival = $(this).val();
+			var selval = "";
+			$(this).next().find("option").each(function () {
+				var opval = $(this).attr("value");
+				if (!!opval && opval.indexOf(edival) >= 0) {
+					selval = opval;
+					return false;
+				}
+			});
+			$(this).next().val(selval);
+		});
+		$("td:contains(uid)").parent().addClass("Required");
+		$("td:contains(doctype)").parent().addClass("Required");
+		$(".idx").click(function () {
+			$(this).parent().find("select").slideToggle();
+		});
+	}
+
+	function Gen_TabStr(bibjsonObj) {
+		var tb = "<table border='1' class='bitxb' id='bibNew'>";
+		tb += `<caption>Single Bib Item Editor (tot=${Object.keys(BibDat).length})</caption><tbody>`;
+		var idx = 0;
+		$.each(Tmp_authorInfo.bib[0], function (k, v) {
+			tb += "<tr><td class='idx'>" + idx + "</td><td><a>" + k + "</a></td>";
+			idx++;
+			var v2 = GetValOfKeyIgnoreCase(bibjsonObj, k);
+			if (bibjsonObj[k]) {
+				//v2=bibjsonObj[k];
+			}
+			var opt = "";
+			if ("doctype" === k) {
+				opt = DoctypeOptn();
+			}
+			else if ("uid" === k) {
+				opt = GenUids();
+			}
+			else {
+				opt = GenOptns('bib', k);
+			}
+			var tag = "input";
+			if (k.indexOf("note") >= 0 || k.indexOf("abstract") >= 0 || k.indexOf("RSS") >= 0 || k.indexOf("my") >= 0) {
+				tag = "textarea";
+				opt="";
+			}
+
+			tb += `<td class='edtd'><${tag} rows=10 class='edi' id='${k}'>${v2}</${tag}>${opt}</td></tr>`;
+		});
+		tb += "</tbody></table>";
+		return tb;
+	}
+	function GenUids() {
+		function _opts(keys, sDash) {
+			var s = ""
+			$.each(keys, function (i, v) {
+				if (sDash === "--") {
+					if (v.indexOf("--") === 0) {
+						s += "<option value='" + v + "'>" + v + "</option>";
+					}
+				} else {
+					if (v.indexOf("--") < 0) {
+						s += "<option value='" + v + "'>" + v + "</option>";
+					}
+				}
+			});
+			return s;
+		}
+		var keys = Object.keys(BibDat).sort();
+		var s = "<select onchange='DoctypeOpChange(this)'size='20'><option></option>";
+		s += _opts(keys, "");
+		s += _opts(keys, "--");
+
+		s += "</select>";
+		return s;
+	}
+
+	function GenOptns(opt, skey) {
+		var uniqArr = [], MAXLEN = 50;
+		$.each(BibDat, function (uid, bib) {
+			var v = bib[skey];
+			if (v && v.length > 0 && uniqArr.indexOf(v) < 0) {
+				v = $.trim(v);
+				if (v.length > 0) {
+					uniqArr.push(v);
+				}
+
+			}
+		});
+		uniqArr.sort();
+		var s = "<select onchange='DoctypeOpChange(this)' size='9'>";
+		$.each(uniqArr, function (i, k) {
+			var optkey = k.substr(0, MAXLEN);
+			if (k.length > MAXLEN) optkey += " ...";
+			s += "<option value='" + k + "'>" + optkey + "</option>";
+		});
+		s += "</select>";
+		return s;
+	}
+
+	function DoctypeOptn() {
+		var s = "<select onchange='DoctypeOpChange(this)' size='9'>";
+		$.each(PubTypeBibLatexRequiredFilds, function (v, arr) {
+			s += "<option value='" + v + "'>" + v + "</option>";
+		});
+		s += "</select>";
+		return s;
+	}
+	function DocTypeUI() {
+		var sKey = $("#doctype").val();
+		var arr = PubTypeBibLatexRequiredFilds[sKey];
+		$("*").removeClass("Required");
+		$("td:contains(uid)").parent().addClass("Required");
+		$("td:contains(doctype)").parent().addClass("Required");
+		if (arr) {
+			//$(_this).parentsUntil("table").find(".edi").parentsUntil("tbody").removeClass("Required");
+			$.each(arr, function (i, v1) {
+				var ar2 = v1.split("|");
+				$.each(ar2, function (i, v) {
+					var clsname = "#" + v;
+					$(clsname).parentsUntil("tbody").addClass("Required");
+				});
+			});
+		};
+		return;
+	}
+	function DoctypeOpChange(_this) {
+		var sKey = $(_this).val();
+		//$(_this).val("");
+		if (sKey.length === 0) {
+			sKey = $(_this).prev().val();//use input value.
+			if (undefined === BibDat[sKey]) {
+				$(_this).val("not exist");
+				return alert("not exist.");
+			} else {
+				$(_this).val(sKey);
+			}
+		}
+		////////////////////////////////////////////////////////
+		var itemName = $(_this).parentsUntil("tr").prev().text();
+		if (itemName === "uid") {
+			$(".edi").val("");
+			var bib = BibDat[sKey];
+			$.each(bib, function (key, val) {
+				var id = "#" + key;
+				$(id).val(val);
+			});
+		}
+		$(_this).prev().val(sKey);
+		DocTypeUI();
+	}
+	function AutoGenUID() {
+		var sv = $("#author").val();
+		var dype = $("#doctype").val();
+
+		sv = sv.replace(/[\s\.\(\)\,\'\-\"\\"]/g, "");
+		sv = $.trim(sv);
+		console.log(sv);
+
+		var year = $("#year").val();
+		year = year.replace(/[\s\.\(\)\,\-]/g, "");
+		year = $.trim(year);
+
+		if (!sv || !dype || !year) {
+			return alert(`missiong author='${sv}', type='${dype}' or year='${year}'.`);
+		}
+
+		var newkey = sv + year + dype;
+
+		if (undefined !== BibDat[newkey]) {
+			alert(newkey + " already exist.");
+		}
+		var oldUid = $("#uid").val();
+		if (oldUid.length > 0) {
+			return;
+		}
+		$("#uid").val(newkey);
+	}
+
+
+
+	function Output_JsonData() {
+		// validataion check.
+		$(".popupped").removeClass("popupped");
+		$(".Required").find(".edi").each(function () {
+			if ($(this).val().trim() === "") {
+				$(this)[0].scrollIntoView(false);
+				$(this).addClass("popupped").select();
+				return false;
+			}
+		});
+		if ($(".popupped").length > 0) {
+			return $("#out").val("missing required fields.");
+		}
+		/////////////////////////////////////////
+		var jsonOut = { man: [tmpl_man], bib: [{}] }, bibItemDat = {};
+		var uidKey = $("#uid").val().trim();
+		if (!uidKey) {
+			return alert("no uid");
+		}
+		if (undefined === BibDat[uidKey]) {
+			BibDat[uidKey] = {};
+		}
+		bibItemDat = BibDat[uidKey];
+		$.each(latexBibTmpl_InputTable, function (key, val) {
+			if (key === "uid") return true;
+			var clsname = "#" + key;
+			var cellstr = $(clsname).val().trim();
+			//cellstr=$.trim(cellstr);
+
+			if (cellstr.length > 0) {
+				jsonOut.bib[0][key] = cellstr;
+				bibItemDat[key] = cellstr;
+			}
+		});
+
+		var fname = $("#SelBibDatFile").val();
+		fname = GetSvcPathFileName(fname);
+		var par = { api: "BibDeskApi_SaveBibSingleItem", inp: { filename: fname, uid: uidKey, itm: bibItemDat } };
+		console.log(par);
+
+		
+		if (!window.g_cnt) window.g_cnt = 1;
+		Jsonpster.Run(par, function (ret) {
+			console.log(ret);
+			window.g_cnt++;
+			$("#save").text("Save " + window.g_cnt).toggleClass("Required");
+		});
+
+		$("#out").val(uidKey + ":" + JSON.stringify(bibItemDat, null, 4));//.select()[0].scrollIntoView();
+	}
+
+	function Output_BibJson() {
+		var sortKeyBibDat = {};
+		$.each(Object.keys(BibDat).sort(), function (i, uid) {
+			var web = typeof BibDat[uid]["web"];
+			if ("object" === web) {
+				if (undefined == BibDat[uid]["mylink"]) {
+					BibDat[uid]["mylink"] = JSON.stringify(BibDat[uid]["web"]);
+				} else {
+					delete BibDat[uid]["web"];
+				}
+
+			}
+			sortKeyBibDat[uid] = BibDat[uid];
+		});
+
+		$("#out").val("var BibDat=\n" + JSON.stringify(sortKeyBibDat, null, 4)).select()[0].scrollIntoView();
+		document.execCommand("copy");
+		$("#out").next().text("keys tot=" + Object.keys(BibDat).length);
+	}
+	function Output_BibLatex() {
+		function bibjs2latex(uid, bibo, name) {
+			if (uid.indexOf("--") === 0) {
+				console.error("uid=", uid)
+				return "";
+			}
+			var sKey = `@${bibo.doctype}{${uid},\n`;
+			$.each(latexBibTmpl_Standard, function (key, emp) {
+				key = key.trim();
+				if (key === "doctype" || key === "uid") {
+					return true;
+				}
+				var val = bibo[key];
+				if (!val) {
+					return true;
+				}
+				if ("author" === key) {
+					if (!val || val.trim().length === 0) {
+						val = name;//overide the author name from man. 
+						console.error("author is null");
+					}
+				}
+				if (key === "url") {
+					key = "Bdsk-Url-1";
+				}
+				var outkey = key.padEnd(2, " ");
+				if (val.indexOf("{") >= 0 || val.indexOf("}") >= 0 || val.indexOf("\\") >= 0) {
+					alert();
+				}
+				sKey += "  " + outkey + "\=\{" + val + "\},\r\n";
+			});
+			sKey += "\}\r\n\r\n";
+			return sKey;
+		};
+		var out = "", tot = 0, missTot = 0;
+		$.each(BibDat, function (key, bibObj) {
+			var s = bibjs2latex(key, bibObj, "");
+			if (s.length > 0) tot++;
+			else missTot++;
+			out += s;
+		});
+		$('#out').val(out).select()[0].scrollIntoView();
+		$("#out").next().text(`latex bib tot=${tot},missTot=${missTot}`);
+		document.execCommand("copy");
+	}
+
+	function GetSvcPathFileName(fname) {
+		const svcDir = "../../../../../../bitbucket/wdingsoft/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
+		return svcDir + fname;
+	}
+	function select_bibDat(_this) {
+		var fname = $(_this).val();
+		fname = GetSvcPathFileName(fname);
+		var param = { api: "LoadJsonFile", inp: { filename: fname } };
+		//GenTable();
+		Jsonpster.Run(param, function (ret) {
+			BibDat = ret;
+			GenTable();
+		});
+	}
+</script>
+
+<body>
+	<div id="panel">
+		<button id="menuToggler">[+]</button>
+
+		<div id="menu">
+
+			<select id="SelBibDatFile" onchange="select_bibDat(this);" size=9>
+
+				<optgroup label="bibDat">
+					<option value="BibDat_OBI.json.js">BibDat_OBI</option>
+					<option value="BibDat_ChnPersonName.json.js">BibDat_ChnPersonName</option>
+					<option value="BibDat_DocsInfo.json.js">BibDat_DocsInfo</option>
+					<option value="BibDat_ZiZi.json.js">BibDat_ZiZi</option>
+					<option value="ciu_reading.json.js">ciu_reading</option>
+					<option value="pithy_quotes.json.js">pithy_quotes</option>
+				</optgroup>
+				<optgroup label="authors">
+					<option value="AuthorsData_NTHistory.json.js">AuthorsData_NTHistory</option>
+					<option value="AuthorsData_OBI.json.js">AuthorsData_OBI</option>
+				</optgroup>
+			</select>
+			<a href="./bibDeskViewer.htm" target="_blank">bibDeskViewer</a>
+			<a href="./bibFootnoteBibliography.htm" target="_blank">FootnoteBibliography</a>
+
+			<button onclick="Output_JsonData();" id="save">Save</button>
+			<button onclick="Output_BibJson();" title='json output'>BibDat</button>
+			<button onclick="Output_BibLatex();" title='export to latex .bib file'>BibLatex</button>
+
+			<button
+				onclick="$('#out').val(JSON.stringify(authorInfo, null, 4)).select()[0].scrollIntoView();">authorInfo</button>
+			<button id="toggleall">toggleall</button>
+
+		</div>
+	</div>
+	<p>.</p>
+	<p>.</p>
+
+	<div id="taber"></div>
+
+	<textarea id="out"></textarea>
+	<hr>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+	<p>.</p>
+</body>
+
+</html>

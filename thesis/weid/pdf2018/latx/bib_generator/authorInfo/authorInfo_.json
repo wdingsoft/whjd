@@ -1,0 +1,100 @@
+
+
+
+{  
+   "man":[  
+      {  
+         "name":"___",
+         "names":"___",
+         "namet":"___",
+         "namep":"___",
+         "life":"00-00",
+         "web":[  
+            {  
+               "url":"txt"
+            }
+         ]
+      }
+   ],
+   "bib":[  
+      {
+      "uid"               :"___",
+      "doctype"           :"___",
+      "author"            :"___",
+      "title"             :"___",
+      "publisher"         :"___",
+      "address"           :"___",
+      "year"              :"___",
+      "abstract"          :"___",
+      },
+   ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ImportWriter(){
+
+   $.each(obiWriterWork,function(i, obj){
+      $.each(obj,function(name, arrWorks){
+         var tmp=JSON.parse(JSON.stringify(Tmp_authorInfo));
+         tmp.man.name=name;
+         tmp.bib=[];
+         $.each(arrWorks,function(j,work){
+            var obib=JSON.parse(JSON.stringify(Tmp_authorInfo.bib[0]));
+            $.each(work,function(title,arrIdx){
+               obib.title=title;
+               obib.uid="--"+i+"-"+j+name;
+               obib.mynotes="DzbChronicleIdx=["+arrIdx[0]+"]."
+               obib.year=GetYearOfIndex(parseInt(arrIdx[0]));
+               tmp.bib.push(obib);
+            });
+         });               
+         authorInfo.push(tmp);
+      });
+   });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

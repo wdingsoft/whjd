@@ -1,0 +1,12 @@
+\documentclass{amsart}
+\usepackage{CJK}               % For Chinese characters
+\usepackage[backend=bibtex, style=verbose-ibid, citetracker]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\addbibresource{../../thesis_bobid/example.bib} % The filename of the bibliography
+\begin{document}
+\begin{CJK*}{UTF8}{gkai} %gbsn cause missing traditional chars. bsmi for traditional but cause to miss 
+\nocite{*}
+%\bibliographystyle{amsplain}
+%\bibliography{../thesis_bobid/example.bib}
+\printbibliography[heading=bibintoc]
+\end{CJK*}
+\end{document}

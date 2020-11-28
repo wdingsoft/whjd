@@ -1,0 +1,55 @@
+
+
+
+初步建立了中国主要家畜如马、黄牛、绵羊、猪等的古DNA数据库，为研究中国古代家养动物的起源与扩散，以及古代人群交流提供了宝贵的遗传学资料. 人类对马的驯化始于距今5500年，地点是中亚哈萨克草原地带［22］。
+
+
+中国家马是在商代晚期才开始在遗址中大量出现，比中亚地区晚了近2000年。从目前的考古材料上看，在旧石器时代，在中国西南、北方等30余处遗址中发现马骨遗骸，基本都是野马［23］。在新石器时代，有关马骨遗骸的记录非常少，仅有陕西、河南、甘肃等少数几个地点有出土马骨的记载，而且都是零星的牙齿和碎骨，很难断定是家马还是野马。考虑到早期驯化阶段的缺失，大多数学者认为中国家马来自中亚草原，西北甘青地区和中国北方草原地带可能是马传入中国的两个通道. 2002年，Jansen等分析了欧亚大陆25种318匹家马的mtDNA序列，发现了7个世系A～G和19个亚簇，暗示现代家马可能是由欧亚大陆多个野马种群驯化而来的，马的驯化可能在欧亚大陆草原地区几个区域先后或同时发生［5］。2006年，McGahern等对欧亚大陆中部、东北部及中国的7个以前没有取过样的马群中的118匹马进行mtDNA研究，发现世系F是欧亚大陆东部家马群体的主要生物地理模式［28］。2009年，雷初朝等分析了10个品种182匹中国现代马，发现了全部7个世系，这表明中国家马的起源非常复杂。为了揭开中国家马的起源，吉林大学考古DNA实验室对河南新郑市郑韩故城、安阳殷墟、山东滕州前掌大、宁夏固原县彭堡于家庄、内蒙古凉城县板城和小双古城、赤峰喀喇沁旗大山前、林西县井沟子、和林格尔县新店子等9处考古遗址出土的46个马骨进行了古DNA分析［29～31］。结果显示，中国古代马呈现高度遗传多样性，7个现代家马世系在中国35个古代马中均有分布，从时间跨度上看，距今4000年的马以世系A和F为主，而年代稍晚（距今2000～3000年）的古代马中，则7个世系均有分布。这一结果清晰地显示7个世系在中国古代马中的形成过程。先前的研究表明，F世系可能起源于欧亚大陆东部［28］，结合古DNA数据，我们发现中国家马的起源可能既存在本地驯化的因素，也受到外来家马mtDNA基因流的影响。驯马技术由西向东传播可能是主要动因，居住在亚洲东部的古代居民在掌握驯马技术后开始驯化本地的马，随着欧亚大陆不同人群的不断交流，外来世系不断进入中国家马基因池，从而形成复杂的母系来源。
+
+
+
+===222===在中国，黄牛（Cattle）是指牦牛和水牛以外的所有家牛，分为普通牛（Bos taurus）和瘤牛（Bos indicus）两个种。普通牛被认为是11000年前在新月沃地首先被驯化的，也有人认为普通牛可能是在非洲被驯化的；而瘤牛被认为是在印度河河谷地区被驯化的。在中国，黄牛骨骼从公元前7500年左右的新石器时代中期开始在北方地区出现，并且一直延续下来［32］，早期的黄牛明显是野生的，袁靖等认为其真正被驯化的时间至少在公元前2500年至公元前2000年左右，起源的地域涉及黄河流域的中下游地区［2］。 对现代黄牛群体的mtDNA分析显示，在现代普通牛群体中存在4个主要的世系T、P、Q、E和R［9、10］，P可能起源于欧洲北部或者中部，R可能起源于意大利半岛野牛，Q 则起源于近东地区，瘤牛群体中存在两个主要的世系I1和I2，主要集中于印度河流域［33］。 T世系是普通牛中最为常见的世系，可进一步分为T*、T1、T2、T3、T4、T5等6个亚组［7～9］。关于这些亚组的起源，存在不同的认识，有研究者认为整个T世系全部起源.于近东地区，也有研究者认为T1起源于非洲，T4起源于东北亚地区。 按照地理分布，中国黄牛可分为三大基本类型：北方黄牛、中原黄牛和南方黄牛。Y染色体和血液蛋白多态性研究显示北方黄牛以普通牛为主，南方黄牛以瘤牛为主，中原黄牛同时受到普通牛和瘤牛的影响，是由普通牛和瘤牛长期交汇融合形成的，秦岭是两种类型黄牛在中国的主要分界线［34、35］。对现代中国黄牛群体的mtDNA研究也显示了类似的结果，并且发现了普通牛T1、T2、T3、和T4以及瘤牛世系I1和I2［36、37］。 为了揭示中国黄牛的起源，吉林大学考古DNA实验室对新疆小河、青海长宁、内蒙古大山前等3个青铜时代遗址的28个黄牛遗骸进行古DNA分析［38、39］。结果显示，所有的样品都属于普通牛，并没有瘤牛，支持中国北方黄牛起源于普通牛的假说。从mtDNA世系分布上，在青海的样本全部属于T3，在内蒙古的样本中T3占50%，T4占50%，由于新疆小河的样本保存不好，不能区分T*和T3（两者仅相差一个位点），则以T*/T3表示，其中T*/T3占79%，T2为21%。这些结果表明，近东的黄牛在青铜时代已经向东扩到内蒙古地区，可能是由史前人类的黄牛贸易造成的。此外，在内蒙古地区发现了东北亚地区特有的T4世系，表明内蒙古地区黄牛存在本地驯化的因素。
+
+
+===333===三）绵  羊 绵羊最早可能是在距今10000年西南亚的新月沃地被驯化的。中国的家羊饲养可以追溯到7000年前，在河南新郑裴李岗遗址、陕西大地湾文化的元君庙灰坑中、陕西省西安半坡遗址中都曾出土羊的骨骼。但是，并没有对其进行遗骸形态测量和种属鉴定，不知道是绵羊还是山羊，也不知道是经过驯化的还是野生的。袁靖认为真正意义上最早的家养绵羊遗骸应该是甘肃天水师赵村遗址马家窑文化石岭下类型（公元前3000～前2650）的墓葬和青海民和核桃庄马家窑文化（公元前3300～前2050）墓葬中发现的随葬的绵羊下颌和骨架［2］。 1996年，Wood和Phua首先在新西兰绵羊群体中发现两个不同的mtDNA世系，并命名为A和B［40］。1998年，Hiendleder等研究发现世系A主要集中在亚洲的群体中，而世系B主要存在于欧洲的品种中，于是把世系A命名为亚洲世系，把世系B命名为欧洲世系［12］。2005年，Guo等首先在中国的绵羊群体中检测到一个新的世系C［13］。随后，Pedrosa等在近东的家绵羊群体中也发现了世系C，三个世系的分歧时间远远超过绵羊的驯化时间，而且历史上经历了群体扩张，暗示绵羊经历了多个驯化事件［14］。2006年，Chen等对中国的家绵羊群体进行大规模的分析，他们从中国的13个地区采集19个本地原生品种共计449只绵羊，在世系A中发现一个新的分支，结合两个分支的分歧时间，他们认为世系A经历了两次独立的驯化事件，中国可能也是一个家绵羊的驯化中心［41］。最近研究又发现两个世系D和E，但是数量极少，据推断可能是在三个原有世系的基础上产生的新世系［11、15］为了揭示中国绵羊的起源，吉林大学考古DNA实验室先后对河南二里头、山西陶寺、新疆小河、青海长宁、内蒙古大山前、小双古城、板城墓地等7处考古遗址出土的53个古代绵羊样本进行古DNA分析，在距今4000年前的绵羊群体中存在两个世系A和B，其中世系A占有统治地位，频率高达95.5%；而在距今2500年的绵羊群体中，除了世系A和B，又新出现一个世系C，三个世系的分布频率与现代中国绵羊群体极为相似，这表明距今2500年以来中国绵羊的遗传结构就已经趋于稳定遗传。结合中国的考古资料、古代和现代的数据，我们认为世系A极有可能起源于中国。大量研究表明世系B起源于近东地区，这表明中国绵羊还有外来基因的引入，应该与东西方史前人类的迁移、文化交流有关。
+
+
+（四）猪 家猪是由野猪（Sus scrofa）驯化而来的，考古材料显示，近东和东亚可能是两个主要的驯化中心。在近东，驯化猪最早的遗骸曾发掘于安纳托利亚东南部Çayönü遗址，大约在9000年前［42］。在中国，目前所知的中国最早的家猪出自河南省舞阳县贾湖遗址，年代与近东Çayönü遗址相近［43、44］。在一些年代稍晚的遗址如内蒙古敖汉旗兴隆洼、甘肃秦安大地湾、浙江余姚河姆渡等遗址中也都发现猪的遗骸，这些遗址的地理位置不尽相同，暗示中国家猪极有可能是中国古代先民在不同地域各自驯化当地野猪而形成。 1985年，Watanabe等首先利用限制性片断长度多态性（RFLP）分析揭示家猪群体存在东西方差异，家猪可能在东西方分别被驯化［45］。2005年，Lason等对欧亚大陆7个地区686只家猪与野猪的mtDNA进行比较，结果发现不同地区的家猪还是与本地区的野猪在基因上更加相似，并指出6个可能的独立驯化中心：中欧、亚平宁半岛、东亚、印度、东南亚半岛、太平洋新几内亚半岛［4］。2007年，Wu等人分析了东亚地区家猪与野猪的系统发育关系，发现亚洲家猪主要在湄公河流域和长江中下游被驯化，现在中国北部的家猪主要来自长江中下游地区［46］。此外，Lason等和Wu等的研究还显示一些野猪虽然与家猪在很大地理范围内共存，但是其对现代当地家猪的驯化没有遗传贡献，然而这些野猪在历史上是否对现代家猪有过遗传贡献，还有待验证。 为了揭示中国家猪的起源，中国农业大学对黄河中下游6个遗址：山西陶寺、高红、河南贾湖、瓦店、王城岗、古城寨，年代距今9000～3400年的43个古代猪的样本进行分析，获得18个古代猪的序列。结合1500多例东亚现代家猪的序列，发现中国现代黄河中下游家猪和史前猪在遗传上具有延续性，确证近万年来家猪在我国中原地区延续性的驯化历史［47、48］。吉林大学考古DNA实验室对吉林通化万发拨子遗址出土的10个年代从新石器时代晚期到春秋战国时期的古代家猪遗骸进行了古DNA研究，从不同时期的古代猪线粒体DNA序列上看，万发拨子地区的猪在mtDNA母系遗传上存在连续性.万发拨子地区古代居民可能从新石器晚期独立开展猪的驯化。上述研究结果暗示中国家猪可能存在多地区独立驯化的可能性. 
+
+
+
+四、总结与展望 关于中国家畜的起源，袁靖先生曾指出两种主要模式：一种是中国古代居民在与一些野生动物长期相处的过程中，根据自己的需要逐步控制它们，将其驯化成家畜，这可以狗和猪为代表；另一种是古代居民通过文化交流，直接从其他地区把已经成为家畜的动物引进来，这可以羊和马为代表［2］。然而从古DNA研究结果看，中国家畜起源并不像先前推测的那么简单，一些被认为是完全的引进动物如绵羊和马也可能存在本地驯化的因素。此外，古DNA研究对家畜的扩散路线以及史前人类的东西方交流的研究具有特别重要的意义。尽管古DNA研究已经初步揭示中国家养动物复杂的驯化历史，但是，目前的研究仍然存在一些问题。要彻底揭示中国家畜的起源，应从以下方面进行深入研究：①增加样本数量。从时间上看，需要增加新石器时代的样本；从地域分布上看，需要增加南方地区的样本，对于那些可能从外域引入的动物，要重点对潜在扩散路线上的遗址进行采样，如甘青地区和欧亚草原地带。②开展Y染色体标记研究。mtDNA序列的分析只能揭示母系方面的遗传信息，不能检测雄性介导的基因流。要揭示家畜的父系起源，需要进行Y染色体SNP和STR标记分析。③开展常染色体微卫星标记研究。常染色体标记反映了父母双亲的遗传多态性，有助于揭示家畜驯化过程中人类的人工选择作用对家畜遗传分化的影响。目前，已经从大多数家畜物种中分离出大量的常染色体微卫星标记。国际动物遗传学会（FAO/ISAG）推荐的用于遗传多样性研究的常染色体微卫星标记名单现在可以从网上索取（http://dad.fao.org）。④分析一些反映家畜经济潜力的分子标记。如与产肉、产奶等相关的基因研究，有助于解释驯化的目的、策略及过程。⑤引入第二代测序新技术。如454焦磷酸测序用于古代动物DNA研究中，开展线粒体基因组或者和核基因组研究，有望获得更多的遗传信息。总之，家养动物的驯化是个长期、复杂的历史过程，古DNA研究方法需要与考古学、历史学、遗传学、生物地理学等方法有机地结合起来，相互佐证，才能为家养动物起源研究提供新的、有价值的线索。
+
+
+
+
+注  释 
+
+［ 1 ］ Diamond J. Evolution，consequences and future of plant and animal domestication ［J］. Nature.  2002, 418（6898）: 700-707. ［ 2 ］ 袁靖. 中国古代家养动物的动物考古学研究［J］. 第四纪研究. 2010, 30（2）：298-306.［ 3 ］ 李晶, 张亚平. 家养动物的起源与驯化研究进展［J］. 生物多样性. 2009（4）：319-329
+
+
+边疆考古研究（第12辑）  · 452 ·［ 4 ］ Larson G, Dobney K, Albarella U, et al. Worldwide phylogeography of wild boar reveals multiple  centers of pig domestication ［J］. Science. 2005, 307（5715）: 1618-1621. ［ 5 ］ Jansen T, Forster P, Levine M A, et al. Mitochondrial DNA and the origins of the domestic horse  ［J］. Proc Natl Acad Sci U S A. 2002, 99（16）: 10905-10910. ［ 6 ］ Vila C, Leonard J A, Gotherstrom A, et al. Widespread origins of domestic horse lineages［J］. Science.  2001, 291（5503）: 474-477. ［ 7 ］ Troy C S, Machugh D E, Bailey J F, et al. Genetic evidence for Near-Eastern origins of European cattle  ［J］. Nature. 2001, 410（6832）: 1088-1091. ［ 8 ］ Mannen H, Kohno M, Nagata Y, et al. Independent mitochondrial origin and historical genetic  differentiation in North Eastern Asian cattle ［J］. Mol Phylogenet Evol. 2004, 32（2）: 539-544. ［ 9 ］ Achilli A, Olivieri A, Pellecchia M, et al. Mitochondrial genomes of extinct aurochs survive in  domestic cattle ［J］. Curr Biol. 2008, 18（4）: R157-R158. ［10］ Achilli A, Bonﬁglio S, Olivieri A, et al. The multifaceted origin of taurine cattle reﬂected by the  mitochondrial genome ［J］. PLoS One. 2009, 4（6）: e5753. ［11］ Tapio M, Marzanov N, Ozerov M, et al. Sheep mitochondrial DNA variation in European,  Caucasian, and Central Asian areas ［J］. Mol Biol Evol. 2006, 23（9）: 1776-1783. ［12］ Hiendleder S, Mainz K, Plante Y, et al. Analysis of mitochondrial DNA indicates that domestic sheep  are derived from two different ancestral maternal sources: no evidence for contributions from urial and argali sheep ［J］. J Hered. 1998, 89（2）: 113-120. ［13］ Guo J, Du L X, Ma Y H, et al. A novel maternal lineage revealed in sheep（Ovis aries）［J］. Anim  Genet. 2005, 36（4）: 331-336. ［14］ Pedrosa S, Uzun M, Arranz J J, et al. Evidence of three maternal lineages in Near Eastern sheep  supporting multiple domestication events ［J］. Proc Biol Sci. 2005, 272（1577）: 2211-2217. ［15］ Meadows J R, Cemal I, Karaca O, et al. Five ovine mitochondrial lineages identiﬁed from sheep  breeds of the near East ［J］. Genetics. 2007, 175（3）: 1371-1379. ［16］ Luikart G, Gielly L, Excoffier L, et al. Multiple maternal origins and weak phylogeographic  structure in domestic goats ［J］. Proc Natl Acad Sci U S A. 2001, 98（10）: 5927-5932. ［17］ 杨周岐, 张虎勤, 张金等. 古人类骨骼DNA降解影响因素分析 ［J］. 第四军医大学学报.  2006（1）：90-92. ［18］ Lindahl T. Instability and decay of the primary structure of DNA ［J］. Nature. 1993, 362（6422）:  709-715. ［19］ Willerslev E, Cappellini E, Boomsma W, et al. Ancient biomolecules from deep ice cores reveal a  forested southern Greenland ［J］. Science. 2007, 317（5834）: 111-114. ［20］ Hoss M, Paabo S. DNA extraction from Pleistocene bones by a silica-based puriﬁcation method  ［J］. Nucleic Acids Res. 1993, 21（16）: 3913-3914.
+
+
+
+
+
+中国家养动物起源的古DNA研究进展· 453 ·  
+
+［21］ Dy Y, B E, Js W, et al. Technical Note: Improved DNA Extraction FromAncient Bones Using Silica-Based Spin Columns ［J］. American Journal of Physical Anthropology. 1998, 105: 539-543. ［22］ Outram A K, Stear N A, Bendrey R, et al. The earliest horse harnessing and milking ［J］. Science.  2009, 323（5919）: 1332-1335. ［23］ 袁靖. 中国古代家马的研究［A］. 中国史前考古学研究——祝贺石兴邦先生考古半世纪暨八 秩华诞文集［C］. 陕西：三秦出版社，2004：436-443.  ［24］ 傅罗文, 袁靖, 李水城. 论中国甘青地区新石器时代家养动物的来源及特征 ［J］. 考古. 2009 （5）：80-86. ［25］ 邓涛. 中国矮马与普氏野马的亲缘关系 ［J］. 畜牧兽医学报. 2000（1）：29-34.［26］ 王志俊, 宋澎. 中国北方家马起源问题的探讨 ［J］. 考古与文物. 2001（2）：26-30.［27］ 张春生. 野马、家马及东亚养马中心 ［J］. 农业考古. 2004（1）：252-254. ［28］ Mcgahern A, Bower M A, Edwards C J, et al. Evidence for biogeographic patterning of mitochondrial  DNA sequences in Eastern horse populations ［J］. Anim Genet. 2006, 37（5）: 494-497. ［29］ 蔡大伟, 曹建恩, 陈全家等. 内蒙古凉城县春秋时期古代马线粒体DNA分析［A］. 边疆考古 研究（第7辑）［C］, 北京：科学出版社, 2008. ［30］ 蔡大伟, 韩璐, 谢承志等. 内蒙古赤峰地区青铜时代古马线粒体DNA分析 ［J］. 自然科学进展.  2007（3）：385-390. ［31］ Cai D, Tang Z, Han L, et al. Ancient DNA provides new insights into the origin of the Chinese  domestic horse ［J］. Journal of Archaeological Science. 2009, 36（3）: 835-842. ［32］ 袁靖, 黄蕴平, 杨孟菲等. 公元前2500年～公元前1500年中原地区动物考古学研究——以陶 寺、王城岗、新砦和二里头遗址为例［A］. 科技考古（第二辑）［C］. 北京：科学出版社, 2007, 12-34. ［33］ Baig M, Beja-Pereira A, Mohammad R, et al. Phylogeography and origin of Indian domestic  cattle ［J］. Current Science. 2005, 89（1）: 38-40. ［34］ 雷初朝, 陈宏, 胡沈荣. Y染色体多态性与中国黄牛起源和分类研究 ［J］. 西北农业学报.  2000（4）：43-47. ［35］ 常洪, 耿社民, 武彬等. 秦岭两侧黄牛群体遗传检测报告 ［J］. 畜牧兽医学报. 1994（2）:  116-123. ［36］ Lai S J, Liu Y P, Liu Y X, et al. Genetic diversity and origin of Chinese cattle revealed by mtDNA  D-loop sequence variation ［J］. Mol Phylogenet Evol. 2006, 38（1）: 146-154. ［37］ Lei C Z, Chen H, Zhang H C, et al. Origin and phylogeographical structure of Chinese cattle ［J］.  Anim Genet. 2006, 37（6）: 579-582. ［38］ 蔡大伟, 汤卓炜, 任晓燕等. 青海大通长宁和内蒙古赤峰大山前遗址青铜时代古绵羊分子考古 学研究［A］. 科技考古（第三辑）［C］. 北京：科学出版社, 2011, 100-105
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

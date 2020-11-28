@@ -1,0 +1,105 @@
+body {
+        height: 100%;
+        width: 595px;
+        background-color:#ffffff;
+        /* to centre page on screen*/
+        margin-left: auto;
+        margin-right: auto;
+        
+        font-size: 100%;
+    }	
+	
+a{
+   text-decoration:none;
+}
+
+.appendix_item{
+   color: #0000ff;
+}
+a[href$='.htm']{    
+   color: blue;
+}
+a[href^='#']{
+   color: #000077;
+}
+
+zh{
+  font-size:50px;
+  font-weight: bold;
+}
+
+zh1{
+  font-size:40px;
+  font-weight: bold;
+}
+
+zh2{
+  font-size:30px;
+  font-weight: bold;
+}
+
+zh3{
+  font-size:20px;
+  font-weight: bold;
+}
+
+
+
+#toc > li  > a {
+font-size:25px;
+}
+
+
+
+
+
+.InfexOfNotes  li {
+   margin:0 0 20px 0;   
+}
+
+div.backupdocs{
+  display:none;
+}
+
+.filebody, .singlefilebody, .toc, .cover, .AppendixList{
+    border-width:1px; 
+    border-style:solid; 
+    border-color: #ccccff; 
+    
+    margin: 20px 0px 20px 0px;
+    padding: 18px;
+    
+}
+
+#BtnDoFormat{
+    position: fixed;
+    top: 0;
+    right:0;
+}
+.abbrev{
+    font-weight: bold;
+}
+
+
+
+
+
+
+#menu{
+    position: fixed;
+    top: 0px;
+    left:5px;
+}
+#out{
+    /*position: fixed;*/
+    top: 20px;
+    left:5px;
+}
+#scale{
+    /*position: fixed;*/
+    top: 0px;
+    left:5px;
+}
+
+
+

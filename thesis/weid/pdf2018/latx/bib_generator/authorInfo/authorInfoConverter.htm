@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<title>Export</title>
+		<link href="" rel="stylesheet" type="text/css" />
+		<script src="../../../_js/jquery.min.js"></script>
+
+		<script src="./latexBibTmpl.js"></script>
+		<script src="./authorInfo_000.js"></script>
+		<script src="./authorInfo_001.js"></script>
+		<script src="./authorInfo_Utils.js"></script>
+		<script src="../obiWriterWorks/obiWriterWork.js"></script>
+		<script src="../../ChineseCharacters/Simplified_Traditionals.js"></script>
+
+<style type="text/css">
+#menu{
+	position: fixed;
+	top:0;
+	left: 0px;
+	background-color: #cccc00;	
+}
+#out{
+	position: fixed;
+	top:0;
+	right: 20px;
+	background-color: #eeee00;
+}
+img{
+ max-height: 25px;
+ min-height: 25;
+}
+.zoomin{
+  max-height: 150px;
+}		
+.selectedimg{
+  
+  max-height: 50px;
+  text-decoration: line-through;
+  background-color: #ff0000;
+}
+.ftypimgSelect{
+	background-color: #777777;
+}
+.edi{
+	border:1px solid #ffff00;
+	margin-left: 1px;
+}
+.Required{
+	background-color: #ffff00;
+}
+.popupped{
+	border:3px solid #0000ff;
+}
+caption{
+	text-align:left;
+	background-color: #aaaaaa;
+}
+.ErrTable{
+	background-color: #ff0000;
+}
+.man{
+	background-color: #eeeeee;
+}
+</style>
+
+</head>
+
+<script>
+function modification001(){
+	$.each(authorInfo, function(i,autinf){
+		var man=JSON.parse(JSON.stringify(autinf.man));
+		authorInfo[i].man=[];
+		authorInfo[i].man.push(man);
+	})
+	$("#out").val(JSON.stringify(authorInfo));
+}
+
+$(document).ready(function(){  
+	//modification001();
+	//return; 
+	authorInfo_Arr_Merge();
+
+	Verify_Uniq(authorInfo,"man", "name"); 
+	Verify_Uniq(authorInfo,"bib", "uid"); 
+	ShowItemized("man", "name");
+	ShowAll();
+
+    $("#ForBibLatex").click(function(){
+    	Output_BibLatexData(authorInfo);
+    });
+
+    $("#stringify").click(function(){
+    	$("#out").val(JSON.stringify(authorInfo));
+    });
+
+    $("#cha2Import").click(function(){
+    	//ImportWriter();
+    	alert("not used");
+    });
+    
+});
+
+function Output_BibLatexData(authInfArr){
+	function bibjs2latex(bibo, name){
+			if(!bibo.uid || bibo.uid.indexOf("--")===0){
+				console.error("bibo.uid=",bibo.uid)
+				return "";
+			}
+			var sKey="\@"+bibo.doctype+"\{"+bibo.uid+",\n";
+			$.each(latexBibTmpl_Standard,function(key,emp){
+				key=key.trim();
+				if(key==="doctype"||key==="uid" ){
+					return;
+				}
+
+				var val=bibo[key];
+
+				if( "author"===key ) {
+					if(!val || val.trim().length===0 ){
+						val=name;//overide the author name from man. 
+					}
+				}
+				if(!val || !val.trim() ){
+					return;
+				}
+
+
+
+	
+				var outkey= key;
+				while(outkey.length<20){//padding
+					outkey=outkey+" ";
+				}
+			
+				var cellstr=val.trim();
+	
+				if(cellstr.length>0){
+					sKey += outkey +  "\=\{" +cellstr+ "\}\,\r\n";
+				}
+			});
+			sKey+= "\},\r\n\r\n";
+
+			sKey=Traditional2Symplified_Strn(sKey);
+
+			return sKey;
+	}
+
+	Verify_Uniq(authInfArr, "bib", "uid");
+	var sortedIndxAr=Sort_BibDatArr(authInfArr,"man","name");
+	console.log("authInfArr.length",authInfArr.length, "sortedIndxAr.length",sortedIndxAr.length)
+
+	var out="", iflag=0;
+	$.each(sortedIndxAr,function(j,sortedIdx){
+		var inf=authInfArr[sortedIdx];
+		var name=inf.man[0].name;
+
+		$.each(inf.bib,function(i,bibo){
+			out+=bibjs2latex(bibo, name);
+			iflag++;
+		});
+	});
+	console.log("Total bib item=", iflag);
+
+	$("#out").val(out);
+}
+
+function Sort_BibDatArr(authinf,opt, keyname){
+	if(["man","bib"].indexOf(opt)<0)return alert("what opt?");
+	keyname=keyname.trim();
+	if(keyname.length==0){
+		return alert("please select a key to sort.");
+	}
+	var SORTKEYLEN=100;
+	function padkey(str, id){
+		str=str.padEnd(SORTKEYLEN, " ");
+		var sid=id.toString().padStart(SORTKEYLEN, " ");
+		return str+id;
+	}
+	function getkey(padedkey){
+		return padedkey.substr(SORTKEYLEN);
+	}
+
+	function sortedIndxArr_by_key(authinf,opt, keyname){
+		var sortout=[];
+		$.each(authinf, function(i, obj){
+			var job=obj[opt][keyname];
+			if(!job){
+				job="";
+			}
+			var ss=padkey(job,i);
+			sortout.push(ss);
+		});
+
+		sortout.sort();
+
+		var sortedIdxArr=[];
+		$.each(sortout,function(i,v){
+			var idx=getkey(v);
+			sortedIdxArr.push(parseInt(idx));
+		});	
+		return sortedIdxArr;	
+	}
+	return sortedIndxArr_by_key(authinf,opt, keyname);
+}
+
+
+
+
+function Verify_Uniq(authInf, opt, key){
+	var uidArr=[];
+	$.each(authorInfo,function(i,oai){
+		$.each(oai[opt],function(j,obj){
+			if(!obj[key]){
+				return;
+			}
+			var val=obj[key].trim();
+			if(val.length==0)return;
+			if(uidArr.indexOf(val)>0){
+				console.error("duplicated:opt:",opt, ",key:",key, ",val:",val, obj);
+			}else{
+				uidArr.push(val);
+			}
+		});
+	});
+}
+
+
+function ShowAll(){
+	var ss="", idx=0;
+	$.each(authorInfo, function(i,auif){
+		ss+="<hr/>"+(idx++)+"<br>";
+		$.each(auif,function(type,arr){//type: man | bib
+			ss+="<hr/><div class='"+type+"'>";
+			$.each(arr,function(j,obj){ //obj: man | bib.
+				$.each(obj,function(key,val){
+					if(Array.isArray(val)){ //man: web, val is ary {url:desc}
+						$.each(val,function(i,o){ //o:{url:desc}
+							$.each(o,function(k,v){ 
+								var url="<a href='"+k+"' target='_blank'>url</a>";
+								ss+=url+"="+v+"<br>";
+							})
+						})
+					}
+					else{
+						val=val.trim();
+						if(val.length>0){
+							ss+=key+"="+val+"<br>";
+						}
+					}
+				});
+				ss+="<br/>";
+			});//man|bib
+			ss+="</div>"
+		});//
+	});
+	ss=Traditional2Symplified_Strn(ss);
+	$("#base2").html(ss);
+}
+function ShowItemized(opt,key){
+	var uidArr=[];
+	$.each(authorInfo,function(i,oai){
+		var name=oai.man[0].name;
+		name+=oai.man[0].namep;
+		$.each(oai[opt],function(j,obj){
+			var val=obj[key];
+			var clsname="";
+			if(uidArr.indexOf(val)>=0){
+				clsname='duplicated';
+			}
+			uidArr.push("<tr><td>"+uidArr.length+"</td><td>"+name+"</td><td class='"+clsname+"''>"+val+"</td></tr>");
+		});
+	});
+	var sout="";
+	$.each(uidArr,function(i,str){
+		sout+=str;
+	});
+	$("#base").html("<table border='1'>"+sout+"</table>");
+}
+function outOptChange(_this){
+	var v=$(_this).val();
+	$("#outItemedList").html("").append("<option></option>");
+	var obj=Tmp_authorInfo[v][0];
+	$.each(obj,function(k,v){
+		if(typeof v === 'string'){
+			$("#outItemedList").append("<option value='"+k+"'>"+k+"</option>");
+		}
+	});
+}
+function outItemChange(_this){
+	var v=$(_this).val();
+	var o=$("#selobj").val();
+	var obj;
+	ShowItemized(o,v);
+}
+</script>
+
+<body>
+	<textarea id="out"></textarea> 
+<div id="menu">
+	<a href="./BibEditor.htm" target="_blank">BibEditor</a>
+	<button id="stringify">JSON.stringify</button>	
+	<button id="cha2Import">Import</button>	
+	<button id="ForBibLatex">bibLatex Export</button>	
+
+	<select id="selobj" onchange='outOptChange(this)'>
+	<option ></option>
+	<option value="man">man</option>
+	<option value="bib">bib</option>
+	</select>
+
+	<select id="outItemedList" onchange='outItemChange(this)'>
+	<option></option>
+	</select>
+
+	<button id="SortBib">SortBib</button>	
+
+</div>
+	<hr>
+
+	<div id="baseNew"></div>
+	<button id="addnew">Addnew</button>	
+	<hr>
+	<div id="base"></div><hr/>
+	<div id="base2">+</div>
+
+
+	</body>
+</html>
