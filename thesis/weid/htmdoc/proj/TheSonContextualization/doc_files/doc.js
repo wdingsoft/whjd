@@ -38,12 +38,11 @@ var MeasureTextWidth = {
 }
 var uti = {
     gen_sjs: function (jsf) {
-        var s = "<";
-        s += "script desc='addon' language='javascript' " + " src=";
-        s += "'" + jsf + "'>" + "<" + "/" + "script" + ">\n";
-        console.log("load:", s);
-        $("head").append(s);
-        return s;
+        var scp = document.createElement("script")
+        scp.src = jsf
+        console.log("load:", jsf);
+        $("head").append(scp);
+        return ;
     },
     clear_sjs: function () {
         $("script[desc='addon'").remove();
