@@ -6,11 +6,11 @@
 
 
 # gen index for bitbucket. 
-TargetDir="../../"
-APP="./utis/indexer/index.nod.js"
+TargetDir="../"
+TargetExe="./indexer/index.nod.js"
 cd ${TargetDir}
-ls -ls ${APP}
-node ${APP} 
+ls -ls ${TargetExe}
+node ${TargetExe} 
 open index.htm
 cd -
 
@@ -21,52 +21,3 @@ cd -
 
 
 
-
-
-#################################
-# for github
-TargetDir="../../../../github/wdingsoft/"
-APP="../../bitbucket/wdingsoft/utis/indexer/index.nod.js"
-
-cd ${TargetDir}
-ls -ls ${APP}
-
-node ${APP}
-open index.htm
-cd -
-
-
-
-
-########################
-# for github
-TargetDir="../../../../github/wdingbox/"
-APP="../../bitbucket/wdingsoft/utis/indexer/index.nod.js"
-
-
-cd ${TargetDir}
-ls -ls ${APP}
-
-node ${APP}
-open index.htm
-cd -
-
-
-
-
-
-
-########################
-# for github
-TargetDir="../../../../github/wdingbox/homework/"
-APP="../../../bitbucket/wdingsoft/utis/indexer/index.nod.js"
-
-
-cd ${TargetDir}
-ls -ls ${APP}
-
-node ${APP}
-open index.htm
-cd -
-
-#../../bitbucket/wdingsoft/utis/index.nod.js

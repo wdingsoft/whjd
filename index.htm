@@ -1,8 +1,553 @@
 
+<HTML>
+    <HEAD>
+        <TITLE>ind</TITLE>
+        <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+        <base target="_blank" />
+    
+        <script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script>
+        <script src="https://wdingbox.github.io/ham12/jq/jquery.tablesorter.js"></script>
+        <script src="https://wdingbox.github.io/ham12/jq/table_Indexer.js"></script>
+        <script src="https://wdingbox.github.io/ham12/jq/Pinyin7kzi.js?v=2"></script>
 
+        <script src="./index.js"></script>
 
+      
+        <style>
+        #paneltoggler, #panel{
+            position:fixed;
+            background-color: lightblue;
+        }
+        #paneltoggler{
+            right:20px;
+        }
+        #explorePanel{
+            margine-top:100px;
+            padding-top:100px;
+        }
+        #hilipathfile{
+            width: 100%;
+        }
 
+            textarea {
+                width: 500px;
+                height: 500px;
+            }
+            .dir{
+                display:block;
+            }
+            ol{
+                left:10px;
+            }
+            .collapse{
+                visibility:hidden;
+                display: none;
+            }
+            .expand{
+                visibility:visible;
+            }
+            .pathdir_expand{
+                background-color:cyan;
+            }
+            .Mark{
+                background-color:red;
+            }
+            .RemeberClosed{
+                background-color:lightgrey;
 
+            }
+            .file_open_Mark{
+                background-color:pink;
+            }
+            .toggleMarkFile{
+                background-color:lightgreen;
+            }
 
-<a href="https://wdingbox.github.io/pubs/thesis/weid/htmdoc/proj/TheSonContextualization/doc.html">https://wdingbox.github.io/pubs/thesis/weid/htmdoc/proj/TheSonContextualization/doc.html</a>
+            .hili{
+                background-color:lightgreen;
+            }
+            .HideItm{
+                display: none;
+                visibility: hidden;
+                
+            }
+            xa[href]{
+                background-color:cyan;
+            }
+            xxspan{
+                display:block;
+            }
+            
+        </style>
+    
+        <script>
+            function init_localhost_anchor(){
+                if(!localStorage.localhostbase){
+                    localStorage.localhostbase = /weidroot/;//"/weidroot/";
+                }
+                var curUrl = ""+window.location.href;
+                var posi = curUrl.indexOf(localStorage.localhostbase);
+                var localhost = "http://localhost/"+curUrl.substr(posi);
+                $("#panel").prepend(`<input value='${localStorage.localhostbase}'></input><a onclick="localStorage.localhostbase=$(this).prev().val();">*</a><a href='${localhost}'>${localhost}</a><br>`);
+            };///////////////
 
+            $(function () {
+                init_localhost_anchor();
+
+                $("#paneltoggler").click(function(){
+                    $("#panel").toggle();
+                });
+
+                $(".base").click(function(){
+                    var base = $(this).text();
+                    var sdir = $(this).prev().text();
+                    $(this).attr("href", sdir+base);
+                })
+
+                $(".dir").click(function(){
+                    var spath = $(this).find("a:eq(0)").attr("path");
+                    $("#hilipathfile").val(spath);
+                });
+                $(".dirNode").click(function(){
+                    $(this).parent().next().toggleClass("collapse");
+                    $(this).toggleClass("pathdir_expand");
+                    var totDir = $(this).parent().next().find("ol").length;
+                    var totFile = $(this).parent().next().find("li").length;
+                    var totSize=0;
+                    $(this).parent().next().find(".fsize").each(function(){
+                        totSize += parseInt( $(this).text() );
+                    })
+                    $(this).parent().find(".totInfo").text(" dir:" + totDir.toLocaleString()+", file:"+totFile.toLocaleString() +", size:"+totSize.toLocaleString());
+                })
+                $(".NumFiles").click(function(){
+                    $(this).parent().next().children("li").toggleClass("collapse");
+                    $(this).toggleClass("RemeberClosed");
+                });
+                $(".NumDirs").click(function(){
+                    $(this).parent().next().children("span").toggleClass("collapse");
+                    $(this).toggleClass("RemeberClosed");
+                });
+                $(".file").click(function(){
+                    $(".file_open_Mark").removeClass("file_open_Mark");
+                    $(this).addClass("file_open_Mark");
+                })
+                $(".lifile").click(function(){
+                    $(this).toggleClass("toggleMarkFile");
+                })
+
+                $(".idx").click(function(){
+                    $(this).toggleClass("hili");
+                    var sdir0 = $(this).next().text();
+                    $(".dir").not(".hili").each(function(i){
+                        if(0===i) return;
+                        var sdir = $(this).text();
+                        if(sdir0 === sdir){
+                            $(this).parent().toggleClass("HideItm");
+                        }
+                    })
+                });
+            });
+        </script>
+    </HEAD>
+    
+    <body>
+    <button id="paneltoggler">+</button>
+    <div id="panel">
+    <input readonly id="hilipathfile" value="generated by: /Users/weiding/Sites/weidroot/weidroot_2017-01-06/app/github/wdingbox/pubs/indexer/index.nod.js"></input>
+    <a>totDirs: 52, totFiles: 229, size: 47,282,045 B</a>
+    </div>
+
+    <div id="explorePanel">
+    <span class='dir'><a class='dirNode' path='././'>[ . / ]</a> <a class='NumDirs'>( 5</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy'>biblestudy</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy/my_papers'>my_papers</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy/my_papers/afc'>afc</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>5 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/afc/ChristiansAndPravacy.htm'>ChristiansAndPravacy.htm</a>  (<a class='fsize'>10,346</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/afc/ChristiansAndPravacy.htm___wordfreq.htm'>ChristiansAndPravacy.htm___wordfreq.htm</a>  (<a class='fsize'>3,011</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/afc/ChristiansAndPravacy.htm___wordfreq.js'>ChristiansAndPravacy.htm___wordfreq.js</a>  (<a class='fsize'>5,050</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/afc/ChristiansAndPravacy.htm___wordfreq.json'>ChristiansAndPravacy.htm___wordfreq.json</a>  (<a class='fsize'>5,033</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/afc/___maverick.editor.html'>___maverick.editor.html</a>  (<a class='fsize'>17,816</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./biblestudy/my_papers/happygroup'>happygroup</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>9 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/___maverick.editor.html'>___maverick.editor.html</a>  (<a class='fsize'>17,816</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/lesson1.htm'>lesson1.htm</a>  (<a class='fsize'>7,702</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/lesson1.htm___wordfreq.htm'>lesson1.htm___wordfreq.htm</a>  (<a class='fsize'>3,005</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/lesson1.htm___wordfreq.js'>lesson1.htm___wordfreq.js</a>  (<a class='fsize'>1,674</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/lesson1.htm___wordfreq.json'>lesson1.htm___wordfreq.json</a>  (<a class='fsize'>1,657</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/truth_and_culture.htm'>truth_and_culture.htm</a>  (<a class='fsize'>12,462</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/truth_and_culture.htm___wordfreq.htm'>truth_and_culture.htm___wordfreq.htm</a>  (<a class='fsize'>3,036</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/truth_and_culture.htm___wordfreq.js'>truth_and_culture.htm___wordfreq.js</a>  (<a class='fsize'>2,267</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/my_papers/happygroup/truth_and_culture.htm___wordfreq.json'>truth_and_culture.htm___wordfreq.json</a>  (<a class='fsize'>2,250</a> B)</li>
+</ol></ol><span class='dir'><a class='dirNode' path='./biblestudy/perimeterChurch'>perimeterChurch</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy/perimeterChurch/group'>group</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy/perimeterChurch/group/journey'>journey</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>16 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./biblestudy/perimeterChurch/group/journey/2020'>2020</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/2020/my_spiritual_journey.JPG'>my_spiritual_journey.JPG</a>  (<a class='fsize'>2,977,111</a> B)</li>
+</ol><li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/___maverick.editor.html'>___maverick.editor.html</a>  (<a class='fsize'>17,816</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/notes.htm'>notes.htm</a>  (<a class='fsize'>1,417</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/notes.htm___wordfreq.htm'>notes.htm___wordfreq.htm</a>  (<a class='fsize'>3,033</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/notes.htm___wordfreq.js'>notes.htm___wordfreq.js</a>  (<a class='fsize'>564</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/notes.htm___wordfreq.json'>notes.htm___wordfreq.json</a>  (<a class='fsize'>547</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/prayer_journel.htm'>prayer_journel.htm</a>  (<a class='fsize'>2,071</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/prayer_journel.htm___wordfreq.htm'>prayer_journel.htm___wordfreq.htm</a>  (<a class='fsize'>3,042</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/prayer_journel.htm___wordfreq.js'>prayer_journel.htm___wordfreq.js</a>  (<a class='fsize'>1,065</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/prayer_journel.htm___wordfreq.json'>prayer_journel.htm___wordfreq.json</a>  (<a class='fsize'>1,048</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journel.htm___wordfreq.htm'>spiritual_journel.htm___wordfreq.htm</a>  (<a class='fsize'>3,045</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journel.htm___wordfreq.js'>spiritual_journel.htm___wordfreq.js</a>  (<a class='fsize'>3,301</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journel.htm___wordfreq.json'>spiritual_journel.htm___wordfreq.json</a>  (<a class='fsize'>3,284</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journey.htm'>spiritual_journey.htm</a>  (<a class='fsize'>3,839</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journey.htm___wordfreq.htm'>spiritual_journey.htm___wordfreq.htm</a>  (<a class='fsize'>3,045</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journey.htm___wordfreq.js'>spiritual_journey.htm___wordfreq.js</a>  (<a class='fsize'>3,301</a> B)</li>
+<li class='lifile'><a class='file' href='biblestudy/perimeterChurch/group/journey/spiritual_journey.htm___wordfreq.json'>spiritual_journey.htm___wordfreq.json</a>  (<a class='fsize'>3,284</a> B)</li>
+</ol></ol></ol></ol><span class='dir'><a class='dirNode' path='./business'>business</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./business/house'>house</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='business/house/checklist.htm'>checklist.htm</a>  (<a class='fsize'>4,185</a> B)</li>
+</ol></ol><span class='dir'><a class='dirNode' path='./home'>home</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='home/index.htm'>index.htm</a>  (<a class='fsize'>584</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./indexer'>indexer</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='indexer/index.nod.js'>index.nod.js</a>  (<a class='fsize'>8,907</a> B)</li>
+<li class='lifile'><a class='file' href='indexer/index.sh'>index.sh</a>  (<a class='fsize'>315</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis'>thesis</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid'>weid</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc'>htmdoc</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj'>proj</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization'>TheSonContextualization</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>8 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux'>aux</a> <a class='NumDirs'>( 4</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files'>_aux_files</a> <a class='NumDirs'>( 6</a> / <a class='NumFiles'>4 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/BibleSonStats'>BibleSonStats</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/BibleSonStats/blueletter.html'>blueletter.html</a>  (<a class='fsize'>7,147</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/SacredTest'>SacredTest</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/SacredTest/notes.htm'>notes.htm</a>  (<a class='fsize'>2,612</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/eng_wordfrq'>eng_wordfrq</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/eng_wordfrq/EngWordFrqObj.json.js'>EngWordFrqObj.json.js</a>  (<a class='fsize'>409,021</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/eng_wordfrq/eng_word_frq.htm'>eng_word_frq.htm</a>  (<a class='fsize'>1,455,968</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes'>notes</a> <a class='NumDirs'>( 4</a> / <a class='NumFiles'>3 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss'>ChristinaKrauss</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>5 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss/Conclusion (edited).docx'>Conclusion (edited).docx</a>  (<a class='fsize'>24,277</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss/Conclusion.docx'>Conclusion.docx</a>  (<a class='fsize'>17,119</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss/ThePossibleContextualization2.docx'>ThePossibleContextualization2.docx</a>  (<a class='fsize'>629,729</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss/VII_Conclusion (edited).docx'>VII_Conclusion (edited).docx</a>  (<a class='fsize'>26,456</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/ChristinaKrauss/VII_Conclusion.docx'>VII_Conclusion.docx</a>  (<a class='fsize'>17,693</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/GeorgeTerror'>GeorgeTerror</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/GeorgeTerror/Ding_Wei_MasterThesis3.docx'>Ding_Wei_MasterThesis3.docx</a>  (<a class='fsize'>672,172</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/GeorgeTerror/Wei Thesis.docx'>Wei Thesis.docx</a>  (<a class='fsize'>680,589</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/krist'>krist</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/krist/Ding-abstract-edited.doc'>Ding-abstract-edited.doc</a>  (<a class='fsize'>16,896</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid'>weid</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>6 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/3Mingism.htm'>3Mingism.htm</a>  (<a class='fsize'>15,434</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/3Mingism2.htm'>3Mingism2.htm</a>  (<a class='fsize'>15,362</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/Ding_Wei_MasterThesis3.docx'>Ding_Wei_MasterThesis3.docx</a>  (<a class='fsize'>666,970</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/Ding_Wei_MasterThesis5.docx'>Ding_Wei_MasterThesis5.docx</a>  (<a class='fsize'>670,639</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/Ding_Wei_MasterThesis_ThePossibleContextualization2-1.docx'>Ding_Wei_MasterThesis_ThePossibleContextualization2-1.docx</a>  (<a class='fsize'>612,947</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/weid/Wding_Draft_07098.docx'>Wding_Draft_07098.docx</a>  (<a class='fsize'>650,092</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/Wei Ding Abstract.docx'>Wei Ding Abstract.docx</a>  (<a class='fsize'>18,100</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/WeidAbstract2 Checked.docx'>WeidAbstract2 Checked.docx</a>  (<a class='fsize'>17,667</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/notes/WeidAbstract2.docx'>WeidAbstract2.docx</a>  (<a class='fsize'>14,635</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref'>ref</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>7 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/Buddhist_Impact_On_Chinese_Culture.pdf'>Buddhist_Impact_On_Chinese_Culture.pdf</a>  (<a class='fsize'>340,367</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/Chinese_Oracle_Bone_Inscriptions_Holy_Mo.pdf'>Chinese_Oracle_Bone_Inscriptions_Holy_Mo.pdf</a>  (<a class='fsize'>944,702</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/NewCultureMovement.txt'>NewCultureMovement.txt</a>  (<a class='fsize'>5,029</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/The_Origins_of_Chinese_Writing_the_Neoli.pdf'>The_Origins_of_Chinese_Writing_the_Neoli.pdf</a>  (<a class='fsize'>1,896,540</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/Understanding_Chinese_Religions_full_tex.pdf'>Understanding_Chinese_Religions_full_tex.pdf</a>  (<a class='fsize'>1,495,881</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/WangDongJie-LiberateHanZi.txt'>WangDongJie-LiberateHanZi.txt</a>  (<a class='fsize'>86,290</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/ref/kim_b_1969.pdf'>kim_b_1969.pdf</a>  (<a class='fsize'>20,846,383</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp'>tmp</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>12 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/Ding_Wei_MasterThesis_ThePossibleContextualization2.docx'>Ding_Wei_MasterThesis_ThePossibleContextualization2.docx</a>  (<a class='fsize'>613,059</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/ThePossibleContextualization.docx'>ThePossibleContextualization.docx</a>  (<a class='fsize'>583,036</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/ThePossibleContextualization1.docx'>ThePossibleContextualization1.docx</a>  (<a class='fsize'>632,069</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/ThePossibleContextualization2.docx'>ThePossibleContextualization2.docx</a>  (<a class='fsize'>604,298</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/TheSonContextualization.docx'>TheSonContextualization.docx</a>  (<a class='fsize'>33,530</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/TurabianTemple.docx'>TurabianTemple.docx</a>  (<a class='fsize'>29,749</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/What_is_the_difference_between_footnotes_and_the_bibliography.doc'>What_is_the_difference_between_footnotes_and_the_bibliography.doc</a>  (<a class='fsize'>21,504</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/a4.htm'>a4.htm</a>  (<a class='fsize'>5,782</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/a4_size.htm'>a4_size.htm</a>  (<a class='fsize'>1,516</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/pdf_page.htm'>pdf_page.htm</a>  (<a class='fsize'>813</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/sheets-of-paper-a4.css'>sheets-of-paper-a4.css</a>  (<a class='fsize'>1,173</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/tmp/zi_refs.docx'>zi_refs.docx</a>  (<a class='fsize'>55,323</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/_aux.js'>_aux.js</a>  (<a class='fsize'>4,466</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/_aux_doc.css'>_aux_doc.css</a>  (<a class='fsize'>276</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/_aux_doc.js'>_aux_doc.js</a>  (<a class='fsize'>5,636</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/_aux_files/jquery-2_1_3.min.js'>jquery-2_1_3.min.js</a>  (<a class='fsize'>84,320</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/cmd'>cmd</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>3 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/cmd/autogen.sh'>autogen.sh</a>  (<a class='fsize'>91</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/cmd/git_commit.sh'>git_commit.sh</a>  (<a class='fsize'>1,407</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/cmd/tidy_git_diff.sh'>tidy_git_diff.sh</a>  (<a class='fsize'>2,432</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe'>exe</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/_olayer_test'>_olayer_test</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/_olayer_test/test.htm'>test.htm</a>  (<a class='fsize'>4,068</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/_olayer_test/test2.htm'>test2.htm</a>  (<a class='fsize'>18,928</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/doc_file_plugin'>doc_file_plugin</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/doc_file_plugin/em_key_words.nd.js'>em_key_words.nd.js</a>  (<a class='fsize'>1,636</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/exe/doc_file_plugin/ploadfiles2doc.nd.js'>ploadfiles2doc.nd.js</a>  (<a class='fsize'>4,001</a> B)</li>
+</ol></ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs'>nodjs</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>5 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs/o.htm'>o.htm</a>  (<a class='fsize'>16,806</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs/o2.htm'>o2.htm</a>  (<a class='fsize'>16,644</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs/o3.htm'>o3.htm</a>  (<a class='fsize'>16,639</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs/package-lock.json'>package-lock.json</a>  (<a class='fsize'>27</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/aux/nodjs/tidy.nd.js'>tidy.nd.js</a>  (<a class='fsize'>541</a> B)</li>
+</ol></ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/doc_files'>doc_files</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>4 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_em_key_words'>d_em_key_words</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>3 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_em_key_words/aux_doc_dat_json.js'>aux_doc_dat_json.js</a>  (<a class='fsize'>1,320</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_em_key_words/index.html'>index.html</a>  (<a class='fsize'>8</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_em_key_words/items_page_size_json.js'>items_page_size_json.js</a>  (<a class='fsize'>4,424</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload'>d_pload</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img'>d_img</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>22 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/01_FrqSpectrum_LunYu.png'>01_FrqSpectrum_LunYu.png</a>  (<a class='fsize'>37,610</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/01_FrqSpectrum_LunYu.png.htm'>01_FrqSpectrum_LunYu.png.htm</a>  (<a class='fsize'>47</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/02_FrqSpectrum_SanZiJin.png'>02_FrqSpectrum_SanZiJin.png</a>  (<a class='fsize'>38,426</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/02_FrqSpectrum_SanZiJin.png.htm'>02_FrqSpectrum_SanZiJin.png.htm</a>  (<a class='fsize'>51</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/03_FrqSpectrum_HaiDaoSuanJing.png'>03_FrqSpectrum_HaiDaoSuanJing.png</a>  (<a class='fsize'>33,959</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/03_FrqSpectrum_HaiDaoSuanJing.png.htm'>03_FrqSpectrum_HaiDaoSuanJing.png.htm</a>  (<a class='fsize'>56</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/04_ZiBookRankSpectrum.png'>04_ZiBookRankSpectrum.png</a>  (<a class='fsize'>33,203</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/04_ZiBookRankSpectrum.png.htm'>04_ZiBookRankSpectrum.png.htm</a>  (<a class='fsize'>42</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/05_ZiBookFrequecySpectrumSpectrum_overBooks.png'>05_ZiBookFrequecySpectrumSpectrum_overBooks.png</a>  (<a class='fsize'>35,108</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/05_ZiBookFrequecySpectrumSpectrum_overBooks.png.htm'>05_ZiBookFrequecySpectrumSpectrum_overBooks.png.htm</a>  (<a class='fsize'>48</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/06_ZiBookFrequecySpectrumSpectrum_overBooks_caterized.png'>06_ZiBookFrequecySpectrumSpectrum_overBooks_caterized.png</a>  (<a class='fsize'>36,564</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/06_ZiBookFrequecySpectrumSpectrum_overBooks_caterized.png.htm'>06_ZiBookFrequecySpectrumSpectrum_overBooks_caterized.png.htm</a>  (<a class='fsize'>60</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/07_ZiFrqSpectrum_In_Periodic4.png'>07_ZiFrqSpectrum_In_Periodic4.png</a>  (<a class='fsize'>37,617</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/07_ZiFrqSpectrum_In_Periodic4.png.htm'>07_ZiFrqSpectrum_In_Periodic4.png.htm</a>  (<a class='fsize'>55</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/08_ZiFrqSpectrum_In_Periodic2.png'>08_ZiFrqSpectrum_In_Periodic2.png</a>  (<a class='fsize'>36,744</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/08_ZiFrqSpectrum_In_Periodic2.png.htm'>08_ZiFrqSpectrum_In_Periodic2.png.htm</a>  (<a class='fsize'>66</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/09_ZhiFrqSpectrum_In_Periodic4.png'>09_ZhiFrqSpectrum_In_Periodic4.png</a>  (<a class='fsize'>40,525</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/09_ZhiFrqSpectrum_In_Periodic4.png.htm'>09_ZhiFrqSpectrum_In_Periodic4.png.htm</a>  (<a class='fsize'>51</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/10_ZhiFrqSpectrum_In_Periodic2.png'>10_ZhiFrqSpectrum_In_Periodic2.png</a>  (<a class='fsize'>40,267</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/10_ZhiFrqSpectrum_In_Periodic2.png.htm'>10_ZhiFrqSpectrum_In_Periodic2.png.htm</a>  (<a class='fsize'>52</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/11_Son_OT_NT_Sorted.png'>11_Son_OT_NT_Sorted.png</a>  (<a class='fsize'>27,202</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_img/11_Son_OT_NT_Sorted.png.htm'>11_Son_OT_NT_Sorted.png.htm</a>  (<a class='fsize'>68</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables'>d_tables</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>31 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/01_blank.html'>01_blank.html</a>  (<a class='fsize'>0</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/01_blank.html.htm'>01_blank.html.htm</a>  (<a class='fsize'>7</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/02_CatPeriod_Book_Count.html'>02_CatPeriod_Book_Count.html</a>  (<a class='fsize'>3,406</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/02_CatPeriod_Book_Count.html.htm'>02_CatPeriod_Book_Count.html.htm</a>  (<a class='fsize'>36</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/02_CatPeriod_Book_Count.html___wordfreq.htm'>02_CatPeriod_Book_Count.html___wordfreq.htm</a>  (<a class='fsize'>3,078</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/02_CatPeriod_Book_Count.html___wordfreq.js'>02_CatPeriod_Book_Count.html___wordfreq.js</a>  (<a class='fsize'>606</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/02_CatPeriod_Book_Count.html___wordfreq.json'>02_CatPeriod_Book_Count.html___wordfreq.json</a>  (<a class='fsize'>589</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/03_CatPeriod_Word_Count_(mi).html'>03_CatPeriod_Word_Count_(mi).html</a>  (<a class='fsize'>4,452</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/03_CatPeriod_Word_Count_(mi).html.htm'>03_CatPeriod_Word_Count_(mi).html.htm</a>  (<a class='fsize'>36</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/04_CatPeriod_Number_of_Book_Title_With_Zi3.html'>04_CatPeriod_Number_of_Book_Title_With_Zi3.html</a>  (<a class='fsize'>3,411</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/04_CatPeriod_Number_of_Book_Title_With_Zi3.html.htm'>04_CatPeriod_Number_of_Book_Title_With_Zi3.html.htm</a>  (<a class='fsize'>57</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/05_CatPeriod_Rate(pc)_of_Book_Title_With_Zi3.html'>05_CatPeriod_Rate(pc)_of_Book_Title_With_Zi3.html</a>  (<a class='fsize'>3,659</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/05_CatPeriod_Rate(pc)_of_Book_Title_With_Zi3.html.htm'>05_CatPeriod_Rate(pc)_of_Book_Title_With_Zi3.html.htm</a>  (<a class='fsize'>69</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/06_CatPeriod_Number_of_Book_Author_With_Zi3.html'>06_CatPeriod_Number_of_Book_Author_With_Zi3.html</a>  (<a class='fsize'>3,418</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/06_CatPeriod_Number_of_Book_Author_With_Zi3.html.htm'>06_CatPeriod_Number_of_Book_Author_With_Zi3.html.htm</a>  (<a class='fsize'>79</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/07_CatPeriod_Rate(pc)_of_Book_Author_With_Zi3.html'>07_CatPeriod_Rate(pc)_of_Book_Author_With_Zi3.html</a>  (<a class='fsize'>4,047</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/07_CatPeriod_Rate(pc)_of_Book_Author_With_Zi3.html.htm'>07_CatPeriod_Rate(pc)_of_Book_Author_With_Zi3.html.htm</a>  (<a class='fsize'>73</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/08_CatPeriod_Frquency_Rate(pm)_Zi3.html'>08_CatPeriod_Frquency_Rate(pm)_Zi3.html</a>  (<a class='fsize'>4,381</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/08_CatPeriod_Frquency_Rate(pm)_Zi3.html.htm'>08_CatPeriod_Frquency_Rate(pm)_Zi3.html.htm</a>  (<a class='fsize'>83</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/09_Bible_Son_Frequency_in_Bible.html'>09_Bible_Son_Frequency_in_Bible.html</a>  (<a class='fsize'>24,297</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/09_Bible_Son_Frequency_in_Bible.html.htm'>09_Bible_Son_Frequency_in_Bible.html.htm</a>  (<a class='fsize'>31</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/09_CatPeriod_.htm'>09_CatPeriod_.htm</a>  (<a class='fsize'>4,167</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/10_Tbl_Seven_wonderful_Words_and_Isaiah.html'>10_Tbl_Seven_wonderful_Words_and_Isaiah.html</a>  (<a class='fsize'>2,016</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/10_Tbl_Seven_wonderful_Words_and_Isaiah.html.htm'>10_Tbl_Seven_wonderful_Words_and_Isaiah.html.htm</a>  (<a class='fsize'>38</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/11_Tbl_Seven_Sons_In_pre-China_Documents.html'>11_Tbl_Seven_Sons_In_pre-China_Documents.html</a>  (<a class='fsize'>1,475</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/11_Tbl_Seven_Sons_In_pre-China_Documents.html.htm'>11_Tbl_Seven_Sons_In_pre-China_Documents.html.htm</a>  (<a class='fsize'>34</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/12_DocsDesc_Document_List.html'>12_DocsDesc_Document_List.html</a>  (<a class='fsize'>67,152</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/12_DocsDesc_Document_List.html.htm'>12_DocsDesc_Document_List.html.htm</a>  (<a class='fsize'>14</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/13_Hebrew_Vocab.html'>13_Hebrew_Vocab.html</a>  (<a class='fsize'>6,212</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/13_Hebrew_Vocab.html.htm'>13_Hebrew_Vocab.html.htm</a>  (<a class='fsize'>19</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/d_tables/___maverick.editor.html'>___maverick.editor.html</a>  (<a class='fsize'>17,412</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/d_pload/__Template.html'>__Template.html</a>  (<a class='fsize'>509</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/doc.css'>doc.css</a>  (<a class='fsize'>3,483</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/doc.js'>doc.js</a>  (<a class='fsize'>29,521</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/index.html'>index.html</a>  (<a class='fsize'>929</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_files/jquery-2_1_3.min.js'>jquery-2_1_3.min.js</a>  (<a class='fsize'>84,320</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/___maverick.editor.html'>___maverick.editor.html</a>  (<a class='fsize'>17,816</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/_aux.html'>_aux.html</a>  (<a class='fsize'>33,692</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc.html'>doc.html</a>  (<a class='fsize'>182,531</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc.html___wordfreq.htm'>doc.html___wordfreq.htm</a>  (<a class='fsize'>3,039</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc.html___wordfreq.js'>doc.html___wordfreq.js</a>  (<a class='fsize'>42,662</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc.html___wordfreq.json'>doc.html___wordfreq.json</a>  (<a class='fsize'>42,645</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc.html~'>doc.html~</a>  (<a class='fsize'>182,139</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/htmdoc/proj/TheSonContextualization/doc_back.html'>doc_back.html</a>  (<a class='fsize'>39,474</a> B)</li>
+</ol></ol></ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018'>pdf2018</a> <a class='NumDirs'>( 3</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/_css'>_css</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_css/3.00_sample.css'>3.00_sample.css</a>  (<a class='fsize'>828</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_css/theme000.css'>theme000.css</a>  (<a class='fsize'>1,265</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/_js'>_js</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>11 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/5.06__table_calc.js'>5.06__table_calc.js</a>  (<a class='fsize'>10,460</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/5.06__table_calc_2.js'>5.06__table_calc_2.js</a>  (<a class='fsize'>7,518</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/5.06__table_graphics.js'>5.06__table_graphics.js</a>  (<a class='fsize'>12,950</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/googlechart_callbackFunctions.js'>googlechart_callbackFunctions.js</a>  (<a class='fsize'>5,696</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jqTableHtm2Latex.js'>jqTableHtm2Latex.js</a>  (<a class='fsize'>2,942</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jqpublish_all_in_one_page.js'>jqpublish_all_in_one_page.js</a>  (<a class='fsize'>1,780</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jqpublish_crossReferences.js'>jqpublish_crossReferences.js</a>  (<a class='fsize'>7,677</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jquery.min.js'>jquery.min.js</a>  (<a class='fsize'>83,612</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jquery.tableindexer.js'>jquery.tableindexer.js</a>  (<a class='fsize'>971</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/jquery.tablesorter.js'>jquery.tablesorter.js</a>  (<a class='fsize'>138,164</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/_js/table_Indexer.js'>table_Indexer.js</a>  (<a class='fsize'>1,283</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx'>latx</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator'>bib_generator</a> <a class='NumDirs'>( 5</a> / <a class='NumFiles'>0 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/authorInfo'>authorInfo</a> <a class='NumDirs'>( 2</a> / <a class='NumFiles'>15 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat'>bibDat</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>15 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/AuthorInfo.json.js'>AuthorInfo.json.js</a>  (<a class='fsize'>57,109</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/AuthorsData_NTHistory.json.js'>AuthorsData_NTHistory.json.js</a>  (<a class='fsize'>29,522</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/AuthorsData_OBI.json.js'>AuthorsData_OBI.json.js</a>  (<a class='fsize'>238,803</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/BibDat_ChnPersonName.json.js'>BibDat_ChnPersonName.json.js</a>  (<a class='fsize'>25</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/BibDat_DocsInfo.json.js'>BibDat_DocsInfo.json.js</a>  (<a class='fsize'>70,614</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/BibDat_OBI.bib'>BibDat_OBI.bib</a>  (<a class='fsize'>155,599</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/BibDat_OBI.json.js'>BibDat_OBI.json.js</a>  (<a class='fsize'>332,141</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/BibDat_ZiZi.json.js'>BibDat_ZiZi.json.js</a>  (<a class='fsize'>218,839</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/bibliography_OBI.json.js'>bibliography_OBI.json.js</a>  (<a class='fsize'>239,484</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/china_bio.json.js'>china_bio.json.js</a>  (<a class='fsize'>12,853</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/ciu_reading.json.js'>ciu_reading.json.js</a>  (<a class='fsize'>37,812</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/collected_news_bio.json.js'>collected_news_bio.json.js</a>  (<a class='fsize'>24,655</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/commonTemplate.json.js'>commonTemplate.json.js</a>  (<a class='fsize'>2,571</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/footnote_bibliography.json.js'>footnote_bibliography.json.js</a>  (<a class='fsize'>93,786</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/pithy_quotes.json.js'>pithy_quotes.json.js</a>  (<a class='fsize'>2,337</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/authorInfo/nodjs'>nodjs</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>2 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/nodjs/footnote_ms_htm.nd.js'>footnote_ms_htm.nd.js</a>  (<a class='fsize'>8,345</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/nodjs/json2latex.nd.js'>json2latex.nd.js</a>  (<a class='fsize'>3,076</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/HomeDomesticAnimal_OriginResearch.txt'>HomeDomesticAnimal_OriginResearch.txt</a>  (<a class='fsize'>19,768</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfoConverter.htm'>authorInfoConverter.htm</a>  (<a class='fsize'>6,979</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_.json'>authorInfo_.json</a>  (<a class='fsize'>1,323</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_000.js'>authorInfo_000.js</a>  (<a class='fsize'>305,021</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_001.js'>authorInfo_001.js</a>  (<a class='fsize'>38,258</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_Utils.js'>authorInfo_Utils.js</a>  (<a class='fsize'>1,315</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_bib_fr_desk_new.bib'>authorInfo_bib_fr_desk_new.bib</a>  (<a class='fsize'>26,447</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_bib_fr_desk_old.bib'>authorInfo_bib_fr_desk_old.bib</a>  (<a class='fsize'>26,447</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_bib_fr_js.bib'>authorInfo_bib_fr_js.bib</a>  (<a class='fsize'>26,447</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/authorInfo_tmp.txt'>authorInfo_tmp.txt</a>  (<a class='fsize'>18,945</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDeskEditor.htm'>bibDeskEditor.htm</a>  (<a class='fsize'>11,952</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibDeskViewer.htm'>bibDeskViewer.htm</a>  (<a class='fsize'>11,176</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/bibFootnoteBibliography.htm'>bibFootnoteBibliography.htm</a>  (<a class='fsize'>3,183</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/latexBibTmpl.js'>latexBibTmpl.js</a>  (<a class='fsize'>740</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/authorInfo/latexBibTmpl_Uti.js'>latexBibTmpl_Uti.js</a>  (<a class='fsize'>2,527</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/bible_oracle'>bible_oracle</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>4 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bible_oracle/bible_versus.js'>bible_versus.js</a>  (<a class='fsize'>31,581</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bible_oracle/divination_bible_compare.htm'>divination_bible_compare.htm</a>  (<a class='fsize'>7,311</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bible_oracle/oracle_bible.js'>oracle_bible.js</a>  (<a class='fsize'>794</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bible_oracle/oracle_bible_compare.htm'>oracle_bible_compare.htm</a>  (<a class='fsize'>11,982</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/bibliography_test'>bibliography_test</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>3 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bibliography_test/MastersDoctoralThesis.cls'>MastersDoctoralThesis.cls</a>  (<a class='fsize'>19,776</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bibliography_test/a.sh'>a.sh</a>  (<a class='fsize'>856</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/bibliography_test/main.tex'>main.tex</a>  (<a class='fsize'>583</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks'>obiWriterWorks</a> <a class='NumDirs'>( 1</a> / <a class='NumFiles'>5 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img'>img</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>10 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 10.jpg'>FullSizeRender 10.jpg</a>  (<a class='fsize'>549,117</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 2.jpg'>FullSizeRender 2.jpg</a>  (<a class='fsize'>558,319</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 3.jpg'>FullSizeRender 3.jpg</a>  (<a class='fsize'>552,851</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 4.jpg'>FullSizeRender 4.jpg</a>  (<a class='fsize'>537,066</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 5.jpg'>FullSizeRender 5.jpg</a>  (<a class='fsize'>543,368</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 6.jpg'>FullSizeRender 6.jpg</a>  (<a class='fsize'>548,439</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 7.jpg'>FullSizeRender 7.jpg</a>  (<a class='fsize'>551,154</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 8.jpg'>FullSizeRender 8.jpg</a>  (<a class='fsize'>547,844</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender 9.jpg'>FullSizeRender 9.jpg</a>  (<a class='fsize'>544,104</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/img/FullSizeRender.jpg'>FullSizeRender.jpg</a>  (<a class='fsize'>552,240</a> B)</li>
+</ol><li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/obiWriterLife.js'>obiWriterLife.js</a>  (<a class='fsize'>2,343</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/obiWriterWork-img-compare.htm'>obiWriterWork-img-compare.htm</a>  (<a class='fsize'>1,228</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/obiWriterWork.htm'>obiWriterWork.htm</a>  (<a class='fsize'>2,247</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/obiWriterWork.js'>obiWriterWork.js</a>  (<a class='fsize'>14,210</a> B)</li>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/obiWriterWorks/oracle_bible_compare.htm'>oracle_bible_compare.htm</a>  (<a class='fsize'>13,005</a> B)</li>
+</ol><span class='dir'><a class='dirNode' path='./thesis/weid/pdf2018/latx/bib_generator/tableMaker'>tableMaker</a> <a class='NumDirs'>( 0</a> / <a class='NumFiles'>1 )</a><a class='totInfo'></a></span>
+
+        <ol class='collapse'>
+<li class='lifile'><a class='file' href='thesis/weid/pdf2018/latx/bib_generator/tableMaker/tableMaker.htm'>tableMaker.htm</a>  (<a class='fsize'>13,080</a> B)</li>
+</ol></ol></ol></ol></ol></ol><li class='lifile'><a class='file' href='index.htm'>index.htm</a>  (<a class='fsize'>199</a> B)</li>
+</ol>
+    </div>
+    </body>
+</HTML>
