@@ -1555,50 +1555,65 @@ var BibDat_ZiZi = BibDat =
             "1": "The Origin of species, one of the most influential books ever written, was published on 24 November 1859. 1,250 copies of the first edition were printed. (See Freeman 1977, pp. 73ff.) The number that survive today is not yet known, but the Darwin Census is conducting a detailed survey. At least twenty-three presentation copies of the first edition are known, none signed by Darwin himself. The verso of the front free endpaper of this presentation copy is inscribed 'From the Author' by a clerk at the publisher John Murray. The recto is inscribed 'F Darwin Cambridge'. The upper right corner of the title page is marked with Darwin family shelf-marks in pencil. The number '92' corresponds to the number given in the 'Catalogue of the Library of Charles Darwin' DAR240, which demonstrates that this copy originally belonged to Charles Darwin."
         }
     },
-    "bookTemplate197book": {
-        "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
+    "ZengWen2018article":{
+        "doctype":"article",
+        "author":"曾雯 等",
+        "authorinfo":"作者：曾雯 山东大学历史文化学院；李佳伟 吉林大学生命科学学院；岳洪彬 王明辉 中国社会科学院考古研究所；周慧 吉林大学生命科学学院；朱泓 吉林大学边疆考古研究中心； 原文刊于《华夏考古》2018年第2期）",
+        "title":"2004年殷墟大司空遗址出土人骨线粒体DNA研究报告(Yinxu Human Bones of Dasikong linear DNA Research Report)",
+        "journal":"华夏考古 HuaXia KaoGu",
+        "vol":"2",
+        "year":"2018-06-26",
+        "pape":"",
         "publisher": "",
+        "isbn":"",
+        "url": "http://www.kaogu.cn/cn/xueshuyanjiu/yanjiuxinlun/kejikaogu/2018/0626/62364.html",
+        "abstract": "Yinxu people are highly mixed races. range from Asia, Mongos and Eruops",
+        "url-1": "http://www.kaogu.cn/cn/xueshuyanjiu/yanjiuxinlun/kejikaogu/2018/0626/62364.html",
+        "isbn": "",
+        "quotes": {
+            "p1": "",
+            "p102-103":"本实验6个样本获得6个不同的单倍型，分属于4个不同的单倍型类群，单倍型类群多样性较高。属于同一单倍型D的NO.1、NO.4、 NO.5序列差别较大，且属不同亚型。提示殷墟商代晚期自由民的组成应该是复杂多样的，人群来源可能也是多元的。通过对殷墟中小墓人骨所做体质人类学研究发现，商代 晚期居民的体质类型包括“古中原类型”和“古东北类型”两种［3］。此外，还可以看到2004 年殷墟大司空遗址出土人骨线粒体 DNA 研究报告 103 在殷墟存在有来自诸如当时东方夷人人群的踪迹［4]",
+            "p103":"集各中心于一身的殷都为来自不同地域、不同种族的人群提供了一个开放的平台，为各人群基因的交流、体质的融合造了机缘。这都在一定程度上印证了殷墟商代晚期居民人群构成多元的推论。",
+        }
+    },
+    "CarlesGore1891book": {
+        "doctype": "book",
+        "author": "Carles Gore",
+        "booktitle": "The Incarnation of the Son of God",
+        "year": "1891",
+        "publisher": "NewYork Charles Scribner's Son",
         "address": "",
         "url": "",
         "abstract": "",
         "url-1": "",
         "isbn": "",
         "quotes": {
-            "p1": ""
+            "p1": "(1) The conception entertained in ealy Greek theology of the supernatural in its relation to nature. pp44-47",
+            "p2":"(2) The relation of Ebienism and Gnosticism to the theology of the NT and the 2ns century. pp91-96",
+            "p3":"Christianity is absolute faith in a certain Person, Jesus Christ"
+        }
+    },
+    "GarrickVAllenAndKaiAkagiAndPaulSloan2019book": {
+        "doctype": "book",
+        "author": "Garrick V. Allen and Kai Akagi and Paul Sloan",
+        "booktitle": "Son of God : Divine Sonship in Jewish and Christian Antiquity and Madhavi Nevader",
+        "year": "2019",
+        "publisher": "University Park, Pennsylvania : Eisenbrauns. ",
+        "address": "",
+        "url": "",
+        "abstract": "",
+        "url-1": "",
+        "isbn": "",
+        "quotes": {
+            "p1": "In antiquity, “son of god”—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God's son(s) in ancient Jewish and early Christian literature. Through close readings of relevant texts from multiple ancient corpora, including the Hebrew Bible, the New Testament, the Dead Sea Scrolls, Greco-Roman texts and inscriptions, early Christian and Islamic texts, and apocalyptic literature, the chapters in this volume engage a range of issues including messianism, deification, eschatological figures, Jesus, interreligious polemics, and the Roman and Jewish backgrounds of early Christianity and the authors of the Dead Sea Scrolls. The essays in this collection demonstrate that divine sonship is an ideal prism through which to better understand the deep interrelationship of ancient religions and their politics of kingship and divinity. In addition to the editors, the contributors to this volume include Richard Bauckham, Max Botner, George J. Brooke, Jan Joosten, Menahem Kister, Reinhard Kratz, Mateusz Kusio, Michael A. Lyons, Matthew V. Novenson, Michael Peppard, Sarah Whittle, and N. T. Wright.",
+
+            "p9":"The claim of Jesus to be the son of God, asserted by the NT, is one of the most difficult aspects of Christian religion. It not only makes Christian's relationshp to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modeern world. The description of a person or a heavenly being as 'Son of God' is not self-evident, particulary under the conditions of the Enlightenment and according to our categories of understanding. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term 'son'.  To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a 'son of God' is.",
+            "p10":"Psa2:7 (my son, whome I have gegotten today.) As in Egypt, the act of enthronement signifies the procreation of the king as a god. We dealing here with a metaphorical understanding of the title of 'son of God'. The image depicts the generic concept in concrete terms and expresses the divine quality through the idea of biological descent. This figurative use of language is also the basis of the promise to David in 2Sa 7:14 'I will be his father, and he will be my son. When he does wrong, I will punish him with the rod of men, with floggings inflicted by men.' (2Sa7:14 NIV) Furthermore, this usage is transferred to the people of Israel, to the exiles, and finally to the poius, who are called 'sons of God'. Addresing God as 'father' in prayers also makes uses of figurative speech.",
+            "p10a":"The title 'son of God' thus refers to the divine attribute of a heavenly or earthly being, bit it as a generic term for 'divine' or as a mythical and figurative way of speaking about the procreation and birth of a god.This is also the case in the few places in the Hebrew Bible that mention 'sons of God' Of all the locations in which we encounter the plural 'sons', only (Dan3:25) do we also find the sigular 'son of God'. in Aramaic. The usage continues in parabiblical writings and in the Dead Dea Scrolls. ",
+            "p17":"Just as 'the son of man' (Dan7:18,7:27) represents the 'holy ones of the Most Hight', the people of the holy ones of the the most Hight, so could the 'son of God in 4Q246 represent the 'people of God in ii,4"
         }
     },
     "bookTemplate197book": {
-        "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
-        "url": "",
-        "abstract": "",
-        "url-1": "",
-        "isbn": "",
-        "quotes": {
-            "p1": ""
-        }
-    },"bookTemplate197book": {
-        "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
-        "url": "",
-        "abstract": "",
-        "url-1": "",
-        "isbn": "",
-        "quotes": {
-            "p1": ""
-        }
-    },"bookTemplate197book": {
         "doctype": "book",
         "author": "",
         "booktitle": "",

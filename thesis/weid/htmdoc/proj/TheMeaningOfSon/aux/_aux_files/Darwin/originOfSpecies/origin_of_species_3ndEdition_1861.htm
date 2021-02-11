@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0080)http://darwin-online.org.uk/content/frameset?itemID=F381&viewtype=text&pageseq=1 -->
+<html xml:lang="en" xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="JavaScript">
+  function updateTitle() {
+    if (top.txtframe) {
+      title = top.txtframe.document.title;
+      top.document.title = title;
+    }
+    else if (top.imageframe) {
+      title = top.imageframe.document.title;
+      top.document.title = title;
+      }
+
+  }
+
+  function framesetloaded() {
+    top.navframe.updatePage();
+    updateTitle();
+  }
+</script>
+
+<link rel="shortcut icon" href="http://darwin-online.org.uk/favicon.ico">
+
+<title>Darwin, C. R. 1861. On the origin of species by means of natural selection, or the preservation of favoured races in the struggle for life. London: John Murray. 3d edition. Seventh thousand.</title></head>
+
+
+<frameset onload="framesetloaded()" rows="149, *">
+    <frame id="nav-frame" name="navframe" src="./origin_of_species_3ndEdition_1861_files/nav-frame.html">
+
+    <frameset cols="100%" name="bottom_frames">
+        <frame id="frames::txt-frame" name="txtframe" src="./origin_of_species_3ndEdition_1861_files/contentblock.html">
+
+    </frameset>
+<noframes>
+  <body >
+  <a  href="http://darwin-online.org.uk/content/contentblock?itemID=F381&amp;basepage=1&amp;hitpage=1&amp;viewtype=text">View content directly (noframes)</a>
+  </body>
+</noframes>
+</frameset>
+
+
+</html>
