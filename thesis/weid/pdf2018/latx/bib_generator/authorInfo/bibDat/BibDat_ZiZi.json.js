@@ -1619,6 +1619,7 @@ var BibDat_ZiZi = BibDat =
             "":""
         }
     },
+
     "bookTemplate197book": {
         "doctype": "book",
         "author": "",
