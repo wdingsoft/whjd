@@ -66,6 +66,23 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
+    "StephenRHolmes2012book": {
+        "doctype": "book",
+        "author": "Stephen R. Holmes",
+        "booktitle": "The Quest for the Trinity: The Doctrine of God in Scripture, History and Modernity",
+        "year": "2012",
+        "publisher": "InterVasity Press",
+        "address": "",
+        "url": "",
+        "abstract": "",
+        "url-1": "",
+        "isbn": "978-0-8303-6656-4(digital)",
+        "quotes": {
+            "p-xvi": "covering in one brief volume two thousand years of debate over what is possibly the central topic of Christian devotion, together with the necessary biblical background."
+        }
+    },
+
+
     "bookTemplate197book": {
         "doctype": "book",
         "author": "",
