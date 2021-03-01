@@ -1,7 +1,7 @@
 var BibDat=
 {
     "an2020webpage": {
-        "doctype": "",
+        "doctype": "webpage",
         "author": "",
         "editor": " ",
         "title": "",

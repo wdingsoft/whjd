@@ -82,6 +82,40 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
+    "FocusontheFamily2014webpage": {
+        "doctype": "webpage",
+        "author": "Focus on the Family",
+        "editor": "Focus on the Family",
+        "title": "God And Man As Male And Female:Implications For Gender Identity",
+        "publisher": "Copyright © 2014, Focus on the Family.",
+        "year": "2014",
+        "url": "https://www.focusonthefamily.com/family-qa/god-and-man-as-male-and-female-implications-for-gender-identity/",
+        "notes": "",
+        "quotes":{
+            "p":"Somehow or other it is in the bond between husband and wife that the stamp of God’s character and the meaning of His Trinitarian essence come through most clearly. "
+        }
+    },
+
+
+    "IvarKristianslund2019book": {
+        "doctype": "book",
+        "author": "Ivar Kristianslund",
+        "booktitle": "Recent Six-day Creation: The Comforting Message of Scripture",
+        "year": "2019",
+        "publisher": "Independently Published",
+        "address": "",
+        "url": "",
+        "abstract": "AbstractThis project argues that the biblical creation accounts give no room for macro-evolution. Exegetical work supported by literature research shows that the creation days consist of six ordinary 24-hour periods, each covering a night and a day. The universe was created ex nihilo on the first of the six creation days probably not much more than six thousand years ago. Since mainstream science draws a very different picture of reality, authoritative scientific sources have been briefly referred to, showing that biblical teaching can be found to be in harmony with sound natural science. Creation and the fall into sin are central events in Christian theology. It is decisive for sound ministry to know whether Genesis 1-11 is reliable history and what kind of history it is. This has been...",
+        "url-1": "",
+        "isbn": "9781688033917, 1688033912",
+        "quotes": {
+            "p1": ""
+        }
+    },
+
+
+
+
 
     "bookTemplate197book": {
         "doctype": "book",
@@ -98,8 +132,6 @@ var BibDat_SonOfMan = BibDat =
             "p1": ""
         }
     },
-
-
 
 
 
