@@ -56,29 +56,22 @@ var BibDat=
     },
     "MichaelStoughII2011paper":{
         "doctype":"master",
-        "author":"Michael Stough II ",
+        "thesis": "Master",
+        "author":" ",
         "authorinfo":"",
         "booktitle":"",
-        "title":"Chinese Oracle Bone Inscriptions, Holy Mountains, and the Garden of God (A Research Paper Presented in Partial Fulfillment of the Requirements for the Course OTST615 Seminar in Archeology and the History of Antiquity)",
-        "year":"2011.4",
-        "publisher":"Andrews University Seventh-day Adventist Theological Seminary",
+        "title":" ",
+        "year":" ",
+        "publisher":" ",
         "isbn":"",
         "journal":"",
-        "url-1":"file:///Users/weiding/Sites/weidroot/weidroot_2017-01-06/app/github/wdingsoft/pkg10/2020-04/Chinese_Oracle_Bone_Inscriptions_Holy_Mo.pdf",
+        "url-1":"f ",
+        "abstract":"",
         "quotes":{
             "":""
         }
     },
-    "MasterTemplate1234mastersthesis": {
-        "doctype": "mastersthesis",
-        "author": "",
-        "authorInfo": " ",
-        "theses": "Master",
-        "title": "",
-        "year": "",
-        "school": "",
-        "address": ""
-    },
+  
     "":{
         "doctype":"book",
         "author":"",
