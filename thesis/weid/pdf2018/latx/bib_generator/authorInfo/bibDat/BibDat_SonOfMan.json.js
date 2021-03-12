@@ -381,39 +381,39 @@ var BibDat_SonOfMan = BibDat =
             "":"We know how careful Jesus is not to declare himself the Son of God. He only gave himself the name “Son of Man.” Undoubtedly, in the Gospel of John, he declares that he is the Son of the Father. “The Jews tried all the harder to kill him [for] he was even calling God his own Father, making himself equal with God” [John 5:18]. Jesus answers this on two levels: “The Son can do nothing by himself, he "
         }
     },
-    "MichaelStoughII2011paper":{
-        "doctype":"master",
-        "thesis": "Master",
-        "author":" ",
+    " LangeJohnPeter2014book":{
+        "doctype":"book",
+        "thesis": "",
+        "author":"Lange, John Peter",
         "authorinfo":"",
-        "booktitle":"",
+        "booktitle":"Lange's Commentary on the Holy Scripture, Volume 1: Genesis to Ruth",
         "title":" ",
-        "year":" ",
-        "publisher":" ",
+        "year":"2014",
+        "publisher":"Delmarva Publications",
         "isbn":"",
         "journal":"",
-        "url-1":"f ",
+        "url-1":"https://books.google.com/books?id=oC5NCgAAQBAJ&pg=PT260&lpg=PT260&dq=whether+Gen2:24+belongs+to+narrator+or+Adam.&source=bl&ots=ud-woWagiK&sig=ACfU3U1ArJxmzDEFo43_Ht4j_Cf-E4Vvqw&hl=en&sa=X&ved=2ahUKEwjNhJz4rKvvAhWqpFkKHWEeD9AQ6AEwC3oECBMQAw#v=onepage&q=whether%20Gen2%3A24%20belongs%20to%20narrator%20or%20Adam.&f=false",
         "abstract":"",
         "quotes":{
-            "":""
+            "ppGen2:24":"Gen.2:24. The question arises whether this is something farther said, and to be understood as Adam's speech, or whether it is the remark of the narrator. In Mat.19:5, Christ cites this language as the word of God. That, however, makes no difference; since Adam may utter the word of God derived from the divine fact, as well as the narrator. It seems to favor the idea of the narrators' speaking, that he so often inserts his remarks with and el-kon (wherefore; Gen 10:9 see Delitzsch). On this account Keil decides that it is the language of the narrator, especially since it is spoken of father and mother. Delitzsch, however, insists that the words must be taken as a prophetic or divining expresson of Adam himself. The word must evidently have the significance of a moral life-ordering for all humanity -- a meaning which results from this expression maness, or woman. It is, therefore, most closely connected with what precedes, and suits better here the mouth of Adam than that of narrator. With the latter it would have been merely a historical remark, with which, moreover, the future tesse would not have been consistent. In the mouth of Adam it is a law of life for all human time, and, indeed, of such a nature that it expresses, at the same time, a feeling of self-denial in that he givees too his children, in the conclusion of marriage, a free departuure from  the ancestral home. It is evident that here all the fundamental laws of the marriage-life are indicated. 1. The foundadation of the same, the sexual affinity; 2. the freedom of choice (as this avails also for the wife in relation too the recognition of the man, and the free departure from father and mother); 3. the monogamic form of marriage and its original indissolubility. They become one flesh--an expression which does indeed include the sexual connection, but, as somthing lying beyond all that, it express the essential unity and higher wholeness of man in man and wife. 4. The relativity of the departure from father and mother; the first relation is not take away by the second, by only made subordinate to it; it supposes the relations to be normal."
         }
     },
   
-    "MichaelStoughII2011paper":{
-        "doctype":"master",
-        "thesis": "Master",
+    "KeilDelitzschwebpage":{
+        "doctype":"webpage",
+        "thesis": "",
         "author":" ",
         "authorinfo":"",
-        "booktitle":"",
+        "booktitle":"Bible Commentaries: Keil & Delitzsch Old Testament Commentary",
         "title":" ",
         "year":" ",
-        "publisher":" ",
+        "publisher":"",
         "isbn":"",
         "journal":"",
-        "url-1":"f ",
+        "url-1":"https://www.studylight.org/commentaries/eng/kdo/genesis-2.html",
         "abstract":"",
         "quotes":{
-            "":""
+            "":"The design of God in the creation of the woman is perceived by Adam, as soon as he awakes, when the woman is brought to him by God. Without a revelation from God, he discovers in the woman “ bone of his bones and flesh of his flesh .” The words, “ this is now ( הפּעם lit., this time ) bone of my bones,” etc., are expressive of joyous astonishment at the suitable helpmate, whose relation to himself he describes in the words, “ she shall be called Woman, for she is taken out of man .” אשּׁה is well rendered by Luther, “ Männin ” (a female man), like the old Latin vira from vir . The words which follow, “ therefore shall a man leave his father and his mother, and shall cleave unto his wife, and they shall become one flesh,” are not to be regarded as Adam's, first on account of the על־כּן, which is always used in Genesis, with the exception of Genesis 20:6; Genesis 42:21, to introduce remarks of the writer, either of an archaeological or of a historical character, and secondly, because, even if Adam on seeing the woman had given prophetic utterance to his perception of the mystery of marriage, he could not with propriety have spoken of father and mother. They are the words of Moses, written to bring out the truth embodied in the fact recorded as a divinely appointed result, to exhibit marriage as the deepest corporeal and spiritual unity of man and woman, and to hold up monogamy before the eyes of the people of Israel as the form of marriage ordained by God. But as the words of Moses, they are the utterance of divine revelation; and Christ could quote them, therefore, as the word of God (Matthew 19:5). By the leaving of father and mother, which applies to the woman as well as to the man, the conjugal union is shown to be a spiritual oneness, a vital communion of heart as well as of body, in which it finds its consummation. This union is of a totally different nature from that of parents and children; hence marriage between parents and children is entirely opposed to the ordinance of God. Marriage itself, notwithstanding the fact that it demands the leaving of father and mother, is a holy appointment of God; hence celibacy is not a higher or holier state, and the relation of the sexes for a pure and holy man is a pure and holy relation. This is shown in Genesis 2:25 : “ They were both naked ערוּמּים, with dagesh in the מ, is an abbreviated form of עירמּים Genesis 3:7, from עוּר to strip), the man and his wife, and were not ashamed .” Their bodies were sanctified by the spirit, which animated them. Shame entered first with sin, which destroyed the normal relation of the spirit to the body, exciting tendencies and lusts which warred against the soul, and turning the sacred ordinance of God into sensual impulses and the lust of the flesh."
         }
     },
   
@@ -559,6 +559,33 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
+    "MichaelPeppard2012webpage": {
+        "doctype": "webpage",
+        "author": "Michael Peppard",
+        "editor": "Oxford University Press",
+        "title": "The Son of God in the Roman World: Divine Sonship in Its Social and Political Context",
+        "publisher": "",
+        "year": "",
+        "url": "https://voice.dts.edu/review/the-son-of-god-in-the-roman-world-divine-sonship-in-its-social-and-political-context/",
+        "notes": "",
+        "quotes":{
+            "1":"Although today some might also think of a trinitarian Father-Son relationship, few would think of this title as primarily a familial metaphor.However, in the early church, without a pre-understanding of other associations, the family relationship would have had to be a significant part of the meaning of the title. In this book, Michael Peppard desires to understand the title 'son of god' as it was heard and understood in the first century.",
+            "2":"the term carries with it the philosophical and theological categories of the Nicene era” (p. 10). Further, Peppard suggests that this approach is highly influenced by Plato, who “divides the static world of Being from the dynamic world of Becoming” (p. 11). Basically, in this approach, 'Son of God' has a fourth-century meaning."
+        }
+    },
+    "DrYeshayaGruber2018webpage": {
+        "doctype": "webpage",
+        "author": "Dr. Yeshaya Gruber",
+        "editor": "",
+        "title": "God’s Name and Quantum Physics?",
+        "publisher": "",
+        "year": "2018",
+        "url": "https://weekly.israelbiblecenter.com/gods-name-quantum-physics/?via=71a7fa3&utm_source=email&utm_medium=email&utm_campaign=Email_Lead_Standalone_Insight_Study-the-Science-Behind-the-Bible_2021-3-6#71a7fa3",
+        "notes": "",
+        "quotes":{
+            "1":"If we were to translate this understanding of God’s name into the language of quantum physics, we might call it “a superposition of all possible states.” Indeed, quantum mechanics posits that the particles or waves that apparently make up our universe (and us) can exist in all possible states at once – until someone carries out a “measurement.” Once you measure the location of a particle, it “collapses” to a single specific location. Perhaps the name of God, YHWH, is similar: it communicates Being in all states, dimensions, and times simultaneously – and if you try to define the meaning more specifically, you end up reducing it to just one aspect."
+        }
+    },
 
 
 
