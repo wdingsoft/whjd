@@ -417,27 +417,48 @@ var BibDat_SonOfMan = BibDat =
         }
     },
   
-    "MichaelStoughII2011paper":{
-        "doctype":"master",
-        "thesis": "Master",
-        "author":" ",
+    "RickBrownAndreaGrayAndLeithGray2011paper":{
+        "doctype":"paper",
+        "thesis": "",
+        "author":"Rick Brown,Andrea Gray And Leith Gray",
         "authorinfo":"",
-        "booktitle":"",
-        "title":" ",
+        "booktitle":"Translating Familial Biblical Terms:An Overview Of The Issue",
+        "title":"Translating Familial Biblical Terms:An Overview Of The Issue",
         "year":" ",
         "publisher":" ",
         "isbn":"",
-        "journal":"",
-        "url-1":"f ",
+        "journal":"January-February 2012 Mission Frontiers",
+        "url-1":"https://www.missionfrontiers.org/pdfs/34-1-translating-familia-biblical-terms.pdf",
         "abstract":"",
         "quotes":{
             "":""
         }
     },
+    "TheWorldEvangelicalAlliance2016paper":{
+        "doctype":"paper",
+        "thesis": "",
+        "author":"",
+        "authorinfo":"",
+        "booktitle":"",
+        "title":"Divine Familial Terms Translation Procedures",
+        "year":"2016",
+        "publisher":"The World Evangelical Alliance",
+        "isbn":"",
+        "journal":"",
+        "url-1":"https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
+        "abstract":"",
+        "quotes":{
+            "p7":"How did the original audience understand the term 'son'?",
+
+            "p9":"What does 'son' in 'Son of God' mean?",
+
+            "p12":"The meaning of 'son of God' in pagan culture in New Testament times"
+        }
+    },
   
-    "MichaelStoughII2011paper":{
-        "doctype":"master",
-        "thesis": "Master",
+    "familialgraphic":{
+        "doctype":"webpage",
+        "thesis": "Mater",
         "author":" ",
         "authorinfo":"",
         "booktitle":"",
@@ -446,7 +467,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher":" ",
         "isbn":"",
         "journal":"",
-        "url-1":"f ",
+        "url-1":"https://bloodandfrogs.com/2018/04/hebrew-family-and-genealogy-terms.html",
         "abstract":"",
         "quotes":{
             "":""
