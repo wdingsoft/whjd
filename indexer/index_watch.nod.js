@@ -259,16 +259,19 @@ function main() {
 }
 
 
-
-fs.watch("../../",{recursive:true}, function(eventType,filename){
+var watch_dir = "./"
+fs.watch(watch_dir, { recursive: true }, function (eventType, filename) {
     console.log(`event type is: ${eventType}`);
     if (filename) {
-      console.log(`filename provided: ${filename}`);
+        if (eventType === 'remane') {
+            main();
+        }
+        console.log(`filename provided: ${filename}`);
     } else {
-      console.log('filename not provided');
+        console.log('filename not provided');
     }
 })
 
 main();
-console.log("watch...")
+console.log("watch:", watch_dir)
 

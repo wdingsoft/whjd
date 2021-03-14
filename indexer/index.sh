@@ -7,7 +7,7 @@
 
 # gen index for bitbucket. 
 TargetDir="../"
-TargetExe="./indexer/index.nod.js"
+TargetExe="./indexer/index_watch.nod.js"
 cd ${TargetDir}
 ls -ls ${TargetExe}
 node ${TargetExe} 
