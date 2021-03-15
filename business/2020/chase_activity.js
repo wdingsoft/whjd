@@ -1,6 +1,7 @@
-var chase_activity=`
-Transaction Date,Post Date,Description,Category,Type,Amount,Memo
-12/29/2020,12/30/2020,KROGER 434,Groceries,Sale,-34.03,
+var chase_activity_headers=`
+Transaction Date,Post Date,Description,Category,Type,Amount,Memo`
+
+var chase_activity=`12/29/2020,12/30/2020,KROGER 434,Groceries,Sale,-34.03,
 12/27/2020,12/29/2020,SHELL OIL 57542377106,Gas,Sale,-27.14,
 12/27/2020,12/29/2020,GREAT WALL SUPERMARKET,Groceries,Sale,-26.49,
 12/28/2020,12/29/2020,SAWNEE ELECTRIC MEMBERSH,Bills & Utilities,Sale,-95.04,
@@ -154,5 +155,4 @@ Transaction Date,Post Date,Description,Category,Type,Amount,Memo
 01/27/2020,01/28/2020,SAWNEE ELECTRIC MEMBERSH,Bills & Utilities,Sale,-81.56,
 01/10/2020,01/12/2020,FSI*SCANAENERGYPAYMENT,Bills & Utilities,Sale,-77.99,
 01/10/2020,01/10/2020,Payment Thank You - Web,,Payment,1598.55,
-01/07/2020,01/08/2020,APPLE.COM/BILL,Shopping,Sale,-0.99,
-`
+01/07/2020,01/08/2020,APPLE.COM/BILL,Shopping,Sale,-0.99,`
