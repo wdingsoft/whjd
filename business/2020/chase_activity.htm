@@ -28,7 +28,7 @@
         function gen_chase_activity_table() {
             var trs = chase_activity.replace(/\,/g, "</td><td>");
             trs = trs.replace(/[\r|\n]/g, "</tr><tr><td>")
-            trs = "<tr>" + trs
+            trs = "<tr><td>" + trs
 
             $("#chase_activity").html(trs)
         }

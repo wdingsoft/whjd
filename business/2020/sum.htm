@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Title -->
+	<title>CheckList</title>
+	<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." /><!-- Libs CSS --><script src='https://wdingbox.github.io/assetjs/libs/jq/jquery.js' type='application/javascript'></script><script src='https://wdingbox.github.io/assetjs/libs/table/table_indexer.js' type='application/javascript'></script>
+	<style type="text/css">/* Hide scrollbar for Chrome, Safari and Opera */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+	</style>
+	<script>
+        $(()=>{
+            table_col_index()
+
+            tot_col("#Dat_Weichert120",2, "#Tot_Weichert120")
+        })
+
+
+
+        function tot_col(tbid, col, outid){
+            var tot=0;
+            $(tbid).find("tr").each(function(){
+                var txt = $(this).find(`td:eq(${col})`).text().replace(",","")
+                var val = parseFloat(txt)
+                tot+=val
+            })
+            $(outid).text(tot.toFixed(2))
+        }
+    </script>
+</head>
+<body>
+<h3>2020</h3>
+
+<div>
+<div>&nbsp;</div>
+
+<a href="checklist.htm">120</a><br>
+<a href="chase_activity.htm">chase_activity</a>
+
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
