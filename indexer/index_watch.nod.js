@@ -259,7 +259,7 @@ function main() {
 }
 
 var myArgs = process.argv.slice(2);
-if(myArgs.length===1){
+if (myArgs.length === 1) {
     var watch_dir = myArgs[0]
     fs.watch(watch_dir, { recursive: true }, function (eventType, filename) {
         console.log(`event type is: ${eventType}`);
