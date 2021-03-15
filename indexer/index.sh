@@ -10,8 +10,9 @@ TargetDir="../"
 TargetExe="./indexer/index_watch.nod.js"
 cd ${TargetDir}
 ls -ls ${TargetExe}
-open index.htm
 node ${TargetExe} 
+open index.htm
+node ${TargetExe} "./"
 cd -
 
 #back to this folder.
