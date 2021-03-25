@@ -21,9 +21,9 @@ var BibDat=
         "publisher":"",
         "address":"",
         "url":"",
+        "url-1":"",
+        "isbn":"",
         "abstract":"",
-        "url-1":"www.TheAreopagus.org",
-        "isbn":"978-0-9830680-8-2",
         "quotes":{
             "p1":""
         }
@@ -82,6 +82,7 @@ var BibDat=
         "isbn":"",
         "journal":"",
         "url-1":"",
+        "abstract":"",
         "quotes":{
             "":""
         }

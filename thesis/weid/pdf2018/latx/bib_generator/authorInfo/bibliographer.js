@@ -16,12 +16,6 @@
     <script srcxxxxxxxxxxxxxxxxx="./bibDat/BibDat_OBI.json.js"></script>
     <script src="./authorInfo_Utils.js"></script>
 
-    <!-------Data------->
-    <script src="./bibDat/BibDat_OBI.jsonjs"></script>
-    <script src="./bibDat/BibDat_SonOfMan.json.js"></script>
-    <script src="./bibDat/BibDat_ZiZi.json.js"></script>
-    
-
     <script src="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
 
 
@@ -106,7 +100,7 @@
 
 
     function GetSvcPathFileName(fname) {
-        const svcDir = "./bibDat/";
+        const svcDir = "../../../../../../bitbucket/wdingsoft/weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
         return svcDir + fname;
     }
     function select_bibDat(_this) {
