@@ -26,8 +26,8 @@ var Bibliography_Endnote_Uti = {
         return ret;
     },
     get_footnote: function (obj) {
-        if(!obj){
-            console.log("obj is null:",obj)
+        if (!obj) {
+            console.log("obj is null:", obj)
         }
         var ftn = this.get_footnote_author(obj.author);
         switch (obj.doctype) {
@@ -151,7 +151,7 @@ var Bibliography_Endnote_Uti = {
                 ftn += `. "${obj.title}." ${obj.year}. URL: ${obj.url} (visited on ${obj.Urldate} )`;
                 break;
             default:
-                console.error("erro doctyp:" + obj);
+                console.error("erro doctyp:", obj);
                 break;
         }
         console.log(ftn);

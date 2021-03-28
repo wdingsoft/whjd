@@ -804,6 +804,7 @@ var BibDat_ZiZi = BibDat =
     "MaHongWei2009PhD": {
         "doctype": "phdthesis",
         "author": "马宏伟",
+        "school":"WuHan Unv.",
         "authorInfo": "武汉大学",
         "supervisor": "Supervisor：张思齐; Classification Code：I106.99, National 211 Project,National 985 Project",
         "title": "《圣经·旧约》的传记特征比较研究[A Comparative Study of the Biographical Features of the Old Testament]",
@@ -875,6 +876,7 @@ var BibDat_ZiZi = BibDat =
         "doctype": "webpage",
         "author": "Jeremiah Jenne",
         "year": "2019",
+        "Urldate": "2019",
         "title": "25 Years Ago Today: The Tian Mingjian Incident",
         "url": "https://radiichina.com/25-years-ago-today-the-tian-mingjian-incident/",
         "Urldate": "2020"
@@ -955,12 +957,14 @@ var BibDat_ZiZi = BibDat =
     },
     "ErminieHuntress2019article": {
         "doctype": "article",
+        "title":"'Son of God' in Jewish Writings Prior to the Christian Era",
         "author": "Erminie Huntress",
         "authorInfo": "Wellesley College",
         "journal": "Journal of Biblical Literature",
         "year": "Jun 1935",
         "vol": "54 No.2 (Jun 1935)",
         "page": "117-123",
+        "url":"https://www.jstor.org/action/doBasicSearch?Query=Erminie+Huntress&filter=",
         "abstract": "",
         "quotes": {
             "p117": "The least important use of the term 'sons of God' is its application to supernatural beings, reflecting the polytheistic notion of a group of family of gods, beings devine by nature who later became angels. This is illustrated in Gen 6:2,4; Job 1:6,2:1, 38:7; Psa 29:1, 89:6, 82; Da 3:25",
@@ -991,11 +995,12 @@ var BibDat_ZiZi = BibDat =
         }
     },
 
-    "XiAnNestorianStele635article": {
-        "doctype": "article",
+    "XiAnNestorianStele635webpage": {
+        "doctype": "webpage",
         "author": "Jing Jin",
-        "title": "Stele to the Propagation in China of the Jingjiao (Luminous Religion) of Daqin (Roman Empire)",
-        "year": "781 (erected)",
+        "title": "Stele to the Propagation in China of the Jingjiao (Luminous Religion) of Daqin (Roman Empire) 781 (erected)",
+        "year": "2019",
+        "Urldate": "2019",
         "url": "https://en.wikipedia.org/wiki/Xi%27an_Stele",
         "quotes": {
             "635AD": "貞觀九祀",
@@ -1011,8 +1016,11 @@ var BibDat_ZiZi = BibDat =
         "publisher": "Showwe Information Co.,Ltd. Taiwan"
     },
     "BianXinJinGang2013web": {
-        "doctype": "web",
+        "doctype": "webpage",
         "author": "变形金刚",
+        "title":"利玛窦摸索出一套用罗马字母为汉字注音的方法",
+        "year": "2016",
+        "Urldate": "2019",
         "url": "http://bianxing-jingang.hxwk.org/2013/04/12/%e6%b1%89%e5%ad%97%e6%8b%bc%e9%9f%b3%e5%8c%96%ef%bc%8c%e7%be%8e%e6%a2%a6%e9%9a%be%e6%88%90%e7%9c%9f/",
         "quotes": {
             "Reco": "文字改革已经走过了一个漫长而曲折的道路。十六世纪末意大利人利玛窦到中国传教，为学习中文，他摸索出一套用罗马字母为汉字注音的方法，总结在1605年发表的《西字奇迹》一书里，开启了后来的汉字拉丁化运动。1892年卢戆章出版《一目了然初阶》，提出一套厦门方言的罗马拼音字方案，成为第一个创制字母式汉语拼音方案的中国人。此后，种种汉语罗马化文字和注音方案层出不穷，花样翻新，有些在一定地区和一定的历史时期内，曾经发挥过重要作用。",
@@ -1065,6 +1073,7 @@ var BibDat_ZiZi = BibDat =
         "author": "LuXun 鲁迅",
         "title": "鲁迅全集 (1-18卷)[LuXun Collections (1-18)]",
         "year": "2005",
+        "publisher": "RenMingWenXue",
         "url-1": "https://www.amazon.com/%E9%B2%81%E8%BF%85%E5%85%A8%E9%9B%86-1-18%E5%8D%B7-%E5%A5%97%E8%A3%85%E5%85%B118%E5%86%8C-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E9%B2%81%E8%BF%85/dp/B01FYWDR1W",
         "abstract": `鲁迅提倡汉语拉丁化，首先是出于对中国旧文化机制的腐蚀性强烈的拒斥，
         同时也是出于对于劳动者深深的同情。在《汉字和拉丁化》一文中，鲁迅说：
@@ -1129,12 +1138,15 @@ var BibDat_ZiZi = BibDat =
         "doctype": "webpage",
         "author": "黃逢徵",
         "title": "貼近阿含，貼近佛陀",
+        "Urldate": "2019",
         "url-1": "https://www.youtube.com/watch?v=M0rCbxDPI4I",
         "1:24": "佛陀=Buddha=Sakyamuni, an incarnation of a maintaining god in Hinduism. secondary religion.",
         "5:12": "three times conventions after the death of Buddha: 1) oral 2) after 100 years, first part wittern; 3) after 265 years, four parts."
     },
-    "youtube2018": {
+    "youtubeJesusvsZoroaster2018": {
+        "doctype": "webpage",
         "author": "incorrect",
+        "Urldate": "2019",
         "url": "https://www.youtube.com/",
         "title": "Jesus vs. Zoroaster",
         "quotes": {
@@ -1424,6 +1436,7 @@ var BibDat_ZiZi = BibDat =
         "title": "Creationism",
         "publisher": "https://plato.stanford.edu",
         "year": "2018",
+        "Urldate": "2019",
         "url": "https://plato.stanford.edu/entries/creationism/",
         "notes": "Archaeologists have discovered human bones in kneeling position in a sacrificial pit of ruins dating back to the late Shang Dynasty (1600 BC-1046 BC) in central China's Henan Province, which proves a glyph in oracle bone inscription of the burial."
     },
@@ -1528,10 +1541,11 @@ var BibDat_ZiZi = BibDat =
         }
     },
     "AlanBoyle2005web": {
-        "doctype": "web",
+        "doctype": "webpage",
         "author": "Neil deGrasse Tyson",
         "title": "Einstein and Darwin: A tale of two theories",
         "year": "2005",
+        "Urldate": "2019",
         "publisher": "nbcnews.com",
         "address": "",
         "url": "https://www.nbcnews.com/id/wbna7159345",
@@ -1543,10 +1557,11 @@ var BibDat_ZiZi = BibDat =
         }
     },
     "JohnvanWyhe2009web": {
-        "doctype": "web",
+        "doctype": "webpage",
         "author": "John van Wyhe",
         "title": "Francis Darwin's annotated copy of the Origin of Species (1859)",
         "year": "2009",
+        "Urldate": "2019",
         "publisher": "Darwin Online",
         "address": "",
         "url": "http://darwin-online.org.uk/Francis_Darwins_Origin_of_species_1859.html",
