@@ -1,4 +1,4 @@
-var BibDat=
+var collected_news_bio = BibDat =
 {
     "an2020webpage": {
         "doctype": "webpage",

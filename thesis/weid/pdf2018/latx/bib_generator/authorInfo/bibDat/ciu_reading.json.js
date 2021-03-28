@@ -1,4 +1,4 @@
-var  ciu_reading =
+var  ciu_reading = BibDat =
 {
     "Athanasius373": {
         "doctype": "book",

@@ -594,8 +594,12 @@ var end_note_app = {
                 var bibid = $(this).next().attr("title");
                 var qid = $(this).attr("title");
                 var bibobj = _THIS.m_bibObj[bibid];
-                var tx = bibobj.quotes[qid];
-                $(this).text(`"${tx.trim()}"`);
+                if(undefined === bibobj || undefined === bibobj.quotes){
+                    console.error("errrr:",bibid, qid)
+                }else{
+                    var tx = bibobj.quotes[qid];
+                    $(this).text(`"${tx.trim()}"`);
+                }
             });
         } else {
             $("a[q][title]").text(`"..."`);

@@ -1,4 +1,4 @@
-var china_bio =
+var china_bio = BibDat =
 {
     "GuXieGang1981book": {
         "doctype": "book",

@@ -1,4 +1,4 @@
-var BibJson= 
+var BibJson= BibDat =
 {
     "Davidson001": {
         "doctype": "book",
