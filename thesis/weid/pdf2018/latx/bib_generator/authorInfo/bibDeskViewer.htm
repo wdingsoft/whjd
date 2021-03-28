@@ -14,13 +14,15 @@
 
     <script src="./latexBibTmpl.js"></script>
     <script srcxxxxxxxxxxxxxxxxx="./bibDat/BibDat_OBI.json.js"></script>
-    <script src="./authorInfo_Utils.js"></script>
+    <script src="./js/Bibliography_Endnote_Uti.js"></script>
 
     <!-------Data------->
-    <script src="./bibDat/BibDat_OBI.jsonjs"></script>
+    <script src="./bibDat/BibDat_OBI.json.js"></script>
     <script src="./bibDat/BibDat_SonOfMan.json.js"></script>
     <script src="./bibDat/BibDat_ZiZi.json.js"></script>
-    
+    <script src="./bibDat/ciu_reading.json.js"></script>
+    <script src="./bibDat/china_bio.json.js"></script>
+
 
     <script src="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
 
@@ -111,16 +113,34 @@
     }
     function select_bibDat(_this) {
         var fname = $(_this).val();
-        fname = GetSvcPathFileName(fname);
-        var param = { api: "LoadJsonFile", inp: { filename: fname } };
+        var ret = eval(fname)
+        //fname = GetSvcPathFileName(fname);
+        console.log(ret)
+
+        //var param = { api: "LoadJsonFile", inp: { filename: fname } };
         ///////////////////
-        Jsonpster.Run(param, function (ret) {
-            GenTable(ret);
-            var txt = Footnote(ret);
-            txt += "\n\n===============\n"
-            txt += Bibliography(ret);
-            $("#out").val(txt);
+        //Jsonpster.Run(param, function (ret) {
+        GenTable(ret);
+        var txt = Footnote(ret);
+        txt += "\n\n========================\n"
+        txt += Bibliography(ret);
+        txt += "\n\n========================\n"
+
+        $("#out").val(txt);
+
+        var htm = DocFormat(ret)
+        $("#docdiv").html(htm)
+        //});
+    }
+    function DocFormat(ret) {
+        var biboArr = [], endnoteArr = []
+        $.each(ret, function (key, obj) {
+            endnoteArr.push(Bibliography_Endnote_Uti.get_footnote(obj));
+            biboArr.push(Bibliography_Endnote_Uti.get_bibliography(obj));
         });
+        endnoteArr.sort()
+        biboArr.sort()
+        return "endnotes<hr>" + endnoteArr.join("<br><br>") + "<hr>bibliopraphy<hr>" + biboArr.join("<br><br>");
     }
     function Output_Footnotes() {
         var fname = "footnote_bibliography.json.js";
@@ -172,7 +192,7 @@
     function Footnote(dat) {
         var ftn = "";
         $.each(dat, function (k, obj) {
-            if(!obj.author){
+            if (!obj.author) {
                 console.error("obj no author", obj)
             }
             ftn += `\n\n[${k}]\n`;
@@ -323,10 +343,12 @@
 
         <select id="SelBibDatFile" onchange="select_bibDat(this);" size='3'>
             <optgroup label="bibDat">
-                <option value="BibDat_OBI.json.js">BibDat_OBI</option>
-                <option value="BibDat_ZiZi.json.js">BibDat_ZiZi</option>
-                <option value="ciu_reading.json.js">ciu_reading</option>
-                <option value="pithy_quotes.json.js">pithy_quotes</option>
+                <option value="BibDat_OBI">BibDat_OBI</option>
+                <option value="BibDat_ZiZi">BibDat_ZiZi</option>
+                <option value="ciu_reading">ciu_reading</option>
+                <option value="BibDat_SonOfMan">BibDat_SonOfMan</option>
+                <option value="china_bio">china_bio</option>
+                <option value="china_bio">china_bio</option>
             </optgroup>
             <optgroup label="authors">
                 <option value="AuthorsData_NTHistory.json.js">AuthorsData_NTHistory</option>
@@ -345,6 +367,7 @@
     </div>
     <p>.</p>
     <textarea id="out">ss</textarea>
+    <div id="docdiv">---</div>
     <div id="taber"></div>
 
 

@@ -1,4 +1,4 @@
-var BibDat =
+var BibDat_OBI =
 {
     "---Britton1": {
         "doctype": "___",
