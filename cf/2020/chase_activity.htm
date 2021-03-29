@@ -18,12 +18,27 @@
         body::-webkit-scrollbar {
             display: none;
         }
+        .hili{
+            background-color: lightcoral;
+        }
     </style>
     <script>
         $(() => {
             table_col_index()
 
             gen_chase_activity_table()
+
+            $("td").on("click",function(){
+                $(this).toggleClass("hili")
+            })
+            $("#CalcHili").on("click",function(){
+                var tot=0.0
+                $(".hili").each(function(){
+                    var tx = $(this).text()
+                    tot += parseFloat(tx)
+                })
+                $(this).text(tot)
+            })
         })
 
         function gen_chase_activity_table() {
@@ -48,7 +63,7 @@
     <h3>2020</h3>
 
     <div>
-        <div>&nbsp;</div>
+        HiliTot:<a id="CalcHili">Total-Hili</a>
 
         <div>chase_activity&nbsp;</div>
 
