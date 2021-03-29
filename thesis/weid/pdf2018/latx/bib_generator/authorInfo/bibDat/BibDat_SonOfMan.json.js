@@ -89,6 +89,7 @@ var BibDat_SonOfMan = BibDat =
         "title": "God And Man As Male And Female:Implications For Gender Identity",
         "publisher": "Copyright © 2014, Focus on the Family.",
         "year": "2014",
+        "Urldate": "2019",
         "url": "https://www.focusonthefamily.com/family-qa/god-and-man-as-male-and-female-implications-for-gender-identity/",
         "notes": "",
         "quotes": {
@@ -156,7 +157,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "RenbergAdamRobert2020Thesis": {
-        "doctype": "Thesis",
+        "doctype": "phdthesis",
         "thesis": "Thesis (Ph.D.) Advisors:Elliott, Mark",
         "author": "Renberg, Adam Robert",
         "authorinfo": "University of St Andrews",
@@ -407,6 +408,7 @@ var BibDat_SonOfMan = BibDat =
         "booktitle": "Bible Commentaries: Keil & Delitzsch Old Testament Commentary",
         "title": " ",
         "year": " ",
+        "Urldate": "2019",
         "publisher": "",
         "isbn": "",
         "journal": "",
@@ -417,12 +419,12 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "RickBrownAndreaGrayAndLeithGray2011paper": {
-        "doctype": "paper",
+    "RickBrownAndreaGrayAndLeithGray2011article": {
+        "doctype": "article",
         "thesis": "",
         "author": "Rick Brown,Andrea Gray And Leith Gray",
         "authorinfo": "",
-        "booktitle": "Translating Familial Biblical Terms:An Overview Of The Issue",
+        "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
         "title": "Translating Familial Biblical Terms:An Overview Of The Issue",
         "year": " ",
         "publisher": " ",
@@ -434,8 +436,8 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "TheWorldEvangelicalAlliance2016paper": {
-        "doctype": "paper",
+    "TheWorldEvangelicalAlliance2016article": {
+        "doctype": "article",
         "thesis": "",
         "author": "",
         "authorinfo": "",
@@ -464,6 +466,7 @@ var BibDat_SonOfMan = BibDat =
         "booktitle": "",
         "title": " ",
         "year": " ",
+        "Urldate": "2019",
         "publisher": " ",
         "isbn": "",
         "journal": "",
@@ -567,6 +570,7 @@ var BibDat_SonOfMan = BibDat =
         "title": "",
         "publisher": "",
         "year": "",
+        "Urldate": "2019",
         "url": "",
         "notes": "",
         "quotes": {
@@ -759,6 +763,7 @@ var BibDat_SonOfMan = BibDat =
         "title": "The Son of God in the Roman World: Divine Sonship in Its Social and Political Context",
         "publisher": "",
         "year": "",
+        "Urldate": "2019",
         "url": "https://voice.dts.edu/review/the-son-of-god-in-the-roman-world-divine-sonship-in-its-social-and-political-context/",
         "notes": "",
         "quotes": {
@@ -773,6 +778,7 @@ var BibDat_SonOfMan = BibDat =
         "title": "God’s Name and Quantum Physics?",
         "publisher": "",
         "year": "2018",
+        "Urldate": "2019",
         "url": "https://weekly.israelbiblecenter.com/gods-name-quantum-physics/?via=71a7fa3&utm_source=email&utm_medium=email&utm_campaign=Email_Lead_Standalone_Insight_Study-the-Science-Behind-the-Bible_2021-3-6#71a7fa3",
         "notes": "",
         "quotes": {

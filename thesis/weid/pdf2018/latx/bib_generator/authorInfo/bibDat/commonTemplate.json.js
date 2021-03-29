@@ -7,6 +7,7 @@ var BibDat=
         "title": "",
         "publisher": "",
         "year": "",
+        "Urldate": "",
         "url": "",
         "notes": "",
         "quotes":{
