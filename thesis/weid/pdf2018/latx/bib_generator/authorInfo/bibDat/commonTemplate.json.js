@@ -31,12 +31,12 @@ var BibDat=
     },
     "Report107report":{
         "doctype":"report",
-        "author":"國家圖書館[National Central Library(Taiwan)]",
+        "author":"",
         "title":"107 年臺灣圖書出版現況及其趨勢分析",
         "year":"2019",
         "url":"https://nclfile.ncl.edu.tw/files/201901/ec7c233b-3c31-4b15-887d-36709a0ef75e.pdf",
         "quotes":{
-            "1":"107 isbn 43,363"
+            "1":""
         }
     },
     "ArticleWalterTSwingle1917article":{

@@ -210,7 +210,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "Brindle, Wayne A.1988": {
+    "BrindleWayneA1988": {
         "doctype": "masterthesis",
         "school":"",
         "author": "Brindle, Wayne A.",
@@ -227,7 +227,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "Ninan, Idicheria1994": {
+    "NinanIdicheria1994": {
         "doctype": "masterthesis",
         "author": "Ninan, Idicheria",
         "school": "Coventry University",
@@ -261,9 +261,8 @@ var BibDat_SonOfMan = BibDat =
     },
 
 
-    "Ketterling, Matthew D. 2018": {
+    "KetterlingMatthewD2018": {
         "doctype": "masterthesis",
-   
         "author": "Ketterling, Matthew D.",
         "school":"",
         "authorinfo": "",
@@ -280,7 +279,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "Fay, Ronald C.2006": {
+    "FayRonaldC2006": {
         "doctype": "masterthesis",
         "author": "Fay, Ronald C.",
         "authorinfo": "",
@@ -297,7 +296,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "Thompson, Anthony Batiste, Jr. 2019": {
+    "ThompsonAnthonyBatisteJr2019": {
         "doctype": "masterthesis",
       
         "school":"",
@@ -316,7 +315,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "Smith, D. Blair. 2019": {
+    "SmithDBlair2019": {
         "doctype": "masterthesis",
         "school":"",
         "author": "Smith, D. Blair.",
@@ -334,7 +333,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "Ellingwood, Jane. 2015": {
+    "EllingwoodJane2015": {
         "doctype": "masterthesis",
         "school":"",
         "author": "Ellingwood, Jane. ",
@@ -351,7 +350,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "Jacques Ellul. Eugene2014.": {
+    "JacquesEllulEugene2014": {
         "doctype": "book",
         "author": "Jacques Ellul. Eugene, Or : Cascad",
         "booktitle": "If You Are the Son of God : The Suffering and Temptations of Jesus",
@@ -404,7 +403,6 @@ var BibDat_SonOfMan = BibDat =
 
     "RickBrownAndreaGrayAndLeithGray2011article": {
         "doctype": "article",
-     
         "author": "Rick Brown,Andrea Gray And Leith Gray",
         "authorinfo": "",
         "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
@@ -419,7 +417,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "WycliffeGlobalAlliance": {
+    "WycliffeGlobalAlliancearticle": {
         "doctype": "article",
         "author": "Wycliffe Global Alliance",
         "authorinfo": "",
