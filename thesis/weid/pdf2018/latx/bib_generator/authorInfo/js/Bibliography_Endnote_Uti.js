@@ -56,11 +56,11 @@ var Bibliography_Endnote_Uti = {
                 }
                 ftn += `, "${obj.title}" In: ${src} (${obj.year})`;
                 break;
-            case "mastersthesis":
-                ftn += `. "${obj.title}" Master Thesis, ${obj.school}, ${obj.year}`;
+            case "masterthesis":
+                ftn += `. "<cite>${obj.title}</cite>" Master Thesis, ${obj.school}, ${obj.year}`;
                 break;
             case "phdthesis":
-                ftn += `. "${obj.title}" PhD Thesis, ${obj.school}, ${obj.year}`;
+                ftn += `. "<cite>${obj.title}</cite>" PhD Thesis, ${obj.school}, ${obj.year}`;
                 break;
             case "book":
                 var booktit = obj.booktitle;
@@ -131,7 +131,7 @@ var Bibliography_Endnote_Uti = {
                 }
                 ftn += `"${obj.title}." In: <cite>${src}</cite> (${month}${obj.year})`;
                 break;
-            case "mastersthesis":
+            case "masterthesis":
                 ftn += `"${obj.title}". Master Thesis, ${obj.school}, ${obj.year}`;
                 break;
             case "phdthesis":
