@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.chartjs.org/samples/latest/charts/bar/horizontal.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Horizontal Bar Chart</title>
+	<script async="" src="./HorizontalBarChart_files/analytics.js"></script>
+	<script src="./HorizontalBarChart_files/Chart.min.js"></script>
+	<script src="./HorizontalBarChart_files/utils.js"></script>
+
+	<script src="./FamilialVocabStat.json.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+
+<body>
+	<div id="container" style="width: 75%;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+		<canvas id="canvas" style="display: block; width: 729px; height: 964px;" width="729" height="964" class="chartjs-render-monitor"></canvas>
+	</div>
+	
+	<script>
+
+
+
+
+
+
+
+		var MONTHS = ['man (אָדָם)', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		
+		MONTHS = []
+		
+		var dat_ge = [], dat_ot =[]
+		Object.keys(FamilialVocabStat).forEach(function(key){
+			var obj = FamilialVocabStat[key]
+			MONTHS.push(`${obj.Eng}(${obj.Hebrew})`)
+			dat_ge.push(obj.Count[0])
+			dat_ot.push(obj.Count[1])
+		})
+		
+		
+		
+		
+		
+		var color = Chart.helpers.color;
+		var horizontalBarChartData = {
+			labels: MONTHS,
+			datasets: [{
+				label: 'Genesis',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+				data: dat_ge
+			},{
+				label: 'OT',
+				backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.blue,
+				data: dat_ot
+			}]
+
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myHorizontalBar = new Chart(ctx, {
+				type: 'horizontalBar',
+				data: horizontalBarChartData,
+				options: {
+					// Elements options apply to all of the options unless overridden in a dataset
+					// In this case, we are setting the border of each horizontal bar to be 2px wide
+					elements: {
+						rectangle: {
+							borderWidth: 2,
+						}
+					},
+					responsive: true,
+					legend: {
+						position: 'right',
+					},
+					title: {
+						display: true,
+						text: 'The Familial Vocabulary Count'
+					}
+				}
+			});
+
+		};
+
+		
+
+	</script>
+
+
+
+</body></html>
