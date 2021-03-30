@@ -1,6 +1,6 @@
 var BibDat=
 {
-    "an2020webpage": {
+    "webpage": {
         "doctype": "webpage",
         "author": "",
         "editor": " ",
@@ -14,7 +14,7 @@ var BibDat=
             "":""
         }
     },
-    "bookTemplate197book":{
+    "book":{
         "doctype":"book",
         "author":"",
         "booktitle":"",
@@ -29,17 +29,17 @@ var BibDat=
             "p1":""
         }
     },
-    "Report107report":{
+    "report":{
         "doctype":"report",
         "author":"",
-        "title":"107 年臺灣圖書出版現況及其趨勢分析",
-        "year":"2019",
-        "url":"https://nclfile.ncl.edu.tw/files/201901/ec7c233b-3c31-4b15-887d-36709a0ef75e.pdf",
+        "title":"",
+        "year":"",
+        "url":"",
         "quotes":{
             "1":""
         }
     },
-    "ArticleWalterTSwingle1917article":{
+    "article":{
         "doctype":"article",
         "author":"",
         "authorinfo":"",
@@ -56,7 +56,7 @@ var BibDat=
         }
     },
     
-    "MichaelStoughII2011paper":{
+    "masterthesis":{
         "doctype":"masterthesis",
         "author":" ",
         "authorinfo":"",
@@ -72,7 +72,7 @@ var BibDat=
             "":""
         }
     },
-    "MichaelStoughII2011paper":{
+    "phdthesis":{
         "doctype":"phdthesis",
         "author":" ",
         "authorinfo":"",
@@ -89,7 +89,7 @@ var BibDat=
         }
     },
   
-    "":{
+    "book":{
         "doctype":"book",
         "author":"",
         "booktitle":"",
