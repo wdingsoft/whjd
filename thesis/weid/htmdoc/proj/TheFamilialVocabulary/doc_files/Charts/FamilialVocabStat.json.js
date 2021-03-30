@@ -1,4 +1,5 @@
-var FamilialVocabStat = {
+var FamilialVocabStat = 
+{
     "H120": {
         "Hebrew": "אָדָם",
         "Count": [
@@ -262,5 +263,37 @@ var FamilialVocabStat = {
             "20"
         ],
         "Eng": "child"
+    },
+    " ": {
+        "Hebrew": " ",
+        "Count": [
+            0,
+            0
+        ],
+        "Eng": ""
+    },
+    "H430": {
+        "Hebrew": "אֱלֹהִים",
+        "Count": [
+            189,
+            2606
+        ],
+        "Eng": "God"
+    },
+    "H3068": {
+        "Hebrew": "יְהֹוָה",
+        "Count": [
+            141,
+            6519
+        ],
+        "Eng": "YHWY"
+    },
+    "H113": {
+        "Hebrew": "אָדוֹן",
+        "Count": [
+            60,
+            335
+        ],
+        "Eng": "LORD"
     }
 }
