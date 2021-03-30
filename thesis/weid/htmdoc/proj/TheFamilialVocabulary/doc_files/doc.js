@@ -635,7 +635,7 @@ var end_note_app = {
 
     load_bib: function (bPrint) {
         var path = "../../../../weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
-        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js"];
+        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js", "BibDat_SonOfMan.json.js"];
         if (!bPrint) {
             for (var i = 0; i < fary.length; i++) {
                 $(`script[src='${path + fary[i]}']`).remove();
