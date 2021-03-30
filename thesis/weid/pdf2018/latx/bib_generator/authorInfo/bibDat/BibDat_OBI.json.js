@@ -9440,7 +9440,7 @@ var BibDat_OBI = BibDat =
         "isbn": "987-0-8308-5635-0"
     },
     "MikeBarnettandRobinMartin2012": {
-        "doctype": "inbook",
+        "doctype": "book",
         "author": "Christopher R. Little",
         "editor": "Mike Barnett and Robin Martin",
         "title": "Discovering the Mission of God",

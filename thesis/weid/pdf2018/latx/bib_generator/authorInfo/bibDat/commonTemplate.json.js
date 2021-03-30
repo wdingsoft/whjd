@@ -55,9 +55,27 @@ var BibDat=
             "p121":""
         }
     },
+    
     "MichaelStoughII2011paper":{
-        "doctype":"master",
+        "doctype":"masterthesis",
         "thesis": "Master",
+        "author":" ",
+        "authorinfo":"",
+        "booktitle":"",
+        "title":" ",
+        "year":" ",
+        "publisher":" ",
+        "isbn":"",
+        "journal":"",
+        "url-1":"f ",
+        "abstract":"",
+        "quotes":{
+            "":""
+        }
+    },
+    "MichaelStoughII2011paper":{
+        "doctype":"phdthesis",
+        "thesis": "PhD",
         "author":" ",
         "authorinfo":"",
         "booktitle":"",

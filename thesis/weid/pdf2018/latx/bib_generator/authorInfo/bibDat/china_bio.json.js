@@ -92,9 +92,11 @@ var china_bio = BibDat =
             "p42": "By the Eastern Zhou (770-221 BC), highly decorated swords, such as a fine example inscribed with the name of Gou Jian (fig. 5), were much prized, but even in the fifth to fourth centuries BC, elite prowess with swords does not seem to have had a conspicuous place in Chinese warfare."
         }
     },
-    "":{
+    "ReviewofReligionandChineseSociety":{
+        "doctype":"webpage",
         "Journal":"Review of Religion and Chinese Society",
         "year":"start2014",
+        "author": "",
         "publisher":"Brill Publishers",
         "url":"https://brill.com/view/journals/rrcs/1/1/article-p1_1.xml",
         "quotes":{
@@ -109,7 +111,8 @@ var china_bio = BibDat =
     },
     "LiuZhenDong2016Web":{
         "doctype":"webpage",
-        "title":"刘振东：帝国的黄昏与华人的视野（二）",
+        "author": "刘振东",
+        "title":"帝国的黄昏与华人的视野（二）",
         "year":"2016",
         "url":"http://hx.cnd.org/2016/11/04/%E5%88%98%E6%8C%AF%E4%B8%9C%EF%BC%9A%E5%B8%9D%E5%9B%BD%E7%9A%84%E9%BB%84%E6%98%8F%E4%B8%8E%E5%8D%8E%E4%BA%BA%E7%9A%84%E8%A7%86%E9%87%8E%EF%BC%88%E4%BA%8C%EF%BC%89/",
         "quotes":{

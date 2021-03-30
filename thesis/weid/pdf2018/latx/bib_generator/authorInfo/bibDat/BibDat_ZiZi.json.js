@@ -34,9 +34,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "【Abstract in Chinese】 先秦文献中\"先子\"凡5见,都是儿辈敬称已故的父亲(包括公公),而没有泛称已故的长辈或祖先的。本文对《左传》和《孟子》中的两例\"先子\"作了详细考辨。\"先君子\"在先秦典籍中2见,其中《荀子》一例有疑问,《礼记》一例也是敬称自己已故的父亲,而非祖父。\"先子\"\"先君子\"中的\"子\"和\"君子\"都是对自己父亲的敬称。 \n\n【Abstract】 There are 5 occurrences of xianzi(先子)all in all as used in Pre-Qin documents,all of which are used as an honorary term to refer to one’s diseased father(including father-in-law as used by his daughter-in-law),but not to one’s diseased elders of ancestors as a general term.The present paper offers a careful and thorough examination of two cases of xianzi as used in ZuoZhuàn(The Spring and Autumn Annals)and MènɡZǐ(Mencius).Additionally,it is found that xianjunzi(先君子)are used twice in Pre-Qin documents,one of which as used in Xún Zǐis questionable in terms of its interpretation,while the other one of which is also used as an honorary term to refer to one’s diseased father rather than grandfather.So,the zǐas used in xianzi and xianjunzi and the term junzi(君子)are all used as honorary terms for the reference of one’s father. Back\n【Keywords in Chinese】 先秦文献； 先秦史； 先子； 先君子； 词义； \n【Key words】 Pre-Qin documents； Zuo Zhuàn； Mèng Zi； exegetics； Pre-Qin history； xianzi(先子)& xianjunzi(先 君子)； meaning interpretation；"
     },
     "ChuRenJiao2009": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Chu, RenJiao",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "XunZi-Not Twelve Zi Study",
         "title": "《荀子·非十二子》研究 (昝润娇-烟台大学) The Study of Fei Twelve Zi (Son) in the Book of XunZi",
         "school": "烟台大学",
@@ -155,9 +155,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：<正> 众所周知,日本女子姓名中多带“子”字。人们不禁要问:这一传统始于何时?为什么唯有女子姓名中才有“子”字?中国古代思想家老子的“子”字又该怎样解释?一些学者对此进行了考证。角田文卫先生在《日本女子姓名》一书中对这些问题做了解答。“子”字作为人名的接尾字,最早出现于身分显贵的男子姓名中。如六世纪的碗子皇子、中臣连镰子、苏戎宿祢马子等。日本与西欧不同,男女姓名的词尾没有严格的区别,因而很快在女子姓名中也出现了“子”字。最初的形式是以“子媛”二字结"
     },
     "ChengXiuLi2000": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Cheng, XiuLi",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "谈“子”的语法性质及其发展 (陈秀丽 辽宁师范大学)",
         "title": "谈“子”的语法性质及其发展 (陈秀丽 辽宁师范大学) The Grammatical Features and Development of Zi (Son)",
         "school": "辽宁师范大学  http://www.lnnu.edu.cn/",
@@ -166,9 +166,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：关于“子”的研究，古今学者多有论及，其中不乏一些语法学大家。在他们的论述中，或多或少都涉及到“子”在对话中表示尊称的用法，但是对于“子”的词性却是异说纷纭。本文通过对“子”的发展演变的考察，结合先秦至两汉的文言材料，详实地梳理了“子”的历史演变过程，认为“子”在对话中的运用已经具有了代词的性质，从而对“子”作出了定性的分析。"
     },
     "LiQi2003": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Li, Qi",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "现代汉语名词后缀\"子\"的用法探析 (李琦 河南大学)",
         "title": "现代汉语名词后缀\"子\"的用法探析 (李琦 河南大学) The Study of Modern Chinese Suffix of Zi (Son)",
         "school": "河南大学",
@@ -177,9 +177,9 @@ var BibDat_ZiZi = BibDat =
         "Bdsk-Url-1": "Zi_modern_research_master2003/"
     },
     "ZhuangYuJie2014": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Zhuang, YuJie",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "《诗经·国风》“子”的浅析 (庄钰杰 陕西师范大学)",
         "title": "《诗经·国风》“子”的浅析 (庄钰杰 陕西师范大学) The Analysis of Zi (Son) in GuoFeng of the Book of ShiJing",
         "school": "陕西师范大学 (Shanxi Normal University)",
@@ -187,9 +187,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：《诗经》是我国最早的诗歌总集,是中华文化的重要起源之一。“子”在《诗经》里是个多义词,既含有不同的具体内容,又有指代人、事作用。《诗经》中“子”的注释有的缺失,有的就算有解释,也不是很符合文章的意思。这对正确指导阅读,理解作品的思想内容有一定的障碍,甚至使读者形成了错误的判断。本文以传统的文献文本分析法、举例论证法、对比分析法为基础,综合运用文化人类学、民俗学等多学科交叉的分析方法,从查阅古籍分析“子”的基本义为“孩子、儿女”,归纳整理《诗经·国风》中含有“子”的篇章共有79篇,根据“子”在不同篇章中的含义,总结出“子”在《诗经》中较为普遍的用法。继而对“子”在特殊篇章《宛丘》中的含义进行分析,根据历代学者对《宛丘》中“子”的解释进行总结,综合情况得出自己的结论：《宛丘》中的“子”指代的是“巫觋”或者是“神”。文章第一部分为绪论,论述本文的选题及意义,简单阐述论文研究背景和现状。第二部分通过查阅字典古籍分类归纳“子”的字典解释。第三部分根据《诗经·国风》里含有“子”的篇目进行分类,根据类别来归纳“子”在《国风》里的含义。第四部分根据具体篇目《诗经·国风·宛丘》,先是归纳历代学者对“子”... 更多"
     },
     "ZhangYiMing2018mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Zhang, YiMing",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "The Worldview of JunZi (Gentleman)",
         "title": "孔子君子观 (张贻珉 北方工业大学) The Worldview of JunZi (Gentleman)",
         "school": "北方工业大学 (North China University of Technology )",
@@ -198,9 +198,9 @@ var BibDat_ZiZi = BibDat =
         "keywords": "孔子; 君子; 修已安民; 政治功能; 当代价值;"
     },
     "ZhouXueXi2016mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Zhou, XueXi",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "Research on the Idea of Junzi in Pre-Qin ",
         "title": "先秦君子观念研究 (周学熙 河北大学) Research on the Idea of Junzi (Gentleman) in Pre-Qin",
         "school": "河北大学 (Hebei University)",
@@ -209,9 +209,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：滥觞于先秦时期的君子观念在中国传统文化的发展过程中具有重要意义。在殷周之际国家与社会制度变革的背景下,原本存在的“君”与“子”概念逐渐合流,“君——子”作为一个新的复合概念应运而生,成为描述早期宗法制度下商王继承人独特身份的准确概念,现有文献中“君子”概念“尊贵性”的早期涵义也同样在这一逻辑过程中诞生。继而随着殷周之际人文精神的跃动,包括“君子”以及与之相关的“天”“德”等概念都经历了关键性的涵义变化。在周人天命观念的下落的同时,“天”与“君子”的概念逐渐与抽象的“德性”发生关联,进而推动了“君子”涵义由“位”而“德”的引申。与此同时,君子观念通过内外两条线索分别与金玉山水等自然意象发生了一系列关联,其一是藉天命论为纽带与古代玉文化交汇融通,其二则是通过以自然之物“比德”这一古代中国独特的审美情趣为关联途径。西周以降,阶级因素长期在时人君子观念中占有一席之地,直到孔子及其后的思想家们通过其在天人关系上的哲学突破彻底改造了这一状况。“轴心突破”后诸子虽对“君子之道”各有发明,但对“道”的追求仍是其自三代文化传统继承而来的共识。其中值得注意的还有儒家“君子”与更高境界的“圣人”皆为“师”的... 更多"
     },
     "LiWeiJie2015mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Li, WeiJie",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "The Gentleman and the Gentleman Culture of the Spring and Autumn Period",
         "title": "春秋时期的君子与君子文化 (李伟杰 河南大学) The Gentleman and the Gentleman Culture of the Spring and Autumn Period",
         "school": "河南大学 (Henan University)",
@@ -220,9 +220,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：“君子”概念一直以来都是我国传统社会最重要的一个理想人格概念之一。“君子”一词,自其诞生以来直到春秋晚期,其内涵就一直处在一个不断演变发展的过程之中。直到孔子时期,其内涵才在孔子手中基本定型。此后在中国历史将近两千多年的发展中,“君子”一词的概念演变就再也没有发生过质的变化。春秋时期是现代意义上“君子”概念的定型期,春秋时期也是“君子”完成其内涵转变的一个关键时期。在春秋时期,“君子”这一概念到底发生了一个什么样的变化?这个变化过程又是一个怎样的变化过程?“君子”概念为什么在春秋这段时间发生如此剧烈根本的变化?其这一变化到底符合了当时人们思想观念的哪种要求?笔者认为在商周之间直至春秋之际,“君子”一词先是沿着一个词义自然引申演变的方向进行无意识发展。故而,一直到春秋早期,“君子”一词之概念从指代统治阶级最高层不断扩展其阶级内涵,不断扩大其指代范围,直到其范围涵盖到整个贵族阶层。同时由于统治阶层统治手法的不断成熟,“君子”之内涵首先在政治智慧方向上开始扩展。到了春秋时期,随着社会变革突然开始呈现剧烈化趋势,个人、家族的社会地位在这种剧烈变革中急剧沉浮,“高岸为谷,深谷为陵”成为了这个时期... 更多"
     },
     "ZhangNa2012mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Zhang, Na",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "Research on the Aristocratic Mother-Son Relationship in ZuoZhuan.",
         "title": "《左传》所记贵族母子关系研究 (张娜 辽宁师范大学) Research on the Aristocratic Mother-Son Relationship in ZuoZhuan.",
         "school": "辽宁师范大学  http://www.lnnu.edu.cn/",
@@ -231,9 +231,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：本文研究的主题是《左传》中记载的贵族母子关系。在我国古代的宗法制社会里，父子伦理被视为家庭伦理的主干和社会关系的核心，母子关系因此掩藏于父子关系之下，很少被注意，而实际上母亲与儿子的关系也是极为重要和特殊的。《左传》中就提及了很多春秋时期的母子关系，其中以记载上层贵族的母亲与儿子之间的相处居多。笔者以此作为主要研究对象，在前人研究成果的基础上，将《左传》所反映的各种类型的母子关系梳理出来，经过初步的分析，力图比较真实的论述其产生原因及内涵实质。本文分为三大部分，即导言、正文和结语。导言主要阐述本文的研究目的，回顾选题的研究概况，说明研究思路和方法。正文第一章从整体上回顾春秋时期的母子相处情况，分别对为母者、为子者的角色进行了定位，说明了当时社会为双方所制定的符合其身份的职责和行为规范。在通常情况下，中国古代的母亲角色承担了生养儿子的责任，并且在一定程度上执行了对其道德和人格培养的职能。相对的，儿子面对母亲的生养，会自然的产生想要报答母亲的感情冲动，加上西周时期便已确立的孝道观念，就形成了儿子赡养在世母亲、丧葬去世母亲的角色期待"
     },
     "GaoXiaoBo2011mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Gao, XiaoBo",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "The Research on the Changes of the Belief for Offspring—Taking the belief for offspring for offspring in Henan Wang Village as Example.",
         "title": "求子信仰的变迁研究--以河南望村求子信仰为例 (高小波 广西民族大学) The Research on the Changes of the Belief for Offspring—Taking the belief for offspring for offspring in Henan Wang Village as Example.",
         "school": "广西民族大学 (Guangxi Uni. For Nationalities)",
@@ -242,9 +242,9 @@ var BibDat_ZiZi = BibDat =
         "abstract": "摘要：求子信仰作为人类生育信仰的第一个环节,是民间信仰重要的组成部分。本研究以河南望村的奶奶信仰为研究对象,通过文献研究、实地调查和访谈法,得出结论如下:奶奶信仰作为生育神崇拜中的三霄信仰,是以本地送子奶奶为崇拜对象的求子信仰,具有特定的内容和特点;作为望村社会的有机组成部分,发挥着特定的功能;作为我国求子信仰的一种,与其他生育信仰之间存在着类型、地域和影响范围的差别,以及功能上的相同。奶奶信仰在新中国成立后经历了四个不同的发展阶段,在内容、特点、功能和信仰主体等方面发生了一些变化。从对其变迁的分析来看,影响其变迁的主要因素包括:制度的变迁、经济与社会发展、受教育水平的提高、外来文化的冲击和民众内在需求的变化等。"
     },
     "PengXiaoQin2003mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Peng, XiaoQin",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "booktitle": "A study on Affix in the Ancient Chinese –to take A Lao Tou Zi as examples.",
         "title": "古汉语词缀研究--以“阿、老、头、子”为例 (彭小琴 四川大学) A study on Affix in the Ancient Chinese –to take A Lao Tou Zi as examples.",
         "school": "四川大学 (Sichuan University)",
@@ -673,8 +673,9 @@ var BibDat_ZiZi = BibDat =
     },
     "ZhenChunLanandHuangShuXian2007phdthesis": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "郑春兰著  黄树先指导 (Zhen ChunLan and Huang ShuXian)",
-        "type": "PhD Thesis",
+        
         "title": "甲骨文核心词研究(Chinese Oracle Bone Inscriptions Kernal Characters Study)",
         "school": "华中科技大学(China Central Technology University)",
         "year": "2007",
@@ -682,26 +683,27 @@ var BibDat_ZiZi = BibDat =
     },
     "WuBaoAnSupervisorProfHuanShuXian2007phdthesis": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "Wu BaoAn (吴宝安) Supervisor Prof. Huan ShuXian (黄树先)",
-        "type": "PhD Thesis",
+        
         "title": "Study on the Kernel Words in the Western Han Dynasty (西汉核心词研究)",
         "school": "HuaZhong Univerisity of Science and Technology(华中科技大学) Wuhan P.R.China",
         "year": "2007",
         "abstract": "摘要：“核心词”是词汇学研究的中心,“西汉”又是汉语史研究中的一个重要时期,对“西汉的核心词”进行全面、系统的研究,不仅对汉语词汇史的建设有重要价值,而且还能给汉藏语系的比较提供一份新的材料。前修时贤虽非常重视西汉词汇的研究,但成果多集中于专书专类词,对西汉的核心词鲜有系统的论述。本文采用语义场理论,应用数理统计和典型例证相结合的方法,对西汉核心词进行封闭的、穷尽式的研究,这对系统了解西汉核心词汇的面貌、对深入认识西汉词汇的特点具有重要意义。本文约23万字,由七章组成。第一章为绪论,全面介绍了“西汉核心词”的研究概况、研究意义、研究材料和研究方法。第二章研究《百词表》中的“身体词”,分“头部、躯干、四肢、内脏、其它”五节对20个身体义场的204个词进行逐一研究。研究发现,“身体词”最显著的特征是代表词的变化非常大。第三章研究《百词表》中的“生物类词”,分“与人有关、动物、植物”三节对15个义场的197个词进行系统研究。研究发现,“生物类词”代表词发生变化较少,“与人有关”的词深受社会制度和社会文化的影响。第四章研究《百词表》中的“自然现象类词”,分“天文、地理、其它”三节对14个义场的165... 更多"
     },
     "LongdanSupervisorProfHuangShuXian2005mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "Longdan, Supervisor Prof. Huang ShuXian",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "title": "汉语“颜色类”核心词研究",
         "school": "HuaZhong Univerisity of Science and Technology(华中科技大学) Wuhan P.R.China",
         "year": "2005",
         "abstract": "摘要：本课题利用语义场理论和历史比较语言学的理论,对斯瓦德什《百词表》中跟“颜色”有关的5个核心词(“黑Black 91位”、“白White 90位”、“红Red 87位”、“黄Yellow 89位”、“绿Green 88位”)进行了系统的研究。全课题分为七章。第一章绪论,介绍了汉语核心词研究的意义、核心词及汉语颜色词研究的概况、本课题的研究方法及材料和本课题的创新点等。第二章至第六章,通过利用汉藏历史比较语言学的理论,对“黑、白、红、黄、绿”五个核心词的早期语音面貌和语源进行了探讨。第七章为结束语,对本课题进行总结。本课题运用文字、音韵等知识,对汉语这五个核心词的早期形式进行构拟,并系联各个词族; 同时,尝试综合运用汉藏比较语言学、历史语言学、语义学等理论,辅以人类学、考古学的知识,把问题放置于更广阔的语言背景中予以考察。具体来说,就是先建立语义场,再系联词族,然后再和民族语言进行对比,最后做出小结。本课题的研究为汉藏比较语言学提供了不少很有价值的语料,同时,对汉语词汇史、汉藏比较语言学的研究方法,也作了一定的探索。 \n\n关键词：核心词; 词族; 语义场; 黑; 白; 红; 黄; 绿;"
     },
     "HeWenFangandSuperviserChenNianFu2018mastersthesis": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
         "author": "He WenFang(何文芳 ) and Superviser Chen NianFu",
-        "type": "Master Thesis",
+        "thesistype": "Master",
         "title": "甲骨文“止”符字构形研究 (The Study On the Structure of Zhi Charaters in Oracle Bones Inscription)",
         "school": "ZheJiang Normal University",
         "year": "2018",
@@ -761,9 +763,10 @@ var BibDat_ZiZi = BibDat =
     },
     "SuPeiPei2019PhD": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "苏蓓蓓",
         "authorInfo": "中共中央党校 [School of Central Committee of the Communist Party]",
-        "thesis": "《中共中央党校》2019年博士论文",
+        "school": "中共中央党校",
         "supervisor": "靳凤林",
         "year": "2019",
         "school": "中共中央党校 [School of Central Committee of the Communist Party]",
@@ -773,7 +776,7 @@ var BibDat_ZiZi = BibDat =
     "WangSiJie2017Book": {
         "doctype": "book",
         "author": "王思杰",
-        "authorInfo": "华东政法大学",
+        "school": "华东政法大学",
         "supervisor": "PHD thesis 何勤华, Classification Code：D909.1, ",
         "publisher": "法律出版社出版",
         "year": "2017.10",
@@ -782,6 +785,7 @@ var BibDat_ZiZi = BibDat =
     },
     "WangShan2017PhD": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "王珊",
         "authorInfo": "中共中央党校[School of Central Committee of the Communist Party]",
         "title": "解放神学视野下的中国基督教社会主义研究[Study on Chinese Christian Socialism and Latin American Liberation Theology]",
@@ -792,19 +796,20 @@ var BibDat_ZiZi = BibDat =
     },
     "WangQianWei2017PhD": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "王强伟",
-        "authorInfo": "山东大学",
-        "thesis": "PHD",
+        "school": "山东大学",
         "year": "2017",
-        "school":"ShangDong Unv.",
+        "school": "ShangDong Unv.",
         "superviser": "Supervisor：傅有德;Classification Code：B222;B985",
         "title": "“先知”与“圣人”：古代犹太教与儒学比较研究 [Prophet and Sage: A Comparative Study of Ancient Judaism and Confucianism]",
         "abstract": "比较研究是宗教学的主要进路之一。犹太-儒学比较研究是最近二十年来兴起的研究方向,本文选取“先知”与“圣人”这两个重要角色作为个案,在古代犹太教和儒家经典的范围内,运用比较研究的方法展开分析。比较研究首先以厘清比较对象的内涵为基础。我们对于“先知”的理解往往集中于“预先知晓”或“预告”等功能,其实这是始自希腊语翻译的一种误解。同时,汉语语境中对“先知”的认知在很大程度上依赖于基督教,难免也受到其意识形态的影响。我们从犹太教的经典(圣经和《塔木德》)出发,重新理解“先知”的4个不同名号以及犹太传统的“先知”界定,揭示出先知主要作为上帝“代言人”的角色;“圣人”长期以来被视为儒家最高级别的理想人格,这种理解导致“圣人”成为一个虚体的概念,失去了其本有的鲜活角色意义。通过从字形演变、传世经典和出土资料等方面对“圣”进行溯源考察和重新思考,我们厘清“圣”经历了一个从出众的“听”“说”等感官能力到超绝的“智慧”理性能力,最终演变为一种儒家美德的过程。儒家“圣人”即被视为具备了这些能力和美德的杰出人物。聚焦于智慧、美德等维度来理解“圣人”,导致对其所本有的感官能力、宗教意义有所忽视。从宗教性的角度来重新认识“圣人”,有助于更加深刻地把握古代儒学的文化品格。比较分析“先知”与“圣人”的源流与解释传统可知,“先知”与“圣人”作为重要的人物角色,同时具有历史真实和经典意义的双重维度,而古代犹太教和儒家经典更为注重从信仰的角度突出他们的重要性。比较研究可以有多元化的进路,我们从三个方面进行先知与圣人之间的“互鉴式”解读。首先,不同文明之间相向进行的经典翻译是反映双方相互认知和理解程度的重要载体,考察“互译”过程中出现的意义流失,可以为比较研究提供一个新的视角。希伯来“先知”和儒家“圣人”都可以通过经典翻译来发现对方的理解:儒家经典中的“先知”概念是中文《圣经》(?)/Prophet译名所借助的本土文化资源,而英文、希伯来文则使用《圣经》中的Sage/(?)来对译“圣人”。翻译即理解,然而结合这些角色概念在各自传统中的定位来看,这种“互译”都没有准确传达出概念的本义,从而构成了产生误解的根源。其次,对摩西和孔子进行“互鉴式解读”,是继概念厘定和译名辨正之后所进行的具体人物角色对比。“最伟大的先知”摩西和“集大成者”孔子,作为犹太传统中“先知”和儒家“圣人”的典范代表,二者的身份和地位具有相似性。然而,二者在各自传统中却有着不同的历史序列定位,孔子是儒家圣人传统的“终结者”,而摩西被奉为先知传统的“启动者”。最后,在“互鉴式解读”的过程中,我们不回避那些标识了犹太传统中“先知”和儒家传统“圣人”的文化独特性,例如与先知相关的“预言”概念、真假先知判断等问题,以及儒家“圣人”作为最高的人格典范意义,在对方传统中都无法找到对应的比较点。我们认为,这种“不可比性”彰显了“先知”与“圣人”的文化特性,同样是比较研究的必要组成部分。无论从历史还是经典来看,“先知”与“圣人”都不仅仅是理性的伦理倡导者,他们同时也承续了各自传统中的宗教(性)因素。一方面,先知与圣人都担负着沟通超验的终极存在与世俗生活之间“中保”的角色和职责。先知的“中保”意义主要体现为先知是上帝的“传言人”,将上帝的话语传达给以色列人;同时他又是神人之间的“调解者”,站在民众的立场上,从民众的利益出发,代表民众与上帝商讨,为民请命;圣人的“中保”意义则体现在圣人被视为与“天”沟通的唯一渠道,“圣人”是“天道”的知晓者和传达者,传达“天道”以实现对民众的教化。其不同在于,先知只能原样传达上帝的话语,而圣人在悟晓“天道”时融合了自身的学识和人生经验,因而存在更多自由发挥的空间。另一方面,先知与圣人都与各自传统中的宗教角色之间有着密切关联。先知与祭司并非始终决然对立,在犹太传统看来,先知的伦理主张和部分先知同时具有的祭司身份,反映出来二者之间存在的和谐关系;早期儒家经典中可见大量“圣人”作为神秘宗教角色的叙事,研究还揭示出“圣人”与“巫”之间存在承继脉络,“巫”乃“圣人”之原型,古代儒学的宗教性因素不容忽视。揭示先知、圣人的宗教渊源及其与宗教传统之间的继承性关系,是对理性主义“文明突破论”主张的有力回应。任何宗教都需要外在规范,以表达其内在价值理念。希伯来先知与儒家圣人作为各自传统中“价值”的主要传达和阐述者,他们面对这种内-外之间的张力关系,作出了各自的回应。犹太教的外在规范主要表现为律法以及其中包含的宗教礼仪,一般认为先知与这些外在规范之间是对立互斥的关系,表现出鲜明的贬低律法-礼仪的倾向。研究表明,犹太传统始终主张先知与律法的一致性,古代犹太教经典传达出“先知是律法的忠实传承者和解释者”这一观念。我们认为,先知的伦理批判并非指向律法-礼仪本身,而是倡导一种适宜的信仰表达形式;流放归来的先知更加积极地支持律法-礼仪,以获取凝聚人心的积极作用。儒学的外在规范主要表现为礼乐文化形式,礼乐制度来自于“圣人”对天地运作秩序的观察与效仿,“圣人”被视为儒家礼乐的创制者;孔子虽然应仍时代处境实现了对礼乐文化的转化,但是他并未彻底拒绝和摒弃礼乐,“述而不作”同样成就了孔子的“圣人”地位。先知之于律法,纵然无法与儒家“圣人”的制作之功相媲美,但是他们与孔子继承并转化礼乐的主张在本质上是相通的。先知与圣人的这种主张表明,追求实现内在价值与外在规范之间的统一,而非“非此即彼”的武断立场,才是继承和发展传统的有益路径。政治是宗教在世俗领域的延伸,这在古代世界尤为显著。“先知”与“圣人”都被视为古代犹太教和早期中国政治叙事的重要参与者。先知(撒母耳)见证了古代以色列君权的建立,曾先后膏立最早的两位君王,表明君权来自神授及其合法性。先知参与建立的政权新模式是一种“有限君主制”,君王的权力受到先知的严格监督,君王只能在信仰上帝的基础之上进行统治,否则将会遭到来自先知的批判。先知的政治参与始终围绕着宗教信仰而展开,崇信上帝是先知政治参与的起点、依赖与旨归。儒家“圣人”在思考政权来源时追溯至“天”,周公致力于论证政权更迭是因为亡国统治者失德,导致“天命转移”,惟有德者才能获得“天”的青睐与护佑;“德”而非对“天”、“天命”的信仰成为了更为根本的决定力量。“圣人”与政权之间关系中的“圣王”、“德治”以及谏诤等概念,均与“敬德”有关。因此,从超验信仰的角度来追问政权来源及其合法性,“先知”与“圣人”表现出极大相似性,二者都是旨在为人间世俗政治秩序寻找一个超验的价值源头,所不同的是,先知始终贯彻“信仰优先”,而儒家圣人在政治参与过程中阐发出“道德至上”的新准则,由此为儒学铺就了一种人文底色。本文在犹太-儒学比较研究的视域下,通过溯源“先知”和“圣人”的本义,从犹太传统出发重新认识和思考“先知”,从宗教角度重新思考“圣人”的功能和意义,并通过经典互译、“互鉴式”解读等多元方式,思考并推进比较研究的方法论建设。在此基础上,进而系统地展示了传统经典中“先知”与“圣人”在宗教渊源、价值表达、政治参与等共同议题中相同而又别具特色的应对方式,尤其注重从宗教学的视角重新思考二者对于传统和人类文明的意义,以期在此基础上推进两种传统之间的相互认知与彼此理解,为文明对话提供理论基础。 Abstract:Comparative study is one of the main approaches of researching in religious studies. Judaic-Confucian comparative study is a new branch which has risen within the recent two decades. The current research chooses two important roles, Hebrew Prophet and Confucian Sage, as a case study, analyzing these two concepts using comparative study method within the sphere of ancient Judaism and Confucian classics.The basis of comparative study is to firstly clarify the connotations of the objects of the comparison. Our understanding of 'prophet' has always been focused on its function such as 'to know beforehand'’ or 'forecast',however, this is a misunderstanding due to the Greek translation. At the same time, the cognition towards 'prophet' in Chinese largely relies on Christianity, hence inevitably influenced by Christian ideology. This research will start with ancient Jewish classics(Hebrew Bible and Talmud), try to understand the four names of 'prophet' and the definition of 'prophet' according to the Jewish tradition, reveal the main role of prophet as God’s 'spokesman'. 'Sage' has long been seen as the highest level of an ideal personality in Confucianism. This understanding of 'sage' makes it an insubstantial concept, which causes the loss of its original vivid meaning. By means of analyzing the evolvement of its character pattern, taking advantage of the ancient classics and making use of archaeological materials, this research will trace the origins of 'sacred' and reconsider its meaning. We further clarify the process of“sacred' which develops from outstanding sense ability to transcendent wisdom,eventually to Confucian virtue. Confucian sages are luminaries who possess these abilities and virtues. Understanding 'sage' by focusing on aspects such as wisdom and virtue will result in the negligence of the sense ability and religious meaning of a sage. Approaching 'sage' from religious angle would help us grasp the cultural character of ancient Confucianism more profoundly. Comparing the origins and the interpretation traditions of 'prophet' and 'sage' will tell us that as important roles,'prophet' and 'sage' are not only historical roles,but also have meanings in classics.In addition, ancient Judaism and Confucian classics also emphasize their importance in the aspect of faith.There are diversified approaches of comparative study, this research will interpret 'prophet' and 'sage' by comparing these two concept in three aspects through mutual reference. Firstly, mutual translation of classics of different culture is an important way to reflect the extent of mutual cognition and comprehension.Investigating the loss of meaning during mutual translation provides us a new perspective for comparative studies. Hebrew 'prophet' and Confucian 'sage' can both be comprehended by translating each other’s classics: the term 'Xianzhi' in the Chinese version bible may come from the same word of the Confucian classics , it’s a use of local cultural material;and in English as well as in Hebrew, Sage/(?) is used as a translation for the concept of 'Sheng-ren'. Translation is actually a form of comprehension and interpretation, however, combined with the orientation of these roles and concepts within their own tradition, this kind of mutual translation unfortunately does not convey their original meaning, hence leaves roots for further misunderstanding. Secondly,the 'mutual interpreting' of Moses and Confucius is a comparison of specific characters following clarification of the concepts and their transitions. 'The greatest prophet' Moses and Confucius who 'epitomized Confucianism', they are typical representatives of the prophet in Jewish tradition and the sage in Confucianism, and they have similar roles as well as status in these two cultures respectively. However, these two characters possess different historical significance: Confucius was the 'terminator' of Confucian tradition, while Moses was considered the 'initiator' of prophetic tradition. Lastly,in the process of “mutual interpretation',we will not avoid the cultural uniqueness that mark 'prophet' in Jewish tradition and 'sage' in Confucian tradition. The current research suggests that this kind of 'incomparability' actually manifests the cultural distinctiveness of'prophet' and 'sage',which is a necessary component of comparative studies.No matter from the historical point of view or form the viewpoint of classics,'prophet' and 'sage' are not only the advocators of rational ethics, but also the successors of religious elements of their own tradition. On the one hand, both prophet and sage carry the role and responsibility as the 'mediator' of communicating transcendent ultimate existence with mundane life. The role of prophet as the'mediator' mainly reflects on the fact that a prophet is the “spokesman' of God,conveying God’s words to Israelites; in the meantime, he is also the 'intercessor',who stands at the same standpoint with his people, thinks of the interest of the common people, represents his people to negotiate with God, pleads for the people.The role of sage as the 'mediator' reflects on the fact that a sage is considered the only channel through whom people can communicate with 'Tian', 'sage' understands and conveys 'Tian-dao',educate people by conveying 'Tian-dao' The difference is that the prophet can only pass on God’s words as they were, whereas when the sage conveys 'Tian-dao', he could integrate it with his own knowledge and life experience,thus has more freedom to perform. On the other hand, both the prophet and the sage are tightly connected to the religious roles in their own tradition. The prophet and the priest has not been always contradict definitely to each other, according to the Jewish tradition, the ethical claims of the prophet are the same with those of the priest, and some of the prophets themselves play the same roles of priests, all of which reflect the harmonious relationship between prophets and priests. There are lots of narratives describing 'sage' acting as mysterious religious character in early Confucian classics;there are also research revealing the lineage between 'sage' and “shaman': 'shaman'is the prototype of 'sage',which suggests that we cannot neglect the religious elements of ancient Confucianism. Revealing the inheriting relationship between the religious source of prophet and sage and their religious tradition forms a powerful response to the so-called 'civilization breakthrough theory' of rationalism.Every religion needs external criterion, so as to express its internal value idea.Hebrew prophet and Confucian sage as the main transmitter and interpreter of their own tradition, they offered their own response when facing this internal-external tension. The external criterion of Judaism mainly appears as the law and the religious ritual within the law. It is generally recognized that sage and these external criterion contradict each other, and sages usually have the tendency of belittle the law especially ritual. Study shows that Jewish tradition has always advocated the consistency of prophets and the law,ancient Judaism classics conveys the idea that'prophet is the loyal transmitter and interpreter of the law'. This research suggests that the ethical criticism of prophets does not point to the law and ritual, instead, it advocates an appropriate expression form of faith; especially, those prophets who have been through exile actually support the law and ritual more actively, in order to achieve the positive result of bringing people together and increasing cohesion. The external criterion of Confucianism mainly appears as rite and music culture. Rite and music institutions come from the 'sage' observes and follows the example of the law and the order of Heaven,'sage' has been considered as the creator of Confucian rite and music; Even though Confucius accomplished the transformation of rite and music culture according to contemporary condition, he did not deny and give up rite and music completely, 'passing on the ancient culture without adding anything new to it' made Confucius achieve the status of 'sage'. The relationship between prophet and the law cannot compete with 'sage' and his creation,but prophets are in essence the same with Confucius inheriting then transforming rite and music. The proposition of prophet and sage shows that the unity of perusing internal value and external criterion,not 'one or another/either or' position,is the helpful approach of inheriting and developing tradition.Politics is an extension of religion in the secular sphere, which is especially notable in the ancient world. 'Prophet' and 'sage' are considered as the important participator of political narration of ancient Judaism and early China. Prophet Samuel witnessed the formation of ancient Israel monarchical power, he also anointed the earliest two kings to demonstrate the legitimacy of the monarchical power and that the monarchical power comes from God. This new model of the prophet who participate the formation of regime is a kind of 'limited monarchy', which means the power of the monarch is strictly supervised by the prophet, the monarch can only rule on the basis of believing in God, or else he will be criticized by the prophet. The political participation of the prophet has always launched around religious belief, believing in God is the starting point, dependence as well as the purpose of the prophet’s political participation. When Confucian “sage' thought about political power,he traced it back to 'Heaven' the Duke of Zhou devoted to demonstrate that the regime change is because of the loss of ethics and virtue of its ruler, which leads to the 'transformation of destiny',and only individuals with virtue could acquire favor and protection of the'Heaven'. The Belief of 'virtue' instead of 'Tian' or 'Tian-ming' became the most fundamental deciding force. “Sage' and the concept within political power such as'sage ruler','rule of virtue' and 'frank criticism',are all related to the concept of'respecting the morality'. Therefore, from the perspective of transcendent faith to inquire the origin and legitimacy of a regime,the concept of 'prophet' and 'sage'shows tremendous similarity, both of them aim at looking for a transcendent value source for the secular political order; the difference is that the prophet has always carried out the rule of 'faith first',whereas Confucian sage has raised a new rule of'the supremacy of moral value',which paved a humanistic foundation for Confucianism.By conducting a comparative study, the current research will search for the original meanings of 'prophet' and 'sage',reveal the similar and distinctive response of 'prophet' and 'sage' from classics in regard to religious origins, value expressions and political participation, especially focus on rethinking the meaning of these two concept on tradition and human civilization from a religious perspective, in the hope of advancing the cognition and comprehension between these two traditions, further providing the theoretical basis of dialogue between civilizations."
     },
     "MaHongWei2009PhD": {
         "doctype": "phdthesis",
+        "thesistype": "PhD",
         "author": "马宏伟",
-        "school":"WuHan Unv.",
+        "school": "WuHan Unv.",
         "authorInfo": "武汉大学",
         "supervisor": "Supervisor：张思齐; Classification Code：I106.99, National 211 Project,National 985 Project",
         "title": "《圣经·旧约》的传记特征比较研究[A Comparative Study of the Biographical Features of the Old Testament]",
@@ -812,7 +817,8 @@ var BibDat_ZiZi = BibDat =
         "abstract": "《圣经》本身是一部集合宗教、历史、文学等多种属性于一身的文化经典,在以多元化为特征的现代文化语境中圣经研究获得了丰富的研究视角,而伴随比较文学的兴起,圣经研究又进入了跨学科、跨文化的交叉比较研究。本文是一部以传记理论为支撑对《圣经·旧约》进行系统研究的论文,它通过以中国古代及现代传记理论与作品为参照,在对《旧约》各经卷的具体分析、对《旧约》的整体关照基础上探讨《旧约》具有的传记性特征。围绕《旧约》的传记性特征,论文分为绪论、正文和余论三部分,正文又再分为三编来具体分析《旧约》与传记特征的具体联系。绪论主要介绍了三方面的内容：一是回顾圣经文学性研究以及传记特征研究的现状,二是介绍《旧约》中传记性的存在,三则是探讨《旧约》传记性的生成。第一编是对《旧约》中各个传记范畴的讨论。本编分为三章。第一章讨论《旧约》的传记维度,以朱东润传记理论为依据分别探讨《旧约》中的“真实”、“艺术”和“个性”三维度以及历史与文学之间的紧密联系,从而论证《旧约》的传记属性。第二章对《旧约》中的传记类别进行分析,论述了《旧约》中的人物传记、族群传记和自传类别。第一节论述《旧约》叙事呈现的人物传记特征,《旧约》中的人物传记作品及其分类,最后是《旧约》所塑造的传主类型及类特征。第二节和第三节的内容将犹太族看作一个独立主体,分别探讨了《旧约》作为族群传记与自传的文本属性。第三章讨论了《旧约》传记写作整体上的宗教化特征,探讨有关宗教特征的生成机制、宗教性因素对传记写作的渗透等内容。第二编介绍了《旧约》关于族群意识的探索,是对《旧约》传记文本思想主题的总体关照。第一章论述了《旧约》对犹太族群历史的梳理,从该族群历史的叙述中我们得以描绘出“犹太人”的族群形象以及犹太族群意识的形成。第二章转而从《旧约》编订者的内部视角切入,探讨犹太人编纂《旧约》的族群意义及其重写犹太历史、理想化族群形象的过程。第三编针对《旧约》对他者意识的洞察进行探讨。第一章从正面论述了不同历史时期的“耶和华”形象对犹太族群性的反映,以及这位圣洁之神作为“他者”形象对其国民性塑造的指导意义,第二章则从反面论述了犹太族为建构自我理想镜像所塑造的异族、异神等“他者”形象,这一部分还涉及到其他通过强调“他者”对立来扩展自我的手段。论文的余论部分探讨了《旧约》传记特征对《新约》叙事、圣徒传记以及后世传记写作的影响,重点介绍了中世纪圣徒传记的发展历史与写作特征。 Abstract:The Holy Bible is a cultural classic with manifold attributes of religion, history, literature, and so on. The modern context characterized by cultural pluralism has triggered a profusion of approaches to the study of the Bible. With comparative literature into vogue, the biblical study has evolved into an interdisciplinary and intercultural scholarship. This paper, based on biographical theories, is intended to make a systematic research into the Old Testament. With reference to classical and contemporary biographic theories and works in China, this dissertation explores the biographical features of the Old Testament with concrete analysis of each volume and global consideration of the whole book. Focusing on biographical features, the paper is divided into three parts-introduction, main body and further discussion,.The introduction is devoted to the literature review of the literary and the biographical research of the Bible, the presence and the generation of the biographical features of the Old Testament.The main body, composed of three parts, demonstrates the association between the Old Testament and biographical features.Part I exhibits the biography categories in the Old Testament in three chapters. The first chapter is concerned with the biographical dimensions in the Old Testament. On the basis of Zhu Dongrun’s biographical theory, the chapter discusses the three dimensions of reality, art and individuality as well as the close relationship between history and literature so as to expound on the biographical attributes of the Old Testament.The second chapter is an exposition of the three biographical types in the Old Testament-the biography of individuals, the biography of ethnic groups, and the autography. The first section is about the narrative features, the specific works and the classification on the part of the biographies of individuals as well as the types of heroes and their common traits in the Old Testament while the second and the last sections, deeming the Jews as an independent case, probe into the text attribute of the Old Testament as the biography of ethnic groups and the autography.The third chapter centers on the religious attribute of the whole text, the generative mechanism of the religious attribute, and the penetration of the religious elements into the biographical writing.PartⅡ, an investigation of the ethnic consciousness in the Old Testament, concerns the cardinal theme of the biography in a global view. The first chapter traces the history of the Jewish ethnic groups presented in the Old Testament so as to reveal the Jewish images and the formation of the Jewish ethnic consciousness. Starting from the angle of the compilers, the second chapter discloses the ethic significance of the Jews’ compiling the Old Testament and the process of rewriting the Jewish history to idealize Jewish people.PartⅢinvestigates the perception of the otherness consciousness in the Old Testament. The first chapter reveals that Jehovah’s images in various historic periods mirror the Jewish ethnic characters and that as a representative of otherness, the God of Sanctity plays a guiding role in the formation of the Jewish character. Conversely, the next chapter explicates the Jewish ethnicity’s creation of otherness images such as other races and other gods for constructing the ideal mirror image of themselves and its expansion of the self by highlighting other’s opposition.In the further discussion, the paper studies the influence of the biographical features of the Old Testament on the narration of the New Testament, the hagiology and the ensuing biographical writings with emphasis laid on the evolution and writing strategies of the hagiology in the Middle Ages."
     },
     "BenedictSungHaeKin1969Master": {
-        "doctype": "mastersthesis",
+        "doctype": "masterthesis",
+        "thesistype": "Master",
         "author": "Benedict Sung-Hae Kim",
         "authorInfo": "A Thesis submitted to the Faculty of the Graduate School, Marquette University, in Partial Fulfillment of Requirement for the Degree of Master of Arts ",
         "theses": "Master",
@@ -957,14 +963,14 @@ var BibDat_ZiZi = BibDat =
     },
     "ErminieHuntress2019article": {
         "doctype": "article",
-        "title":"'Son of God' in Jewish Writings Prior to the Christian Era",
+        "title": "'Son of God' in Jewish Writings Prior to the Christian Era",
         "author": "Erminie Huntress",
         "authorInfo": "Wellesley College",
         "journal": "Journal of Biblical Literature",
         "year": "Jun 1935",
         "vol": "54 No.2 (Jun 1935)",
         "page": "117-123",
-        "url":"https://www.jstor.org/action/doBasicSearch?Query=Erminie+Huntress&filter=",
+        "url": "https://www.jstor.org/action/doBasicSearch?Query=Erminie+Huntress&filter=",
         "abstract": "",
         "quotes": {
             "p117": "The least important use of the term 'sons of God' is its application to supernatural beings, reflecting the polytheistic notion of a group of family of gods, beings devine by nature who later became angels. This is illustrated in Gen 6:2,4; Job 1:6,2:1, 38:7; Psa 29:1, 89:6, 82; Da 3:25",
@@ -1018,7 +1024,7 @@ var BibDat_ZiZi = BibDat =
     "BianXinJinGang2013web": {
         "doctype": "webpage",
         "author": "变形金刚",
-        "title":"利玛窦摸索出一套用罗马字母为汉字注音的方法",
+        "title": "利玛窦摸索出一套用罗马字母为汉字注音的方法",
         "year": "2016",
         "Urldate": "2019",
         "url": "http://bianxing-jingang.hxwk.org/2013/04/12/%e6%b1%89%e5%ad%97%e6%8b%bc%e9%9f%b3%e5%8c%96%ef%bc%8c%e7%be%8e%e6%a2%a6%e9%9a%be%e6%88%90%e7%9c%9f/",
@@ -1572,25 +1578,25 @@ var BibDat_ZiZi = BibDat =
             "1": "The Origin of species, one of the most influential books ever written, was published on 24 November 1859. 1,250 copies of the first edition were printed. (See Freeman 1977, pp. 73ff.) The number that survive today is not yet known, but the Darwin Census is conducting a detailed survey. At least twenty-three presentation copies of the first edition are known, none signed by Darwin himself. The verso of the front free endpaper of this presentation copy is inscribed 'From the Author' by a clerk at the publisher John Murray. The recto is inscribed 'F Darwin Cambridge'. The upper right corner of the title page is marked with Darwin family shelf-marks in pencil. The number '92' corresponds to the number given in the 'Catalogue of the Library of Charles Darwin' DAR240, which demonstrates that this copy originally belonged to Charles Darwin."
         }
     },
-    "ZengWen2018article":{
-        "doctype":"article",
-        "author":"曾雯 等",
-        "authorinfo":"作者：曾雯 山东大学历史文化学院；李佳伟 吉林大学生命科学学院；岳洪彬 王明辉 中国社会科学院考古研究所；周慧 吉林大学生命科学学院；朱泓 吉林大学边疆考古研究中心； 原文刊于《华夏考古》2018年第2期）",
-        "title":"2004年殷墟大司空遗址出土人骨线粒体DNA研究报告(Yinxu Human Bones of Dasikong linear DNA Research Report)",
-        "journal":"华夏考古 HuaXia KaoGu",
-        "vol":"2",
-        "year":"2018-06-26",
-        "pape":"",
+    "ZengWen2018article": {
+        "doctype": "article",
+        "author": "曾雯 等",
+        "authorinfo": "作者：曾雯 山东大学历史文化学院；李佳伟 吉林大学生命科学学院；岳洪彬 王明辉 中国社会科学院考古研究所；周慧 吉林大学生命科学学院；朱泓 吉林大学边疆考古研究中心； 原文刊于《华夏考古》2018年第2期）",
+        "title": "2004年殷墟大司空遗址出土人骨线粒体DNA研究报告(Yinxu Human Bones of Dasikong linear DNA Research Report)",
+        "journal": "华夏考古 HuaXia KaoGu",
+        "vol": "2",
+        "year": "2018-06-26",
+        "pape": "",
         "publisher": "",
-        "isbn":"",
+        "isbn": "",
         "url": "http://www.kaogu.cn/cn/xueshuyanjiu/yanjiuxinlun/kejikaogu/2018/0626/62364.html",
         "abstract": "Yinxu people are highly mixed races. range from Asia, Mongos and Eruops",
         "url-1": "http://www.kaogu.cn/cn/xueshuyanjiu/yanjiuxinlun/kejikaogu/2018/0626/62364.html",
         "isbn": "",
         "quotes": {
             "p1": "",
-            "p102-103":"本实验6个样本获得6个不同的单倍型，分属于4个不同的单倍型类群，单倍型类群多样性较高。属于同一单倍型D的NO.1、NO.4、 NO.5序列差别较大，且属不同亚型。提示殷墟商代晚期自由民的组成应该是复杂多样的，人群来源可能也是多元的。通过对殷墟中小墓人骨所做体质人类学研究发现，商代 晚期居民的体质类型包括“古中原类型”和“古东北类型”两种［3］。此外，还可以看到2004 年殷墟大司空遗址出土人骨线粒体 DNA 研究报告 103 在殷墟存在有来自诸如当时东方夷人人群的踪迹［4]",
-            "p103":"集各中心于一身的殷都为来自不同地域、不同种族的人群提供了一个开放的平台，为各人群基因的交流、体质的融合造了机缘。这都在一定程度上印证了殷墟商代晚期居民人群构成多元的推论。",
+            "p102-103": "本实验6个样本获得6个不同的单倍型，分属于4个不同的单倍型类群，单倍型类群多样性较高。属于同一单倍型D的NO.1、NO.4、 NO.5序列差别较大，且属不同亚型。提示殷墟商代晚期自由民的组成应该是复杂多样的，人群来源可能也是多元的。通过对殷墟中小墓人骨所做体质人类学研究发现，商代 晚期居民的体质类型包括“古中原类型”和“古东北类型”两种［3］。此外，还可以看到2004 年殷墟大司空遗址出土人骨线粒体 DNA 研究报告 103 在殷墟存在有来自诸如当时东方夷人人群的踪迹［4]",
+            "p103": "集各中心于一身的殷都为来自不同地域、不同种族的人群提供了一个开放的平台，为各人群基因的交流、体质的融合造了机缘。这都在一定程度上印证了殷墟商代晚期居民人群构成多元的推论。",
         }
     },
     "CarlesGore1891book": {
@@ -1606,8 +1612,8 @@ var BibDat_ZiZi = BibDat =
         "isbn": "",
         "quotes": {
             "p1": "(1) The conception entertained in ealy Greek theology of the supernatural in its relation to nature. pp44-47",
-            "p2":"(2) The relation of Ebienism and Gnosticism to the theology of the NT and the 2ns century. pp91-96",
-            "p3":"Christianity is absolute faith in a certain Person, Jesus Christ"
+            "p2": "(2) The relation of Ebienism and Gnosticism to the theology of the NT and the 2ns century. pp91-96",
+            "p3": "Christianity is absolute faith in a certain Person, Jesus Christ"
         }
     },
     "GarrickVAllenAndKaiAkagiAndPaulSloan2019book": {
@@ -1620,20 +1626,20 @@ var BibDat_ZiZi = BibDat =
         "url": "",
         "abstract": "",
         "url-1": "http://web.a.ebscohost.com/ehost/ebookviewer/ebook/ZTAwMHhuYV9fMjIzNDk3MV9fQU41?sid=6db94b9d-d702-47d7-a174-7b0e773da160@sessionmgr4008&vid=0&format=EB&lpid=lp_9&rid=0",
-        "url-2":"https://www.google.com/books/edition/Son_of_God/U8fhDwAAQBAJ?hl=en&gbpv=1&dq=Son+of+God&printsec=frontcover",
+        "url-2": "https://www.google.com/books/edition/Son_of_God/U8fhDwAAQBAJ?hl=en&gbpv=1&dq=Son+of+God&printsec=frontcover",
         "isbn": "",
         "quotes": {
             "p1": "In antiquity, “son of god”—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God's son(s) in ancient Jewish and early Christian literature. Through close readings of relevant texts from multiple ancient corpora, including the Hebrew Bible, the New Testament, the Dead Sea Scrolls, Greco-Roman texts and inscriptions, early Christian and Islamic texts, and apocalyptic literature, the chapters in this volume engage a range of issues including messianism, deification, eschatological figures, Jesus, interreligious polemics, and the Roman and Jewish backgrounds of early Christianity and the authors of the Dead Sea Scrolls. The essays in this collection demonstrate that divine sonship is an ideal prism through which to better understand the deep interrelationship of ancient religions and their politics of kingship and divinity. In addition to the editors, the contributors to this volume include Richard Bauckham, Max Botner, George J. Brooke, Jan Joosten, Menahem Kister, Reinhard Kratz, Mateusz Kusio, Michael A. Lyons, Matthew V. Novenson, Michael Peppard, Sarah Whittle, and N. T. Wright.",
 
-            "p9":"The claim of Jesus to be the son of God, asserted by the NT, is one of the most difficult aspects of Christian religion. It not only makes Christian's relationshp to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modern world. The description of a person or a heavenly being as 'Son of God' is not self-evident, particulary under the conditions of the Enlightenment and according to our categories of understanding. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term 'son'.  To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a 'son of God' is.",
+            "p9": "The claim of Jesus to be the son of God, asserted by the NT, is one of the most difficult aspects of Christian religion. It not only makes Christian's relationshp to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modern world. The description of a person or a heavenly being as 'Son of God' is not self-evident, particulary under the conditions of the Enlightenment and according to our categories of understanding. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term 'son'.  To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a 'son of God' is.",
 
-            "p10":"Psa2:7 (my son, whome I have gegotten today.) As in Egypt, the act of enthronement signifies the procreation of the king as a god. We dealing here with a metaphorical understanding of the title of 'son of God'. The image depicts the generic concept in concrete terms and expresses the divine quality through the idea of biological descent. This figurative use of language is also the basis of the promise to David in 2Sa 7:14 'I will be his father, and he will be my son. When he does wrong, I will punish him with the rod of men, with floggings inflicted by men.' (2Sa7:14 NIV) Furthermore, this usage is transferred to the people of Israel, to the exiles, and finally to the poius, who are called 'sons of God'. Addresing God as 'father' in prayers also makes uses of figurative speech.[WD:this is to prove that Jesus preexist over the world]",
+            "p10": "Psa2:7 (my son, whome I have gegotten today.) As in Egypt, the act of enthronement signifies the procreation of the king as a god. We dealing here with a metaphorical understanding of the title of 'son of God'. The image depicts the generic concept in concrete terms and expresses the divine quality through the idea of biological descent. This figurative use of language is also the basis of the promise to David in 2Sa 7:14 'I will be his father, and he will be my son. When he does wrong, I will punish him with the rod of men, with floggings inflicted by men.' (2Sa7:14 NIV) Furthermore, this usage is transferred to the people of Israel, to the exiles, and finally to the poius, who are called 'sons of God'. Addresing God as 'father' in prayers also makes uses of figurative speech.[WD:this is to prove that Jesus preexist over the world]",
 
-            "p10a":"The title 'son of God' thus refers to the divine attribute of a heavenly or earthly being, bit it as a generic term for 'divine' or as a mythical and figurative way of speaking about the procreation and birth of a god. This is also the case in the few places in the Hebrew Bible that mention 'sons of God' Of all the locations in which we encounter the plural 'sons', only (Dan3:25) do we also find the sigular 'son of God'. in Aramaic. The usage continues in parabiblical writings and in the Dead Dea Scrolls. ",
+            "p10a": "The title 'son of God' thus refers to the divine attribute of a heavenly or earthly being, bit it as a generic term for 'divine' or as a mythical and figurative way of speaking about the procreation and birth of a god. This is also the case in the few places in the Hebrew Bible that mention 'sons of God' Of all the locations in which we encounter the plural 'sons', only (Dan3:25) do we also find the sigular 'son of God'. in Aramaic. The usage continues in parabiblical writings and in the Dead Dea Scrolls. ",
 
-            "p17":"Just as 'the son of man' (Dan7:18,7:27) represents the 'holy ones of the Most Hight', the people of the holy ones of the the most Hight, so could the 'son of God in 4Q246 represent the 'people of God in ii,4",
+            "p17": "Just as 'the son of man' (Dan7:18,7:27) represents the 'holy ones of the Most Hight', the people of the holy ones of the the most Hight, so could the 'son of God in 4Q246 represent the 'people of God in ii,4",
 
-            "":""
+            "": ""
         }
     },
 

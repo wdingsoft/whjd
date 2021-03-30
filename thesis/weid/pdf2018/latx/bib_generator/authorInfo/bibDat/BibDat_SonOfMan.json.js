@@ -102,6 +102,7 @@ var BibDat_SonOfMan = BibDat =
         "doctype": "book",
         "author": "Ivar Kristianslund",
         "booktitle": "Recent Six-day Creation: The Comforting Message of Scripture",
+        "title": "Recent Six-day Creation: The Comforting Message of Scripture",
         "year": "2019",
         "publisher": "Independently Published",
         "address": "",
@@ -158,13 +159,14 @@ var BibDat_SonOfMan = BibDat =
     },
     "RenbergAdamRobert2020Thesis": {
         "doctype": "phdthesis",
-        "thesis": "Thesis (Ph.D.) Advisors:Elliott, Mark",
+        "authorinfo": "Thesis (Ph.D.) Advisors:Elliott, Mark",
         "author": "Renberg, Adam Robert",
-        "authorinfo": "University of St Andrews",
+        "school": "University of St Andrews",
         "booktitle": "",
         "title": "The Son is truly Son : the Trinitarian and christological theology of Eusebius of Caesarea",
         "year": "2020",
-        "publisher": "A",
+        "publisher": "",
+        "school":"University of St Andrews",
         "isbn": "",
         "journal": "",
         "url-1": "http://web.b.ebscohost.com/ehost/detail/detail?vid=3&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bdata=JmF1dGh0eXBlPXNzbyZjdXN0aWQ9czMyNjA1MTgmc2l0ZT1laG9zdC1saXZl#AN=890CF40AB3B65601&db=ddu",
@@ -174,9 +176,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "EllisBrannonE2010master": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
         "author": "Ellis, Brannon E.",
+        "school":"",
         "authorinfo": "",
         "booktitle": "",
         "title": "God of himself : John Calvin, classical trinitarianism and the self-existence of the Son of God",
@@ -191,26 +193,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
-        "author": " ",
-        "authorinfo": "",
-        "booktitle": "",
-        "title": " ",
-        "year": " ",
-        "publisher": " ",
-        "isbn": "",
-        "journal": "",
-        "url-1": "f ",
-        "abstract": "",
-        "quotes": {
-            "": ""
-        }
-    },
     "LeeAquilaHyunIl2003Master": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+        "school":"",
         "author": "Lee, Aquila Hyun-Il. ",
         "authorinfo": "",
         "booktitle": "",
@@ -226,8 +211,8 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "Brindle, Wayne A.1988": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+        "school":"",
         "author": "Brindle, Wayne A.",
         "authorinfo": "",
         "booktitle": "",
@@ -243,10 +228,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "Ninan, Idicheria1994": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
         "author": "Ninan, Idicheria",
-        "authorinfo": "Coventry University",
+        "school": "Coventry University",
         "booktitle": "",
         "title": "Jesus as the Son of God : an examination of the background and meaning of 'Son of God' in Paul's Christology with particular reference to Romans 8",
         "year": "1994",
@@ -260,10 +244,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "ReynoldsBenjaminE2007": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
         "author": "Reynolds, Benjamin E.",
-        "authorinfo": "University of Aberdeen",
+        "school": "University of Aberdeen",
         "booktitle": "",
         "title": "The apocalyptic Son of Man in the Gospel of John",
         "year": "2007",
@@ -279,9 +262,10 @@ var BibDat_SonOfMan = BibDat =
 
 
     "Ketterling, Matthew D. 2018": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+   
         "author": "Ketterling, Matthew D.",
+        "school":"",
         "authorinfo": "",
         "booktitle": "",
         "title": "God's sons and the logic of the Covenant : divine sonship in 'Jubilees' and Romans",
@@ -297,8 +281,7 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "Fay, Ronald C.2006": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
         "author": "Fay, Ronald C.",
         "authorinfo": "",
         "booktitle": "",
@@ -315,8 +298,9 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "Thompson, Anthony Batiste, Jr. 2019": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+      
+        "school":"",
         "author": "Thompson, Anthony Batiste, Jr. 2019",
         "authorinfo": "",
         "booktitle": "",
@@ -333,8 +317,8 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "Smith, D. Blair. 2019": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+        "school":"",
         "author": "Smith, D. Blair.",
         "authorinfo": "",
         "booktitle": "",
@@ -351,8 +335,8 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "Ellingwood, Jane. 2015": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+        "school":"",
         "author": "Ellingwood, Jane. ",
         "authorinfo": "",
         "booktitle": "",
@@ -384,7 +368,6 @@ var BibDat_SonOfMan = BibDat =
     },
     " LangeJohnPeter2014book": {
         "doctype": "book",
-        "thesis": "",
         "author": "Lange, John Peter",
         "authorinfo": "",
         "booktitle": "Lange's Commentary on the Holy Scripture, Volume 1: Genesis to Ruth",
@@ -402,7 +385,7 @@ var BibDat_SonOfMan = BibDat =
 
     "KeilDelitzschwebpage": {
         "doctype": "webpage",
-        "thesis": "",
+      
         "author": " ",
         "authorinfo": "",
         "booktitle": "Bible Commentaries: Keil & Delitzsch Old Testament Commentary",
@@ -421,7 +404,7 @@ var BibDat_SonOfMan = BibDat =
 
     "RickBrownAndreaGrayAndLeithGray2011article": {
         "doctype": "article",
-        "thesis": "",
+     
         "author": "Rick Brown,Andrea Gray And Leith Gray",
         "authorinfo": "",
         "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
@@ -436,10 +419,9 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "TheWorldEvangelicalAlliance2016article": {
+    "WycliffeGlobalAlliance": {
         "doctype": "article",
-        "thesis": "",
-        "author": "",
+        "author": "Wycliffe Global Alliance",
         "authorinfo": "",
         "booktitle": "",
         "title": "Divine Familial Terms Translation Procedures",
@@ -460,7 +442,7 @@ var BibDat_SonOfMan = BibDat =
 
     "familialgraphic": {
         "doctype": "webpage",
-        "thesis": "Mater",
+       
         "author": " ",
         "authorinfo": "",
         "booktitle": "",
@@ -619,8 +601,8 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "masterthesis",
+        "school":"",
         "author": " ",
         "authorinfo": "",
         "booktitle": "",
@@ -650,9 +632,11 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
+
+
     "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
+        "doctype": "phdthesis",
+        "thesis": "PhD",
         "author": " ",
         "authorinfo": "",
         "booktitle": "",
@@ -668,77 +652,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
-        "author": " ",
-        "authorinfo": "",
-        "booktitle": "",
-        "title": " ",
-        "year": " ",
-        "publisher": " ",
-        "isbn": "",
-        "journal": "",
-        "url-1": "f ",
-        "abstract": "",
-        "quotes": {
-            "": ""
-        }
-    },
 
-    "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
-        "author": " ",
-        "authorinfo": "",
-        "booktitle": "",
-        "title": " ",
-        "year": " ",
-        "publisher": " ",
-        "isbn": "",
-        "journal": "",
-        "url-1": "f ",
-        "abstract": "",
-        "quotes": {
-            "": ""
-        }
-    },
-
-    "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
-        "author": " ",
-        "authorinfo": "",
-        "booktitle": "",
-        "title": " ",
-        "year": " ",
-        "publisher": " ",
-        "isbn": "",
-        "journal": "",
-        "url-1": "f ",
-        "abstract": "",
-        "quotes": {
-            "": ""
-        }
-    },
-
-    "MichaelStoughII2011paper": {
-        "doctype": "master",
-        "thesis": "Master",
-        "author": " ",
-        "authorinfo": "",
-        "booktitle": "",
-        "title": " ",
-        "year": " ",
-        "publisher": " ",
-        "isbn": "",
-        "journal": "",
-        "url-1": "f ",
-        "abstract": "",
-        "quotes": {
-            "": ""
-        }
-    },
 
     "bookTemplate197book": {
         "doctype": "book",
