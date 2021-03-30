@@ -354,7 +354,7 @@ var BibDat_SonOfMan = BibDat =
         "doctype": "book",
         "author": "Jacques Ellul. Eugene, Or : Cascad",
         "booktitle": "If You Are the Son of God : The Suffering and Temptations of Jesus",
-        "title": "",
+        "title": "If You Are the Son of God : The Suffering and Temptations of Jesus",
         "year": "2014",
         "publisher": "Cascade Books",
         "isbn": "",
@@ -370,7 +370,7 @@ var BibDat_SonOfMan = BibDat =
         "author": "Lange, John Peter",
         "authorinfo": "",
         "booktitle": "Lange's Commentary on the Holy Scripture, Volume 1: Genesis to Ruth",
-        "title": " ",
+        "title": "Lange's Commentary on the Holy Scripture, Volume 1: Genesis to Ruth",
         "year": "2014",
         "publisher": "Delmarva Publications",
         "isbn": "",
@@ -382,13 +382,12 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "KeilDelitzschwebpage": {
+    "KeilDelitzschOldTestamentCommentarwebpage": {
         "doctype": "webpage",
-      
         "author": " ",
         "authorinfo": "",
         "booktitle": "Bible Commentaries: Keil & Delitzsch Old Testament Commentary",
-        "title": " ",
+        "title": "Bible Commentaries: Keil & Delitzsch Old Testament Commentary",
         "year": " ",
         "Urldate": "2019",
         "publisher": "",
@@ -438,19 +437,19 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "familialgraphic": {
+    "PhilipTrauring2018webpage": {
         "doctype": "webpage",
-       
-        "author": " ",
-        "authorinfo": "",
+        "author": "Philip Trauring",
+        "authorinfo": "born in Brookline, MA",
         "booktitle": "",
-        "title": " ",
-        "year": " ",
+        "title": "Hebrew Family and Genealogy Terms",
+        "year": "2018",
         "Urldate": "2019",
         "publisher": " ",
         "isbn": "",
         "journal": "",
         "url-1": "https://bloodandfrogs.com/2018/04/hebrew-family-and-genealogy-terms.html",
+        "url-2": "https://bloodandfrogs.com/wp-content/uploads/2018/04/Hebrew-English-Family-Terms-Chart-0.2.jpg",
         "abstract": "",
         "quotes": {
             "": ""
@@ -462,12 +461,13 @@ var BibDat_SonOfMan = BibDat =
         "authorinfo": "",
         "title": "Is God Anti-Gay?",
         "journal": "Journal of Discipleship and Family Ministry",
-        "vol": " JDFM 05:1 (Fall 2015)",
+        "vol": "",
         "year": "2015",
         "pape": "p. 54",
         "publisher": "",
         "isbn": "",
         "url-1": "https://www-galaxie-com.eu1.proxy.openathens.net/article/jdfm05-1-05",
+        
         "quotes": {
             "p54": "Now Jesus says a couple of things; in verse 4 he says, “Have you not read that he who created them from the beginning made them male and female, and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’?” ",
             "Jesus is quoting from two different verses": "Jesus is quoting from two different verses, one in Genesis 1 and one in Genesis 2 and he puts them together. In this verse, what Jesus is saying is that our being created as men and women is connected to the fact that we have this thing called marriage. Because there is such a thing as gender, we have this phenomenon of marriage. Jesus tethers marriage to this sexual difference between men and women. Marriage is predicated on gender."
@@ -478,14 +478,14 @@ var BibDat_SonOfMan = BibDat =
         "doctype": "article",
         "author": "Nicholas J. Weyrens",
         "authorinfo": "(B.B.A., University of Mississippi) is an M.Div. student at Southern Seminary where he currently serves as the Assistant to the Associate Vice President of Online and Extension Education. He is married to Sarah. He writes regularly at Formed & Fueled (www.formedandfueled.com).",
-        "title": "Is God Anti-Gay?",
-        "journal": "One Man And One Woman: The Created Order And The Problem Of Same-Sex Marriage",
+        "title": "One Man And One Woman: The Created Order And The Problem Of Same-Sex Marriage",
+        "journal": "Journal of Discipleship and Family Ministry",
         "vol": " JDFM 05:1 (Fall 2015)",
         "year": "2015",
-        "pape": "p. 54",
+        "pape": "p. 143-47",
         "publisher": "",
         "isbn": "",
-        "url-1": "https://www-galaxie-com.eu1.proxy.openathens.net/article/jdfm05-1-05",
+        "url-1": "https://sbts-wordpress-uploads.s3.amazonaws.com/equip/uploads/2017/05/Nicholas-J.-Weyrens.pdf",
         "quotes": {
             "Marriage For The Purpose Of Procreation": "Marriage For The Purpose Of Procreation",
 
@@ -582,7 +582,7 @@ var BibDat_SonOfMan = BibDat =
             "1": "107 isbn 43,363"
         }
     },
-    "ArticleWalterTSwingle1917article": {
+    "article": {
         "doctype": "article",
         "author": "",
         "authorinfo": "",
@@ -598,7 +598,7 @@ var BibDat_SonOfMan = BibDat =
             "p121": ""
         }
     },
-    "MichaelStoughII2011paper": {
+    "masterthesis": {
         "doctype": "masterthesis",
         "school":"",
         "author": " ",
@@ -632,7 +632,7 @@ var BibDat_SonOfMan = BibDat =
     },
 
 
-    "MichaelStoughII2011paper": {
+    "": {
         "doctype": "phdthesis",
         "thesis": "PhD",
         "author": " ",
@@ -652,7 +652,7 @@ var BibDat_SonOfMan = BibDat =
 
 
 
-    "bookTemplate197book": {
+    "": {
         "doctype": "book",
         "author": "",
         "booktitle": "",
