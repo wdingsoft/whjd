@@ -24,7 +24,7 @@ var Uti = {
 
 
 function get_htm(obj) {
-    var PathBaseNode = obj.PathBaseNode;
+    var localhostbase = obj.localhostbase;
     var machine = "/Users/weiding/Sites";
     var urlbase = "http://localhost/";
     var localurl = "http://localhost//weidroot/weidroot_2017-01-06/app/bitbucket/wdingsoft/utis/zfrqCalc/htm/index.htm";
@@ -115,7 +115,7 @@ function get_htm(obj) {
         <script>
             function init_localhost_anchor(){
                 if(!localStorage.localhostbase){
-                    localStorage.localhostbase = ${PathBaseNode};//"/weidroot/";
+                    localStorage.localhostbase = ${localhostbase};//"/weidroot/";
                 }
                 var curUrl = ""+window.location.href;
                 var posi = curUrl.indexOf(localStorage.localhostbase);
@@ -255,7 +255,7 @@ function update_indxhtm() {
     var obj = DirFileUti.output;
     obj.reset()
     DirFileUti.getFary("./", obj);
-    obj.PathBaseNode = "/weidroot/";
+    obj.localhostbase = "/weidroot/";
     fs.writeFileSync(fname, get_htm(obj), "utf8");
     console.log("Update: " + fname);
 
