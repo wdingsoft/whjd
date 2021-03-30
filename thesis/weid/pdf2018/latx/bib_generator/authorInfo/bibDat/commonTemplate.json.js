@@ -58,7 +58,6 @@ var BibDat=
     
     "MichaelStoughII2011paper":{
         "doctype":"masterthesis",
-        "thesis": "Master",
         "author":" ",
         "authorinfo":"",
         "booktitle":"",
@@ -75,7 +74,6 @@ var BibDat=
     },
     "MichaelStoughII2011paper":{
         "doctype":"phdthesis",
-        "thesis": "PhD",
         "author":" ",
         "authorinfo":"",
         "booktitle":"",

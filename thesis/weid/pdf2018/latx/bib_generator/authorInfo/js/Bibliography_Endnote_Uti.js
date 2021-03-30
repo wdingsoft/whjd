@@ -132,10 +132,10 @@ var Bibliography_Endnote_Uti = {
                 ftn += `"${obj.title}." In: <cite>${src}</cite> (${month}${obj.year})`;
                 break;
             case "masterthesis":
-                ftn += `"${obj.title}". Master Thesis, ${obj.school}, ${obj.year}`;
+                ftn += `"<cite>${obj.title}</cite>" Master Thesis, ${obj.school}, ${obj.year}`;
                 break;
             case "phdthesis":
-                ftn += `${obj.title}. PhD Thesis, ${obj.school}, ${obj.year}`;
+                ftn += `"<cite>${obj.title}</cite>" PhD Thesis, ${obj.school}, ${obj.year}`;
                 break;
             case "book":
                 var boktit = obj.booktitle;
