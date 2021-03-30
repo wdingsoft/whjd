@@ -32,7 +32,7 @@ function get_htm(obj) {
     var htm = `
 <HTML>
     <HEAD>
-        <TITLE>ind</TITLE>
+        <TITLE>idxr</TITLE>
         <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
         <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
         <base target="_blank" />
