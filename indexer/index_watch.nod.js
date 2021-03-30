@@ -204,7 +204,11 @@ var DirFileUti = {
         m_olis: "",
         m_totSize: 0,
         m_totFiles: 0,
-        m_totDirs: 0
+        m_totDirs: 0,
+        reset: function () {
+            this.m_olis = ""
+            this.m_totSize = this.m_totFiles = m_totDirs = 0
+        }
     },
     getDirectories: function (srcpath) {
         return fs.readdirSync(srcpath).filter(function (file) {
@@ -218,40 +222,42 @@ var DirFileUti = {
             return fs.statSync(srcpath + '/' + file).isFile();
         });
     },
-    getFary: function (srcPath) {
+    getFary: function (srcPath, output) {
         var fary = this.getPathfiles(srcPath);
         var dary = this.getDirectories(srcPath);
-        this.output.m_totDirs += dary.length;
-        this.output.m_totFiles += fary.length;
+        output.m_totDirs += dary.length;
+        output.m_totFiles += fary.length;
         var nodnam = path.basename(srcPath);
         if (nodnam === ".") nodnam = "[ . / ]";
-        this.output.m_olis += `<span class='dir'><a class='dirNode' path='./${srcPath}'>${nodnam}</a> <a class='NumDirs'>( ${dary.length}</a> / <a class='NumFiles'>${fary.length} )</a><a class='totInfo'></a></span>\n
+        output.m_olis += `<span class='dir'><a class='dirNode' path='./${srcPath}'>${nodnam}</a> <a class='NumDirs'>( ${dary.length}</a> / <a class='NumFiles'>${fary.length} )</a><a class='totInfo'></a></span>\n
         <ol class='collapse'>\n`;
         for (var i = 0; i < dary.length; i++) {
             var spath = dary[i];
             //console.log(spath)
-            this.getFary(path.join(srcPath, spath));
+            this.getFary(path.join(srcPath, spath), output);
         }
         for (var k = 0; k < fary.length; k++) {
             var sfl = fary[k];
             var pathfile = path.join(srcPath, sfl);
             var stats = fs.statSync(pathfile);
-            this.output.m_totSize += stats.size;
-            this.output.m_olis += `<li class='lifile'><a class='file' href='${pathfile}'>${sfl}</a>  (<a class='fsize'>${stats.size.toLocaleString()}</a> B)</li>\n`;
+            output.m_totSize += stats.size;
+            output.m_olis += `<li class='lifile'><a class='file' href='${pathfile}'>${sfl}</a>  (<a class='fsize'>${stats.size.toLocaleString()}</a> B)</li>\n`;
         }
-        this.output.m_olis += "</ol>";
+        output.m_olis += "</ol>";
     }
 }
 
-function main() {
+function update_indxhtm() {
 
     var fname = "index.htm";
 
-    DirFileUti.getFary("./");
+
     var obj = DirFileUti.output;
+    obj.reset()
+    DirFileUti.getFary("./", obj);
     obj.PathBaseNode = "/weidroot/";
     fs.writeFileSync(fname, get_htm(obj), "utf8");
-    console.log("Now Run:> open " + fname);
+    console.log("Update: " + fname);
 
     var jsfname = "index.js";
     if (!fs.existsSync(jsfname)) {
@@ -259,23 +265,33 @@ function main() {
     }
 }
 
-var myArgs = process.argv.slice(2);
-if (myArgs.length === 1) {
-    var watch_dir = myArgs[0]
-    fs.watch(watch_dir, { recursive: true }, function (eventType, filename) {
-        console.log(`event type is: ${eventType}`);
-        if (filename) {
-            if (eventType === 'remane') {
-                main();
+function watch_dir() {
+    var myArgs = process.argv.slice(2);
+    if (myArgs.length === 1) {
+        var watchDir = myArgs[0]
+        fs.watch(watchDir, { recursive: true }, function (eventType, filename) {
+            console.log(`\n-event type: ${eventType}\n-filename: ${filename}`);
+            if (filename && "index.htm" !== filename && "." !== filename[0]) {
+                //console.log(`-filename provided: ${filename}`);
+                setTimeout(function () {
+                    update_indxhtm();
+                }, 1000)
+                if (eventType === 'remane') {
+
+                }
+            } else {
+                console.log(`-filename not provided.`);
             }
-            console.log(`filename provided: ${filename}`);
-        } else {
-            console.log('filename not provided');
-        }
-    })
+
+        })
+        return watchDir
+    }
 }
 
 
-main();
-console.log("watch:", watch_dir)
+
+
+update_indxhtm();
+var ret = watch_dir();
+console.log("watchDir:", ret)
 

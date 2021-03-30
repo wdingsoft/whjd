@@ -1,6 +1,43 @@
 <html>
 <head>
 	<title></title>
+	<script src="../../jquery-2_1_3.min.js"></script><script>
+
+
+		$(function () {
+			gen_tab_js()
+		})
+		function gen_tab_js(){
+			var FamilialVocCode={}
+			$("#FamilialVocabularyStats").find("tr").each(function () {
+				var heb = $(this).find("td:eq(1)").text()
+				var hebar = heb.split("\n")
+				console.log(hebar)
+
+				var Count = $(this).find("td:eq(2)").text()
+				var mat = Count.match(/([0-9]+)\/([0-9]+)/i)
+				var ge =0, ot=0
+				if(mat) {
+					console.log(mat)
+					ge = mat[1]
+					ot = mat[2]
+				}
+
+				var strnCod = $(this).find("td:eq(3)").text()
+
+				var eng = $(this).find("td:eq(4)").text()
+				var engar = eng.split(/[\s\(\,]/g)
+
+				FamilialVocCode[strnCod]={Hebrew:hebar[0], Count:[ge,ot], Eng:engar[0]}
+			})
+			console.log(FamilialVocCode)
+			var outs = JSON.stringify(FamilialVocCode, null, 4)
+			console.log(outs)
+		}
+
+
+
+	</script>
 </head>
 <body>
 <div>&nbsp;</div>
@@ -27,7 +64,7 @@
 			<th scope="col">Notes</th>
 		</tr>
 	</thead>
-	<tbody>
+	<tbody id="FamilialVocabularyStats">
 		<tr>
 			<td>1</td>
 			<td>אָדָם<br />
@@ -35,7 +72,7 @@
 			<td>38/552=<br />
 			0.069</td>
 			<td><a href="https://www.blueletterbible.org/lang/Lexicon/Lexicon.cfm?strongs=H120&amp;t=KJV" id="yui-gen34">H120</a></td>
-			<td>mankind(1:26-27),<br />
+			<td eng="man">mankind(1:26-27),<br />
 			Adam(2:7),<br />
 			earth(2:6)</td>
 			<td>1:26<br />
@@ -57,7 +94,7 @@
 			<td>14/81=<br />
 			0.173</td>
 			<td>H2145</td>
-			<td>male</td>
+			<td eng="male">male</td>
 			<td>1:27<br />
 			&#39;God&#39;</td>
 			<td>5:12,&nbsp;<br />
@@ -274,7 +311,7 @@
 			<td>15</td>
 			<td>דּוֹדָה<br />
 			<em>dodow</em></td>
-			<td>0/3</td>
+			<td>0/3=0</td>
 			<td>H1733</td>
 			<td>aunt</td>
 			<td>Exo6:20<br />
@@ -289,7 +326,7 @@
 			<td>16</td>
 			<td>דּוֹד<br />
 			<em>dode</em></td>
-			<td>0/61</td>
+			<td>0/61=0</td>
 			<td>H1730</td>
 			<td>uncle</td>
 			<td>Lev10:4<br />
@@ -304,7 +341,7 @@
 			<td>17</td>
 			<td>&sigma;&upsilon;&gamma;&gamma;&epsilon;&nu;ή&sigmaf;<br />
 			<em>syngenes</em></td>
-			<td>0/0</td>
+			<td>0/0=0</td>
 			<td>G4773</td>
 			<td>cousin,<br />
 			uncle/aunt&#39;s child</td>
@@ -318,7 +355,7 @@
 			<td>18</td>
 			<td>&mu;ά&mu;&mu;&eta;<br />
 			<em>mamme</em></td>
-			<td>0/0(1)</td>
+			<td>0/0(1)=0</td>
 			<td>G3125</td>
 			<td>grandmother</td>
 			<td>2Ti1:5</td>
@@ -565,11 +602,129 @@
 			<td>&nbsp;</td>
 			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H5763&amp;t=KJV" id="yui-gen28" title="English: milch, young, ewes great with young, those that are young">עוּל&nbsp;(H5763)</a></td>
 		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אֱלֹהִים<br />
+			Elohim</td>
+			<td>189/2606</td>
+			<td>H430</td>
+			<td>God</td>
+			<td>Gen1:1</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Plural of אֱלוֹהַּ (H433) -- Probably prolonged (emphat.) from אֵל (H410)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>יְהֹוָה<br />
+			Yahweh</td>
+			<td>141/6519</td>
+			<td>H3068</td>
+			<td>YHWY,<br />
+			Jehova,<br />
+			the existing One</td>
+			<td>Gen2:4</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From הָיָה (H1961)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אָדוֹן<br />
+			Adonai</td>
+			<td>60/335</td>
+			<td>H113</td>
+			<td>LORD,master<br />
+			&nbsp;</td>
+			<td>Gen18:12</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From an unused root (meaning to rule)</td>
+		</tr>
 	</tbody>
 </table>
 
 <div>&nbsp;</div>
 </div>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>Form of Address of God</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Hebrew</th>
+			<th scope="col">Count</th>
+			<th scope="col">Strong</th>
+			<th scope="col">Translierature</th>
+			<th scope="col">Root</th>
+			<th scope="col">English</th>
+			<th scope="col">1st-Verse</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אֱלֹהִים</td>
+			<td>2606</td>
+			<td>H430</td>
+			<td>Elohim&nbsp;</td>
+			<td>Plural of אֱלוֹהַּ (H433) -- Probably prolonged (emphat.) from אֵל (H410)</td>
+			<td>God</td>
+			<td>Gen1:1</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>יְהֹוָה</td>
+			<td>6519</td>
+			<td>H3068</td>
+			<td>Yahweh,</td>
+			<td>From הָיָה (H1961)</td>
+			<td>
+			<div>YHWY, Jehova, the Lord</div>
+
+			<div>&quot;the existing One&quot;</div>
+			</td>
+			<td>Gen2:4</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אָדוֹן</td>
+			<td>197</td>
+			<td>H113</td>
+			<td>Adonai</td>
+			<td>From an unused root (meaning to rule)</td>
+			<td>
+			<div>LORD, master,</div>
+
+			<div>refer to men:&nbsp;</div>
+
+			<div>master, husband, prophet, governor, prince, captain, priest, king.</div>
+
+			<div>&nbsp;</div>
+
+			<div>reference to God:</div>
+
+			<div>Adonai (parallel with Yahweh), Lord of&nbsp;the whole earth.&nbsp;</div>
+			</td>
+			<td>Gen18:12</td>
+		</tr>
+	</tbody>
+</table>
 
 <p>ii</p>
 
@@ -926,6 +1081,23 @@ early 15c., &quot;servants of a household,&quot; from Latin&nbsp;familia&nbsp;&q
 <div>&nbsp;</div>
 
 <div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>Good question and rationale, but weak on the type of evidence to be collected. Will it be exegetical, theological, historical or other?</div>
+
+<div>Good questions articulated. My question is whether your secondary research questions are going to take you farther out and involve more than your operational questions would imply. I assume that you will use indexes such as ATLA and exegetical commentaries (secondary sources) to help in your exegetical studies.</div>
+
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>Will you bring any discussion of Ephesians 5:22-33 where Paul says speaks of Christ and the Church as being in some way typified in the union of husband and wife? Generally in your claim and evidence, you are on the right track, but your sentence structure needs to be smoothed out and the connection between the familial vocabulary in Genesis 1-5 and Christology, need to be made stronger.</td>
+			<td>Igou Hodges, Mar 29 at 6:54pm</td>
+		</tr>
+	</tbody>
+</table>
+</div>
 
 <div>&nbsp;</div>
 
