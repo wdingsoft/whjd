@@ -49,7 +49,7 @@ var BibDat =
         "journal": "",
         "vol": "",
         "year": "",
-        "pape": "",
+        "page": "",
         "publisher": "",
         "isbn": "",
         "url-1": "",

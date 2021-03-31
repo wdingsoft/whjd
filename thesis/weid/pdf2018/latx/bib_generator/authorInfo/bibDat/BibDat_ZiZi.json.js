@@ -1586,7 +1586,7 @@ var BibDat_ZiZi = BibDat =
         "journal": "华夏考古 HuaXia KaoGu",
         "vol": "2",
         "year": "2018-06-26",
-        "pape": "",
+        "page": "",
         "publisher": "",
         "isbn": "",
         "url": "http://www.kaogu.cn/cn/xueshuyanjiu/yanjiuxinlun/kejikaogu/2018/0626/62364.html",
