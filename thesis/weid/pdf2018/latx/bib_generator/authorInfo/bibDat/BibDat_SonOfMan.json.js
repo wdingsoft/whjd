@@ -154,7 +154,24 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "url-1": "https://www.academia.edu/37136137/Two_Notes_on_Eve",
         "quotes": {
-            "p121": ""
+            "p33a": "As a result of the writer's recent investigation into a comparison between the Old Babylonian version the Atra-hasis epic and the first eleven chapters of Genesis, two points have emerged that concern Eve in her role as a creatress of man, In general, it has been my contention that Atra-hasis and Genesis 1-11 are parallel in literacy structure and in many motifs, and yet they express completely opposite views on the main ideological issues.",
+
+            "p33b":"The etiological aspect of the name hawwab, Eve, in Gen 3:20 deserves another look. Jan Heller suspected that the phrase em-kol-bay, (mother of all living) itself could be construed as an honorific name or a title for a great lady. Heller speculated that a remote ancestor of the title, 'mother of all the living'  may have existed in a cult of the Great Mother or the Mother Goddess, although he did not provide literacy evidence from any source to support his conjecture. The recent publication of the Old Babylonian Atra-hasis epic, however, seems to give us a literal as well as a thematic parallel to the Genesis title. 'mother of all the living.' ",
+
+            "p33c":"The word-for-word counterpart of 'mother of all the living' in that epic is found in the honorific name for the goddess Mami, the creatress, who is, at one point, called belet-kada-ili, 'mistress of all the gods'",
+
+            "p33d": "It should note that the formula for this new name, 'x of all they y,' is the same as in the title for Eve, 'mother of all the living.' The same formular used for personal names has been isolated by Herbett Huffmon under the category of significant developments in the biblical material.", 
+
+            "p34d":"I would suggest, then, that behind the character of Eve was probably hidden the figure of the creatress of the mother-goddess Mami, and that hawwah Eve was an onomastic form derived from her title, 'em kol-hay. [Weid: why not to think that Mami was derived from Eve?]",
+
+            "p35":"... The OT does not do away with the personality of Mami entirely but rather ascribes it to the figure of the first human mother. That is, Eve receives some of the attributes of the creatress in addition to the character of the created, and thereby a transparent added image is superimposed upon her.",
+
+            "35b":"Qanity-ss-et-Yhwh: Further evidence may be adduced in support of the view that Eve is a fusion of two characters. The second and the only other time the name Eve appears in the OT is Gen 4:1, where Eve conceived and bore Cain and she said, qamiti-is-et-Yhweb, normally translated, 'I have gained a man et-Yhwh.' The usage of the grammatical element et- in the phrase et-Yhwh has caused no little controversy. But I believe that new light may now be shed on it.",
+
+            "p37":"Eve's success is dependent on Yhwh at Gen 4:1. We may review the parallels between Eve and Mami at this point. ",
+
+            "p37b":"As we saw earlier, Eve reflects two formerlyyy separate characters, one the creatress and the other the created; so ",
+
         }
     },
     "RenbergAdamRobert2020Thesis": {
