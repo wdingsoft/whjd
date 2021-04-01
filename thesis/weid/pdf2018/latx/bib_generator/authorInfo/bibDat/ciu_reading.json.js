@@ -142,14 +142,6 @@ var  ciu_reading = BibDat =
         "abstract": "",
         "quotes": {
             "p11": "adoption, in the Greek word huiothesia, comprises two words: huios (son) and thesis (plating). Huiothesia is unique to the writings of the apostle Paul, occuring five times in three of his letters (Rom 8:15, 23; 9:4; Gal 4:5; Eph 1:5)",
-
-            "p10a": "The Message of Sonship should not be taken to exclude females;indeed, it would have better to have used the word 'children', but the Message of the Children of God did not have the same ring as 'sonship' nor did it fit with the mostly one-word title of the other volumes in the Bible Speak Today series.",
-
-            "p10b": "During the writing D.A. Carson, ... made the infightful remark that the notion of sonship was probably the lager biblical concept of which adopted sonship was a part.",
-
-            "p10c": "The reason for writing this book are to inform, but also to encourage, edify and strengthen the faith of all Christians who are part of the church, the family of God. It is to hope that pastors would preach some of these inportant text. I trust that the book will be useful for individual and group Bible study of what is an overlooked and neglected biblical theme.",
-
-            "p10d": "One legitimate way of 'doing' biblical theology is through narrative and I have endeavoured to use the metaphor of sonship as a means of understading the biblical story."
         }
     },
     "DavidBGarner2017book": {
@@ -163,15 +155,7 @@ var  ciu_reading = BibDat =
         "year": "2017",
         "abstract": "Rarely addressed throughout church history, the doctrine of adoption has seen fresh attention in recent years. Although valuable, contemporary studies have focused primarily on etymological, cultural, and pastoral considerations, giving little to no attention to vital systematic theological concerns. In this groundbreaking work, Professor David Garner examines the function of adoption in Pauline thought: its relationship to the doctrines of Christ, the Holy Spirit, eschatology, and union with Christ, as well as its primary place among the other benefits of salvation. Adoption frames Pauline soteriology, Garner argues, and defines the Trinitarian, familial context of redemption in Christ, the Son of God. Properly understood, adoption's paradigm-shifting implications extend deep and far. Endorsed by Joel R. Beeke, Dan Cruver, Richard B. Gaffin Jr., Howard Griffith, Nancy Guthrie, Russell Moore, Harry L. Reeder, and Guy Prentiss Waters.",
         "quotes": {
-            "p11": "adoption, in the Greek word huiothesia, comprises two words: huios (son) and thesis (plating). Huiothesia is unique to the writings of the apostle Paul, occuring five times in three of his letters (Rom 8:15, 23; 9:4; Gal 4:5; Eph 1:5)",
-
-            "p10a": "The Message of Sonship should not be taken to exclude females;indeed, it would have better to have used the word 'children', but the Message of the Children of God did not have the same ring as 'sonship' nor did it fit with the mostly one-word title of the other volumes in the Bible Speak Today series.",
-
-            "p10b": "During the writing D.A. Carson, ... made the infightful remark that the notion of sonship was probably the lager biblical concept of which adopted sonship was a part.",
-
-            "p10c": "The reason for writing this book are to inform, but also to encourage, edify and strengthen the faith of all Christians who are part of the church, the family of God. It is to hope that pastors would preach some of these inportant text. I trust that the book will be useful for individual and group Bible study of what is an overlooked and neglected biblical theme.",
-
-            "p10d": "One legitimate way of 'doing' biblical theology is through narrative and I have endeavoured to use the metaphor of sonship as a means of understading the biblical story."
+           
         }
     },
 
