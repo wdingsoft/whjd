@@ -315,7 +315,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "SmithDBlair2019": {
+    "SmithDBlair2019masterthesis": {
         "doctype": "masterthesis",
         "school":"",
         "author": "Smith, D. Blair.",
@@ -333,7 +333,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "EllingwoodJane2015": {
+    "EllingwoodJane2015masterthesis": {
         "doctype": "masterthesis",
         "school":"",
         "author": "Ellingwood, Jane. ",
@@ -350,7 +350,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "JacquesEllulEugene2014": {
+    "JacquesEllulEugene2014book": {
         "doctype": "book",
         "author": "Jacques Ellul. Eugene, Or : Cascad",
         "booktitle": "If You Are the Son of God : The Suffering and Temptations of Jesus",
@@ -382,7 +382,7 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "KeilDelitzschOldTestamentCommentarwebpage": {
+    "KeilDelitzschOldTestamentCommentar2019webpage": {
         "doctype": "webpage",
         "author": " ",
         "authorinfo": "",
@@ -416,7 +416,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "WycliffeGlobalAlliancearticle": {
+    "WycliffeGlobalAlliance2016article": {
         "doctype": "article",
         "author": "Wycliffe Global Alliance",
         "authorinfo": "",

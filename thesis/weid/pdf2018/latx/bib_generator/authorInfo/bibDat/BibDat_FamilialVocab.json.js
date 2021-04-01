@@ -24,14 +24,15 @@ var BibDat_FamilialVocab = BibDat =
         "doctype":"article",
         "author":"Prickett, Stephen",
         "authorinfo":"",
-        "title":"NARRATIVE, THEOLOGY AND LITERATURE",
+        "title":"Narrative, Theology And Literature",
         "journal":"Religion & Literature",
         "vol":"41 Issue 2",
         "year":"Summer2009",
         "page":"p206-212. ",
         "publisher":"",
         "isbn":"",
-        "url-1":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=8&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+theology&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-1":"https://www.jstor.org/stable/25676905?seq=1",
+        "url-2":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=8&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+theology&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
         "abstract":"The author points to the ways in which scholarship on the Bible and Qur'an inform the intersections of religion and literature. He argues that contemporary divisions between literary studies and theology belie the origins of literary study in the Bible on one hand and theology's need for aesthetics. He argues a long overdue family reunion in reading biblical exegesis as a parent and literary study as its talented independent-minded child. (AN: 51358058)",
         "quotes":{
             "p121":""
