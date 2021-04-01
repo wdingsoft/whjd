@@ -394,6 +394,7 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "",
         "url-1": "https://www.studylight.org/commentaries/eng/kdo/genesis-2.html",
+        "url-2":"",
         "abstract": "",
         "quotes": {
             "": "The design of God in the creation of the woman is perceived by Adam, as soon as he awakes, when the woman is brought to him by God. Without a revelation from God, he discovers in the woman “ bone of his bones and flesh of his flesh .” The words, “ this is now ( הפּעם lit., this time ) bone of my bones,” etc., are expressive of joyous astonishment at the suitable helpmate, whose relation to himself he describes in the words, “ she shall be called Woman, for she is taken out of man .” אשּׁה is well rendered by Luther, “ Männin ” (a female man), like the old Latin vira from vir . The words which follow, “ therefore shall a man leave his father and his mother, and shall cleave unto his wife, and they shall become one flesh,” are not to be regarded as Adam's, first on account of the על־כּן, which is always used in Genesis, with the exception of Genesis 20:6; Genesis 42:21, to introduce remarks of the writer, either of an archaeological or of a historical character, and secondly, because, even if Adam on seeing the woman had given prophetic utterance to his perception of the mystery of marriage, he could not with propriety have spoken of father and mother. They are the words of Moses, written to bring out the truth embodied in the fact recorded as a divinely appointed result, to exhibit marriage as the deepest corporeal and spiritual unity of man and woman, and to hold up monogamy before the eyes of the people of Israel as the form of marriage ordained by God. But as the words of Moses, they are the utterance of divine revelation; and Christ could quote them, therefore, as the word of God (Matthew 19:5). By the leaving of father and mother, which applies to the woman as well as to the man, the conjugal union is shown to be a spiritual oneness, a vital communion of heart as well as of body, in which it finds its consummation. This union is of a totally different nature from that of parents and children; hence marriage between parents and children is entirely opposed to the ordinance of God. Marriage itself, notwithstanding the fact that it demands the leaving of father and mother, is a holy appointment of God; hence celibacy is not a higher or holier state, and the relation of the sexes for a pure and holy man is a pure and holy relation. This is shown in Genesis 2:25 : “ They were both naked ערוּמּים, with dagesh in the מ, is an abbreviated form of עירמּים Genesis 3:7, from עוּר to strip), the man and his wife, and were not ashamed .” Their bodies were sanctified by the spirit, which animated them. Shame entered first with sin, which destroyed the normal relation of the spirit to the body, exciting tendencies and lusts which warred against the soul, and turning the sacred ordinance of God into sensual impulses and the lust of the flesh."
@@ -411,6 +412,7 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "January-February 2012 Mission Frontiers",
         "url-1": "https://www.missionfrontiers.org/pdfs/34-1-translating-familia-biblical-terms.pdf",
+        "url-2":"",
         "abstract": "",
         "quotes": {
             "": ""
@@ -427,6 +429,7 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "",
         "url-1": "https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
+        "url-2":"",
         "abstract": "",
         "quotes": {
             "p7": "How did the original audience understand the term 'son'?",
@@ -467,6 +470,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "https://www-galaxie-com.eu1.proxy.openathens.net/article/jdfm05-1-05",
+        "url-2":"",
         
         "quotes": {
             "p54": "Now Jesus says a couple of things; in verse 4 he says, “Have you not read that he who created them from the beginning made them male and female, and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’?” ",
@@ -486,6 +490,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "https://sbts-wordpress-uploads.s3.amazonaws.com/equip/uploads/2017/05/Nicholas-J.-Weyrens.pdf",
+        "url-2":"",
         "quotes": {
             "Marriage For The Purpose Of Procreation": "Marriage For The Purpose Of Procreation",
 
@@ -512,6 +517,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "file:///Users/weiding/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/wei13/myciu/class/2021-theo/subordination_in_the_trinity_and_gender_roles__a_response_to_recent_discussion_--_by__michael_f._bird.pdf",
+        "url-2":"",
         "quotes": {
 
             "Wayne Grudem, Systematic Theology: An Introduction to Biblical Doctrine (Grand Rapids: Zondervan, 1994), 459-60.": "man’s role is like that of God the Father, and the woman’s role is parallel to that of God the Son. They are equal in importance,but they have different roles",
@@ -534,6 +540,7 @@ var BibDat_SonOfMan = BibDat =
         "address": "",
         "url": "",
         "url-1": "http://eds.b.ebscohost.com/eds/detail/detail?vid=0&sid=66215aa9-f96b-4d22-bed0-cacc61791303%40sessionmgr102&bdata=JkF1dGhUeXBlPWlwLHNoaWImc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=2234971&db=nlebk",
+        "url-2":"",
         "isbn": "978-0-9830680-8-2",
         "abstract": "Son of God (Judaism) Son of God--History of doctrines--Early church, ca. 30-600.      In antiquity, “son of god”—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God's son(s) in ancient Jewish and early Christian literature. Through close readings of relevant texts from multiple ancient corpora, including the Hebrew Bible, the New Testament, the Dead Sea Scrolls, Greco-Roman texts and inscriptions, early Christian and Islamic texts, and apocalyptic literature, the chapters in this volume engage a range of issues including messianism, deification, eschatological figures, Jesus, interreligious polemics, and the Roman and Jewish backgrounds of early Christianity and the authors of the Dead Sea Scrolls. The essays in this collection demonstrate that divine sonship is an ideal prism through which to better understand the deep interrelationship of ancient religions and their politics of kingship and divinity. In addition to the editors, the contributors to this volume include Richard Bauckham, Max Botner, George J. Brooke, Jan Joosten, Menahem Kister, Reinhard Kratz, Mateusz Kusio, Michael A. Lyons, Matthew V. Novenson, Michael Peppard, Sarah Whittle, and N. T. Wright.",
         "quotes": {
@@ -692,6 +699,7 @@ var BibDat_SonOfMan = BibDat =
         "year": "2018",
         "Urldate": "2019",
         "url": "https://weekly.israelbiblecenter.com/gods-name-quantum-physics/?via=71a7fa3&utm_source=email&utm_medium=email&utm_campaign=Email_Lead_Standalone_Insight_Study-the-Science-Behind-the-Bible_2021-3-6#71a7fa3",
+        "url-2":"",
         "notes": "",
         "quotes": {
             "1": "If we were to translate this understanding of God’s name into the language of quantum physics, we might call it “a superposition of all possible states.” Indeed, quantum mechanics posits that the particles or waves that apparently make up our universe (and us) can exist in all possible states at once – until someone carries out a “measurement.” Once you measure the location of a particle, it “collapses” to a single specific location. Perhaps the name of God, YHWH, is similar: it communicates Being in all states, dimensions, and times simultaneously – and if you try to define the meaning more specifically, you end up reducing it to just one aspect."

@@ -13,6 +13,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=8&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+theology&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-2":"",
         "abstract":": Humans are an ultrasocial species. This sociality, however, cannot be fully explained by the canonical approaches found in evolutionary biology, psychology, or economics. Understanding our unique social psychology requires accounting not only for the breadth and intensity of human cooperation but also for the variation found across societies, over history, and among behavioral domains. Here, we introduce an expanded evolutionary approach that considers how genetic and cultural evolution, and their interaction, may have shaped both the reliably developing features of our minds and the well-documented differences in cultural psychologies around the globe. We review the major evolutionary mechanisms that have been proposed to explain human cooperation, including kinship, reciprocity, reputation, signaling, and punishment; we discuss key culture–gene coevolutionary hypotheses, such as those surrounding self-domestication and norm psychology; and we consider the role of religions and marriage systems. Empirically, we synthesize experimental and observational evidence from studies of children and adults from diverse societies with research among nonhuman primates. [ABSTRACT FROM AUTHOR] DOI: 10.1146/annurev-psych-081920-042106. (AN: 147923563)",
         "quotes":{
             "p121":""
@@ -33,6 +34,7 @@ var BibDat_FamilialVocab = BibDat =
         "isbn":"",
         "url-1":"https://www.jstor.org/stable/25676905?seq=1",
         "url-2":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=8&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+theology&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-2":"",
         "abstract":"The author points to the ways in which scholarship on the Bible and Qur'an inform the intersections of religion and literature. He argues that contemporary divisions between literary studies and theology belie the origins of literary study in the Bible on one hand and theology's need for aesthetics. He argues a long overdue family reunion in reading biblical exegesis as a parent and literary study as its talented independent-minded child. (AN: 51358058)",
         "quotes":{
             "p121":""
@@ -51,6 +53,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=8&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+theology&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-2":"",
         "abstract":"Examines the hermeneutical starting points, frames of reference and assumptions that are involved in investigating personhood in the Old Testament. Origins of personhood; Analysis of texts from creation, the Jacob narrative, royal history, proverbial wisdom and psalms; Emergence of species, family dynamics, power politics and biblical spirituality in mind; Old Testament's offering of holistic perspective on being human and relating to God. (AN: 16247511)",
         "quotes":{
             "p121":""
@@ -86,6 +89,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=14&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+genesis&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-2":"",
         "abstract":"Dealing with the methodological challenge of historical expounding, this paper discusses the historical formation of child protection with regard to the history of ideas. The aim is to identify the early intellectual grounds of the idea of child protection. Due to the fact that the genesis and evolution of child protection are shaped by many kinds of moral, social, educational, judicial and political interests as well as varied educational, psychological, sociological and medical theories of child development, it is exceedingly laborious to define its core content. As a political concept, it germinated especially from aware people’s societal and ethical awareness of the social distress of children and families in modernising societies. As a construction of the human mind, it concerns essentially values, cognition and political aspirations. The emergence of organised child protection activities can be viewed as a reaction to the social change of each prevailing time shaped by country-specific societal and cultural features, including national moralities and ways of judicial and political thinking. However, there are also many common elements in the midst of diverse traditions, policies and practices of child protection. In the course of time child protection issues have been worked at more and more in international contexts. In the last three to four decades it has been externalised increasingly in terms of international conventions connecting closely with the concept of the rights of the child. [ABSTRACT FROM PUBLISHER] DOI: 10.1080/00309230.2016.1240210. (AN: 119451208)",
         "quotes":{
             "p121":""
@@ -104,6 +108,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/resultsadvanced?vid=14&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bquery=origin+AND+family+AND+genesis&bdata=JmRiPWFwaCZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d",
+        "url-2":"",
         "abstract":"The article discusses Israel as a community of twelve tribes with one common ancestor, according to Book of Chronicles of the Hebrew Bible. It investigates the origin and nature of the Israelite tribal system. It also discusses Israel's development from a small family into a clan to become a people and Israel's kinship identity as highlighted in the Book of Genesis. DOI: 10.1086/703323. (AN: 135139803)",
         "quotes":{
             "p121":""
@@ -140,6 +145,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/viewarticle/render?data=dGJyMPPp44rp2%2fdV0%2bnjisfk5Ie46bFKtKazSbak63nn5Kx95uXxjL6prUq3pbBIsKeeSa6ws0i4qrU4v8OkjPDX7Ivf2fKB7eTnfLujr1C1qbFOt6axS6Tp53y7r65QtqawTq%2bj5FC32qtMtq%2byRbbZtUmrqrdRsK62S7XZ5Euytu584aP0RfHb8Yvr3fBIsJzqeezdu33snOJ6u9fugKTq33%2b7t8w%2b3%2bS7SbCmrkmxr7NNpNztiuvX8lXu2uRe8%2bLqbOPu8gAA&vid=21&sid=90880261-f89d-4894-8c71-49928837cf34@pdc-v-sessmgr02",
+        "url-2":"",
         "abstract":"The article discusses the issues on the doctrine of eternal generation or the interpretations of key passages in the Bible to support a particular Christian doctrine and the eternal sonship of Jesus Christ. (AN: 120013955)",
         "quotes":{
             "p121":""
@@ -213,6 +219,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher":"",
         "isbn":"",
         "url-1":"http://web.b.ebscohost.com/ehost/detail/detail?vid=48&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bdata=JmF1dGh0eXBlPXNzbyZjdXN0aWQ9czMyNjA1MTgmc2l0ZT1laG9zdC1saXZl#AN=9604083801&db=aph",
+        "url-2":"",
         "abstract":"Proposes to verify the validity of the interpretation of the biblical passage concerning the creation of man and woman in Genesis 2:23-24. Examination of the text and sense of the passage; Literary nature of Genesis 2:24; Etiology of the passage. (AN: 9604083801)",
         "quotes":{
             "p121":""

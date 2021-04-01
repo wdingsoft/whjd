@@ -72,7 +72,7 @@ var  ciu_reading = BibDat =
         "title": "Encountering the Old Testament: A Christian Survey",
         "publisher": "Baker Academic",
         "year": "2015",
-        "abstract": "The many comparisons between Genesis 1-11 and ancient Near Eastern literature should not give the wrong impression. There is no evidence that the OT simply borrowed these paralles. Instead, the OT answered the same questions that other authors of the ancient world were considering--and in unique ways that expressed Israel's distinctive theology. Only the Bible gives an inspired answer to these important questions of life. Although the origin of Genesis are shrouded in mystery, we can be confident that God revealed the truth about creation and the nature of the world through the ancient Hebrew traditions. (p.53)"
+        "abstract": "The many comparisons between Genesis 1-11 and ancient Near Eastern literature should not give the wrong impression. There is no evidence that the OT simply borrowed these parallels. Instead, the OT answered the same questions that other authors of the ancient world were considering--and in unique ways that expressed Israel's distinctive theology. Only the Bible gives an inspired answer to these important questions of life. Although the origin of Genesis are shrouded in mystery, we can be confident that God revealed the truth about creation and the nature of the world through the ancient Hebrew traditions. (p.53)"
     },
     "CarolMeyers1983article": {
         "doctype": "article",
@@ -84,7 +84,7 @@ var  ciu_reading = BibDat =
         "pages": "p.569-593",
         "Bdsk-Url-1": "PPP_maleFemale.pdf",
         "Bdsk-Url-2": "http://eds.b.ebscohost.com/eds/pdfviewer/pdfviewer?vid=7&sid=eb26e243-b236-4bb3-976f-60586a076769@pdc-v-sessmgr03",
-        "abstract": "Genesis 1 recounting creation of humanity in God's image has often been understood as implying secual equality, by which females partake of God's image no less than do males, it actually is concerned with the biological pairing of the sexes rather than with shared roles (Bird, 1981). (p.571)\n\nWoman may be equal in creation with man in the full composition and perhaps even elevated in position according to the message of the story. \n\nThe solidarity and equality between man and woman in the ancient Yahwist creation account presents a situation which hardly seems to fit the patriarchal pattern readily discernible in the rest of the Bible."
+        "abstract": "Genesis 1 recounting creation of humanity in God's image has often been understood as implying sexual  equality, by which females partake of God's image no less than do males, it actually is concerned with the biological pairing of the sexes rather than with shared roles (Bird, 1981). (p.571)\n\nWoman may be equal in creation with man in the full composition and perhaps even elevated in position according to the message of the story. \n\nThe solidarity and equality between man and woman in the ancient Yahwist creation account presents a situation which hardly seems to fit the patriarchal pattern readily discernible in the rest of the Bible."
     },
     "StanleyJGrenz1998article": {
         "doctype": "article",
@@ -123,11 +123,11 @@ var  ciu_reading = BibDat =
 
             "p10a": "The Message of Sonship should not be taken to exclude females;indeed, it would have better to have used the word 'children', but the Message of the Children of God did not have the same ring as 'sonship' nor did it fit with the mostly one-word title of the other volumes in the Bible Speak Today series.",
 
-            "p10b": "During the writing D.A. Carson, ... made the infightful remark that the notion of sonship was probably the lager biblical concept of which adopted sonship was a part.",
+            "p10b": "During the writing D.A. Carson, ... made the insightful remark that the notion of sonship was probably the lager biblical concept of which adopted sonship was a part.",
 
-            "p10c": "The reason for writing this book are to inform, but also to encourage, edify and strengthen the faith of all Christians who are part of the church, the family of God. It is to hope that pastors would preach some of these inportant text. I trust that the book will be useful for individual and group Bible study of what is an overlooked and neglected biblical theme.",
+            "p10c": "The reason for writing this book are to inform, but also to encourage, edify and strengthen the faith of all Christians who are part of the church, the family of God. It is to hope that pastors would preach some of these important text. I trust that the book will be useful for individual and group Bible study of what is an overlooked and neglected biblical theme.",
 
-            "p10d": "One legitimate way of 'doing' biblical theology is through narrative and I have endeavoured to use the metaphor of sonship as a means of understading the biblical story."
+            "p10d": "One legitimate way of 'doing' biblical theology is through narrative and I have endeavored to use the metaphor of sonship as a means of understanding the biblical story."
         }
     },
     "TrevorJBurke2016book": {
