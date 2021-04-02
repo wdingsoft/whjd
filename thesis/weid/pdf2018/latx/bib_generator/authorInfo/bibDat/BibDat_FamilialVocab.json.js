@@ -342,10 +342,17 @@ var BibDat_FamilialVocab = BibDat =
         "page": "p119-129",
         "publisher": "",
         "isbn": "",
-        "url-1": "",
+        "url-1": "Gen224_2017_Origen_Commentary_Adam.pdf",
         "abstract": "Origen proposes many interpretations of the figure of Adam. One of these presents Adam as a typos of the soul of Christ, combining Rom 5:14 with the kenosis of Phil 2:6. From this, Origen derives various interpretations of Gen 1:27b and Gen 2:24, all of them interesting for understanding Origen's Christology and Soteriology as well as the responses he received from his adversaries. [ABSTRACT FROM AUTHOR] (AN: 134544889)Subjects: INCARNATION; SALVATION in Christianity; CHRISTIANITY; DOCTRINAL theology; THEOLOGY ",
         "quotes": {
-            "p121": ""
+            "p119d": "Adam, an ambivalent ancestor: Origen places Adam on the same level of historical reality as he does the successive patriarchs and prophets,",
+
+            "p120": "According to Origen, the pre-lapsarian Adam when he was still living in Eden was able to represent symbolically (a) the totality of rational creatures in the initial state of beatitude (b) the rational creature who was destined ultimately to become a ;human being’. (3) Adam represents the spirit of man and Eve the soul.     In Rom 5:14. Origen give two interpretations of the expression ‘a typos of that to come.’ The first presents Adam as a typos of the future age and the second as a typos of Christ. ",
+
+            "p122c": "As we would expect, the verse most cited by Origen is Gen 2:24, since it is mentioned both in the Gospel in the controversy over divorce and Eph 5:22-33",
+
+            "p122f": "In the commentary on Mattrw, Orign distinguish the male and female in Gen1:27b from the man and woman in Gen 2:24. The maile and female are referred to as thosie according the image, while the command of Gd in Gen 2:24 does not refer to them as according the image since right before there was the formation from the mud of the earth. "
+
         }
     },
     "PetersonBrianNeilMar2019article": {
