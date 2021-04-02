@@ -107,7 +107,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "Independently Published",
         "address": "",
         "url": "",
-        "abstract": "AbstractThis project argues that the biblical creation accounts give no room for macro-evolution. Exegetical work supported by literature research shows that the creation days consist of six ordinary 24-hour periods, each covering a night and a day. The universe was created ex nihilo on the first of the six creation days probably not much more than six thousand years ago. Since mainstream science draws a very different picture of reality, authoritative scientific sources have been briefly referred to, showing that biblical teaching can be found to be in harmony with sound natural science. Creation and the fall into sin are central events in Christian theology. It is decisive for sound ministry to know whether Genesis 1-11 is reliable history and what kind of history it is. This has been...",
+        "abstract": "This project argues that the biblical creation accounts give no room for macro-evolution. Exegetical work supported by literature research shows that the creation days consist of six ordinary 24-hour periods, each covering a night and a day. The universe was created ex nihilo on the first of the six creation days probably not much more than six thousand years ago. Since mainstream science draws a very different picture of reality, authoritative scientific sources have been briefly referred to, showing that biblical teaching can be found to be in harmony with sound natural science. Creation and the fall into sin are central events in Christian theology. It is decisive for sound ministry to know whether Genesis 1-11 is reliable history and what kind of history it is. This has been...",
         "url-1": "",
         "isbn": "9781688033917, 1688033912",
         "quotes": {
@@ -170,7 +170,7 @@ var BibDat_SonOfMan = BibDat =
 
             "p37":"Eve's success is dependent on Yhwh at Gen 4:1. We may review the parallels between Eve and Mami at this point. ",
 
-            "p37b":"As we saw earlier, Eve reflects two formerlyyy separate characters, one the creatress and the other the created; so ",
+            "p37b":"As we saw earlier, Eve reflects two formerly separate characters, one the creatress and the other the created; so ",
 
         }
     },
@@ -423,7 +423,7 @@ var BibDat_SonOfMan = BibDat =
         "author": "Rick Brown,Andrea Gray And Leith Gray",
         "authorinfo": "",
         "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
-        "title": "Translating Familial Biblical Terms:An Overview Of The Issue",
+        "title": "Translating Familial Biblical Terms: An Overview Of The Issue",
         "year": " ",
         "publisher": " ",
         "isbn": "",
@@ -432,7 +432,9 @@ var BibDat_SonOfMan = BibDat =
         "url-2":"",
         "abstract": "",
         "quotes": {
-            "": ""
+            "p26": "The Difference between Biological and Social Familial Terms: The biological father is the one who begets the children.  The social father is the one who raised the children as their father, looks after them and has authority over them. In a typical family, the same man is both the social and biological father. In some case, the social father of a child is not the biological father.",
+
+            "p30":"In order to accurately convey divine fatherhood and sonship, translators need to use expression that are as equivalent in meaning as possible to the Greek and Hebrew terms for social son(huios and ben) and social father (patre and ab) and to avoid biological expressions of the form God's Offsprint or the Procerator of our Lord Jesus Christ, because these are understood to signify biological relations generated through a sexual act of procreation. In this way translators can enable new audiences to understand the biblical sense in which God is our father and Christ is his son, as well as understand the relationship of Joseph to the boy Jesus."
         }
     },
     "WycliffeGlobalAlliance2016article": {
@@ -449,11 +451,17 @@ var BibDat_SonOfMan = BibDat =
         "url-2":"",
         "abstract": "",
         "quotes": {
-            "p7": "How did the original audience understand the term 'son'?",
+            "p7": "How did the original audience understand the term 'son'? (1) The son is normally derived by biological procreation (Gen 5:28), though adoptivee sons are also considerd 'son' (Exod 2:10) (2) A son is younder than his father. (3) a son shares a nature with his father, a son of a human will be human, a son of particular animal, will also be that particular animal. (4) a son is distinct from his father as a person. (5) a son often shares charaxteristics of his father, some are inherited, some are leeared. (6) a son identifies with his father as part of the fatherr's biological and or social familu. (7) a son receives affection, prootetion and care from his father. (8) a son has the authority to represent his father to others. (9) a son has a right to an inheritance, especially the eldest son. (10) a son is expcted to be oobedient to his fatherr, especially to learn and obey the Tora. ",
+
+            "p8":"Who is the referent of the term?  Son(s) of God as conceept refers to a number of biblical figures including Jesus. All of the following are called 'son' of God. (1) Adam Luke 3:38, (2) Angel and heavenly beings Job 1:6;2:1;38:7; Psa 29:1;89:7 (3) Israel Ex 4:22, Deut 14:1, Hos 1:0 (4) Davidic King Psa 2:7 Sam 7:14 (5) Jesuus Mark 1:11, Luk 1:32 8:28,John 1:49 3:16 (6) Believers Mat 5:45, Luke6:35 John 1:12  ",
 
             "p9": "What does 'son' in 'Son of God' mean?",
 
-            "p12": "The meaning of 'son of God' in pagan culture in New Testament times"
+            "p12": "The meaning of 'son of God' in pagan culture in New Testament times",
+
+            "p13":"Jesus (1)is derived from God (in an eternal, non-biblical way) (2) is obedient to God (3) has the characteristics of God (4) is identified with God in some way (5) is in an intimate relationship with the father (6) can act with God's authority (7) is the promised Messiah, who is in a special covenant relationship with God (8) is the King God has chosen (9) is the ruler who deserves to be followed and worshipped. ",
+
+            "p56":"Testing existing familial terms as used in the language: (1) a biological sense (2) a social sense (3) a metaphorical sense (e.g. father for leader, ancestor, origin of; so descendant, follower, having the characteristic of) (4) as a simile (e.g. God is like a caring father, ) "
         }
     },
 
@@ -472,7 +480,7 @@ var BibDat_SonOfMan = BibDat =
         "url-2": "https://bloodandfrogs.com/wp-content/uploads/2018/04/Hebrew-English-Family-Terms-Chart-0.2.jpg",
         "abstract": "",
         "quotes": {
-            "": ""
+            "jpg": "comparison of the modern familial terms with biblical terms."
         }
     },
     "SamAllberry2015article": {
