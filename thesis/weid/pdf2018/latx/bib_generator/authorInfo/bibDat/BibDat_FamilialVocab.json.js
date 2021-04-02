@@ -203,7 +203,7 @@ var BibDat_FamilialVocab = BibDat =
         "url-1": "",
         "abstract": "In recent decades the opponents of same-sex marriage have mounted a “second front” in the debate, shifting their focus from the so-called clobber texts to the creation narratives of Genesis. These scholars argue that Gen 2:24 presents a normative definition of marriage that precludes same-sex marriage. I argue that Gen 2:24 offers not a normative definition of the institution of marriage but a description of the powerful draw to relationship that is the result of God’s actions in creation. Just as interpreters of Gen 2:24 across centuries and traditions have approached the verse against the background of a wide range of presenting social issues (e.g., divorce, incest, polygamy, bestiality, and, more recently, homosexuality), so the authors of Gen 2:24 were influenced by a pressing social issue, namely, intermarriage. I explore this hypothesis by means of a word study focusing on the verse’s two verbs. The results of the word study are further tested by consideration of the historical and literary contexts of the verse and of the earliest instances of reuse of Gen 2:24 in canonical and noncanonical texts. I conclude that, far from presenting a normative definition of heterosexual marriage, Gen 2:24 is an acknowledgment of the powerful attraction that causes human beings to seek relationship in opposition to the wishes of their parents, society, and religion. [ABSTRACT FROM AUTHOR] DOI: 10.15699/jbl.1362.2017.241017. (AN: 124564536)",
         "quotes": {
-            "p121": ""
+            "269": ""
         }
     },
 
@@ -222,9 +222,34 @@ var BibDat_FamilialVocab = BibDat =
         "url-2": "",
         "abstract": "Proposes to verify the validity of the interpretation of the biblical passage concerning the creation of man and woman in Genesis 2:23-24. Examination of the text and sense of the passage; Literary nature of Genesis 2:24; Etiology of the passage. (AN: 9604083801)",
         "quotes": {
-            "p121": ""
+            "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, amd have therefor suuggested, although in passing and with differemt emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondaryy addition, an insertion, a glooss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24."
         }
     },
+
+    "JeromeTWalshJun1977article": {
+        "doctype": "article",
+        "author": "Jerome T. Walsh",
+        "authorinfo": "",
+        "title": "Genesis 2:4b-3:24: A Synchronic Approah",
+        "journal": "Journal of Biblical Literature",
+        "vol": "Vol. 96, No. 2 ,",
+        "year": "Jun.1977",
+        "page": "pp. 161-177",
+        "publisher": "",
+        "isbn": "",
+        "url-1": "https://www.jstor.org/stable/3265876?read-now=1&refreqid=excelsior%3A6322893b9a09e7cdf06693e18d2745b6&seq=1#page_scan_tab_contents",
+        "url-2": "",
+        "abstract": "The story of man and woman in the garden of Eden holds eternal fascination for scholar and layman alike. The",
+        "quotes": {
+            "p164m": "The first (v24) parallels v20b, revealing with a gnomic generalization that the problem of man’s solitude 18a has been definitively overcome.  v25 is relatively independent of 18-24 and bring the entire scene to a close with a prolepsis pointing forward to v3:7. ",
+
+            "177b": "The ‘meaning’ of a work of literature is communicated as much by the structure of the work as by surface ‘content.’ ",
+
+            "177c": "On a literary level, Gen2:4b-3:24 is a highly structured unit. The entire narrative focusses on the single world wayyo-kal in 3:6."
+        }
+    },
+
+
 
     "LawtonRobertBMar1986article": {
         "doctype": "article",
@@ -243,9 +268,9 @@ var BibDat_FamilialVocab = BibDat =
             "p97a": "problem 1: for a patriarchal society like ancient Israel it would have been more appropriate to say that a wife leaves her father and mother and cleaves to her husband, since the wife more obviously leaves her family than the man his. Therefore, some detect in this verse an echo of a matriarchal culture. But G. von Rad is no doubt correct when he says that this narrative 'is concerned not with a legal custom but with a natural drive.'",
 
             "p97b": "problem2: But there is a deeper problem. In the rich narrative in which it is embedded the verse sounds trite.. Triteness in literature and art is not always easy to judge. One must consider whether a phrase, scene, or painting seems hackneyed because of subsequent rather than prior usage. Moreover, ancient writers, redactors, and glossators were not immune from triteness, and we must also be careful not to fault ancient literature simply because of our own tastes. Biblical writers were more interested in etiologies than we are. ... Is there an alternate explanation?",
-            
+
             "p98a": "The Hebrew imperfect can be used with a potential force, corresponding to English 'can, may, should, would, could,' The usage can also occur in reference to past time.  In short, the verse can be understood as a description of divine intention rather than of habitually observed fact. It is true that there has been no mention of parenting in the narrative so far, but the reference to 'father and mother' can easily be excused as poetic license.",
-            
+
             "p98b": "If taken as suggested above, the verse becomes part of the series of reversals that occur after the Fall. Just as 2:25 is reversed by 3:7, so the unity desired in 2:24 is broken when the man does not accept responsibility for his own action but blames his wife(3:12). So 2:24 casts its shadow over the following narrative, helping to underline the tragedy of the Fall. ",
 
             "p98c": "Given the biblical interest in etiology, it is difficult to say if the understanding of the verse suggested here is more probable than the traditional one. But it is, at least, a tempting possibility.",
@@ -391,6 +416,57 @@ var BibDat_FamilialVocab = BibDat =
             "p121": ""
         }
     },
+
+    "ZionyZevit2013book": {
+        "doctype": "book",
+        "author": "Ziony Zevit",
+        "booktitle": "What Really Happened in the Garden of Eden?",
+        "year": "2013",
+        "publisher": "Yale University Press",
+        "address": "",
+        "url": "",
+        "url-1": "kindle",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p151": "Ostensibly veerse 24 continues Adam’s statement in verse 23. However, when the two verses are read consecutively, verse 24 immediately presents a problem. The word ‘therefore,’ a correct translation of Hebrew ‘al ken’, signals that what follows is a conclusion reached on the basis of what precedes. The problem is that v24, with yaazob understood to mean ‘leave’ or ‘will leave’ does not seem to follow the previous verse logically or to present a conclusion drawn from any elements in the previous narrative. ",
+
+            "p151b": "Michael Shvack makes this exact point. He writes: ‘This therefore feels so out of context in the story that it is hard to imagine why it is actually there. It feels more like a commentary than part of the story line. ",
+
+            "p151c": "John Calvin’s comment on the verse – written in the sixteenth century—addresses the question of the verse’s relationship to v23: ‘It is doubted whether Moses here introduces God ad speaking, or continues the discourse of Adam, or indeed, has added this in virtue of his office as teacher, in his own person. The last of these is that which I mostly approve.’ Calvin argued, it must have another meaning. ",
+
+            "p151d": "Rabbi Shelomo ben Issac (1040-1150) from Troyes, Frances, v24 does not continue Adam’s speech from verse 23, since the words are not pertinent to Adam’s circumstance, they must address some other situation.  Cavin proposed that the verse be attributed to Moses; Rashi proposed God.",
+
+            "p152a": "My objections to common understandings of the verse are based on my answers to three basic questions (1) What does the verse mean? What can it mean? (2) How is this meaning connected to what was said by Adam about the formation of the ‘ezer kengdow’? How is it connect to the whole prior narrative about that? (3) Does the ‘therefore’ address any social reality in ancient Israel? ",
+
+            "p153a": "During the twentieth century, a few biblical scholars proposed that the statement is etiological and that it alludes to a type of matrilocal marriage described by nineteenth-centrury ethnographers working in Sri Lanka. ",
+
+            "p153c": "Genesis 2:24 cannot be interpreted as the origin of a nonexistent ‘leave and cleave’ practice.",
+
+            "p154a": "H.C Brichto, like Calvin, considers v24 a statement explaining the loyalty of males to their exogamous wives over against their own parents and argues tthat it is to be understood as addressing the dynamics of the human family.",
+
+            "p155": "Despite her unique origin, she could not be considered his sister or his daughter or a close blood relative in any way that Israelite might have imagined.  His lack of father and mother is of no consequence because his behavior with woman established and exemplified the norm for all their descendants",
+
+            "p155c": "Drawing on the social experience of his readers, the author may have intended that v24 function as a foreshadowing of events about to be described.",
+
+            "p155d": "It also failed to account for the problem of a man’s leaving his father and his mother",
+
+            "p157": "Understood this way, the verse also alludes to the formation of extended families embracing three generations in a single household that were typical of Israelite society.",
+
+            "p158": "It is unclear to me what significance should be attached to the paring ha-adam human with ishah woman as opposed to paring ish man, with woman wife at this point in the story.",
+
+            "p158c": "From the author’s perspective, the couple’s behavior in the Gardeen is not innocently naïve but atypically odd, quite indecent by the Israelite standarrds of his day, certainly noteworthy and in deed of explanation.",
+
+        }
+    },
+
+
+
+
+
+
+
+
     "article": {
         "doctype": "article",
         "author": "",
