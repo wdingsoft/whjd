@@ -489,10 +489,36 @@ var BibDat_FamilialVocab = BibDat =
         "url-1": "https://rts.edu/wp-content/uploads/2019/05/Creation-and-Culture.pdf",
         "abstract": "",
         "quotes": {
+            "p1":"Everet Fox (1947--) noted that: Three principal themes emerge from the great creation account with which Genesis opens. (1) the total and uncompromiised power of God as Creator; (2) the intrinsic order and balance of the created world; (3) humankind's key position in the scheme of creation",
+
             "p7": "a breif survey of the past will demostrate that almost all cultures have recongized and inherent order (design and stability) in the universe established at creation. Most cultures, in some sense, have attributed this creation order to the hand of a god (or the hands of the gods). "
         }
     },
+    "AndewWarner2017masterthesis": {
+        "doctype": "masterthesis",
+        "author": "Andew Warner",
+        "authorinfo": "",
+        "booktitle": "",
+        "title": "Language: Obstacle and Oppurtunity and Examiniation the Phenomenon of Human Language and the Church's Approach to the Mulititude of Langauges Present in the World",
+        "year": "2017",
+        "publisher": " ",
+        "isbn": "",
+        "school": "Reformed Theological Seminary",
+        "url-0": "https://rts.edu/campuses/online/students/sample-student-theses/",
+        "url-1": "https://rts.edu/wp-content/uploads/2019/05/Warner_Andrew_Thesis_20171212.pdf",
+        "abstract": "",
+        "quotes": {
+            "p9":"Language is the tool by which God creates the world.  In particular, God uses spoken words to bring about the acts of creation in Genesis 1, where each day of creation contains the phrase “God said.” ",
 
+            "p12":"it becomes obvious that if the origin of language is divine. It follows then, that the origin of human language is due to the fact manage is created in the image of the divine. ",
+
+            "p14":"language is being used to subvert God.",
+
+            "p23":"God speaks. He speaks to us by his Son (the Word).",
+
+            "p59": "Being made in the image of God also means that our speech is patterned after God. The very nature of God, his attributes, are present in human language."
+        }
+    },
 
 
 
