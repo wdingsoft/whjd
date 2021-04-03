@@ -328,7 +328,13 @@ var BibDat_FamilialVocab = BibDat =
         "url-1": "",
         "abstract": "The rapid moral and cultural changes in Western society have not left the evangelical church unscathed. Instead, an increasing number of scholars, self-professed evangelicals included, are lining up to offer their affirming interpretations of the key biblical texts related to the same-sex discussion. One area in particular that has seen a seismic shift within evangelical circles is the push for the acceptance of 'Christian' same-sex marriage. The purpose of marriage to combat loneliness as found in Genesis 2 vis-à-vis the mandate of procreation in Gen 1:26-28 represents the heart of the debate. Does Genesis 2 support same-sex marriage on the basis of kinship ties as opposed to procreation as taught in Gen 1:26-28? This paper argues that affirming scholars have misinterpreted Gen 2:18-25 as promoting only kinship ties and not procreation as well. Moreover, Gen 2:18-25 must be read in light of Gen 1:26-28. Indeed, Gen 2:18, 20, and 24 serve as the basis for promoting procreation and physical fittedness within marriage. This paper will also show how a number of ancillary arguments used as biblical 'support' for same-sex marriage are either false dichotomies or are simply wrong when placed against the rubric of Scripture. Only one paradigm for marriage appears within the Bible, namely, heterosexual marriage established by God himself in Gen 2:24 and reaffirmed by Jesus in Matthew 19 and Mark 10. [ABSTRACT FROM AUTHOR] (AN: 136703229)",
         "quotes": {
-            "p121": ""
+            "p683": "one text in particular, Gen 2:18-24, has been the focus of affirming scholars in their efforts to find validity for same-sex marriage.  The central purpose of Gen 2:24 was to teach the Israeliet audience(and by extension, all humanity) about the sancitty of marriage and the antiquity of the institution. God was there at the beginning bringing validity to thiis fundamental scocietal pillar within which family could be formed and thrive.",
+
+            "p684a":"(1) Gen2:18-25 seems to be painting fuller picture of Gen 1:26-28 (2) the grammar of Gen2:18 and 20 points to the fittdness of the male and female bodies for sexual pleasure in marriage; (3) the phrase 'one flesh' in Gen 2:24 is not isolated to knship ties alone, but also has procreation in view. ",
+
+            "p684b":"the historical-critical assertion that the two creatioons accounts found in Gen 1:1-2:4a and 2:4b-25 stem from two different sources and present two completely different creation accounts with fi==different foci. According to source theorists, the first accoount is attributed to the putatib=ve Priestly author and the latter account is assigned to the so-called YYahwist/'J' source. The argument is therefore propoosed that the Priestly source focuses on procreation as seen in Gen1:28 whereas J source is concerned with kinship ties tthat remedy loneliness as exemplifiied in Gen 2:18. Based upon this mnany affiming scholars are more than willing to offer their full support for the inclusion of same-sex couples and marriage in the church.",
+
+            "p685b":"Do the two creation accounts present two contraditioary stories of creation?"
         }
     },
     "PrinzivalliEmanuela2017article": {
@@ -469,7 +475,23 @@ var BibDat_FamilialVocab = BibDat =
 
 
 
-
+    "MichaelGMunoz2004masterthesis": {
+        "doctype": "masterthesis",
+        "author": "Michael G. Munoz",
+        "authorinfo": "",
+        "booktitle": "",
+        "title": "Creation Ordinances and Culture",
+        "year": "2004",
+        "publisher": " ",
+        "isbn": "",
+        "school": "Reformed Theological Seminary",
+        "url-0": "https://rts.edu/campuses/online/students/sample-student-theses/",
+        "url-1": "https://rts.edu/wp-content/uploads/2019/05/Creation-and-Culture.pdf",
+        "abstract": "",
+        "quotes": {
+            "p7": "a breif survey of the past will demostrate that almost all cultures have recongized and inherent order (design and stability) in the universe established at creation. Most cultures, in some sense, have attributed this creation order to the hand of a god (or the hands of the gods). "
+        }
+    },
 
 
 
@@ -624,7 +646,7 @@ var BibDat_FamilialVocab = BibDat =
         "year": " ",
         "publisher": " ",
         "isbn": "",
-        "journal": "",
+        "school": "",
         "url-1": "f ",
         "abstract": "",
         "quotes": {
