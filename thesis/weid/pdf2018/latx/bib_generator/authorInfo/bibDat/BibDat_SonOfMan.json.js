@@ -156,21 +156,21 @@ var BibDat_SonOfMan = BibDat =
         "quotes": {
             "p33a": "As a result of the writer's recent investigation into a comparison between the Old Babylonian version the Atra-hasis epic and the first eleven chapters of Genesis, two points have emerged that concern Eve in her role as a creatress of man, In general, it has been my contention that Atra-hasis and Genesis 1-11 are parallel in literacy structure and in many motifs, and yet they express completely opposite views on the main ideological issues.",
 
-            "p33b":"The etiological aspect of the name hawwab, Eve, in Gen 3:20 deserves another look. Jan Heller suspected that the phrase em-kol-bay, (mother of all living) itself could be construed as an honorific name or a title for a great lady. Heller speculated that a remote ancestor of the title, 'mother of all the living'  may have existed in a cult of the Great Mother or the Mother Goddess, although he did not provide literacy evidence from any source to support his conjecture. The recent publication of the Old Babylonian Atra-hasis epic, however, seems to give us a literal as well as a thematic parallel to the Genesis title. 'mother of all the living.' ",
+            "p33b": "The etiological aspect of the name hawwab, Eve, in Gen 3:20 deserves another look. Jan Heller suspected that the phrase em-kol-bay, (mother of all living) itself could be construed as an honorific name or a title for a great lady. Heller speculated that a remote ancestor of the title, 'mother of all the living'  may have existed in a cult of the Great Mother or the Mother Goddess, although he did not provide literacy evidence from any source to support his conjecture. The recent publication of the Old Babylonian Atra-hasis epic, however, seems to give us a literal as well as a thematic parallel to the Genesis title. 'mother of all the living.' ",
 
-            "p33c":"The word-for-word counterpart of 'mother of all the living' in that epic is found in the honorific name for the goddess Mami, the creatress, who is, at one point, called belet-kada-ili, 'mistress of all the gods'",
+            "p33c": "The word-for-word counterpart of 'mother of all the living' in that epic is found in the honorific name for the goddess Mami, the creatress, who is, at one point, called belet-kada-ili, 'mistress of all the gods'",
 
-            "p33d": "It should note that the formula for this new name, 'x of all they y,' is the same as in the title for Eve, 'mother of all the living.' The same formular used for personal names has been isolated by Herbett Huffmon under the category of significant developments in the biblical material.", 
+            "p33d": "It should note that the formula for this new name, 'x of all they y,' is the same as in the title for Eve, 'mother of all the living.' The same formular used for personal names has been isolated by Herbett Huffmon under the category of significant developments in the biblical material.",
 
-            "p34d":"I would suggest, then, that behind the character of Eve was probably hidden the figure of the creatress of the mother-goddess Mami, and that hawwah Eve was an onomastic form derived from her title, 'em kol-hay. [Weid: why not to think that Mami was derived from Eve?]",
+            "p34d": "I would suggest, then, that behind the character of Eve was probably hidden the figure of the creatress of the mother-goddess Mami, and that hawwah Eve was an onomastic form derived from her title, 'em kol-hay. [Weid: why not to think that Mami was derived from Eve?]",
 
-            "p35":"... The OT does not do away with the personality of Mami entirely but rather ascribes it to the figure of the first human mother. That is, Eve receives some of the attributes of the creatress in addition to the character of the created, and thereby a transparent added image is superimposed upon her.",
+            "p35": "... The OT does not do away with the personality of Mami entirely but rather ascribes it to the figure of the first human mother. That is, Eve receives some of the attributes of the creatress in addition to the character of the created, and thereby a transparent added image is superimposed upon her.",
 
-            "35b":"Qanity-ss-et-Yhwh: Further evidence may be adduced in support of the view that Eve is a fusion of two characters. The second and the only other time the name Eve appears in the OT is Gen 4:1, where Eve conceived and bore Cain and she said, qamiti-is-et-Yhweb, normally translated, 'I have gained a man et-Yhwh.' The usage of the grammatical element et- in the phrase et-Yhwh has caused no little controversy. But I believe that new light may now be shed on it.",
+            "35b": "Qanity-ss-et-Yhwh: Further evidence may be adduced in support of the view that Eve is a fusion of two characters. The second and the only other time the name Eve appears in the OT is Gen 4:1, where Eve conceived and bore Cain and she said, qamiti-is-et-Yhweb, normally translated, 'I have gained a man et-Yhwh.' The usage of the grammatical element et- in the phrase et-Yhwh has caused no little controversy. But I believe that new light may now be shed on it.",
 
-            "p37":"Eve's success is dependent on Yhwh at Gen 4:1. We may review the parallels between Eve and Mami at this point. ",
+            "p37": "Eve's success is dependent on Yhwh at Gen 4:1. We may review the parallels between Eve and Mami at this point. ",
 
-            "p37b":"As we saw earlier, Eve reflects two formerly separate characters, one the creatress and the other the created; so ",
+            "p37b": "As we saw earlier, Eve reflects two formerly separate characters, one the creatress and the other the created; so ",
 
         }
     },
@@ -183,7 +183,7 @@ var BibDat_SonOfMan = BibDat =
         "title": "The Son is truly Son : the Trinitarian and christological theology of Eusebius of Caesarea",
         "year": "2020",
         "publisher": "",
-        "school":"University of St Andrews",
+        "school": "University of St Andrews",
         "isbn": "",
         "journal": "",
         "url-1": "http://web.b.ebscohost.com/ehost/detail/detail?vid=3&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bdata=JmF1dGh0eXBlPXNzbyZjdXN0aWQ9czMyNjA1MTgmc2l0ZT1laG9zdC1saXZl#AN=890CF40AB3B65601&db=ddu",
@@ -193,9 +193,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
     "EllisBrannonE2010master": {
-        "doctype": "masterthesis",
+        "doctype": "phdthesis",
         "author": "Ellis, Brannon E.",
-        "school":"",
+        "school": "University of Aberdeen",
         "authorinfo": "",
         "booktitle": "",
         "title": "God of himself : John Calvin, classical trinitarianism and the self-existence of the Son of God",
@@ -203,7 +203,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "f ",
+        "url-1": "https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.540330",
         "abstract": "This thesis investigates several basic issues in Trinitarian theological formulation, in light of and in dialogue with John Calvin’s affirmation of the essential self-existence of God the Son, and the various approaches to endorsing or denying the legitimacy of such ‘autothean’ language in the Reformation and post-Reformation eras. My aim is to explain the historical and theological significance and to explore the constructive implications of Calvin’s ‘complex solidarity’ with the classical tradition in his approach to thinking and speaking of the Triune God, in light of and in dialogue with these debates centring on the bundle of themes – the divine processions and consubstantiality – at the heart of the doctrine of the Trinity. Chapter 1 is a discussion of Calvin’s doctrine of the Trinity in the 1559 Institutes.  In Chapter 2, I take up the controversies that form the context of Calvin’s autothean language, discussing those during his lifetime, first with Trinitarians and then with anti-Trinitarians.  Chapter 3 is my attempt to make theological sense of the historical shape of these debates, as well as the various approaches that arose after Calvin’s time, through offering an account of the role of the doctrine of eternal generation in classical Trinitarian theology. The aim is a faithful interpretation of the significance of the autothean controversies through grasping the complex of assumptions, convictions and claims at their heart, the theological shape of which I go on to consider throughout Chapters 4 and 5. Chapter 6, finally, is an initial foray into some further applications and implications of a Calvinian approach to thinking and speaking of the Triune God according to how he has given himself to be known, at this crucial nexus between Unity and Trinity.",
         "quotes": {
             "": ""
@@ -212,7 +212,7 @@ var BibDat_SonOfMan = BibDat =
 
     "LeeAquilaHyunIl2003Master": {
         "doctype": "masterthesis",
-        "school":"",
+        "school": "",
         "author": "Lee, Aquila Hyun-Il. ",
         "authorinfo": "",
         "booktitle": "",
@@ -227,9 +227,9 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "BrindleWayneA1988": {
-        "doctype": "masterthesis",
-        "school":"",
+    "BrindleWayneA1988phdthesis": {
+        "doctype": "phdthesis",
+        "school": "Dallas Theological Seminary",
         "author": "Brindle, Wayne A.",
         "authorinfo": "",
         "booktitle": "",
@@ -238,7 +238,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "f ",
+        "url-1": "https://digitalcommons.liberty.edu/fac_dis/23/",
         "abstract": "By: Brindle, Wayne A. 1988. Summary: This dissertation aims to define the title 'Son of God' as applied to Jesus Christ in the Synoptic Gospels.In the Old Testament the term 'son of God' was variously applied to angels, Israel, Israelites, Davidic kings, and possibly to the Messiah. In intertestamental Judaism the term was used mainly with reference to Israel and its righteous people, and is never specifically applied to the Messiah. In Hellenistic literature the title was sometimes given to pagan kings, emperors, and certain heroes. None of these occurrences can form the background for the Synoptic use of the title.In the Synoptic Gospels Jesus uses only two titles of Himself: Son and Son of Man. With the title 'Son' Jesus related Himself closely to God the Father in a unique and exclusive sense, particularly in such passages as Matthew 11:27 and Mark 12:6. Jesus always addresses God in prayer as 'Abba,' a term never addressed to God by contemporary Palestinian Jews. At His trial Jesus publicly and clearly accepts the full title 'Son of God' for Himself while claiming exclusive association with God, highlighted by a resulting charge of blasphemy. Matthew, Mark, and Luke each emphasize Jesus's sonship as divinity rather than simple messiahship.Normally beings with supernatural insight designate Jesus as the Son of God: Gabriel, Satan, demons, Peter, and the heavenly voice at His baptism and Transfiguration. Jesus' sonship requires a supernatural revelation and announcement. Even a pagan Roman centurion confesses Jesus' sonship through the divine revelation of the cross. The key revelation occurs at Jesus' baptism, where the perspective of the Father is given.In virtually every reference to Jesus' sonship, it is either His supernatural origin, His unique relationship to the Father, or His claim to equality with God that is highlighted. The title may thus be defined as expressing that unique attribute of Jesus Christ by which He exclusively and ontologically shares the divine nature and character of His heavenly Father, revealing God to man as no other can do, and carrying out perfectly God's purposes as Messiah, Servant, and eternal Sovereign. University: Liberty University. (AN: 287E5A7F8855E5F5)URL: https://digitalcommons.liberty.edu/fac_dis/23 .",
         "quotes": {
             "": ""
@@ -281,7 +281,7 @@ var BibDat_SonOfMan = BibDat =
     "KetterlingMatthewD2018": {
         "doctype": "masterthesis",
         "author": "Ketterling, Matthew D.",
-        "school":"",
+        "school": "",
         "authorinfo": "",
         "booktitle": "",
         "title": "God's sons and the logic of the Covenant : divine sonship in 'Jubilees' and Romans",
@@ -296,8 +296,8 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "FayRonaldC2006": {
-        "doctype": "masterthesis",
+    "FayRonaldC2006phdthesis": {
+        "doctype": "phdthesis",
         "author": "Fay, Ronald C.",
         "authorinfo": "",
         "booktitle": "",
@@ -305,8 +305,9 @@ var BibDat_SonOfMan = BibDat =
         "year": "2006",
         "publisher": " ",
         "isbn": "",
-        "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/detail/detail?vid=0&sid=56b8c127-2977-4784-84e5-34e6abef21b0%40pdc-v-sessmgr01&bdata=JnNpdGU9ZWhvc3QtbGl2ZQ%3d%3d#AN=BC1025D1971D22BB&db=ddu ",
+        "school": "Trinity Evangelical Divinity School",
+        "url-0": "https://digitalcommons.liberty.edu/fac_dis/",
+        "url-1": "https://digitalcommons.liberty.edu/fac_dis/105/",
         "abstract": "By: Fay, Ronald C. 2006. Summary: This dissertation answers two distinct questions. First, is Paul trinitarian? Second, would the original recipients of Romans understand Paul as being trinitarian? In order to answer these questions, this work examines the discrete unit of Romans 8 and the first-century Roman theological landscape in order to ascertain the answers to these questions. Chapter 2 surveys Roman religious life, taking a few specific cults as examples. Special attention is paid to Jupiter, Isis, Mithras, and the Imperial Cult. Within the analysis of each cult, issues of salvation and the structure of the belief are explored. The Imperial Cult evinces the tendency of Romans to accept that humans are or can become gods. Romans 8 is the sample of Paul's writings used to answer the above questions since it speaks of the Holy Spirit while also discussing God and Jesus. In Romans 8, Paul answers the problem of sin found in Romans 7 and also discusses how the law fits into the equation. He does not attack the law but rather the flesh as the problem, since the flesh accedes to the demands of sin just as the law was perverted by sin. Therefore, Paul discusses the role of God, Jesus, and the Spirit in overcoming the problem of sin in terms of salvation and in terms of the ongoing life of those who believe. Paul explicitly describes the actions of God, paying special attention to the importance of adoption and the renewal of creation (recreation). God uses the Son and the Spirit as agents in causing salvation. The interrelations and congruent functions of the Son and Spirit point toward a unity not found in Roman religion, since when Roman gods coincide functionally, one god assimilates or eliminates the other. The thesis this dissertation defends is that when taking into account his Jewish background and the Roman context into which he was writing, Paul communicates the Father, Son, and Spirit as a triunity to his readers in Romans 8. University: Liberty University. (AN: BC1025D1971D22BB)URL: https://digitalcommons.liberty.edu/fac_dis/105 .",
         "quotes": {
             "": ""
@@ -315,8 +316,8 @@ var BibDat_SonOfMan = BibDat =
 
     "ThompsonAnthonyBatisteJr2019": {
         "doctype": "masterthesis",
-      
-        "school":"",
+
+        "school": "",
         "author": "Thompson, Anthony Batiste, Jr. 2019",
         "authorinfo": "",
         "booktitle": "",
@@ -334,7 +335,7 @@ var BibDat_SonOfMan = BibDat =
 
     "SmithDBlair2019masterthesis": {
         "doctype": "masterthesis",
-        "school":"",
+        "school": "",
         "author": "Smith, D. Blair.",
         "authorinfo": "",
         "booktitle": "",
@@ -351,17 +352,17 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "EllingwoodJane2015masterthesis": {
-        "doctype": "masterthesis",
-        "school":"",
-        "author": "Ellingwood, Jane. ",
+        "doctype": "phdthesis",
+        "school": "University of Exeter",
+        "author": "Ellingwood, Jane",
         "authorinfo": "",
         "booktitle": "",
         "title": "Creation and God as One, Creator, and Trinity in early theology through Augustine and its theological fruitfulness in the 21st century",
         "year": "2015",
         "publisher": " ",
         "isbn": "",
-        "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/resultsadvanced?vid=15&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bquery=son+of+god&bdata=JmRiPWRkdSZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d ",
+        "url-0": "https://ore.exeter.ac.uk/",
+        "url-1": "https://ore.exeter.ac.uk/repository/handle/10871/19814",
         "abstract": "By: Ellingwood, Jane. 2015. Summary: My primary argument in this thesis is that creation theologies significantly influenced early developments in the doctrine of the Trinity, especially in Augustine of Hippo’s theology. Thus this is a work of historical theology, but I conclude with proposals for how Augustine’s theologies of creation and the Trinity can be read fruitfully with modern theology. I critically analyse developments in trinitarian theologies in light of ideas that were held about creation. These include the doctrine of creation ‘out of nothing’ and ideas about other creative acts (e.g., forming or fashioning things). Irenaeus and other early theologians posited roles for God (the Father), the Word / Son, the Spirit, or Wisdom in creative acts without working out formal views on economic trinitarian acts. During the fourth century trinitarian controversies, creation ‘out of nothing’ and ideas about ‘modes of origin’ influenced thinking on consubstantiality and relations within the Trinity. Basil of Caesarea and others also presented ideas about trinitarian acts of creation and the Trinity in hexaemeral works. I will argue that in Augustine’s views of trinitarian acts of creation, he attributes roles to God (the Father), the Word / Son, and the Spirit. In his mature theology, he attributes the giving of formless existence, differentiated existence, and perfected existence to the three Persons respectively, while depicting shared roles. He also attributes to the Spirit the giving of the capability of ‘dynamic abiding’ to creatures, which gives them agency in continuing their existence. Augustine’s theologies of creation and the Trinity were significantly influenced by his exegesis of Gen. 1, John 1. 1-3, Wisdom, and other scriptures, and his ideas resonate with the hexaemeral works of Basil and Philo of Alexandria. I argue that scholars should examine these sources and Augustine’s own hexaemeral commentaries to gain a deeper understanding of his trinitarian theology. University: University of Exeter. (AN: 9112A1A0D8BAEBC7)URL: http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.679543 .",
         "quotes": {
             "": ""
@@ -411,7 +412,7 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "",
         "url-1": "https://www.studylight.org/commentaries/eng/kdo/genesis-2.html",
-        "url-2":"",
+        "url-2": "",
         "abstract": "",
         "quotes": {
             "": "The design of God in the creation of the woman is perceived by Adam, as soon as he awakes, when the woman is brought to him by God. Without a revelation from God, he discovers in the woman “ bone of his bones and flesh of his flesh .” The words, “ this is now ( הפּעם lit., this time ) bone of my bones,” etc., are expressive of joyous astonishment at the suitable helpmate, whose relation to himself he describes in the words, “ she shall be called Woman, for she is taken out of man .” אשּׁה is well rendered by Luther, “ Männin ” (a female man), like the old Latin vira from vir . The words which follow, “ therefore shall a man leave his father and his mother, and shall cleave unto his wife, and they shall become one flesh,” are not to be regarded as Adam's, first on account of the על־כּן, which is always used in Genesis, with the exception of Genesis 20:6; Genesis 42:21, to introduce remarks of the writer, either of an archaeological or of a historical character, and secondly, because, even if Adam on seeing the woman had given prophetic utterance to his perception of the mystery of marriage, he could not with propriety have spoken of father and mother. They are the words of Moses, written to bring out the truth embodied in the fact recorded as a divinely appointed result, to exhibit marriage as the deepest corporeal and spiritual unity of man and woman, and to hold up monogamy before the eyes of the people of Israel as the form of marriage ordained by God. But as the words of Moses, they are the utterance of divine revelation; and Christ could quote them, therefore, as the word of God (Matthew 19:5). By the leaving of father and mother, which applies to the woman as well as to the man, the conjugal union is shown to be a spiritual oneness, a vital communion of heart as well as of body, in which it finds its consummation. This union is of a totally different nature from that of parents and children; hence marriage between parents and children is entirely opposed to the ordinance of God. Marriage itself, notwithstanding the fact that it demands the leaving of father and mother, is a holy appointment of God; hence celibacy is not a higher or holier state, and the relation of the sexes for a pure and holy man is a pure and holy relation. This is shown in Genesis 2:25 : “ They were both naked ערוּמּים, with dagesh in the מ, is an abbreviated form of עירמּים Genesis 3:7, from עוּר to strip), the man and his wife, and were not ashamed .” Their bodies were sanctified by the spirit, which animated them. Shame entered first with sin, which destroyed the normal relation of the spirit to the body, exciting tendencies and lusts which warred against the soul, and turning the sacred ordinance of God into sensual impulses and the lust of the flesh."
@@ -420,21 +421,21 @@ var BibDat_SonOfMan = BibDat =
 
     "RickBrownAndreaGrayAndLeithGray2011article": {
         "doctype": "article",
-        "author": "Rick Brown,Andrea Gray And Leith Gray",
+        "author": "Rick Brown and Andrea Gray And Leith Gray",
         "authorinfo": "",
         "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
         "title": "Translating Familial Biblical Terms: An Overview Of The Issue",
-        "year": " ",
+        "year": "2012",
         "publisher": " ",
         "isbn": "",
         "journal": "January-February 2012 Mission Frontiers",
         "url-1": "https://www.missionfrontiers.org/pdfs/34-1-translating-familia-biblical-terms.pdf",
-        "url-2":"",
+        "url-2": "",
         "abstract": "",
         "quotes": {
             "p26": "The Difference between Biological and Social Familial Terms: The biological father is the one who begets the children.  The social father is the one who raised the children as their father, looks after them and has authority over them. In a typical family, the same man is both the social and biological father. In some case, the social father of a child is not the biological father.",
 
-            "p30":"In order to accurately convey divine fatherhood and sonship, translators need to use expression that are as equivalent in meaning as possible to the Greek and Hebrew terms for social son(huios and ben) and social father (patre and ab) and to avoid biological expressions of the form God's Offsprint or the Procerator of our Lord Jesus Christ, because these are understood to signify biological relations generated through a sexual act of procreation. In this way translators can enable new audiences to understand the biblical sense in which God is our father and Christ is his son, as well as understand the relationship of Joseph to the boy Jesus."
+            "p30": "In order to accurately convey divine fatherhood and sonship, translators need to use expression that are as equivalent in meaning as possible to the Greek and Hebrew terms for social son(huios and ben) and social father (patre and ab) and to avoid biological expressions of the form God's Offsprint or the Procerator of our Lord Jesus Christ, because these are understood to signify biological relations generated through a sexual act of procreation. In this way translators can enable new audiences to understand the biblical sense in which God is our father and Christ is his son, as well as understand the relationship of Joseph to the boy Jesus."
         }
     },
     "WycliffeGlobalAlliance2016article": {
@@ -448,20 +449,20 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "",
         "url-1": "https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
-        "url-2":"",
+        "url-2": "",
         "abstract": "",
         "quotes": {
             "p7": "How did the original audience understand the term 'son'? (1) The son is normally derived by biological procreation (Gen 5:28), though adoptivee sons are also considerd 'son' (Exod 2:10) (2) A son is younder than his father. (3) a son shares a nature with his father, a son of a human will be human, a son of particular animal, will also be that particular animal. (4) a son is distinct from his father as a person. (5) a son often shares charaxteristics of his father, some are inherited, some are leeared. (6) a son identifies with his father as part of the fatherr's biological and or social familu. (7) a son receives affection, prootetion and care from his father. (8) a son has the authority to represent his father to others. (9) a son has a right to an inheritance, especially the eldest son. (10) a son is expcted to be oobedient to his fatherr, especially to learn and obey the Tora. ",
 
-            "p8":"Who is the referent of the term?  Son(s) of God as conceept refers to a number of biblical figures including Jesus. All of the following are called 'son' of God. (1) Adam Luke 3:38, (2) Angel and heavenly beings Job 1:6;2:1;38:7; Psa 29:1;89:7 (3) Israel Ex 4:22, Deut 14:1, Hos 1:0 (4) Davidic King Psa 2:7 Sam 7:14 (5) Jesuus Mark 1:11, Luk 1:32 8:28,John 1:49 3:16 (6) Believers Mat 5:45, Luke6:35 John 1:12  ",
+            "p8": "Who is the referent of the term?  Son(s) of God as conceept refers to a number of biblical figures including Jesus. All of the following are called 'son' of God. (1) Adam Luke 3:38, (2) Angel and heavenly beings Job 1:6;2:1;38:7; Psa 29:1;89:7 (3) Israel Ex 4:22, Deut 14:1, Hos 1:0 (4) Davidic King Psa 2:7 Sam 7:14 (5) Jesuus Mark 1:11, Luk 1:32 8:28,John 1:49 3:16 (6) Believers Mat 5:45, Luke6:35 John 1:12  ",
 
             "p9": "What does 'son' in 'Son of God' mean?",
 
             "p12": "The meaning of 'son of God' in pagan culture in New Testament times",
 
-            "p13":"Jesus (1)is derived from God (in an eternal, non-biblical way) (2) is obedient to God (3) has the characteristics of God (4) is identified with God in some way (5) is in an intimate relationship with the father (6) can act with God's authority (7) is the promised Messiah, who is in a special covenant relationship with God (8) is the King God has chosen (9) is the ruler who deserves to be followed and worshipped. ",
+            "p13": "Jesus (1)is derived from God (in an eternal, non-biblical way) (2) is obedient to God (3) has the characteristics of God (4) is identified with God in some way (5) is in an intimate relationship with the father (6) can act with God's authority (7) is the promised Messiah, who is in a special covenant relationship with God (8) is the King God has chosen (9) is the ruler who deserves to be followed and worshipped. ",
 
-            "p56":"Testing existing familial terms as used in the language: (1) a biological sense (2) a social sense (3) a metaphorical sense (e.g. father for leader, ancestor, origin of; so descendant, follower, having the characteristic of) (4) as a simile (e.g. God is like a caring father, ) "
+            "p56": "Testing existing familial terms as used in the language: (1) a biological sense (2) a social sense (3) a metaphorical sense (e.g. father for leader, ancestor, origin of; so descendant, follower, having the characteristic of) (4) as a simile (e.g. God is like a caring father, ) "
         }
     },
 
@@ -477,7 +478,7 @@ var BibDat_SonOfMan = BibDat =
         "isbn": "",
         "journal": "",
         "url-1": "https://bloodandfrogs.com/2018/04/hebrew-family-and-genealogy-terms.html",
-        "url-2": "https://bloodandfrogs.com/wp-content/uploads/2018/04/Hebrew-English-Family-Terms-Chart-0.2.jpg",
+        "url": "https://bloodandfrogs.com/wp-content/uploads/2018/04/Hebrew-English-Family-Terms-Chart-0.2.jpg",
         "abstract": "",
         "quotes": {
             "jpg": "comparison of the modern familial terms with biblical terms."
@@ -495,8 +496,8 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "https://www-galaxie-com.eu1.proxy.openathens.net/article/jdfm05-1-05",
-        "url-2":"",
-        
+        "url-2": "",
+
         "quotes": {
             "p54": "Now Jesus says a couple of things; in verse 4 he says, “Have you not read that he who created them from the beginning made them male and female, and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’?” ",
             "Jesus is quoting from two different verses": "Jesus is quoting from two different verses, one in Genesis 1 and one in Genesis 2 and he puts them together. In this verse, what Jesus is saying is that our being created as men and women is connected to the fact that we have this thing called marriage. Because there is such a thing as gender, we have this phenomenon of marriage. Jesus tethers marriage to this sexual difference between men and women. Marriage is predicated on gender."
@@ -515,7 +516,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "https://sbts-wordpress-uploads.s3.amazonaws.com/equip/uploads/2017/05/Nicholas-J.-Weyrens.pdf",
-        "url-2":"",
+        "url-2": "",
         "quotes": {
             "Marriage For The Purpose Of Procreation": "Marriage For The Purpose Of Procreation",
 
@@ -542,7 +543,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "url-1": "file:///Users/weiding/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/wei13/myciu/class/2021-theo/subordination_in_the_trinity_and_gender_roles__a_response_to_recent_discussion_--_by__michael_f._bird.pdf",
-        "url-2":"",
+        "url-2": "",
         "quotes": {
 
             "Wayne Grudem, Systematic Theology: An Introduction to Biblical Doctrine (Grand Rapids: Zondervan, 1994), 459-60.": "man’s role is like that of God the Father, and the woman’s role is parallel to that of God the Son. They are equal in importance,but they have different roles",
@@ -565,7 +566,7 @@ var BibDat_SonOfMan = BibDat =
         "address": "",
         "url": "",
         "url-1": "http://eds.b.ebscohost.com/eds/detail/detail?vid=0&sid=66215aa9-f96b-4d22-bed0-cacc61791303%40sessionmgr102&bdata=JkF1dGhUeXBlPWlwLHNoaWImc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=2234971&db=nlebk",
-        "url-2":"",
+        "url-2": "",
         "isbn": "978-0-9830680-8-2",
         "abstract": "Son of God (Judaism) Son of God--History of doctrines--Early church, ca. 30-600.      In antiquity, “son of god”—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God's son(s) in ancient Jewish and early Christian literature. Through close readings of relevant texts from multiple ancient corpora, including the Hebrew Bible, the New Testament, the Dead Sea Scrolls, Greco-Roman texts and inscriptions, early Christian and Islamic texts, and apocalyptic literature, the chapters in this volume engage a range of issues including messianism, deification, eschatological figures, Jesus, interreligious polemics, and the Roman and Jewish backgrounds of early Christianity and the authors of the Dead Sea Scrolls. The essays in this collection demonstrate that divine sonship is an ideal prism through which to better understand the deep interrelationship of ancient religions and their politics of kingship and divinity. In addition to the editors, the contributors to this volume include Richard Bauckham, Max Botner, George J. Brooke, Jan Joosten, Menahem Kister, Reinhard Kratz, Mateusz Kusio, Michael A. Lyons, Matthew V. Novenson, Michael Peppard, Sarah Whittle, and N. T. Wright.",
         "quotes": {
@@ -632,7 +633,7 @@ var BibDat_SonOfMan = BibDat =
     },
     "masterthesis": {
         "doctype": "masterthesis",
-        "school":"",
+        "school": "",
         "author": " ",
         "authorinfo": "",
         "booktitle": "",
@@ -724,7 +725,7 @@ var BibDat_SonOfMan = BibDat =
         "year": "2018",
         "Urldate": "2019",
         "url": "https://weekly.israelbiblecenter.com/gods-name-quantum-physics/?via=71a7fa3&utm_source=email&utm_medium=email&utm_campaign=Email_Lead_Standalone_Insight_Study-the-Science-Behind-the-Bible_2021-3-6#71a7fa3",
-        "url-2":"",
+        "url-2": "",
         "notes": "",
         "quotes": {
             "1": "If we were to translate this understanding of God’s name into the language of quantum physics, we might call it “a superposition of all possible states.” Indeed, quantum mechanics posits that the particles or waves that apparently make up our universe (and us) can exist in all possible states at once – until someone carries out a “measurement.” Once you measure the location of a particle, it “collapses” to a single specific location. Perhaps the name of God, YHWH, is similar: it communicates Being in all states, dimensions, and times simultaneously – and if you try to define the meaning more specifically, you end up reducing it to just one aspect."

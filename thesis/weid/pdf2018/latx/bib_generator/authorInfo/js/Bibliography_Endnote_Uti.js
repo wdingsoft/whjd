@@ -1,29 +1,46 @@
 
 var Bibliography_Endnote_Uti = {
+    Get_Last_First: function (sname) {// Ding, William
+        sname = sname.trim(" ");
+        if (sname.length === 0) return ""
+        var ret = "";
+        if (sname.indexOf(",") < 0) {//Ding, william
+            return sname;
+        } else {
+            var arr3 = sname.split(",");
+            arr3.reverse();
+            ret = arr3.join(" ");
+        }
+        return ret;
+    },
+    Get_First_Last: function (sname) {//retrun form: Ding, William W 
+        sname = sname.trim(" ");
+        if (sname.length === 0) return ""
+        var ret = "";
+        if (sname.indexOf(",") >= 0) {//Ding, Wiilaim W,  first family name ready.
+            return sname;
+        } else {
+            var arr3 = sname.split(" "); //William We Ding
+            if (arr3.length > 1) {
+                ret = arr3.pop() + ", ";
+                ret += arr3.join(" ");
+            } else {
+                ret = sname;
+            }
+        }
+        return ret;
+    },
 
     get_footnote_author: function (sauthor) {
         sauthor = sauthor.trim();
-        function Get_Last_First(sname) {
-            sname = sname.trim(" ");
-            var ret = "";
-            if (sname.indexOf(",") < 0) {
-                return sname;
-            } else {
-                var arr3 = sname.split(",");
-                arr3.reverse();
-                ret += arr3.join(" ");
-            }
-            return ret;
-        }
-        var ar = sauthor.split(/and/ig);
-        var ret = "";
-        const S_and = " and ";
+        var ar = sauthor.split(/\s+and\s+/ig);
+        var ar2 = []
         for (var i = 0; i < ar.length; i++) {
-            ret += Get_Last_First(ar[i]) + S_and;
+            var nams = this.Get_Last_First(ar[i])
+            if (nams.length == 0) continue;
+            ar2.push(nams);
         }
-        ret = ret.substr(0, ret.length - S_and.length);
-        ret = ret.trim();
-        return ret;
+        return ar2.join(" and ");
     },
     get_footnote: function (obj) {
         if (!obj) {
@@ -81,32 +98,15 @@ var Bibliography_Endnote_Uti = {
         return ftn;
     },
     get_bibliography_author: function (sauthor) {
-        function Get_First_Last(sname) {
-            var ret = "";
-            if (sname.indexOf(",") >= 0) {//family and first ready.
-                return sname;
-            } else {
-                sname = sname.trim(" ");
-                var arr3 = sname.split(" ");
-                if (arr3.length > 1) {
-                    arr3 = arr3.reverse();
-                    ret = arr3.shift() + ", ";
-                    ret += arr3.join(" ");
-                } else {
-                    ret = sname;
-                }
-
-            }
-            return ret;
-        }
-        var ar = sauthor.split(/and/ig);
-        var ret = "";
-        const S_and = " and ";
+        sauthor = sauthor.trim();
+        var ar = sauthor.split(/\s+and\s+/ig);
+        var ar2 = []
         for (var i = 0; i < ar.length; i++) {
-            ret += Get_First_Last(ar[i]) + S_and;
+            var nams = this.Get_First_Last(ar[i])
+            if (nams.length == 0) continue;
+            ar2.push(nams);
         }
-        ret = ret.substr(0, ret.length - S_and.length);
-        return ret;
+        return ar2.join(" and ");
     },
     get_bibliography: function (obj) {
         var ftn = this.get_bibliography_author(obj.author) + ". ";

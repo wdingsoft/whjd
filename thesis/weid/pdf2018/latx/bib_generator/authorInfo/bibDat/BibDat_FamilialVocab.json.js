@@ -330,11 +330,11 @@ var BibDat_FamilialVocab = BibDat =
         "quotes": {
             "p683": "one text in particular, Gen 2:18-24, has been the focus of affirming scholars in their efforts to find validity for same-sex marriage.  The central purpose of Gen 2:24 was to teach the Israeliet audience(and by extension, all humanity) about the sancitty of marriage and the antiquity of the institution. God was there at the beginning bringing validity to thiis fundamental scocietal pillar within which family could be formed and thrive.",
 
-            "p684a":"(1) Gen2:18-25 seems to be painting fuller picture of Gen 1:26-28 (2) the grammar of Gen2:18 and 20 points to the fittdness of the male and female bodies for sexual pleasure in marriage; (3) the phrase 'one flesh' in Gen 2:24 is not isolated to knship ties alone, but also has procreation in view. ",
+            "p684a": "(1) Gen2:18-25 seems to be painting fuller picture of Gen 1:26-28 (2) the grammar of Gen2:18 and 20 points to the fittdness of the male and female bodies for sexual pleasure in marriage; (3) the phrase 'one flesh' in Gen 2:24 is not isolated to knship ties alone, but also has procreation in view. ",
 
-            "p684b":"the historical-critical assertion that the two creatioons accounts found in Gen 1:1-2:4a and 2:4b-25 stem from two different sources and present two completely different creation accounts with fi==different foci. According to source theorists, the first accoount is attributed to the putatib=ve Priestly author and the latter account is assigned to the so-called YYahwist/'J' source. The argument is therefore propoosed that the Priestly source focuses on procreation as seen in Gen1:28 whereas J source is concerned with kinship ties tthat remedy loneliness as exemplifiied in Gen 2:18. Based upon this mnany affiming scholars are more than willing to offer their full support for the inclusion of same-sex couples and marriage in the church.",
+            "p684b": "the historical-critical assertion that the two creatioons accounts found in Gen 1:1-2:4a and 2:4b-25 stem from two different sources and present two completely different creation accounts with fi==different foci. According to source theorists, the first accoount is attributed to the putatib=ve Priestly author and the latter account is assigned to the so-called YYahwist/'J' source. The argument is therefore propoosed that the Priestly source focuses on procreation as seen in Gen1:28 whereas J source is concerned with kinship ties tthat remedy loneliness as exemplifiied in Gen 2:18. Based upon this mnany affiming scholars are more than willing to offer their full support for the inclusion of same-sex couples and marriage in the church.",
 
-            "p685b":"Do the two creation accounts present two contraditioary stories of creation?"
+            "p685b": "Do the two creation accounts present two contraditioary stories of creation?"
         }
     },
     "PrinzivalliEmanuela2017article": {
@@ -489,15 +489,15 @@ var BibDat_FamilialVocab = BibDat =
         "url-1": "https://rts.edu/wp-content/uploads/2019/05/Creation-and-Culture.pdf",
         "abstract": "",
         "quotes": {
-            "p1":"Everet Fox (1947--) noted that: Three principal themes emerge from the great creation account with which Genesis opens. (1) the total and uncompromiised power of God as Creator; (2) the intrinsic order and balance of the created world; (3) humankind's key position in the scheme of creation",
+            "p1": "Everet Fox (1947--) noted that: Three principal themes emerge from the great creation account with which Genesis opens. (1) the total and uncompromiised power of God as Creator; (2) the intrinsic order and balance of the created world; (3) humankind's key position in the scheme of creation",
 
             "p7": "a breif survey of the past will demostrate that almost all cultures have recongized and inherent order (design and stability) in the universe established at creation. Most cultures, in some sense, have attributed this creation order to the hand of a god (or the hands of the gods). "
         }
     },
-    "AndewWarner2017masterthesis": {
+    "AndrewWarner2017masterthesis": {
         "doctype": "masterthesis",
-        "author": "Andew Warner",
-        "authorinfo": "",
+        "author": "Andrew Warner",
+        "authorinfo": "Andrew Warner",
         "booktitle": "",
         "title": "Language: Obstacle and Oppurtunity and Examiniation the Phenomenon of Human Language and the Church's Approach to the Mulititude of Langauges Present in the World",
         "year": "2017",
@@ -508,13 +508,13 @@ var BibDat_FamilialVocab = BibDat =
         "url-1": "https://rts.edu/wp-content/uploads/2019/05/Warner_Andrew_Thesis_20171212.pdf",
         "abstract": "",
         "quotes": {
-            "p9":"Language is the tool by which God creates the world.  In particular, God uses spoken words to bring about the acts of creation in Genesis 1, where each day of creation contains the phrase “God said.” ",
+            "p9": "Language is the tool by which God creates the world.  In particular, God uses spoken words to bring about the acts of creation in Genesis 1, where each day of creation contains the phrase “God said.” ",
 
-            "p12":"it becomes obvious that if the origin of language is divine. It follows then, that the origin of human language is due to the fact manage is created in the image of the divine. ",
+            "p12": "it becomes obvious that if the origin of language is divine. It follows then, that the origin of human language is due to the fact manage is created in the image of the divine. ",
 
-            "p14":"language is being used to subvert God.",
+            "p14": "language is being used to subvert God.",
 
-            "p23":"God speaks. He speaks to us by his Son (the Word).",
+            "p23": "In this passage, we again see the idea that the world was created through the Son, relating the Son to the Word. We also see the Son as the message of God. And the sustaining nature of the Son is also related to the concept of “word,” namely the “word of his power.” We also see God’s embracing of language as how to communicate the message of the Gospel, both in the imagery of the message and the mode of the message. God speaks. He speaks to us by his Son (the Word).",
 
             "p59": "Being made in the image of God also means that our speech is patterned after God. The very nature of God, his attributes, are present in human language."
         }
