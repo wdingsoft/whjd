@@ -42,7 +42,7 @@ var uti = {
         scp.src = jsf
         console.log("load:", jsf);
         $("head").append(scp);
-        return ;
+        return;
     },
     clear_sjs: function () {
         $("script[desc='addon'").remove();
@@ -76,6 +76,8 @@ $(function () {
 
     escap_uti.esc_keydown();
     uti.webpage_format();
+
+
 });
 
 var Load_Links = {
@@ -458,8 +460,8 @@ var end_note_app = {
             }
             prevBiid = nid;
             var noteObj = this.m_bibObj[nid];
-            if(!noteObj){
-                console.error("nid not exist:",nid)
+            if (!noteObj) {
+                console.error("nid not exist:", nid)
             }
             ss += Bibliography_Endnote_Uti.get_footnote(noteObj);
             ss += pg;
@@ -471,7 +473,7 @@ var end_note_app = {
 
     load_bib: function (bPrint) {
         var path = "../../../../weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
-        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js", "BibDat_SonOfMan.json.js",  "BibDat_FamilialVocab.json.js"];
+        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js", "BibDat_SonOfMan.json.js", "BibDat_FamilialVocab.json.js"];
         if (!bPrint) {
             for (var i = 0; i < fary.length; i++) {
                 $(`script[src='${path + fary[i]}']`).remove();
@@ -491,9 +493,6 @@ var end_note_app = {
     cpy: function (tarObj, srcobj) {
         Object.keys(srcobj).forEach(function (key) {
             if (undefined === tarObj[key]) {
-                if (undefined != tarObj[key]) {
-                    alert("duplicated key", key);
-                }
                 tarObj[key] = JSON.parse(JSON.stringify(srcobj[key]));
             } else {
                 console.log("Duplicate key bibid:", key);
@@ -517,14 +516,42 @@ var end_note_app = {
             bibAr.push(bib);
         });
         bibAr.sort();
-        var sol = "";// "<div id='Bibliograph' type='none'>";
+        var sol = "";// 
         for (var i = 0; i < bibAr.length; i++) {
             var bib = bibAr[i];
             sol += `<div type='bibliography_item' title='${i}'>${bib}</div><br><br>`;
         }
-        //sol += "</div>";
 
         $("#Bibliograph").html(sol);
+    },
+
+    print_all_content_for_editing: function () {
+        function get_content(obj) {
+
+            var txt = ""
+            txt += obj.abstract + "<br>"
+            if (obj.quotes) {
+                Object.keys(obj.quotes).forEach(function (key) {
+                    txt += key + ":" + obj.quotes[key] + "<br>"
+                })
+            }else{
+                console.error(obj)
+            }
+
+            return txt;
+        }
+        var uniqCheckObj = {};
+        var txt = ""
+        var _THIS = this;
+        _THIS.m_bibidAry.forEach(function (biid, i) {
+            if (undefined !== uniqCheckObj[biid]) return;
+            uniqCheckObj[biid] = 1;
+            var biOj = _THIS.m_bibObj[biid];
+            txt += "<hr>"+Bibliography_Endnote_Uti.get_bibliography(biOj) +"<br>";
+            txt += get_content(biOj) + "<br>"
+        });
+
+        $("body").append(txt)
     }
 }
 
@@ -549,7 +576,7 @@ var pdf_page_number_uti = {
         if ($(".ruler").length > 0) {
             return;
         }
-        var ipage = 0, startPage=7, endPage = 82;
+        var ipage = 0, startPage = 7, endPage = 82;
         alert(`print pg number:\n startPage=${startPage}, endPage=${endPage}.`);
         for (var i = startPage; i < endPage; i++) {
             var y = i * 10.13525 + (i - 2) * 0.0925;//in;//in;
