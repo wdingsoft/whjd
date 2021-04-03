@@ -210,9 +210,9 @@ var BibDat_SonOfMan = BibDat =
         }
     },
 
-    "LeeAquilaHyunIl2003Master": {
-        "doctype": "masterthesis",
-        "school": "",
+    "LeeAquilaHyunIl2003phdmaster": {
+        "doctype": "phdthesis",
+        "school": "University of Aberdeen",
         "author": "Lee, Aquila Hyun-Il. ",
         "authorinfo": "",
         "booktitle": "",
@@ -221,7 +221,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "f ",
+        "url-1": "https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.288352",
         "abstract": "By: Lee, Aquila Hyun-Il. 2003. Summary: The thesis seeks to clarify the development of early Christian understanding of Jesus as the pre-existent Son of God. We propose that its roots lie principally in early Christian exegesis of psalms in the light of Jesus' self-consciousness of divine sonship and divine mission. Part I reviews recent attempts to explain the development as a result of the influence of Jewish angelology and similar speculations. In Part II we argue that neither the personification of various attributes of God, including Wisdom, nor speculations about principal angels and a pre-existent messiah in Second Temple Judaism ever provided a ready-made category for viewing Jesus as a divine and pre-existent being alongside God. In Part III an examination of the Synoptic evidence for Jesus' self-consciousness of divine sonship and divine mission in the whole context of his life and teaching shows that his self-understanding was open to interpretation in terms of pre-existence. Part IV examines the early Christian use of Pss 110:1 and 2:7 against this background. We propose that the root of pre-existent Son christology is to be found in early Christian exegesis of these two messianic psalms (the catalyst) in the light of Jesus' self-consciousness of divine sonship and divine mission (the foundation). The tremendous impact left by the resurrection event and the resulting conception of Jesus 'literally' enthroned to God's right hand led them to see Jesus as the pre-existent Lord and Son of God. In Part V it is argued that the pre-Pauline 'sending' formula 'God sent his Son' (Gal 4:4-5; Rom 8:304; Jn 3:16-17; and 1 Jn 4:9) derives from this understanding of Jesus as the pre-existent Son of God rather than from divine wisdom christology. Once Jesus' divinity and pre-existence were confirmed through the exegesis of the psalms, Jewish wisdom traditions were helpful in drawing out the fall significance of his pre-existence in terms of his being active in creation and co-eternal with God the Father. University: University of Aberdeen. (AN: B3B0D23812398B91)URL: https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.288352 .Subjects: Pre existent Lord and Son of God",
         "quotes": {
             "": ""
@@ -244,7 +244,7 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "NinanIdicheria1994": {
+    "NinanIdicheria1994masterthesis": {
         "doctype": "masterthesis",
         "author": "Ninan, Idicheria",
         "school": "Coventry University",
@@ -260,17 +260,18 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-    "ReynoldsBenjaminE2007": {
-        "doctype": "masterthesis",
+    "ReynoldsBenjaminE2007book": {
+        "doctype": "book",
         "author": "Reynolds, Benjamin E.",
         "school": "University of Aberdeen",
         "booktitle": "",
         "title": "The apocalyptic Son of Man in the Gospel of John",
-        "year": "2007",
-        "publisher": " ",
-        "isbn": "",
+        "year": "2008",
+        "publisher": "Mohr Siebeck",
+        "address": "Tubingen Germany",
+        "isbn": "978-3-16-149726-1",
         "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/detail/detail?vid=13&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bdata=JmF1dGh0eXBlPXNzbyZjdXN0aWQ9czMyNjA1MTgmc2l0ZT1laG9zdC1saXZl#AN=EDF47EBA5218104B&db=ddu",
+        "url-1": "https://books.google.com/books?id=S_lMRtGEuAsC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false",
         "abstract": "By: Reynolds, Benjamin E. 2007. Summary: This thesis argues that the title ‘Son of Man’ in the Gospel of John is an apocalyptic reference that highlights, among a number of things, that Jesus is a heavenly figure. The background of ‘Son of Man’ can be traced from the ‘one like a son of man’ in Daniel 7 and the interactions of this figure in Jewish apocalyptic and early Christian literature. Although there is no established ‘Son of Man concept’, the Danielic son of man is interpreted with common characteristics that suggest there was at least some general understanding of this figure in the Second Temple period. Thos common characteristics are noticeable throughout the Son of Man sayings in John’s Gospel, and the context and the interpretation of these sayings point to an understanding of the Johannine Son of Man similar to those in the interpretations of the Danielic figure. However, even though these similarities exist, the Johannine figure is distinct from the previous interpretations, just as they are distinct from one another. One obvious difference is the present reality of the Son of Man’s role in judgment and salvation. The Johannine Son of Man is an apocalyptic figure, and thus ‘Son of Man’ does not function to draw attention to Jesus’ humanity in the Gospel of John. Nor is the title synonymous with ‘Son of God’. ‘Son of Man’ points to aspects of Jesus’ identity that are not indicated by any other title. Along with the other titles, it helps to complete the Johannine portrait of Jesus. University: University of Aberdeen. (AN: EDF47EBA5218104B)URL: https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.445152 .",
         "quotes": {
             "": ""
@@ -278,10 +279,10 @@ var BibDat_SonOfMan = BibDat =
     },
 
 
-    "KetterlingMatthewD2018": {
-        "doctype": "masterthesis",
+    "KetterlingMatthewD2018phdthesis": {
+        "doctype": "phdthesis",
         "author": "Ketterling, Matthew D.",
-        "school": "",
+        "school": "University of St Andrews",
         "authorinfo": "",
         "booktitle": "",
         "title": "God's sons and the logic of the Covenant : divine sonship in 'Jubilees' and Romans",
@@ -289,7 +290,8 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/resultsadvanced?vid=14&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bquery=son+of+god&bdata=JmRiPWRkdSZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d ",
+        "url-1": "https://research-repository.st-andrews.ac.uk/handle/10023/15590",
+        "url-2": "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/15590/MatthewDKetterlingPhDThesis.pdf?sequence=2&isAllowed=y",
         "abstract": "By: Ketterling, Matthew D. 2018. Summary: This thesis attempts to understand Paul's deployment of divine sonship language with respect to the community of believers by bringing Romans into sustained conversation with one text from the Jewish tradition, namely, The Book of Jubilees. I argue throughout that a comparison between divine sonship in the two texts is justified because both authors collocate with the theme of “God's sons” the same series of motifs, including a divinely given spirit, law fulfillment, renewed creation, and Abrahamic descent. My central thesis is that Paul assumes certain characteristics of the sons of God in the logic of Romans, and that Paul shares similar assumptions with the author of Jubilees. In other words, one can detect a narrative substructure underlying Paul's descriptions of the “sons of God” that demonstrates marked similarities with the narrative of the sons of God in Jubilees. Just as the explicit logic of covenant membership in Jubilees holds together the collocation of motifs including divine sonship, the giving of the divine spirit, law fulfillment, new creation, and Abrahamic descent, so an analogous, though implicit, covenantal logic in Romans brings together the same motifs. This does not mean, however, that the two authors bring together the collocation of motifs in the same manner. In fact, reading Jubilees and Romans together highlights clear differences in conclusions. Nevertheless, these differences only further serve to illustrate that both Paul and Jubilees work with similar assumptions about the sons of God despite their theological differences. University: University of St Andrews. (AN: DA14EC027B732F02)URL: https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.750124 .",
         "quotes": {
             "": ""
@@ -316,8 +318,7 @@ var BibDat_SonOfMan = BibDat =
 
     "ThompsonAnthonyBatisteJr2019": {
         "doctype": "masterthesis",
-
-        "school": "",
+        "school": "Liberty University",
         "author": "Thompson, Anthony Batiste, Jr. 2019",
         "authorinfo": "",
         "booktitle": "",
@@ -326,7 +327,7 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/resultsadvanced?vid=14&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bquery=son+of+god&bdata=JmRiPWRkdSZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d ",
+        "url-1": "https://digitalcommons.liberty.edu/doctoral/2176/",
         "abstract": "By: Thompson, Anthony Batiste, Jr. 2019. Summary: This research exposes and explains the biblical concept and purpose of sonship in the church. More specifically, it will illustrate an effective model of the spiritual father and son relationship between pastors and their leaders and followers showing how to duplicate the same patterns according to God’s design for the Church. The rationale for this topic is derived from perceiving the need to address the deficiency in the effective duplication of leadership within the Church. Regarding leadership, much of the Church has neglected or deviated from the need for spiritual fathers to leaders and how this biblical concept and principle is to be used in an effective and legacy-building Church. This research will be approached first by giving historical and current data of the father-like relationship biblical leaders had with their followers and its significance. This research will utilize Scriptural models of relationships between leaders and followers in the Bible to demonstrate how churches can effectively apply this spiritual fatherhood model for the concept of sonship. University: Liberty University. (AN: 668DA44DCBB8A67B)URL: https://digitalcommons.liberty.edu/doctoral/2176 .",
         "quotes": {
             "": ""
@@ -334,8 +335,8 @@ var BibDat_SonOfMan = BibDat =
     },
 
     "SmithDBlair2019masterthesis": {
-        "doctype": "masterthesis",
-        "school": "",
+        "doctype": "phdthesis",
+        "school": "Durham University",
         "author": "Smith, D. Blair.",
         "authorinfo": "",
         "booktitle": "",
@@ -344,14 +345,14 @@ var BibDat_SonOfMan = BibDat =
         "publisher": " ",
         "isbn": "",
         "journal": "",
-        "url-1": "http://web.b.ebscohost.com/ehost/resultsadvanced?vid=14&sid=87ca6394-acb9-4598-817c-729960c3e485%40pdc-v-sessmgr02&bquery=son+of+god&bdata=JmRiPWRkdSZhdXRodHlwZT1zc28mY3VzdGlkPXMzMjYwNTE4JnR5cGU9MSZzZWFyY2hNb2RlPUFuZCZzaXRlPWVob3N0LWxpdmU%3d ",
+        "url-1": "http://etheses.dur.ac.uk/13246/",
         "abstract": "By: Smith, D. Blair. 2019. Summary: Not until the fourth century did the fatherhood of God become an issue of sustained analysis in Christian theology. This thesis explores the distinctiveness of the Father within four representative Trinitarian theologies: Athanasius of Alexandria, Hilary of Poitiers, Gregory of Nazianzus, and Basil of Caesarea. It will be shown that Athanasius presents problems in offering a coherent account. I will argue, however, for a subtle progression within his thought and across the chapters, which reaches maturity in Basil's integrative theology of fatherhood. The Father-Son relation served as the starting point for discussing the shape of the Godhead. Within that relation, the logic of the eternal birth affirms the Father as source while also creating theological 'space' for understanding the Father's 'loving gift' of himself. The consequences of the perfect gift within divine simplicity lead to emphases on the coinherence and inseparability of operations of the divine persons. Strong notes of unity are struck by such teaching, yet they lead back to the source of that unity and, thus, to the mystery of the Father. Within pro-Nicene thought, attention eventually turned to the Holy Spirit. While the Spirit does not possess a filial relation, he, too, was conceived of in terms of an origin in the Father. A mature doctrine of the Spirit brings about a robust understanding of the inseparability of the Trinitarian persons in God's redemptive purposes. One movement of grace extends from the Father, through the Son, in the Spirit, so that worshippers are enabled to return back to their source. The tension brought about in speaking of source and inseparability highlights the mystery of the Father whose 'loving gift' not only eternally constitutes the shape of Trinitarian relations - it also is the genesis of his own 'perfection' as through it the fullness of the Father is understood. University: Durham University. (AN: 81EED376AEAB9F27)URL: https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.783419 .",
         "quotes": {
             "": ""
         }
     },
 
-    "EllingwoodJane2015masterthesis": {
+    "EllingwoodJane2015phdthesis": {
         "doctype": "phdthesis",
         "school": "University of Exeter",
         "author": "Ellingwood, Jane",
