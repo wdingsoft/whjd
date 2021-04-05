@@ -412,6 +412,7 @@ var BibDat_ZiZi = BibDat =
         "author": "Trevor J. Burke",
         "editor": "Derek Tidball",
         "title": "The Message of Sonship: at Home in God's household",
+        "address":"Downers Grove, Illinois",
         "publisher": "Inter-Varsity Press",
         "isbn": "978-0-8303-2413-7",
         "year": "2011",
