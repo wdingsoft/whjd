@@ -535,7 +535,7 @@ var end_note_app = {
                     txt += key + ":" + obj.quotes[key] + "<br>"
                 })
             }else{
-                console.error(obj)
+                console.log("no quote:",obj)
             }
 
             return txt;
@@ -547,7 +547,7 @@ var end_note_app = {
             if (undefined !== uniqCheckObj[biid]) return;
             uniqCheckObj[biid] = 1;
             var biOj = _THIS.m_bibObj[biid];
-            txt += "<hr>"+Bibliography_Endnote_Uti.get_bibliography(biOj) +"<br>";
+            txt += "<hr>"+Bibliography_Endnote_Uti.get_footnote(biOj) +"<br>";
             txt += get_content(biOj) + "<br>"
         });
 

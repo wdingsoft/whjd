@@ -63,7 +63,7 @@ var Bibliography_Endnote_Uti = {
                 var month = "";
                 if (obj.month) month = obj.month + " ";
                 if (!!obj.journal) {
-                    ftn += `, "${obj.title}" In: <cite>${obj.journal}</cite> (${obj.year})`;
+                    ftn += `, "${obj.title}" In: <cite>${obj.journal}</cite> ${obj.vol} (${obj.year}) ${obj.page} `;
                     break;
                 }
                 var src = obj.journal;

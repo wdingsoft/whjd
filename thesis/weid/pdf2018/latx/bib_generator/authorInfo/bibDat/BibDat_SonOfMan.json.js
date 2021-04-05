@@ -10,7 +10,7 @@ var BibDat_SonOfMan = BibDat =
         "address": "",
         "url": "",
         "abstract": "",
-        "url-1": "https://www.google.com/books/edition/The_Son_of_Man_Debate/uAvQeGSbTJMC?hl=en&gbpv=1&dq=Son+of+Man+in+history&printsec=frontcover",
+        "url-1": "kindle rent, https://www.google.com/books/edition/The_Son_of_Man_Debate/uAvQeGSbTJMC?hl=en&gbpv=1&dq=Son+of+Man+in+history&printsec=frontcover",
         "isbn": "0-511-66306-7",
         "quotes": {
             "intro": "The expression 'Son of Man', used in the Gospels almost exclusively by Jesus, has been the object of intensive study since the Protestant Reformation, yet scholars have come to no agreement on its origin or meaning. Research in this area has been described as 'a veritable mine field' and 'a can of worms'. Because of the scope and complexity of the literature, no comprehensive survey of the subject has been written in the twentieth century. Delbert Burkett's book fills this need. It provides a comprehensive historical overview of the debate from the patristic period to 1996, and gives an evaluation of that research and a summation of the present state of the question. Burkett concludes that despite nineteen centuries of 'Son of Man' study there is no consensus concerning the meaning or origin of the expression; the debate is therefore a prime example of the limits of New Testament scholarship.",
@@ -277,7 +277,23 @@ var BibDat_SonOfMan = BibDat =
             "": ""
         }
     },
-
+    "": {
+        "doctype": "book",
+        "author": "",
+        "school": "",
+        "booktitle": "",
+        "title": "",
+        "year": "2008",
+        "publisher": "",
+        "address": "",
+        "isbn": "",
+        "journal": "",
+        "url-1": "kindle rent",
+        "abstract": "",
+        "quotes": {
+            "": ""
+        }
+    },
 
     "KetterlingMatthewD2018phdthesis": {
         "doctype": "phdthesis",
@@ -423,13 +439,15 @@ var BibDat_SonOfMan = BibDat =
     "RickBrownAndreaGrayAndLeithGray2011article": {
         "doctype": "article",
         "author": "Rick Brown and Andrea Gray And Leith Gray",
-        "authorinfo": "",
+        "authorinfo": "January-February 2012 Mission Frontiers",
         "booktitle": "Translating Familial Biblical Terms: An Overview Of The Issue",
         "title": "Translating Familial Biblical Terms: An Overview Of The Issue",
         "year": "2012",
-        "publisher": " ",
+        "publisher": "",
         "isbn": "",
-        "journal": "January-February 2012 Mission Frontiers",
+        "journal": "The International Journal of Frontier Missiology",
+        "vol":"28:3",
+        "page":"",
         "url-1": "https://www.missionfrontiers.org/pdfs/34-1-translating-familia-biblical-terms.pdf",
         "url-2": "",
         "abstract": "",

@@ -335,7 +335,9 @@ var BibDat_FamilialVocab = BibDat =
 
             "p684b": "the historical-critical assertion that the two creatioons accounts found in Gen 1:1-2:4a and 2:4b-25 stem from two different sources and present two completely different creation accounts with different foci. According to source theorists, the first accoount is attributed to the putative Priestly author and the latter account is assigned to the so-called Yahwist/'J' source. The argument is therefore propoosed that the Priestly source focuses on procreation as seen in Gen1:28 whereas J source is concerned with kinship ties tthat remedy loneliness as exemplifiied in Gen 2:18. Based upon this mnany affiming scholars are more than willing to offer their full support for the inclusion of same-sex couples and marriage in the church.",
 
-            "p685b": "Do the two creation accounts present two contraditioary stories of creation?"
+            "p685b": "Do the two creation accounts present two contraditioary stories of creation?",
+
+            "p686":"It seems more likely that the second account in some way complemented the first account. Even McKeown concludes that the two accounts are 'complementary' with the second one covering select aspects of the creation event in more detail. And E.EE. Speiser notes that even though these may be from different sources, 'the subject matter is ultimately the same in both sources.'  Chapter 1 focuses on the 'heavens and earth' whereas chapter 2 centers on 'earth and heaven', which push one to the concluusion that chapter 2 compiments chapter 1 by zeroing in on the creation and role of human. T. Desmond Alexander concurs that these chapters are complementary: one broadly focused and the other 'zoomed in'. It seems evident that this zooming in is for the purpose of drawing attention to the creation of the Garden of Eden, its animals, and the man and the woman."
         }
     },
     "PrinzivalliEmanuela2017article": {
@@ -521,7 +523,37 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
+    "WRobertGodfreybook2003book": {
+        "doctype": "book",
+        "author": "W. Robert Godfrey",
+        "booktitle": "God's Pattern for Creation: A Covenantal Reading of Genesis 1",
+        "year": "2003",
+        "publisher": "P&R",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "Beginnings Are Important. If we want to understand the Bible as a whole, it is vital to understand what it teaches about creation. W. Robert Godfrey has written this study with thoughtful Christians in mind. He carefully examines the text, knowing that the Bible is a covenantal record that is always focused on God and his relationship to his people. Book jacket.",
+        "quotes": {
+            "p1": ""
+        }
+    },
 
+    "Daivd W. Hall, Lee Irons, Hugh Ross, Gleason L. Archer, Meredith G. Kline2001book": {
+        "doctype": "book",
+        "author": "Daivd W. Hall and Lee Irons and Hugh Ross and Gleason L. Archer and Meredith G. Kline",
+        "booktitle": "",
+        "year": "2001",
+        "publisher": "Crux Press",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "Are the Genesis creation days 24 hours long? Ages of time? Or a literary framework? In The Genesis Debate, three teams of evangelicals committed to the infallibility and inerrancy of Scripture tackle this question head-on by presenting and defending their respective views in a lively, yet friendly, forum. --from publisher description.",
+        "quotes": {
+            "p1": ""
+        }
+    },
 
     "article": {
         "doctype": "article",
