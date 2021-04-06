@@ -433,6 +433,26 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
+
+    "AndersLumdJacobsen2008article": {
+        "doctype": "article",
+        "author": "Anders Lumd Jacobsen",
+        "authorinfo": "Dept. of Systematic Theology, Faculty of  Theology, University of Aarbus, Denmark alj@teo.au.dk",
+        "title": "Genesis 1-3 as Source for the Anthropologyy of Origen",
+        "journal": "Vigiliae Christianae",
+        "vol": "Vol. 62, No. 3",
+        "year": "2008",
+        "page": "pp. 213-232 (20 pages)",
+        "publisher": "Brill",
+        "isbn": "",
+        "url-1": "https://www.jstor.org/stable/20474864?seq=1",
+        "abstract": "According to Origen Genesis 1-3 is an anthropological key-text.   e account of man’s creation in Gen. 1,26f deals with the creation of the inner non-material man in the image of God, whereas Gen. 2,7 deals with the creation of the human body, the outer man, which is not created in the image of God. Some later critics claim that according to Origen Gen. 2,7 is about the creation of a non-material luminous body. In Origen’s opinion only the inner man can reach perfection.   e outer man can never be perfect, but will be destroyed. To deepen our understanding of, how Origen understands the mortality of the human body, some short sayings about the meaning of Gen. 3,21 are interpreted. In the few places where Origen refers explicitly to Gen. 3,21 there is no clear picture of how he interprets this verse.   e most precise observation we can make is that in his view the skin coats denote the mortal corporality that surrounds the inner man",
+        "quotes": {
+            "p218": "One of Origen's main points in his interpretation of Gen 1:26f is that it is main's soul that is created in God's image amd mot mam's body."
+        }
+    },
+
+
     "ZionyZevit2013book": {
         "doctype": "book",
         "author": "Ziony Zevit",
@@ -624,12 +644,80 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
+    "DouglasCMcMurtrie1934book": {
+        "doctype": "book",
+        "author": "Douglas C. McMurtrie",
+        "booktitle": "Concerning Quotation Marks",
+        "year": "1934",
+        "publisher": "Private Printed",
+        "address": "New York",
+        "url-2":"https://aphelis.net/wp-content/uploads/2012/12/McMURTRIE_1933_Quotation_Mark_light.pdf",
+        "url-1": "https://aphelis.net/origin-development-quotation-mark/#:~:text=The%20earliest%20book%20discovered%20in,Vitis%20Sophistarum%E2%80%9D%20by%20Flavius%20Philostratus.",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "web":"[UPDATE–Dec. 4, 2012] See the end of this post for an additional reference to Prof Ruth Finnegan’s highly relevant book ‘Why Do We Quote? The Culture and History of Quotation’ (Open Book Publisher, 2011)",
 
+            "p4": "The earliest book discovered in which appeared indicia which may properly be termed marks of quotation was printed in 1516 at Strasbourg, Alsace (then in Germany), by Mathias Schurer. It was “De Vitis Sophistarum” by Flavius Philostratus. The marks consisted of two commas in the left hand margin of each page outside the regular type measure. They were placed at the beginning of each line in which a quoted passage appeared, and were evidently added after the page was set up, because their alignment varies greatly."
+        }
+    },
 
+    "CarolineVanderSticheleandSusanneScholz2014book": {
+        "doctype": "book",
+        "author": "Caroline Vander Stichele and ‎Susanne Scholz",
+        "editor": "Caroline Vander Stichele and ‎Susanne Scholz",
+        "booktitle": "Hidden Truths from Eden: Esoteric Readings of Genesis 1-3",
+        "year": "2014",
+        "publisher": "SBL Press",
+        "address": "Atlanta, GA",
+        "url-2":"",
+        "url-1": "https://www.google.com/books/edition/Hidden_Truths_from_Eden/4DAjBQAAQBAJ?hl=en&gbpv=1&dq=origen+Gen+2:24&pg=PA66&printsec=frontcover",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p66":"Origen's first response to the critique was indirect,",
 
+            "p4": ""
+        }
+    },
 
+    "RonaldEHeine2002book": {
+        "doctype": "book",
+        "author": "Ronald E. Heine",
+        "editor": "",
+        "booktitle": "The Commentaries of Origen and Jerome on St. Paul's Epistle",
+        "year": "2002",
+        "publisher": "Oxford University Press",
+        "address": "Oxford New York, UK",
+        "url-2":"",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p52":"The creation of male ad female in Genesis 1:27 and the marriage imagery of Genesis 2:24 understood through Ephesians 5:31-2 appear to have been of major significamce for Origen's umderstading of both the pre-existet Church and the incarnatioon oof Christ. ",
 
+            "p4": ""
+        }
+    },
 
+    "ColinHamer2019book": {
+        "doctype": "book",
+        "author": "Colin Hamer",
+        "editor": "",
+        "booktitle": "Marital Imagery in the Bible: An Exploration of Genesis 2:24 and its Significance for the Umderstanding of New Testament Divorce and Remarriage Teaching",
+        "year": "2019",
+        "publisher": "Wipf Stock",
+        "address": "Eugene, Oregon",
+        "url-2":"",
+        "url-1": "https://www.google.com/books/edition/Marital_Imagery_in_the_Bible/f7qCDwAAQBAJ?hl=en&gbpv=1&dq=Gen+2:24&printsec=frontcover",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p22":"The chapter considers the different conceptuual domains of Geesis 2:23 and Genesis 2:24, and suggests that it was the Genesis 2:24 marriage which underpinned not only the marital practices of ancient Israel, but it is that marriage which forms the source domain of the cross-mapping, and so Geesis 2:24 forms the basis of all the Bible's marital imagery.",
+
+            "p41": "The cross-domain mapping of Genesis 2:24 in the OT, Yahweh: The husband of Israel -- the root metaphor in the OT marital imagery. It will be seen that the OT marital imagery has many manifestations but that they are all part of one large-scale conceptual metaphor based on mundane marriage (the sooource domain), as outlined in Genesis 2:24, cross-mapped to a new conceeptual doman: a defined people groupd being 'married' to their God."
+        }
+    },
 
 
 
@@ -645,7 +733,8 @@ var BibDat_FamilialVocab = BibDat =
         "publisher": "",
         "year": "",
         "Urldate": "",
-        "url": "",
+        "url-2":"",
+        "url": ".",
         "notes": "",
         "abstract": "",
         "quotes": {
