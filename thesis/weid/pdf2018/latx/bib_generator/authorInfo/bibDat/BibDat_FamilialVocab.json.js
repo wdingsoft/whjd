@@ -459,7 +459,7 @@ var BibDat_FamilialVocab = BibDat =
         "booktitle": "What Really Happened in the Garden of Eden?",
         "year": "2013",
         "publisher": "Yale University Press",
-        "address": "",
+        "address": "London, UK",
         "url": "",
         "url-1": "kindle",
         "isbn": "",
@@ -559,22 +559,268 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
-    "Daivd W. Hall, Lee Irons, Hugh Ross, Gleason L. Archer, Meredith G. Kline2001book": {
+    "": {
         "doctype": "book",
-        "author": "Daivd W. Hall and Lee Irons and Hugh Ross and Gleason L. Archer and Meredith G. Kline",
+        "author": "",
         "booktitle": "",
-        "year": "2001",
-        "publisher": "Crux Press",
+        "year": "",
+        "publisher": "",
         "address": "",
         "url": "",
         "url-1": "",
         "isbn": "",
-        "abstract": "Are the Genesis creation days 24 hours long? Ages of time? Or a literary framework? In The Genesis Debate, three teams of evangelicals committed to the infallibility and inerrancy of Scripture tackle this question head-on by presenting and defending their respective views in a lively, yet friendly, forum. --from publisher description.",
+        "abstract": "",
         "quotes": {
             "p1": ""
         }
     },
 
+
+
+    "HDMSpenceAndJosephSExell1950book": {
+        "doctype": "book",
+        "author": "H. D. M. Spence and ‎Joseph S. Exell",
+        "booktitle": "The Pulpit Commentary: Genesis, Exodus - Volume 1",
+        "year": "1950",
+        "publisher": "WM. B. Eerdmans Publishing Company",
+        "address": "Grand Rapids, Michigan",
+        "url-2": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "gen2:24": "Verse 24. - Therefore shall a man leave his father and mother, and shall cleave unto his wife. There is nothing in the use of such terms as father and mother, or in the fact that the sentiment is prophetic, to prevent the words from being regarded as a continuation of Adam's speech, although, on the other hand, the statement of Christ (Matthew 19:5) does not preclude the possibility of Moses being their author; but whether uttered by the first husband (Delitzsch, Macdonald) or by the historian (Calvin, Murphy), they must be viewed as an inspired declaration of the law of marriage. Its basis (fundamental reason and predisposing cause) they affirm to be (1) the original relationship of man and woman, on the platform of creation; and (2) the marriage union effected between the first pair. Its nature they explain to be  (3) a forsaking (on the part of the woman as well as the man) of father and mother - not filially, in respect of duty, but locally, in respect of habitation, and comparatively, in respect of affection; and"
+        }
+    },
+    "CambridgeBibleforSchoolsandCollegesbook1882book": {
+        "doctype": "book",
+        "author": "John Perowne",
+        "authorinfo": "Anglican bishop John Perowne",
+        "booktitle": "Cambridge Bible for Schools and Colleges",
+        "year": "1882",
+        "publisher": "Cambridge University Press",
+        "address": "UK",
+        "url-2": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "Gen2:24a": "24. Therefore shall a man, &c.] This verse contains the comment which the narrator makes upon the words of the man in Genesis 2:23. The word “therefore” introduces his inference. As in Genesis 10:9, Genesis 26:33, Genesis 32:32, a sentence beginning with “therefore” supplies the application, or relation, of the ancient narrative to later times.",
+            "Gen2:24b": "It is the man who is to leave “father and mother,” not “the woman.” Some compare the story in Jdg 15:1, where the woman remains with her family or clan, and Samson comes to live with her. This feature has been thought to illustrate the primitive usage of “the matriarchate.” But it is unlikely that the Hebrew narrative would contain a reference to such conditions.",
+            "Gen2:24c": "Instead of “shall leave,” the full force of the tense in the Hebrew would be given by “doth leave” and “cleaveth.” The sanctity of marital relations is thus referred back to the very birthday of human society, being based on a principle laid down before the Fall.",
+            "Gen2:24d": "The relation of the man to his wife is proclaimed to be closer than that to his father and mother. By the words, “shall cleave unto his wife … one flesh,” is asserted the sanctity of marriage. Polygamy is not definitely excluded; but the principle of monogamy seems to be implied in the words “cleave” and “shall be one flesh”: and this principle is upheld by the prophets as the ideal of marriage, in their representation of the relation of Jehovah and Israel under the metaphor of the married state.",
+            "Gen2:24e": "",
+            "Gen2:24f": "",
+        }
+    },
+    "JohnGill1771book": {
+        "doctype": "book",
+        "author": "John Gill",
+        "authorinfoo": "1697 – 14 October 1771) was an English Baptist pastor",
+        "booktitle": "Gill's Exposition of the Entire Bible",
+        "year": "1771",
+        "publisher": "",
+        "address": "",
+        "url-2": "https://biblehub.com/commentaries/pulpit/genesis/2.htm",
+        "url":"https://biblehub.com/commentaries/genesis/2-24.htm",
+        "url-1": "https://www.christianity.com/bible/commentary.php?com=gill&b=1",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24": "Therefore shall a man leave his father, and his mother,.... These are thought by some to be the words of Moses, inferring from the above fact, what ought to be among men; and by others, the words of Adam under divine inspiration, as the father of mankind instructing his sons what to do, and foretelling what would be done in all succeeding ages: though they rather seem to be the words of God himself, by whom marriage was now instituted;"
+        }
+    },
+    "MatthewPoole1679book": {
+        "doctype": "book",
+        "author": "Matthew Poole",
+        "authorInfo": "Matthew Poole (1624–1679) was an English Nonconformist theologian and biblical commentator.[1]",
+        "booktitle": "Matthew Poole's Commentary",
+        "year": "1679",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24": "These are the words of Moses by Divine instinct, or his inference from Adam’s words."
+        }
+    },
+    "AlbertBarnes1679book": {
+        "doctype": "book",
+        "author": "Albert Barnes",
+        "authorInfo": "Albert Barnes (1798-1870)",
+        "booktitle": "Barnes' Notes on the Bible",
+        "year": "1870",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24-a": "These might be the words of the first man Genesis 2:24. As he thoroughly understood the relation between himself and the woman, there is no new difficulty in conceiving him to become acquainted at the same time with the relationship of son to father and mother, which was in fact only another form of that in which the newly-formed woman stood to himself. The latter is really more intimateand permanent than the former, and naturally therefore takes its place, especially as the practical of the filial tie, - that of being trained to maturity, - is already accomplished, when the conjugal one begins.",
+
+            "2:24-b":"But it seems more probable that this sentence is the reflection of the inspired author on the special mode in which the female was formed from the male. Such remarks of the writer are frequently introduced by the word 'therefore' (על־כן kēn-‛al). It is designed to inculcate on the race that was to spring from them the inviolable sanctity of the conjugal relation.",
+
+
+        }
+    },
+
+    "MatthewHenry1714book": {
+        "doctype": "book",
+        "author": "Matthew Henry",
+        "authorInfo": "1662-1714",
+        "booktitle": "Matthew Henry's Concise Commentary",
+        "year": "1714",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24-a": "Our first parents needed no clothes for covering against cold or heat, for neither could hurt them: they needed none for ornament. ",
+
+            "2:24-b":" ",
+
+            
+        }
+    },
+
+    "JosephBenson1821book": {
+        "doctype": "book",
+        "author": "Joseph Benson",
+        "authorInfo": "Joseph Benson (26 January 1749 – 16 February 1821)",
+        "booktitle": "Benson Commentary",
+        "year": "1821",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24-a": "Our first parents needed no clothes for covering against cold or heat, for neither could hurt them: they needed none for ornament. ",
+
+            "2:24-b":" ",
+
+            
+        }
+    },
+    "CharlesJohnEllicott19051book": {
+        "doctype": "book",
+        "author": "Charles John Ellicott",
+        "authorInfo": "Charles John Ellicott (1819–1905) ",
+        "booktitle": "Ellicott's Commentary for English Readers",
+        "year": "1905",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24-a": "These are evidently the words of the narrator. Adam names this new product of creative power, as he had named others, but he knew nothing about young men leaving their father’s house for the wife’s sake. Moreover, in Matthew 19:5, our Lord quotes these words as spoken by God, and the simplest interpretation of this declaration is that the inspired narrator was moved by the Spirit of God to give this solemn sanction to marriage, founded upon Adam’s words. The great and primary object of this part of the narrative is to set forth marriage as a Divine ordinance. The narrator describes Adam’s want, pictures him as examining all animal life, and studying the habits of all creatures so carefully as to be able to give them names, but as returning from his search unsatisfied. At last one is solemnly brought to him who is his counterpart, and he calls her Ishah, his feminine self, and pronounces her to be his very bone and flesh. Upon this, “He who at the beginning made them male and female “pronounced the Divine marriage law that man and wife are one flesh.",
+
+            "2:24-b":" ",
+
+            
+        }
+    },
+
+
+
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
+    "book": {
+        "doctype": "book",
+        "author": "",
+        "booktitle": "",
+        "year": "",
+        "publisher": "",
+        "address": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p1": ""
+        }
+    },
     "article": {
         "doctype": "article",
         "author": "",

@@ -49,6 +49,20 @@ var Bibliography_Endnote_Uti = {
         }
         return editors
     },
+    get_url: function (obj) {
+        var editors = ""
+        if (obj.url) {
+            editors = ` ${obj.url}.`
+        }
+        return editors
+    },
+    get_addr_publisher: function (obj) {
+        var editors = "N.p.,"//
+        if (obj.address && obj.publisher) {
+            editors = ` ${obj.address}: ${obj.publisher},`
+        }
+        return editors
+    },
     get_footnote: function (obj) {
         if (!obj) {
             console.log("obj is null:", obj)
@@ -93,7 +107,7 @@ var Bibliography_Endnote_Uti = {
                 if (!booktit) {
                     booktit = obj.title;
                 }
-                ftn += `. <cite>${booktit}</cite>. ${this.get_editor(obj)} ${obj.address}: ${obj.publisher}, ${obj.year}`;
+                ftn += `. <cite>${booktit}</cite>. ${this.get_editor(obj)} ${this.get_addr_publisher(obj)} ${obj.year}. ${this.get_url(obj)}`;
                 break;
             case "incollection":
                 ftn += `. "${obj.title}" In: <cite>${obj.booktitle}</cite>.  ${this.get_editor(obj)} ${obj.address}:${obj.publisher}, ${obj.year}`;
@@ -151,7 +165,7 @@ var Bibliography_Endnote_Uti = {
                 if (!boktit) {
                     boktit = obj.title;
                 }
-                ftn += ` <cite>${boktit}</cite>. ${this.get_editor(obj)} ${obj.address}: ${obj.publisher}, ${obj.year}`;
+                ftn += ` <cite>${boktit}</cite>. ${this.get_editor(obj)} ${this.get_addr_publisher(obj)} ${obj.year}. ${this.get_url(obj)}`;
                 break;
             case "incollection":
                 ftn += `. "${obj.title}" In: ${obj.booktitle}. Ed. by ${obj.editor}. ${obj.address}:${obj.publisher}, ${obj.year}`;
