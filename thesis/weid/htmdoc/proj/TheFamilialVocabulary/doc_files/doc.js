@@ -534,8 +534,8 @@ var end_note_app = {
                 Object.keys(obj.quotes).forEach(function (key) {
                     txt += key + ":" + obj.quotes[key] + "<br>"
                 })
-            }else{
-                console.log("no quote:",obj)
+            } else {
+                console.log("no quote:", obj)
             }
 
             return txt;
@@ -547,7 +547,9 @@ var end_note_app = {
             if (undefined !== uniqCheckObj[biid]) return;
             uniqCheckObj[biid] = 1;
             var biOj = _THIS.m_bibObj[biid];
-            txt += "<hr>"+Bibliography_Endnote_Uti.get_footnote(biOj) +"<br>";
+            txt += "<hr>" + biid;
+            txt += "<hr>" + Bibliography_Endnote_Uti.get_footnote(biOj) + "<br>";
+            txt += "<hr>" + Bibliography_Endnote_Uti.get_bibliography(biOj) + "<hr>";
             txt += get_content(biOj) + "<br>"
         });
 
