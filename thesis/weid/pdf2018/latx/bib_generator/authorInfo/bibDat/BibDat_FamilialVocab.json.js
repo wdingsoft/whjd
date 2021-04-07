@@ -214,7 +214,7 @@ var BibDat_FamilialVocab = BibDat =
         "title": "On Genesis 2:24",
         "journal": "Catholic Biblical Quarterly",
         "vol": "Vol. 52 Issue 3",
-        "year": "Jul1990",
+        "year": "Jul 1990",
         "page": "p389",
         "publisher": "",
         "isbn": "",
@@ -222,7 +222,21 @@ var BibDat_FamilialVocab = BibDat =
         "url-2": "",
         "abstract": "Proposes to verify the validity of the interpretation of the biblical passage concerning the creation of man and woman in Genesis 2:23-24. Examination of the text and sense of the passage; Literary nature of Genesis 2:24; Etiology of the passage. (AN: 9604083801)",
         "quotes": {
-            "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, amd have therefor suuggested, although in passing and with differemt emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondaryy addition, an insertion, a glooss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24."
+            "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, and have therefor suggested, although in passing and with different emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondary addition, an insertion, a gloss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24.",
+            "p391z":"General consideration of the narrrative's frame leads to the conclusion that Gen 2:18-23 constitutes one unit which is complete in itsself, firmly structuured, and artistically arraged.... it discloses that the whole narrative of 18-23 (the creation of issa) is also an etymological etiology. In another words, with the help of the saying (23c), the description of the creation of the woman from man (18-23) appears to be the transpoition in concrete and living images of the popular etymology of issa from ish. ",
+            "p392a":"Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
+            "":"",
         }
     },
 
@@ -659,7 +673,7 @@ var BibDat_FamilialVocab = BibDat =
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "2:24-a": "These might be the words of the first man Genesis 2:24. As he thoroughly understood the relation between himself and the woman, there is no new difficulty in conceiving him to become acquainted at the same time with the relationship of son to father and mother, which was in fact only another form of that in which the newly-formed woman stood to himself. The latter is really more intimateand permanent than the former, and naturally therefore takes its place, especially as the practical of the filial tie, - that of being trained to maturity, - is already accomplished, when the conjugal one begins.",
+            "2:24-a": "These might be the words of the first man Genesis 2:24. As he thoroughly understood the relation between himself and the woman, there is no new difficulty in conceiving him to become acquainted at the same time with the relationship of son to father and mother, which was in fact only another form of that in which the newly-formed woman stood to himself. The latter is really more intimate and permanent than the former, and naturally therefore takes its place, especially as the practical of the filial tie, - that of being trained to maturity, - is already accomplished, when the conjugal one begins.",
 
             "2:24-b":"But it seems more probable that this sentence is the reflection of the inspired author on the special mode in which the female was formed from the male. Such remarks of the writer are frequently introduced by the word 'therefore' (על־כן kēn-‛al). It is designed to inculcate on the race that was to spring from them the inviolable sanctity of the conjugal relation.",
 
@@ -701,9 +715,9 @@ var BibDat_FamilialVocab = BibDat =
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "2:24-a": "Our first parents needed no clothes for covering against cold or heat, for neither could hurt them: they needed none for ornament. ",
+            "2:24-a": "It appears by Matthew 19:4-5, that it was God himself who said here, a man must leave all his relations to cleave to his wife;",
 
-            "2:24-b":" ",
+            "2:24-b":"but whether he spake this by Moses or by Adam, is uncertain.",
 
             
         }
