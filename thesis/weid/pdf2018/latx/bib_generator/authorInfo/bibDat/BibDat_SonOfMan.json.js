@@ -116,13 +116,13 @@ var BibDat_SonOfMan = BibDat =
     },
 
 
-    "bookTemplate197book": {
+    "JohnAPhillips1984book": {
         "doctype": "book",
         "author": " John A. Phillips | Sep 1, 1985",
         "booktitle": "Eve and yhwh Eve: The History of an Idea",
         "year": "Sep 1, 1984",
-        "publisher": "Harper&Row, San Francisco",
-        "address": "",
+        "publisher": "Harper & Row",
+        "address": "San Francisco, CA",
         "url": "",
         "abstract": "",
         "url-1": "free-minds.org/forum/index.php?topic=9608961.msg397159#msg397159",
@@ -156,7 +156,7 @@ var BibDat_SonOfMan = BibDat =
         "quotes": {
             "p33a": "As a result of the writer's recent investigation into a comparison between the Old Babylonian version the Atra-hasis epic and the first eleven chapters of Genesis, two points have emerged that concern Eve in her role as a creatress of man, In general, it has been my contention that Atra-hasis and Genesis 1-11 are parallel in literacy structure and in many motifs, and yet they express completely opposite views on the main ideological issues.",
 
-            "p33b": "The etiological aspect of the name hawwab, Eve, in Gen 3:20 deserves another look. Jan Heller suspected that the phrase em-kol-bay, (mother of all living) itself could be construed as an honorific name or a title for a great lady. Heller speculated that a remote ancestor of the title, 'mother of all the living'  may have existed in a cult of the Great Mother or the Mother Goddess, although he did not provide literacy evidence from any source to support his conjecture. The recent publication of the Old Babylonian Atra-hasis epic, however, seems to give us a literal as well as a thematic parallel to the Genesis title. 'mother of all the living.' ",
+            "p33b": "The etiological aspect of the name hawwab, Eve, in Gen 3:20 deserves another look. Jan Heller suspected that the phrase em-kol-bay, (mother of all living) itself could be construed as an honorific name or a title for a great lady. Heller speculated that a remote ancestor of the title, 'mother of all the living'  may have existed in a cult of the Great Mother or the Mother Goddess, although he did not provide literacy evidence from any source to support his conjecture. The recent publication of the Old Babylonian Atra-hasis epic, however, seems to give us a literal as well as a thematic parallel to the Genesis title, 'mother of all the living.' ",
 
             "p33c": "The word-for-word counterpart of 'mother of all the living' in that epic is found in the honorific name for the goddess Mami, the creatress, who is, at one point, called belet-kada-ili, 'mistress of all the gods'",
 
@@ -466,7 +466,7 @@ var BibDat_SonOfMan = BibDat =
         "year": "2016",
         "publisher": "The World Evangelical Alliance",
         "isbn": "",
-        "journal": "",
+        "journal": "World Evangelical Alliance",
         "url-1": "https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
         "url-2": "",
         "abstract": "",

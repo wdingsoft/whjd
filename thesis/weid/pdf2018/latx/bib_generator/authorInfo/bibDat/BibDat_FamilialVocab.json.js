@@ -225,7 +225,8 @@ var BibDat_FamilialVocab = BibDat =
             "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, and have therefor suggested, although in passing and with different emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondary addition, an insertion, a gloss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24.",
             "p391z":"General consideration of the narrrative's frame leads to the conclusion that Gen 2:18-23 constitutes one unit which is complete in itsself, firmly structuured, and artistically arraged.... it discloses that the whole narrative of 18-23 (the creation of issa) is also an etymological etiology. In another words, with the help of the saying (23c), the description of the creation of the woman from man (18-23) appears to be the transpoition in concrete and living images of the popular etymology of issa from ish. ",
             "p392a":"Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
-            "":"",
+            
+            "p398z":"The initial al-ken 'therefore', in fact, certifies beyond any doubt that he intends here to explain something, presenting it as a consequence of what has been narrated in the preceding verse (issa taken from Adam). The problem rather is his specific intention; for what follows al-ken (namely, leaving father and mother on the part of ish and joining himself to his issa) gives rise to doubts as to what exactly the author intends to explain: marriage (a social institution) or 'love' (a natural drive)? ",
             "":"",
             "":"",
             "":"",
@@ -573,19 +574,20 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
-    "": {
+    "JohnHWalton2018book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
+        "author": "John H. Walton",
+        "booktitle": "Ancient Near Eastern Thought and the Old Testament: Introducing the Conceptual World of the Hebrew Bible",
+        "year": "2018",
+        "publisher": "Baker Academic",
+        "address": "Grand Rapids, MI",
+        "editor":"2nd",
         "url": "",
         "url-1": "",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p1": ""
+            "ciu:Brandon Thompson": "Whenever God communicates, he communicates in that culture's 'cultural river' (this phrase is one used by John H. Walton). "
         }
     },
 
@@ -835,18 +837,18 @@ var BibDat_FamilialVocab = BibDat =
             "p1": ""
         }
     },
-    "article": {
+    "Paul Niskanen2006article": {
         "doctype": "article",
-        "author": "",
+        "author": "Paul Niskanen",
         "authorinfo": "",
-        "title": "",
-        "journal": "",
-        "vol": "",
-        "year": "",
-        "page": "",
+        "title": "Yhwh as Father, Redeemer, and Potter in Isaiah 63:7-64:11",
+        "journal": "The Catholic Biblical Quarterly",
+        "vol": "Vol. 68, No. 3",
+        "year": "July 2006",
+        "page": "pp. 397-407",
         "publisher": "",
         "isbn": "",
-        "url-1": "",
+        "url-1": "https://www.jstor.org/stable/43727578?read-now=1&refreqid=excelsior%3A5969487cea6679989e94c00a7d97e670&seq=11#page_scan_tab_contents",
         "abstract": "",
         "quotes": {
             "p121": ""
