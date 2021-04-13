@@ -629,6 +629,25 @@ var BibDat_FamilialVocab = BibDat =
             "Gen2:24f": "",
         }
     },
+
+
+    "HeinrichAugustWilhelmMeyer1829book": {
+        "doctype": "book",
+        "author": "Heinrich August Wilhelm Meyer",
+        "authorinfoo": "Meyer(1800–1873) was born in Gotha, was a German Protestant divine. He wrote commentaries on the New Testament and published an edition of that book.",
+        "booktitle": "Meyer's NT Commentary",
+        "year": "1829",
+        "publisher": "",
+        "address": "",
+        "url-2": "",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "Mat19:6": ""
+        }
+    },
     "JohnGill1771book": {
         "doctype": "book",
         "author": "John Gill",
