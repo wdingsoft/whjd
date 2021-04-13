@@ -1061,7 +1061,32 @@ var BibDat_FamilialVocab = BibDat =
             "4weid":"Its' not about sex, head or servant, primary or secondary. It's about left and right of the missionary and the glory of God.",
         }
     },
-
+    "PeterKrol2013webpage": {
+        "doctype": "webpage",
+        "author": "Peter Krol",
+        "editor": " ",
+        "title": "Top 11 OT Verses Quoted in NT",
+        "publisher": "",
+        "year": "2013",
+        "Urldate": "2021",
+        "url-2": "",
+        "url": "https://www.knowableword.com/2013/04/10/top-10-ot-verses-quoted-in-nt/",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "pg": `Leviticus 19:18 (8 times)
+            Exodus 20:12/Deuteronomy 5:16 (6)
+            Exodus 20:13/Deuteronomy 5:17 (6)
+            Exodus 20:14/Deuteronomy 5:18 (6)
+            Psalm 110:1 (5)
+            Isaiah 6:10 (5)
+            Genesis 2:24 (4)
+            Exodus 3:6 (4)
+            Psalm 118:22 (4)
+            Isaiah 6:9 (4)
+            Isaiah 40:3 (4)`,
+        }
+    },
     "webpage": {
         "doctype": "webpage",
         "author": "",
