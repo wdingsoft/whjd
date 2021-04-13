@@ -223,21 +223,21 @@ var BibDat_FamilialVocab = BibDat =
         "abstract": "Proposes to verify the validity of the interpretation of the biblical passage concerning the creation of man and woman in Genesis 2:23-24. Examination of the text and sense of the passage; Literary nature of Genesis 2:24; Etiology of the passage. (AN: 9604083801)",
         "quotes": {
             "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, and have therefor suggested, although in passing and with different emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondary addition, an insertion, a gloss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24.",
-            "p391z":"General consideration of the narrrative's frame leads to the conclusion that Gen 2:18-23 constitutes one unit which is complete in itsself, firmly structuured, and artistically arraged.... it discloses that the whole narrative of 18-23 (the creation of issa) is also an etymological etiology. In another words, with the help of the saying (23c), the description of the creation of the woman from man (18-23) appears to be the transpoition in concrete and living images of the popular etymology of issa from ish. ",
-            "p392a":"Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
-            
-            "p398z":"The initial al-ken 'therefore', in fact, certifies beyond any doubt that he intends here to explain something, presenting it as a consequence of what has been narrated in the preceding verse (issa taken from Adam). The problem rather is his specific intention; for what follows al-ken (namely, leaving father and mother on the part of ish and joining himself to his issa) gives rise to doubts as to what exactly the author intends to explain: marriage (a social institution) or 'love' (a natural drive)? ",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
-            "":"",
+            "p391z": "General consideration of the narrrative's frame leads to the conclusion that Gen 2:18-23 constitutes one unit which is complete in itsself, firmly structuured, and artistically arraged.... it discloses that the whole narrative of 18-23 (the creation of issa) is also an etymological etiology. In another words, with the help of the saying (23c), the description of the creation of the woman from man (18-23) appears to be the transpoition in concrete and living images of the popular etymology of issa from ish. ",
+            "p392a": "Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
+
+            "p398z": "The initial al-ken 'therefore', in fact, certifies beyond any doubt that he intends here to explain something, presenting it as a consequence of what has been narrated in the preceding verse (issa taken from Adam). The problem rather is his specific intention; for what follows al-ken (namely, leaving father and mother on the part of ish and joining himself to his issa) gives rise to doubts as to what exactly the author intends to explain: marriage (a social institution) or 'love' (a natural drive)? ",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
+            "": "",
         }
     },
 
@@ -340,7 +340,7 @@ var BibDat_FamilialVocab = BibDat =
         "page": "p681-696",
         "publisher": "",
         "isbn": "",
-        "file":"Gen224_2017_sameSexMarriage.pdf",
+        "file": "Gen224_2017_sameSexMarriage.pdf",
         "url-1": "https://search.proquest.com/openview/2ab2357327e791905f2044269f97e61a/1?pq-origsite=gscholar&cbl=47286",
         "abstract": "The rapid moral and cultural changes in Western society have not left the evangelical church unscathed. Instead, an increasing number of scholars, self-professed evangelicals included, are lining up to offer their affirming interpretations of the key biblical texts related to the same-sex discussion. One area in particular that has seen a seismic shift within evangelical circles is the push for the acceptance of 'Christian' same-sex marriage. The purpose of marriage to combat loneliness as found in Genesis 2 vis-à-vis the mandate of procreation in Gen 1:26-28 represents the heart of the debate. Does Genesis 2 support same-sex marriage on the basis of kinship ties as opposed to procreation as taught in Gen 1:26-28? This paper argues that affirming scholars have misinterpreted Gen 2:18-25 as promoting only kinship ties and not procreation as well. Moreover, Gen 2:18-25 must be read in light of Gen 1:26-28. Indeed, Gen 2:18, 20, and 24 serve as the basis for promoting procreation and physical fittedness within marriage. This paper will also show how a number of ancillary arguments used as biblical 'support' for same-sex marriage are either false dichotomies or are simply wrong when placed against the rubric of Scripture. Only one paradigm for marriage appears within the Bible, namely, heterosexual marriage established by God himself in Gen 2:24 and reaffirmed by Jesus in Matthew 19 and Mark 10. [ABSTRACT FROM AUTHOR] (AN: 136703229)",
         "quotes": {
@@ -352,7 +352,7 @@ var BibDat_FamilialVocab = BibDat =
 
             "p685b": "Do the two creation accounts present two contraditioary stories of creation?",
 
-            "p686":"It seems more likely that the second account in some way complemented the first account. Even McKeown concludes that the two accounts are 'complementary' with the second one covering select aspects of the creation event in more detail. And E.EE. Speiser notes that even though these may be from different sources, 'the subject matter is ultimately the same in both sources.'  Chapter 1 focuses on the 'heavens and earth' whereas chapter 2 centers on 'earth and heaven', which push one to the concluusion that chapter 2 compiments chapter 1 by zeroing in on the creation and role of human. T. Desmond Alexander concurs that these chapters are complementary: one broadly focused and the other 'zoomed in'. It seems evident that this zooming in is for the purpose of drawing attention to the creation of the Garden of Eden, its animals, and the man and the woman."
+            "p686": "It seems more likely that the second account in some way complemented the first account. Even McKeown concludes that the two accounts are 'complementary' with the second one covering select aspects of the creation event in more detail. And E.EE. Speiser notes that even though these may be from different sources, 'the subject matter is ultimately the same in both sources.'  Chapter 1 focuses on the 'heavens and earth' whereas chapter 2 centers on 'earth and heaven', which push one to the concluusion that chapter 2 compiments chapter 1 by zeroing in on the creation and role of human. T. Desmond Alexander concurs that these chapters are complementary: one broadly focused and the other 'zoomed in'. It seems evident that this zooming in is for the purpose of drawing attention to the creation of the Garden of Eden, its animals, and the man and the woman."
         }
     },
     "PrinzivalliEmanuela2017article": {
@@ -418,13 +418,13 @@ var BibDat_FamilialVocab = BibDat =
         "author": "Roberts, Nancy",
         "authorinfo": "",
         "title": "God as Father-Mother, and More",
-        "journal": "Muslim World. ",
+        "journal": "Muslim World",
         "vol": "Vol. 99 Issue 1",
         "year": "Jan2009",
         "page": "p102-123. 22p",
         "publisher": "",
         "isbn": "",
-        "url-1": "",
+        "url-1": "https://onlinelibrary.wiley.com/toc/14781913/2009/99/1",
         "abstract": "The article investigates how God was revealed as father-mother in Islam and the Quran. It relates the similarities between the Islamic thinking about God and the Christian conception of God as Father. It presents a prophetic hadith which likens God's relationship to human beings to a mother's relationship to her nursing infant. It provides an overview of the mother motif in Islam. It discusses the parallel between the God-revealed-as-father in the parable in the book of Luke of the Bible and the Divine revealed in Islam. DOI: 10.1111/j.1478-1913.2009.01256.x. (AN: 35948401)",
         "quotes": {
             "p121": ""
@@ -581,7 +581,7 @@ var BibDat_FamilialVocab = BibDat =
         "year": "2018",
         "publisher": "Baker Academic",
         "address": "Grand Rapids, MI",
-        "editor":"2nd",
+        "editor": "2nd",
         "url": "",
         "url-1": "",
         "isbn": "",
@@ -638,7 +638,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher": "",
         "address": "",
         "url-2": "https://biblehub.com/commentaries/pulpit/genesis/2.htm",
-        "url":"https://biblehub.com/commentaries/genesis/2-24.htm",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
         "url-1": "https://www.christianity.com/bible/commentary.php?com=gill&b=1",
         "isbn": "",
         "abstract": "",
@@ -677,7 +677,7 @@ var BibDat_FamilialVocab = BibDat =
         "quotes": {
             "2:24-a": "These might be the words of the first man Genesis 2:24. As he thoroughly understood the relation between himself and the woman, there is no new difficulty in conceiving him to become acquainted at the same time with the relationship of son to father and mother, which was in fact only another form of that in which the newly-formed woman stood to himself. The latter is really more intimate and permanent than the former, and naturally therefore takes its place, especially as the practical of the filial tie, - that of being trained to maturity, - is already accomplished, when the conjugal one begins.",
 
-            "2:24-b":"But it seems more probable that this sentence is the reflection of the inspired author on the special mode in which the female was formed from the male. Such remarks of the writer are frequently introduced by the word 'therefore' (על־כן kēn-‛al). It is designed to inculcate on the race that was to spring from them the inviolable sanctity of the conjugal relation.",
+            "2:24-b": "But it seems more probable that this sentence is the reflection of the inspired author on the special mode in which the female was formed from the male. Such remarks of the writer are frequently introduced by the word 'therefore' (על־כן kēn-‛al). It is designed to inculcate on the race that was to spring from them the inviolable sanctity of the conjugal relation.",
 
 
         }
@@ -698,9 +698,9 @@ var BibDat_FamilialVocab = BibDat =
         "quotes": {
             "2:24-a": "Our first parents needed no clothes for covering against cold or heat, for neither could hurt them: they needed none for ornament. ",
 
-            "2:24-b":" ",
+            "2:24-b": " ",
 
-            
+
         }
     },
 
@@ -719,9 +719,9 @@ var BibDat_FamilialVocab = BibDat =
         "quotes": {
             "2:24-a": "It appears by Matthew 19:4-5, that it was God himself who said here, a man must leave all his relations to cleave to his wife;",
 
-            "2:24-b":"but whether he spake this by Moses or by Adam, is uncertain.",
+            "2:24-b": "but whether he spake this by Moses or by Adam, is uncertain.",
 
-            
+
         }
     },
     "CharlesJohnEllicott19051book": {
@@ -739,9 +739,9 @@ var BibDat_FamilialVocab = BibDat =
         "quotes": {
             "2:24-a": "These are evidently the words of the narrator. Adam names this new product of creative power, as he had named others, but he knew nothing about young men leaving their father’s house for the wife’s sake. Moreover, in Matthew 19:5, our Lord quotes these words as spoken by God, and the simplest interpretation of this declaration is that the inspired narrator was moved by the Spirit of God to give this solemn sanction to marriage, founded upon Adam’s words. The great and primary object of this part of the narrative is to set forth marriage as a Divine ordinance. The narrator describes Adam’s want, pictures him as examining all animal life, and studying the habits of all creatures so carefully as to be able to give them names, but as returning from his search unsatisfied. At last one is solemnly brought to him who is his counterpart, and he calls her Ishah, his feminine self, and pronounces her to be his very bone and flesh. Upon this, “He who at the beginning made them male and female “pronounced the Divine marriage law that man and wife are one flesh.",
 
-            "2:24-b":" ",
+            "2:24-b": " ",
 
-            
+
         }
     },
 
@@ -848,61 +848,64 @@ var BibDat_FamilialVocab = BibDat =
         "page": "pp. 397-407",
         "publisher": "",
         "isbn": "",
+        "file": "Yhwh_As_Father.htm",
         "url-1": "https://www.jstor.org/stable/43727578?read-now=1&refreqid=excelsior%3A5969487cea6679989e94c00a7d97e670&seq=11#page_scan_tab_contents",
         "abstract": "",
         "quotes": {
-            "p121": ""
+            "p407": "This in turn supports the understanding of 'father' as a covenantal term, in that Israel's creation and redemption by Yhwh in the exodus are inextricably bound to the Sinai covenant, which is also alluded to in this Isaian psalm."
         }
     },
-    "article": {
+    "RobertASegal2013article": {
         "doctype": "article",
-        "author": "",
+        "author": "Robert A. Segal",
         "authorinfo": "",
-        "title": "",
-        "journal": "",
-        "vol": "",
-        "year": "",
-        "page": "",
-        "publisher": "",
+        "title": "The Blurry Line Between Humans and Gods",
+        "journal": "Numen",
+        "vol": "Vol. 60, No. 1, Special Issue: The Gods as Role Models in Western Traditions",
+        "year": "2013",
+        "page": "pp. 39-53",
+        "publisher": "Brill",
         "isbn": "",
-        "url-1": "",
-        "abstract": "",
+        "url-1": "https://www.jstor.org/stable/24644806",
+        "abstract": "The conventional view is that at least in the West there is a clear-cut and insurmountable divide between human beings and God. This article argues that the divide is neither clear-cut nor insurmountable. Three disparate cases are considered: the conception of God in the Hebrew Bible, traditional and contemporary conceptions of heroism, and the status of celebrities.",
         "quotes": {
-            "p121": ""
+            "": ""
         }
     },
-    "article": {
+    "NathanielSchmidt1914article": {
         "doctype": "article",
-        "author": "",
+        "author": "Nathaniel Schmidt",
         "authorinfo": "",
-        "title": "",
-        "journal": "",
-        "vol": "",
-        "year": "",
-        "page": "",
+        "title": "Yahwe Elohim",
+        "journal": "Journal of Biblical Literature",
+        "vol": "Vol. 33, No. 1",
+        "year": "Mar., 1914",
+        "page": "pp. 25-47",
         "publisher": "",
         "isbn": "",
-        "url-1": "",
+        "url-0": "https://www.jstor.org/stable/3259058",
+        "url-1": "https://www.jstor.org/stable/3259058?seq=7#metadata_info_tab_contents",
+        "url-2": "https://doi.org/10.2307/3259058",
         "abstract": "",
         "quotes": {
-            "p121": ""
+            "p25": "In Gen 2:4-3:24 the double name Yhwh Elohim occurs 20 times. It is also found in Ex9:30,2Sam 7:22,25; Joh4:6; Psm72:18,84:9,12 1Chr 17:16-17,28:20,29:1; 2Chr 1:9,6:41x2, 42, 26:18. Whether it was used originally in any of these passages may be seriously questioned. There seems to be strong evidence that G had only o Theos, without a preceding Kvpios, in Gen 2:4,5,7,8,9,19,21,22,3:13,14,22, while the secondary character of Kvpios in 2:15,16,18,3:18,9,21,23 is highly probable."
         }
     },
-    "article": {
+    "AliceDeRochechouart2020article": {
         "doctype": "article",
-        "author": "",
+        "author": "Alice De Rochechouart",
         "authorinfo": "",
-        "title": "",
-        "journal": "",
-        "vol": "",
-        "year": "",
-        "page": "",
+        "title": "The (Im)possibility of God’s Name. Levinas, Derrida, Marion",
+        "journal": "Revista Portuguesa de Filosofia",
+        "vol": "T. 76, Fasc. 2/3, Deus na Fenomenologia Francesa: God in French",
+        "year": "2020",
+        "page": "pp. 639-660",
         "publisher": "",
         "isbn": "",
-        "url-1": "",
-        "abstract": "",
+        "url-1": "https://www.jstor.org/stable/26922243",
+        "abstract": "The name of God, in the philosophies of Levinas, Marion, and Derrida, comes to question phenomenology itself – whether it interrupts it (Levinas), deconstructs it (Derrida), or accomplishes it (Marion). This article successively studies the philosophies of Levinas, Marion and Derrida, to shed light on their singular treatment of God’s name: his name, rather than his existence, essence, or transcendence. For Levinas, the name of God is the name of the ethical interruption; for Derrida, it is a name for the impossible; for Marion, it is the name of givenness, that is, the name of phenomenology itself. Far from any theistic posture, or any experiential phenomenology of God’s transcendence, the name of God acquires a metatheoretical function, leading to an examination of phenomenology, logos, and subjectivity.",
         "quotes": {
-            "p121": ""
+            "p639": "God is the name and the element of that which makes poossible an absolutely pure and absolutely self-present self-knowledge God's infinite understtanding is the other name for the logoos as self-presence."
         }
     },
 
@@ -913,12 +916,12 @@ var BibDat_FamilialVocab = BibDat =
         "year": "1934",
         "publisher": "Private Printed",
         "address": "New York",
-        "url-2":"https://aphelis.net/wp-content/uploads/2012/12/McMURTRIE_1933_Quotation_Mark_light.pdf",
+        "url-2": "https://aphelis.net/wp-content/uploads/2012/12/McMURTRIE_1933_Quotation_Mark_light.pdf",
         "url-1": "https://aphelis.net/origin-development-quotation-mark/#:~:text=The%20earliest%20book%20discovered%20in,Vitis%20Sophistarum%E2%80%9D%20by%20Flavius%20Philostratus.",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "web":"[UPDATE–Dec. 4, 2012] See the end of this post for an additional reference to Prof Ruth Finnegan’s highly relevant book ‘Why Do We Quote? The Culture and History of Quotation’ (Open Book Publisher, 2011)",
+            "web": "[UPDATE–Dec. 4, 2012] See the end of this post for an additional reference to Prof Ruth Finnegan’s highly relevant book ‘Why Do We Quote? The Culture and History of Quotation’ (Open Book Publisher, 2011)",
 
             "p4": "The earliest book discovered in which appeared indicia which may properly be termed marks of quotation was printed in 1516 at Strasbourg, Alsace (then in Germany), by Mathias Schurer. It was “De Vitis Sophistarum” by Flavius Philostratus. The marks consisted of two commas in the left hand margin of each page outside the regular type measure. They were placed at the beginning of each line in which a quoted passage appeared, and were evidently added after the page was set up, because their alignment varies greatly."
         }
@@ -932,12 +935,12 @@ var BibDat_FamilialVocab = BibDat =
         "year": "2014",
         "publisher": "SBL Press",
         "address": "Atlanta, GA",
-        "url-2":"",
+        "url-2": "",
         "url-1": "https://www.google.com/books/edition/Hidden_Truths_from_Eden/4DAjBQAAQBAJ?hl=en&gbpv=1&dq=origen+Gen+2:24&pg=PA66&printsec=frontcover",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p66":"Origen's first response to the critique was indirect,",
+            "p66": "Origen's first response to the critique was indirect,",
 
             "p4": ""
         }
@@ -951,12 +954,12 @@ var BibDat_FamilialVocab = BibDat =
         "year": "2002",
         "publisher": "Oxford University Press",
         "address": "Oxford New York, UK",
-        "url-2":"",
+        "url-2": "",
         "url-1": "",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p52":"The creation of male ad female in Genesis 1:27 and the marriage imagery of Genesis 2:24 understood through Ephesians 5:31-2 appear to have been of major significamce for Origen's umderstading of both the pre-existet Church and the incarnatioon oof Christ. ",
+            "p52": "The creation of male ad female in Genesis 1:27 and the marriage imagery of Genesis 2:24 understood through Ephesians 5:31-2 appear to have been of major significamce for Origen's umderstading of both the pre-existet Church and the incarnatioon oof Christ. ",
 
             "p4": ""
         }
@@ -970,22 +973,94 @@ var BibDat_FamilialVocab = BibDat =
         "year": "2019",
         "publisher": "Wipf Stock",
         "address": "Eugene, Oregon",
-        "url-2":"",
+        "url-2": "",
         "url-1": "https://www.google.com/books/edition/Marital_Imagery_in_the_Bible/f7qCDwAAQBAJ?hl=en&gbpv=1&dq=Gen+2:24&printsec=frontcover",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p22":"The chapter considers the different conceptuual domains of Geesis 2:23 and Genesis 2:24, and suggests that it was the Genesis 2:24 marriage which underpinned not only the marital practices of ancient Israel, but it is that marriage which forms the source domain of the cross-mapping, and so Geesis 2:24 forms the basis of all the Bible's marital imagery.",
+            "p22": "The chapter considers the different conceptuual domains of Geesis 2:23 and Genesis 2:24, and suggests that it was the Genesis 2:24 marriage which underpinned not only the marital practices of ancient Israel, but it is that marriage which forms the source domain of the cross-mapping, and so Geesis 2:24 forms the basis of all the Bible's marital imagery.",
 
             "p41": "The cross-domain mapping of Genesis 2:24 in the OT, Yahweh: The husband of Israel -- the root metaphor in the OT marital imagery. It will be seen that the OT marital imagery has many manifestations but that they are all part of one large-scale conceptual metaphor based on mundane marriage (the sooource domain), as outlined in Genesis 2:24, cross-mapped to a new conceeptual doman: a defined people groupd being 'married' to their God."
         }
     },
 
+    "FredsonBowers1969article": {
+        "doctype": "article",
+        "author": "Fredson Bowers",
+        "authorinfo": "",
+        "title": "Adam, Eve, and the Fall in 'Paradise Lost'",
+        "journal": "Modern Language Association of America",
+        "vol": "Vol. 84, No. 2",
+        "year": "Mar., 1969)",
+        "page": "pp. 264-273",
+        "publisher": "Cambridge University Press",
+        "isbn": "",
+        "url-1": "https://doi.org/10.2307/1261283",
+        "url-2": "https://www.jstor.org/stable/1261283",
+        "abstract": "The justification in 'Paradise Lost' of the ways of God to men depends as much on Milton's dramatic and psychological motivation of the Fall as on its theological structure. The designed contrasts between Adam's and Eve's reactions on first awakening to life absolve Eve of the usual charge of vanity by establishing her as a feeling in relation to Adam as a ratiocinating being. Under the influence of Satan's venom Eve fails in love to Adam and then to God. But in Milton's view Adam is the faultier of the two because of his conscious failure to assert the absolute authority of his reason over her misguided feelings. Milton formally depends upon Paul's statement that Adam fell undeceived, but in his psychological motivation of the three key episodes of the Fall he differs from the usual interpretation of the Church Fathers that Paul meant only that Satan had not deceived Adam directly as he had deceived Eve. Milton thus reconciles the apparent paradox that Adam was not deceived but instead foolishly overcome by female charm. The scene in which he weakly yields permission is a direct foreshadowing of his acceptance of the apple since both contain the same false rationalization of his unwillingness to accept the responsibilities of his superior wisdom and its proper exercise in command.",
+        "quotes": {
+            "p": "Adam was not deceived but instead foolishly overcome by female charm"
+        }
+    },
+
+    "BeverlyAMcCabe1999article": {
+        "doctype": "article",
+        "author": "Beverly A. McCabe",
+        "authorinfo": "",
+        "title": "Eve: Victim, Villain, Or Vehicle? The Forewarnings And Prefiguration Of The Fall In 'paradise Lost'",
+        "journal": "College Language Association",
+        "vol": "Vol. 43, No. 1",
+        "year": "1999",
+        "page": "pp. 73-88",
+        "publisher": "College Language Association",
+        "isbn": "",
+        "url-1": "https://www.jstor.org/stable/44324994",
+        "abstract": "",
+        "quotes": {
+            "p74": "Eve is a copy of copy",
+
+            "p79": "Adam not only realizes that Eeve's beauty makes her distinctly differently from him, but the feelings of 'throbbing and passion and sensualality' she arouses also trouble him, not only mentally but also physically",
+
+            "p79b":"Eve's beauty seems to tap Adam's physical strength as well as create an emotional anxiety in him, leading him to doubt his own wisdom and reason, then to subvert them to overwhelming passion.",
+
+            "p81":"Eve may be manipulated, persuaded, and subdued by Satan."
+        }
+    },
 
 
 
+    "JosephOlanStubbs2006masterthesis": {
+        "doctype": "masterthesis",
+        "author": "Joseph Olan Stubbs",
+        "authorinfo": "A Thesis Submitted to the Faculty of Reformed Theological Seminary In Fulfillment of the Requirements For the Degree of Masters of Arts",
+        "booktitle": "",
+        "title": "“biblical Masculinity”: Understanding Biblical Masculinity",
+        "year": "2006",
+        "publisher": " ",
+        "isbn": "",
+        "school": "Reformed Theological Seminar",
+        "url-1": "https://rts.edu/wp-content/uploads/2019/05/Stubbs-Biblical_Masculinity.pdf",
+        "abstract": 
+        
+        `What is Biblical masculinity? How
+        does the Bible define masculinity? What is the essential difference between men and
+        women in their souls? When one speaks of masculinity, what should one mean? What
+        does it mean to be a man? This will be my pursuit. I am interested in what makes the
+        essence of a man different from the essence of a woman. My one main goal is to
+        understand what God means for men to be. It is clear that men and women have been
+        given different roles by God, but what are the qualitative differences in men that uniquely
+        qualify them for these Biblical roles?`,
 
+        "quotes": {
+            "1": "Male is a biological term, referring to physical gender. Male is a low level, biological, DNA based characteristic. That’s pretty simple.",
 
+            "2":"Masculinity is much more complex because it’s not a physically determined thing; it’s a more social, psychological and behavioral characteristic or concept among humans, not animals. Furthermore, it’s vague and very few people can define it, making it extremely difficult to discuss. So I’ll define it for this discussion:",
+
+            "3":"Masculinity is the mindset and behavior associated with a desire to create, to make an impact, to be a masterful actor in the greater world. Masculinity is the urge to mastery.",
+
+            "4weid":"Its' not about sex, head or servant, primary or secondary. It's about left and right of the missionary and the glory of God.",
+        }
+    },
 
     "webpage": {
         "doctype": "webpage",
@@ -995,7 +1070,7 @@ var BibDat_FamilialVocab = BibDat =
         "publisher": "",
         "year": "",
         "Urldate": "",
-        "url-2":"",
+        "url-2": "",
         "url": ".",
         "notes": "",
         "abstract": "",
