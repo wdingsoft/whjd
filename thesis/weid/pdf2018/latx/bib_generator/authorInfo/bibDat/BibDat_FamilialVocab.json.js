@@ -645,7 +645,7 @@ var BibDat_FamilialVocab = BibDat =
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "Mat19:6": ""
+            "Mat19:6": "the words of Genesis 2:24 were uttered by Adam."
         }
     },
     "JohnGill1771book": {
