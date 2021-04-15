@@ -2,6 +2,7 @@
 //var Uti = require("../Uti.Module").Uti
 const fs = require('fs');
 var path = require('path');
+const net = require('net');
 
 var Uti = {
     proc_argv2obj: function () {
