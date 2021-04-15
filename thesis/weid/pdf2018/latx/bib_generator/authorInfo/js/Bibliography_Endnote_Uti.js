@@ -113,7 +113,7 @@ var Bibliography_Endnote_Uti = {
                 ftn += `. "${obj.title}" In: <cite>${obj.booktitle}</cite>.  ${this.get_editor(obj)} ${obj.address}:${obj.publisher}, ${obj.year}`;
                 break;
             case "webpage":
-                ftn += `. "${obj.title}" ${obj.year}. URL:${obj.url} (visited on ${obj.Urldate} )`;
+                ftn += `. "<cite>${obj.title}</cite>" ${obj.year}. URL:${obj.url} (visited on ${obj.Urldate} )`;
                 break;
         };
         console.log(ftn);
@@ -171,7 +171,7 @@ var Bibliography_Endnote_Uti = {
                 ftn += `. "${obj.title}" In: ${obj.booktitle}. Ed. by ${obj.editor}. ${obj.address}:${obj.publisher}, ${obj.year}`;
                 break;
             case "webpage":
-                ftn += `. "${obj.title}." ${obj.year}. URL: ${obj.url} (visited on ${obj.Urldate} )`;
+                ftn += `. "<cite>${obj.title}</cite>" ${obj.year}. URL: ${obj.url} (visited on ${obj.Urldate} )`;
                 break;
             default:
                 console.error("erro doctyp:", obj);
