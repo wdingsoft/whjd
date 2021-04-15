@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title></title>
-	<script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script>
+	<script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script><script src="https://wdingbox.github.io/ham12/jq/table_sorter.js"></script><script src="https://wdingbox.github.io/ham12/jq/table_indexer.js"></script>
 	<style type="text/css">.hili {
 			background-color: red;
 		}
@@ -9,6 +9,8 @@
 	<script>
 
 		$(function () {
+			table_sort()
+			
 			$("td").on("click", function () {
 				$(this).toggleClass("hili")
 			})
@@ -1362,7 +1364,7 @@
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
-			<td>Benson Commentary</td>
+			<td><em>Benson Commentary</em></td>
 			<td>uncertain</td>
 			<td>&nbsp;</td>
 			<td>U</td>
