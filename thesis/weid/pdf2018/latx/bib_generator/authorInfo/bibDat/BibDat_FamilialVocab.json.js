@@ -217,17 +217,20 @@ var BibDat_FamilialVocab = BibDat =
         "year": "Jul 1990",
         "page": "p389",
         "publisher": "",
-        "isbn": "",
+        "file": "http://localhost/weidroot/weidroot_2017-01-06/app/github/wdingbox/pubs/thesis/weid/htmdoc/proj/TheFamilialVocabulary/aux/referrences/Gen2_24_1990/OnGenesis224.htm",
         "url-1": "http://web.b.ebscohost.com/ehost/detail/detail?vid=48&sid=90880261-f89d-4894-8c71-49928837cf34%40pdc-v-sessmgr02&bdata=JmF1dGh0eXBlPXNzbyZjdXN0aWQ9czMyNjA1MTgmc2l0ZT1laG9zdC1saXZl#AN=9604083801&db=aph",
         "url-2": "",
         "abstract": "Proposes to verify the validity of the interpretation of the biblical passage concerning the creation of man and woman in Genesis 2:23-24. Examination of the text and sense of the passage; Literary nature of Genesis 2:24; Etiology of the passage. (AN: 9604083801)",
         "quotes": {
             "p389a": "A number of exegetes have adverted to a certain lack of continuity in the transition from Gen 2:23 to 2:24, and have therefor suggested, although in passing and with different emphasis, that the creation of man and woman is complete with v23 and that v24 represents a secondary addition, an insertion, a gloss. So far as I know, little atttention has been paid to such remarks. This paper propooses to verify their validaity, and on the basis of this verification to reexamine the text and sense of Gen2:24.",
+            
             "p391z": "General consideration of the narrrative's frame leads to the conclusion that Gen 2:18-23 constitutes one unit which is complete in itsself, firmly structuured, and artistically arraged.... it discloses that the whole narrative of 18-23 (the creation of issa) is also an etymological etiology. In another words, with the help of the saying (23c), the description of the creation of the woman from man (18-23) appears to be the transpoition in concrete and living images of the popular etymology of issa from ish. ",
-            "p392a": "Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
+            
+            
 
             "p398z": "The initial al-ken 'therefore', in fact, certifies beyond any doubt that he intends here to explain something, presenting it as a consequence of what has been narrated in the preceding verse (issa taken from Adam). The problem rather is his specific intention; for what follows al-ken (namely, leaving father and mother on the part of ish and joining himself to his issa) gives rise to doubts as to what exactly the author intends to explain: marriage (a social institution) or 'love' (a natural drive)? ",
-            "": "",
+
+            "p391-392": "General consideration of the narrative's frame leads, therefore, to the conclusion that Gen2:18-23 constitutes one unit which is complete in itself, firmly structured, and artistically arranged... First of all, it discloses that the whole narrative of 18-23 (the creation of ish-ah and ish) is also an etymological etiology. In other words, with the help of the saying 2:23, the description of the creation of the woman from man (18-23) appears to be the transposition in concrete and living images of the popular etymology of ish-ah from ish. Thus there becomes more evident the deep coherence, even the interdependence, which exists between the saying and the preceding narrative. Secondly, it discloses that the narrative of 4b-8 (the creation of adam), so close to the narrative of 18-23, is also an etymological etiology. Thus the interconnection between 4b-8 and 18-23 becomes more evident. Thirdly and consequently, it discloses the presence of a chiasmus (AB-B'A') that structures the whole narrative of Genesis 2-3 and extends from the story of Genesis 2 (Creation of man and woman) to the story of Genesis 3 (fall of woman and man).... Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss. ",
             "": "",
             "": "",
             "": "",
@@ -484,7 +487,7 @@ var BibDat_FamilialVocab = BibDat =
 
             "p151b": "Michael Shvack makes this exact point. He writes: ‘This therefore feels so out of context in the story that it is hard to imagine why it is actually there. It feels more like a commentary than part of the story line. ",
 
-            "p151c": "John Calvin’s comment on the verse – written in the sixteenth century—addresses the question of the verse’s relationship to v23: ‘It is doubted whether Moses here introduces God ad speaking, or continues the discourse of Adam, or indeed, has added this in virtue of his office as teacher, in his own person. The last of these is that which I mostly approve.’ Calvin argued, it must have another meaning. ",
+            "p151c": "John Calvin’s comment on the verse – written in the sixteenth century—addresses the question of the verse’s relationship to v23: ‘It is doubted whether Moses here introduces God as speaking, or continues the discourse of Adam, or indeed, has added this in virtue of his office as teacher, in his own person. The last of these is that which I mostly approve.’ Calvin argued, it must have another meaning. ",
 
             "p151d": "Rabbi Shelomo ben Issac (1040-1150) from Troyes, Frances, v24 does not continue Adam’s speech from verse 23, since the words are not pertinent to Adam’s circumstance, they must address some other situation.  Cavin proposed that the verse be attributed to Moses; Rashi proposed God.",
 
@@ -766,19 +769,19 @@ var BibDat_FamilialVocab = BibDat =
 
 
 
-    "book": {
+    "HerbertLockyer2016book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
+        "author": "Herbert Lockyer",
+        "booktitle": "All the Men of the Bible",
+        "year": "2016",
+        "publisher": "Zondervan",
+        "address": "Grand Rapids, MI",
         "url": "",
-        "url-1": "",
+        "url-1": "https://www.google.com/books/edition/All_the_Men_of_the_Bible/12V_DQAAQBAJ?hl=en&gbpv=1&kptab=overview",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p1": ""
+            "p1": "more than 3,000 bible names."
         }
     },
     "book": {
@@ -1104,6 +1107,26 @@ var BibDat_FamilialVocab = BibDat =
             Psalm 118:22 (4)
             Isaiah 6:9 (4)
             Isaiah 40:3 (4)`,
+        }
+    },
+    "LiteralStandardVersionBible2020webpage": {
+        "doctype": "webpage",
+        "author": "Covenant Press",
+        "editor": "Covenant Press",
+        "title": "Literal Standard Version Bible",
+        "publisher": "Covenant Press",
+        "year": "2020",
+        "Urldate": "2021",
+        "url-2": "https://biblehub.com/lsv/genesis/2.htm",
+        "url": "www.lsvbible.com",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "2:23": "and the man says, “This at last! Bone of my bone, and flesh of my flesh!” For this is called Woman, for this has been taken from Man;",
+
+            "2:24":"therefore a man leaves his father and his mother, and has cleaved to his wife, and they have become one flesh. 25And both of them are naked, the man and his wife, and they are not ashamed of themselves.",
+
+            "statis":"words:780,787; chapters:1189, verses: 31,102"
         }
     },
     "webpage": {
