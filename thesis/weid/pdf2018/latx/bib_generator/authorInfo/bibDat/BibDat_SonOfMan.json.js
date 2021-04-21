@@ -118,7 +118,7 @@ var BibDat_SonOfMan = BibDat =
 
     "JohnAPhillips1984book": {
         "doctype": "book",
-        "author": " John A. Phillips | Sep 1, 1985",
+        "author": " John A. Phillips",
         "booktitle": "Eve and yhwh Eve: The History of an Idea",
         "year": "Sep 1, 1984",
         "publisher": "Harper & Row",
@@ -465,9 +465,12 @@ var BibDat_SonOfMan = BibDat =
         "title": "Divine Familial Terms Translation Procedures",
         "year": "2016",
         "publisher": "The World Evangelical Alliance",
-        "isbn": "",
         "journal": "World Evangelical Alliance",
-        "url-1": "https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
+        "address":"",
+        "vol": "",
+        "isbn": "",
+        "page": "",
+        "url": "https://worldea.org/wp-content/uploads/2020/01/DFTTP-December-2016.pdf",
         "url-2": "",
         "abstract": "",
         "quotes": {
@@ -576,20 +579,22 @@ var BibDat_SonOfMan = BibDat =
 
 
 
-    "bookTemplate197book": {
+    "GarrickVAllen2019book": {
         "doctype": "book",
         "author": "Garrick V. Allen and Kai Akagi and Paul Sloan and Madhavi Nevader",
-        "booktitle": "",
+        "booktitle": "Son of God: Divine Sonship in Jewish and Christian Antiquity",
         "year": "2019",
-        "publisher": "University Park, Pennsylvania",
-        "address": "",
+        "publisher": "Oxford University Press",
+        "address": "University Park, PA",
         "url": "",
-        "url-1": "http://eds.b.ebscohost.com/eds/detail/detail?vid=0&sid=66215aa9-f96b-4d22-bed0-cacc61791303%40sessionmgr102&bdata=JkF1dGhUeXBlPWlwLHNoaWImc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=2234971&db=nlebk",
-        "url-2": "",
+        "url-1": "",
+        "url-2": "https://www.amazon.com/Son-God-Sonship-Christian-Antiquity-ebook-dp-B0886H31GW/dp/B0886H31GW/ref=mt_other?_encoding=UTF8&me=&qid=",
         "isbn": "978-0-9830680-8-2",
         "abstract": "Son of God (Judaism) Son of God--History of doctrines--Early church, ca. 30-600.      In antiquity, “son of god”—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God's son(s) in ancient Jewish and early Christian literature. Through close readings of relevant texts from multiple ancient corpora, including the Hebrew Bible, the New Testament, the Dead Sea Scrolls, Greco-Roman texts and inscriptions, early Christian and Islamic texts, and apocalyptic literature, the chapters in this volume engage a range of issues including messianism, deification, eschatological figures, Jesus, interreligious polemics, and the Roman and Jewish backgrounds of early Christianity and the authors of the Dead Sea Scrolls. The essays in this collection demonstrate that divine sonship is an ideal prism through which to better understand the deep interrelationship of ancient religions and their politics of kingship and divinity. In addition to the editors, the contributors to this volume include Richard Bauckham, Max Botner, George J. Brooke, Jan Joosten, Menahem Kister, Reinhard Kratz, Mateusz Kusio, Michael A. Lyons, Matthew V. Novenson, Michael Peppard, Sarah Whittle, and N. T. Wright.",
         "quotes": {
-            "p9": "Reinhard G. Kratz     SONS OF GOD” IN THE HEBREW BIBLE AND ANCIENT JUDAISM     The claim of Jesus to be the son of God, asserted by the New Testament, is one of the most difficult aspects of Christian religion. It not only makes Chris-tianity’s relationship to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modern world. The description of a person or a heavenly being as “son of God” is not self-evident, particularly under the conditions of the Enlightenment and according to our categories of under-standing. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term “son.” To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a “son of God” is.Philology helps us a little here. “Son of God (the gods)” (אלהיםבן or similar) isa generic term and means nothing but “god” in the same way that “son of man” (אדםבן) is“man” and “son of an ox” (בקרבן) is“ox.” This means that the title “s on of God” in itself does not describe the relationship o f father and son but ex presses the divine nature of an earthly or heavenly figure—something that is difficult enough to understand in terms of our modern thinking or on the basis of Jewish and Christian monotheism.In the ancient Near East, however, as in the Hebrew Bible, the New Testa-ment, and other writings of ancient Judaism and early Christianity, we encounter statements that conform neither to grammar nor to pure doctrine. In the myths of Ugarit and other ancient Near Eastern cultures, gods and divine couples have children by means of procreation and birth. The myth of the procreation and birth of a god spells out the idea of the divine attribute in the form of a narrative. This            ."
+            "p9": "Reinhard G. Kratz     SONS OF GOD” IN THE HEBREW BIBLE AND ANCIENT JUDAISM     The claim of Jesus to be the son of God, asserted by the New Testament, is one of the most difficult aspects of Christian religion. It not only makes Chris-tianity’s relationship to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modern world. The description of a person or a heavenly being as “son of God” is not self-evident, particularly under the conditions of the Enlightenment and according to our categories of under-standing. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term “son.” To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a “son of God” is.Philology helps us a little here. “Son of God (the gods)” (אלהיםבן or similar) isa generic term and means nothing but “god” in the same way that “son of man” (אדםבן) is“man” and “son of an ox” (בקרבן) is“ox.” This means that the title “s on of God” in itself does not describe the relationship of father and son but expresses the divine nature of an earthly or heavenly figure—something that is difficult enough to understand in terms of our modern thinking or on the basis of Jewish and Christian monotheism. In the ancient Near East, however, as in the Hebrew Bible, the New Testament, and other writings of ancient Judaism and early Christianity, we encounter statements that conform neither to grammar nor to pure doctrine. In the myths of Ugarit and other ancient Near Eastern cultures, gods and divine couples have children by means of procreation and birth. The myth of the procreation and birth of a god spells out the idea of the divine attribute in the form of a narrative. This            .",
+
+            "":"In antiquity, 'son of god'—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God’s son(s) in ancient Jewish and early Christian literature."
         }
     },
 

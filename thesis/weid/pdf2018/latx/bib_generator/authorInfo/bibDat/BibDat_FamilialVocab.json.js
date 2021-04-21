@@ -210,7 +210,7 @@ var BibDat_FamilialVocab = BibDat =
     "TosatoAngeloJul1990article": {
         "doctype": "article",
         "author": "Tosato, Angelo",
-        "authorinfo": "",
+        "authorinfo": "Angelo Tosato, Italian biblical scholar. Member Italian Biblical Association (1938-1989).",
         "title": "On Genesis 2:24",
         "journal": "Catholic Biblical Quarterly",
         "vol": "Vol. 52 Issue 3",
@@ -726,6 +726,27 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
+    "JamiesonFaussetBrownBibleCommentary1871book": {
+        "doctype": "book",
+        "author": "Robert Jamieson and Andrew Robert Fausset and David Brown",
+        "authorInfo": "Robert Jamieson (1802–1880) was a minister at St Paul's Church, Provanmill in Glasgow. Andrew Fausset (1821–1910) was rector of St Cuthbert’s Church in York.[1] David Brown (1803–1897) was a Free Church of Scotland minister at St James, Glasgow, and professor of theology at Free Church College of the University of Aberdeen.",
+        "booktitle": "Jamieson-Fausset-Brown Bible Commentary",
+        "year": "1871",
+        "publisher": "",
+        "address": "",
+        "url-1": "",
+        "url": "https://biblehub.com/commentaries/genesis/2-24.htm",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "2:24": "24. one flesh—The human pair differed from all other pairs, that by peculiar formation of Eve, they were one. And this passage is appealed to by our Lord as the divine institution of marriage (Mt 19:4, 5; Eph 5:28). Thus Adam appears as a creature formed after the image of God—showing his knowledge by giving names to the animals, his righteousness by his approval of the marriage relation, and his holiness by his principles and feelings, and finding gratification in the service and enjoyment of God.",
+
+            "2:24-b": " ",
+
+
+        }
+    },
+
     "JosephBenson1821book": {
         "doctype": "book",
         "author": "Joseph Benson",
@@ -767,7 +788,53 @@ var BibDat_FamilialVocab = BibDat =
         }
     },
 
+    "JosephCAtkinson2014book": {
+        "doctype": "book",
+        "author": "Joseph C. Atkinson",
+        "booktitle": "Biblical and Theological Foundation of the Family",
+        "year": "2014",
+        "publisher": "Catholic University of America Press",
+        "address": "Washington, D.C.",
+        "url": "",
+        "abstract": "",
+        "url-1": "https://www.google.com/books/edition/Biblical_and_Theological_Foundation_of_t/eFTZAwAAQBAJ?hl=en&gbpv=1&dq=biblical+origin+of+family&printsec=frontcover",
+        "isbn": "",
+        "quotes": {
+            "ix": "The term express clearly the importance of the family for the dialog between Christianity and the world. The family is both a natural institution, essential for the development of humanity and culture, and a place where God makes himself present, revealing his love through the love of the spouse, parents, and children.",
 
+            "p1":"The Christian family constitures a specific revelation realization of ecclecial communion, and for this reason it can and should called a domestic church.",
+
+            "p4":"Hebraic foundatiions: The NT understanding of the family is fundamentally predicated on the theological role of the family within the Hebraic covenant. ",
+
+            "p7":"The Hebraic revelation provides us wiith key principle that are not only operative within the process of creation but also become the constitutive principle of the created realities themselves.",
+
+            "p8":"The second key theme deals with the salvific role of the family in the Abrahamic covenant. ",
+
+            "p8b":"The organic family unit is at the core of covenantal theology and plays an indispensable role, such that without the family there is no covenant.",
+
+            "p9":"Consequently, if we limit ourselves to modern categories, it will be impossible to understand the Hebraic concept of the human person or of the covenantal design of history. It is neccessaryy to go beyond modern conceptualization, which sees the person in atomistic terms, and begin wrestling with the Hebraic priciple of corporate personality and understanding of the soul (nephesh)",
+
+            "p9b":"these two reealities are inextricably linked and cannot be divided. ",
+
+            "p14":"there is an intrinsic relationship between Israel and the Church.",
+
+            "p16":"The divine imprint is precisely what we are seeking to discover, especially in terms of family.",
+
+            "p17":"it is an attempt to discover how the family operates theologically in God's revelation to Israel. In order to discover the critical principle that are constitutive of the OT family, we will examine (1) how the concept of family was worked upon and shaped by the demythologizing process active in the OT (2) how this newlyy dimemsioned family functioned within the Israelite covenant (3) what concept of the person and his relationship made this possible. Together, these elements will provide the key anthropological principles operating in the text.",
+
+            "p19":"The family in mythological thought: In the ancient Near East, sexuality, marriage and fecundity were understood within a mythological context that united them to a divine sphere and made them instruments by which the natural world could continue.",
+
+            "p35":"The sovereignty of Yahweh: In essence, Yahweh is in control of all because He is Creator of all, but His exercise of power is not in terms of domination or violence. Rather, He has intered into relationship with his creation and especially His people, who are now seen in filial terms.",
+
+            "p45":"The Hebrew account of creation (Genesis 1-3) stands in stark contrast to the pagan cosmologies. The Genesis narrative contains not one word or hint of sexual activity from or in God. There is no preexistent material, no cosmoic struggle, no other forces, gods, or impersonal forces, and not abortive or mutilated matter from which either the gods or creation emerges.",
+
+            "p46":"The Hebraic revelation is a total rejection of the mythic conceptualization of reality which believed in multiple sources of power (the gods and fates) and divinized sexuality",
+
+            "p48":"Sexuality was excluded from the Godhead and thus, as Eichrodt noted, 'any disintegratiion of Godhead into male and female principles was ... firmly excluded.' Instead sexuality became a 'phenomenon of the creature' ",
+
+            "p50":"Within the Hebraic understanding, everything has a purpose and function, including sexuality, marriage and family",
+        }
+    },
 
     "HerbertLockyer2016book": {
         "doctype": "book",
@@ -784,13 +851,13 @@ var BibDat_FamilialVocab = BibDat =
             "p1": "more than 3,000 bible names."
         }
     },
-    "book": {
+    "CarlNicolaiStarcke1896book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
+        "author": "Carl Nicolai Starcke",
+        "booktitle": "The Primitive Family in Its Origin and Development",
+        "year": "1896",
+        "publisher": "Keran Paul, Trench Trubner Co.",
+        "address": "London",
         "url": "",
         "url-1": "",
         "isbn": "",
