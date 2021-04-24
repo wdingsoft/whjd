@@ -814,7 +814,7 @@ var BibDat_FamilialVocab = BibDat =
 
             "p9":"Consequently, if we limit ourselves to modern categories, it will be impossible to understand the Hebraic concept of the human person or of the covenantal design of history. It is neccessaryy to go beyond modern conceptualization, which sees the person in atomistic terms, and begin wrestling with the Hebraic priciple of corporate personality and understanding of the soul (nephesh)",
 
-            "p9b":"these two reealities are inextricably linked and cannot be divided. ",
+            "p9b":"these two realities are inextricably linked and cannot be divided. ",
 
             "p14":"there is an intrinsic relationship between Israel and the Church.",
 
@@ -859,41 +859,46 @@ var BibDat_FamilialVocab = BibDat =
         "publisher": "Keran Paul, Trench Trubner Co.",
         "address": "London",
         "url": "",
-        "url-1": "",
+        "url-1": "https://www.google.com/books/edition/The_Primitive_Family_in_Its_Origin_and_D/JextAAAAMAAJ?hl=en&gbpv=1&dq=The+primitive+family+in+its+origin+and+development&printsec=frontcover",
         "isbn": "",
         "abstract": "",
         "quotes": {
             "p1": ""
         }
     },
-    "book": {
+    "FabreDOlive1921book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
+        "author": "Fabre d'Olive",
+        "booktitle": "The Hebraic Tongue Restored: And the True Meaning of the Hebrew Words Re-established and Proved by their Radical Analysis",
+        "year": "1921",
+        "publisher": "The Rnicherbocker Press",
+        "address": "New York and London",
         "url": "",
-        "url-1": "",
+        "url-1": "https://www.google.com/books/edition/The_Hebraic_Tongue_Restored_and_the_True/iC5AAAAAYAAJ?hl=en&gbpv=1&dq=etymology+of+hebraic+adam&pg=RA1-PA150&printsec=frontcover",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p1": ""
+            "p1": "Origin of Speech: ",
+
+            "p108":"The root (alef), formed of the signs of power and of manifestation, designatesm in general, the centre toward whcih the will tends, the place where it is fixed, its sphere of activity.",
+
+            "p120":"Often a noun properly speaking, is, in the tongue of the Hebrews, only its root used in a more restricted sense: as when uniting the idea of paternity and maternity upon a single subject, one pronounces aba, father, or amah mother. "
         }
     },
-    "book": {
+    "HeleneMDallaire2017book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
-        "address": "",
+        "author": "Helene M. Dallaire",
+        "booktitle": "Biblical Hebrew: A Living Language",
+        "year": "2017",
+        "publisher": "Columbia International University",
+        "address": "Columbia, SC",
         "url": "",
         "url-1": "",
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p1": ""
+            "pp78": "In contrast to perfect in Hebraic grammar, the imperfect presents an ‘open-ended’ or ‘ongoing’ or ‘incomplete’ action. ",
+            "p78":"functions of the imperfect: future, modal (e.g. wouuld, should, could), present, past tense.",
         }
     },
     "book": {
@@ -1196,6 +1201,23 @@ var BibDat_FamilialVocab = BibDat =
             "statis":"words:780,787; chapters:1189, verses: 31,102"
         }
     },
+    "WilliamWeiDingFamilialVocabularyStudy2021webpage": {
+        "doctype": "webpage",
+        "author": "William Wei Ding",
+        "editor": "William",
+        "title": "Familial Vocabulary Study",
+        "publisher": "William",
+        "year": "2021",
+        "Urldate": "2021",
+        "url-2": "",
+        "url": "https://wdingbox.github.io/pubs/thesis/weid/htmdoc/proj/TheFamilialVocabulary/doc_files/d_pload/d_tables/tb_03_FamilialVocabulary.htm",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "": ""
+        }
+    },
+
     "webpage": {
         "doctype": "webpage",
         "author": "",
