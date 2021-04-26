@@ -285,4 +285,35 @@ var collected_news_bio = BibDat =
             "The Decaration of Independence":"We hold these truths to be self-evidece, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness -- that to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed..."
         }
     },
+    "BrianEColless2014webpage": {
+        "doctype": "webpage",
+        "author": "Brian E. Colless",
+        "authorInfo": "Brian E. Colless, Massey University, Palmerston North, New Zealand",
+        "editor": "www.asor.org",
+        "title": "The Lost Link: The Alphabet in the Hands of the Early Israelites",
+        "publisher": "www.asor.org",
+        "year": "February 2014 Vol. II, No. 2",
+        "Urldate": "2021",
+        "url": "https://www.asor.org/anetoday/2014/02/the-lost-link-the-alphabet-in-the-hands-of-the-early-israelites/",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "https://www.asor.org/wp-content/uploads/2019/02/Colless6.jpg": "Chinese OBI could derived from Canaanites. Chinese could be descendate of Canaanites."
+        }
+    },
+    "webpage": {
+        "doctype": "webpage",
+        "author": "",
+        "editor": " ",
+        "title": "",
+        "publisher": "",
+        "year": "",
+        "Urldate": "",
+        "url": "",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "": ""
+        }
+    },
 }

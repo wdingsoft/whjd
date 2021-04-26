@@ -830,7 +830,7 @@ var BibDat_FamilialVocab = BibDat =
 
             "p46":"The Hebraic revelation is a total rejection of the mythic conceptualization of reality which believed in multiple sources of power (the gods and fates) and divinized sexuality",
 
-            "p48":"Sexuality was excluded from the Godhead and thus, as Eichrodt noted, 'any disintegratiion of Godhead into male and female principles was ... firmly excluded.' Instead sexuality became a 'phenomenon of the creature' ",
+            "p48":"Sexuality was excluded from the Godhead and thus, as Eichrodt noted, 'any disintegration of Godhead into male and female principles was ... firmly excluded.' Instead sexuality became a 'phenomenon of the creature' ",
 
             "p50":"Within the Hebraic understanding, everything has a purpose and function, including sexuality, marriage and family",
         }
@@ -1205,7 +1205,7 @@ var BibDat_FamilialVocab = BibDat =
         "doctype": "webpage",
         "author": "William Wei Ding",
         "editor": "William",
-        "title": "Familial Vocabulary Study",
+        "title": "Hebraic Familial Vocabulary Study",
         "publisher": "William",
         "year": "2021",
         "Urldate": "2021",
@@ -1215,6 +1215,40 @@ var BibDat_FamilialVocab = BibDat =
         "abstract": "",
         "quotes": {
             "": ""
+        }
+    },
+    "TheodoreJLewis2020book": {
+        "doctype": "book",
+        "author": "Theodore J. Lewis",
+        "booktitle": "The Origin and Character of God: Ancient Israelite Religion",
+        "year": "2020",
+        "publisher": "Oxford University Press",
+        "address": "Marquis, Canada",
+        "url": "",
+        "url-1": "https://www.google.com/books/edition/The_Origin_and_Character_of_God/-erqDwAAQBAJ?hl=en&gbpv=1&dq=Kuntillet+Ajrud+yhwh+and+ashera&pg=PA281&printsec=frontcover",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p281": "Huntillet Ajrud (9th bce site): I bless you by Yahweh of Teman and his asherah. May He bless you and may He keep you, and may Hebe with my lord'” 'mr 'mryw mr l dn(y) holm 't brktk lyhwh trnn wl'Srth ybrk wyśmrk wyhy 'm dInly Kuntillet Ajrud, Pithos B?” To Yahweh of ..."
+        }
+    },
+    "HollyMorse2020book": {
+        "doctype": "book",
+        "author": "Holly Morse",
+        "booktitle": "Encountering Eve's Afterlives: A New Reception Critical Approach to Genesis 2-4",
+        "year": "2020",
+        "publisher": "Oxford University Press",
+        "address": "New York, NY",
+        "url": "",
+        "url-1": "https://www.google.com/books/edition/Encountering_Eve_s_Afterlives/aTTNDwAAQBAJ?hl=en&gbpv=1&dq=asherah+Eve&pg=PA132&printsec=frontcover",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p132": "Some commentators have concluded that though in appearance hiev and hv seem to originate from distinct roots, in actualityy their difference cab be explained by a shift in the root, from the earlier modial waw to a lter midial yod. This kind of variation is comparable to the Ugaritic cognate hwy/hyy, which only has a medial yod when in the Qal form.",
+
+            "p132b":"Some suggests that concurs with link between Eve and hwt, remarking that the Ugaritic noun was an epithet for the Canaanite goddess, Asherah, 'mother of the gods'. He carefully to qualifyy this association between the biblical mother and the Ugaritic deity when he writes. 'we do not mean to imply a simple equation between Eve and Asherah. The possible etymologies for hwy suggest that the name and the connection with Asherah are part of long tradition.",
+
+            "p132bc":"appears to represent the biblical facet of a continuously evolving effort within ancient Near Eastern culture to name and negotiate between divine and human females' power to give life.",
         }
     },
 
