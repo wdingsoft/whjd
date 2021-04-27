@@ -188,6 +188,22 @@ var  ciu_reading = BibDat =
             "loc 1785":"“Both etic and emic model are useful, but the questions remain” ",
             "loc 1785":"each culture remains a conceptual island, we can only move from one to another but never build a bridge of understanding between them. Our understanding of another culture is only approximate."
         }
-    }
+    },
+
+    "AbrahamKuruvilla2014book": {
+        "doctype": "book",
+        "author": "Abraham Kuruvilla",
+        "booktitle": "A Theological Commentary for Preachers: Genesis",
+        "year": "2014",
+        "publisher": "Wipf Stock Publishers",
+        "address": "Eugene, OR",
+        "url": "",
+        "url-1": "",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p60": "the creation of man and woman in Gen2 is an expansion of the creation on Day6 (1:26-27)"
+        }
+    },
 
 }
