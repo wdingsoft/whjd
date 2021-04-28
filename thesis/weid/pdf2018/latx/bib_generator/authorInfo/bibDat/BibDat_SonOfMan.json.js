@@ -134,7 +134,7 @@ var BibDat_SonOfMan = BibDat =
 
             "p3page": "The Mother Goddess of ancient Near Eastern religions,.... the writer of Genesis 'completely demythologize the function of the goddess[IsaacMKikawada1972article] ....  the story of Eve also the story of the displacing of Goddess whose name is taken from a form of the Hebrew verb 'to be' by the masculine God, Yahweh, whose name has the same derivation. ... Creator Goddess....",
 
-            "p3a": "the story of Eve also the story of the displacing of Goddess whose name is taken from a form of the Hebrew verb 'to be' by the masculine God, Yahweh, whose name has the same derivation.",
+            "p3a": "the story of Eve also the story of the displacing of the Goddess whose name is taken from a form of the Hebrew verb 'to be' by the masculine God, Yahweh, whose name has the same derivation.",
 
             "p3": "We cannot understand the history of Eve without seeing her as a deposed Creator-Goddess."
 
