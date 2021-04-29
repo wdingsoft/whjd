@@ -202,7 +202,9 @@ var  ciu_reading = BibDat =
         "isbn": "",
         "abstract": "",
         "quotes": {
-            "p60": "the creation of man and woman in Gen2 is an expansion of the creation on Day6 (1:26-27)"
+            "p60": "the creation of man and woman in Gen2 is an expansion of the creation on Day6 (1:26-27)",
+
+            "p61":"the phrase (2:23-24) indicates more a covenant relationship between the protagonists, rather than an assertion of genetic connection. It is essentially 'an oath of abiding loyalty,' a mutual commitment of partners who obligate themselves to each other for every circumstance of life. The covenant relationship is hinted at in the 'cleaving' (2:24) "
         }
     },
 
