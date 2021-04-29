@@ -540,7 +540,7 @@ var BibDat_FamilialVocab = BibDat =
         "author": "Andrew Warner",
         "authorinfo": "Andrew Warner",
         "booktitle": "",
-        "title": "Language: Obstacle and Oppurtunity and Examiniation the Phenomenon of Human Language and the Church's Approach to the Mulititude of Langauges Present in the World",
+        "title": "Language: Obstacle and Opportunity and Examination the Phenomenon of Human Language and the Church's Approach to the Multitude of Languages Present in the World",
         "year": "2017",
         "publisher": " ",
         "isbn": "",
