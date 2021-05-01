@@ -36,27 +36,19 @@
     <script>
 
         var options = {
-            //colors : ['#cccccc','#b84644', '#dfdfdf'], //stack color
+            colors : ['#cccccc','#b84644', '#dfdfdf'], //stack color
             series: [
                 {
                     name: 'Babel',
-                    data: [3000, 3500]
+                    data: [3000, 3500, 2000, 2000, 3500, 4500, 5600]
                 },
                 {
                     name: 'Start',
-                    data: [1600, 2800]
-                },
-                {
-                    name: 'Exile',
-                    data: [600, 100]
+                    data: [4000, 3500, 3500, 3000, 2200, 2500, 1400]
                 },
                 {
                     name: 'Distinction',
-                    data: [1700, 100]
-                },
-                {
-                    name: 'Restart',
-                    data: [100, 500]
+                    data: [0, 0, 1500, 2000, 1300, 0, 0]
                 },
 
             ],
@@ -79,7 +71,7 @@
             },
             xaxis: {
                 tickAmount: 15,
-                categories: ["Hebrew", "Chinese"],
+                categories: ["Hebrew", "Chinese", "Hieroglyph", "Cuneiform", "Sanskrit", "Latin", "Greek", "English"],
                 labels: {
                     formatter: function (val) {
                         return -5000 + val;//+ "K"
