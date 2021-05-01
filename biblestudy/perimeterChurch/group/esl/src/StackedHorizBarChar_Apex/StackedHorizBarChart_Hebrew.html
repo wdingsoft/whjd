@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)file:///Users/weiding/Downloads/temporily/apexcharts-bundle/samples/vue/bar/stacked-bar-100.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HorzStackedBarChart</title>
+
+  <link href="./StackedHorizBarChart_files/styles.css" rel="stylesheet">
+
+  <style>
+    #chart {
+      max-width: 650px;
+      margin: 35px auto;
+    }
+  </style>
+
+  <script src="./StackedHorizBarChart_files/vue.min.js"></script>
+  <script src="./StackedHorizBarChart_files/apexcharts.js"></script>
+
+</head>
+
+<body>
+
+  <div id="app">
+    <div id="chart" style="position: relative;">
+    </div>
+  </div>
+
+  <!-- Below element is just for displaying source code. it is not required. DO NOT USE -->
+
+
+  <script>
+
+    var options = {
+      series: [{
+        name: 'Marine Sprite',
+        data: [4, 55, 41, 37, 22, 43, 21]
+      }, {
+        name: 'Striking Calf',
+        data: [53, 32, 33, 52, 13, 43, 32]
+      }, {
+        name: 'Tank Picture',
+        data: [12, 17, 11, 9, 15, 11, 20]
+      }, {
+        name: 'Bucket Slope',
+        data: [9, 7, 5, 8, 6, 9, 4]
+      }, {
+        name: 'Reborn Kid',
+        data: [25, 12, 19, 32, 25, 24, 10]
+      }],
+      chart: {
+        type: 'bar',
+        height: 350,
+        stacked: true,
+      },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+        },
+      },
+      stroke: {
+        width: 1,
+        colors: ['#fff']
+      },
+      title: {
+        text: 'Hebrew Language History'
+      },
+      xaxis: {
+        categories: ["Hebrew", 2009, 2010, 2011, 2012, 2013, 2014],
+        labels: {
+          formatter: function (val) {
+            return val + "K"
+          }
+        }
+      },
+      yaxis: {
+        title: {
+          text: undefined
+        },
+      },
+      tooltip: {
+        y: {
+          formatter: function (val) {
+            return val + "K"
+          }
+        }
+      },
+      fill: {
+        opacity: 1
+      },
+      legend: {
+        position: 'top',
+        horizontalAlign: 'left',
+        offsetX: 40
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
