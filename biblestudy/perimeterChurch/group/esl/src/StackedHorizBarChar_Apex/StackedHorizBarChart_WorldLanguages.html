@@ -36,19 +36,19 @@
     <script>
 
         var options = {
-            colors : ['#cccccc','#b84644', '#dfdfdf'], //stack color
+            colors: ['#cccccc', '#b84644', '#dfdfdf'], //stack color
             series: [
                 {
                     name: 'Babel',
-                    data: [3000, 3500, 2000, 2000, 3500, 4500, 5600]
+                    data: []
                 },
                 {
                     name: 'Start',
-                    data: [4000, 3500, 3500, 3000, 2200, 2500, 1400]
+                    data: []
                 },
                 {
-                    name: 'Distinction',
-                    data: [0, 0, 1500, 2000, 1300, 0, 0]
+                    name: 'Ceased',
+                    data: []
                 },
 
             ],
@@ -67,16 +67,17 @@
                 colors: ['#fff']
             },
             title: {
-                text: 'Hebrew Language History'
+                text: 'World Languages History'
             },
             xaxis: {
                 tickAmount: 15,
-                categories: ["Hebrew", "Chinese", "Hieroglyph", "Cuneiform", "Sanskrit", "Latin", "Greek", "English"],
+                categories: [],
                 labels: {
                     formatter: function (val) {
                         return -5000 + val;//+ "K"
                     }
-                }
+                },
+
             },
             yaxis: {
                 title: {
@@ -110,6 +111,25 @@
                 offsetX: 40
             }
         };
+
+
+        var rangeDat = {
+            Hebrew: [3000, 4000, 0],
+            Chinese: [3500, 3500, 0],
+            Hieroglyph: [2000, 3500, 1500],
+            Cuneiform: [2000, 3000, 2000],
+            Sanskrit: [0, 0, 0],
+            Latin: [3500, 2200, 1300],
+            Greek: [4500, 2500, 0],
+            English: [5600, 1400, 0],
+        }
+
+        for (var i = 0; i < 3; i++) {
+            Object.keys(rangeDat).forEach(function (key) {
+                if(0===i) options.xaxis.categories.push(key)
+                options.series[i].data.push(rangeDat[key][i])
+            })
+        }
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
         chart.render();
