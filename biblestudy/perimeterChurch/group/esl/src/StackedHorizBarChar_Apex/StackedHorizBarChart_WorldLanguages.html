@@ -36,14 +36,14 @@
     <script>
 
         var options = {
-            colors: ['#cccccc', '#b84644', '#dfdfdf'], //stack color
+            colors: ['#f0f0f0', '#b84644', '#cccccc'], //stack color
             series: [
                 {
                     name: 'Babel',
                     data: []
                 },
                 {
-                    name: 'Start',
+                    name: 'Era',
                     data: []
                 },
                 {
@@ -70,6 +70,9 @@
                 text: 'World Languages History'
             },
             xaxis: {
+                title: {
+                    text: "Chronical History (Year)"
+                },
                 tickAmount: 15,
                 categories: [],
                 labels: {
@@ -98,7 +101,7 @@
             tooltip: {
                 y: {
                     formatter: function (val) {
-                        return val + "K"
+                        return val + " (Years)"
                     }
                 }
             },
@@ -114,14 +117,15 @@
 
 
         var rangeDat = {
-            Hebrew: [3000, 4000, 0],
-            Chinese: [3500, 3500, 0],
-            Hieroglyph: [2000, 3500, 1500],
             Cuneiform: [2000, 3000, 2000],
-            Sanskrit: [0, 0, 0],
-            Latin: [3500, 2200, 1300],
-            Greek: [4500, 2500, 0],
+            Hieroglyph: [2000, 3500, 1500],
+            Sanskrit: [3500, 2200, 1300],
+            Latin: [4300, 2000, 700],
             English: [5600, 1400, 0],
+            Arabic: [5000, 2000, 0],
+            Greek: [4500, 2500, 0],
+            Chinese: [3500, 3500, 0],
+            Hebrew: [3000, 4000, 0],
         }
 
         for (var i = 0; i < 3; i++) {
