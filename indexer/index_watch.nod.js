@@ -40,7 +40,7 @@ function get_htm(obj) {
     
         <script src="https://wdingbox.github.io/assetjs/libs/jq/jquery-2_1_3.min.js"></script>
         <script src="https://wdingbox.github.io/assetjs/libs/table/table_sorter.js"></script>
-        <script src="https://wdingbox.github.io/assetjs/libs/table/table_Indexer.js"></script>
+        <script src="https://wdingbox.github.io/assetjs/libs/table/table_indexer.js"></script>
         <script src="https://wdingbox.github.io/assetjs/libs/table/Pinyin7kzi.js?v=2"></script>
 
         <script src="./index.js"></script>
