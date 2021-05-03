@@ -38,10 +38,10 @@ function get_htm(obj) {
         <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
         <base target="_blank" />
     
-        <script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script>
-        <script src="https://wdingbox.github.io/ham12/jq/jquery.tablesorter.js"></script>
-        <script src="https://wdingbox.github.io/ham12/jq/table_Indexer.js"></script>
-        <script src="https://wdingbox.github.io/ham12/jq/Pinyin7kzi.js?v=2"></script>
+        <script src="https://wdingbox.github.io/assetjs/libs/jq/jquery-2_1_3.min.js"></script>
+        <script src="https://wdingbox.github.io/assetjs/libs/table/table_sorter.js"></script>
+        <script src="https://wdingbox.github.io/assetjs/libs/table/table_Indexer.js"></script>
+        <script src="https://wdingbox.github.io/assetjs/libs/table/Pinyin7kzi.js?v=2"></script>
 
         <script src="./index.js"></script>
 
