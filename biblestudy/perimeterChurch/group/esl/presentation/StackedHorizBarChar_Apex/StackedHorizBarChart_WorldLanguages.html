@@ -16,6 +16,15 @@
             max-width: 650px;
             margin: 35px auto;
         }
+
+        #cgreen {
+            background-color: #32cd32;
+            background-color: #00ff7f;
+        }
+
+        #yell {
+            background-color: #f5deb3;
+        }
     </style>
 
     <script src="./StackedHorizBarChart_files/vue.min.js"></script>
@@ -36,14 +45,14 @@
     <script>
 
         var options = {
-            colors: ['#f0f0f0', '#b84644', '#cccccc'], //stack color
+            colors: ['#f5deb3', '#32cd32', '#b84644', '#cccccc'], //stack color
             series: [
                 {
                     name: 'Babel',
                     data: []
                 },
                 {
-                    name: 'Era',
+                    name: 'Language Era',
                     data: []
                 },
                 {
@@ -67,7 +76,7 @@
                 colors: ['#fff']
             },
             title: {
-                text: 'World Languages in History'
+                text: 'Languages in World History'
             },
             xaxis: {
                 title: {
@@ -77,7 +86,9 @@
                 categories: [],
                 labels: {
                     formatter: function (val) {
-                        return -5000 + val;//+ "K"
+                        val -= 5000
+                        if (val > 2000) return ''
+                        return val;//+ "K"
                     }
                 },
 
@@ -111,26 +122,28 @@
             legend: {
                 position: 'top',
                 horizontalAlign: 'left',
-                offsetX: 40
+                offsetX: 60
             }
         };
 
 
         var rangeDat = {
-            Cuneiform: [2000, 3000, 2000],
-            Hieroglyph: [2000, 3500, 1500],
-            Sanskrit: [3500, 2200, 1300],
-            Latin: [4300, 2000, 700],
+
             English: [5600, 1400, 0],
             Arabic: [5000, 2000, 0],
             Greek: [4500, 2500, 0],
             Chinese: [3500, 3500, 0],
             Hebrew: [3000, 4000, 0],
+            Canaanite: [0, 5400, 1600],
+            Hieroglyph: [2000, 3500, 1500],
+            Cuneiform: [2000, 3000, 2000],
+            Sanskrit: [3500, 2200, 1300],
+            Latin: [4300, 2000, 700],
         }
 
         for (var i = 0; i < 3; i++) {
             Object.keys(rangeDat).forEach(function (key) {
-                if(0===i) options.xaxis.categories.push(key)
+                if (0 === i) options.xaxis.categories.push(key)
                 options.series[i].data.push(rangeDat[key][i])
             })
         }
