@@ -87,7 +87,8 @@
                 labels: {
                     formatter: function (val) {
                         val -= 5000
-                        if (val > 2000) return ''
+                        if (val > 2000) val = ''
+                        if (0 === val) val = 1
                         return val;//+ "K"
                     }
                 },
@@ -135,6 +136,7 @@
             Chinese: [3500, 3500, 0],
             Hebrew: [3000, 4000, 0],
             Canaanite: [0, 5400, 1600],
+            Aramaic: [4200, 1400, 1400],
             Hieroglyph: [2000, 3500, 1500],
             Cuneiform: [2000, 3000, 2000],
             Sanskrit: [3500, 2200, 1300],
