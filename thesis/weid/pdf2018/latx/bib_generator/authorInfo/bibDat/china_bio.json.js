@@ -118,6 +118,23 @@ var china_bio = BibDat =
         "quotes":{
             "bib":"圣经说，“若一国自相纷争，那国就站立不住；若一家自相纷争，那家就站立不住。”"
         }
-    }
+    },
 
+  "LuPengandKatherineBrunsonandYuanJingandLiZhipeng2017article": {
+        "doctype": "article",
+        "author": "Lu Peng and Katherine Brunson and Yuan Jing and Li Zhipeng",
+        "authorinfo": "",
+        "title": "Zooarchaeological and Genetic Evidence for the Origins of Domestic Cattle in Ancient China",
+        "journal": "The Journal of Archaeology for Asia and the Paciﬁc",
+        "vol": "Vol56 No.1",
+        "year": "2017",
+        "page": "92",
+        "publisher": "",
+        "isbn": "",
+        "url-1": "https://www.academia.edu/34045681/Zooarchaeological_and_Genetic_Evidence_for_the_Origins_of_Domestic_Cattle_in_Ancient_China?email_work_card=figure",
+        "abstract": `This article reviews current evidence for the origins of domestic cattle in China. Wedescribe two possible scenarios: 1) domestic cattle were domesticated indigenously in East Asia from the wild aurochs (Bos primigenius), and 2) domestic cattle were domesti-cated elsewhere and then introduced to China. We conclude that the current zoo-archaeological and genetic evidence does not support indigenous domestication withinChina, although it is possible that people experimented with managing wild aurochs in ways that did not lead to complete domestication. Most evidence indicates that domestictaurine cattle (Bos taurus) were introduced to China during the third millennium b.c.,and were related to cattle populations ﬁrst domesticated in the Near East. Zebu cattle(Bos indicus) entered China sometime between 2000 and 200 b.c., but much less is known about this species. The role of cattle as ritual and wealth animals seems to have been critical to their initial introduction. Keywords: cattle, domestication, management, zooarchaeology, Neolithic and Bronze Age China`,
+        "quotes": {
+            "p96": ""
+        }
+    },
 }
