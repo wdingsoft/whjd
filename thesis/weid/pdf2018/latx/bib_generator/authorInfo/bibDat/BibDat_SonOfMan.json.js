@@ -600,7 +600,7 @@ var BibDat_SonOfMan = BibDat =
 
 
 
-    "an2020webpage": {
+    "webpage": {
         "doctype": "webpage",
         "author": "",
         "editor": " ",

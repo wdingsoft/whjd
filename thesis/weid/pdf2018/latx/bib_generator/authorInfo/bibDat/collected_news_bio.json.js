@@ -1,6 +1,6 @@
 var collected_news_bio = BibDat =
 {
-    "an202webpage": {
+    "an2020webpage": {
         "doctype": "webpage",
         "author": "Xinhua, April 14, 2020",
         "editor": " ",
