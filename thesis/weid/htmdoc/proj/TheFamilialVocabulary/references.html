@@ -161,7 +161,7 @@
 
 		<h1>Un-quoted references</h1>
 
-		<section id="unquoted">
+		<section id="unquotedsec">
 			<div p="1">test<sup pg="" title="IvarKristianslund2019book">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="RenbergAdamRobert2020Thesis">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="EllisBrannonE2010master">[]</sup>.</div>
@@ -233,7 +233,7 @@
 		<hr />
 		<hr />
 		<h1>Quoted references</h1>
-		<section id="quoted">
+		<section id="quotedsec">
 			<!---------------------------------quotted references----------------------------->
 			<div p="1">test<sup pg="" title="WycliffeGlobalAlliance2016article">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="AndrewWarner2017masterthesis">[]</sup>.</div>
@@ -298,7 +298,7 @@
 			<div p="1">test<sup pg="" title="MatthewHenry1714book">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="AlbertBarnes1679book">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="HeinrichAugustWilhelmMeyer1829book">[]</sup>.</div>
-			<hr />
+			<p>duplication template</p>
 
 			<div p="1">test<sup pg="" title="JosephBenson1821book">[]</sup>.</div>
 			<div p="1">test<sup pg="" title="JosephBenson1821book">[]</sup>.</div>
@@ -344,7 +344,7 @@
 		<h3 postchapter="I"><span page_break_before="">Bibliography</span></h3>
 
 		<section>
-			<div id="Bibliograph">[object HTMLDivElement]</div>
+			<div id="Bibliograph">[object quotedsec]</div>
 		</section>
 
 
@@ -360,7 +360,11 @@
 
 <script>
 	$(function () {
-		endnote_bibliography.set(true)
-		endnote_bibliography.print_all_content_for_editing()
+		endnote_bibliography.set(true, "#quotedsec")
+		endnote_bibliography.print_all_content_for_editing("#quotedsec")
+
+
+		endnote_bibliography.set(true, "#unquotedsec")
+		endnote_bibliography.print_all_content_for_editing("#unquotedsec")
 	})
 </script>

@@ -6,9 +6,9 @@
 
 
 var endnote_bibliography = {
-    set: function (bPrint) {
+    set: function (bPrint, eleID) {
         endnote_bibliography.load_bib(bPrint);
-        endnote_bibliography.note_indexer(bPrint);
+        endnote_bibliography.note_indexer(bPrint, eleID);
         endnote_bibliography.quote_filler(bPrint);
         endnote_bibliography.end_notes(bPrint);
 
@@ -38,15 +38,16 @@ var endnote_bibliography = {
         });
         return ret
     },
-    note_indexer: function (bPrint) {
+    note_indexer: function (bPrint, eleID) {
         if (!bPrint) {
             $("sup[title]").text("[]");
             return
         }
+        if (!eleID) eleID = "body"
         var _THIS = this;
         _THIS.m_bib_IDary = [];
         _THIS.m_pgAry = [];
-        $("sup[title]").each(function (i) {
+        $(eleID).find("sup[title]").each(function (i) {
             var anchor = `[${(1 + i)}]`;
             if (typeof window.event.getModifierState != "function" || window.event.getModifierState("CapsLock")) {
                 anchor = `<a endnote="1" href="#endnote${1 + i}">[${(1 + i)}]</a>`;
@@ -105,7 +106,8 @@ var endnote_bibliography = {
             ss += "</a>";
         };
         //ss += "</ul>";
-        $("#EndNotes").next().html(ss);
+        $("#EndNotes").next().append(ss);
+        $("#EndNotes").append("<br><br>end<hr/>")
     },
 
 
@@ -132,10 +134,11 @@ var endnote_bibliography = {
             sol += `<div type='bibliography_item' title='${i}'>${bib}</div><br><br>`;
         }
 
-        $("#Bibliograph").html(sol);
+        $("#Bibliograph").append(sol);
+        $("#Bibliograph").append("<br><br>End<hr/>")
     },
 
-    print_all_content_for_editing: function (secID) {
+    print_all_content_for_editing: function (sDescp) {
         function get_content(obj) {
 
             var txt = ""
@@ -163,6 +166,7 @@ var endnote_bibliography = {
             txt += get_content(biOj) + "<br>"
         });
 
+        $("body").append(`<h1>start print:${sDescp}</h1><hr>`)
         $("body").append(txt)
     }
 }
