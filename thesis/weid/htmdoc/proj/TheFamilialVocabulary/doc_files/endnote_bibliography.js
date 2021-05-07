@@ -44,7 +44,7 @@ var endnote_bibliography = {
             return
         }
         var _THIS = this;
-        _THIS.m_bibidAry = [];
+        _THIS.m_bib_IDary = [];
         _THIS.m_pgAry = [];
         $("sup[title]").each(function (i) {
             var anchor = `[${(1 + i)}]`;
@@ -57,7 +57,7 @@ var endnote_bibliography = {
             _THIS.m_pgAry.push(pg);
 
             var tx = $(this).attr("title");
-            _THIS.m_bibidAry.push(tx);
+            _THIS.m_bib_IDary.push(tx);
         });
 
     },
@@ -83,9 +83,9 @@ var endnote_bibliography = {
         }
         var ss = "";//"<ul type='none'>";
         var prevBiid = "";
-        for (var i = 0; i < this.m_bibidAry.length; i++) {
+        for (var i = 0; i < this.m_bib_IDary.length; i++) {
             ss += `<br><a type='endnote' name='endnote${i + 1}'>&nbsp;&nbsp;&nbsp;&nbsp;<sup>${i + 1}</sup> `;
-            var nid = this.m_bibidAry[i];
+            var nid = this.m_bib_IDary[i];
             var pg = this.m_pgAry[i];
             if (pg.length > 0) {
                 pg = ", " + pg;
@@ -118,7 +118,7 @@ var endnote_bibliography = {
         var bibAr = [];
         var _THIS = this;
         var uniqCheckObj = {};
-        _THIS.m_bibidAry.forEach(function (biid, i) {
+        _THIS.m_bib_IDary.forEach(function (biid, i) {
             if (undefined !== uniqCheckObj[biid]) return;
             uniqCheckObj[biid] = 1;
             var biOj = _THIS.m_bibObj[biid];
@@ -153,7 +153,7 @@ var endnote_bibliography = {
         var uniqCheckObj = {};
         var txt = ""
         var _THIS = this;
-        _THIS.m_bibidAry.forEach(function (biid, i) {
+        _THIS.m_bib_IDary.forEach(function (biid, i) {
             if (undefined !== uniqCheckObj[biid]) return;
             uniqCheckObj[biid] = 1;
             var biOj = _THIS.m_bibObj[biid];
