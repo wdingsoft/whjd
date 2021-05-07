@@ -15,40 +15,42 @@ var endnote_bibliography = {
         endnote_bibliography.gen_bibliography(bPrint);
     },
     note_indexer: function (bPrint) {
-        var _THIS = this;
-        if (bPrint === true) {
-            _THIS.m_bibidAry = [];
-            _THIS.m_pgAry = [];
-            $("sup[title]").each(function (i) {
-                var anchor = `[${(1 + i)}]`;
-                if (typeof window.event.getModifierState != "function" || window.event.getModifierState("CapsLock")) {
-                    anchor = `<a endnote="1" href="#endnote${1 + i}">[${(1 + i)}]</a>`;
-                }
-                $(this).html(anchor);
-                var pg = $(this).attr("pg");
-                if (undefined === pg) pg = "";
-                _THIS.m_pgAry.push(pg);
-
-                var tx = $(this).attr("title");
-                _THIS.m_bibidAry.push(tx);
-            });
-        } else {
+        if (!bPrint) {
             $("sup[title]").text("[]");
+            return
         }
+        var _THIS = this;
+        _THIS.m_bibidAry = [];
+        _THIS.m_pgAry = [];
+        $("sup[title]").each(function (i) {
+            var anchor = `[${(1 + i)}]`;
+            if (typeof window.event.getModifierState != "function" || window.event.getModifierState("CapsLock")) {
+                anchor = `<a endnote="1" href="#endnote${1 + i}">[${(1 + i)}]</a>`;
+            }
+            $(this).html(anchor);
+            var pg = $(this).attr("pg");
+            if (undefined === pg) pg = "";
+            _THIS.m_pgAry.push(pg);
+
+            var tx = $(this).attr("title");
+            _THIS.m_bibidAry.push(tx);
+        });
+
     },
     quote_filler: function (bPrint) {
-        var _THIS = this;
-        if (bPrint === true) {
-            $("a[q][title]").each(function (i) {
-                var bibid = $(this).next().attr("title");
-                var qid = $(this).attr("title");
-                var bibobj = _THIS.m_bibObj[bibid];
-                var tx = bibobj.quotes[qid];
-                $(this).text(`"${tx.trim()}"`);
-            });
-        } else {
+        if (!bPrint) {
             $("a[q][title]").text(`"..."`);
+            return
         }
+        var _THIS = this;
+        $("a[q][title]").each(function (i) {
+            var bibid = $(this).next().attr("title");
+            var qid = $(this).attr("title");
+            var bibobj = _THIS.m_bibObj[bibid];
+            var tx = bibobj.quotes[qid];
+            $(this).text(`"${tx.trim()}"`);
+        });
+
     },
     end_notes: function (bPrint) {
         if (!bPrint) {
