@@ -14,6 +14,30 @@ var endnote_bibliography = {
 
         endnote_bibliography.gen_bibliography(bPrint);
     },
+    load_bib: function (bPrint) {
+        var path = "../../../../weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
+        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js", "BibDat_SonOfMan.json.js", "BibDat_FamilialVocab.json.js"];
+
+        this.m_bibObj = {};
+        for (var i = 0; i < fary.length; i++) {
+            var f1 = path + fary[i];
+            uti.gen_sjs(f1);
+            var ret = this.hard_cpy(this.m_bibObj, BibDat);
+            if (1 === ret) console.error(f1)
+        }
+    },
+    hard_cpy: function (tarObj, srcobj) {
+        var ret = 0;
+        Object.keys(srcobj).forEach(function (key) {
+            if (undefined === tarObj[key]) {
+                tarObj[key] = JSON.parse(JSON.stringify(srcobj[key]));
+            } else {
+                console.error("Duplicate key bibid:", key);
+                ret = 1
+            }
+        });
+        return ret
+    },
     note_indexer: function (bPrint) {
         if (!bPrint) {
             $("sup[title]").text("[]");
@@ -84,34 +108,7 @@ var endnote_bibliography = {
         $("#EndNotes").next().html(ss);
     },
 
-    load_bib: function (bPrint) {
-        var path = "../../../../weid/pdf2018/latx/bib_generator/authorInfo/bibDat/";
-        var fary = ["BibDat_ZiZi.json.js", "BibDat_OBI.json.js", "ciu_reading.json.js", "china_bio.json.js", "collected_news_bio.json.js", "BibDat_SonOfMan.json.js", "BibDat_FamilialVocab.json.js"];
-        if (!bPrint) {
-            for (var i = 0; i < fary.length; i++) {
-                $(`script[src='${path + fary[i]}']`).remove();
-            }
-            return;
-        }
-        if (undefined != this.m_bibObj) {
-            return;
-        }
-        this.m_bibObj = {};
-        for (var i = 0; i < fary.length; i++) {
-            var f1 = path + fary[i];
-            uti.gen_sjs(f1);
-            this.cpy(this.m_bibObj, BibDat);
-        }
-    },
-    cpy: function (tarObj, srcobj) {
-        Object.keys(srcobj).forEach(function (key) {
-            if (undefined === tarObj[key]) {
-                tarObj[key] = JSON.parse(JSON.stringify(srcobj[key]));
-            } else {
-                console.log("Duplicate key bibid:", key);
-            }
-        });
-    },
+
 
     gen_bibliography: function (bPrint) {
         if (!bPrint) {
