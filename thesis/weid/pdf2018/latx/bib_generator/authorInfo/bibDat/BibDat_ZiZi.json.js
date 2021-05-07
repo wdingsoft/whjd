@@ -407,17 +407,7 @@ var BibDat_ZiZi = BibDat =
         "month": "01",
         "abstract": "Abstract in Chinese】 <正>先秦哲学是中国哲学和传统文化的活水源头,因此,对先秦哲学的研究不仅有助于理解这一时段的中国哲学和文化,而且在某种意义上影响着对全部中国哲学史包括当代中国哲学的理解和评价。由于这一众所周知的原因,对先秦哲学的研究一直是学术界关注的热点之一,相关的研究成果也层出不穷。这种情况无疑给先秦哲学研究的创新增加了难度。在这方面,《七子视界:先秦哲学研究》(中国社会科学出版社出版,简称《七子视界》,下引此书只注页码)视角独特、特色鲜明,使人耳目一新。"
     },
-    "TrevorJBurke2011book": {
-        "doctype": "book",
-        "author": "Trevor J. Burke",
-        "editor": "Derek Tidball",
-        "title": "The Message of Sonship: at Home in God's household",
-        "address":"Downers Grove, Illinois",
-        "publisher": "Inter-Varsity Press",
-        "isbn": "978-0-8303-2413-7",
-        "year": "2011",
-        "abstract": "Part 1: Sonship in the OT.\n1. a son is born: Israel (Exodus)\n2. a son heading home (Deut)\n3. a son swarn in (2Sam)\n4. a prodigal son return home (Hosea 11; Isaiah 1:2-4)\n\nPart 2: Sonship in the NT.\n5. Jesus, the son of God\n6. the son of God and the children of God\n7.adopted sons and daughters empowered by the Spirit.\n8.Children of wrath who become strong and stable sones of daughters of God\n9. sonship and the second coming of God's son."
-    },
+    
     "JackFrost2006book": {
         "doctype": "book",
         "author": "Jack Frost",

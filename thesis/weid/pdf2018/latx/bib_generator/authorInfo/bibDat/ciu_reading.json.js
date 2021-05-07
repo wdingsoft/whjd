@@ -112,18 +112,16 @@ var  ciu_reading = BibDat =
         "year": "2004",
         "abstract": "p113\nAbraham's disobedience in Gen 12:1-4a.\nIt is disconcerting that within a few verses Abraham is transformed from a model follower in Gen 12:1-4a to \"the greatest enemy of the promise\" at the end of chap. 12.\np114. \nThroughout the Abraham Cycle, both the patriarch and his wife, Sarah, at various times play the role of \"enemy of the promise.\" On multiple occasions, Abraham and Sarah either hesitate before they obey God or question the plans of God or attempt to assist God in bringing about the promise of progeny rather than trusting solely on God. All of these instances of less-than-model faith cause one to question how Abraham's character could change so dramatically if Abraham were really so completely and blindly faithful in Gen 12:1-4a as Von Rad and the majority of commentators argue. How could Abraham move from this paradigm of complete trust and reliance on God in Gen 12:1-4a to a person who questions and has a difficult time trusting completely in God just six verses later?"
     },
-
     "TrevorJBurke2011book": {
         "doctype": "book",
-        "author": "Trevor J Burke",
-        "authorInfo": "Professor of Bible Moody Bible Institute",
-        "editor": "",
-        "booktitle": "The Message of Sonship",
-        "title": "The Message of Sonship",
+        "author": "Trevor J. Burke",
+        "editor": "Derek Tidball",
+        "title": "The Message of Sonship: at Home in God's household",
         "address":"Downers Grove, Illinois",
         "publisher": "Inter-Varsity Press",
+        "isbn": "978-0-8303-2413-7",
         "year": "2011",
-        "abstract": "",
+        "abstract": "Part 1: Sonship in the OT.\n1. a son is born: Israel (Exodus)\n2. a son heading home (Deut)\n3. a son swarn in (2Sam)\n4. a prodigal son return home (Hosea 11; Isaiah 1:2-4)\n\nPart 2: Sonship in the NT.\n5. Jesus, the son of God\n6. the son of God and the children of God\n7.adopted sons and daughters empowered by the Spirit.\n8.Children of wrath who become strong and stable sones of daughters of God\n9. sonship and the second coming of God's son.",
         "quotes": {
             "p10": "Adopted into God's Family.",
 
