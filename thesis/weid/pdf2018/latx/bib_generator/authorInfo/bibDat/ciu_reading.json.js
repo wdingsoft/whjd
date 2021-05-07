@@ -35,7 +35,7 @@ var  ciu_reading = BibDat =
         "doctype": "book",
         "author": "John H. Walton",
         "editor": "John H. Walton",
-        "title": "The Lost World of Genesis One:Ancient Cosmology and the Origins Debate",
+        "title": "The Lost World of Genesis One: Ancient Cosmology and the Origins Debate",
         "publisher": "IVP Academic",
         "address":"Downers Grove, Illinois",
         "year": "2009",
@@ -81,7 +81,7 @@ var  ciu_reading = BibDat =
     "CarolMeyers1983article": {
         "doctype": "article",
         "author": "Carol Meyers",
-        "title": "Procreation, Production, and Protection:Male-Female Balance in Early Israel",
+        "title": "Procreation, Production, and Protection: Male-Female Balance in Early Israel",
         "journal": "Journal of the American Academy of Religion",
         "year": "1983",
         "vol": "LI/4",

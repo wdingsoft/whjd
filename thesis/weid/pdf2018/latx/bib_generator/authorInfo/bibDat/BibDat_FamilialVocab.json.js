@@ -157,7 +157,7 @@ var BibDat_FamilialVocab = BibDat =
         "author": "Shumilin,Alexander",
         "authorinfo": "Shumilin,Alexander bukyrg59@gmail.com",
         "title2": "БІБЛЕЙСЬКИЙ ОБРАЗ ІСТИННОГО СИНІВСТВА У ПОСЛАННІ ДО ЄВРЕЇВ.",
-        "title": "Biblical Image Of True Sonship In The Epistle To The Hebrews",
+        "title": "Biblical Image of True Sonship in the Epistle To the Hebrews",
         "journal": "Ukrainian Center for Cultural Studie",
         "vol": "Vol. 169 Issue 5, ",
         "year": "Oct2020",
@@ -248,7 +248,7 @@ var BibDat_FamilialVocab = BibDat =
         "doctype": "article",
         "author": "Jerome T. Walsh",
         "authorinfo": "",
-        "title": "Genesis 2:4b-3:24: A Synchronic Approah",
+        "title": "Genesis 2:4b-3:24: A Synchronic Approach",
         "journal": "Journal of Biblical Literature",
         "vol": "Vol. 96, No. 2 ,",
         "year": "Jun.1977",
@@ -273,7 +273,7 @@ var BibDat_FamilialVocab = BibDat =
         "doctype": "article",
         "author": "Lawton, Robert B",
         "authorinfo": "",
-        "title": "Genesis 2:24: Trite Or Tragic?",
+        "title": "Genesis 2:24: Trite or Tragic?",
         "journal": "Journal of Biblical Literature",
         "vol": "Vol. 105 Issue 1",
         "year": "Mar1986",
@@ -456,7 +456,7 @@ var BibDat_FamilialVocab = BibDat =
         "doctype": "article",
         "author": "Anders Lumd Jacobsen",
         "authorinfo": "Dept. of Systematic Theology, Faculty of  Theology, University of Aarbus, Denmark alj@teo.au.dk",
-        "title": "Genesis 1-3 as Source for the Anthropologyy of Origen",
+        "title": "Genesis 1-3 as Source for the Anthropology of Origen",
         "journal": "Vigiliae Christianae",
         "vol": "Vol. 62, No. 3",
         "year": "2008",
@@ -611,7 +611,7 @@ var BibDat_FamilialVocab = BibDat =
             "gen2:24": "Verse 24. - Therefore shall a man leave his father and mother, and shall cleave unto his wife. There is nothing in the use of such terms as father and mother, or in the fact that the sentiment is prophetic, to prevent the words from being regarded as a continuation of Adam's speech, although, on the other hand, the statement of Christ (Matthew 19:5) does not preclude the possibility of Moses being their author; but whether uttered by the first husband (Delitzsch, Macdonald) or by the historian (Calvin, Murphy), they must be viewed as an inspired declaration of the law of marriage. Its basis (fundamental reason and predisposing cause) they affirm to be (1) the original relationship of man and woman, on the platform of creation; and (2) the marriage union effected between the first pair. Its nature they explain to be  (3) a forsaking (on the part of the woman as well as the man) of father and mother - not filially, in respect of duty, but locally, in respect of habitation, and comparatively, in respect of affection; and"
         }
     },
-    "CambridgeBibleforSchoolsandCollegesbook1882book": {
+    "JohnPerowneCambridgeBibleforSchoolsandCollegesbook1882book": {
         "doctype": "book",
         "author": "John Perowne",
         "authorinfo": "Anglican bishop John Perowne",
@@ -1063,7 +1063,7 @@ var BibDat_FamilialVocab = BibDat =
         "doctype": "book",
         "author": "Colin Hamer",
         "editor": "",
-        "booktitle": "Marital Imagery in the Bible: An Exploration of Genesis 2:24 and its Significance for the Umderstanding of New Testament Divorce and Remarriage Teaching",
+        "booktitle": "Marital Imagery in the Bible: An Exploration of Genesis 2:24 and its Significance for the Understanding of New Testament Divorce and Remarriage Teaching",
         "year": "2019",
         "publisher": "Wipf Stock",
         "address": "Eugene, Oregon",

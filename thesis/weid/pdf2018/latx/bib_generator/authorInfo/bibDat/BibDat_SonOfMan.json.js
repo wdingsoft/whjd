@@ -530,7 +530,7 @@ var BibDat_SonOfMan = BibDat =
         "doctype": "article",
         "author": "Nicholas J. Weyrens",
         "authorinfo": "(B.B.A., University of Mississippi) is an M.Div. student at Southern Seminary where he currently serves as the Assistant to the Associate Vice President of Online and Extension Education. He is married to Sarah. He writes regularly at Formed & Fueled (www.formedandfueled.com).",
-        "title": "One Man And One Woman: The Created Order And The Problem Of Same-Sex Marriage",
+        "title": "One Man and One Woman: The Created Order And The Problem Of Same-Sex Marriage",
         "journal": "Journal of Discipleship and Family Ministry",
         "vol": " JDFM 05:1 (Fall 2015)",
         "year": "2015",
