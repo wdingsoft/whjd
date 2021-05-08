@@ -9470,6 +9470,24 @@ var BibDat_OBI = BibDat =
         "abstract": "目前，据基督教全国“两会”统计，我国信仰基督教的人数达2305万，教堂及活动点总数超过5万个，有近4000名牧师、3.7万名教职人员和近15万名义工。全国有20所神学院、圣经学校，其中金陵协和神学院为全国性的神学院。共出版发行5800多万册圣经。",
         "Urldate": "http://www.gov.cn/test/2005-07/26/content_17214.htm"
     },
+
+    "TheEducationUniversityofHongHong2017webpage": {
+        "doctype": "webpage",
+        "author": "The Education University of Hong Hong (香港教育大學圖書館) ",
+        "title": "",
+        "publisher": "The Education University of Hong Hong (香港教育大學圖書館 )",
+        "year": "2013",
+        "url": "http://www.lib.ied.edu.hk/resources/e-resources/index_c.php?class=CHI&option=azlist",
+        "Bdsk-Url-1": "http://www.lib.ied.edu.hk/",
+        "abstract": "",
+        "Urldate": "2017",
+        "quotes":{
+            "page":"There are totally about 1,000,000 characters collected from total about 53,834 pieces of OBs with inscriptions.",
+            "note":"This data comes from The Education University of Hong Hong(香港教育大学图书馆). url: http://www.lib.ied.edu.hk/ updated on 6/9/2017."
+
+        }
+    },
+
     "KevinGreeson2012": {
         "doctype": "incollection",
         "author": "Kevin Greeson",

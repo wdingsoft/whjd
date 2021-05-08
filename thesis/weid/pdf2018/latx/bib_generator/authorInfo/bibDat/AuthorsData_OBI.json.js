@@ -8357,7 +8357,10 @@ var BibDat=
         "year": "2007",
         "pages": "22",
         "mynotes": "total OBI characters number is 1600,000. p22.",
-        "urla": "https://books.google.com/books?id=jsjR06OKRLgC&printsec=frontcover&dq=%E5%8E%86%E5%8F%B2%E4%B9%8B%E6%97%85&hl=en&sa=X&ved=0ahUKEwja-sGJ267UAhVH0iYKHYbNBmoQ6wEIKDAA#v=onepage&q=%E5%8E%86%E5%8F%B2%E4%B9%8B%E6%97%85&f=false"
+        "urla": "https://books.google.com/books?id=jsjR06OKRLgC&printsec=frontcover&dq=%E5%8E%86%E5%8F%B2%E4%B9%8B%E6%97%85&hl=en&sa=X&ved=0ahUKEwja-sGJ267UAhVH0iYKHYbNBmoQ6wEIKDAA#v=onepage&q=%E5%8E%86%E5%8F%B2%E4%B9%8B%E6%97%85&f=false",
+        "quote":{
+            "p12":""
+        }
     },
     "DongZuobing001": {
         "doctype": "book",
