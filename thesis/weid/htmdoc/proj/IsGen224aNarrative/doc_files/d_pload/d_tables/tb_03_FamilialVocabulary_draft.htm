@@ -1,0 +1,1965 @@
+<html>
+<head>
+	<title></title>
+	<script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script><script src="https://wdingbox.github.io/ham12/jq/table_sorter.js"></script><script src="https://wdingbox.github.io/ham12/jq/table_indexer.js"></script>
+	<style type="text/css">.hili {
+			background-color: red;
+		}
+	</style>
+	<script>
+
+		$(function () {
+			table_sort()
+			
+			$("td").on("click", function () {
+				$(this).toggleClass("hili")
+			})
+		})
+	</script><script>
+
+
+		$(function () {
+			gen_tab_js()
+		})
+		function gen_tab_js() {
+			var FamilialVocCode = {}
+			$("#FamilialVocabularyStats").find("tr").each(function () {
+				var heb = $(this).find("td:eq(1)").text()
+				var hebar = heb.split("\n")
+				console.log(hebar)
+
+				var Count = $(this).find("td:eq(2)").text()
+				var mat = Count.match(/([0-9]+)\/([0-9]+)/i)
+				var ge = 0, ot = 0
+				if (mat) {
+					console.log(mat)
+					ge = mat[1]
+					ot = mat[2]
+				}
+
+				var strnCod = $(this).find("td:eq(3)").text()
+
+				var eng = $(this).find("td:eq(4)").text()
+				var engar = eng.split(/[\s\(\,]/g)
+
+				FamilialVocCode[strnCod] = { Hebrew: hebar[0], Count: [ge, ot], Eng: engar[0] }
+			})
+			console.log(FamilialVocCode)
+			var outs = JSON.stringify(FamilialVocCode, null, 4)
+			console.log(outs)
+		}
+
+
+
+	</script>
+</head>
+<body>
+<div>
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>The Familial Vocabulary Statistics in the Bible<br />
+	(Note: square bracket denotes the speaker/inventor)<br />
+	<a href="../../Charts/FamilialVocabStat.html">chart</a></caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col"><span style="font-size:12px;">Hebrew<br />
+			(Transliteral)</span></th>
+			<th scope="col"><span style="font-size:12px;">Frequency<br />
+			Gen/OT</span></th>
+			<th scope="col"><span style="font-size:12px;">Strong<br />
+			Code</span></th>
+			<th scope="col">English</th>
+			<th scope="col">1st<br />
+			<span style="font-size:12px;">Appearance</span></th>
+			<th scope="col">Aftermath</th>
+			<th scope="col">1st-Solitary</th>
+			<th scope="col"><span style="font-size:10px;">Pair</span></th>
+			<th scope="col">Notes</th>
+		</tr>
+	</thead>
+	<tbody id="FamilialVocabularyStats">
+		<tr>
+			<td>1</td>
+			<td>אָדָם<br />
+			<em id="yui-gen69">adam</em></td>
+			<td>38/552=<br />
+			0.069</td>
+			<td><a href="https://www.blueletterbible.org/lang/Lexicon/Lexicon.cfm?strongs=H120&amp;t=KJV" id="yui-gen34">H120</a></td>
+			<td eng="man">mankind(1:26-27),<br />
+			Adam(2:7),<br />
+			earth(2:6)</td>
+			<td>1:26<br />
+			[God]</td>
+			<td>1:27<br />
+			[God],<br />
+			2:7<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>N1</td>
+			<td>mankind:<br />
+			common noun,<br />
+			proper noun</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>זָכָר<br />
+			<em id="yui-gen90">zakar</em></td>
+			<td>14/81=<br />
+			0.173</td>
+			<td>H2145</td>
+			<td eng="male">male</td>
+			<td>1:27<br />
+			[God]</td>
+			<td>5:12,&nbsp;<br />
+			[Narrator]</td>
+			<td>17:10<br />
+			(circumsice)</td>
+			<td>A1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>נְקֵבָה<br />
+			<em id="yui-gen95">neqebah</em></td>
+			<td>6/22=<br />
+			0.272</td>
+			<td>H5347&nbsp;</td>
+			<td>female</td>
+			<td>1:27<br />
+			[God]</td>
+			<td>5:12<br />
+			[Narrator]</td>
+			<td>Lev 4:28<br />
+			(goat,blemish)</td>
+			<td>A2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>אִשָּׁה<br />
+			<em id="yui-gen60">ishah</em></td>
+			<td>132/780=<br />
+			0.169</td>
+			<td>H802</td>
+			<td>woman, wife(2:24)<br />
+			from&nbsp;אִישׁ (man)</td>
+			<td>2:22<br />
+			[God]</td>
+			<td>2:23<br />
+			[Adam]</td>
+			<td>&nbsp;</td>
+			<td>B2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>אִישׁ<br />
+			<em>ish</em></td>
+			<td>98/1639=<br />
+			0.060</td>
+			<td>H376</td>
+			<td>man,<br />
+			male, husband, mankind, servant</td>
+			<td>2:23-24<br />
+			[Adam]</td>
+			<td>3:16<br />
+			[God]<br />
+			&nbsp;</td>
+			<td>4:23</td>
+			<td>B1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>אָב<br />
+			<em id="yui-gen76">ab</em></td>
+			<td>170/1215<br />
+			=0.140</td>
+			<td>H1</td>
+			<td>father (root)</td>
+			<td>2:24<br />
+			[Adam?<br />
+			Narrator]</td>
+			<td>4:20<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>C1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>אֵם<br />
+			<em id="yui-gen80">em</em></td>
+			<td>21/115=<br />
+			0.183</td>
+			<td>H517</td>
+			<td>mother (root)</td>
+			<td>2:24<br />
+			[Adam?<br />
+			Narrator]</td>
+			<td>3:20, 20:12<br />
+			[Adam]</td>
+			<td>&nbsp;</td>
+			<td>C2</td>
+			<td>?</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>בֵּן<br />
+			<em id="yui-gen43">ben</em></td>
+			<td>306/4906<br />
+			=0.062</td>
+			<td>H1121</td>
+			<td>son, children(3:16)</td>
+			<td>3:16<br />
+			[God]</td>
+			<td>4:17<br />
+			[Narrator]</td>
+			<td>4:17</td>
+			<td>D1</td>
+			<td>fall</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>חַוָּה<br />
+			<em id="yui-gen85">Chavvah</em></td>
+			<td>2/2=<br />
+			1.00</td>
+			<td>H2332</td>
+			<td>Eve<br />
+			(Adam)</td>
+			<td>3:20<br />
+			[Adam]</td>
+			<td>4:1<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>N2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>אָח<br />
+			<em>awkh</em></td>
+			<td>155/629<br />
+			=0.246</td>
+			<td>H251</td>
+			<td>brother</td>
+			<td>4:2<br />
+			[Narrator]</td>
+			<td>4:9<br />
+			[God,Cain]</td>
+			<td>&nbsp;</td>
+			<td>E1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>אָחוֹת<br />
+			<em>awkhot</em></td>
+			<td>23/114<br />
+			=0.201</td>
+			<td>H269</td>
+			<td>sister</td>
+			<td>4:22<br />
+			[Narrator]</td>
+			<td>12:13<br />
+			[Abraham]</td>
+			<td>&nbsp;</td>
+			<td>E2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>בַּת<br />
+			<em id="yui-gen63">bath</em></td>
+			<td>90/588<br />
+			=0.153</td>
+			<td>H1323</td>
+			<td>daughter</td>
+			<td>5:4<br />
+			[Narrator]</td>
+			<td>5:7,<br />
+			10,13,16,19,22,26<br />
+			[Narrator]</td>
+			<td>6:1-2</td>
+			<td>D2</td>
+			<td>L3</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>נֶכֶד<br />
+			<em>neked</em></td>
+			<td>1/3=<br />
+			0.333</td>
+			<td>H5220</td>
+			<td>nephew,<br />
+			progeny, posterity<br />
+			sibling&#39;s son</td>
+			<td>21:23<br />
+			[Abimelech]</td>
+			<td>Job18:19,Isa14:22<br />
+			[Bildad]</td>
+			<td>&nbsp;</td>
+			<td>N1</td>
+			<td>foreign,an unused root meaning to propagate</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>פִּילֶגֶשׁ<br />
+			<em>peeleghesh</em></td>
+			<td>4/37=<br />
+			0.108</td>
+			<td>H6370</td>
+			<td>concubine<br />
+			paramour</td>
+			<td>22:24<br />
+			[Narrator]</td>
+			<td>Gen25:6<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>דּוֹדָה<br />
+			<em>dodow</em></td>
+			<td>0/3=0</td>
+			<td>H1733</td>
+			<td>aunt</td>
+			<td>Exo6:20<br />
+			[Narrator]</td>
+			<td>Lev18:14;20:20<br />
+			[God]</td>
+			<td>&nbsp;</td>
+			<td>F1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>דּוֹד<br />
+			<em>dode</em></td>
+			<td>0/61=0</td>
+			<td>H1730</td>
+			<td>uncle</td>
+			<td>Lev10:4<br />
+			[Moses]</td>
+			<td>Lev20:20<br />
+			[God]</td>
+			<td>&nbsp;</td>
+			<td>F2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>&sigma;&upsilon;&gamma;&gamma;&epsilon;&nu;ή&sigmaf;<br />
+			<em>syngenes</em></td>
+			<td>0/0=0</td>
+			<td>G4773</td>
+			<td>cousin,<br />
+			uncle/aunt&#39;s child</td>
+			<td>Mak6:4</td>
+			<td>Luk1:36</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>evidende for parents?</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>&mu;ά&mu;&mu;&eta;<br />
+			<em>mamme</em></td>
+			<td>0/0(1)=0</td>
+			<td>G3125</td>
+			<td>grandmother</td>
+			<td>2Ti1:5</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>G2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>grandfather</td>
+			<td>-</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>G1</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>niece,<br />
+			sibling&#39;s daughter</td>
+			<td>-</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>N2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="10" style="text-align: center;">Other Related Vocabulary</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>עֵזֶר<br />
+			<em id="yui-gen46">ezer</em></td>
+			<td>2/21</td>
+			<td>H5828</td>
+			<td>help(helper)</td>
+			<td>2:18,20<br />
+			[God]</td>
+			<td>Exo 18:4<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>יֶלֶד<br />
+			yehled</td>
+			<td>17/89</td>
+			<td>H3206</td>
+			<td>child,offspring,youth,<br />
+			son,boy,</td>
+			<td>4:23<br />
+			[Lamech]</td>
+			<td>21:8<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/Lexicon/lexicon.cfm?strongs=H3205&amp;t=KJV" id="yui-gen28" title="English: beget, bare, born, bring forth, bear, travail, midwife, child, delivered, borne, birth, labour, brought up, misc">יָלַד&nbsp;(H3205)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>רִאשׁוֹן<br />
+			reeshone</td>
+			<td>10/185</td>
+			<td>H7223</td>
+			<td>ancestor,<br />
+			former, first, primary</td>
+			<td>8:13<br />
+			[Narrator]</td>
+			<td>13:4, 25:25</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H7221&amp;t=KJV" id="yui-gen29" title="English: beginnings">רִאשָׁה&nbsp;(H7221)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>מִשְׁפָּחָה<br />
+			<em>mispaha</em></td>
+			<td>12/301</td>
+			<td>H4940</td>
+			<td>family,<br />
+			clan,<br />
+			tribe,<br />
+			kind (species)</td>
+			<td>8:19<br />
+			(animal)</td>
+			<td>10:5,(man/nation)<br />
+			10:18,(canaanites)<br />
+			10:20,(Ham)<br />
+			12:3,[God]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>וָלָד<br />
+			vawlawd</td>
+			<td>1/2</td>
+			<td>H2056</td>
+			<td>child,<br />
+			offspring</td>
+			<td>11:30<br />
+			[Narrator]</td>
+			<td>2Sa6:23<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>For&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H3206&amp;t=KJV" id="yui-gen31" title="English: child, young man, young ones, sons, boy, fruit, variant">יֶלֶד&nbsp;(H3206)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>כַּלָּה<br />
+			<em>kalla</em></td>
+			<td>4/34</td>
+			<td>H3618</td>
+			<td>bride,&nbsp;<br />
+			daughter-in-law,<br />
+			spouse</td>
+			<td>11:31<br />
+			[Narrator]<br />
+			(Sarai)</td>
+			<td>38:11<br />
+			&#39;Juda&#39;<br />
+			(Tamar)</td>
+			<td>&nbsp;</td>
+			<td>b2</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H3634&amp;t=KJV" id="yui-gen30" title="English: perfected, made perfect">כָּלַל&nbsp;(H3634)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>שֵׂיבָה<br />
+			<em>seba</em></td>
+			<td>5/19</td>
+			<td>H7872</td>
+			<td>old age,<br />
+			gray hair</td>
+			<td>15:15<br />
+			[Narrator]</td>
+			<td>25:8</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H7869&amp;t=KJV" id="yui-gen46" title="English: age">שֵׂיב&nbsp;(H7869)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>חָתָן<br />
+			<em>hatan</em></td>
+			<td>2/20</td>
+			<td>H2860</td>
+			<td>bridegroom,<br />
+			husband,<br />
+			son-in-law,<br />
+			daughter&#39;s husband</td>
+			<td>19:12<br />
+			[angel]</td>
+			<td>19:14<br />
+			[Lot]</td>
+			<td>&nbsp;</td>
+			<td>b1</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H2859&amp;t=KJV" id="yui-gen36" title="English: law, affinity, marriages">חָתַן&nbsp;(H2859)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>נִין<br />
+			neen</td>
+			<td>1/3</td>
+			<td>H5209</td>
+			<td>offspring,<br />
+			posterity</td>
+			<td>21:23<br />
+			[Abimelech]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H5125&amp;t=KJV" id="yui-gen44" title="English: continued, variant">נוּן&nbsp;(H5125)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>תְּאוֹמִים<br />
+			tawome</td>
+			<td>2/4</td>
+			<td>H8380</td>
+			<td>twin</td>
+			<td>25:24<br />
+			[Narrator]</td>
+			<td>38:27<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H8382&amp;t=KJV" id="yui-gen27" title="English: coupled together, bear twin, coupled">תָּאַם&nbsp;(H8382)</a></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>חָתַן<br />
+			<em>hatan</em></td>
+			<td>1/33</td>
+			<td>H2859</td>
+			<td>marry,<br />
+			become son-in-law/ daughter&#39;s husband</td>
+			<td>34:9<br />
+			&#39;Hamor&#39;</td>
+			<td>Exo3:1</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>primitive v</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>גֶּבֶר<br />
+			<em>geber</em></td>
+			<td>0/68</td>
+			<td>H1397</td>
+			<td>man,<br />
+			strong man, warrior (emphasising strength or ability to fight)</td>
+			<td>Exo10:11<br />
+			[Pharaoh]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>עוֹלֵל<br />
+			olale</td>
+			<td>0/20</td>
+			<td>H5768</td>
+			<td>child,<br />
+			boy</td>
+			<td>1Sa15:3<br />
+			[God]</td>
+			<td>1Sa22:19<br />
+			[Narrator]</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From&nbsp;<a href="https://www.blueletterbible.org/lang/lexicon/lexicon.cfm?strongs=H5763&amp;t=KJV" id="yui-gen28" title="English: milch, young, ewes great with young, those that are young">עוּל&nbsp;(H5763)</a></td>
+		</tr>
+		<tr>
+			<td colspan="10" style="text-align: center;">Major Names of God</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אֱלֹהִים<br />
+			Elohim</td>
+			<td>189/2606</td>
+			<td>H430</td>
+			<td>God</td>
+			<td>Gen1:1</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Plural of אֱלוֹהַּ (H433) -- Probably prolonged (emphat.) from אֵל (H410)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>יְהֹוָה<br />
+			Yahweh</td>
+			<td>141/6519</td>
+			<td>H3068</td>
+			<td>YHWY,<br />
+			Jehova,<br />
+			the existing One</td>
+			<td>Gen2:4</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From הָיָה (H1961)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אָדוֹן<br />
+			Adonai</td>
+			<td>60/335</td>
+			<td>H113</td>
+			<td>LORD,<br />
+			master<br />
+			&nbsp;</td>
+			<td>Gen18:12</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>From an unused root (meaning to rule)</td>
+		</tr>
+		<tr>
+			<td colspan="10" style="text-align: left;">Notes:
+			<ul>
+				<li>order: nuclear family, level of importance, before/after fall&nbsp;</li>
+				<li>speaker/inventor: creator.</li>
+				<li>frequence: sonship the center of nuclear family, the purpose of all familial vocab is to prepare for son. woman bear son but belong to man. woman does&nbsp;not own it.</li>
+				<li>missing: parent, husband/wife, spouse&nbsp;</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>ii</p>
+
+<div style="page-break-after: always"><span style="display: none;">&nbsp;</span></div>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>The Meanings of Familial Pairs&nbsp;</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Familial Pairs</th>
+			<th scope="col">Context</th>
+			<th scope="col">Pair<br />
+			Differ</th>
+			<th scope="col">1st-<br />
+			Appear</th>
+			<th scope="col">Pair<br />
+			Appear</th>
+			<th scope="col">Pair<br />
+			Frq</th>
+			<th scope="col">Pair<br />
+			Rate</th>
+			<th scope="col">Note</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>male and female</td>
+			<td>image, likeness</td>
+			<td>no</td>
+			<td>Gen 1:28</td>
+			<td>Gen 1:28</td>
+			<td>26</td>
+			<td>25%</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>man and woman</td>
+			<td>creation, mission&nbsp;&nbsp;</td>
+			<td>Clear</td>
+			<td>Gen 2:23</td>
+			<td>Gen 2:23</td>
+			<td>119</td>
+			<td>4.9%</td>
+			<td>husband and wife</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>father and mother</td>
+			<td>nuclear family ordain</td>
+			<td>no</td>
+			<td>Gen 2:24</td>
+			<td>Gen 2:24</td>
+			<td>78</td>
+			<td>5.9%</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>son and daughter</td>
+			<td>sin, war, protect, fear, pain, hope</td>
+			<td>obscure</td>
+			<td>Gen 3:15,<br />
+			Gen 5</td>
+			<td>Gen 5:4-</td>
+			<td>184</td>
+			<td>3.3%</td>
+			<td>separated at first</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>brother and sister</td>
+			<td>murder, keeper</td>
+			<td>obscure</td>
+			<td>Gen 4, 19</td>
+			<td>Gen 20:5</td>
+			<td>10</td>
+			<td>1.3%</td>
+			<td>once</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>nephew / niece</td>
+			<td>foreign/culture</td>
+			<td>obscure</td>
+			<td>Gen 21:23</td>
+			<td>no</td>
+			<td>0</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>uncle / aunt</td>
+			<td>foreign/culture</td>
+			<td>obscure</td>
+			<td>Lev10:4<br />
+			[Moses]</td>
+			<td>no</td>
+			<td>0</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>grandfather / grandmother</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>nephew / niece</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>The Mankind Distinction in Pairs of Familial Vocabulary</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">member</th>
+			<th scope="col">male</th>
+			<th scope="col">-</th>
+			<th scope="col">female</th>
+			<th scope="col">member</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Adam</td>
+			<td>Gen2:23<br />
+			Adam=man</td>
+			<td>deductive</td>
+			<td>Gen2:23-3:20<br />
+			Eve=woman</td>
+			<td>Eve</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>man(husband)</td>
+			<td>Gen17:10<br />
+			Adam...Abraham=male (circumcision-covenant)</td>
+			<td>Indirect</td>
+			<td>Lev 4:28&nbsp;<br />
+			goat, blemish<br />
+			exclusive deduct</td>
+			<td>woman(wife)</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>father&nbsp;</td>
+			<td>Gen4:20-21<br />
+			Adam-Cain .. Jubal-Brother=father</td>
+			<td>deductive</td>
+			<td>Gen3:20<br />
+			Eve=mother</td>
+			<td>mother</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>son</td>
+			<td>Gen4:17<br />
+			Adam-Cain-Noah=son</td>
+			<td>deductive</td>
+			<td>Gen6:1-2<br />
+			marriage-to- son=daughter<br />
+			<br />
+			exclusive deduct</td>
+			<td>daughter</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>brother&nbsp;</td>
+			<td>Gen4:2<br />
+			Adam-Cain-Abel=brother</td>
+			<td>deductive</td>
+			<td>Gen4:22<br />
+			Tubal-Cain&#39;s sister<br />
+			<br />
+			exclusive deduct</td>
+			<td>sister</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>nephew&nbsp;</td>
+			<td>Gen 21:23<br />
+			patriarchal son</td>
+			<td>&nbsp;</td>
+			<td>-</td>
+			<td>niece</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>uncle&nbsp;</td>
+			<td>Lev 10:4<br />
+			Uzziel</td>
+			<td>&nbsp;</td>
+			<td>Exo6:20</td>
+			<td>aunt</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>grandfather&nbsp;</td>
+			<td>-</td>
+			<td>&nbsp;</td>
+			<td>-</td>
+			<td>grandmother</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>The Familial Membership Factors</caption>
+	<thead>
+		<tr>
+			<th scope="col">Factor</th>
+			<th scope="col">Properties</th>
+			<th scope="col">Dim</th>
+			<th scope="col">Feature</th>
+			<th scope="col">Context</th>
+			<th scope="col">Significance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Mankind</td>
+			<td>male or female</td>
+			<td>Z</td>
+			<td>exclusively</td>
+			<td>image, likeness</td>
+			<td>Glory of God</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Lineage</td>
+			<td>Vertical: elder or younger</td>
+			<td>Y</td>
+			<td rowspan="2">relatively<br />
+			affinity</td>
+			<td rowspan="2">blessing, fruitful, muliply, subdue, domain</td>
+			<td rowspan="2">Mission of God</td>
+		</tr>
+		<tr>
+			<td>Horizonal: spouse or siblings</td>
+			<td>X</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>
+	<div>&nbsp;</div>
+
+	<div>The Nuclear Familial Membership Snapshot</div>
+	</caption>
+	<thead>
+		<tr>
+			<th scope="col">Lineage\Mankind</th>
+			<th scope="col">Male</th>
+			<th scope="col">Female</th>
+			<th scope="col">Recycle</th>
+			<th scope="col">Note</th>
+			<th scope="col">Significance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="1" rowspan="2">Vertical (Nuclear)</td>
+			<td>father</td>
+			<td>mother</td>
+			<td>1</td>
+			<td>one</td>
+			<td>pastor/lead</td>
+		</tr>
+		<tr>
+			<td>son</td>
+			<td>daughter</td>
+			<td>2</td>
+			<td>multiple</td>
+			<td>obedience</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="2">Horizontal (React)</td>
+			<td>brother</td>
+			<td>sister</td>
+			<td>2</td>
+			<td>multiple</td>
+			<td>love</td>
+		</tr>
+		<tr>
+			<td>man(husband)</td>
+			<td>woman(wife)</td>
+			<td>1</td>
+			<td>leave/cleave</td>
+			<td>union</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>
+	<div>&nbsp;</div>
+
+	<div>Differences between Adam and Eve</div>
+	</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Items</th>
+			<th scope="col">Adam</th>
+			<th scope="col">Eve</th>
+			<th scope="col">Note</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>material</td>
+			<td>dust (עָפָר) of the ground,<br />
+			breath (נְשָׁמָה)of&nbsp; God,<br />
+			with soul (נֶפֶשׁ)&nbsp;<br />
+			(Gen2:7)</td>
+			<td>rib of Adam<br />
+			(Gen2:22)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>time</td>
+			<td>first<br />
+			(Gen2:7)</td>
+			<td>second<br />
+			(Gen2:22)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>location</td>
+			<td>outside of Eden<br />
+			(Gen2:7)&nbsp;</td>
+			<td>inside of Eden<br />
+			(Gen2:22)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>purpose</td>
+			<td>worker/carer<br />
+			(Gen2:15)</td>
+			<td>helper<br />
+			(Gen2:18)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>capability</td>
+			<td>creative naming<br />
+			(Gen2:20)</td>
+			<td>mimic<br />
+			(Gen4:1)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>knowledge</td>
+			<td>commandment from God<br />
+			(Gen2:16-17)</td>
+			<td>commandment from Adam<br />
+			(Gen3:2-3)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>education&nbsp;</td>
+			<td>by God<br />
+			(Gen2:8-20)</td>
+			<td>by Adam<br />
+			(Gen2:25)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>experience</td>
+			<td>loneliness<br />
+			(Gen2:18)</td>
+			<td>never</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>covenant</td>
+			<td>took oath<br />
+			(Gen2:23-24)</td>
+			<td>never</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>likeness</td>
+			<td>X<br />
+			(Gen1:27)</td>
+			<td>Y&nbsp;<br />
+			(Gen1:27)</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>procreation</td>
+			<td>-</td>
+			<td>beget with pain<br />
+			(Gen3:16)</td>
+			<td>sex</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>desire</td>
+			<td>-</td>
+			<td>desirer and rulee<br />
+			(Gen3:16)</td>
+			<td>gender</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>&nbsp;</div>
+</div>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>Identicality between Adam and Eve</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Item</th>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>image of God</td>
+			<td>Gen1:26a, 1:27a</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>mission of God</td>
+			<td>Gen1:26b, 1:28</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>creator</td>
+			<td>Gen 2</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>union</td>
+			<td>Gen2:24</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<div style="page-break-after: always"><span style="display: none;">&nbsp;</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>Form of Address of God</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Hebrew</th>
+			<th scope="col">Count</th>
+			<th scope="col">Strong</th>
+			<th scope="col">Root</th>
+			<th scope="col">English</th>
+			<th scope="col">1st-Verse</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אֱלֹהִים<br />
+			Elohim</td>
+			<td>2606</td>
+			<td>H430</td>
+			<td>Plural of אֱלוֹהַּ (H433) -- Probably prolonged (emphat.) from אֵל (H410)</td>
+			<td>God</td>
+			<td>Gen1:1</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>יְהֹוָה<br />
+			Yahweh</td>
+			<td>6519</td>
+			<td>H3068</td>
+			<td>From הָיָה (H1961)</td>
+			<td>
+			<div>YHWY, Jehova, the Lord</div>
+
+			<div>&quot;the existing One&quot;</div>
+			</td>
+			<td>Gen2:4</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>אָדוֹן<br />
+			Adonai</td>
+			<td>197</td>
+			<td>H113</td>
+			<td>From an unused root (meaning to rule)</td>
+			<td>
+			<div>the LORD, master,</div>
+
+			<div>refer to men:&nbsp;</div>
+
+			<div>master, husband, prophet, governor, prince, captain, priest, king.</div>
+
+			<div>&nbsp;</div>
+
+			<div>reference to God:</div>
+
+			<div>Adonai (parallel with Yahweh), Lord of&nbsp;the whole earth.&nbsp;</div>
+			</td>
+			<td>Gen18:12</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>Eve Etymology</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Hebrew</th>
+			<th scope="col">Count</th>
+			<th scope="col">Strong</th>
+			<th scope="col">Root</th>
+			<th scope="col">English</th>
+			<th scope="col">1st-Verse</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td>חַוָּה<br />
+			<em id="yui-gen88">ḥa&ucirc;&acirc;</em></td>
+			<td>2</td>
+			<td>H2332</td>
+			<td>
+			<div>=&nbsp;חָוָה</div>
+
+			<div>verb</div>
+			</td>
+			<td>Eve</td>
+			<td>Gen3:20,<br />
+			4:1 yhwy (יְהֹוָה)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+			<div>חָוָה</div>
+
+			<div><em id="yui-gen54">ḥāv&acirc;</em></div>
+			</td>
+			<td>6</td>
+			<td>H2331</td>
+			<td>
+			<div>= חָיָה</div>
+
+			<div>verb</div>
+			</td>
+			<td>to tell, declare, show, make known;&nbsp;to breath</td>
+			<td>Gen 27:29</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>חֲוָא<br />
+			<em id="yui-gen73">ḥăvā</em></td>
+			<td>14</td>
+			<td>H2324</td>
+			<td>verb</td>
+			<td>to show, interpret, explain, inform, tell, declare</td>
+			<td>Dan 2:4</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>חָיָה<br />
+			<em id="yui-gen83">ḥāy&acirc;</em></td>
+			<td>262</td>
+			<td>H2421</td>
+			<td>
+			<div>=חָוָה</div>
+
+			<div>verb</div>
+			</td>
+			<td>to live, have life, remain alive, sustain life, live prosperously, live for ever, be quickened, be alive, be restored to life or health</td>
+			<td>Gen 5:3</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>הָיָה<br />
+			<em id="yui-gen39">hāy&acirc;</em></td>
+			<td>75</td>
+			<td>H1961</td>
+			<td>(יְהֹוָה<br />
+			<br />
+			verb</td>
+			<td>to be, become, come to pass, exist, happen, fall out</td>
+			<td>Gen 1:2</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>הָוָה<br />
+			<em id="yui-gen65">hāv&acirc;</em></td>
+			<td>6</td>
+			<td>H1933</td>
+			<td>verb</td>
+			<td>
+			<div>o be, become, exist, happen;</div>
+
+			<div>to fall</div>
+			</td>
+			<td>Gen 27:29</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>
+	<div>&nbsp;</div>
+
+	<div>Etymological Etiological Nuclear Familial Words</div>
+	</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Genesis</th>
+			<th colspan="2" rowspan="1" scope="col">Hebraic Words</th>
+			<th scope="col">Link</th>
+			<th scope="col">Exist</th>
+			<th scope="col">Notes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>1:1</td>
+			<td colspan="2" rowspan="1" style="text-align: center;">אֱלֹהִים<br />
+			Elohim (God)</td>
+			<td style="text-align: center;">(אָ)</td>
+			<td style="text-align: center;">person</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>1:26</td>
+			<td colspan="2" rowspan="1" style="text-align: center;">אָדָם<br />
+			<em id="yui-gen69">adam (</em>man<em>)</em></td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">&nbsp;</td>
+			<td>2:7 person</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2:22</td>
+			<td colspan="2" rowspan="1" style="text-align: center;">אִשָּׁה<br />
+			<em id="yui-gen60">ishah&nbsp;</em>(woman)</td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">person</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>2:23</td>
+			<td colspan="2" rowspan="1" style="text-align: center;">אִישׁ<br />
+			<em>ish&nbsp;</em>(man)</td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">person</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>2:24</td>
+			<td style="text-align: center;">אָב<br />
+			<em id="yui-gen76">ab&nbsp;</em>(father)</td>
+			<td style="text-align: center;">אֵם<br />
+			<em id="yui-gen80">em</em> (mother)</td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">?</td>
+			<td>a nuclear<br />
+			family</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>3:16</td>
+			<td style="text-align: center;">בֵּן<br />
+			<em id="yui-gen43">ben&nbsp;</em>(son)</td>
+			<td style="text-align: center;">&nbsp;</td>
+			<td>ב</td>
+			<td>&nbsp;</td>
+			<td>diverge<br />
+			4:17 person</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>4:2</td>
+			<td>&nbsp;</td>
+			<td style="text-align: center;">אָח<br />
+			<em>awkh</em>&nbsp;(brother)</td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">person</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>4:22</td>
+			<td>&nbsp;</td>
+			<td style="text-align: center;">אָחוֹת<br />
+			<em>awkhot</em>&nbsp;(sister)</td>
+			<td style="text-align: center;">אָ</td>
+			<td style="text-align: center;">person</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>5:4</td>
+			<td style="text-align: center;">בַּת<br />
+			<em id="yui-gen63">bath</em>&nbsp;(daughter)</td>
+			<td>&nbsp;</td>
+			<td>ב</td>
+			<td>&nbsp;</td>
+			<td>11:29<br />
+			person</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+<div>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<caption>Comparative Commemtaries On Gen 2:24 and Mat19:5</caption>
+	<thead>
+		<tr>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">Commentory</th>
+			<th scope="col">Gen2:24</th>
+			<th scope="col">Mat19:5</th>
+			<th scope="col">Note</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td><em>Barnes&#39; Notes on the Bible</em></td>
+			<td>These might be the words of the first man Genesis 2:24<br />
+			<br />
+			<span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">But it seems more probable that this sentence is the reflection of the inspired author on the special mode in which the female was formed from the male. Such remarks of the writer are frequently introduced by the word &quot;therefore&quot; (על־כן kēn-‛al). It is designed to inculcate on the race that was to spring from them the inviolable sanctity of the conjugal relation.</span></span></td>
+			<td>&nbsp;</td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><em>Matthew Henry&#39;s Concise Commentary</em></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><em>Matthew Poole&#39;s Commentary</em></td>
+			<td>These are the words of Moses by Divine instinct, or his inference from Adam&rsquo;s words.</td>
+			<td>&nbsp;</td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><em>Benson Commentary</em></td>
+			<td>uncertain</td>
+			<td>&nbsp;</td>
+			<td>U</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><em>Ellicott&#39;s Commentary for English Readers</em></td>
+			<td>These are evidently the words of the narrator</td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">In Genesis 2:24 the words appear as spoken by Adam</span></span></td>
+			<td>N<br />
+			a</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><i><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Pulpit Commentary</span></span></i></td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">the statement of Christ (Matthew 19:5) does not preclude the possibility of Moses being their author;</span></span></td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">The words that follow are assigned to Adam in Genesis 2:23, 24, </span></span></td>
+			<td>M<br />
+			a</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><cite><span style="font-size:12.0pt"><span style="color:black">Cambridge Bible for Schools and Colleges</span></span></cite><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif"> </span></span><br />
+			<br />
+			<br />
+			&nbsp;</td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">This verse contains the comment which the narrator makes upon the words of the man in Genesis 2:23. The word &lsquo;therefore&rsquo; introduces his inference. As in Genesis 10:9, Genesis 26:33, Genesis 32:32, a sentence beginning with &lsquo;therefore&rsquo; supplies the application, or relation, of the ancient narrative to later times.</span></span></td>
+			<td>&nbsp;</td>
+			<td>N</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><i><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Gill&#39;s Exposition of the Entire Bible</span></span></i></td>
+			<td>
+			<div><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Therefore shall a man leave his father, and his mother,.... These are thought by some to be the words of Moses, inferring from the above fact, what ought to be among men; and by others, the words of Adam under divine inspiration, as the father of mankind instructing his sons what to do, and foretelling what would be done in all succeeding ages: though they rather seem to be the words of God himself, by whom marriage was now instituted;&quot; </span></span></div>
+			</td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Genesis 2:24 where they seem to be the words of Adam</span></span></td>
+			<td>a</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><i><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Meyer&#39;s NT Commentary</span></span></i></td>
+			<td>&nbsp;</td>
+			<td><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">the words of Genesis 2:24 were uttered by Adam</span></span></td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Angelo Tosato</td>
+			<td>Even a mediocre sensitivity to artistic literary composition should be sufficient, at this point, to recognize Gen 2:24 as a foreign body, and therefore to label it as gloss.</td>
+			<td>&nbsp;</td>
+			<td>g</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>John Calvin</td>
+			<td>It is doubted whether Moses here introduces God as speaking, or continues the discourse of Adam, or indeed, has added this in virtue of his office as teacher, in his own person. The last of these is that which I mostly approve.</td>
+			<td>&nbsp;</td>
+			<td>U</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Jamieson-Fausset-Brown Bible Commentary</td>
+			<td>
+			<div>
+			<div>one flesh&mdash;The human pair differed from all other pairs, that by peculiar formation of Eve, they were one. And this passage is appealed to by our Lord as the divine institution of marriage (Mt 19:4, 5; Eph 5:28). Thus Adam appears as a creature formed after the image of God&mdash;showing his knowledge by giving names to the animals, his righteousness by his approval of the marriage relation, and his holiness by his principles and feelings, and finding gratification in the service and enjoyment of God.</div>
+			</div>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+
+<div>conclusions</div>
+
+<div>&nbsp;</div>
+
+<ol>
+	<li>Although the familial vocabulary spread out over the Scripture in every book, only those that&nbsp;first appear in Genesis 1-5 make&nbsp;most significant contribution to our practice in family life and the theology&nbsp;for&nbsp;better understanding the sonship of Jesus because the familial vocabulary in Genesis 1-5 provide a more comprehensive&nbsp;context&nbsp;with&nbsp;the original purpose&nbsp;of family that God initially designated in the beginning&nbsp;with least or without influence of human re-occupied knowledge&nbsp;from worldly culture.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+
+<div>&nbsp;</div>
+
+<ol>
+	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Being different from pre-occupied common secular&nbsp;knowledge in culture that family came&nbsp;from ancient patriarchal clan&nbsp;system as the result of the evolution of human civilization, human family is indeed designated by God Himself in the very beginning during God&#39;s creation of the world because the initially human familial vocabulary&nbsp;is an important and indivisible part of the book of&nbsp;Genesis. Among total of eighteen words in&nbsp;familial vocabulary in the Bible, thirteen&nbsp;of them first appear in the book of Genesis, eleven&nbsp;nuclear family&nbsp;elements first appear&nbsp;in Genesis 1-5, three&nbsp;fundamental (adam, male and female) words&nbsp;occur&nbsp;in the sixth day of the creation of the world in Genesis 1, four of the critical familial words (Adam, male and female, son)&nbsp; first come directly from&nbsp;the utterance&nbsp;of God in Genesis&nbsp;1-3.&nbsp;</span></span></li>
+	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Being different from pre-occupied common secular&nbsp;knowledge in culture that family came&nbsp;from ancient patriarchal clan&nbsp;system as the result of the evolution of human civilization serving for for the society, human family is originally designated and blessed by God Himself to serve&nbsp;for the mission of God&nbsp;in the very beginning&nbsp;because the human familial vocabulary&nbsp;is initially an important and indivisible part of the book of&nbsp;Genesis. Among total of eighteen words in&nbsp;familial vocabulary in the Genesis, thirteen&nbsp;of them first appear in the book of Genesis, eleven&nbsp;nuclear family&nbsp;elements first appear&nbsp;in Genesis 1-5, three&nbsp;fundamental (adam, male and female) words&nbsp;occur&nbsp;in the sixth day of the creation of the world in Genesis 1, four of the critical familial words (Adam, male and female, son)&nbsp; first come directly from&nbsp;the utterance&nbsp;of God in Genesis&nbsp;1-3.&nbsp;</span></span></li>
+	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">The Hebrew word man (adam) in Genesis has three meanings: (1) mankind as common noun&nbsp;Gen 1:26-27, (2) Adam as the first individual&#39;s name with proper noun Gen2:7,&nbsp;(3) ground as proper noun Gen 2:6.&nbsp;</span></span></li>
+	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">Male and female are originally the religious words associated to </span></span>circumsice&nbsp;and blemish.&nbsp;&nbsp;<span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp;not associated with gender. Because male and female never used to descibe man (ish) or woman (isha) in whole the Scripture.&nbsp;</span></span></li>
+	<li><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">The Genesis 2:24 is the core verse about the first family created by God during the creation of the world. that descibe the first dynamic nuclear family and reaction.&nbsp;</span></span></li>
+	<li>Although the familial vocabulary spread out over the Scripture in every book, only those that&nbsp;first appear in Genesis 1-5 make&nbsp;most significant contribution to our practice in family life and the theology&nbsp;for&nbsp;better understanding the sonship of Jesus because the familial vocabulary in Genesis 1-5 provide a more comprehensive&nbsp;context&nbsp;with&nbsp;the original purpose&nbsp;of family that God initially designated in the beginning&nbsp;with least or without influence of human re-occupied knowledge&nbsp;from human culture.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>To conclude, in general terms, &ldquo;<em>sex</em>&rdquo; refers to&nbsp;<em>biological</em>&nbsp;characteristics and &ldquo;<wbr /><em>gender</em>&rdquo; refers to the individual&#39;s and society&#39;s perceptions of&nbsp;<em>sexuality</em>&nbsp;and the&nbsp;...</div>
+
+<div>
+<h1 title="Origin and meaning of family">family (n.)&nbsp;</h1>
+
+<section>
+<p>https://www.etymonline.com/word/family<br />
+early 15c., &quot;servants of a household,&quot; from Latin&nbsp;familia&nbsp;&quot;family servants, domestics collectively, the servants in a household,&quot; thus also &quot;members of a household, the estate, property; the household, including relatives and servants,&quot; abstract noun formed from&nbsp;famulus&nbsp;&quot;servant, slave,&quot; which is of unknown origin.</p>
+</section>
+</div>
+
+<div>&nbsp;</div>
+
+<div>Families can be used for evolutionary, palaeontological and genetic studies because they are more stable than lower taxonomic levels such as genera and species.</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>the nuclear family</div>
+
+<div>a couple and their dependent children, regarded as a basic social unit.</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>Good question and rationale, but weak on the type of evidence to be collected. Will it be exegetical, theological, historical or other?</div>
+
+<div>Good questions articulated. My question is whether your secondary research questions are going to take you farther out and involve more than your operational questions would imply. I assume that you will use indexes such as ATLA and exegetical commentaries (secondary sources) to help in your exegetical studies.</div>
+
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>Will you bring any discussion of Ephesians 5:22-33 where Paul says speaks of Christ and the Church as being in some way typified in the union of husband and wife? Generally in your claim and evidence, you are on the right track, but your sentence structure needs to be smoothed out and the connection between the familial vocabulary in Genesis 1-5 and Christology, need to be made stronger.</td>
+			<td>Igou Hodges, Mar 29 at 6:54pm</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div>
+<table>
+	<tbody>
+		<tr>
+			<td>Have you noticed that in Matthew 9:4-6 Jesus attributes the quote in Genesis 2:24 to God the Creator? Would that fact not affect how you respond to the objection? Is there an objection that there are many other passages bearing on family language in the Old Testament that are not being considered?</td>
+			<td>Igou Hodges, Apr 1 at 11:57am</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<ul>
+	<li id="entry-417174">
+	<article data-mark-read-url="">
+	<div>
+	<header><a data-event="toggleCollapsed" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button" tabindex="0">Collapse Subdiscussion</a><a href="https://ciuonline.instructure.com/courses/7999/users/1612">Brandon Thompson</a>
+
+	<div>
+	<div>
+	<h2 aria-level="3" role="heading"><a data-bypass="" data-course_id="7999" data-student_id="1612" href="https://ciuonline.instructure.com/courses/7999/users/1612" title="Author's name">Brandon Thompson</a></h2>
+
+	<div><time data-html-tooltip-title="Mar 10 at 10:06am" datetime="2021-03-10T15:06:12.000Z" pubdate="">Mar 10, 2021Mar 10 at 10:06am</time></div>
+	</div>
+
+	<div><a href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">Manage Discussion Entry</a></div>
+	</div>
+	</header>
+
+	<div>
+	<div>
+	<p>Hi Wei,</p>
+
+	<p>This proposed topic is very interesting, but I am not sure it will work (or, at least, I do not think that it will achieve what you hope it will). How do you plan to pursue this topic without &quot;preoccupied knowledge about &#39;the son&#39; from human culture?&quot; By human culture, do you mean your own, ancient Near Eastern culture, and/or Second Temple period culture? What is the purpose of studying kinship language aside from the use of &#39;sonship&#39; if your goal is to understand a &#39;sonship&#39; relationship? How do you think Genesis 1-5 can inform the phrase &#39;Son of Man&#39; when this phrase does not appear and, if you argue that the concept behind the phrase is present, how do you reconcile 2TP understandings of this phrase that would have been in the NT&#39;s authors&#39; minds (and if not theirs, then their audiences&#39;)?</p>
+
+	<p>I think you can go in two directions. If your goal is to understand Genesis&#39; use of familial language with the intent of understanding the structure of the family after creation and in the immediate aftermath of the fall, then your study of these familial terms would work (and this would be an amazing topic, by the way). If your goal is to understand the meaning of the phrases &#39;Son of Man&#39; and &#39;Son of God,&#39; then I do not think you are going to get anywhere studying these terms in Genesis 1-5. The primary issues are that these phrases do not appear in Genesis 1-5 and that human culture significantly impacts all the language of the Bible. Whenever God communicates, he communicates in that culture&#39;s &#39;cultural river&#39; (this phrase is one used by John H. Walton). As such, if your goal is to understand the phrases &#39;Son of Man&#39; and &#39;Son of God,&#39; then you need to delve within the culture that provided those terms to see what these terms communicated in that culture. This would mean studying Ezekiel and Daniel (and their accompanying Babylon backgrounds) and 1 Enoch and other Second Temple period literature (and how these phrases develop in this corpus in light of the previous biblical backgrounds).</p>
+
+	<p>Alternatively, you could take aspects of both of these and make a great topic, just not in the way you formulated it. If you are set on studying Genesis and Jesus, then I would recommend studying how ancient Near Eastern peoples understood the concept of divine sonship and how the biblical authors took this cultural concept and applied it to Adam. As notions of divine sonship continued into the Roman era (cf. the emperor), you could then look at the cultural concept of divine sonship in the Greco-Roman era and see how the NT applies it to Jesus, while at the same time casting Adam and Jesus as a type and antitype since Adam was still understood in divine sonship terms (though in a different cultural context, so you would still need to trace the development of this idea across 2TP literature).</p>
+
+	<p>Here are some resources that can guide you in your thinking about culture:</p>
+
+	<p>For ANE: Walton, John H.&nbsp;<em>Ancient Near Eastern Thought and the Old Testament: Introducing the Conceptual World of the Hebrew Bible</em>. 2d ed. Grand Rapids, MI: Baker Academic, 2018.</p>
+
+	<p>For 2TP: Green, Joel B., and Lee Martin McDonald (eds.).&nbsp;<em>The World of the New Testament: Cultural, Social, and Historical Contexts</em>. Grand Rapids, MI: Baker Academic, 2017.</p>
+
+	<p>If you decide that any of the topics I provided above would be a good topic to pursue, let me know and I can send some other resources your way. I would encourage you to reach out to Dr. Noonan (Old Testament) or Dr. Naylor (New Testament) for some guidance on these topics. They have both spent quite a bit of time in this area. I hope that all of this has been helpful and I look forward to seeing where you take this idea!</p>
+
+	<p>Blessings,</p>
+
+	<p>Brandon</p>
+	</div>
+	</div>
+
+	<div><a data-event="addReply" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">&nbsp;ReplyReply to Comment</a></div>
+	</div>
+	</article>
+
+	<div>
+	<ul>
+		<li id="entry-418691">
+		<article data-mark-read-url="">
+		<div>
+		<header><a data-event="toggleCollapsed" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button" tabindex="0">Collapse Subdiscussion</a><a href="https://ciuonline.instructure.com/courses/7999/users/988">Wei Ding</a>
+
+		<div>
+		<div>
+		<h2 aria-level="4" role="heading"><a data-bypass="" data-course_id="7999" data-student_id="988" href="https://ciuonline.instructure.com/courses/7999/users/988" title="Author's name">Wei Ding</a></h2>
+
+		<div><time data-html-tooltip-title="Mar 11 at 3:52pm" data-tooltip="" datetime="2021-03-11T20:52:02.000Z" pubdate="">Mar 11, 2021Mar 11 at 3:52pm</time></div>
+		</div>
+
+		<div><a href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">Manage Discussion Entry</a></div>
+		</div>
+		</header>
+
+		<div>
+		<div>
+		<p>Brandon, Thank you for your great points. I realized that I need to narrow it down. I will focus on the Genesis&#39; uses of familial Hebrew vocabulary during the creation and immediate aftermath of the fall. Depending on the results of the characteristics of &#39;son&#39; found in Genesis, I will deduct the connection between the &#39;son&#39; in Genesis and the sonship of Jesus. In this way, the discussion can bypass or at least minimize the biological concept of &#39;son&#39; pre-occupied by the cultural knowledge.&nbsp;&nbsp;</p>
+		</div>
+
+		<div>Edited by&nbsp;<a href="https://ciuonline.instructure.com/courses/7999/users/988">Wei Ding</a>&nbsp;on Mar 15 at 8:58pm</div>
+		</div>
+
+		<div><a data-event="addReply" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">&nbsp;ReplyReply to Comment</a></div>
+		</div>
+		</article>
+
+		<div>
+		<ul>
+		</ul>
+		</div>
+		</li>
+	</ul>
+	</div>
+	</li>
+	<li id="entry-417782">
+	<article data-mark-read-url="">
+	<div>
+	<header><a data-event="toggleCollapsed" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button" tabindex="0">Collapse Subdiscussion</a><a href="https://ciuonline.instructure.com/courses/7999/users/1262">Steve Randolph</a>
+	<div>
+	<div>
+	<h2 aria-level="3" role="heading"><a data-bypass="" data-course_id="7999" data-student_id="1262" href="https://ciuonline.instructure.com/courses/7999/users/1262" title="Author's name">Steve Randolph</a></h2>
+
+	<div><time data-html-tooltip-title="Mar 10 at 8:31pm" data-tooltip="" datetime="2021-03-11T01:31:13.000Z" pubdate="">Mar 10, 2021Mar 10 at 8:31pm</time></div>
+	</div>
+
+	<div><a href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">Manage Discussion Entry</a></div>
+	</div>
+	</header>
+
+	<div>
+	<div>
+	<p>Hi William,</p>
+
+	<p>I like your topic. It will be interesting to read what you learn about the family vocabulary found in the early, foundational chapters of Genesis. Will your research focus on specific Hebrew words in Genesis 1-5 or is it more of a cultural/historical study of the familial concepts found in the &ldquo;Hebrew context of Genesis 1-5&rdquo;? Will you make any application regarding how Christ&rsquo;s sonship (the Son of Man and the Son of God) relates to believers&rsquo; adoption as sons? I look forward to reading more about what you learn.</p>
+	</div>
+	</div>
+
+	<div><a data-event="addReply" href="https://ciuonline.instructure.com/courses/7999/discussion_topics/84678#" role="button">&nbsp;Reply</a></div>
+	</div>
+	</article>
+	</li>
+</ul>
+</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
