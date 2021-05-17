@@ -1634,23 +1634,43 @@ var BibDat_ZiZi = BibDat =
         }
     },
 
-    "bookTemplate197book": {
+    "LibraryofPrincetonUniversity1893book": {
         "doctype": "book",
-        "author": "",
-        "booktitle": "",
-        "year": "",
-        "publisher": "",
+        "author": "Library of Princeton University",
+        "booktitle": "The American Journal of Archaeology and of the History of the History of the Fine Arts",
+        "year": "1893",
+        "publisher": "Archaeological Institute of America",
         "address": "",
+        "editor":" A.L. Frothingham",
         "url": "",
         "abstract": "",
-        "url-1": "",
+        "url-1": "https://www.google.com/books/edition/The_American_Journal_of_Archaeology_and/Au7fAAAAMAAJ?hl=en&gbpv=1&dq=earliest+ancient+twelve+cycles&pg=PA176&printsec=frontcover",
         "isbn": "",
         "quotes": {
-            "p1": ""
+            "p171": "Egyptian Chronology: Thityy-year cycle is one of the oldest in the calendar and goes back to the very genesis of Egyyptian history. Vestiges of its anceint character can still be found in the Hindoo, Persian, Mohammedan and Grecian modes of reckoning time, and the Moslems have aleasys has a lunar 'Thirty-year Cyycle' wich eleven day added, making 354x30+11=10631",
+
+            "p174":"",
         }
     },
 
+    "ThomasFerguson1880book": {
+        "doctype": "book",
+        "author": "Thomas Ferguson",
+        "booktitle": "Chinese Research First Part: Chinese Chronology and Cycles",
+        "year": "1880",
+        "publisher": "American Presbyterian Mission Press",
+        "address": "Shanghai, China",
+        "editor":"",
+        "url": "",
+        "abstract": "",
+        "url-1": "https://www.google.com/books/edition/Chinese_Researches/1iMLAAAAYAAJ?hl=en&gbpv=1&dq=earliest+twelve+cycles&pg=PA184&printsec=frontcover",
+        "isbn": "",
+        "quotes": {
+            "p2": "It is only with the chronology which begins with Hwangti, 2704 BC, that the present researches are concerned; as this is the earliest debateable epoch which even Chinese agree that it can form a legitimate object of discussion, and may be assumed as the era of China, which which their chronology starts and begins at his reign.",
 
+            "p174":"",
+        }
+    },
 
 
 
