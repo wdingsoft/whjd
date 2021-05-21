@@ -301,6 +301,29 @@ var collected_news_bio = BibDat =
             "https://www.asor.org/wp-content/uploads/2019/02/Colless6.jpg": "Chinese OBI could derived from Canaanites. Chinese could be descendate of Canaanites."
         }
     },
+    "WhereDoTheChineseComeFrom2010webpage": {
+        "doctype": "webpage",
+        "author": "",
+        "editor": " ",
+        "title": "Where Do The Chinese Come From?",
+        "publisher": "",
+        "year": "2010",
+        "Urldate": "2021",
+        "url": "https://answersingenesis.org/kids/bible/babel/where-do-chinese-come-from/",
+        "notes": "",
+        "abstract": "",
+        "quotes": {
+            "main": `Answer:
+            Surely these shall come from afar; Look! Those from the north and the west, and these from the land of Sinim.” (ISAIAH 49:12)
+            
+            Bible  GENESIS 11:9, ACTS 17:26, JOHN 3:16, 
+            
+            All people today came out of Babel (GENESIS 10:32), including the Chinese people. The Chinese came from the line of Noah’s son Ham and grandson Canaan. Some of these descendants were called Canaanites. One group of Canaanites was called the Sinites (GENESIS 10:15–17). Like the Sinai Peninsula, the names in the area reflect the names of Sineus or the Sinites, such as Mt. Sinai where Moses received the Ten Commandments (EXODUS 34:29) when leaving Egypt.
+            
+            The Chinese are descendants of these original Sinites and most call themselves “Han,” from Ham, one of Noah’s three sons. China in ancient times was called the land of the Sinites. This name is still used and the Bible even calls this distant land the land of Sinim (ISAIAH 49:12). Not all people in China are Sinites though. There are several people groups that made it to China. One group, the Maio people, have their ancestry through Noah’s son Japheth and his son Gomer. But let’s remember that all people in the world are descendants of Adam—which is why all people are sinners in need of salvation through Christ.`
+        }
+    },
+
     "webpage": {
         "doctype": "webpage",
         "author": "",
