@@ -324,6 +324,50 @@ var collected_news_bio = BibDat =
         }
     },
 
+    "KellyJamesClark2020article":{
+        "doctype":"article",
+        "author":"Kelly James Clark",
+        "authorinfo":" ",
+        "title":"The Gods of Abraham, Isaiah, and Confucius",
+        "journal":"Bible Broadcasting Netword",
+        "vol":"",
+        "year":"2020-07",
+        "page":"",
+        "publisher":"",
+        "isbn":"",
+        "url-1":"https://www.academia.edu/6761786/The_Gods_of_Abraham_Isaiah_and_Kongzi?email_work_card=thumbnail",
+        "quotes":{
+            "intro":`I. Introduction
+            Hebrew monotheism developed within the ancient Near Eastern context of widespread polytheism. In the Hebrew narrative we find the authors/redactorsstruggling to define and refine their understanding of divinity within this con-text. Within these narratives, we find the ancient Hebrews variously believing inone God, believing their God to be one of many other tribal or national deities,following other gods, and trying to understand the character of God. By thetime of Isaiah, however, the Hebrew view of God is fixed: there is only oneGod, YHWH (Yahweh), and all other gods are mere idols. Isaiah would assertthe radical monotheism and holiness that would come to characterize Hebrewtheology and its descendants, Christianity, and Islam. Finally, there is a shift inHebrew conceptions of divine providence from God’s relatively direct provi-dence in Exodus (where God walks and talks with Moses as well as guides andpunishes Israel) to God’s indirect providence in Isaiah (where God speaksthrough prophets and punishes through other nations).In ancient China, Shang
+            商
+             and Zhou
+            周
+             theology likewise developed withina polytheistic context which included a variety of ancestral, tribal, and naturedeities of, for example, storms, mountains, and the sky. During the Shang Dy-nasty, Di
+            帝
+             
+            (Lord) or Shangdi
+            上帝
+             
+            (Lord Most High), held a position above the various deities and extended the domain of the divine from the Shang tribe tothe universe. During the Zhou Dynasty, Shangdi underwent a partial name-change to Tian
+            天
+             
+            (Heaven). Like the Hebrew narrative, Shangdi/Tian’s actionsand attributes are embedded, at least partly, within a historical narrative, the
+            Documents 
+             ( 
+            Shujing
+            《書經》
+             ). Finally, like Yahweh, Shangdi/Tian is concernedfor human welfare and exercises providential control over history at least partlythrough the raising up of conquering foreign kings.In this article, we shall consider conceptions of divinity and providence thatare found in the Hebrew and
+            Documents 
+             narratives. We contend that both theHebrew and ancient Chinese worldviews came to countenance a single, su-preme, and personal deity who providentially orders human affairs. Why is this? It is commonplace to claim that Confucianism, which permeated Asian culture, is a humanism, a pragmatism, and/or an atheism. We believe,however, that the roots of Confucianism are clearly theistic.
+             1
+              This essay seeks abetter understanding of that tradition through this exercise in comparative phi-losophy.
+             2
+              This topic, which some philosophers will view as archaic, is worthyof reconsideration because the debate is widely assumed to have been settledand settled in favor of anti-theistic readings of the Chinese tradition.
+             3
+              It is timeto reconsider this widely held assumption.`
+        }
+    },
+
     "webpage": {
         "doctype": "webpage",
         "author": "",
