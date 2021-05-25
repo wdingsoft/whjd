@@ -1,4 +1,8 @@
-var FamilialVocabStat = {
+
+/////  data from dbg console in
+// file:///Users/weiding/Sites/weidroot/weidroot_2017-01-06/app/github/wdingbox/pubs/thesis/weid/htmdoc/proj/IsGen224aNarrative/doc_files/d_pload/d_tables/tb_03_FamilialVocabulary.htm
+var FamilialVocabStat = 
+{
     "H120": {
         "Hebrew": "אָדָם",
         "Count": [
