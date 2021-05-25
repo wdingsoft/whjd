@@ -446,8 +446,8 @@ var BibDat_SonOfMan = BibDat =
         "publisher": "",
         "isbn": "",
         "journal": "The International Journal of Frontier Missiology",
-        "vol":"28:3",
-        "page":"",
+        "vol": "28:3",
+        "page": "",
         "url-1": "https://www.missionfrontiers.org/pdfs/34-1-translating-familia-biblical-terms.pdf",
         "url-2": "",
         "abstract": "",
@@ -466,7 +466,7 @@ var BibDat_SonOfMan = BibDat =
         "year": "2016",
         "publisher": "The World Evangelical Alliance",
         "journal": "World Evangelical Alliance",
-        "address":"",
+        "address": "",
         "vol": "",
         "isbn": "",
         "page": "",
@@ -594,10 +594,49 @@ var BibDat_SonOfMan = BibDat =
         "quotes": {
             "p9": "Reinhard G. Kratz     SONS OF GOD” IN THE HEBREW BIBLE AND ANCIENT JUDAISM     The claim of Jesus to be the son of God, asserted by the New Testament, is one of the most difficult aspects of Christian religion. It not only makes Chris-tianity’s relationship to its mother religion, Judaism, difficult but also presents significant problems for Christianity in the modern world. The description of a person or a heavenly being as “son of God” is not self-evident, particularly under the conditions of the Enlightenment and according to our categories of under-standing. God and heavenly beings belong to a reality that defies the worldview of the modern era. This applies even more to the genealogical relationship that is expressed by the term “son.” To put it quite simply: since, with our usual (modern) categories of understanding, we cannot say who or what God is, there is no way we can know who or what a “son of God” is.Philology helps us a little here. “Son of God (the gods)” (אלהיםבן or similar) isa generic term and means nothing but “god” in the same way that “son of man” (אדםבן) is“man” and “son of an ox” (בקרבן) is“ox.” This means that the title “s on of God” in itself does not describe the relationship of father and son but expresses the divine nature of an earthly or heavenly figure—something that is difficult enough to understand in terms of our modern thinking or on the basis of Jewish and Christian monotheism. In the ancient Near East, however, as in the Hebrew Bible, the New Testament, and other writings of ancient Judaism and early Christianity, we encounter statements that conform neither to grammar nor to pure doctrine. In the myths of Ugarit and other ancient Near Eastern cultures, gods and divine couples have children by means of procreation and birth. The myth of the procreation and birth of a god spells out the idea of the divine attribute in the form of a narrative. This            .",
 
-            "":"In antiquity, 'son of god'—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God’s son(s) in ancient Jewish and early Christian literature."
+            "": "In antiquity, 'son of god'—meaning a ruler designated by the gods to carry out their will—was a title used by the Roman emperor Augustus and his successors as a way to reinforce their divinely appointed status. But this title was also used by early Christians to speak about Jesus, borrowing the idiom from Israelite and early Jewish discourses on monarchy. This interdisciplinary volume explores what it means to be God’s son(s) in ancient Jewish and early Christian literature."
         }
     },
 
+    "SamuelWhitefield2019book": {
+        "doctype": "book",
+        "author": "Samuel Whitefield",
+        "booktitle": "Son of Man: The Gospel of Daniel 7",
+        "year": "2019",
+        "publisher": "One King, Incorporated",
+        "address": "",
+        "pages": "394",
+        "url": "",
+        "abstract": `Jesus never used the title Messiah publicly and, instead, referred to Himself as the Son of Man 78 times. Why?
+
+        The New Testament Gospels, as they are written, depend on Daniel 7. Jesus referenced this chapter far more than any other to reveal Himself as the divine Human and to declare His gospel. Jesus' first-century audience understood His message, but we have lost sight of the way Jesus presented His gospel. Our understanding of Jesus, our grasp of the biblical story, and our ability to clearly communicate the gospel have been seriously hindered by our not fully understanding one particular chapter in the Bible.
+        
+        Daniel 7 is not just an end-time chapter. Based on Jesus' words, Daniel 7 is a gospel-centered chapter and perhaps the premier summary of Jesus' majesty.If we do not know this chapter, we cannot fully grasp the gospel. Jesus commissioned us to carry the message found in this chapter to every people, but we cannot carry what we do not understand.
+        
+        Let Daniel open your eyes to the gospel as Jesus proclaimed it.`,
+        "url-1": "www.TheAreopagus.org",
+        "isbn": "978-0-9830680-8-2",
+        "quotes": {
+            "MLA": "Whitefield, Samuel. Son of Man: The Gospel of Daniel 7. N.p., One King, Incorporated, 2019."
+        }
+    },
+    "MogensMuller2012book": {
+        "doctype": "book",
+        "author": "Mogens Muller",
+        "booktitle": "The Expression 'Son of Man' and the Development of Christology: A History of Interpretation",
+        "year": "2012",
+        "publisher": "Routledge Taylor & Francis Group",
+        "address": "London and New York",
+        "url": "",
+        "abstract": "",
+        "url-1": "https://www.google.com/books/edition/The_Expression_Son_of_Man_and_the_Develo/3r_oBAAAQBAJ?hl=en&gbpv=1&dq=son+of+man&printsec=frontcover",
+        "isbn": "",
+        "quotes": {
+            "p1": "Introduuction. The shifting undeerstanding of NT expression 'Son of man' through history of the church reflects the changing interpreations of the meaning of Jesus of Nazareth in in an interesting way.",
+
+            "p1a":"Since interest in the historical Jesus arose in 17th. c., the expression has often been made the key to Jesus' self-understanding. With some 80 occurrences in the canonical gospels--c.50 if parallels are not counted--not only is Son of man the expression obviously preferred by Jesus for himself, but it also has nearly maintained a monopoly in sayings in which the evangelists' Jesus declears the content and impact of his messianic task."
+        }
+    },
 
 
     "webpage": {
