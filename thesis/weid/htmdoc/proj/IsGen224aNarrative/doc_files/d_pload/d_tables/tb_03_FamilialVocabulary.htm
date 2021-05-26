@@ -26,9 +26,10 @@
 
 
 		$(function () {
-			gen_tab_js()
+			gen_tab_js_dat_for_chart()
+			gen_table_of_tables_caps()
 		})
-		function gen_tab_js() {
+		function gen_tab_js_dat_for_chart() {
 			var FamilialVocCode = {}
 			$("#FamilialVocabularyStats").find("tr").each(function () {
 				var heb = $(this).find("td:eq(1)").text()
@@ -58,6 +59,13 @@
 
 
 
+		function gen_table_of_tables_caps(){
+			$("caption").each(function(i){
+				var cap = $(this).text().trim()
+				$(this).attr("id",i)
+				$("#toc").append(`<li><a href='#${i}'>${cap}</a></li>`)
+			})
+		}
 	</script>
 </head>
 <body>
@@ -67,16 +75,27 @@
 
 <div>Date: 2021-05-01</div>
 
-<div>Email: wei.ding@mailbox.ciu.edu</div>
+<div> Email: <a href="mailto:wei.ding@mailbox.ciu.edu">wei.ding@mailbox.ciu.edu</a></div>
 
 <div>Reference: <a href="https://www.blueletterbible.org/">https://www.blueletterbible.org/</a></div>
 
 <div>Copyright: &copy;2021-</div>
 
+<p></p>
+<div>
+<h2>Index of Tables</h2>
+<ol id="toc">
+
+</ol>
+</div>
+<br><br><br><br>
+<hr/>
+<div style="page-break-after: always"><span style="display: none;">&nbsp;</span></div>
+
 <div>
 <table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px;">
 	<caption>The Familial Vocabulary Statistics in the Bible<br />
-	(Note: square bracket denotes the speaker/inventor.&nbsp;<a href="../../Charts/FamilialVocabStat.html">chart</a>)</caption>
+	(<a href="../../Charts/FamilialVocabStat.html">chart</a>)</caption>
 	<thead>
 		<tr>
 			<th scope="col">#</th>
@@ -697,6 +716,7 @@
 		<tr>
 			<td class="tdnotes" colspan="10" style="text-align: left;">Notes:
 			<ul>
+				<li>square bracket [ ] denotes the speaker or inventor.</li>
 				<li>order: nuclear family, level of importance, before/after fall&nbsp;</li>
 				<li>speaker/inventor: creator.</li>
 				<li>frequence: sonship the center of nuclear family, the purpose of all familial vocab is to prepare for son. woman bear son but belong to man. woman does&nbsp;not own it.</li>
