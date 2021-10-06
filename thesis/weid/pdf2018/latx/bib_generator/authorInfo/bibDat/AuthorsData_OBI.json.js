@@ -8465,11 +8465,14 @@ var BibDat=
     "KTKhangCHKang000": {
         "doctype": "book",
         "author": "C. H. Kang",
-        "title": "Genesis and the Chinese",
+        "lifespan":"1895-1985, born in Singapore.",
+        "author2": "Khang Kiat Tien, pinyin Kang Kedian 康克典, also in some Adventist literature as KT Khang or KT Khng, was a pioneer Chinese evangelist",
+        "title": "Genesis and the Chinese -- Has Christianity Been Hoodwinked?",
         "publisher": "Independent Printing",
         "address": "Hong Kong",
         "year": "1950",
-        "mynotes": "about the correlation of the Traditional Chinese characters and the first 11 chapters of Genesis that has edified and equipped Christians in the area of apologetics and evangelism"
+        "mynotes": "about the correlation of the Traditional Chinese characters and the first 11 chapters of Genesis that has edified and equipped Christians in the area of apologetics and evangelism",
+        "url-1": "https://encyclopedia.adventist.org/article?id=B8GC"
     },
     "KePuXiaoZu34844": {
         "doctype": "book",

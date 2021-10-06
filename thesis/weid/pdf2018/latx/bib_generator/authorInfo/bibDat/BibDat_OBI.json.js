@@ -8314,13 +8314,15 @@ var BibDat_OBI = BibDat =
     "Chalfant001": {
         "doctype": "book",
         "author": "Frank Herring Chalfant",
+        "lifespan" : "1862-1914",
         "title": "Early Chinese Writing (1906)",
         "publisher": "Pittsburgh, Carnegie Institute",
         "callnumber": "nrlf_ucb:GLAD-50526843",
         "year": "1906",
         "Bdsk-Url-1": "https://archive.org/details/earlychinesewrit00chalrich",
         "keywords": "Oracle, divination",
-        "mynotes": "Hopkins, Lionel Charles acquired TBI fr Chalfant. https://www.cambridge.org/core/services/aop-cambridge-core/content/view/202BE1B54EC3138599114E6BAC90A2FF/S0035869X00106252a.pdf/lionel_charles_hopkins_iso.pdf. his collection of nearly 900 oracle bones, purchased piece by piece from the American Presbyterian missionary Frank Herring Chalfant (1862-1914) URL:http://www.lib.cam.ac.uk/mulu/oracle.html"
+        "mynotes": "Hopkins, Lionel Charles acquired TBI fr Chalfant. https://www.cambridge.org/core/services/aop-cambridge-core/content/view/202BE1B54EC3138599114E6BAC90A2FF/S0035869X00106252a.pdf/lionel_charles_hopkins_iso.pdf. his collection of nearly 900 oracle bones, purchased piece by piece from the American Presbyterian missionary Frank Herring Chalfant (1862-1914) URL:http://www.lib.cam.ac.uk/mulu/oracle.html",
+        "url-1" :"picture https://www.myheritage.com/names/frank_chalfant"
     },
     "ChenNianFu2012": {
         "doctype": "book",
@@ -8380,11 +8382,14 @@ var BibDat_OBI = BibDat =
     "EthelNelsonandCHKangEthel000": {
         "doctype": "book",
         "author": " C.H. Kang and Ethel R. Nelson",
+        "lifespan":"Ethel R. Nelson: 1923-2021",
         "title": "The Discovery of Genesis : How the Truths of Genesis Were Found Hidden in the Chinese Language",
         "publisher": "Concordia Publishing House",
         "address": "Hong Kong",
         "year": "1979",
-        "mynotes": "about 200 Chinese characters"
+        "mynotes": "about 200 Chinese characters",
+        "url-1":"http://circle.adventist.org/files/CD2008/CD2/dialogue/articles/09_1_hogan_e.htm",
+        "url-2":"https://reedfamilyfh.com/tribute/details/2169/Ethel-Nelson/obituary.html"
     },
     "GailynVanRheenen00": {
         "doctype": "book",
@@ -8462,12 +8467,15 @@ var BibDat_OBI = BibDat =
     },
     "KTKhangCHKang000": {
         "doctype": "book",
-        "author": "C. H. Kang",
-        "title": "Genesis and the Chinese",
+        "author": "KT Khang",
+        "lifespan":"1895-1985, born in Singapore.",
+        "author2": "Khang Kiat Tien, pinyin Kang Kedian 康克典, also in some Adventist literature as KT Khang or KT Khng, was a pioneer Chinese evangelist",
+        "title": "Genesis and the Chinese -- Has Christianity Been Hoodwinked?",
         "publisher": "Independent Printing",
         "address": "Hong Kong",
         "year": "1950",
-        "mynotes": "about the correlation of the Traditional Chinese characters and the first 11 chapters of Genesis that has edified and equipped Christians in the area of apologetics and evangelism"
+        "mynotes": "about the correlation of the Traditional Chinese characters and the first 11 chapters of Genesis that has edified and equipped Christians in the area of apologetics and evangelism",
+        "url-1": "https://encyclopedia.adventist.org/article?id=B8GC"
     },
     "KePuXiaoZu34844": {
         "doctype": "book",
