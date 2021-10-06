@@ -8322,7 +8322,8 @@ var BibDat_OBI = BibDat =
         "Bdsk-Url-1": "https://archive.org/details/earlychinesewrit00chalrich",
         "keywords": "Oracle, divination",
         "mynotes": "Hopkins, Lionel Charles acquired TBI fr Chalfant. https://www.cambridge.org/core/services/aop-cambridge-core/content/view/202BE1B54EC3138599114E6BAC90A2FF/S0035869X00106252a.pdf/lionel_charles_hopkins_iso.pdf. his collection of nearly 900 oracle bones, purchased piece by piece from the American Presbyterian missionary Frank Herring Chalfant (1862-1914) URL:http://www.lib.cam.ac.uk/mulu/oracle.html",
-        "url-1" :"picture https://www.myheritage.com/names/frank_chalfant"
+        "url-1" :"picture https://www.myheritage.com/names/frank_chalfant",
+        "url-2" :"36 books. http://worldcat.org/identities/lccn-no2002065279/"
     },
     "ChenNianFu2012": {
         "doctype": "book",
