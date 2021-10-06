@@ -16,25 +16,28 @@
             ]
 
             var knownDat = {
-                1898: 1,
+                1898: 2,
                 1903: 50,
-                1927: 500,
-                1930: 970,
+                1906: 403,
+                1914: 485,
+                1921: 873,
+                1929: 957,
+                1950: 1000,
             }
-
-            var arry = [['year', 'Found', 'total']]
+            var arry = [['year', 'Decoded', 'Total']]
             var iOld = 1
-            for (var iy = 1898; iy <= 2021; iy++) {
+            for (var iy = 1898; iy <= 2022; iy++) {
                 var iVal = knownDat[iy]
                 if (!iVal) {
                     iVal = iOld
-                }else{
+                } else {
                     iOld = iVal
                 }
-                var ar = [iy, iVal, 3000]
+                var ar = [""+iy, iVal, 3000]
                 arry.push(ar)
             }
             console.log(arry)
+
 
             var data = google.visualization.arrayToDataTable(arry);
 
