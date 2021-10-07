@@ -1,0 +1,67 @@
+Computer languages vs Humang languages 
+
+
+
+If you think of the cpu as the brain of a computer, then software is the soul of computer.
+
+The way and its writing format that software to express its thoughts are exact the same with the way and writing format that human languages does. They all have words, syntax and grammars. 
+
+From the writing scripts view points, computer languages are in many ways, creations, usages, tranlations, communications, grammars, similar to human lanuages. Computer lanuaguges and huaman languages are equivallent. Hence, the methods and concepts used in software engineering can also be applied in study of TBI.
+
+The software is nothing but digital data. The collected digital data that is meaningful for computer is called programs. The program that is readable for human is called computer languages. This is because that software programs is similar in many ways with human languages in that they have limited numbers of words, unlimited number of sentences, and certain mount of grammars. 
+
+
+Depending on the closeness of hardware, the computer languages can be measured from low to high in levels. 
+
+The lowest level of computer languages are asembly languages. In a 32-bit computer, Each words is defined as 32 bits long. One asembly language sentenc contains no more than three words. A simple comipler can convert those into digital computer instructions operational to logic switch gate circuits. 
+
+The middle level of computer langages are those of more readable for human with certain gramars and transformable to the computer instructions thru compilers. Those languages includes c/c++, fotran, cobal, ....
+
+The hightest level of computer languages are scripts languages that can be translated into other formats of computer lanuages,  like, javascripts, python, bash shell,perl, html etc. In deed, all process of coding/decoding, encreptue/decreture can be considered as high level comuter languages, like, mpeg, mp3,  etc.
+
+There are thousands kinds of computer languages, and new computer languages are keeping emerging. But no mather how different they are, they are inter-translatable to each others. 
+
+This is similar to human lanuages. There are about 500 human lanuages in our human world.  some of them is popular like English, some of them is not used any more, like, eh.  But no matter how different they are, they all are understandabe for human and can be translated from one lanuage to another. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<link href="../../../files/_css/theme000.css" rel="stylesheet" type="text/css" />
+		<script src="../../../files/_js/jquery.min.js">
+</script><script src="../../../files/_js/jqpublish_crossReferences.js">
+</script>
+	</head>
+	<body>
+		<p>
+			&nbsp;</p>
+		<h3>
+			About Factoring</h3>
+		<p>
+			The objective of the factoring process is to extract the root element among about 6,000 distinct compound characters. The TBI factoring process is very similar to&nbsp;the calculation that&nbsp;is&nbsp;used in algebra. There are two steps:</p>
+		<ol>
+			<li>
+				Find out the GCF(greatest Common Factor) by visual comparison of multiple words. There are no effective automatic digital reconizer in the world that can help us right now.</li>
+			<li>
+				Once the GCF is found out, disassembly the word with GCF.</li>
+		</ol>
+		<p>
+			Once we finished the factoring process, we get about 1,000 root characters.</p>
+		<p>
+			For example:&nbsp;&nbsp; for three words ABCDEF, ABMNQ, ABXYZ,&nbsp; their GCF is AB. AB&nbsp;can further found in other words, AU, AV,&nbsp;or BM,BW, so A&nbsp;and B&nbsp;are&nbsp;GCF. Hence, ABCDEF can be expressed as: &nbsp;(ABCDEF) = (A )+ (B) + (CDEF).</p>
+		<table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 500px;" summary="tactoring">
+			<caption>
+				Example Of Factoring</caption>
+			<tbody>
+				<tr>
+					<td>
+						&nbsp;</td>
+					<td>
+						Words</td>
+					<td>
+						Factored Words</td>
+				</tr>
+				<tr>
+					<td>
+						1</td>
+					<td>
+						<span style="background-color: rgb(255, 0, 0);">A</span><span style="background-color: rgb(255, 255, 0);">B</span>CDEF</td>
+					<td>
+						(A)+(B)+(CDEF)</td>
+				</tr>
+				<tr>
+					<td>
+						2</td>
+					<td>
+						<span style="background-color: rgb(255, 0, 0);">A</span><span style="background-color: rgb(255, 255, 0);">B</span>MNQ</td>
+					<td>
+						(A)+(B)+(MNQ)</td>
+				</tr>
+				<tr>
+					<td>
+						3</td>
+					<td>
+						<span style="background-color: rgb(255, 0, 0);">A</span><span style="background-color: rgb(255, 255, 0);">B</span>XYZ</td>
+					<td>
+						(A)+(B)+(XYZ)</td>
+				</tr>
+				<tr>
+					<td>
+						4</td>
+					<td>
+						<span style="background-color: rgb(255, 0, 0);">A</span>U</td>
+					<td>
+						(A)+(U)</td>
+				</tr>
+				<tr>
+					<td>
+						5</td>
+					<td>
+						<span style="background-color: rgb(255, 0, 0);">A</span>V</td>
+					<td>
+						(A)+(V)</td>
+				</tr>
+				<tr>
+					<td>
+						6</td>
+					<td>
+						<span style="background-color: rgb(255, 255, 0);">B</span>M</td>
+					<td>
+						(B)+(M)</td>
+				</tr>
+				<tr>
+					<td>
+						7</td>
+					<td>
+						<span style="background-color: rgb(255, 255, 0);">B</span>W</td>
+					<td>
+						(B)+(W)</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+		<div style="visibility:hidden">
+			<p>
+				We input the GCF in jink colounm in database table.</p>
+			<table border="1" cellpadding="1" cellspacing="1" style="width: 778px; height: 116px;">
+				<caption>
+					Sql Cmd For Retrieveing Fatored Words</caption>
+				<tbody>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							SQL</td>
+						<td>
+							Descr</td>
+						<td>
+							&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+							1</td>
+						<td>
+							SELECT * FROM Jiaguwen WHERE jink LIKE &#39;_____,_%&#39; ORDER BY jink ;;;</td>
+						<td>
+							Total words that can be&nbsp;factored out.&nbsp;</td>
+						<td>
+							<a fname="sql_count_factor_number">4837</a></td>
+					</tr>
+					<tr>
+						<td>
+							2</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							To find out the words that GCF is not used as independent single word.</td>
+						<td>
+							&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+						<td>
+							&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				.</p>
+			<p>
+				&nbsp;</p>
+		</div>
+		<p>
+			&nbsp;</p>
+	</body>
+</html>

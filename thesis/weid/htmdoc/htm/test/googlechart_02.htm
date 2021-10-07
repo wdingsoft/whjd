@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['orgchart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        data.addRows([
+          [{v:'BonesCollection', f:'BonesCollection<div style="color:red; font-style:italic">150,000 pieces</div>'},'', 'start'],
+          
+          [{v:'CharactersCollection', f:'CharactersCollection<div style="color:red; font-style:italic">46,635 distinct characters:</div>'}, 'BonesCollection', 'start'],
+          
+          [{v:'Grouping', f:'Grouping<div style="color:red; font-style:italic">5650 individual characters</div>'}, 'CharactersCollection', 'start'],
+          
+ 
+          
+          [{v:'Factoring', f:'Factoring<div style="color:red; font-style:italic">5650 - 4450 = 1200 root characters</div>'}, 'Grouping', 'Supervisor'],
+          
+          [{v:'Dividing', f:'Dividing<div style="color:red; font-style:italic">divid 1200 root characters into 3 groups</div>'}, 'Factoring', 'Supervisor'],
+          
+          [{v:'Pictogram Catagory', f:'Pictogram Catagory<div style="color:red; font-style:italic">600</div>'}, 'Dividing', 'Supervisor'],
+          
+          [{v:'Ideogram Linear', f:'Ideogram Linear<div style="color:red; font-style:italic">400</div>'}, 'Dividing', 'Supervisor'],
+          
+          [{v:'Unknown', f:'Unknown<div style="color:red; font-style:italic">200</div>'}, 'Dividing', 'Supervisor'],
+          
+          
+          [{v:'Inheritance', f:'Inheritance<div style="color:red; font-style:italic">400</div>'}, 'Ideogram Linear', 'Supervisor'],
+          
+           [{v:'IdeogramTree', f:'IdeogramTree<div style="color:red; font-style:italic">400</div>'}, 'Inheritance', 'Supervisor'],
+           
+           
+           [{v:'PictogramTree', f:'PictogramTree<div style="color:red; font-style:italic">600</div>'}, 'Pictogram Catagory', 'Supervisor'],
+          
+          ['Dividing', 'SamanthaY', ''],
+          ['Doron', 'NathalieT', 'Graphics Designer'],
+          ['Lisa', 'NathalieT', 'Media Communications Specialist'],
+          ['Karen', 'NathalieT', 'Senior Document Specialist'],
+          ['Monique', 'NathalieT', 'Graphics Designer'],
+          ['Ben', 'KimberleyH', 'Senior Document Specialist'],
+          ['Samantha', 'KimberleyH', 'Senior Document Specialist'],
+          ['Debbie', 'Colleen', 'Administrative Clerk'],
+          ['Susan', 'Colleen', 'Web Project Coordinator'],
+          ['yy', 'Susan', 'Web Project Coordinator'],
+          ['xx', 'yy', 'Web Project Coordinator']
+        ]);
+        // set the background color of 3rd element in array Rows to #FFF
+        //data.setRowProperty(2, 'style', 'background:#FFF');
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        //chart.getOrgChart({orientation:RO_LEFT_PARENT_TOP}); // how to implement this??
+        chart.draw(data, {allowHtml:true});
+      }
+</script>
+
+ <div id='chart_div'></div>
+</body>
+</html>
