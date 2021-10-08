@@ -8864,6 +8864,19 @@ var BibDat_OBI = BibDat =
             "p96":"There is a total some 133,096 pieces of oracle bones or shlls available in various collections in or outside China, half of them belonged to King Wu Ding of Shang"
         }
     },
+    "KuangYuChenZhenhaoSongYuanLiuMatthewAnderson2020book": {
+        "doctype": "book",
+        "author": "Kuang Yu Chen, Zhenhao Song, Yuan Liu, Matthew Anderson",
+        "authorinfo":"",
+        "title": "Reading of Shang Inscriptions",
+        "journal": "",
+        "publisher": "Shanghai People's Publishing House",
+        "year": "2020",
+        "Bdsk-Url-1": "https://www.google.com/books/edition/Reading_of_Sh%C4%81ng_Inscriptions/mAwIEAAAQBAJ?hl=en&gbpv=1&dq=total+oracle+bones+characters+colltected&pg=PA514&printsec=frontcover",
+        "notes":{
+            "p514":"Since 1899, the total number of excavated oracle bones and shells exceeds 150,000 pieces. Assuming that each piece contains 10 graphs, we have at least 1.5 million words of oracle documents that can be used to illuminate the Shang history."
+        }
+    },
     "SunYueRang001": {
         "doctype": "book",
         "author": "孙冶让",

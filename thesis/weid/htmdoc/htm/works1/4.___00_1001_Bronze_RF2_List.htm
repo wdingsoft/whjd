@@ -14,18 +14,28 @@ $(document).ready(function(){
   var txt=$("#FamilyOfSon caption").text();
   $("#FamilyOfSon caption").text(txt+" ("+totNumImg+")");
 
-  $("img").each(function(i){
-    var src=$(this).attr("src");
-    var pos=src.search("/odb/");
-    if(pos>0){
-      $(this).attr("height",'30');
-    }
-  });
-  $("a").each(function(i){
-    $(this).closest("td").find("a").each(function(){
-        $(this).text("");
-    });
-  });
+  //$("img").each(function(i){
+  //  var src=$(this).attr("src");
+  //  var pos=src.search("/odb/");
+  //  if(pos>0){
+  //    $(this).attr("height",'30');
+  //  }
+  //});
+  //$("a").each(function(i){
+  //  $(this).closest("td").find("a").each(function(){
+  //      //$(this).text("");
+  //  });
+  //});
+
+
+  ////////
+  var tot_chars = 0, i=0
+  $("table tbody").find("tr").each(function(){
+	  var frq = $("td:eq(2)").text().trim()
+	  tot_chars+= parseInt(frq)
+	  console.log(i++, tot_chars)
+  })
+  alert("tot_chars="+tot_chars)
   
   
 
@@ -36,17 +46,20 @@ $(document).ready(function(){
 	</head>
 	<body>
 		<table border="1">
-			<tbody>
+			<thead>
 				<tr>
-					<td>
-						<a>idx</a></td>
-					<td>
-						<a>jid</a></td>
-					<td>
-						<a>freq</a></td>
-					<td>
-						<a>zid</a></td>
+					<th>
+						<a>idx</a></th>
+					<th>
+						<a>jid</a></th>
+					<th>
+						<a>freq</a></th>
+					<th>
+						<a>zid</a></th>
 				</tr>
+			</thead>
+			<tbody>
+				
 				<tr>
 					<td>
 						<div>
