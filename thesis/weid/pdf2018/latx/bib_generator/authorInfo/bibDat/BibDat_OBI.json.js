@@ -8851,6 +8851,19 @@ var BibDat_OBI = BibDat =
         "year": "2007",
         "Bdsk-Url-1": "http://www.xianqin.org/xr_html/articles/kychg/467.html"
     },
+    "LiFeng2013book": {
+        "doctype": "book",
+        "author": "Li Feng",
+        "authorinfo":"1962-, Columbia Uni",
+        "title": "Early China - a Social and Cultural History",
+        "journal": "",
+        "publisher": "Cambridge University Press",
+        "year": "2013",
+        "Bdsk-Url-1": "https://www.google.com/books/edition/Early_China/TQNaAQAAQBAJ?hl=en&gbpv=1&dq=total+pieces+of+oracle+bones+are+there&pg=PA96&printsec=frontcover",
+        "notes":{
+            "p96":"There is a total some 133,096 pieces of oracle bones or shlls available in various collections in or outside China, half of them belonged to King Wu Ding of Shang"
+        }
+    },
     "SunYueRang001": {
         "doctype": "book",
         "author": "孙冶让",
