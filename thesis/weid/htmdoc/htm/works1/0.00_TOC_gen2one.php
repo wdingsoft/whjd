@@ -6,7 +6,7 @@
         
 		<link href="../../../files/_css/theme000.css?a=1" rel="stylesheet" type="text/css" />
         
-		<script src="../../../files/_js/jquery.min.js">
+		<script src="../jq/jquery.js">
         
         
         
