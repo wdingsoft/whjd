@@ -4,7 +4,7 @@
 		<title></title>
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
         
-		<link href="../../../files/_css/theme000.css?a=1" rel="stylesheet" type="text/css" />
+		<link href="../css/theme000.css?a=1" rel="stylesheet" type="text/css" />
         
 		<script src="../jq/jquery.js">
         
