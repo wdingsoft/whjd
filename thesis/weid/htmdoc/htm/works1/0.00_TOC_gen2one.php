@@ -10,12 +10,12 @@
         
         
         
-</script><script src="../../../files/_js/jqpublish_crossReferences.js">
+</script><script src="../jq/jqpublish_crossReferences.js">
 </script>
-<script src="../../../files/_js/jqpublish_all_in_one_page.js">
+<script src="../jq/jqpublish_all_in_one_page.js">
 </script>
 
-<script src="../../../files/_js/jqTableHtm2Latex.js">
+<script src="../jq/jqTableHtm2Latex.js">
 </script>
 
 <script type='text/javascript' xxxxxxxxxxxxsrc='https://www.google.com/jsapi'></script>
