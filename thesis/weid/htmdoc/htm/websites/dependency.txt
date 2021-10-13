@@ -1,7 +1,30 @@
 
 
-https://wdingsoft.github.io/obimg/
-https://wdingsoft.github.io/obronze/
+18389 results in 132 files in works:
+"https://wdingsoft.github.io/obimg/
+"https://wdingsoft.github.io/obimg/odb/    (tbi/img/jgif/63442.gif)
+
+replace with:
+"http://34.227.20.213/obi/data/obimg/odb/   (tbi/img/jgif/63442.gif)
+
+
+       18196 results in 132 files in works.
+       "https://wdingsoft.github.io/obimg/odb/tbi/img/jgif/ 
+       
+       
+       193 results in 8 files in works.
+       "https://wdingsoft.github.io/obimg/odb/hiero/ccer-h
+       
+
+
+
+18 results in 2 files in works.
+"https://wdingsoft.github.io/obronze/   (bronze/0000-shang/122.jpg)
+
+replace with:
+"http://34.227.20.213/obi/data/obronze/  (bronze/0000-shang/122.jpg)
+
+
 
 
 https://wdingsoft.github.io/pkg00/src/pubimg/
