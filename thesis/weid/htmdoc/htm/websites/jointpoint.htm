@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<base target="_blank" />
+	<title></title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<link href="../css/theme000.css" rel="stylesheet" type="text/css" />
+	<script src="../jq/jquery.js"></script>
+	
+</head>
+<script>
+	$(function () {
+		$("a").each(function(){
+			var hrf = $(this).attr("href");
+			var rot = "../../../../../../../wdingbox/obilab/"
+			var rep = "https://wdingbox.github.io/obilab/"
+			if(hrf.indexOf(rot)===0){
+				hrf = hrf.replace(rot,rep)
+				$(this).attr("href",hrf)
+			}
+			if($(this).text().trim().length===0){
+				$(this).text($(this).attr("href"))
+			}
+		})
+	})
+</script>
+
+<body>
+
+	<a href="../charts/OBI_decode_bottleneck_chart.htm"></a>
+	<a href="../../../../../../../wdingbox/obilab/test1/ooTablesorter/all_pages_20perline_naturalcat.htm"></a>
+
+
+</body>
+
+</html>
