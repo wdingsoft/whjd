@@ -8314,17 +8314,31 @@ var BibDat_OBI = BibDat =
     "Chalfant001": {
         "doctype": "book",
         "author": "Frank Herring Chalfant",
-        "lifespan" : "1862-1914",
         "title": "Early Chinese Writing (1906)",
         "publisher": "Pittsburgh, Carnegie Institute",
         "callnumber": "nrlf_ucb:GLAD-50526843",
         "year": "1906",
-        "Bdsk-Url-1": "https://archive.org/details/earlychinesewrit00chalrich",
+        "url": "https://archive.org/details/earlychinesewrit00chalrich",
         "keywords": "Oracle, divination",
         "mynotes": "Hopkins, Lionel Charles acquired TBI fr Chalfant. https://www.cambridge.org/core/services/aop-cambridge-core/content/view/202BE1B54EC3138599114E6BAC90A2FF/S0035869X00106252a.pdf/lionel_charles_hopkins_iso.pdf. his collection of nearly 900 oracle bones, purchased piece by piece from the American Presbyterian missionary Frank Herring Chalfant (1862-1914) URL:http://www.lib.cam.ac.uk/mulu/oracle.html",
         "url-1" :"picture https://www.myheritage.com/names/frank_chalfant",
         "url-2" :"36 books. http://worldcat.org/identities/lccn-no2002065279/"
     },
+
+    "StudiesoftheCollectionoftheNationalMuseumofChina2006book":{
+        "doctype": "book",
+        "author": "Compiling Commitee",
+        "editor": "Zhu, Feng-Hang and Shen, Jian-hua",
+        "title": "Studies of the Collection of the National Museum of China: Oracle Bones Inscription",
+        "publisher": "Shanghai Ancient Books Publishing House",
+        "isbn": "7532543021,9787532543021",
+        "callnumber": " ",
+        "Series": "Studies of the Collections of the National Museum of China",
+        "address": "Shanghai",
+        "year": "11/2007",
+        "numpages": "314",
+    },
+
     "ChenNianFu2012": {
         "doctype": "book",
         "author": "陈年福",
@@ -8333,7 +8347,7 @@ var BibDat_OBI = BibDat =
         "year": "2012"
     },
     "DaiJiaXiang001": {
-        "doctype": "bbok",
+        "doctype": "book",
         "author": "戴家祥",
         "editor": " ",
         "title": "金文大字典",

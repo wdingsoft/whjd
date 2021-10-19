@@ -137,4 +137,76 @@ var china_bio = BibDat =
             "p96": ""
         }
     },
+
+
+    "StephenChrisomalis2010book": {
+        "doctype": "book",
+        "author": "Stephen Chrisomalis",
+        "authorinfo":"Wayne State University",
+        "booktitle": "Numerical Notation: A comparative History",
+        "year": "2010",
+        "publisher": "Cambridge University Press",
+        "address": "New York, NY",
+        "url": "",
+        "url-1": "https://www.google.com/books/edition/Numerical_Notation/kXZhBAAAQBAJ?hl=en&gbpv=1&dq=oracle+bone+Inscription+numeral+system&pg=PA359&printsec=frontcover",
+        "isbn": "",
+        "abstract": "",
+        "quotes": {
+            "p359": "Several ethnographical attested system were invented and used specifically for ritual, litergical, or divinatory purposes. This rational parallels both the earliest Mesoamerican numerals (apparently used for calendrics and deity names) and the earliest East Asian numberals (used in divinatiory contexts on oracle bones inscriptions). Several of the inventors of scripts and numerical systems were religious figures, and the association of script invention with religious vesions or divine revelation has been noted elsewhere.  ",
+
+            "p362":`Synchronic regularities describe features that are common to all system, without reference to the time demension. 
+            Axioms. A1.) All numeral notation system can represent natural numbers. A2.) All numeraical notation system have a base. A3.) All numerical notation use visual and primarily nonphonetic representation. A4) All numerical notation systems are structrued both intraexponentially and interexponentially. 
+            
+            General Regularities. 
+            G1.) Any system that can represent N+1 can also represent N, where N is  anatural number. 
+            G5.) All numerical notation systems are ordered and read from the highest to the lowest power of the base. 
+            G6.) No system uses signs for arithmetical operations used to derive the value of numeral-phrase. 
+            G8.) There is never complete correspondence between the numeral-signs of a system and the lexical numerals of the language of the society where the system was invented.
+            G9.) There is always some correspondence between the numeral-sign of a system and the lexical numerals of the language of the societt where the systen was invented.`,
+
+
+        }
+    },
+
+    "AdamCraigSchartz2010book": {
+        "doctype": "book",
+        "author": "Adam Craig Schwartz",
+        "authorinfo":"Wayne State University",
+        "booktitle": "The Oracle Bone Inscriptions from Huayuanzhuang East",
+        "year": "2019",
+        "publisher": "Walter de Gruyter GmbH & Co KG",
+        "address": "Boston/Berlin",
+        "url": "",
+        "url-1": "https://www.google.com/books/edition/The_Oracle_Bone_Inscriptions_from_Huayua/FDrEDwAAQBAJ?hl=en&gbpv=1&dq=oracle+bone+Inscription+numeral+system&printsec=frontcover",
+        "isbn": "978-1-5015-1448-7",
+        "abstract": "",
+        "url-2" :"https://wdingsoft.github.io/pkg00/src/pubimg/pictures/doc/Outside/quotes/H3_map_p7.png",
+        "url-3" :"https://wdingsoft.github.io/pkg00/src/pubimg/pictures/doc/Outside/quotes/H3_Pit_p8.png",
+        "quotes": {
+            "p7": "Fig.1: Site of H3. ",
+
+            "p8":` Fig.2 Pit H3`,
+            "p9":`The shells and bones
+            The plastron (belly) and carapace (back) shells used to make the majority of Huayuanzhuang East divination came from two species of turtles, Ocadia sinensist (Zhongguo huagui) and Chinemys reevesii(wugui). Both are resh-water turtles extensively sidpersed in China, with the later indigenous to areas in the north including Henan province. A non-Henan origin for the former suggests that it was tribute or a trade item entered into Shang from outlyings areas. `
+        }
+    },
+
+    "VictorKatz2007book": {
+        "doctype": "book",
+        "author": "Victor Katz",
+        "Editor": "Victor Katz", 
+        "authorinfo":"Wayne State University",
+        "booktitle": "The Mathematics of Egypt, Mesopotania, China, India, and Islam: A Sourcebook",
+        "year": "2007",
+        "publisher": "Princeton University Press",
+        "address": "Princeton and Oxford",
+        "url": "",
+        "url-1": "https://www.google.com/books/edition/The_Oracle_Bone_Inscriptions_from_Huayua/FDrEDwAAQBAJ?hl=en&gbpv=1&dq=oracle+bone+Inscription+numeral+system&printsec=frontcover",
+        "isbn": "978-1-5015-1448-7",
+        "url-2":"https://wdingsoft.github.io/pkg00/src/pubimg/pictures/doc/Outside/quotes/drawing_on_silk.png",
+        "abstract": "",
+        "quotes": {
+            "p192": "drawing on silk.",
+        }
+    },
 }
