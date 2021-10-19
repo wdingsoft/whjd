@@ -1,3 +1,5 @@
+// Version 2021-10-19
+//
 
 //var Uti = require("../Uti.Module").Uti
 const fs = require('fs');
@@ -24,7 +26,7 @@ var Uti = {
 }
 
 
-function get_htm(obj) {
+function gen_htm(obj) {
     var localhostbase = obj.localhostbase;
     var machine = "/Users/weiding/Sites";
     var urlbase = "http://localhost/";
@@ -226,6 +228,7 @@ var DirFileUti = {
     getFary: function (srcPath, output) {
         var fary = this.getPathfiles(srcPath);
         var dary = this.getDirectories(srcPath);
+
         output.m_totDirs += dary.length;
         output.m_totFiles += fary.length;
         var nodnam = path.basename(srcPath);
@@ -245,6 +248,31 @@ var DirFileUti = {
             output.m_olis += `<li class='lifile'><a class='file' href='${pathfile}'>${sfl}</a>  (<a class='fsize'>${stats.size.toLocaleString()}</a> B)</li>\n`;
         }
         output.m_olis += "</ol>";
+    },
+    genJs: function (srcPath, output) {
+        var fary = this.getPathfiles(srcPath);
+        var dary = this.getDirectories(srcPath);
+
+        output[srcPath] = []
+        for (var k = 0; k < fary.length; k++) {
+            var sfl = fary[k];
+            var pathfile = path.join(srcPath, sfl);
+            var stats = fs.statSync(pathfile);
+            var ob = {}
+            ob[sfl] = stats.size
+            output[srcPath].push(ob);// += stats.size;
+        }
+        for (var i = 0; i < dary.length; i++) {
+            var spath = dary[i];
+            this.genJs(path.join(srcPath, spath), output);
+        }
+    },
+    genJs_writefile: function () {
+        var output = {}
+        this.genJs("./", output)
+        var str = "var indobj = " + JSON.stringify(output, null, 4)
+        console.log(output)
+        fs.writeFileSync("indobj.json.js", str, "utf8")
     }
 }
 
@@ -252,21 +280,20 @@ function update_indxhtm() {
 
     var fname = "index.htm";
 
-
     var obj = DirFileUti.output;
     obj.reset()
     DirFileUti.getFary("./", obj);
     obj.localhostbase = "/weidroot/";
-    fs.writeFileSync(fname, get_htm(obj), "utf8");
+    fs.writeFileSync(fname, gen_htm(obj), "utf8");
     console.log("Update: " + fname);
 
-    var jsfname = "index.js";
+    var jsfname = "indusr.js";
     if (!fs.existsSync(jsfname)) {
         fs.writeFileSync(jsfname, "//for local users only.\n", "utf8");
     }
 }
 
-function watch_dir() {
+function watch_dir(cbf) {
     var myArgs = process.argv.slice(2);
     if (myArgs.length === 1) {
         var watchDir = myArgs[0]
@@ -275,10 +302,9 @@ function watch_dir() {
             if (filename && "index.htm" !== filename && "." !== filename[0]) {
                 //console.log(`-filename provided: ${filename}`);
                 setTimeout(function () {
-                    update_indxhtm();
+                    if (cbf) cbf();
                 }, 1000)
                 if (eventType === 'remane') {
-
                 }
             } else {
                 console.log(`-filename not provided.`);
@@ -293,6 +319,10 @@ function watch_dir() {
 
 
 update_indxhtm();
-var ret = watch_dir();
+DirFileUti.genJs_writefile();
+var ret = watch_dir(() => {
+    update_indxhtm();
+    DirFileUti.genJs_writefile();
+});
 console.log("watchDir:", ret)
 

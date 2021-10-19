@@ -8,10 +8,12 @@
 # gen index for bitbucket. 
 TargetDir="../"
 TargetExe="./indexer/index_watch.nod.js"
+
+cp index.html ${TargetDir}.
 cd ${TargetDir}
 ls -ls ${TargetExe}
 node ${TargetExe} 
-open index.htm
+open index.html
 node ${TargetExe} "./"
 cd -
 
