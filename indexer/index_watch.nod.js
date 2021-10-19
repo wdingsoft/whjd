@@ -299,7 +299,7 @@ function watch_dir(cbf) {
         var watchDir = myArgs[0]
         fs.watch(watchDir, { recursive: true }, function (eventType, filename) {
             console.log(`\n-event type: ${eventType}\n-filename: ${filename}`);
-            if (filename && "index.htm" !== filename && "." !== filename[0]) {
+            if (filename && "index.htm" !== filename && "." !== filename[0] && "indobi.json.js" !== filename) {
                 //console.log(`-filename provided: ${filename}`);
                 setTimeout(function () {
                     if (cbf) cbf();
