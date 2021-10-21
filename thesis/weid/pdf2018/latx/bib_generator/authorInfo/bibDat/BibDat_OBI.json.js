@@ -8337,6 +8337,10 @@ var BibDat_OBI = BibDat =
         "address": "Shanghai",
         "year": "11/2007",
         "numpages": "314",
+        "quotes":{
+            "p121,266": "sexagency sample bones.",
+            "p119": "sexagency sample bones."
+        }
     },
 
     "ChenNianFu2012": {
