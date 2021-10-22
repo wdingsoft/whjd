@@ -8996,7 +8996,8 @@ var BibJson= BibDat =
         "title": "甲骨文字编",
         "publisher": "中华书局",
         "isbn": "9787101081343",
-        "year": "1995"
+        "year": "1995",
+        "url-1":"https://taiwanebook.ncl.edu.tw/zh-tw/book/NCL-9900009907/reader"
     },
     "ChenNianFu2012": {
         "doctype": "book",
