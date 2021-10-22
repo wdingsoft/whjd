@@ -25,7 +25,7 @@
     <script src="./bibDat/china_bio.json.js"></script>
 
 
-    <script src="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
+    <script xxsrc="http://localhost:7778/Jsonpster/" src_test="http://104.188.182.128:7778/Jsonpster/"></script>
 
 
     <style type="text/css">
@@ -94,6 +94,9 @@
             font-size: 7px;
             overflow-wrap: break-word;
         }
+        .title, .booktitle{
+            background-color: lightskyblue;
+        }
     </style>
 
 </head>
@@ -136,7 +139,7 @@
     
     /////////////////////////////////
     function GenTable(dat) {
-        var tbs = GenTable_strn(dat, latexBibTmpl_InputTable);
+        var tbs = GenTable_strn(dat);
         $("#taber").html(tbs).find("td").bind("click", function () {
             $(this).toggleClass("hili");
             $(this).parent().toggleClass("rowhi");
@@ -144,7 +147,7 @@
         table_sort("#tabview");
         fixed_titles();
     }
-    function GenTable_strn(dat, bibjsonObj) {
+    function GenTable_strn(dat) {
         function get_all_urls_ankors(obj) {
             var kys = Object.keys(obj);
             var ank = "";
@@ -159,8 +162,9 @@
         }
         var samp = {
             "doctype": "-",
-            "author": "Ignatius",
             "title": "Bishop",
+            "booktitle": "Bishop",
+            "author": "Ignatius",
             "publisher": "-",
             "address": "Ignatius of Antioch",
             "year": "35-108",
@@ -193,7 +197,8 @@
             $.each(titArr, function (i, knm) {
                 var v = obj[knm];
                 if (knm === "url") v = get_all_urls_ankors(obj);
-                tb += "<td><a>" + v + "</a></td>";
+                if(!v && knm.indexOf("title")>=0) v="-"
+                tb += `<td class='${knm}'><a>${v}</a></td>`;
             });
             tb += `</tr>`;
         });
@@ -229,8 +234,8 @@
                 <option value="AuthorsData_OBI.json.js">AuthorsData_OBI</option>
             </optgroup>
         </select>
-        <a href="./bibDeskEditor.htm"></a>
-        <a href="./bibFootnoteBibliography.htm"></a>
+        <a href="./bibDeskEditor.htm">bibDeskEditor</a>
+        <a href="./bibFootnoteBibliography.htm">bibFootnoteBibliography</a><br>
 
         <button onclick="Output_Footnotes();">footnotes</button>
         <button onclick="Output_BibJson();"> </button>

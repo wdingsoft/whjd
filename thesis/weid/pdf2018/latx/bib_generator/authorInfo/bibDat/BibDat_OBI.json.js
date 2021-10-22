@@ -8321,11 +8321,11 @@ var BibDat_OBI = BibDat =
         "url": "https://archive.org/details/earlychinesewrit00chalrich",
         "keywords": "Oracle, divination",
         "mynotes": "Hopkins, Lionel Charles acquired TBI fr Chalfant. https://www.cambridge.org/core/services/aop-cambridge-core/content/view/202BE1B54EC3138599114E6BAC90A2FF/S0035869X00106252a.pdf/lionel_charles_hopkins_iso.pdf. his collection of nearly 900 oracle bones, purchased piece by piece from the American Presbyterian missionary Frank Herring Chalfant (1862-1914) URL:http://www.lib.cam.ac.uk/mulu/oracle.html",
-        "url-1" :"picture https://www.myheritage.com/names/frank_chalfant",
-        "url-2" :"36 books. http://worldcat.org/identities/lccn-no2002065279/"
+        "url-1": "picture https://www.myheritage.com/names/frank_chalfant",
+        "url-2": "36 books. http://worldcat.org/identities/lccn-no2002065279/"
     },
 
-    "StudiesoftheCollectionoftheNationalMuseumofChina2006book":{
+    "StudiesoftheCollectionoftheNationalMuseumofChina2006book": {
         "doctype": "book",
         "author": "Compiling Commitee",
         "editor": "Zhu, Feng-Hang and Shen, Jian-hua",
@@ -8337,7 +8337,7 @@ var BibDat_OBI = BibDat =
         "address": "Shanghai",
         "year": "11/2007",
         "numpages": "314",
-        "quotes":{
+        "quotes": {
             "p121,266": "sexagency sample bones.",
             "p119": "sexagency sample bones."
         }
@@ -8401,14 +8401,14 @@ var BibDat_OBI = BibDat =
     "EthelNelsonandCHKangEthel000": {
         "doctype": "book",
         "author": " C.H. Kang and Ethel R. Nelson",
-        "lifespan":"Ethel R. Nelson: 1923-2021",
+        "lifespan": "Ethel R. Nelson: 1923-2021",
         "title": "The Discovery of Genesis : How the Truths of Genesis Were Found Hidden in the Chinese Language",
         "publisher": "Concordia Publishing House",
         "address": "Hong Kong",
         "year": "1979",
         "mynotes": "about 200 Chinese characters",
-        "url-1":"http://circle.adventist.org/files/CD2008/CD2/dialogue/articles/09_1_hogan_e.htm",
-        "url-2":"https://reedfamilyfh.com/tribute/details/2169/Ethel-Nelson/obituary.html"
+        "url-1": "http://circle.adventist.org/files/CD2008/CD2/dialogue/articles/09_1_hogan_e.htm",
+        "url-2": "https://reedfamilyfh.com/tribute/details/2169/Ethel-Nelson/obituary.html"
     },
     "GailynVanRheenen00": {
         "doctype": "book",
@@ -8487,7 +8487,7 @@ var BibDat_OBI = BibDat =
     "KTKhangCHKang000": {
         "doctype": "book",
         "author": "KT Khang",
-        "lifespan":"1895-1985, born in Singapore.",
+        "lifespan": "1895-1985, born in Singapore.",
         "author2": "Khang Kiat Tien, pinyin Kang Kedian 康克典, also in some Adventist literature as KT Khang or KT Khng, was a pioneer Chinese evangelist",
         "title": "Genesis and the Chinese -- Has Christianity Been Hoodwinked?",
         "publisher": "Independent Printing",
@@ -8793,8 +8793,8 @@ var BibDat_OBI = BibDat =
         "isbn": "978-0-520-24226-5.",
         "address": "Berkeley",
         "year": "1969",
-        "qoutes":{
-            "":"He argues that form and content are indivisible"
+        "qoutes": {
+            "": "He argues that form and content are indivisible"
         }
     },
     "RudolfArnheim001": {
@@ -8872,27 +8872,27 @@ var BibDat_OBI = BibDat =
     "LiFeng2013book": {
         "doctype": "book",
         "author": "Li Feng",
-        "authorinfo":"1962-, Columbia Uni",
+        "authorinfo": "1962-, Columbia Uni",
         "title": "Early China - a Social and Cultural History",
         "journal": "",
         "publisher": "Cambridge University Press",
         "year": "2013",
         "Bdsk-Url-1": "https://www.google.com/books/edition/Early_China/TQNaAQAAQBAJ?hl=en&gbpv=1&dq=total+pieces+of+oracle+bones+are+there&pg=PA96&printsec=frontcover",
-        "notes":{
-            "p96":"There is a total some 133,096 pieces of oracle bones or shlls available in various collections in or outside China, half of them belonged to King Wu Ding of Shang"
+        "notes": {
+            "p96": "There is a total some 133,096 pieces of oracle bones or shlls available in various collections in or outside China, half of them belonged to King Wu Ding of Shang"
         }
     },
     "KuangYuChenZhenhaoSongYuanLiuMatthewAnderson2020book": {
         "doctype": "book",
         "author": "Kuang Yu Chen, Zhenhao Song, Yuan Liu, Matthew Anderson",
-        "authorinfo":"",
+        "authorinfo": "",
         "title": "Reading of Shang Inscriptions",
         "journal": "",
         "publisher": "Shanghai People's Publishing House",
         "year": "2020",
         "Bdsk-Url-1": "https://www.google.com/books/edition/Reading_of_Sh%C4%81ng_Inscriptions/mAwIEAAAQBAJ?hl=en&gbpv=1&dq=total+oracle+bones+characters+colltected&pg=PA514&printsec=frontcover",
-        "notes":{
-            "p514":"Since 1899, the total number of excavated oracle bones and shells exceeds 150,000 pieces. Assuming that each piece contains 10 graphs, we have at least 1.5 million words of oracle documents that can be used to illuminate the Shang history."
+        "notes": {
+            "p514": "Since 1899, the total number of excavated oracle bones and shells exceeds 150,000 pieces. Assuming that each piece contains 10 graphs, we have at least 1.5 million words of oracle documents that can be used to illuminate the Shang history."
         }
     },
     "SunYueRang001": {
@@ -9315,15 +9315,15 @@ var BibDat_OBI = BibDat =
         "publisher": "William Carey Library",
         "year": "2000",
         "address": "Pasadena, CA",
-        "quotes":{
-            "p128":"A philosophical perspective: genres of revelational epistemology",
-            "p129":"To be effective Christian contextualization must correct any misunderstanding attached to the revelatory claims and products of other religions",
-            "p129b":"four very different kinds of genres of special, usually written, revelation: myths, the writtings of the enlightened, divine writting, and inspiried writtings",
-            "p120c":"we may think of myths as phantasmagoric narratives thoughts to convey basic information about gods(s), the world, and men which bind a people together in a common origin, loyalty, and destiny... Rationalists have understood myths as erroneous interpretations of natural phenomena. Intuitionalist understand mythical language as growing out of inner states, a function of intuitiom.",
-            "p130a":"Myths are created more by the genius of nations than by the genius of individuals",
-            "130b":"Myths command the loyalty of individuals and societies. Moreover, to the people who hold to them, they usually represent something more than the product of mere intelligence or intuition. They represent the truth as as revealed by gods(s) ore by revered ancestros who occupy a status that is almost divine. Myth come with the force of divine revelation.",
-            "p130d":"myths may indluce historical data, it characteriscally will reach far beyond history into fantoasy.",
-            "p131":"The myth provide the raw materials for contextualization -- what they can do with the given materials and what they will do with them. The myths has been made to fit the particular mentality of the people and purposes of their leaders by well-constructed and effective presentations."
+        "quotes": {
+            "p128": "A philosophical perspective: genres of revelational epistemology",
+            "p129": "To be effective Christian contextualization must correct any misunderstanding attached to the revelatory claims and products of other religions",
+            "p129b": "four very different kinds of genres of special, usually written, revelation: myths, the writtings of the enlightened, divine writting, and inspiried writtings",
+            "p120c": "we may think of myths as phantasmagoric narratives thoughts to convey basic information about gods(s), the world, and men which bind a people together in a common origin, loyalty, and destiny... Rationalists have understood myths as erroneous interpretations of natural phenomena. Intuitionalist understand mythical language as growing out of inner states, a function of intuitiom.",
+            "p130a": "Myths are created more by the genius of nations than by the genius of individuals",
+            "130b": "Myths command the loyalty of individuals and societies. Moreover, to the people who hold to them, they usually represent something more than the product of mere intelligence or intuition. They represent the truth as as revealed by gods(s) ore by revered ancestros who occupy a status that is almost divine. Myth come with the force of divine revelation.",
+            "p130d": "myths may indluce historical data, it characteriscally will reach far beyond history into fantoasy.",
+            "p131": "The myth provide the raw materials for contextualization -- what they can do with the given materials and what they will do with them. The myths has been made to fit the particular mentality of the people and purposes of their leaders by well-constructed and effective presentations."
         }
     },
     "WuJackson2015": {
@@ -9410,12 +9410,12 @@ var BibDat_OBI = BibDat =
         "title": "Yuan Zhiming’s Treatment of Dao and Christian Theism: a Study of the Perceptions of Yuan’s Approach to Contextualization Among Contemporary Chinese Intellectuals And Church Leaders",
         "year": "2006",
         "school": "Trinity International University, Deerfield, Illinois",
-        "src":"Yuan_Zhimings_treatment_of_Da.pdf",
-        "quotes":{
-            "p5-":"captured in three major propositions:",
-            "p5a":"the origin of the Dao is to be identified with the Christian God; the personification of the Dao—the sage—is the anticipation of the coming Jesus Christ; and the cultivation of the Dao closely approximates Christian spirituality. ",
-            "p5b":"Yuan’s three unprecedented proposals have provoked sharp criticism and debate among Chinese intellectuals and demand a critical evaluation by a corporate group consisting o f Chinese Christian scholars and church leaders.",
-            "p5":"Yuan’s approach to the contextualization of the Dao and Christian theism might be categorized as somewhere between a semi-critical and an uncritical contextualization."
+        "src": "Yuan_Zhimings_treatment_of_Da.pdf",
+        "quotes": {
+            "p5-": "captured in three major propositions:",
+            "p5a": "the origin of the Dao is to be identified with the Christian God; the personification of the Dao—the sage—is the anticipation of the coming Jesus Christ; and the cultivation of the Dao closely approximates Christian spirituality. ",
+            "p5b": "Yuan’s three unprecedented proposals have provoked sharp criticism and debate among Chinese intellectuals and demand a critical evaluation by a corporate group consisting o f Chinese Christian scholars and church leaders.",
+            "p5": "Yuan’s approach to the contextualization of the Dao and Christian theism might be categorized as somewhere between a semi-critical and an uncritical contextualization."
         }
     },
     "GlendonWOsborn2014": {
@@ -9455,15 +9455,15 @@ var BibDat_OBI = BibDat =
         "year": "2015",
         "abstract": "Thus, even if the interpretation I give to a particular character does not in fact agree with the original etymology of the character (which is usually unknowable anyway), as long as it serves my purpose as a communication tool for the biblical story, then I will not hesitate to use it.\n\nBoyle, Timothy D.. The Gospel Hidden In Chinese Characters . Xulon Press. Kindle Edition."
     },
-    "ShokiCoe1976article":{
-        "doctype":"article",
-        "author":"Shoki Coe",
-        "year":"1976",
-        "title":"Contextualization Theory",
-        "journal":"Mission Trends No.3: Asian, African, and Latin American Contribution to a Radical, Theological Realigment in the Church",
-        "editor":"Gerald H. Anderson and Thomas F. Stransky, C.S.P.",
-        "publisher":"Grand Rapids:Ferdmans",
-        "page":"19-24"
+    "ShokiCoe1976article": {
+        "doctype": "article",
+        "author": "Shoki Coe",
+        "year": "1976",
+        "title": "Contextualization Theory",
+        "journal": "Mission Trends No.3: Asian, African, and Latin American Contribution to a Radical, Theological Realigment in the Church",
+        "editor": "Gerald H. Anderson and Thomas F. Stransky, C.S.P.",
+        "publisher": "Grand Rapids:Ferdmans",
+        "page": "19-24"
     },
     "ShokiCoe1973": {
         "doctype": "article",
@@ -9534,9 +9534,9 @@ var BibDat_OBI = BibDat =
         "Bdsk-Url-1": "http://www.lib.ied.edu.hk/",
         "abstract": "",
         "Urldate": "2017",
-        "quotes":{
-            "page":"There are totally about 1,000,000 characters collected from total about 53,834 pieces of OBs with inscriptions.",
-            "note":"This data comes from The Education University of Hong Hong(香港教育大学图书馆). url: http://www.lib.ied.edu.hk/ updated on 6/9/2017."
+        "quotes": {
+            "page": "There are totally about 1,000,000 characters collected from total about 53,834 pieces of OBs with inscriptions.",
+            "note": "This data comes from The Education University of Hong Hong(香港教育大学图书馆). url: http://www.lib.ied.edu.hk/ updated on 6/9/2017."
 
         }
     },
@@ -9580,10 +9580,10 @@ var BibDat_OBI = BibDat =
         "year": "1995",
         "abstract": "three periods through three different groups. 1) the Nestorians in 7th through the 9th centuries. 2) Jesuit Catholics in the 16th through the 18th centuries, for example, Matthew Ricco (1552-1610), and 3) Protestants in 19th and 20th centuries, for example, Robert Morrison (1782-1834). [p11]\n\n\nFailed to defend Christianity during the 1920s because some Chinese Christian leaders tried to demonstrate the similarities and the compatibilities of Confucianism and Christianity. [p19]\n\nJoseph R Levenson (1965) asks this question: Once Chinese intellectuals had begun to reject their own heritage and advocate Westernization, why did not Christianity succeed a dying Confucianism? [20]\n\nIt would be difficult to find another country like China where, especially in this century, intellectuals have played such a vital role in the fate of nation and the progress of society. [41]\n\nMany reports have indicated that there was a so-called Christianity Fever among the intellectuals after the Tiananmen Square Massacre.  For example, Cheng Ming reported that more than 8,000 students became Christian at Fuchio city in 1990 alone (Sep 1990 20) The same report also indicated that according to the estimation of the Shanghai Religious Bureau, among the twenty thousand new convert, about one-fourth are intellectuals. [57]\n\nPress Freedom Guardian (Dec 21,1990) also described the Christianity Fever among the college students after  June fourth Massacre as an eruption of a volcano. Why? One student from Beijing University told the reporter: We do not try to find the answer from those Chinese traditional religions, because they all are established upon the presupposition that human nature is basically good. The presupposition as been proved totally false. [57]\n \nthe 1989 demonstration was uprededented in the history of china because of the role played by a new genre of intellectuals. [63]\nthe government crackdown of 1989, however, marked an irrevocable change in the once close relationship between Chinese intellectuals and the Chinese state. [63]\n \nthe tragedy of 1989 has  led most Chinese intellectuals to an unstable “transition state” and to become “seekers of new believe system. [64] \n The Tiananmen Square massacre of 1989 transformed them into a very ripe harvest. [64]\n\nThe past four decades have demonstrated that China's sol can nourish Christianity's seedlings. Despite chilling blasts, the roots gew a little stronger each tiem the blast subsided. They have also demonstrated that continued growth and potential flowering depend not only on the political climate, China's openness, and the development of the conomics, but also on the soverign work of God. [64]\n\nAfter more a century of effort, the roots of China's church are still fragile, the atomsphere still uncertain, and . portions of the sol still infertile. [64]",
         "quotes": {
-            "p1":"Most Chinese have a strong conviction that, unless we can win many of these Chinese intellectuals, Christianity will not be fully contextualized in China and the foundation of Chinese church will still be very shaky.",
+            "p1": "Most Chinese have a strong conviction that, unless we can win many of these Chinese intellectuals, Christianity will not be fully contextualized in China and the foundation of Chinese church will still be very shaky.",
             "p11": "three periods through three different groups. 1) the Nestorians in 7th through the 9th centuries. 2) Jesuit Catholics in the 16th through the 18th centuries, for example, Matthew Ricco (1552-1610), and 3) Protestants in 19th and 20th centuries, for example, Robert Morrison (1782-1834).",
-            "p57":"Many reports have indicated that there was a so-called 'Christianity Fever' among the intellectuals after the Tiananmen Square Massacre.",
-            "p59":"save China with Christianity."
+            "p57": "Many reports have indicated that there was a so-called 'Christianity Fever' among the intellectuals after the Tiananmen Square Massacre.",
+            "p59": "save China with Christianity."
         }
     },
     "PewResearchCenter2012": {
@@ -9631,8 +9631,8 @@ var BibDat_OBI = BibDat =
         "isbn": "13: 978-1449091101, ISBN-10: 1449091105",
         "year": "2010",
         "abstract": "Lao Tzu and The Bible: A Meeting Transcending Time and Space Yuan Zhiming Translated by Chen Shangyu Has God's light ever shone on the vast land of China-\"Land of God,' so named by her ancient ancestors? This book vividly recaptures God's universal light shown to the Chinese sage Lao Tzu 600 years before Jesus was born. By comparing Lao Tzu's Tao Te Ching with the Bible, Yuan Zhiming offers a ground-breaking interpretation of Lao Tzu's Tao in light of the Word, or Logos. Yuan Zhiming juxtaposes Lao Tzu's \"Holy One\" with Jesus Christ, systematically and thoroughly unveiling the nature and characteristics of the mysterious Tao in a concrete and understandable manner, resolving a riddle of 2,600 years. \"The text speaks to our time, because so many people believe that mere secular teaching of \"morality,\" such as Confucius taught, is sufficient, and because what we really need is a deep spiritual awakening, such as Lao Tzu announced. The profound teaching in Lao Tzu and the Bible enriches the spirit of not only the Chinese people but also the people of the West.\" -Dr. Paul de Vries, president of New York Divinity School and author of The Taming of the Shrewd Lao Tzu and the Bible offers not only a spiritual feast to the analytical minds about Tao/Word/Logos, illustrating Tao in a tangible form, the Holy One/Jesus Christ, but also provides helpful advice about how to follow and be united with Tao. A work of great erudition and wisdom, it contains deep insight, opening up the secrets of the Tao while also illuminating the Bible. This book will surely delight the hearts and minds of seekers of Tao.",
-        "comments":{
-            "Evan":"EvanChenYihHsu2006"
+        "comments": {
+            "Evan": "EvanChenYihHsu2006"
         }
     },
     "YuanZhiming1997book": {
@@ -9643,42 +9643,42 @@ var BibDat_OBI = BibDat =
         "publisher": "宇宙光出版社 AuthorHouse",
         "isbn": "13: 978-1449091101, ISBN-10: 1449091105",
         "year": "1997",
-        "quote":{
-            "url":"https://www.chinasoul.org/documents/20182/82799/LaoTzuandtheBible.pdf/38b9ce01-c0af-4f63-b6aa-dedc19c51e53?version=1.0",
-            "p16":"Doa is the same as the universal logos. it is a prediction of Jesus Christ with Chinese language.",
-            "p68, Chpater5.1":"I am not interested in the debatation of Trinity.",
-            "p88, part2.":"LinYuTang said tht LaoZi and Jesus are brothers in spirit"
+        "quote": {
+            "url": "https://www.chinasoul.org/documents/20182/82799/LaoTzuandtheBible.pdf/38b9ce01-c0af-4f63-b6aa-dedc19c51e53?version=1.0",
+            "p16": "Doa is the same as the universal logos. it is a prediction of Jesus Christ with Chinese language.",
+            "p68, Chpater5.1": "I am not interested in the debatation of Trinity.",
+            "p88, part2.": "LinYuTang said tht LaoZi and Jesus are brothers in spirit"
         }
     },
-    "YuanZhiMingQandA2018webpage":{
-        "doctype":"webpage",
-        "author":"Yuan-ZhiMing 远志明",
-        "title":"Re-discussion of the LaoZi and the Bible",
-        "year":"2018",
-        "Urldate":"2020",
+    "YuanZhiMingQandA2018webpage": {
+        "doctype": "webpage",
+        "author": "Yuan-ZhiMing 远志明",
+        "title": "Re-discussion of the LaoZi and the Bible",
+        "year": "2018",
+        "Urldate": "2020",
         "url": "http://ocfuyin.org/oc27-26",
-        "quotes":{
-            "synchritism":"老子与圣经- 书名《老子VS.圣经》，不是将《老子》与《圣经》等同了吗？或者将《老子》作为《圣经》的补充？ 老子是道教的始祖，你怎么将基督信仰与道教搅在一起呢.",
-            "prophecy1":"中国历史和文化中也有《圣经》的见证？也有对耶稣的期盼？答：当然。根据《圣经》，三位一体的上帝，是普世之神，历史之主，中国也不例外。请想一想：中国在上帝的主权之外吗？上帝不是中国人的上帝吗？天地万物都见证着上帝的作为，难道中国历史和文化中没有上帝的作为和见证吗？不！神的每一个作为，都见证着神自己，“若是一一都写出来，我想，所写的书，就是世界也容不下。”（约翰福音最后一节）根据《圣经》，现今的人类、包括中国人都是挪亚的后裔。既然如此，上古先祖们一定听说过创世、伊甸园、洪水、方舟、献祭诸事才对。这一事实已经得到了证实：在《尚书》、《诗经》、《天问》等远古文献中，在“休、禁、婪、义、船、祇、帝”等象形文字中，都发现了与《圣经》相吻合的记载和寓义。《老子》五千字对大道、圣人、灵修的描述，正是这种奇妙见证之一。我相信，见证《圣经》、见证圣父圣子圣灵的历史文化事实一定还有许多，神光之下必将一一显现出来。如今神州大地福音兴旺、规模空前，正是显现的日子，正是拯救的日子，这日子是上帝定的！",
-            "prophecy2:":"要把《老子》归于一般启示，才符合加尔文神学对启示的分类。",
-            "ChineseSignificance":"如今中华民族不仅需要富强，不仅需要民主，更需要回归上帝，使民族灵魂在忏悔中更新、升华。",
-            "那么，你把《老子》归于一般启示还是特别启示呢？":"这要看你怎么处理一般启示、特别启示这种神学概念。我在书中（164页）特别提到：启示（Reveal）一词，《圣经》原意是“将面罩掀开”，指上帝将自己展示给人。后来神学家们提炼出一般启示与特别启示的概念，尽管对这两个概念一般信徒没多大兴趣，神学家们却喋喋不休地争论了一千多年。《老子VS.圣经》一书，是为最广大的中国人写的，不是为极少数神学家写的，我只能按中国话的一般含义来使用启示一词，即“启发、开导”（《辞海》）。当然，我从改革宗神学院毕业，无论如何也记得，要把《老子》归于一般启示，才符合加尔文神学对启示的分类。",
-            "耶稣要我们认罪悔改、重生得救，你研究上帝在中国的作为，对于中国人悔改得救有什么意义呢？":"答：我们正在从事“上帝与中国”的专题研究，作为第一步，今年将出版《神州忏悔录》一书。对了，是心灵忏悔，不是文化比较。从人神关系的角度看，神州早期具有敬天、顺道、畏上帝的道统，那是孔子所谓“大道之行”的敬虔时代。春秋以降，我们背离了上帝，陷入人本主义，只见人不见神，甚至以人为神，造就了一个自残自虐、自负自闭的人治社会。在罪恶与痛苦中，不见上帝，没有忏悔，不得拯救。如今中华民族不仅需要富强，不仅需要民主，更需要回归上帝，使民族灵魂在忏悔中更新、升华。  在这部忏悔录中，早期敬虔道统和神圣启示的发掘，不过是一个序曲，《老子》更只是其中一节罢了。",
-            "我们有耶稣就够了，你为什么还要研究老子？为什么非要研究上帝在中国历史和文化中的作为？":"答：不久前，在“中国学人培训营’97”中，有人发出同样的问题。记得当时我回答：对你和我来说，有耶稣就够了；可对十二亿同胞来说，他们还不认识耶稣，不晓得上帝也是中国人的上帝，不晓得自己悠久的历史文化中也有上帝的作为和见证。在他们眼里，耶稣只是以色列的圣者，上帝只是西方人的上帝，基督信仰只是外来洋教，这些东西与中国人毫无关系，格格不入，甚至水火不容。我做的事，正是为了他们。（其实身为神州儿女的基督徒，何尝不需要了解上帝在神州历史和文化中的作为呢？）走下讲台，一位姐妹对我说：你可以用哥林多前书9章23节回答他，就是“凡我所行的，都是为福音的缘故，为要与人同得这福音”。我很感动。这正是我心底深处的话。自从上帝拣选了我，我的生命就只剩下一个目标：将上帝拯救的福音传给万民，首先是我的骨肉同胞。除此之外，我活着没有一点意义。我也知道“我是不得已的；若不传福音，我便有祸了。”（《林前》9章16节）上帝不让我只做一个享受耶稣救恩、祈求诸般福份、履行教会礼仪、一生自得其乐的基督教徒（说实话“我自己”很愿意过这种日子）。我已经不属于我自己。天父要我舍身，潜入流着血和泪的民族灵魂深处。我的生命淌着耶稣的血，每一滴都要为福音而流，流在生我养我、我所挚爱的神州大地上。没有什么能让我与耶稣分离，只是“为我弟兄，我骨肉之亲，就是自己被诅咒，与基督分离，我也愿意。”（《罗》9章3节）所以，“向律法（文化）以下的人，我虽不在律法（文化）以下，还是作律法（文化）以下的人，为要得律法（文化）以下的人……向什么样的人，我就作什么样的人。无论如何，总要救些人。”（《罗》9章21-22节）阿们！",
-            "具体说来，如果研究《老子》出自上帝的旨意，上帝给了你什么印证呢？":"答：早在神学院里，天父就将异象放在我心里，叫我昼思夜想，不能放下。大能的天父又为我开辟道路，四年前当我还在通缉犯名单上的时候，便安排我回北京搜集了研究需要的大量资料。在我发愁难以用英文从事《老子》的研究写作时，感谢奇妙的天父，温以诺教授来到神学院任教，叫我可以用中文专心致志、得心应手地进行研究。毕业后，天父带领我到了《海外校园》，在扎实严谨又开明宽厚的苏文峰牧师身边，全部完成了《老子与圣经》的研究。全能的天父，又让《老子与圣经》一书在海外和大陆同时出版，海外销售一空，大陆发行量高过海外许多倍。感谢天父，出版社转来台湾、美国、日本的基督徒读者信函，均是惊喜、肯定、鼓励之辞。倒是一些不曾读过此书的弟兄姐妹，一听说远志明竟然研究起“老子道教”来了，这还了得！于是担忧、疑惑乃至指责，纷至沓来。",
-            "你觉得上述解答可以消除人们的疑惑吗？":"答：不一定。还得看原书。人若对一件事真有兴趣，一定会去了解这件事；人若对一本书发议论，应当读过这本书。不然，事情就有些蹊跷奇怪了。当然，一个基督徒不读这本书，也不会影响他的信仰生活；对我个人灵命来说，我深知有耶稣有圣经便够了，且是唯有耶稣唯有圣经。只是在以下两种情况下，你应该读一读这本书：其一，你若关心、评论这本书，就要读一读这本书，千万不能道听涂说、先入为主，因为这本书恰恰是在神光之下，突破了无神文化背景下的先人之见，首次发掘出《老子》见证上帝、迎候耶稣的神圣价值，将《老子》全新破读了。其二，你若有中国福音化的强烈使命感，可以读一读这本书。福音要在神州大地扎根广传，不可能总是与中国历史和文化处于格格不入甚至水火不容的紧张状态。事实上，自古至今，上帝一直是中国人的上帝，神州古老苍黄的身躯上烙印着上帝主权、公义和慈爱的深痕，每一个中国人都应当知道这个事实，身为中国人的基督徒，岂不更应当知道、发掘、见证这一美好事实吗？"
+        "quotes": {
+            "synchritism": "老子与圣经- 书名《老子VS.圣经》，不是将《老子》与《圣经》等同了吗？或者将《老子》作为《圣经》的补充？ 老子是道教的始祖，你怎么将基督信仰与道教搅在一起呢.",
+            "prophecy1": "中国历史和文化中也有《圣经》的见证？也有对耶稣的期盼？答：当然。根据《圣经》，三位一体的上帝，是普世之神，历史之主，中国也不例外。请想一想：中国在上帝的主权之外吗？上帝不是中国人的上帝吗？天地万物都见证着上帝的作为，难道中国历史和文化中没有上帝的作为和见证吗？不！神的每一个作为，都见证着神自己，“若是一一都写出来，我想，所写的书，就是世界也容不下。”（约翰福音最后一节）根据《圣经》，现今的人类、包括中国人都是挪亚的后裔。既然如此，上古先祖们一定听说过创世、伊甸园、洪水、方舟、献祭诸事才对。这一事实已经得到了证实：在《尚书》、《诗经》、《天问》等远古文献中，在“休、禁、婪、义、船、祇、帝”等象形文字中，都发现了与《圣经》相吻合的记载和寓义。《老子》五千字对大道、圣人、灵修的描述，正是这种奇妙见证之一。我相信，见证《圣经》、见证圣父圣子圣灵的历史文化事实一定还有许多，神光之下必将一一显现出来。如今神州大地福音兴旺、规模空前，正是显现的日子，正是拯救的日子，这日子是上帝定的！",
+            "prophecy2:": "要把《老子》归于一般启示，才符合加尔文神学对启示的分类。",
+            "ChineseSignificance": "如今中华民族不仅需要富强，不仅需要民主，更需要回归上帝，使民族灵魂在忏悔中更新、升华。",
+            "那么，你把《老子》归于一般启示还是特别启示呢？": "这要看你怎么处理一般启示、特别启示这种神学概念。我在书中（164页）特别提到：启示（Reveal）一词，《圣经》原意是“将面罩掀开”，指上帝将自己展示给人。后来神学家们提炼出一般启示与特别启示的概念，尽管对这两个概念一般信徒没多大兴趣，神学家们却喋喋不休地争论了一千多年。《老子VS.圣经》一书，是为最广大的中国人写的，不是为极少数神学家写的，我只能按中国话的一般含义来使用启示一词，即“启发、开导”（《辞海》）。当然，我从改革宗神学院毕业，无论如何也记得，要把《老子》归于一般启示，才符合加尔文神学对启示的分类。",
+            "耶稣要我们认罪悔改、重生得救，你研究上帝在中国的作为，对于中国人悔改得救有什么意义呢？": "答：我们正在从事“上帝与中国”的专题研究，作为第一步，今年将出版《神州忏悔录》一书。对了，是心灵忏悔，不是文化比较。从人神关系的角度看，神州早期具有敬天、顺道、畏上帝的道统，那是孔子所谓“大道之行”的敬虔时代。春秋以降，我们背离了上帝，陷入人本主义，只见人不见神，甚至以人为神，造就了一个自残自虐、自负自闭的人治社会。在罪恶与痛苦中，不见上帝，没有忏悔，不得拯救。如今中华民族不仅需要富强，不仅需要民主，更需要回归上帝，使民族灵魂在忏悔中更新、升华。  在这部忏悔录中，早期敬虔道统和神圣启示的发掘，不过是一个序曲，《老子》更只是其中一节罢了。",
+            "我们有耶稣就够了，你为什么还要研究老子？为什么非要研究上帝在中国历史和文化中的作为？": "答：不久前，在“中国学人培训营’97”中，有人发出同样的问题。记得当时我回答：对你和我来说，有耶稣就够了；可对十二亿同胞来说，他们还不认识耶稣，不晓得上帝也是中国人的上帝，不晓得自己悠久的历史文化中也有上帝的作为和见证。在他们眼里，耶稣只是以色列的圣者，上帝只是西方人的上帝，基督信仰只是外来洋教，这些东西与中国人毫无关系，格格不入，甚至水火不容。我做的事，正是为了他们。（其实身为神州儿女的基督徒，何尝不需要了解上帝在神州历史和文化中的作为呢？）走下讲台，一位姐妹对我说：你可以用哥林多前书9章23节回答他，就是“凡我所行的，都是为福音的缘故，为要与人同得这福音”。我很感动。这正是我心底深处的话。自从上帝拣选了我，我的生命就只剩下一个目标：将上帝拯救的福音传给万民，首先是我的骨肉同胞。除此之外，我活着没有一点意义。我也知道“我是不得已的；若不传福音，我便有祸了。”（《林前》9章16节）上帝不让我只做一个享受耶稣救恩、祈求诸般福份、履行教会礼仪、一生自得其乐的基督教徒（说实话“我自己”很愿意过这种日子）。我已经不属于我自己。天父要我舍身，潜入流着血和泪的民族灵魂深处。我的生命淌着耶稣的血，每一滴都要为福音而流，流在生我养我、我所挚爱的神州大地上。没有什么能让我与耶稣分离，只是“为我弟兄，我骨肉之亲，就是自己被诅咒，与基督分离，我也愿意。”（《罗》9章3节）所以，“向律法（文化）以下的人，我虽不在律法（文化）以下，还是作律法（文化）以下的人，为要得律法（文化）以下的人……向什么样的人，我就作什么样的人。无论如何，总要救些人。”（《罗》9章21-22节）阿们！",
+            "具体说来，如果研究《老子》出自上帝的旨意，上帝给了你什么印证呢？": "答：早在神学院里，天父就将异象放在我心里，叫我昼思夜想，不能放下。大能的天父又为我开辟道路，四年前当我还在通缉犯名单上的时候，便安排我回北京搜集了研究需要的大量资料。在我发愁难以用英文从事《老子》的研究写作时，感谢奇妙的天父，温以诺教授来到神学院任教，叫我可以用中文专心致志、得心应手地进行研究。毕业后，天父带领我到了《海外校园》，在扎实严谨又开明宽厚的苏文峰牧师身边，全部完成了《老子与圣经》的研究。全能的天父，又让《老子与圣经》一书在海外和大陆同时出版，海外销售一空，大陆发行量高过海外许多倍。感谢天父，出版社转来台湾、美国、日本的基督徒读者信函，均是惊喜、肯定、鼓励之辞。倒是一些不曾读过此书的弟兄姐妹，一听说远志明竟然研究起“老子道教”来了，这还了得！于是担忧、疑惑乃至指责，纷至沓来。",
+            "你觉得上述解答可以消除人们的疑惑吗？": "答：不一定。还得看原书。人若对一件事真有兴趣，一定会去了解这件事；人若对一本书发议论，应当读过这本书。不然，事情就有些蹊跷奇怪了。当然，一个基督徒不读这本书，也不会影响他的信仰生活；对我个人灵命来说，我深知有耶稣有圣经便够了，且是唯有耶稣唯有圣经。只是在以下两种情况下，你应该读一读这本书：其一，你若关心、评论这本书，就要读一读这本书，千万不能道听涂说、先入为主，因为这本书恰恰是在神光之下，突破了无神文化背景下的先人之见，首次发掘出《老子》见证上帝、迎候耶稣的神圣价值，将《老子》全新破读了。其二，你若有中国福音化的强烈使命感，可以读一读这本书。福音要在神州大地扎根广传，不可能总是与中国历史和文化处于格格不入甚至水火不容的紧张状态。事实上，自古至今，上帝一直是中国人的上帝，神州古老苍黄的身躯上烙印着上帝主权、公义和慈爱的深痕，每一个中国人都应当知道这个事实，身为中国人的基督徒，岂不更应当知道、发掘、见证这一美好事实吗？"
         }
     },
-    "LinYuTang2002book":{
-        "doctype":"book",
-        "author":"LinYuTang 林语堂",
-        "authorinfo":"1895—1976",
-        "booktitle":"信仰之旅[The Jounal of Faith]",
-        "page":"243",
-        "year":"2002",
-        "quote":{
-            "url":"https://www.chinasoul.org/documents/20182/82799/LaoTzuandtheBible.pdf/38b9ce01-c0af-4f63-b6aa-dedc19c51e53?version=1.0",
-            "p88, part2.":"LinYuTang said tht LaoZi and Jesus are brothers in spirit"
+    "LinYuTang2002book": {
+        "doctype": "book",
+        "author": "LinYuTang 林语堂",
+        "authorinfo": "1895—1976",
+        "booktitle": "信仰之旅[The Jounal of Faith]",
+        "page": "243",
+        "year": "2002",
+        "quote": {
+            "url": "https://www.chinasoul.org/documents/20182/82799/LaoTzuandtheBible.pdf/38b9ce01-c0af-4f63-b6aa-dedc19c51e53?version=1.0",
+            "p88, part2.": "LinYuTang said tht LaoZi and Jesus are brothers in spirit"
         }
     },
     "UsamaFayyadandGregoryPiatetskyShapiroandPadhraicSmythFall1996": {
@@ -9720,7 +9720,7 @@ var BibDat_OBI = BibDat =
         "pages": "230",
         "abstract": "Christian musician Harold Best has argued: \n Culture is his [man's] handiwork, his fingerprint on the creation, and it is in the realm of his imagination that he comes closest to the godly prerogative of ex nihilo. He yearns for mastery over materials, to create shapes and articulate relationships...p230\n\nThe question to us is not, \"what have you achieved?\", but, \"what is your next move?\" Only when we are in this restless attitude is the  Spirit free to work a newness. \nBest, \"Chrisitan Responsibility in Music,\" in The Christian Imagination: Essays on Literature and the Arts, ed. Leland Ryken (Grand Rapids: Baker Book House, 1981), pp.404,407"
     },
-  
+
     "JosephStanleyMurphy1960": {
         "doctype": "book",
         "author": "Joseph Stanley Murphy",
@@ -9781,5 +9781,33 @@ var BibDat_OBI = BibDat =
         "year": "2013",
         "month": "6",
         "abstract": "Chinese Annals in the Western Observatory: An Outline of Western Studies of Chinese Unearthed Documents.\n\nThe Jia-Zi  is not reliable. \n481 BC as Jia Zi  \n共和 元年 841 BC ==   干支纪年  庚申\n公元前841年，公历闰年，共366天，52周零2天；其中1月1日～11月30日，为农历己未年（羊年），12月1日～12月31日为农历庚申年（猴年），全年无农历闰月；周厉王共和元年，是中国有确切纪年的开始。\n\n\n干支纪年法大约始于东汉，也称农历纪年法，在相当长的历史时期内，我国使用的就是干支纪年法，例如甲午中日战争、戊戌变法、辛亥革命都是采用的干支纪年法来计算，而1997年是农历丁丑年。\n\n\n我国开始有了精确到年的历史记录，准确一点说是公元前841年.(https://www.wukong.com/question/6632103901933863172/)\n\n\n\nhttps://www.zhihu.com/question/48734870\n<blockquote>1．克商之日的日干支为甲子(据利簋铭文)<br>2．克商之日的清晨岁星当头(据利簋铭文)<br>3．周师出发时应能在当地东方见到岁星(据《淮南子·兵略训》和《荀子》)<br>4．在周师出发前后，有“月在天驷”和“日在析木之津”的天象(据《国语》伶州鸠所述天象及《三统<br>历》)<br>5．从周师出发到克商之间应有一段时间距离，这段时间的长度应使得周师从周地出发行进至牧野合乎常规(据《武成》、《世俘》及《三统历》)<br>6．周师出发后至甲子日克商前，应有两次朔发生，第一次干支为辛卯或壬辰；第二次则约在克商前五日，日干支为庚申或辛酉(据《武成》、《世俘》所记历日)<br>7．在武王伐纣的过程中，有“星在天鼋”的天象(据《国语》伶州鸠对周景王所述伐纣天象)</blockquote>\n\n这个【利簋】，就是我说的文物\n\n<blockquote>武王征商，<b>唯甲子朝，岁鼎</b>，克昏夙有商，辛未，王在阑师，赐有事利金，用作檀公宝尊彝</blockquote>"
-    }
+    },
+
+    "GuoMoRoHuHouXuanbook": {
+        "doctype": "book",
+        "author": "郭沫若 GuoMoRo",
+        "editor": "郭沫若 GuoMoRo and 胡厚宣 HuHouXuan",
+        "booktitle": "甲骨文合集 JiaGuWen Collections",
+        "year": "1978-82",
+        "publisher": "中华书局出版",
+        "address": "",
+        "url": "",
+        "url-1": "https://pdfwu.com/2020/03/21/%E7%94%B2%E9%AA%A8%E6%96%87%E5%90%88%E9%9B%86%EF%BC%8C%E7%94%B2%E9%AA%A8%E6%96%87%E5%90%88%E9%9B%86%E8%A1%A5%E7%BC%96%EF%BC%8C%E7%94%B2%E9%AA%A8%E6%96%87%E5%90%88%E9%9B%86%E9%87%8A%E6%96%87%EF%BC%8C/",
+        "isbn": "",
+        "abstract": `
+        甲骨文合集是中国现代甲骨学方面的集成性资料汇编。郭沫若主编﹐胡厚宣总编辑﹐中国社会科学院历史研究所《甲骨文合集》编辑工作组集体编辑。1978～1982年中华书局出版﹐珂版影印13册﹐选录80年来已著录和未著录的殷墟出土的甲骨拓本﹑照片和摹本﹐共41956片。第一至十二册为甲骨拓本，第十三册为甲骨篆本。附原色甲骨图版8版10片﹐连反面共计14片。书前有尹达前言和胡厚宣序。
+本文件包大小4.85G
+含《甲骨文合集》1-13册13本
+《甲骨文合集补编》1-7册7本
+《甲骨文合集释文》1-4四册2本
+《甲骨文合集材料来源表》上下编2本
+《甲骨文字典》1本
+`,
+        "quotes": {
+            "p1": ""
+        }
+    },
+
+
+
 }
