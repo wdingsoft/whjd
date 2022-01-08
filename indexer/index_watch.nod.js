@@ -295,11 +295,12 @@ function update_indxhtm() {
 
 function watch_dir(cbf) {
     var myArgs = process.argv.slice(2);
+    var IgnoreFiles = [".", "index.html", "index.htm", "indobj.json.js"]
     if (myArgs.length === 1) {
         var watchDir = myArgs[0]
         fs.watch(watchDir, { recursive: true }, function (eventType, filename) {
             console.log(`\n-event type: ${eventType}\n-filename: ${filename}`);
-            if (filename && "index.htm" !== filename && "." !== filename[0] && "indobi.json.js" !== filename) {
+            if (filename && IgnoreFiles.indexOf(filename) < 0) {
                 //console.log(`-filename provided: ${filename}`);
                 setTimeout(function () {
                     if (cbf) cbf();
