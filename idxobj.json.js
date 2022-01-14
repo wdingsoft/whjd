@@ -1,10 +1,10 @@
 var idxobj = {
     "./": [
         {
-            "idxobj.json.js": 91067
+            "idxobj.json.js": 91796
         },
         {
-            "idxor.html": 1519
+            "idxor.html": 1517
         },
         {
             "index.htm": 274253
@@ -45,6 +45,11 @@ var idxobj = {
         },
         {
             "___maverick.editor.html": 17816
+        }
+    ],
+    "biblestudy/my_papers/bible": [
+        {
+            "parables.htm": 22854
         }
     ],
     "biblestudy/my_papers/fg-east2": [
@@ -324,6 +329,31 @@ var idxobj = {
     ],
     "thesis": [],
     "thesis/weid": [],
+    "thesis/weid/docs": [
+        {
+            "HowToDecipherOBI.docx": 11677
+        }
+    ],
+    "thesis/weid/docs/How2Decipher": [
+        {
+            "CobiHandbookforChrist_EvidenceOfShamanism.docx": 2781469
+        },
+        {
+            "HandbookofOBI_ShamanicCodeOfGospel.docx": 2785003
+        },
+        {
+            "HandbookofOBI_ShamanicCodeOfGospel.htm": 3
+        },
+        {
+            "HowToDecipherOBI.docx": 2776516
+        },
+        {
+            "references.htm": 3
+        },
+        {
+            "~$wToDecipherOBI.docx": 162
+        }
+    ],
     "thesis/weid/htmdoc": [],
     "thesis/weid/htmdoc/htm": [],
     "thesis/weid/htmdoc/htm/2016z": [
@@ -3624,6 +3654,9 @@ var idxobj = {
         },
         {
             "BibDat_ZiZi.json.js": 227123
+        },
+        {
+            "Bib_magi.json.js": 8367
         },
         {
             "bibliography_OBI.json.js": 239575
