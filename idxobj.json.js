@@ -1,25 +1,10 @@
 var idxobj = {
     "./": [
         {
-            "idxobj.json.js": 91796
+            "idxobj.json.js": 91673
         },
         {
-            "idxor.html": 1531
-        },
-        {
-            "index.htm": 274253
-        },
-        {
-            "index.html": 8451
-        },
-        {
-            "index.js": 0
-        },
-        {
-            "indobj.json.js": 90885
-        },
-        {
-            "indusr.js": 24
+            "idxor.html": 1455
         }
     ],
     "biblestudy": [],
@@ -49,7 +34,7 @@ var idxobj = {
     ],
     "biblestudy/my_papers/bible": [
         {
-            "parables.htm": 22854
+            "parables.htm": 46495
         }
     ],
     "biblestudy/my_papers/fg-east2": [
@@ -152,6 +137,9 @@ var idxobj = {
         }
     ],
     "biblestudy/perimeterChurch/group/journey": [
+        {
+            "1min_test.htm": 2370
+        },
         {
             "___maverick.editor.html": 17816
         },
@@ -336,19 +324,22 @@ var idxobj = {
     ],
     "thesis/weid/docs/How2Decipher": [
         {
-            "CobiHandbookforChrist_EvidenceOfShamanism.docx": 2781469
+            "CobiHandbookforChrist_EvidenceOfShamanism.docx": 2780965
         },
         {
-            "HandbookofOBI_ShamanicCodeOfGospel.docx": 2785003
+            "HandbookofOBI_ShamanicCodeOfGospel.docx": 2785537
         },
         {
             "HandbookofOBI_ShamanicCodeOfGospel.htm": 3
         },
         {
-            "HowToDecipherOBI.docx": 2776516
+            "HowToDecipherOBI.docx": 2776529
         },
         {
             "references.htm": 3
+        },
+        {
+            "~$ndbookofOBI_ShamanicCodeOfGospel.docx": 162
         },
         {
             "~$wToDecipherOBI.docx": 162
