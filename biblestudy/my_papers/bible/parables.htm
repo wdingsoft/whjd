@@ -7,6 +7,7 @@
         <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/jq_tablesorter.js"></script>
         <style>
                 .hili {
                         background-color: grey;
@@ -30,6 +31,8 @@
                         $("td").on("click", function () {
                                 $(this).toggleClass("hili2")
                         })
+
+                        $("table").tablesorter()
                 })
         </script>
 </HEAD>
@@ -284,7 +287,7 @@
                                 </td>
                                 <td>
                                 </td>
-                                <td></td>
+                                <td>2022-01-30</td>
                         </tr>
                         <tr>
                                 <td>13</td>
@@ -795,6 +798,18 @@
                 </tbody>
                 <tfoot></tfoot>
         </table>
+        <p>
+                Notes: <br>
+                <ol>
+                        <li>
+
+                                The grey items means it was already used in accc ppt. 
+                        </li>
+                        <li>
+                                date is the schedule to be used. 
+                        </li>
+                </ol>
+        </p>
 
 </body>
 
