@@ -12,77 +12,110 @@
                         background-color: grey;
                 }
 
-                .hili2 {
+                .hiliTD {
                         background-color: lightgreen;
+                }
+                .hiliTR{
+                        border: 9px solid red;
+                }
+
+                td[contenteditable] {
+                        background-color: lightyellow;
                 }
         </style>
         <script>
+                const tdIndx = "td:eq(0)"
                 const tdNote = "td:eq(8)"
+                const tdThem = "td:eq(7)"
 
 
-                var Noteary = [
-                        "0000",
-                        "",
-                        "",
-                        "",
-                        "2022-02-30",
-                        "2022-03-30",
-                        "",
-                        "2022-04-30",
-                        "2022-05-30",
-                        "2022-06-30",
-                        "",
-                        "2022-01-30",
-                        "",
-                        "nb",
-                        "nb",
-                        "c",
-                        "nb",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                ]
+                var ThemeIdxLink = {
+                        12: "https://docs.google.com/presentation/d/e/2PACX-1vTLZFbO-kUFJw7rDhI9BDQWubw5guEYH2rgfb38JzUYoHZn0CExd-1ZaNcfUn-g4A/pub?start=false&amp;loop=false&amp;delayms=3000",
+
+                }
+
+
+                var Noteary =
+                {
+                        "1": "",
+                        "2": "",
+                        "3": "finished",
+                        "4": "finished",
+                        "5": "2022-02-30",
+                        "6": "2022-03-30",
+                        "7": "finished",
+                        "8": "2022-04-30",
+                        "9": "2022-05-30",
+                        "10": "2022-06-30",
+                        "11": "finished",
+                        "12": "2022-01-30",
+                        "13": "finished",
+                        "14": "",
+                        "15": "finished",
+                        "16": "",
+                        "17": "",
+                        "18": "2022-07-30",
+                        "19": "",
+                        "20": "finished",
+                        "21": "finished",
+                        "22": "",
+                        "23": "finished",
+                        "24": "",
+                        "25": "",
+                        "26": "",
+                        "27": "2022-12-30",
+                        "28": "",
+                        "29": "",
+                        "30": "",
+                        "31": "finished",
+                        "32": "2022-11-30",
+                        "33": "",
+                        "34": "2022-08-30",
+                        "35": "2022-09-30",
+                        "36": "2022-10-30",
+                        "37": "finished",
+                        "38": "finished",
+                        "39": "finished",
+                        "40": "",
+                        "41": "",
+                        "42": ""
+                }
                 var ar = localStorage.getItem("Noteary")
                 if (ar) {
                         Noteary = JSON.parse(ar)
                 }
 
+        </script>
+
+        <script>
                 ////////////////
                 $(function () {
-                        var flaghili = [3, 4, 7, 11, 13, 15, 20, 21, 23, 37, 38, 39]
+                        
                         $("tbody tr").each(function (i) {
-                                $(this).find(tdNote).attr("contenteditable", "true").text(Noteary[i])
-                                if (flaghili.indexOf(i + 1) >= 0) {
-                                        $(this).find(tdNote).addClass("hili")
+                                var idx = 1 + i
+                                /////
+                                var tx = $(this).find(tdThem).text()
+                                var shref = ThemeIdxLink[idx]
+                                if (shref) {
+                                        $(this).find(tdThem).html(`<a href='${shref}'>${tx}</a>`)
                                 }
 
+                                ////
+                                $(this).find(tdNote).attr("contenteditable", "true").text(Noteary[idx])
+                                ////
+                                var flaghili = [3, 4, 7, 11, 13, 15, 20, 21, 23, 37, 38, 39]
+                                if (flaghili.indexOf(idx) >= 0) {
+                                        $(this).find(tdIndx).addClass("hili")
+                                }
                         })
 
 
                         $("td").on("click", function () {
-                                $(this).toggleClass("hili2")
+                                $(this).toggleClass("hiliTD")
+                        })
+                        $("tr").on("click", function () {
+                                $(".hiliTR").removeClass("hiliTR")
+                                $(this).addClass("hiliTR")
                         })
 
                         $("table").tablesorter()
@@ -92,11 +125,11 @@
 
 <body>
         <table border="1" class="wikitable sortable jquery-tablesorter" style="">
-                <caption>Jesus&#39; Parables</caption>
+                <caption>Parables of Jesus</caption>
                 <thead>
                         <tr>
                                 <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending"
-                                        width="40">Number</th>
+                                        width="40">#</th>
                                 <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending"
                                         width="200">Parables</th>
                                 <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending"
@@ -109,7 +142,7 @@
                                         width="100">John</th>
                                 <th>Method</th>
                                 <th>Theme</th>
-                                <th>Notes</th>
+                                <th>Schedule</th>
                         </tr>
                 </thead>
                 <tbody>
@@ -198,7 +231,7 @@
                                                 rel="nofollow">Luke 12:16&ndash;21</a></td>
                                 <td>&nbsp;</td>
                                 <td>teaching</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -216,7 +249,7 @@
                                                 rel="nofollow">Luke 6:46&ndash;49</a></td>
                                 <td>&nbsp;</td>
                                 <td>teaching</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -234,7 +267,7 @@
                                                 rel="nofollow">Luke 5:37&ndash;39</a></td>
                                 <td>&nbsp;</td>
                                 <td>teaching</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -252,7 +285,7 @@
                                                 rel="nofollow">Luke 11:21&ndash;22</a></td>
                                 <td>&nbsp;</td>
                                 <td>teaching</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -270,7 +303,7 @@
                                                 rel="nofollow">Luke 8:5&ndash;8</a></td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -284,7 +317,7 @@
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>missionary</td>
+                                <td>Kingdom</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -298,7 +331,7 @@
                                                 rel="nofollow">Luke 13:6&ndash;9</a></td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>life</td>
+                                <td>faith/action</td>
                                 <td><a href="https://docs.google.com/presentation/d/e/2PACX-1vTLZFbO-kUFJw7rDhI9BDQWubw5guEYH2rgfb38JzUYoHZn0CExd-1ZaNcfUn-g4A/pub?start=false&amp;loop=false&amp;delayms=3000">2022-01-30</a>
                                 </td>
                         </tr>
@@ -511,7 +544,9 @@
                                 <td>27</td>
                                 <td><a class="mw-redirect"
                                                 href="https://en.wikipedia.org/wiki/The_Pharisee_and_the_Publican"
-                                                title="The Pharisee and the Publican">The Pharisee and the Publican</a>
+                                                title="The Pharisee and the Publican">The Pharisee and the
+                                                Publican</a><br>
+                                        (or the Pharisee and the Tax Collector)
                                 </td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
@@ -573,7 +608,9 @@
                         <tr>
                                 <td>31</td>
                                 <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Great_Banquet"
-                                                title="The Great Banquet">The Great Banquet</a></td>
+                                                title="The Great Banquet">The Great Banquet</a><br>
+                                        Wedding Feast or<br> the Marriage of the King's Son
+                                </td>
                                 <td><a class="external text"
                                                 href="https://www.biblegateway.com/passage/?search=Matthew+22:1–14&amp;version=tniv,cuv"
                                                 rel="nofollow">Matthew 22:1&ndash;14</a></td>
@@ -601,7 +638,7 @@
                                                 rel="nofollow">Luke 21:29&ndash;33</a></td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>End of Day</td>
+                                <td>apocalypse (eschatology)</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -640,7 +677,7 @@
                                 <td>35</td>
                                 <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Talents_or_Minas"
                                                 title="The Talents or Minas">The Talents or Minas</a>&nbsp;<br />
-                                        (the Bags of Gold)</td>
+                                        (deposite or investment)</td>
                                 <td><a class="external text"
                                                 href="https://www.biblegateway.com/passage/?search=Matthew+25:14–30&amp;version=tniv,cuv"
                                                 rel="nofollow">Matthew 25:14&ndash;30</a></td>
@@ -650,7 +687,7 @@
                                                 rel="nofollow">Luke 19:12&ndash;27</a></td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>life</td>
+                                <td>living</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -731,14 +768,12 @@
                         </tr>
                         <tr>
                                 <td>42</td>
-                                <td>&nbsp;</td>
-                                <td mat="">&nbsp;</td>
-                                <td mak="">&nbsp;</td>
-                                <td luk="">&nbsp;</td>
-                                <td jhn="">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td colspan="7"></td>
+                                <td mat=""><a id="mailto"
+                                                href="mailto:wdingsoft@gmail.com?subject='parables'&body=">Send
+                                                Email</a> </td>
+
+
                         </tr>
                 </tbody>
                 <tfoot>
@@ -768,8 +803,8 @@
                 <li>The date is to be used in accc schedule.</li>
                 <li>
                         <div>
-                                <div>&quot;All Scripture is God-breathed and is useful for teaching (entry), rebuking
-                                        (outside), correcting(inside) and training (grwoing) in righteousness,&quot;
+                                <div>&quot;All Scripture is God-breathed and is useful for teaching (newbie), rebuking
+                                        (outside), correcting(inside) and training (growing) in righteousness,&quot;
                                         (2Ti3:16 NIV)</div>
                         </div>
                 </li>
@@ -802,9 +837,9 @@
                         })
                 })
                 function outputedited() {
-                        var ar = []
+                        var ar = {}
                         $("tbody tr").each(function (i) {
-                                var idx = parseInt($(this).find("td:eq(0)").text()) - 1
+                                var idx = parseInt($(this).find(living).text())
                                 var txt = $(this).find(tdNote).text().trim()
                                 ar[idx] = txt
                         })
@@ -817,7 +852,7 @@
                         var tx = $("#outxt").val()
                         var ar = JSON.parse(tx);
                         $("tbody tr").each(function (i) {
-                                var idx = parseInt($(this).find("td:eq(0)").text()) - 1
+                                var idx = parseInt($(this).find(living).text())
                                 $(this).find(tdNote).text(ar[idx])
                         })
 
