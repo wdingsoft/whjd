@@ -30,7 +30,7 @@
                 const tdThem = "td:eq(7)"
 
 
-                var ThemeIdxLink = 
+                var ThemeIdxLink =
                 {
                         "1": "",
                         "2": "",
@@ -128,7 +128,6 @@
                 }
 
         </script>
-
         <script>
                 ////////////////
                 $(function () {
@@ -259,7 +258,8 @@
                                                 rel="nofollow">Luke 11:5&ndash;8</a></td>
                                 <td>&nbsp;</td>
                                 <td>teaching</td>
-                                <td>prayer</td>
+                                <td><a href="https://docs.google.com/presentation/d/e/2PACX-1vSyJUJWS1YXQnr8xUXZMprpD8ufkUuiari1ZCih2-1GfQ-zz_AWq4wt1xKsVUPZPA/pub?start=false&amp;loop=false&amp;delayms=3000">pray</a>
+                                </td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -308,9 +308,9 @@
                                                 href="https://www.biblegateway.com/passage/?search=Luke+5:37–39&amp;version=tniv,cuv"
                                                 rel="nofollow">Luke 5:37&ndash;39</a></td>
                                 <td>&nbsp;</td>
-                                <td>teaching</td>
+                                <td>training</td>
                                 <td>living</td>
-                                <td>&nbsp;</td>
+                                <td>2022-02-27</td>
                         </tr>
                         <tr>
                                 <td>9</td>
@@ -579,7 +579,7 @@
                                                 rel="nofollow">Luke 18:1&ndash;8</a></td>
                                 <td>&nbsp;</td>
                                 <td>training</td>
-                                <td>faith</td>
+                                <td>pray</td>
                                 <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -587,9 +587,8 @@
                                 <td><a class="mw-redirect"
                                                 href="https://en.wikipedia.org/wiki/The_Pharisee_and_the_Publican"
                                                 title="The Pharisee and the Publican">The Pharisee and the
-                                                Publican</a><br>
-                                        (or the Pharisee and the Tax Collector)
-                                </td>
+                                                Publican</a><br />
+                                        (or the Pharisee and the Tax Collector)</td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td><a class="external text"
@@ -650,9 +649,9 @@
                         <tr>
                                 <td>31</td>
                                 <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Great_Banquet"
-                                                title="The Great Banquet">The Great Banquet</a><br>
-                                        Wedding Feast or<br> the Marriage of the King's Son
-                                </td>
+                                                title="The Great Banquet">The Great Banquet</a><br />
+                                        Wedding Feast or<br />
+                                        the Marriage of the King&#39;s Son</td>
                                 <td><a class="external text"
                                                 href="https://www.biblegateway.com/passage/?search=Matthew+22:1–14&amp;version=tniv,cuv"
                                                 rel="nofollow">Matthew 22:1&ndash;14</a></td>
@@ -810,12 +809,8 @@
                         </tr>
                         <tr>
                                 <td>42</td>
-                                <td colspan="7"></td>
-                                <td mat=""><a id="mailto"
-                                                href="mailto:wdingsoft@gmail.com?subject='parables'&body=">Send
-                                                Email</a> </td>
-
-
+                                <td colspan="7">&nbsp;</td>
+                                <td mat=""><a class="mailtoWD" href="">Send-Email</a></td>
                         </tr>
                 </tbody>
                 <tfoot>
@@ -841,8 +836,6 @@
                         <p>allegories: a story, poem, or picture that can be interpreted to reveal a hidden meaning,
                                 typically a moral or political one.</p>
                 </li>
-                <li>The grey items means it was already used in accc ppt.</li>
-                <li>The date is to be used in accc schedule.</li>
                 <li>
                         <div>
                                 <div>&quot;All Scripture is God-breathed and is useful for teaching (newbie), rebuking
@@ -850,57 +843,64 @@
                                         (2Ti3:16 NIV)</div>
                         </div>
                 </li>
+                <li>The grey items: already used in accc cm ppt.</li>
+                <li>The date is to be used in accc schedule.</li>
+                <li><a href="https://www.gcp.org/">GCP.org</a></li>
         </ol>
-        <button id="output">output edited notes</button> <button id="loaddata">load edited notes</button>
-        <br>
-        <textarea id="outxt">
 
-        </textarea>
-        <br><br>
+        <div><button id="output">expoert schedule</button><button id="loaddata">import schedule</button><br />
+                <textarea id="outxt">
+        </textarea><br />
+                <br />
+                <a class="mailtoWD" href="">Send-Email</a><br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <script>
+                        $(function () {
+                                $("#output").on("click", function (i) {
+                                        outputedited()
+                                })
+                                $("#loaddata").on("click", function (i) {
+                                        import_schedule()
+                                })
+                                $("td[contenteditable]").on("keyup", function () {
+                                        outputedited()
+                                })
+                                const MailToWD = "mailto:wdinge@gmail.com?subject=RE:https://wdingbox.github.io/pubs/biblestudy/my_papers/bible/parables.htm&body="
+                                $(".mailtoWD").on("click", function () {
+                                        var tx = outputedited()
+                                        var smailto = MailToWD + tx
+                                        $(".mailtoWD").attr("href", smailto)
+                                })
+                        })
+                        function outputedited() {
+                                var ar = {}
+                                $("tbody tr").each(function (i) {
+                                        var idx = parseInt($(this).find(tdIndx).text())
+                                        var txt = $(this).find(tdNote).text().trim()
+                                        ar[idx] = txt
+                                })
+                                var tx = JSON.stringify(ar, null, 4);
+                                $("#outxt").val(tx)
+                                localStorage.setItem("Noteary", tx)
+                                return tx
+                        }
+                        function import_schedule() {
+                                var tx = $("#outxt").val().trim().replace(/[\r\n\t]/g, "")
+                                var ar = JSON.parse(tx);
+                                $("tbody tr").each(function (i) {
+                                        var idx = parseInt($(this).find(tdIndx).text())
+                                        $(this).find(tdNote).text(ar[idx])
+                                })
 
-        <a id="mailto" href="mailto:wdingsoft@gmail.com?subject='parables'&body=">Send email</a> <br> <br> <br> <br>
-        <br> <br> <br>
-        <script>
-                $(function () {
-                        $("#output").on("click", function (i) {
-                                outputedited()
-                        })
-                        $("#loaddata").on("click", function (i) {
-                                loadedited()
-                        })
-                        $("body").on("keyup", function () {
-                                outputedited()
-                        })
-                        $("#mailto").on("click", function () {
-                                var tx = outputedited()
-                                var mailto = "mailto:wdingsoft@gmail.com?subject=parables&body=" + tx
-                                $("#mailto").attr("href", mailto)
-
-                        })
-                })
-                function outputedited() {
-                        var ar = {}
-                        $("tbody tr").each(function (i) {
-                                var idx = parseInt($(this).find(tdIndx).text())
-                                var txt = $(this).find(tdNote).text().trim()
-                                ar[idx] = txt
-                        })
-                        var tx = JSON.stringify(ar, null, 4);
-                        $("#outxt").val(tx)
-                        localStorage.setItem("Noteary", tx)
-                        return tx
-                }
-                function loadedited() {
-                        var tx = $("#outxt").val()
-                        var ar = JSON.parse(tx);
-                        $("tbody tr").each(function (i) {
-                                var idx = parseInt($(this).find(tdIndx).text())
-                                $(this).find(tdNote).text(ar[idx])
-                        })
-
-                }
-        </script>
-        <p>&nbsp;</p>
+                        }
+                </script>
+                <p>&nbsp;</p>
+        </div>
 </body>
 
 </html>
