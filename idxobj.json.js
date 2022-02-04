@@ -1,7 +1,7 @@
 var idxobj = {
     "./": [
         {
-            "idxobj.json.js": 91673
+            "idxobj.json.js": 98323
         },
         {
             "idxor.html": 1455
@@ -9,6 +9,370 @@ var idxobj = {
     ],
     "biblestudy": [],
     "biblestudy/accc": [],
+    "biblestudy/accc/childrenministry": [
+        {
+            "2022-03.pptx": 65674982
+        },
+        {
+            "newcloth_https.docx": 50187841
+        },
+        {
+            "newcloth_https.html": 1280881
+        },
+        {
+            "newwineskin_https.docx": 43135062
+        },
+        {
+            "~$wcloth_https.docx": 162
+        },
+        {
+            "~$wwineskin_https.docx": 162
+        }
+    ],
+    "biblestudy/accc/childrenministry/newcloth_https_files": [
+        {
+            "F7RGWZXF3YIJIRF.jpg": 27055
+        },
+        {
+            "app.html": 60118
+        },
+        {
+            "cb=gapi.loaded_0": 111250
+        },
+        {
+            "dark_thumbnail2.png": 570
+        },
+        {
+            "device_default_thumbnail2.png": 666
+        },
+        {
+            "faviconV2": 1819
+        },
+        {
+            "images": 14099
+        },
+        {
+            "images(1)": 13197
+        },
+        {
+            "images(10)": 14269
+        },
+        {
+            "images(100)": 9070
+        },
+        {
+            "images(11)": 9160
+        },
+        {
+            "images(12)": 11119
+        },
+        {
+            "images(13)": 17857
+        },
+        {
+            "images(14)": 10563
+        },
+        {
+            "images(15)": 10633
+        },
+        {
+            "images(16)": 10149
+        },
+        {
+            "images(17)": 7671
+        },
+        {
+            "images(18)": 10268
+        },
+        {
+            "images(19)": 10925
+        },
+        {
+            "images(2)": 13566
+        },
+        {
+            "images(20)": 8346
+        },
+        {
+            "images(21)": 14188
+        },
+        {
+            "images(22)": 11913
+        },
+        {
+            "images(23)": 7588
+        },
+        {
+            "images(24)": 16239
+        },
+        {
+            "images(25)": 8845
+        },
+        {
+            "images(26)": 11260
+        },
+        {
+            "images(27)": 12006
+        },
+        {
+            "images(28)": 10268
+        },
+        {
+            "images(29)": 10430
+        },
+        {
+            "images(3)": 9447
+        },
+        {
+            "images(30)": 10399
+        },
+        {
+            "images(31)": 3062
+        },
+        {
+            "images(32)": 2919
+        },
+        {
+            "images(33)": 3160
+        },
+        {
+            "images(34)": 6526
+        },
+        {
+            "images(35)": 15782
+        },
+        {
+            "images(36)": 7712
+        },
+        {
+            "images(37)": 6687
+        },
+        {
+            "images(38)": 10816
+        },
+        {
+            "images(39)": 6542
+        },
+        {
+            "images(4)": 2922
+        },
+        {
+            "images(40)": 8647
+        },
+        {
+            "images(41)": 12959
+        },
+        {
+            "images(42)": 11480
+        },
+        {
+            "images(43)": 7887
+        },
+        {
+            "images(44)": 15744
+        },
+        {
+            "images(45)": 10939
+        },
+        {
+            "images(46)": 15614
+        },
+        {
+            "images(47)": 9976
+        },
+        {
+            "images(48)": 10638
+        },
+        {
+            "images(49)": 10880
+        },
+        {
+            "images(5)": 1867
+        },
+        {
+            "images(50)": 17239
+        },
+        {
+            "images(51)": 12100
+        },
+        {
+            "images(52)": 8237
+        },
+        {
+            "images(53)": 9202
+        },
+        {
+            "images(54)": 10973
+        },
+        {
+            "images(55)": 10910
+        },
+        {
+            "images(56)": 8815
+        },
+        {
+            "images(57)": 8401
+        },
+        {
+            "images(58)": 2354
+        },
+        {
+            "images(59)": 2844
+        },
+        {
+            "images(6)": 3864
+        },
+        {
+            "images(60)": 2225
+        },
+        {
+            "images(61)": 13978
+        },
+        {
+            "images(62)": 7761
+        },
+        {
+            "images(63)": 10834
+        },
+        {
+            "images(64)": 10505
+        },
+        {
+            "images(65)": 12425
+        },
+        {
+            "images(66)": 11663
+        },
+        {
+            "images(67)": 9421
+        },
+        {
+            "images(68)": 12112
+        },
+        {
+            "images(69)": 14739
+        },
+        {
+            "images(7)": 10243
+        },
+        {
+            "images(70)": 8162
+        },
+        {
+            "images(71)": 10105
+        },
+        {
+            "images(72)": 9865
+        },
+        {
+            "images(73)": 9032
+        },
+        {
+            "images(74)": 11813
+        },
+        {
+            "images(75)": 14078
+        },
+        {
+            "images(76)": 17962
+        },
+        {
+            "images(77)": 9839
+        },
+        {
+            "images(78)": 7533
+        },
+        {
+            "images(79)": 8567
+        },
+        {
+            "images(8)": 9911
+        },
+        {
+            "images(80)": 7212
+        },
+        {
+            "images(81)": 17747
+        },
+        {
+            "images(82)": 10439
+        },
+        {
+            "images(83)": 11728
+        },
+        {
+            "images(84)": 9966
+        },
+        {
+            "images(85)": 11612
+        },
+        {
+            "images(86)": 10483
+        },
+        {
+            "images(87)": 9764
+        },
+        {
+            "images(88)": 10351
+        },
+        {
+            "images(89)": 12798
+        },
+        {
+            "images(9)": 9678
+        },
+        {
+            "images(90)": 9816
+        },
+        {
+            "images(91)": 11919
+        },
+        {
+            "images(92)": 8462
+        },
+        {
+            "images(93)": 10358
+        },
+        {
+            "images(94)": 9240
+        },
+        {
+            "images(95)": 8232
+        },
+        {
+            "images(96)": 1889
+        },
+        {
+            "images(97)": 2298
+        },
+        {
+            "images(98)": 2375
+        },
+        {
+            "images(99)": 1591
+        },
+        {
+            "light_thumbnail2.png": 582
+        },
+        {
+            "m=_b,_tp": 320210
+        },
+        {
+            "m=_b,_tp(1)": 168465
+        },
+        {
+            "rs=AA2YrTszg452UcK7ZldyRIlElPI7lXM0HQ": 222749
+        },
+        {
+            "rs=AA2YrTuEQwqFGUJ-pjUBjgN-g4X61iJyqw": 20682
+        },
+        {
+            "spin-24.gif": 2707
+        },
+        {
+            "unnamed.png": 573
+        }
+    ],
     "biblestudy/accc/papers": [
         {
             "journal_accc_104.pdf": 9415614
@@ -34,7 +398,15 @@ var idxobj = {
     ],
     "biblestudy/my_papers/bible": [
         {
-            "parables.htm": 46495
+            "parables.htm": 55092
+        }
+    ],
+    "biblestudy/my_papers/bible/js": [
+        {
+            "jq.js": 89475
+        },
+        {
+            "jq_tablesorter.js": 142134
         }
     ],
     "biblestudy/my_papers/fg-east2": [
@@ -327,19 +699,16 @@ var idxobj = {
             "CobiHandbookforChrist_EvidenceOfShamanism.docx": 2780965
         },
         {
-            "HandbookofOBI_ShamanicCodeOfGospel.docx": 2785537
+            "HandbookofOBI_ShamanicCodeOfGospel.docx": 3263206
         },
         {
             "HandbookofOBI_ShamanicCodeOfGospel.htm": 3
         },
         {
-            "HowToDecipherOBI.docx": 2776529
+            "HowToDecipherOBI.docx": 2776779
         },
         {
             "references.htm": 3
-        },
-        {
-            "~$ndbookofOBI_ShamanicCodeOfGospel.docx": 162
         },
         {
             "~$wToDecipherOBI.docx": 162
@@ -1436,10 +1805,10 @@ var idxobj = {
     ],
     "thesis/weid/htmdoc/proj/IsGen224aNarrative": [
         {
-            "202108.docx": 75241
+            "202108.docx": 75717
         },
         {
-            "202108.pdf": 369204
+            "202108.pdf": 361968
         },
         {
             "_aux.html": 33692
@@ -1451,10 +1820,10 @@ var idxobj = {
             "references.html": 13125
         },
         {
-            "release-aftermodified.docx": 75377
+            "release-aftermodified.docx": 75475
         },
         {
-            "release-aftermodified.pdf": 369147
+            "release-aftermodified.pdf": 361541
         },
         {
             "release-rev2021.docx": 78023
