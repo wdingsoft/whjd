@@ -1,0 +1,466 @@
+<html>
+
+<head>
+    <title>parables</title>
+    <base target="_blank" />
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+    <script src="./js/jq.js"></script>
+    <script src="./js/jq_tablesorter.js"></script>
+    <style type="text/css">
+        .hili {
+            background-color: grey;
+        }
+
+        .hiliTD {
+            background-color: lightgreen;
+        }
+
+        .hiliTR {
+            border: 9px solid red;
+        }
+
+        td[contenteditable] {
+            background-color: lightyellow;
+        }
+    </style>
+    <script>
+        const tdIndx = "td:eq(0)"
+        const tdNote = "td:eq(8)"
+        const tdThem = "td:eq(7)"
+
+
+        var ThemeIdxLink =
+        {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "https://docs.google.com/presentation/d/e/2PACX-1vRIrNrIUJFQtKUNwu_cPcUc_fAsVBRkzrBdxWrykfVy71Z9YCh8k2dUeG4YwPwbpA/pub?start=false&loop=false&delayms=3000",
+            "5": "",
+            "6": "https://docs.google.com/presentation/d/e/2PACX-1vQNqF0DObGsLJwXgEgzZGG6aWmQjRAO6qaiSazQBN8UmcaJ5HR5Z14_k5RVt-_C7Q/pub?start=false&loop=false&delayms=3000",
+            "7": "",
+            "8": "https://docs.google.com/presentation/d/e/2PACX-1vSYOEjEHlsYNTwsiLWCUTgh3mVFLQz723L8crIAvc1CgvlkvsdJXNg_lDTqEV4Qsw/pub?start=false&loop=false&delayms=3000",
+            "9": "https://docs.google.com/presentation/d/e/2PACX-1vQ9n36amxUw39w096xVqihX-OAx6TEkwkDgUUcG7fWpRW6DzABG-yKNRvIL8dUzyw/pub?start=false&loop=false&delayms=3000",
+            "10": "",
+            "11": "",
+            "12": "https://docs.google.com/presentation/d/e/2PACX-1vTLZFbO-kUFJw7rDhI9BDQWubw5guEYH2rgfb38JzUYoHZn0CExd-1ZaNcfUn-g4A/pub?start=false&amp;loop=false&amp;delayms=3000",
+            "13": "",
+            "14": "",
+            "15": "",
+            "16": "",
+            "17": "",
+            "18": "https://docs.google.com/presentation/d/e/2PACX-1vREj9ERR-k_h20oihN7K6roO-0m_sWF_wKzUwGD31kV7kNabYFdd3vDtZxg2vBHmg/pub?start=false&loop=false&delayms=3000",
+            "19": "",
+            "20": "",
+            "21": "",
+            "22": "",
+            "23": "",
+            "24": "",
+            "25": "",
+            "26": "",
+            "27": "",
+            "28": "",
+            "29": "",
+            "30": "",
+            "31": "https://docs.google.com/presentation/d/e/2PACX-1vTObloPpC7MWVx9aBfkNqX72gD3Xv4226GtPfirBYpLjYasJnNtt8o-Shs5ux8q6A/pub?start=false&loop=false&delayms=3000",
+            "32": "",
+            "33": "",
+            "34": "",
+            "35": "",
+            "36": "",
+            "37": "",
+            "38": "",
+            "39": "",
+            "40": "",
+            "41": "",
+            "42": ""
+        }
+
+
+        var Noteary =
+        {
+            "1": "",
+            "2": "",
+            "3": "finished",
+            "4": "finished",
+            "5": "finished",
+            "6": "2022-02-27",
+            "7": "finished",
+            "8": "2022-03-30",
+            "9": "2022-04-30",
+            "10": "2022-05-30",
+            "11": "finished",
+            "12": "2022-01-30",
+            "13": "finished",
+            "14": "",
+            "15": "finished",
+            "16": "",
+            "17": "",
+            "18": "2022-06-30",
+            "19": "",
+            "20": "finished",
+            "21": "finished",
+            "22": "",
+            "23": "finished",
+            "24": "",
+            "25": "",
+            "26": "",
+            "27": "2022-12-30",
+            "28": "",
+            "29": "",
+            "30": "",
+            "31": "finished",
+            "32": "2022-11-30",
+            "33": "",
+            "34": "2022-08-30",
+            "35": "2022-09-30",
+            "36": "2022-10-30",
+            "37": "finished",
+            "38": "finished",
+            "39": "finished",
+            "40": "",
+            "41": "dddd",
+            "42": ""
+        }
+        var ar = localStorage.getItem("Noteary")
+        if (ar) {
+            Noteary = JSON.parse(ar)
+        }
+
+    </script>
+    <script>
+        ////////////////
+        $(function () {
+
+            $("tbody tr").each(function (i) {
+                var idx = 1 + i
+                /////
+                var tx = $(this).find(tdThem).text()
+                var shref = ThemeIdxLink[idx]
+                if (shref) {
+                    $(this).find(tdThem).html(`<a href='${shref}'>${tx}</a>`)
+                }
+
+                ////
+                $(this).find(tdNote).attr("contenteditable", "true").text(Noteary[idx])
+                ////
+                var flaghili = [3, 4, 7, 11, 13, 15, 20, 21, 23, 37, 38, 39]
+                if (flaghili.indexOf(idx) >= 0) {
+                    $(this).find(tdIndx).addClass("hili")
+                }
+            })
+
+
+            $("td").on("click", function () {
+                $(this).toggleClass("hiliTD")
+            })
+            $("tr").on("click", function () {
+                $(".hiliTR").removeClass("hiliTR")
+                $(this).addClass("hiliTR")
+            })
+
+            $("table").tablesorter()
+        })
+    </script>
+</head>
+
+<body>
+    <table border="1" class="wikitable sortable jquery-tablesorter" style="">
+        <caption>Parables of Jesus</caption>
+        <thead>
+            <tr>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="40">#</th>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="200">
+                    Parables</th>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="100">
+                    Matthew</th>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="100">Mark
+                </th>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="100">Luke
+                </th>
+                <th class="headerSort" role="columnheader button" tabindex="0" title="Sort ascending" width="100">John
+                </th>
+                <th>Method</th>
+                <th>Theme</th>
+                <th>Schedule</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Growing_Seed"
+                        title="The Growing Seed">The Growing Seed</a></td>
+                <td>
+                    <input type="range" list="tickmarks">
+
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50" label="50%"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100" label="100%"></option>
+                    </datalist>
+                    </input>
+
+                </td>
+                <td>
+
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td>Kingdom</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Two_Debtors"
+                        title="The Two Debtors">The Two Debtors</a></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+7:41–43&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 7:41&ndash;43</a></td>
+                <td>&nbsp;</td>
+                <td>training</td>
+                <td>humble</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Lamp_under_a_Bushel"
+                        title="The Lamp under a Bushel">The Lamp under a Bushel</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Matthew+5:14–15&amp;version=tniv,cuv"
+                        rel="nofollow">Matthew 5:14&ndash;15</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Mark+4:21–25&amp;version=tniv,cuv"
+                        rel="nofollow">Mark 4:21&ndash;25</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+8:16–18&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 8:16&ndash;18</a></td>
+                <td>&nbsp;</td>
+                <td>training</td>
+                <td>missionary</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan"
+                        title="Parable of the Good Samaritan">The Good Samaritan</a></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+10:25–37&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 10:25&ndash;37</a></td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td>relationship</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Friend_at_Night"
+                        title="The Friend at Night">The Friend at Night</a></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+11:5–8&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 11:5&ndash;8</a></td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td><a
+                        href="https://docs.google.com/presentation/d/e/2PACX-1vSyJUJWS1YXQnr8xUXZMprpD8ufkUuiari1ZCih2-1GfQ-zz_AWq4wt1xKsVUPZPA/pub?start=false&amp;loop=false&amp;delayms=3000">pray</a>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Rich_Fool" title="The Rich Fool">The
+                        Rich Fool</a></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+12:16–21&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 12:16&ndash;21</a></td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td>living</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/The_Wise_and_the_Foolish_Builders"
+                        title="The Wise and the Foolish Builders">The Wise and the Foolish
+                        Builders</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Matthew+7:24–27&amp;version=tniv,cuv"
+                        rel="nofollow">Matthew 7:24&ndash;27</a></td>
+                <td>&nbsp;</td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+6:46–49&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 6:46&ndash;49</a></td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td>living</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="https://en.wikipedia.org/wiki/New_Wine_into_Old_Wineskins"
+                        title="New Wine into Old Wineskins">New Wine into Old Wineskins</a></td>
+                <td>
+
+
+
+                </td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Mark+2:21–22&amp;version=tniv,cuv"
+                        rel="nofollow">Mark 2:21&ndash;22</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+5:37–39&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 5:37&ndash;39</a></td>
+                <td>&nbsp;</td>
+                <td>training</td>
+                <td>living</td>
+                <td>2022-02-27</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="https://en.wikipedia.org/wiki/Parable_of_the_Strong_Man"
+                        title="Parable of the Strong Man">The strong man</a> <a
+                        href="https://www.gotquestions.org/bind-the-strongman.html">[1]</a> </td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Matthew+12:29&amp;version=tniv,cuv"
+                        rel="nofollow">Matthew 12:29&ndash;29</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Mark+3:27&amp;version=tniv,cuv"
+                        rel="nofollow">Mark 3:27&ndash;27</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+11:21–22&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 11:21&ndash;22</a></td>
+                <td>&nbsp;</td>
+                <td>teaching</td>
+                <td>living</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="https://en.wikipedia.org/wiki/Parable_of_the_Sower" title="Parable of the Sower">The Sower
+                        and Soil</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Matthew+13:3–9&amp;version=tniv,cuv"
+                        rel="nofollow">Matthew 13:3&ndash;9</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Mark+4:3–9&amp;version=tniv,cuv"
+                        rel="nofollow">Mark 4:3&ndash;9</a></td>
+                <td><a class="external text"
+                        href="https://www.biblegateway.com/passage/?search=Luke+8:5–8&amp;version=tniv,cuv"
+                        rel="nofollow">Luke 8:5&ndash;8</a></td>
+                <td>&nbsp;</td>
+                <td>training</td>
+                <td>living</td>
+                <td>&nbsp;</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+
+    <p>Notes:</p>
+
+    <ol>
+        <li>
+            <p>A sample Gospel harmony for the parables based on the list of key episodes in the Canonical
+                Gospels is presented in the table below. For the sake of consistency, this table is
+                automatically sub-selected from the main harmony table in the Gospel harmony article,
+                based on the list of key episodes in the Canonical Gospels. Usually, no parables are
+                associated with the Gospel of John, just allegories.[<a
+                    href="https://en.wikipedia.org/wiki/Parables_of_Jesus">wiki</a>(2022)]</p>
+        </li>
+        <li>
+            <p>parable: a story, poem, or picture that is parallel to a heavenly meaning (told by Jesus
+                only).</p>
+        </li>
+        <li>
+            <p>allegories: a story, poem, or picture that can be interpreted to reveal a hidden meaning,
+                typically a moral or political one.</p>
+        </li>
+        <li>
+            <div>
+                <div>&quot;All Scripture is God-breathed and is useful for teaching (newbie), rebuking
+                    (outside), correcting(inside) and training (growing) in righteousness,&quot;
+                    (2Ti3:16 NIV)</div>
+            </div>
+        </li>
+        <li>The grey items: already used in accc cm ppt.</li>
+        <li>The date is to be used in accc schedule.</li>
+        <li><a href="https://www.gcp.org/">GCP.org</a></li>
+        <li>
+            <a href="https://wdingbox.github.io/pubs/biblestudy/my_papers/bible/parables.htm">link</a>
+        </li>
+    </ol>
+
+    <div><button id="output">expoert schedule</button><button id="loaddata">import schedule</button><br />
+        <textarea id="outxt">
+        </textarea><br />
+        <br />
+        <a class="mailtoWD" href="">Send-Email</a><br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <script>
+            $(function () {
+                $("#output").on("click", function (i) {
+                    outputedited()
+                })
+                $("#loaddata").on("click", function (i) {
+                    import_schedule()
+                })
+                $("td[contenteditable]").on("keyup", function () {
+                    outputedited()
+                })
+                const MailToWD = "mailto:wdinge@gmail.com?subject=RE:https://wdingbox.github.io/pubs/biblestudy/my_papers/bible/parables.htm&body="
+                $(".mailtoWD").on("click", function () {
+                    var tx = outputedited()
+                    var smailto = MailToWD + tx
+                    $(".mailtoWD").attr("href", smailto)
+                })
+            })
+            function outputedited() {
+                var ar = {}
+                $("tbody tr").each(function (i) {
+                    var idx = parseInt($(this).find(tdIndx).text())
+                    var txt = $(this).find(tdNote).text().trim()
+                    ar[idx] = txt
+                })
+                var tx = JSON.stringify(ar, null, 4);
+                $("#outxt").val(tx)
+                localStorage.setItem("Noteary", tx)
+                return tx
+            }
+            function import_schedule() {
+                var tx = $("#outxt").val().trim().replace(/[\r\n\t]/g, "")
+                var ar = JSON.parse(tx);
+                $("tbody tr").each(function (i) {
+                    var idx = parseInt($(this).find(tdIndx).text())
+                    $(this).find(tdNote).text(ar[idx])
+                })
+
+            }
+        </script>
+        <p>&nbsp;</p>
+    </div>
+</body>
+
+</html>
