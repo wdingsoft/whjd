@@ -23,6 +23,10 @@
                 td[contenteditable] {
                         background-color: lightyellow;
                 }
+                .pptlink{
+                        font-size: larger;
+                        background-color: aqua;
+                }
         </style>
         <script>
                 const tdIndx = "td:eq(0)"
@@ -30,7 +34,7 @@
                 const tdThem = "td:eq(7)"
 
 
-                var ThemeIdxLink =
+                var ThemeIdx_pptLink =
                 {
                         "1": "",
                         "2": "",
@@ -86,9 +90,9 @@
                         "5": "finished",
                         "6": "2022-02-27",
                         "7": "finished",
-                        "8": "2022-03-30",
-                        "9": "2022-04-30",
-                        "10": "2022-05-30",
+                        "8": "2022-03-27",
+                        "9": "2022-04-24",
+                        "10": "2022-05-29",
                         "11": "finished",
                         "12": "2022-01-30",
                         "13": "finished",
@@ -96,7 +100,7 @@
                         "15": "finished",
                         "16": "",
                         "17": "",
-                        "18": "2022-06-30",
+                        "18": "2022-06-26",
                         "19": "",
                         "20": "finished",
                         "21": "finished",
@@ -105,15 +109,15 @@
                         "24": "",
                         "25": "",
                         "26": "",
-                        "27": "2022-12-30",
-                        "28": "",
+                        "27": "2022-07-31",
+                        "28": "2022-12-25",
                         "29": "",
                         "30": "",
                         "31": "finished",
-                        "32": "2022-11-30",
+                        "32": "2022-08-28",
                         "33": "",
-                        "34": "2022-08-30",
-                        "35": "2022-09-30",
+                        "34": "2022-11-27",
+                        "35": "2022-09-25",
                         "36": "2022-10-30",
                         "37": "finished",
                         "38": "finished",
@@ -136,9 +140,9 @@
                                 var idx = 1 + i
                                 /////
                                 var tx = $(this).find(tdThem).text()
-                                var shref = ThemeIdxLink[idx]
+                                var shref = ThemeIdx_pptLink[idx]
                                 if (shref) {
-                                        $(this).find(tdThem).html(`<a href='${shref}'>${tx}</a>`)
+                                        $(this).find(tdThem).html(`<a class='pptlink' href='${shref}'>${tx}</a>`)
                                 }
 
                                 ////
@@ -315,7 +319,9 @@
                         <tr>
                                 <td>9</td>
                                 <td><a href="https://en.wikipedia.org/wiki/Parable_of_the_Strong_Man"
-                                                title="Parable of the Strong Man">The strong man</a> <a href="https://www.gotquestions.org/bind-the-strongman.html">[1]</a> </td>
+                                                title="Parable of the Strong Man">The strong man</a> <a
+                                                href="https://www.gotquestions.org/bind-the-strongman.html">[1]</a>
+                                </td>
                                 <td><a class="external text"
                                                 href="https://www.biblegateway.com/passage/?search=Matthew+12:29&amp;version=tniv,cuv"
                                                 rel="nofollow">Matthew 12:29&ndash;29</a></td>
@@ -456,7 +462,8 @@
                         <tr>
                                 <td>18</td>
                                 <td><a class="mw-redirect" href="https://en.wikipedia.org/wiki/Counting_the_Cost"
-                                                title="Counting the Cost">Counting the Cost</a> <a href="https://www.gotquestions.org/count-the-cost.html">[1]</a></td>
+                                                title="Counting the Cost">Counting the Cost</a> <a
+                                                href="https://www.gotquestions.org/count-the-cost.html">[1]</a></td>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td><a class="external text"
