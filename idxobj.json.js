@@ -1,7 +1,7 @@
 var idxobj = {
     "./": [
         {
-            "idxobj.json.js": 98323
+            "idxobj.json.js": 99649
         },
         {
             "idxor.html": 1455
@@ -27,6 +27,11 @@ var idxobj = {
         },
         {
             "~$wwineskin_https.docx": 162
+        }
+    ],
+    "biblestudy/accc/childrenministry/2022-04": [
+        {
+            "strong_man.docx": 53569411
         }
     ],
     "biblestudy/accc/childrenministry/newcloth_https_files": [
@@ -398,7 +403,10 @@ var idxobj = {
     ],
     "biblestudy/my_papers/bible": [
         {
-            "parables.htm": 55092
+            "fruits.htm": 29214
+        },
+        {
+            "parables.htm": 57249
         }
     ],
     "biblestudy/my_papers/bible/js": [
@@ -407,6 +415,20 @@ var idxobj = {
         },
         {
             "jq_tablesorter.js": 142134
+        }
+    ],
+    "biblestudy/my_papers/docs": [
+        {
+            "Spirit_Soul.docx": 33218
+        },
+        {
+            "Spirit_Soul.pdf": 145057
+        },
+        {
+            "aboutCUV-englishnames_version.docx": 21094
+        },
+        {
+            "aboutCUV-englishnames_version.pdf": 52986
         }
     ],
     "biblestudy/my_papers/fg-east2": [
@@ -689,29 +711,70 @@ var idxobj = {
     ],
     "thesis": [],
     "thesis/weid": [],
-    "thesis/weid/docs": [
-        {
-            "HowToDecipherOBI.docx": 11677
-        }
-    ],
+    "thesis/weid/docs": [],
     "thesis/weid/docs/How2Decipher": [
         {
-            "CobiHandbookforChrist_EvidenceOfShamanism.docx": 2780965
+            "--.docx": 2780965
         },
         {
-            "HandbookofOBI_ShamanicCodeOfGospel.docx": 3263206
+            "HandbookofOBI_ShamanicCodeOfGospel.docx": 3313292
         },
         {
             "HandbookofOBI_ShamanicCodeOfGospel.htm": 3
         },
         {
-            "HowToDecipherOBI.docx": 2776779
+            "HowToDecipherOBI.docx": 2795133
+        },
+        {
+            "Plan.docx": 18866
+        },
+        {
+            "PurposeOfOBI.docx": 22450
         },
         {
             "references.htm": 3
         },
         {
+            "~$ndbookofOBI_ShamanicCodeOfGospel.docx": 162
+        },
+        {
             "~$wToDecipherOBI.docx": 162
+        }
+    ],
+    "thesis/weid/docs/How2Decipher/ref": [
+        {
+            "HougangAnyang.pdf": 1203852
+        },
+        {
+            "ZhangContinuityandRupture.htm": 19303
+        },
+        {
+            "chang-kwang-chih-1.pdf": 593264
+        }
+    ],
+    "thesis/weid/docs/How2Decipher/ref/RoderickCampbell": [
+        {
+            "What_is_an_Ancestor_Memory_Power_and_Dea.pdf": 1176423
+        },
+        {
+            "What_is_an_Ancestor_Memory_Power_and_Dea.txt": 370
+        },
+        {
+            "What_is_an_Ancestor_Memory_Power_and_Dea_chapter5.png": 552356
+        }
+    ],
+    "thesis/weid/docs/How2Decipher/ref/shamanism_politics": [
+        {
+            "2022_shamanism01.png": 278711
+        },
+        {
+            "2022_shamanism02.png": 367548
+        },
+        {
+            "2022_shamanism03.png": 285276
+        },
+        {
+            "web.txt": 140
         }
     ],
     "thesis/weid/htmdoc": [],
