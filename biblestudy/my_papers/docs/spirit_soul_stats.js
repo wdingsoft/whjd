@@ -7,7 +7,7 @@
 
 
 
-var BlueLetter_Frq = {
+var BlueLetter_Frq_DB = {
     Ruah: {
         "Gen": 11,
         "Exo": 11,
@@ -314,7 +314,7 @@ var Stats_Viewer = {
         var fullView_Stats = this.FullView_Stats
 
         var theader = "<theader><tr><td></td><td></td>"
-        Object.keys(BlueLetter_Frq).forEach(function (keyword) {
+        Object.keys(BlueLetter_Frq_DB).forEach(function (keyword) {
             theader += `<th>${keyword}</th>`
         })
         theader += "</tr></theader>"
@@ -324,7 +324,7 @@ var Stats_Viewer = {
         var idx = 1
         Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
             var tr = `<tr><td>${idx++}</td><td>${book}</td>`
-            Object.keys(BlueLetter_Frq).forEach(function (keyword) {
+            Object.keys(BlueLetter_Frq_DB).forEach(function (keyword) {
                 var frq = fullView_Stats[keyword][book]
                 tr += `<td>${frq}</td>`
             })
@@ -336,5 +336,5 @@ var Stats_Viewer = {
     }
 }
 
-//Stats_Viewer.stats(BlueLetter_Frq)
+//Stats_Viewer.stats(BlueLetter_Frq_DB)
 //var tab = Stats_Viewer.output_table()
