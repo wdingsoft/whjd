@@ -300,12 +300,12 @@ var Stats_Viewer = {
     FullView_Stats: {},
     stats: function (key_words) {
         var fullView_Stats = this.FullView_Stats
-        Object.keys(key_words).forEach(function (keyName) {
-            fullView_Stats[keyName] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
-            var obj = key_words[keyName]
+        Object.keys(key_words).forEach(function (keyWord) {
+            fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
+            var obj = key_words[keyWord]
             Object.keys(obj).forEach(function (book) {
-                if (!fullView_Stats[keyName][book]) { alert(keyName + "=" + book) }
-                fullView_Stats[keyName][book] = obj[book]
+                if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
+                fullView_Stats[keyWord][book] = obj[book]
             })
         })
     },
