@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>...</title>
+    <base target="_blank" />
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+
+    <script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script>
+    <script src="./spirit_soul_stats.js">
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: lightblue;
+    }
+
+    .xsmallnote {
+        font-size: x-small;
+    }
+
+    .footnoteshow {
+        display: none;
+    }
+
+    .footoe {
+        text-decoration: underline;
+    }
+
+    .hili {
+        background-color: red;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+
+    <div id="out"></div>
+
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        Stats_Viewer.stats(BlueLetter_Frq)
+        var tab = Stats_Viewer.output_table()
+        $("#out").html(tab).find("td").on("click",function(){
+            $(this).toggleClass("hili")
+        })
+    })
+</script>
