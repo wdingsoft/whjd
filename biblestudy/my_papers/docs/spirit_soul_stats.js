@@ -42,7 +42,7 @@ var BlueLetter_Frq = {
         "Zec": 9,
         "Mal": 3,
     }
-    , 
+    ,
     Nefesh: {
         "Gen": 43,
         "Exo": 17,
@@ -77,7 +77,7 @@ var BlueLetter_Frq = {
         "Zec": 2,
     }
 
-    , 
+    ,
     Elohim: {
         "Gen": 219,
         "Exo": 139,
@@ -152,6 +152,33 @@ var BlueLetter_Frq = {
         "Hag": 35,
         "Zec": 132,
         "Mal": 46,
+    },
+    Adonai: {
+        "Gen": 72,
+        "Exo": 10,
+        "Num": 6,
+        "Deu": 3,
+        "Jdg": 7,
+        "Rth": 1,
+        "1Sa": 38,
+        "2Sa": 52,
+        "1Ki": 34,
+        "2Ki": 37,
+        "1Ch": 5,
+        "2Ch": 4,
+        "Ezr": 1,
+        "Neh": 1,
+        "Job": 1,
+        "Psa": 12,
+        "Pro": 4,
+        "Isa": 16,
+        "Jer": 6,
+        "Dan": 6,
+        "Amo": 1,
+        "Mic": 1,
+        "Zep": 1,
+        "Zec": 7,
+        "Mal": 3,
     }
 }
 
@@ -237,7 +264,7 @@ var Stats_Viewer = {
             fullView_Stats[keyName] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
             var obj = key_words[keyName]
             Object.keys(obj).forEach(function (book) {
-                if(!fullView_Stats[keyName][book] ){alert(keyName+"="+book)}
+                if (!fullView_Stats[keyName][book]) { alert(keyName + "=" + book) }
                 fullView_Stats[keyName][book] = obj[book]
             })
         })
@@ -246,15 +273,15 @@ var Stats_Viewer = {
     output_table: function () {
         var fullView_Stats = this.FullView_Stats
 
-        var theader="<theader><tr><td></td><td></td>"
+        var theader = "<theader><tr><td></td><td></td>"
         Object.keys(BlueLetter_Frq).forEach(function (keyword) {
             theader += `<th>${keyword}</th>`
         })
-        theader+="</tr></theader>"
+        theader += "</tr></theader>"
 
 
         var tab = `<table border='1'>${theader}<tbody>`
-        var idx=1
+        var idx = 1
         Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
             var tr = `<tr><td>${idx++}</td><td>${book}</td>`
             Object.keys(BlueLetter_Frq).forEach(function (keyword) {
@@ -262,9 +289,9 @@ var Stats_Viewer = {
                 tr += `<td>${frq}</td>`
             })
             tr += "</tr>"
-            tab+=tr
+            tab += tr
         })
-        tab+="</tbody></table>"
+        tab += "</tbody></table>"
         return tab;
     }
 }
