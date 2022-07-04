@@ -49,7 +49,7 @@
 </html>
 <script>
     $(function () {
-        Stats_Viewer.stats(BlueLetter_Frq_DB)
+        Stats_Viewer.Start(BlueLetter_Frq_DB)
         var tab = Stats_Viewer.output_table()
         $("#out").html(tab).find("td").on("click",function(){
             $(this).toggleClass("hili")

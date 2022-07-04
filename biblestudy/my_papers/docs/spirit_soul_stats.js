@@ -219,6 +219,68 @@ var BlueLetter_Frq_DB = {
         "Hag": 10,
         "Zec": 13,
         "Mal": 6,
+    },
+    Aba: {
+        "Gen": 208,
+        "Exo": 24,
+        "Lev": 25,
+        "Num": 85,
+        "Deu": 71,
+        "Jos": 35,
+        "Jdg": 54,
+        "Rth": 3,
+        "1Sa": 54,
+        "2Sa": 28,
+        "1Ki": 95,
+        "2Ki": 70,
+        "1Ch": 106,
+        "2Ch": 123,
+        "Ezr": 14,
+        "Neh": 20,
+        "Est": 3,
+        "Job": 9,
+        "Psa": 19,
+        "Pro": 26,
+        "Isa": 21,
+        "Jer": 63,
+        "Lam": 2,
+        "Eze": 27,
+        "Dan": 8,
+        "Hos": 1,
+        "Joe": 1,
+        "Amo": 2,
+        "Mic": 2,
+        "Zec": 7,
+        "Mal": 7,
+    },
+    Ama: {
+        "Gen": 26,
+        "Exo": 7,
+        "Lev": 15,
+        "Num": 2,
+        "Deu": 13,
+        "Jos": 3,
+        "Jdg": 20,
+        "Rth": 2,
+        "1Sa": 4,
+        "2Sa": 3,
+        "1Ki": 16,
+        "2Ki": 22,
+        "1Ch": 2,
+        "2Ch": 12,
+        "Est": 2,
+        "Job": 3,
+        "Psa": 12,
+        "Pro": 14,
+        "Ecc": 1,
+        "Sng": 7,
+        "Isa": 5,
+        "Jer": 9,
+        "Lam": 3,
+        "Eze": 10,
+        "Hos": 4,
+        "Mic": 1,
+        "Zec": 2,
     }
 }
 
@@ -298,7 +360,7 @@ var BlueLetterBibleCode_Stats_Init = {
 
 var Stats_Viewer = {
     FullView_Stats: {},
-    stats: function (key_words) {
+    Start: function (key_words) {
         var fullView_Stats = this.FullView_Stats
         Object.keys(key_words).forEach(function (keyWord) {
             fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
@@ -336,5 +398,5 @@ var Stats_Viewer = {
     }
 }
 
-//Stats_Viewer.stats(BlueLetter_Frq_DB)
+//Stats_Viewer.Start(BlueLetter_Frq_DB)
 //var tab = Stats_Viewer.output_table()
