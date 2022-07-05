@@ -355,50 +355,130 @@ var BlueLetterBibleCode_Stats_Init = {
     "Rev": [],//     "Rev": "Rev",
 };//BookChapterVerseMax
 
+var BookTotWords = {
+    "Gen": 19212,
+    "Exo": 15496,
+    "Lev": 10941,
+    "Num": 15428,
+    "Deu": 13367,
+    "Jos": 9138,
+    "Jdg": 9073,
+    "Rth": 1214,
+    "1Sa": 12241,
+    "2Sa": 10112,
+    "1Ki": 12081,
+    "2Ki": 11109,
+    "1Ch": 10245,
+    "2Ch": 12251,
+    "Ezr": 3636,
+    "Neh": 5051,
+    "Est": 2775,
+    "Job": 8240,
+    "Psa": 19791,
+    "Pro": 6998,
+    "Ecc": 2811,
+    "Sng": 1259,
+    "Isa": 16452,
+    "Jer": 19882,
+    "Lam": 1554,
+    "Eze": 17815,
+    "Dan": 5766,
+    "Hos": 2308,
+    "Joe": 664,
+    "Amo": 1917,
+    "Oba": 270,
+    "Jon": 632,
+    "Mic": 1355,
+    "Nah": 567,
+    "Hab": 665,
+    "Zep": 718,
+    "Hag": 530,
+    "Zec": 2945,
+    "Mal": 834,
+    "Mat": 19423,
+    "Mar": 12003,
+    "Luk": 20645,
+    "Jhn": 16523,
+    "Act": 19468,
+    "Rom": 7550,
+    "1Co": 7270,
+    "2Co": 4748,
+    "Gal": 2381,
+    "Eph": 2582,
+    "Phl": 1733,
+    "Col": 1678,
+    "1Ts": 1572,
+    "2Ts": 870,
+    "1Ti": 1707,
+    "2Ti": 1323,
+    "Tit": 705,
+    "Phm": 361,
+    "Heb": 5258,
+    "Jas": 1850,
+    "1Pe": 1790,
+    "2Pe": 1161,
+    "1Jn": 2248,
+    "2Jn": 258,
+    "3Jn": 234,
+    "Jud": 486,
+    "Rev": 10260
+}
 
 
 
 var Stats_Viewer = {
     FullView_Stats: {},
+    FullView_Total: {},
     Start: function (wordFrqsDb) {
         var fullView_Stats = this.FullView_Stats
         Object.keys(wordFrqsDb).forEach(function (keyWord) {
             fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
             var obj = wordFrqsDb[keyWord]
+            Stats_Viewer.FullView_Total[keyWord] = 0
             Object.keys(obj).forEach(function (book) {
                 if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
                 fullView_Stats[keyWord][book] = obj[book]
+                Stats_Viewer.FullView_Total[keyWord] += obj[book]
             })
-        });/////////////
+        });;;;/////////////
 
     },
 
-    Tot:function(db){
+    Tot: function (db) {
 
     },
 
-    output_table: function () {
+    output_table: function (caption, bkTot) {
         var fullView_Stats = this.FullView_Stats
 
         var theader = "<theader><tr><td></td><td></td>"
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             theader += `<th>${keyword}</th>`
         })
-        theader += "</tr></theader>"
+        theader += "</tr><tr><td></td><td></td>"
+        Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
+            theader += `<th>${Stats_Viewer.FullView_Total[keyword]}</th>`
+        })
+        theader += "</tr>"
+
+        "</theader>"
 
 
-        var tab = `<table border='1'>${theader}<tbody>`
+        var tab = `<caption>${caption}</caption>${theader}<tbody>`
         var idx = 1
         Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
             var tr = `<tr><td>${idx++}</td><td>${book}</td>`
             Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
                 var frq = fullView_Stats[keyword][book]
+                if (bkTot) {
+                    frq = (frq * 100 / bkTot[book]).toFixed(2,2)
+                }
                 tr += `<td>${frq}</td>`
             })
             tr += "</tr>"
             tab += tr
         })
-        tab += "</tbody></table>"
+        tab += "</tbody>"
         return tab;
     }
 }

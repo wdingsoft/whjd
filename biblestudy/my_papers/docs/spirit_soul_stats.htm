@@ -41,7 +41,12 @@
 
 <body>
 
-    <div id="out"></div>
+    <table border="1" id="out1" style="float:left">
+        <caption>Frq</caption>
+    </table>
+    <table border="1" id="out2">
+        <caption>frq rate (%)</caption>
+    </table>
 
 
 </body>
@@ -50,8 +55,14 @@
 <script>
     $(function () {
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab = Stats_Viewer.output_table()
-        $("#out").html(tab).find("td").on("click",function(){
+        var tab = Stats_Viewer.output_table("Word Frq")
+        $("#out1").html(tab).find("td").on("click", function () {
+            $(this).toggleClass("hili")
+        })
+
+        Stats_Viewer.Start(BlueLetter_WordFrq_DB)
+        var tab2 = Stats_Viewer.output_table("Word Frq Rate (%)",BookTotWords)
+        $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili")
         })
     })
