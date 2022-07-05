@@ -451,7 +451,7 @@ var Stats_Viewer = {
     output_table: function (caption, bkTot) {
         var fullView_Stats = this.FullView_Stats
 
-        var theader = "<theader><tr><td></td><td></td><td>Tot</td>"
+        var theader = "<theader><tr><td>#</td><td>Book</td><td>TotWords</td>"
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             theader += `<th>${keyword}</th>`
         })
@@ -467,14 +467,14 @@ var Stats_Viewer = {
         var tab = `<caption>${caption}</caption>${theader}<tbody>`
         var idx = 1
         Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
-            var tr = `<tr><td>${idx++}</td><td>${book}</td><td>${BookTotWords[book]}</td>`
+            var tr = `<tr><td>${idx++}</td><td class='bkid'>${book}</td><td>${BookTotWords[book]}</td>`
             Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
                 var frq = fullView_Stats[keyword][book]
                 if (bkTot) {
                     frq = (frq * 100 / bkTot[book]).toFixed(2, 2)
                     if (frq <= 0) frq = ""
                 }
-                tr += `<td>${frq}</td>`
+                tr += `<td class='frqval'>${frq}</td>`
             })
             tr += "</tr>"
             tab += tr

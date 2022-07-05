@@ -19,11 +19,16 @@
     .hili {
         background-color: red;
     }
+    .frqval{
+        background: lightyellow;
+    }
 
     table {
         margin-left: 10px;
         margin-right: 10px;
-    
+    }
+    th, .bkid{
+        background-color: gray;
     }
 </style>
 
@@ -45,13 +50,13 @@
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
         var tab = Stats_Viewer.output_table("Word Frq")
         $("#out1").html(tab).find("td").on("click", function () {
-            $(this).toggleClass("hili")
+            $(this).toggleClass("hili frqval")
         })
 
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab2 = Stats_Viewer.output_table("Word Frq Rate (%)",BookTotWords)
+        var tab2 = Stats_Viewer.output_table("Word Frq Percentage Rate (%)",BookTotWords)
         $("#out2").html(tab2).find("td").on("click", function () {
-            $(this).toggleClass("hili")
+            $(this).toggleClass("hili frqval")
         })
     })
 </script>
