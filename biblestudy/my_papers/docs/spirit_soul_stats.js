@@ -360,16 +360,21 @@ var BlueLetterBibleCode_Stats_Init = {
 
 var Stats_Viewer = {
     FullView_Stats: {},
-    Start: function (key_words) {
+    Start: function (wordFrqsDb) {
         var fullView_Stats = this.FullView_Stats
-        Object.keys(key_words).forEach(function (keyWord) {
+        Object.keys(wordFrqsDb).forEach(function (keyWord) {
             fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
-            var obj = key_words[keyWord]
+            var obj = wordFrqsDb[keyWord]
             Object.keys(obj).forEach(function (book) {
                 if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
                 fullView_Stats[keyWord][book] = obj[book]
             })
-        })
+        });/////////////
+
+    },
+
+    Tot:function(db){
+
     },
 
     output_table: function () {
