@@ -451,7 +451,7 @@ var Stats_Viewer = {
     output_table: function (caption, bkTot) {
         var fullView_Stats = this.FullView_Stats
 
-        var theader = "<theader><tr><td>#</td><td>Book</td><td>TotWords</td>"
+        var theader = "<thead><tr><td>#</td><td>Book</td><td>TotWords</td>"
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             theader += `<th>${keyword}</th>`
         })
@@ -459,9 +459,7 @@ var Stats_Viewer = {
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             theader += `<th>x${Stats_Viewer.FullView_Total[keyword]}</th>`
         })
-        theader += "</tr>"
-
-        "</theader>"
+        theader += "</tr></thead>"
 
 
         var tab = `<caption>${caption}</caption>${theader}<tbody>`

@@ -19,7 +19,8 @@
     .hili {
         background-color: red;
     }
-    .frqval{
+
+    .frqval {
         background: lightyellow;
     }
 
@@ -27,7 +28,9 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    th, .bkid{
+
+    th,
+    .bkid {
         background-color: gray;
     }
 </style>
@@ -35,10 +38,8 @@
 <body>
 
     <table border="1" id="out1" style="float:left">
-        <caption>Frq</caption>
     </table>
     <table border="1" id="out2">
-        <caption>frq rate (%)</caption>
     </table>
 
 
@@ -54,9 +55,25 @@
         })
 
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab2 = Stats_Viewer.output_table("Word Frq Percentage Rate (%)",BookTotWords)
+        var tab2 = Stats_Viewer.output_table("Word Frq Percentage Rate (%)", BookTotWords)
         $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
+        })
+
+
+        $("thead tr th").on("click", function () {
+            var idx = $(this).index()
+            //alert(idx)
+            var vemax = null, colmax = -1
+            $(this).parentsUntil("table").parent().find("tbody tr").each(function () {
+                var ve = $(this).find(`td:eq(${idx})`)
+                var val = parseFloat($(ve).text())
+                if (val >= colmax) {
+                    colmax = val
+                    vemax = ve
+                }
+            })
+            $(vemax).toggleClass("hili frqval")
         })
     })
 </script>
