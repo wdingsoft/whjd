@@ -471,7 +471,8 @@ var Stats_Viewer = {
             Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
                 var frq = fullView_Stats[keyword][book]
                 if (bkTot) {
-                    frq = (frq * 100 / bkTot[book]).toFixed(2,2)
+                    frq = (frq * 100 / bkTot[book]).toFixed(2, 2)
+                    if (frq <= 0) frq = ""
                 }
                 tr += `<td>${frq}</td>`
             })
