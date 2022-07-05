@@ -457,7 +457,7 @@ var Stats_Viewer = {
         })
         theader += "</tr><tr><td></td><td></td><td></td>"
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
-            theader += `<th>${Stats_Viewer.FullView_Total[keyword]}</th>`
+            theader += `<th>x${Stats_Viewer.FullView_Total[keyword]}</th>`
         })
         theader += "</tr>"
 
