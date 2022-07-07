@@ -78,9 +78,11 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
 
     var word_booksRate = this.KeyWord_BooksRat
 
-    var chart_booksValarr =  Array(Object.keys(BlueLetterBibleCode_Stats_Init).length).fill(0);
+    var arow = Array(1 + Object.keys(word_booksRate).length).fill(0);
+
+    var chart_booksValarr = Array(Object.keys(BlueLetterBibleCode_Stats_Init).length).fill(0);
     for (var i = 0; i < chart_booksValarr.length; i++) {
-        chart_booksValarr[i] =  Array(1 + Object.keys(word_booksRate).length).fill(0);
+        chart_booksValarr[i] = JSON.parse(JSON.stringify(arow))
         chart_booksValarr[i][0] = i
     }
 
@@ -95,6 +97,8 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
         })
 
     });;;;/////////////
+
+    //chart_booksValarr.unshift(arow)
 
     return chart_booksValarr
 }
