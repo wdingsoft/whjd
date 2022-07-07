@@ -355,7 +355,7 @@ var BlueLetterBibleCode_Stats_Init = {
     "Rev": [],//     "Rev": "Rev",
 };//BookChapterVerseMax
 
-var BookTotWords = {
+var BooksTotalWords = {
     "Gen": 19212,
     "Exo": 15496,
     "Lev": 10941,

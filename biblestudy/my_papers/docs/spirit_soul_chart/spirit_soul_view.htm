@@ -118,7 +118,7 @@
         })
 
         tabvw.Set(BlueLetter_WordFrq_DB)
-        var tab2 = tabvw.output_table("Hebrew Word Frquency Percentage Rate (%)", BookTotWords)
+        var tab2 = tabvw.output_table("Hebrew Word Frquency Percentage Rate (%)", true)
         $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
