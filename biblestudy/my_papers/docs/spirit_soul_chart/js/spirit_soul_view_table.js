@@ -74,14 +74,24 @@ Stats_Viewer.prototype.output_table = function (caption, bRate) {
 
 
 Stats_Viewer.prototype.output_chart_data = function (wordFrqsDb) {
-    var word_booksRate = this.KeyWord_BooksRat
-    var chart_booksValarr = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
+
+    var word_booksRate = this.KeyWord_BooksFrq
+
+    var chart_booksValarr = new Array(Object.keys(BlueLetterBibleCode_Stats_Init).length);
+    for (var i = 0; i < chart_booksValarr.length; i++) {
+        chart_booksValarr[i] = new Array(1 + Object.keys(word_booksRate).length);
+        chart_booksValarr[i][0] = i
+    }
+
+    var icol = 0
     Object.keys(word_booksRate).forEach(function (keyWord) {
         var obj = word_booksRate[keyWord]
         var idx = 0
+        icol++
         Object.keys(obj).forEach(function (book) {
-            chart_booksValarr[idx++].push(obj[book])
+            chart_booksValarr[idx++][icol] = parseInt(obj[book])
         })
+       
     });;;;/////////////
 
     return chart_booksValarr
