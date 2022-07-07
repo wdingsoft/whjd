@@ -17,6 +17,9 @@
     }
 
     .hili {
+        background-color: lightgreen;
+    }
+    .mark {
         background-color: red;
     }
 
@@ -39,18 +42,22 @@
     <div>
         <ol>
             <li>
-                Genesis is of both the most frquency and the highest perectage rate on Hebrew 'Aba' (father). It reminds readers to think in a biological and social perspective: who and what the
+                Genesis is of both the most frquency and the highest perectage rate on Hebrew 'Aba' (father). It reminds
+                readers to think in a biological and social perspective: who and what the
                 true father is, which is consistent with the main theme of the book in the beginning (Genesis).
             </li>
             <li>
-                Deutoronomy is of both the most frquency and the highest percetage rate on Hebrew "Elohim" (God). It reiterate that it is  God who is the one
+                Deutoronomy is of both the most frquency and the highest percetage rate on Hebrew "Elohim" (God). It
+                reiterate that it is God who is the one
                 readers must remember while knowing the father.
             </li>
             <li>
-                2Sa is of the highest percentage rate of Hebrew 'Adonai' (Lord). It reminds people to rethink who the Lord is in the book.
+                2Sa is of the highest percentage rate of Hebrew 'Adonai' (Lord). It reminds people to rethink who the
+                Lord is in the book.
             </li>
             <li>
-                1Ch is of both the most frquency and the highest percentage rate of Hebrew 'Ben' (Son). It infers that the chronical is about the
+                1Ch is of both the most frquency and the highest percentage rate of Hebrew 'Ben' (Son). It infers that
+                the chronical is about the
                 descendants of Israel rather than kings -- how they fell and how Jesus came.
             </li>
             <li>
@@ -66,8 +73,8 @@
                 mother while it is about the femal love.
             </li>
             <li>
-                Hag is of the highest percentage rate of Hebrew 'Yhwy' (the Lord). It is a good book to better
-                understand the meaning of 'Yhwy'.
+                Haggai is of the highest percentage rate of Hebrew 'Yhwy' (the Lord). It is a good book to better
+                understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with 'words' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more like a doer, which is consistent with the roles in Gen2:1-26.
             </li>
         </ol>
     </div>
@@ -76,6 +83,19 @@
     </table>
     <table border="1" id="out2">
     </table>
+    <div>
+        <p>
+            Notes:
+        </p>
+        <ol>
+            <li>
+                Hebrew Word Frequency is from www.blueletter.org.
+            </li>
+            <li>
+                Total Words Count is calucated from Hebrew Scripture and Greek Scripture.
+            </li>
+        </ol>
+    </div>
 
 
 
@@ -86,31 +106,37 @@
 <script>
     $(function () {
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab = Stats_Viewer.output_table("Word Frq")
+        var tab = Stats_Viewer.output_table("Hebrew Word Frquency")
         $("#out1").html(tab).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
 
         Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab2 = Stats_Viewer.output_table("Word Frq Percentage Rate (%)", BookTotWords)
+        var tab2 = Stats_Viewer.output_table("Hebrew Word Frquency Percentage Rate (%)", BookTotWords)
         $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
 
 
-        $("thead tr th").on("click", function () {
-            var idx = $(this).index()
-            //alert(idx)
-            var vemax = null, colmax = -1
-            $(this).parentsUntil("table").parent().find("tbody tr").each(function () {
-                var ve = $(this).find(`td:eq(${idx})`)
-                var val = parseFloat($(ve).text())
-                if (val >= colmax) {
-                    colmax = val
-                    vemax = ve
-                }
-            })
-            $(vemax).toggleClass("hili frqval")
+
+
+        $("table tbody").each(function () {
+            for (var colidx = 3; colidx <= 10; colidx++) {
+                mark_max_of_col(this, colidx)
+            }
         })
     })
+
+    function mark_max_of_col(etbody, colidx) {
+        var vemax = null, colmax = -1
+        $(etbody).find("tr").each(function () {
+            var ve = $(this).find(`td:eq(${colidx})`)
+            var val = parseFloat($(ve).text())
+            if (val >= colmax) {
+                colmax = val
+                vemax = ve
+            }
+        })
+        $(vemax).toggleClass("mark frqval")
+    }
 </script>
