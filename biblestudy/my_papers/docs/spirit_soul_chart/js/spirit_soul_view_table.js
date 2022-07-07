@@ -34,11 +34,9 @@ Stats_Viewer.prototype.Set = function (wordFrqsDb) {
     this.KeyWord_BooksSum = fullView_Total;
 };
 
-Stats_Viewer.prototype.output_table = function (caption, bkTot) {
-    var fullView_Stats = this.KeyWord_BooksFrq
+Stats_Viewer.prototype.output_dat2table = function (caption, key_booksval) {
     var fullView_Total = this.KeyWord_BooksSum
-    var fullView_Rates = this.KeyWord_BooksRat
-
+   
     var theader = "<thead><tr><td>#</td><td>Book</td><td>TotWords</td>"
     Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
         theader += `<th>${keyword}</th>`
@@ -55,11 +53,8 @@ Stats_Viewer.prototype.output_table = function (caption, bkTot) {
     Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
         var tr = `<tr><td>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
-            var frq = fullView_Stats[keyword][book]
-            if (bkTot) {
-                frq = fullView_Rates[keyword][book]
-                if (frq <= 0) frq = ""
-            }
+            var frq = key_booksval[keyword][book]
+            if (frq <= 0) frq = ""
             tr += `<td class='frqval'>${frq}</td>`
         })
         tr += "</tr>"
@@ -69,6 +64,12 @@ Stats_Viewer.prototype.output_table = function (caption, bkTot) {
     return tab;
 }
 
-
+Stats_Viewer.prototype.output_table = function (caption, bRate) {
+    var tab = this.output_dat2table(caption, this.KeyWord_BooksFrq)
+    if(bRate){
+        tab = this.output_dat2table(caption, this.KeyWord_BooksRat)
+    }
+    return tab
+}
 //Stats_Viewer.Start(BlueLetter_WordFrq_DB)
 //var tab = Stats_Viewer.output_table()
