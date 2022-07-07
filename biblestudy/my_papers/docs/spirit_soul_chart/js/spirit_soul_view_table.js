@@ -6,11 +6,11 @@
 
 
 
-var Stats_Viewer = function () {
+var DatViewerApp = function () {
 
 }
 
-Stats_Viewer.prototype.Set = function (wordFrqsDb) {
+DatViewerApp.prototype.Set = function (wordFrqsDb) {
     var fullView_Stats = {}
     var fullView_Total = {}
     var fullView_Rates = {}
@@ -34,7 +34,7 @@ Stats_Viewer.prototype.Set = function (wordFrqsDb) {
     this.KeyWord_BooksSum = fullView_Total;
 };
 
-Stats_Viewer.prototype.output_dat2table = function (caption, key_booksval) {
+DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var fullView_Total = this.KeyWord_BooksSum
 
     var theader = "<thead><tr><td>#</td><td>Book</td><td>TotWords</td>"
@@ -64,7 +64,7 @@ Stats_Viewer.prototype.output_dat2table = function (caption, key_booksval) {
     return tab;
 }
 
-Stats_Viewer.prototype.output_table = function (caption, bRate) {
+DatViewerApp.prototype.output_table = function (caption, bRate) {
     var tab = this.output_dat2table(caption, this.KeyWord_BooksFrq)
     if (bRate) {
         tab = this.output_dat2table(caption, this.KeyWord_BooksRat)
@@ -74,7 +74,7 @@ Stats_Viewer.prototype.output_table = function (caption, bRate) {
 
 
 
-Stats_Viewer.prototype.output_chart_data = function (cbf) {
+DatViewerApp.prototype.output_chart_data = function (cbf) {
 
     var word_booksRate = this.KeyWord_BooksRat
 
@@ -99,7 +99,7 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
     return chart_booksValarr
 }
 
-Stats_Viewer.prototype.output_chart_sel = function (icolary, cbf) {
+DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
     var nameAr = Object.keys(this.KeyWord_BooksRat)
     icolary.forEach(function (val, k) {
         if (cbf) cbf(nameAr[val])
@@ -121,5 +121,5 @@ Stats_Viewer.prototype.output_chart_sel = function (icolary, cbf) {
     return retary
 }
 
-//Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-//var tab = Stats_Viewer.output_table()
+//DatViewerApp.Start(BlueLetter_WordFrq_DB)
+//var tab = DatViewerApp.output_table()

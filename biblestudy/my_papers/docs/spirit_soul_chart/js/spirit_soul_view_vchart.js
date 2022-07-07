@@ -1,6 +1,6 @@
 function gen_chart(eid, icol) {
 
-    var tabvw = new Stats_Viewer();
+    var tabvw = new DatViewerApp();
     tabvw.Set(BlueLetter_WordFrq_DB)
 
 
