@@ -37,11 +37,20 @@ DatViewerApp.prototype.Set = function (wordFrqsDb) {
 DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var fullView_Total = this.KeyWord_BooksSum
 
-    var theader = "<thead><tr><td>#</td><td>Book</td><td>TotWords</td>"
+    var theader = "<thead>"
+    
+    theader += "<tr><td>idx</td><td></td><td></td>"
+    Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword, icol) {
+        theader += `<th>${icol}</th>`
+    })
+
+    theader += "<tr><td></td><td>Book</td><td>Hebrew</td>"
     Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
         theader += `<th>${keyword}</th>`
     })
-    theader += "</tr><tr><td></td><td></td><td></td>"
+
+
+    theader += "</tr><tr><td></td><td></td><td>TotWords</td>"
     Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
         theader += `<th>x${fullView_Total[keyword]}</th>`
     })
