@@ -90,7 +90,7 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
         var idx = 0
         icol++
         Object.keys(obj).forEach(function (book) {
-            chart_booksValarr[idx++][icol] = (obj[book] * 100)
+            chart_booksValarr[idx++][icol] = parseInt(obj[book] * 10000)
         })
 
     });;;;/////////////
@@ -98,16 +98,23 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
     return chart_booksValarr
 }
 
-Stats_Viewer.prototype.output_chart_sel = function (icol, cbf) {
-    var name = Object.keys(this.KeyWord_BooksRat)[icol]
-    if (cbf) cbf(name)
+Stats_Viewer.prototype.output_chart_sel = function (icolary, cbf) {
+    var nameAr = Object.keys(this.KeyWord_BooksRat)
+    icolary.forEach(function (val, k) {
+        if (cbf) cbf(nameAr[val])
+    })
 
     var chart_booksValarr = this.output_chart_data()
 
     var retary = []
     for (var idx = 0; idx < 39; idx++) {
-        var val = chart_booksValarr[idx][1+icol]
-        var ar = [idx, val];
+        var ary = chart_booksValarr[idx]
+
+        var ar = [];
+        ar[0] = ary[0]
+        icolary.forEach(function (icol, k) {
+            ar.push(ary[1 + icol])
+        })
         retary.push(ar)
     }
     return retary
