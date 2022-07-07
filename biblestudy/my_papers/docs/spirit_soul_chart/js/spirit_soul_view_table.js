@@ -73,9 +73,9 @@ Stats_Viewer.prototype.output_table = function (caption, bRate) {
 }
 
 
-Stats_Viewer.prototype.output_chart_data = function (wordFrqsDb) {
+Stats_Viewer.prototype.output_chart_data = function (cbf) {
 
-    var word_booksRate = this.KeyWord_BooksFrq
+    var word_booksRate = this.KeyWord_BooksRat
 
     var chart_booksValarr = new Array(Object.keys(BlueLetterBibleCode_Stats_Init).length);
     for (var i = 0; i < chart_booksValarr.length; i++) {
@@ -85,11 +85,12 @@ Stats_Viewer.prototype.output_chart_data = function (wordFrqsDb) {
 
     var icol = 0
     Object.keys(word_booksRate).forEach(function (keyWord) {
+        if(cbf) cbf(keyWord)
         var obj = word_booksRate[keyWord]
         var idx = 0
         icol++
         Object.keys(obj).forEach(function (book) {
-            chart_booksValarr[idx++][icol] = parseInt(obj[book])
+            chart_booksValarr[idx++][icol] = (obj[book]*100)
         })
        
     });;;;/////////////
