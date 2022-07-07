@@ -99,14 +99,14 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
 }
 
 Stats_Viewer.prototype.output_chart_sel = function (icol, cbf) {
-    var name = this.KeyWord_BooksRat[icol]
+    var name = Object.keys(this.KeyWord_BooksRat)[icol]
     if (cbf) cbf(name)
 
     var chart_booksValarr = this.output_chart_data()
 
     var retary = []
     for (var idx = 0; idx < 39; idx++) {
-        var val = chart_booksValarr[idx][icol]
+        var val = chart_booksValarr[idx][1+icol]
         var ar = [idx, val];
         retary.push(ar)
     }
