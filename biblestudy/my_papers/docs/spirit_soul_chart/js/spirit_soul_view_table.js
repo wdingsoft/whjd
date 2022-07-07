@@ -85,17 +85,33 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
 
     var icol = 0
     Object.keys(word_booksRate).forEach(function (keyWord) {
-        if(cbf) cbf(keyWord)
+        if (cbf) cbf(keyWord)
         var obj = word_booksRate[keyWord]
         var idx = 0
         icol++
         Object.keys(obj).forEach(function (book) {
-            chart_booksValarr[idx++][icol] = (obj[book]*100)
+            chart_booksValarr[idx++][icol] = (obj[book] * 100)
         })
-       
+
     });;;;/////////////
 
     return chart_booksValarr
 }
+
+Stats_Viewer.prototype.output_chart_sel = function (icol, cbf) {
+    var name = this.KeyWord_BooksRat[icol]
+    if (cbf) cbf(name)
+
+    var chart_booksValarr = this.output_chart_data()
+
+    var retary = []
+    for (var idx = 0; idx < 39; idx++) {
+        var val = chart_booksValarr[idx][icol]
+        var ar = [idx, val];
+        retary.push(ar)
+    }
+    return retary
+}
+
 //Stats_Viewer.Start(BlueLetter_WordFrq_DB)
 //var tab = Stats_Viewer.output_table()
