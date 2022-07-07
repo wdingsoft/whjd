@@ -112,20 +112,19 @@
     $(function () {
         var tabvw = new Stats_Viewer();
         tabvw.Set(BlueLetter_WordFrq_DB)
+
         var tab = tabvw.output_table("Hebrew Word Frquency")
         $("#out1").html(tab).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
 
-        tabvw.Set(BlueLetter_WordFrq_DB)
         var tab2 = tabvw.output_table("Hebrew Word Frquency Percentage Rate (%)", true)
         $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
 
 
-
-
+        //////////////
         $("table tbody").each(function () {
             for (var colidx = 3; colidx <= 10; colidx++) {
                 mark_max_of_col(this, colidx)
