@@ -7,8 +7,8 @@
 
 
 var Stats_Viewer = function () {
-    this.FullView_Stats = {};
-    this.FullView_Total = {};
+    this.KeyWord_BooksFrq = {};
+    this.KeyWord_BooksTot = {};
 }
 
 Stats_Viewer.prototype.Set = function (wordFrqsDb) {
@@ -25,13 +25,13 @@ Stats_Viewer.prototype.Set = function (wordFrqsDb) {
         })
     });;;;/////////////
 
-    this.FullView_Stats = fullView_Stats;
-    this.FullView_Total = fullView_Total;
+    this.KeyWord_BooksFrq = fullView_Stats;
+    this.KeyWord_BooksTot = fullView_Total;
 };
 
 Stats_Viewer.prototype.output_table = function (caption, bkTot) {
-    var fullView_Stats = this.FullView_Stats
-    var fullView_Total = this.FullView_Total
+    var fullView_Stats = this.KeyWord_BooksFrq
+    var fullView_Total = this.KeyWord_BooksTot
 
     var theader = "<thead><tr><td>#</td><td>Book</td><td>TotWords</td>"
     Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
