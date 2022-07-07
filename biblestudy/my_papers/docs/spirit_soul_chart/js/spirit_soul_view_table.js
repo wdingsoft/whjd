@@ -73,6 +73,7 @@ Stats_Viewer.prototype.output_table = function (caption, bRate) {
 }
 
 
+
 Stats_Viewer.prototype.output_chart_data = function (cbf) {
 
     var word_booksRate = this.KeyWord_BooksRat

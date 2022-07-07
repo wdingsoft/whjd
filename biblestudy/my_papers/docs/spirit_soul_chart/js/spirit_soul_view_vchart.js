@@ -46,7 +46,7 @@ function gen_chart(eid, icol) {
                 title: 'The Index of the Book in the OT'
             },
             vAxis: {
-                title: 'The Hebrew Frequency Rate'
+                title: 'The Hebrew Frequency Rate (1000 %)'
             },
             series: {
                 1: { curveType: 'function' }

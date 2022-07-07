@@ -127,6 +127,26 @@
 </html>
 <script>
     $(function () {
+        init_table()
+        init_chart()
+    })
+
+
+
+    function init_table() {
+        function mark_max_of_col(etbody, colidx) {
+            var vemax = null, colmax = -1
+            $(etbody).find("tr").each(function () {
+                var ve = $(this).find(`td:eq(${colidx})`)
+                var val = parseFloat($(ve).text())
+                if (val >= colmax) {
+                    colmax = val
+                    vemax = ve
+                }
+            })
+            $(vemax).toggleClass("mark frqval")
+        }
+
         var tabvw = new Stats_Viewer();
         tabvw.Set(BlueLetter_WordFrq_DB)
 
@@ -147,33 +167,21 @@
                 mark_max_of_col(this, colidx)
             }
         })
-    })
-
-    function mark_max_of_col(etbody, colidx) {
-        var vemax = null, colmax = -1
-        $(etbody).find("tr").each(function () {
-            var ve = $(this).find(`td:eq(${colidx})`)
-            var val = parseFloat($(ve).text())
-            if (val >= colmax) {
-                colmax = val
-                vemax = ve
-            }
-        })
-        $(vemax).toggleClass("mark frqval")
     }
 
 
 
 
+    function init_chart() {
+        gen_chart("chart_div", [0, 1, 2, 3, 4, 5, 6, 7])
 
-    gen_chart("chart_div", [0, 1, 2, 3, 4, 5, 6, 7])
-
-    gen_chart("chart_div0", [0])
-    gen_chart("chart_div1", [1])
-    gen_chart("chart_div2", [2])
-    gen_chart("chart_div3", [3])
-    gen_chart("chart_div4", [4])
-    gen_chart("chart_div5", [5])
-    gen_chart("chart_div6", [6])
-    gen_chart("chart_div7", [7])
+        gen_chart("chart_div0", [0])
+        gen_chart("chart_div1", [1])
+        gen_chart("chart_div2", [2])
+        gen_chart("chart_div3", [3])
+        gen_chart("chart_div4", [4])
+        gen_chart("chart_div5", [5])
+        gen_chart("chart_div6", [6])
+        gen_chart("chart_div7", [7])
+    }
 </script>
