@@ -90,7 +90,7 @@ Stats_Viewer.prototype.output_chart_data = function (cbf) {
         var idx = 0
         icol++
         Object.keys(obj).forEach(function (book) {
-            chart_booksValarr[idx++][icol] = parseInt(obj[book] * 10000)
+            chart_booksValarr[idx++][icol] = parseInt(obj[book] * 1000)
         })
 
     });;;;/////////////

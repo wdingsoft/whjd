@@ -11,6 +11,11 @@
     </script>
     <script src="./js/spirit_soul_view_table.js">
     </script>
+    <script src="./js/spirit_soul_view_vchart.js">
+    </script>
+
+    <script type="text/javascript" src="./charts/loader.js"></script>
+
 </head>
 
 <style>
@@ -103,6 +108,18 @@
     </div>
 
 
+    <div id="chart_div" style="width: 900px; height: 800px"></div>
+
+
+    <div id="chart_div0" style="width: 900px; height: 200px"></div>
+    <div id="chart_div1" style="width: 900px; height: 200px"></div>
+    <div id="chart_div2" style="width: 900px; height: 200px"></div>
+    <div id="chart_div3" style="width: 900px; height: 200px"></div>
+    <div id="chart_div4" style="width: 900px; height: 200px"></div>
+    <div id="chart_div5" style="width: 900px; height: 200px"></div>
+    <div id="chart_div6" style="width: 900px; height: 200px"></div>
+    <div id="chart_div7" style="width: 900px; height: 200px"></div>
+    <div id="chart_div8" style="width: 900px; height: 200px"></div>
 
 
 </body>
@@ -144,4 +161,19 @@
         })
         $(vemax).toggleClass("mark frqval")
     }
+
+
+
+
+
+    gen_chart("chart_div", [0, 1, 2, 3, 4, 5, 6, 7])
+
+    gen_chart("chart_div0", [0])
+    gen_chart("chart_div1", [1])
+    gen_chart("chart_div2", [2])
+    gen_chart("chart_div3", [3])
+    gen_chart("chart_div4", [4])
+    gen_chart("chart_div5", [5])
+    gen_chart("chart_div6", [6])
+    gen_chart("chart_div7", [7])
 </script>
