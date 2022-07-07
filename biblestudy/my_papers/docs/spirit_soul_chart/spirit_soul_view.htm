@@ -110,14 +110,15 @@
 </html>
 <script>
     $(function () {
-        Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab = Stats_Viewer.output_table("Hebrew Word Frquency")
+        var tabvw = new Stats_Viewer();
+        tabvw.Set(BlueLetter_WordFrq_DB)
+        var tab = tabvw.output_table("Hebrew Word Frquency")
         $("#out1").html(tab).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
 
-        Stats_Viewer.Start(BlueLetter_WordFrq_DB)
-        var tab2 = Stats_Viewer.output_table("Hebrew Word Frquency Percentage Rate (%)", BookTotWords)
+        tabvw.Set(BlueLetter_WordFrq_DB)
+        var tab2 = tabvw.output_table("Hebrew Word Frquency Percentage Rate (%)", BookTotWords)
         $("#out2").html(tab2).find("td").on("click", function () {
             $(this).toggleClass("hili frqval")
         })
