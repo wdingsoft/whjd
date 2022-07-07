@@ -80,7 +80,7 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
 
     var arow = Array(1 + Object.keys(word_booksRate).length).fill(0);
 
-    var chart_booksValarr = Array(Object.keys(BlueLetterBibleCode_Stats_Init).length).fill(0);
+    var chart_booksValarr = Array(Object.keys(BlueLetterBibleCode_Stats_Init).length + 1).fill(0);
     for (var i = 0; i < chart_booksValarr.length; i++) {
         chart_booksValarr[i] = JSON.parse(JSON.stringify(arow))
         chart_booksValarr[i][0] = i
@@ -90,15 +90,13 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
     Object.keys(word_booksRate).forEach(function (keyWord) {
         if (cbf) cbf(keyWord)
         var obj = word_booksRate[keyWord]
-        var idx = 0
+        var idx = 1
         icol++
         Object.keys(obj).forEach(function (book) {
             chart_booksValarr[idx++][icol] = parseInt(obj[book] * 1000)
         })
 
     });;;;/////////////
-
-    //chart_booksValarr.unshift(arow)
 
     return chart_booksValarr
 }
@@ -112,7 +110,7 @@ DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
     var chart_booksValarr = this.output_chart_data()
 
     var retary = []
-    for (var idx = 0; idx < 39; idx++) {
+    for (var idx = 0; idx <= 40; idx++) {
         var ary = chart_booksValarr[idx]
 
         var ar = [];
