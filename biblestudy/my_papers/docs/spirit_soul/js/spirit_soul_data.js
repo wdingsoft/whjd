@@ -3,20 +3,20 @@
 
 
 var Hebrew_Vocabulary = {
-    Ruah: ["Spirit", "רוּחַ"],
-    Nefesh: ["Soul", "נֶפֶשׁ"],
+    Ruah: ["Spirit", "רוּחַ", "x378"],
+    Nefesh: ["Soul", "נֶפֶשׁ", "x753"],
 
-    Elohim: ["God", "אֱלֹהִים"],
-    Yhwy: ["Yhwy", "יְהֹוָה"],
-    Adonai: ["Lord", "אָדוֹן"],
+    Elohim: ["God", "אֱלֹהִים", "x2,606"],
+    Yhwy: ["Yhwy", "יְהֹוָה", "x6,519"],
+    Adonai: ["Lord", "אָדוֹן", "x335"],
 
-    Ben: ["Son", "בֵּן"],
-    Bat: ["Daughter", "בַּת"],
-    Aba: ["Father", "אָב"],
-    Ama: ["Mother", "אֵם"],
+    Ben: ["Son", "בֵּן", "x4,906"],
+    Bat: ["Daughter", "בַּת", "x588"],
+    Aba: ["Father", "אָב", "x1,215"],
+    Ama: ["Mother", "אֵם", "x220"],
 
-    Layhav: ["Heart", "לֵבָב"],
-    Mehode: ["Strength", "מְאֹד"]
+    Layhav: ["Heart", "לֵבָב", "x252x"],
+    Mehode: ["Strength", "מְאֹד", "x299"]
 }
 
 
@@ -548,36 +548,36 @@ var TakeawayFrFrqRate = {
 
     "Gen": ["Aba", `It reminds
     readers to think in a biological and social perspective: who and what the
-    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`,""],
+    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`, ""],
 
     "Deu": ["Elohim", `It
     reiterate that it is God who is the one
-    readers must remember while knowing the father.`,""],
+    readers must remember while knowing the father.`, ""],
 
     "2Sa": ["Adonai", `It reminds people to rethink who the
-    Lord is in the book.`,""],
+    Lord is in the book.`, ""],
 
     "1Ch": ["Ben", `It infers that
     the chronical is about the
-    descendants of Israel rather than kings -- how they fell and how Jesus came.`,""],
+    descendants of Israel rather than kings -- how they fell and how Jesus came.`, ""],
 
     "Pro": ["Nefesh", `It infers that the proverbs is
-    about the soul rather than the wisdom or life on earth.`,""],
+    about the soul rather than the wisdom or life on earth.`, ""],
 
     "Ecc": ["Ruah", `It infers that the book is not
     about the vain and vexation of life but about the meaning of spirit.`,
-    "(1) The chart shows that Ruah and Nefesh are similar in curve -- they tend to be used together. (2) The chart shows a trend Ruah usage rate is getter higher and higher, but Nefesh has no significant nature.  "],
+        "(1) The chart shows that Ruah and Nefesh are similar in curve -- they tend to be used together. (2) The chart shows a trend Ruah usage rate is getter higher and higher, but Nefesh has no significant nature.  "],
 
     "Sng": ["Ama", `It refers that the book is related to
-    mother while it is about the femal love.`,""],
+    mother while it is about the femal love.`, ""],
 
 
-    "Lam": ["Bat", `It infers that sweep is part of nature of daughter.`,""],
+    "Lam": ["Bat", `It infers that sweep is part of nature of daughter.`, ""],
 
 
 
     "Hag": ["Yhwy", `It is a good book to better
     understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with
     'words' than 'yhwh' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
-    like a doer, which is consistent with the roles in Gen2:1-26.`,""],
+    like a doer, which is consistent with the roles in Gen2:1-26.`, ""],
 }

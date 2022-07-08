@@ -61,7 +61,7 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
 
     theader += "</tr><tr><td></td><td>Book</td><td>TotWords</td>"
     Object.keys(Hebrew_Vocabulary).forEach(function (keyword) {
-        theader += `<th>x${fullView_Total[keyword]}</th>`
+        theader += `<th title='${Hebrew_Vocabulary[keyword][2]}'>x${fullView_Total[keyword]}</th>`
     })
     theader += "</tr></thead>"
 
