@@ -548,7 +548,7 @@ var TakeawayFrFrqRate = {
 
     "Gen": `is of both the most frquency and the highest perectage rate on Hebrew 'Aba' (father). It reminds
     readers to think in a biological and social perspective: who and what the
-    true father is, which is consistent with the main theme of the book in the beginning (Genesis).`,
+    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`,
 
     "Deu": `is of both the most frquency and the highest percetage rate on Hebrew "Elohim" (God). It
     reiterate that it is God who is the one
