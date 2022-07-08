@@ -543,3 +543,36 @@ var BooksTotalWords = {
 
 
 
+
+var TakeawayFrFrqRate = {
+
+    "Gen": `is of both the most frquency and the highest perectage rate on Hebrew 'Aba' (father). It reminds
+    readers to think in a biological and social perspective: who and what the
+    true father is, which is consistent with the main theme of the book in the beginning (Genesis).`,
+
+    "Deu": `is of both the most frquency and the highest percetage rate on Hebrew "Elohim" (God). It
+    reiterate that it is God who is the one
+    readers must remember while knowing the father.`,
+
+    "2Sa": `is of the highest percentage rate of Hebrew 'Adonai' (Lord). It reminds people to rethink who the
+    Lord is in the book.`,
+
+    "1Ch": `is of both the most frquency and the highest percentage rate of Hebrew 'Ben' (Son). It infers that
+    the chronical is about the
+    descendants of Israel rather than kings -- how they fell and how Jesus came.`,
+
+    "Pro": `is of the highest percentage rate of Hebrew 'nefesh' (soul). It infers that the proverbs is
+    about the soul rather than the wisdom or life on earth.`,
+
+    "Ecc": `Ecclestiate is of the highest percentage rate of Hebrew 'ruah' (spirit). It infers that the book is not
+    about the vain and vexation of life but about the meaning of spirit.`,
+
+    "Sng": `is of the highest percentage rate of Hebrew 'Ama' (mother). It refers that the book is related to
+    mother while it is about the femal love.`,
+
+
+    "Hag": `is of the highest percentage rate of Hebrew 'Yhwy' (the Lord). It is a good book to better
+    understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with
+    'words' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
+    like a doer, which is consistent with the roles in Gen2:1-26.`,
+}
