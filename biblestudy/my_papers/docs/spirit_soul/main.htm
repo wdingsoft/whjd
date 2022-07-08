@@ -48,7 +48,7 @@
 </style>
 
 <body>
-   
+
 
 
     <table border="1" id="out1" style="float:left">
@@ -61,31 +61,27 @@
         </p>
         <ol>
             <li>
-                Hebrew Word Frequency data is based on from www.blueletter.org. 
+                Hebrew Word Frequency data is based on from www.blueletter.org.
             </li>
             <li>
-                Total Words Count (TotWords) for each book is calucated from Hebrew Scripture in the OT and Greek Scripture in the NT.
+                Total Words Count (TotWords) for each book is calucated from Hebrew Scripture in the OT and Greek
+                Scripture in the NT.
             </li>
             <li>
-                Hebrew Word Frequency Percentage Rate (%) for each book = Freq / TotWords * 100.  
+                Hebrew Word Frequency Percentage Rate (%) for each book = Freq / TotWords * 100.
             </li>
         </ol>
     </div>
 
-    <table border="1">
-        <caption>Takeaways</caption>
-        <theader>
-            <tr><th>#</th><th>book</th><th>Desc</th></tr>
-        </theader>
-        <tbody id="Takeaways">
 
-        </tbody>
-    </table>
 
 
     <div id="chart_div" style="width: 1000px; height: 800px"></div>
 
     <div id="chart_div0" style="width: 1000px; height: 200px"></div>
+
+    <div id="chart_div0_1" style="width: 1000px; height: 200px"></div>
+
     <div id="chart_div1" style="width: 1000px; height: 200px"></div>
     <div id="chart_div2" style="width: 1000px; height: 200px"></div>
     <div id="chart_div3" style="width: 1000px; height: 200px"></div>
@@ -98,21 +94,39 @@
     <div id="chart_div10" style="width: 1000px; height: 200px"></div>
 
 
+
+
+    <table border="1">
+        <caption>Takeaways</caption>
+        <theader>
+            <tr>
+                <th>#</th>
+                <th>book</th>
+                <th>Hebrew</th>
+                <th>Contents</th>
+                <th>Charts</th>
+            </tr>
+        </theader>
+        <tbody id="Takeaways">
+
+        </tbody>
+    </table>
+
 </body>
 
 </html>
 <script>
     $(function () {
         init_table()
-        Init_Takeaway()
         init_chart()
+        Init_Takeaway()
     })
 
-    function Init_Takeaway(){
-        var trs=""
-        Object.keys(TakeawayFrFrqRate).forEach(function(key){
-            var str = TakeawayFrFrqRate[key]
-            trs+=`<tr><td></td><td>${key}</td><td>${str}</td></tr>`
+    function Init_Takeaway() {
+        var trs = ""
+        Object.keys(TakeawayFrFrqRate).forEach(function (key) {
+            var ary = TakeawayFrFrqRate[key]
+            trs += `<tr><td></td><td>${key}</td><td>${ary[0]}</td><td>${ary[1]}</td><td>${ary[2]}</td></tr>`
         });
         $("#Takeaways").html(trs)
 
@@ -150,7 +164,7 @@
 
         //////////////
         $("table tbody").each(function () {
-            
+
             for (var colidx = 3; colidx <= 13; colidx++) {
                 mark_max_of_col(this, colidx)
             }
@@ -173,6 +187,12 @@
         gen_chart("chart_div7", [7])
         gen_chart("chart_div8", [8])
         gen_chart("chart_div9", [9])
+
         gen_chart("chart_div10", [10])
+  
+        gen_chart("chart_div0_1", [0,1])
+
+        
+
     }
 </script>

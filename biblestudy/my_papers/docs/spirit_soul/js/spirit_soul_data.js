@@ -546,37 +546,38 @@ var BooksTotalWords = {
 
 var TakeawayFrFrqRate = {
 
-    "Gen": `is of both the most frquency and the highest perectage rate on Hebrew 'Aba' (father). It reminds
+    "Gen": ["Aba", `It reminds
     readers to think in a biological and social perspective: who and what the
-    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`,
+    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`,""],
 
-    "Deu": `is of both the most frquency and the highest percetage rate on Hebrew "Elohim" (God). It
+    "Deu": ["Elohim", `It
     reiterate that it is God who is the one
-    readers must remember while knowing the father.`,
+    readers must remember while knowing the father.`,""],
 
-    "2Sa": `is of the highest percentage rate of Hebrew 'Adonai' (Lord). It reminds people to rethink who the
-    Lord is in the book.`,
+    "2Sa": ["Adonai", `It reminds people to rethink who the
+    Lord is in the book.`,""],
 
-    "1Ch": `is of both the most frquency and the highest percentage rate of Hebrew 'Ben' (Son). It infers that
+    "1Ch": ["Ben", `It infers that
     the chronical is about the
-    descendants of Israel rather than kings -- how they fell and how Jesus came.`,
+    descendants of Israel rather than kings -- how they fell and how Jesus came.`,""],
 
-    "Pro": `is of the highest percentage rate of Hebrew 'nefesh' (soul). It infers that the proverbs is
-    about the soul rather than the wisdom or life on earth.`,
+    "Pro": ["Nefesh", `It infers that the proverbs is
+    about the soul rather than the wisdom or life on earth.`,""],
 
-    "Ecc": `Ecclestiate is of the highest percentage rate of Hebrew 'ruah' (spirit). It infers that the book is not
+    "Ecc": ["Ruah", `It infers that the book is not
     about the vain and vexation of life but about the meaning of spirit.`,
+    "(1) The chart shows that Ruah and Nefesh are similar in curve -- they tend to be used together. (2) The chart shows a trend Ruah usage rate is getter higher and higher, but Nefesh has no significant nature.  "],
 
-    "Sng": `is of the highest percentage rate of Hebrew 'Ama' (mother). It refers that the book is related to
-    mother while it is about the femal love.`,
-
-
-    "Lam":`is of the highest percentage rate of Hebrew 'Bat' (daughter). It infers that sweep is part of nature of daughter.`,
+    "Sng": ["Ama", `It refers that the book is related to
+    mother while it is about the femal love.`,""],
 
 
+    "Lam": ["Bat", `It infers that sweep is part of nature of daughter.`,""],
 
-    "Hag": `is of the highest percentage rate of Hebrew 'Yhwy' (the Lord). It is a good book to better
+
+
+    "Hag": ["Yhwy", `It is a good book to better
     understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with
-    'words' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
-    like a doer, which is consistent with the roles in Gen2:1-26.`,
+    'words' than 'yhwh' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
+    like a doer, which is consistent with the roles in Gen2:1-26.`,""],
 }

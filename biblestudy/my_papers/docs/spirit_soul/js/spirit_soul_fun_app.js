@@ -134,6 +134,8 @@ DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
         if (cbf) cbf(nameAr[val])
     })
 
+    //if (cbf) cbf("-")
+
 
 
     var chart_booksValarr = this.output_chart_data()
@@ -147,6 +149,7 @@ DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
         icolary.forEach(function (icol, k) {
             ar.push(ary[1 + icol])
         })
+        //ar.push(0)
         retary.push(ar)
     }
     return retary
