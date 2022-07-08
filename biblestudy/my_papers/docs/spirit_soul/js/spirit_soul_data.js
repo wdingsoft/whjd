@@ -571,6 +571,10 @@ var TakeawayFrFrqRate = {
     mother while it is about the femal love.`,
 
 
+    "Lam":`is of the highest percentage rate of Hebrew 'Bat' (daughter). It infers that sweep is part of nature of daughter.`,
+
+
+
     "Hag": `is of the highest percentage rate of Hebrew 'Yhwy' (the Lord). It is a good book to better
     understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with
     'words' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
