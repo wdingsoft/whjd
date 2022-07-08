@@ -552,21 +552,21 @@ var TakeawayFrFrqRate = {
 
     "Deu": ["Elohim", `It
     reiterate that it is God who is the one
-    readers must remember while knowing the father.`, ""],
+    readers must remember while knowing the father.`, "The curve is similar to Yhwh, indicating their similar usages."],
 
     "2Sa": ["Adonai", `It reminds people to rethink who the
     Lord is in the book.`, ""],
 
     "1Ch": ["Ben", `It infers that
     the chronical is about the
-    descendants of Israel rather than kings -- how they fell and how Jesus came.`, ""],
+    descendants of Israel rather than kings -- how they fell and how Jesus came.`, "The over all value is similar to yhwh, among the most higest frequency percentage rate, indicating the importance of the roles and concept of son who eventually refering to Jesus."],
 
     "Pro": ["Nefesh", `It infers that the proverbs is
-    about the soul rather than the wisdom or life on earth.`, ""],
+    about the soul rather than the wisdom or life on earth.`, "The curve is similar to Ruah in shape and value, indicating their similar usages."],
 
     "Ecc": ["Ruah", `It infers that the book is not
     about the vain and vexation of life but about the meaning of spirit.`,
-        "(1) The chart shows that Ruah and Nefesh are similar in curve -- they tend to be used together. (2) The chart shows a trend Ruah usage rate is getter higher and higher, but Nefesh has no significant nature.  "],
+        "Contrast to Nefesh, Ruah is getter higher and higher in usage rate, indicating the spirit is getting more and more focused until coming of Jesus, though its over all value is significant lower than Ben and Elohim/Yhwy. "],
 
     "Sng": ["Ama", `It refers that the book is related to
     mother while it is about the femal love.`, ""],
@@ -579,5 +579,5 @@ var TakeawayFrFrqRate = {
     "Hag": ["Yhwy", `It is a good book to better
     understand the difference between 'Elohim' and 'Yhwy'. The Hebrew 'Elohim' is more associated with
     'words' than 'yhwh' (Hag1:12). While both have common association of the house (Hag1:14), 'Yhwy' tends to be more
-    like a doer, which is consistent with the roles in Gen2:1-26.`, ""],
+    like a doer, which is consistent with the roles in Gen2:1-26.`, "refer to Elohim and Ben"],
 }
