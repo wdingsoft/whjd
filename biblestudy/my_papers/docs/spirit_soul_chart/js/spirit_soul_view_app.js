@@ -40,18 +40,27 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var theader = "<thead>"
     
     theader += "<tr><td>idx</td><td></td><td></td>"
-    Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword, icol) {
+    Object.keys(Hebrew_Vocabulary).forEach(function (keyword, icol) {
         theader += `<th>${icol}</th>`
     })
 
-    theader += "<tr><td></td><td>Book</td><td>Hebrew</td>"
-    Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
+    theader += "<tr><td></td><td></td><td>English</td>"
+    Object.keys(Hebrew_Vocabulary).forEach(function (keyword, icol) {
+        theader += `<th>${Hebrew_Vocabulary[keyword][0]}</th>`
+    })
+    theader += "<tr><td></td><td></td><td>Hebrew</td>"
+    Object.keys(Hebrew_Vocabulary).forEach(function (keyword, icol) {
+        theader += `<th>${Hebrew_Vocabulary[keyword][1]}</th>`
+    })
+
+    theader += "<tr><td></td><td></td><td>Literal</td>"
+    Object.keys(Hebrew_Vocabulary).forEach(function (keyword) {
         theader += `<th>${keyword}</th>`
     })
 
 
-    theader += "</tr><tr><td></td><td></td><td>TotWords</td>"
-    Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
+    theader += "</tr><tr><td></td><td>Book</td><td>TotWords</td>"
+    Object.keys(Hebrew_Vocabulary).forEach(function (keyword) {
         theader += `<th>x${fullView_Total[keyword]}</th>`
     })
     theader += "</tr></thead>"
@@ -120,7 +129,7 @@ DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
             icolary.push(i)
         })
     }
-    
+
     icolary.forEach(function (val, k) {
         if (cbf) cbf(nameAr[val])
     })

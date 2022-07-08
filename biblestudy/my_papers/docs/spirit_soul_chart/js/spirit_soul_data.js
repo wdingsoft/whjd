@@ -2,7 +2,22 @@
 
 
 
+var Hebrew_Vocabulary = {
+    Ruah: ["Spirit", "רוּחַ"],
+    Nefesh: ["Soul", "נֶפֶשׁ"],
 
+    Elohim: ["God", "אֱלֹהִים"],
+    Yhwy: ["Yhwy", "יְהֹוָה"],
+    Adonai: ["Lord", "אָדוֹן"],
+
+    Ben: ["Son", "בֵּן"],
+    Bat: ["Daughter", "בַּת"],
+    Aba: ["Father", "אָב"],
+    Ama: ["Mother", "אֵם"],
+
+    Layhav: ["Heart", "לֵבָב"],
+    Mehode: ["Strength", "מְאֹד"]
+}
 
 
 
@@ -220,7 +235,7 @@ var BlueLetter_WordFrq_DB = {
         "Zec": 13,
         "Mal": 6,
     },
-    Bat:{
+    Bat: {
         "Gen": 110,
         "Exo": 23,
         "Lev": 23,
