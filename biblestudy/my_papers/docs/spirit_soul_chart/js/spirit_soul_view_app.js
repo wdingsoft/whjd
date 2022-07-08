@@ -12,8 +12,8 @@ var DatViewerApp = function () {
 
 DatViewerApp.prototype.Set = function (wordFrqsDb) {
     var fullView_Stats = {}
-    var fullView_Total = {}
     var fullView_Rates = {}
+    var fullView_Total = {}
 
     Object.keys(wordFrqsDb).forEach(function (keyWord) {
         fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
@@ -111,10 +111,21 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
 }
 
 DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
+   
+
     var nameAr = Object.keys(this.KeyWord_BooksRat)
+    if(!icolary){
+        icolary = []
+        nameAr.forEach(function(v,i){
+            icolary.push(i)
+        })
+    }
+    
     icolary.forEach(function (val, k) {
         if (cbf) cbf(nameAr[val])
     })
+
+
 
     var chart_booksValarr = this.output_chart_data()
 

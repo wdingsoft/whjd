@@ -1,13 +1,13 @@
 <html>
 
 <head>
-    <title>Stats</title>
+    <title>s&s</title>
     <base target="_blank" />
     <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
     <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
 
     <script src="https://wdingbox.github.io/ham12/jq/jquery-2_1_3.min.js"></script>
-    <script src="./js/spirit_soul_data.js">
+    <script src="./js/spirit_soul_data.js?v=9">
     </script>
     <script src="./js/spirit_soul_view_app.js">
     </script>
@@ -112,7 +112,7 @@
     </div>
 
 
-    <div id="chart_div" style="width: 900px; height: 800px"></div>
+    <div id="chart_div" style="width: 1000px; height: 800px"></div>
 
 
     <div id="chart_div0" style="width: 900px; height: 200px"></div>
@@ -124,6 +124,7 @@
     <div id="chart_div6" style="width: 900px; height: 200px"></div>
     <div id="chart_div7" style="width: 900px; height: 200px"></div>
     <div id="chart_div8" style="width: 900px; height: 200px"></div>
+    <div id="chart_div9" style="width: 900px; height: 200px"></div>
 
 
 </body>
@@ -167,7 +168,8 @@
 
         //////////////
         $("table tbody").each(function () {
-            for (var colidx = 3; colidx <= 10; colidx++) {
+            
+            for (var colidx = 3; colidx <= 12; colidx++) {
                 mark_max_of_col(this, colidx)
             }
         })
@@ -177,7 +179,7 @@
 
 
     function init_chart() {
-        gen_chart("chart_div", [0, 1, 2, 3, 4, 5, 6, 7])
+        gen_chart("chart_div")
 
         gen_chart("chart_div0", [0])
         gen_chart("chart_div1", [1])
@@ -187,5 +189,7 @@
         gen_chart("chart_div5", [5])
         gen_chart("chart_div6", [6])
         gen_chart("chart_div7", [7])
+        gen_chart("chart_div8", [8])
+        gen_chart("chart_div9", [9])
     }
 </script>
