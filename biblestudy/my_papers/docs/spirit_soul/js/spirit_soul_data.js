@@ -582,7 +582,11 @@ var TakeawayFrFrqRate = {
 
 
     "Job": ["Neshama",
-        "Job shows the importance of Neshama that is ignored in the West but popular in the East, which is 'QiGong' (air energy).",
+        `Job shows the importance of Neshama that is ignored in the West but popular in the East, which is 'QiGong' (air energy). 
+        The KJV translates Neshama (Strong's H5397) in the following manner: breath (17x), blast (3x), spirit (2x), inspiration (1x), souls (1x). Its primitive root is (נָשַׁם) destroy (1x). to pant, of a woman in travail or labour.
+        
+        Instead of believe in spirit or soul, Chinese believe in Neshama to makes use of it as weapon or for body health improvement.
+        `,
         "one of least used but important word"],
 
     "Pro": ["Nefesh", `It infers that the proverbs is
