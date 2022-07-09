@@ -582,7 +582,7 @@ var TakeawayFrFrqRate = {
 
 
     "Job": ["Neshama",
-        "Job shows the importance of Neshama that is ignored in the west but popular in east.",
+        "Job shows the importance of Neshama that is ignored in the West but popular in the East, which is 'QiGong' (air energy).",
         "one of least used but important word"],
 
     "Pro": ["Nefesh", `It infers that the proverbs is

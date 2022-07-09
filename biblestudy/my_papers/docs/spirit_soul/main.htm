@@ -77,9 +77,9 @@
         </ol>
     </div>
 
-<br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
-<h5>Charts of Hebrew Frequency Percentage Rate</h5>
+    <h5>Charts of Hebrew Frequency Percentage Rate</h5>
 
     <div id="chart_div" style="width: 1000px; height: 800px"></div>
 
@@ -137,9 +137,9 @@
 
     function Init_Takeaway() {
         var trs = ""
-        Object.keys(TakeawayFrFrqRate).forEach(function (key) {
+        Object.keys(TakeawayFrFrqRate).forEach(function (key, i) {
             var ary = TakeawayFrFrqRate[key]
-            trs += `<tr><td></td><td>${key}</td><td>${ary[0]}</td><td>${ary[1]}</td><td>${ary[2]}</td></tr>`
+            trs += `<tr><td>${i}</td><td>${key}</td><td>${ary[0]}</td><td>${ary[1]}</td><td>${ary[2]}</td></tr>`
         });
         $("#Takeaways").html(trs)
 
@@ -203,10 +203,10 @@
 
         gen_chart("chart_div10", [10])
         gen_chart("chart_div11", [11])
-  
-        gen_chart("chart_div0_1", [0,1])
 
-        
+        gen_chart("chart_div0_1", [0, 1])
+
+
 
     }
 </script>
