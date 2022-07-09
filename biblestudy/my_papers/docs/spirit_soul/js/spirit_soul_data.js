@@ -559,7 +559,7 @@ var TakeawayFrFrqRate = {
 
     "1Ch": ["Ben", `It infers that
     the chronical is about the
-    descendants of Israel rather than kings -- how they fell and how Jesus came.`, "The over all value is similar to yhwh, among the most higest frequency percentage rate, indicating the importance of the roles and concept of son who eventually refering to Jesus."],
+    sons of Israel rather than kings -- how they fell and how Jesus came.`, "The over all value is similar to yhwh, among the most higest frequency percentage rate, indicating the importance of the roles and concept of son who eventually refering to Jesus."],
 
     "Pro": ["Nefesh", `It infers that the proverbs is
     about the soul rather than the wisdom or life on earth.`, "The curve is similar to Ruah in shape and value, indicating their similar usages."],
