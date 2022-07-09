@@ -16,7 +16,9 @@ var Hebrew_Vocabulary = {
     Ama: ["Mother", "אֵם", "x220"],
 
     Layhav: ["Heart", "לֵבָב", "x252x"],
-    Mehode: ["Strength", "מְאֹד", "x299"]
+    Mehode: ["Strength", "מְאֹד", "x299"],
+
+    Neshama: ["Breath", "נְשָׁמָה", "x24"]
 }
 
 
@@ -397,6 +399,19 @@ var BlueLetter_WordFrq_DB = {
         "Nah": 1,
         "Zep": 1,
         "Zec": 5,
+    },
+
+    Neshama: {
+        "Gen": 2,
+        "Deu": 1,
+        "Jos": 3,
+        "2Sa": 1,
+        "1Ki": 2,
+        "Job": 7,
+        "Psa": 2,
+        "Pro": 1,
+        "Isa": 4,
+        "Dan": 1,
     }
 }
 
@@ -548,31 +563,43 @@ var TakeawayFrFrqRate = {
 
     "Gen": ["Aba", `It reminds
     readers to think in a biological and social perspective: who and what the
-    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`, ""],
+    true father is, which is consistent with the main theme of the book in the beginning (Genesis), why the fifth command requires people to honor your father and mother. (Exo20:12)`,
+        ""],
 
     "Deu": ["Elohim", `It
     reiterate that it is God who is the one
-    readers must remember while knowing the father.`, "The curve is similar to Yhwh, indicating their similar usages."],
+    readers must remember while knowing the father.`,
+        "The curve is similar to Yhwh, indicating their similar usages."],
 
     "2Sa": ["Adonai", `It reminds people to rethink who the
-    Lord is in the book.`, ""],
+    Lord is in the book.`,
+        ""],
 
     "1Ch": ["Ben", `It infers that
     the chronical is about the
-    sons of Israel rather than kings -- how they fell and how Jesus came.`, "The over all value is similar to yhwh, among the most higest frequency percentage rate, indicating the importance of the roles and concept of son who eventually refering to Jesus."],
+    sons of Israel rather than kings -- how they fell and how Jesus came.`,
+        "The over all value is similar to yhwh, among the most higest frequency percentage rate, indicating the importance of the roles and concept of son who eventually refering to Jesus."],
+
+
+    "Job": ["Neshama",
+        "Job shows the importance of Neshama that is ignored in the west but popular in east.",
+        "one of least used but important word"],
 
     "Pro": ["Nefesh", `It infers that the proverbs is
-    about the soul rather than the wisdom or life on earth.`, "The curve is similar to Ruah in shape and value, indicating their similar usages."],
+    about the soul rather than the wisdom or life on earth.`,
+        "The curve is similar to Ruah in shape and value, indicating their similar usages."],
 
     "Ecc": ["Ruah", `It infers that the book is not
     about the vain and vexation of life but about the meaning of spirit.`,
         "Contrast to Nefesh, Ruah is getter higher and higher in usage rate, indicating the spirit is getting more and more focused until coming of Jesus, though its over all value is significant lower than Ben and Elohim/Yhwy. "],
 
     "Sng": ["Ama", `It refers that the book is related to
-    mother while it is about the femal love.`, ""],
+    mother while it is about the femal love.`,
+        ""],
 
 
-    "Lam": ["Bat", `It infers that sweep is part of nature of daughter.`, ""],
+    "Lam": ["Bat", `It infers that sweep is part of nature of daughter.`,
+        ""],
 
 
 

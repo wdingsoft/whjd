@@ -97,6 +97,7 @@
     <div id="chart_div8" style="width: 1000px; height: 200px"></div>
     <div id="chart_div9" style="width: 1000px; height: 200px"></div>
     <div id="chart_div10" style="width: 1000px; height: 200px"></div>
+    <div id="chart_div11" style="width: 1000px; height: 200px"></div>
 
 
 
@@ -177,7 +178,7 @@
         //////////////
         $("table tbody").each(function () {
 
-            for (var colidx = 3; colidx <= 13; colidx++) {
+            for (var colidx = 3; colidx <= 130; colidx++) {
                 mark_max_of_col(this, colidx)
             }
         })
@@ -201,6 +202,7 @@
         gen_chart("chart_div9", [9])
 
         gen_chart("chart_div10", [10])
+        gen_chart("chart_div11", [11])
   
         gen_chart("chart_div0_1", [0,1])
 
