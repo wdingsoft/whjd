@@ -49,7 +49,7 @@ function gen_chart(eid, icol) {
                 title: 'The Hebrew Frequency Rate (1000 %)'
             },
             series: {
-                1: { curveType: 'function' }
+                1: { curveType: '' } //function:curve
             }
         };
 
