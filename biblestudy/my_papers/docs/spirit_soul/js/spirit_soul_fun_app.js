@@ -69,7 +69,7 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var tab = `<caption>${caption}</caption>${theader}<tbody>`
     var idx = 1
     Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
-        var tr = `<tr><td>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
+        var tr = `<tr><td class='${BooksCatalogs[book]}' title='${BooksCatalogs[book]}'>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             var frq = key_booksval[keyword][book]
             if (frq <= 0) frq = ""
