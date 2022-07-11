@@ -6,8 +6,8 @@
 
 
 
-var DatViewerApp = function () {
-
+var DatViewerApp = function (wordFrqsDb) {
+    this.Set(wordFrqsDb)
 }
 
 DatViewerApp.prototype.Set = function (wordFrqsDb) {
@@ -23,8 +23,10 @@ DatViewerApp.prototype.Set = function (wordFrqsDb) {
         fullView_Total[keyWord] = 0
         Object.keys(obj).forEach(function (book) {
             if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
+            fullView_Rates[keyWord][book] = 0
+
             fullView_Stats[keyWord][book] = obj[book]
-            fullView_Rates[keyWord][book] = (obj[book] * 100 / BooksTotalWords[book]).toFixed(2.2)
+            fullView_Rates[keyWord][book] = (obj[book] * 100 / BooksTotalWords[book]).toFixed(2, 2)
             fullView_Total[keyWord] += obj[book]
         })
     });;;;/////////////
@@ -38,7 +40,7 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var fullView_Total = this.KeyWord_BooksSum
 
     var theader = "<thead>"
-    
+
     theader += "<tr><td>idx</td><td></td><td></td>"
     Object.keys(Hebrew_Vocabulary).forEach(function (keyword, icol) {
         theader += `<th>${icol}</th>`
@@ -69,7 +71,7 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
     var tab = `<caption>${caption}</caption>${theader}<tbody>`
     var idx = 1
     Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
-        var tr = `<tr><td class='${BooksCatalogs[book]}' title='${BooksCatalogs[book]}'>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
+        var tr = `<tr><td class='${BooksCatalogs[book][0]}' title='${BooksCatalogs[book][0]}'>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             var frq = key_booksval[keyword][book]
             if (frq <= 0) frq = ""
@@ -120,12 +122,12 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
 }
 
 DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
-   
+
 
     var nameAr = Object.keys(this.KeyWord_BooksRat)
-    if(!icolary){
+    if (!icolary) {
         icolary = []
-        nameAr.forEach(function(v,i){
+        nameAr.forEach(function (v, i) {
             icolary.push(i)
         })
     }
@@ -157,3 +159,24 @@ DatViewerApp.prototype.output_chart_sel = function (icolary, cbf) {
 
 //DatViewerApp.Start(BlueLetter_WordFrq_DB)
 //var tab = DatViewerApp.output_table()
+
+
+
+DatViewerApp.prototype.output_BarChart_Arr = function (kword, cbf) {
+    var booksRate = this.KeyWord_BooksRat[kword]
+    //[
+    //    ['Bible', 'Frq Rate(1000%)', { role: 'style' }, '-', { role: 'style' }],
+    //    ['2012', 10000, "red", 10000, "blue"],]
+    var arr = []
+    arr.push(['Bible', 'Frq Rate(%)', { role: 'style' }, '-', { role: 'style' }])
+    Object.keys(booksRate).forEach(function (book, i) {
+        if (!booksRate[book]) booksRate[book] = 0
+        if (i >= 39) return
+        var frat = (1 * booksRate[book])
+        var ary = [`${(1 + i)}-${book}`, frat, BooksCatalogs[book][1], frat, 'blue']
+        arr.push(ary)
+
+    })
+
+    return arr;
+}

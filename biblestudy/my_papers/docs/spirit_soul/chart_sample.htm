@@ -1,45 +1,107 @@
-
-
 <html>
-   <head>
-      <title>Google Charts Tutorial</title>
-      <script type="text/javascript" src="./charts/loader.js"></script>
-      <script type = "text/javascript" xxxsrc = "https://www.gstatic.com/charts/loader.js">
-      </script>
-      <script type = "text/javascript">
-         google.charts.load('current', {packages: ['corechart']});     
-      </script>
-   </head>
-   
-   <body>
-      <div id = "container" style = "width: 550px; height: 400px; margin: 0 auto">
-      </div>
-      <script language = "JavaScript">
-         function drawChart() {
-            // Define the chart to be drawn.
-            var data = google.visualization.arrayToDataTable([
-               ['Fruit', 'Jane', 'John', 'Average'],
-               ['Apples', 3, 2, 2.5],
-               ['Oranges', 2, 3, 2.5],
-               ['Pears', 1, 5, 3],
-               ['Bananas', 3, 9, 6],
-               ['Plums', 4, 2, 3]      
-            ]);
-              
-            // Set chart options
-            var options = {
-               title : 'Fruits distribution',
-               vAxis: {title: 'Fruits'},
-               hAxis: {title: 'Person'},
-               seriesType: 'bars',
-               series: {2: {type: 'line'}}
-            };
 
-            // Instantiate and draw the chart.
-            var chart = new google.visualization.ComboChart(document.getElementById('container'));
-            chart.draw(data, options);
-         }
-         google.charts.setOnLoadCallback(drawChart);
-      </script>
-   </body>
+<head>
+   <title>Google Charts Tutorial</title>
+   <script type="text/javascript" src="./charts/loader.js"></script>
+   <script type="text/javascript" xxxsrc="https://www.gstatic.com/charts/loader.js">
+   </script>
+   <script type="text/javascript">
+      google.charts.load('current', { packages: ['corechart'] });     
+   </script>
+</head>
+
+<body>
+   <div id="container" style="width: 1550px; height: 400px; margin: 0 auto">
+   </div>
+   <script language="JavaScript">
+      function drawChart() {
+         // Define the chart to be drawn.
+         var data = google.visualization.arrayToDataTable([
+            ['Fruit', 'Jane', 'John', 'Average'],
+            ['Apples', 3, 2, 2.5],
+            ['Oranges', 2, 3, 2.5],
+            ['Pears', 1, 5, 3],
+            ['Bananas', 3, 9, 6],
+            ['Plums', 4, 2, 3]
+         ]);
+
+         // Set chart options
+         var options = {
+            title: 'Fruits distribution',
+            vAxis: { title: 'Fruits' },
+            hAxis: { title: 'Person' },
+            seriesType: 'bars',
+            series: { 2: { type: 'line' } }
+         };
+
+         // Instantiate and draw the chart.
+         var chart = new google.visualization.ComboChart(document.getElementById('container'));
+         chart.draw(data, options);
+      }
+
+      function drawChart1() {
+         // Define the chart to be drawn.
+         var data = google.visualization.arrayToDataTable([
+            ['Fruit', 'Jane',  { role: 'style' }, 'Average', { role: 'style' }],
+            ['Apples',  30,'gray', 2.5, 'red'],
+            ['Oranges', 30,'blue', 2.5, 'yellow'],
+            ['Pears',   30,'gray', 3, 'red'],
+            ['Bananas', 30,'gray', 6, 'red'],
+            ['Plums',   40,'gray', 3, 'red'],
+
+            ['Apples',  30,'gray', 2.5, 'red'],
+            ['Oranges', 30,'blue', 2.5, 'yellow'],
+            ['Pears',   30,'gray', 3, 'red'],
+            ['Bananas', 30,'gray', 6, 'red'],
+            ['Plums',   40,'gray', 3, 'red'],
+
+            ['Apples',  30,'gray', 2.5, 'red'],
+            ['Oranges', 30,'blue', 2.5, 'yellow'],
+            ['Pears',   30,'gray', 3, 'red'],
+            ['Bananas', 30,'gray', 6, 'red'],
+            ['Plums',   40,'gray', 3, 'red'],
+
+            ['Apples',  30,'gray', 2.5, 'red'],
+            ['Oranges', 30,'blue', 2.5, 'yellow'],
+            ['Pears',   30,'gray', 3, 'red'],
+            ['Bananas', 30,'gray', 6, 'red'],
+            ['Plums',   40,'gray', 3, 'red'],
+
+            ['Apples',  30,'gray', 2.5, 'red'],
+            ['Oranges', 30,'blue', 2.5, 'yellow'],
+            ['Pears',   30,'gray', 3, 'red'],
+            ['Bananas', 30,'gray', 6, 'red'],
+            ['Plums',   40,'gray', 3, 'red'],
+           
+
+         ]);
+
+         // Set chart options
+         var options = {
+            title: 'Fruits distribution',
+            vAxis: { title: 'Fruits' },
+            hAxis: { title: 'Person' },
+            seriesType: 'bars',
+            series: { 1: { type: 'line' } },
+            colors: ['red', 'blue'],
+            indexAxis: 'y',//?
+            barValueSpacing: 2000,//?
+            axis: 'vertical',//?
+         };
+
+         // Instantiate and draw the chart.
+         var chart = new google.visualization.ComboChart(document.getElementById('container'));
+         chart.draw(data, options);
+      }
+
+      google.charts.setOnLoadCallback(drawChart1);
+
+
+
+
+
+
+   </script>
+</body>
+
 </html>

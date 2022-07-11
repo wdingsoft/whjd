@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Google Charts Tutorial</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            packages: ['corechart']
+        });
+    </script>
+</head>
+<body>
+    <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+    <script language="JavaScript">
+        function drawChart() {
+            /* Define the chart to be drawn.*/
+            var data = google.visualization.arrayToDataTable([
+                ['Page Vist', 'Students Tutorial',{ role: 'style' },'a',{ role: 'style' }],
+                ['2012', 10000,"red", 10000, "blue"],
+                ['2013', 23000,"green", 23000, "blue"],
+                ['2014', 46000,"red", 46000, "blue"],
+                ['2015', 49000,"red", 49000, "blue"],
+                ['2016', 55000,"red", 550000, "blue"],
+                ['2017', 10000,"red", 10000, "blue"],
+            
+                
+            ]);
+            var options = {
+                title: 'Page visit per year',
+                isStacked: true,
+                series: { 1: { type: 'line' } },
+                axis: 'horizontal',//?
+            };
+            /* Instantiate and draw the chart.*/
+            var chart = new google.visualization.BarChart(document.getElementById('container'));
+            chart.draw(data, options);
+        }
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+</body>
+</html>

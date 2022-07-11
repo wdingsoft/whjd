@@ -60,7 +60,10 @@
         background-color: bisque;
     }
     .prophet_B{
-        background-color: rgb(219, 185, 144);
+        background-color: blanchedalmond;
+    }
+    .x{
+        color:burlywood
     }
 </style>
 
@@ -96,6 +99,8 @@
     <br><br><br><br><br><br>
 
     <h5>Charts of Hebrew Frequency Percentage Rate</h5>
+
+    <div id="barchart01" style="width: 1000px; height: 1200px"></div>
 
     <div id="chart_div" style="width: 1000px; height: 800px"></div>
 
@@ -177,8 +182,8 @@
             $(vemax).toggleClass("mark frqval")
         }
 
-        var tabvw = new DatViewerApp();
-        tabvw.Set(BlueLetter_WordFrq_DB)
+        var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
+       
 
         var tab = tabvw.output_table("Hebrew Word Frquency")
         $("#out1").html(tab).find("td").on("click", function () {
@@ -223,6 +228,7 @@
         gen_chart("chart_div0_1", [0, 1])
 
 
+        gen_barchart("barchart01")
 
     }
 </script>

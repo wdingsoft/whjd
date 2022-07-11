@@ -1,8 +1,6 @@
 function gen_chart(eid, icol) {
 
-    var tabvw = new DatViewerApp();
-    tabvw.Set(BlueLetter_WordFrq_DB)
-
+    var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
 
     google.charts.load('current', { packages: ['corechart', 'line'] });
     google.charts.setOnLoadCallback(drawCurveTypes);
@@ -50,10 +48,57 @@ function gen_chart(eid, icol) {
             },
             series: {
                 1: { curveType: '' } //function:curve
-            }
+            },
+
+            colors: ['green', 'blue', 'yellow', 'cyan', 'gray', 'orange', 'purple', 'bisque', 'black', 'lightgray', 'azure', 'lightgray']
         };
 
         var chart = new google.visualization.LineChart(document.getElementById(eid));
         chart.draw(data, options);
     }
+}
+
+
+function gen_barchart_sample(eid) {
+    function drawChart() {
+        /* Define the chart to be drawn.*/
+        var data = google.visualization.arrayToDataTable([
+            ['Page Vist', 'Students Tutorial', { role: 'style' }, 'a', { role: 'style' }],
+            ['2012', 10000, "red", 10000, "blue"],
+            ['2013', 23000, "green", 23000, "blue"],
+            ['2014', 46000, "red", 46000, "blue"],
+            ['2015', 49000, "red", 49000, "blue"],
+            ['2016', 55000, "red", 550000, "blue"],
+            ['2017', 10000, "red", 10000, "blue"],
+
+
+        ]);
+        var options = {
+            title: 'Page visit per year',
+            isStacked: true,
+            series: { 1: { type: 'line' } },
+        };
+        /* Instantiate and draw the chart.*/
+        var chart = new google.visualization.BarChart(document.getElementById(eid));
+        chart.draw(data, options);
+    }
+    google.charts.setOnLoadCallback(drawChart);
+}
+function gen_barchart(eid) {
+    function drawChart() {
+        var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
+
+        /* Define the chart to be drawn.*/
+        var dat = tabvw.output_BarChart_Arr("Ruah")
+        var data = google.visualization.arrayToDataTable(dat);
+        var options = {
+            title: 'Frequency Rate (%)',
+            isStacked: true,
+            series: { 1: { type: 'line' } },
+        };
+        /* Instantiate and draw the chart.*/
+        var chart = new google.visualization.BarChart(document.getElementById(eid));
+        chart.draw(data, options);
+    }
+    google.charts.setOnLoadCallback(drawChart);
 }
