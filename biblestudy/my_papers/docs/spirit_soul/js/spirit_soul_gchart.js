@@ -84,18 +84,24 @@ function gen_barchart_sample(eid) {
     }
     google.charts.setOnLoadCallback(drawChart);
 }
-function gen_barchart(eid) {
+function gen_barchart(eid, icol) {
     function drawChart() {
         var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
 
         /* Define the chart to be drawn.*/
-        var dat = tabvw.output_BarChart_Arr("Ruah")
-        var data = google.visualization.arrayToDataTable(dat);
+
+
         var options = {
             title: 'Frequency Rate (%)',
             isStacked: true,
             series: { 1: { type: 'line' } },
         };
+
+        var dat = tabvw.output_BarChart_Arr_by_icol(icol, function (kname) {
+            options.title = kname + " in " + options.title
+        })
+        var data = google.visualization.arrayToDataTable(dat);
+
         /* Instantiate and draw the chart.*/
         var chart = new google.visualization.BarChart(document.getElementById(eid));
         chart.draw(data, options);

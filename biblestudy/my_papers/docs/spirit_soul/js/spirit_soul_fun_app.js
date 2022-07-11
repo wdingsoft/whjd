@@ -180,3 +180,8 @@ DatViewerApp.prototype.output_BarChart_Arr = function (kword, cbf) {
 
     return arr;
 }
+DatViewerApp.prototype.output_BarChart_Arr_by_icol = function (icol, cbf) {
+    var kword = Object.keys(this.KeyWord_BooksRat)[icol]
+    if (cbf) cbf(kword)
+    return this.output_BarChart_Arr(kword, cbf);
+}
