@@ -172,24 +172,24 @@ function gen_ComboChart_group(eid, icolary) {
 
         var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
         var ret = tabvw.getBooksArry(icolary)
+        ret.darr.unshift(["bk", "avg", { role: 'style' }, "Ruah", "Nefesh"])
 
 
         // Set chart options
         var options = {
-            title: ret.names.join("."),
+            title: ret.names.join("|"),
             vAxis: { title: 'Frq Rate (%)' },
             hAxis: { title: 'Index of Books' },
             seriesType: 'bars',
-            series: { 1: { type: 'line', color: 'black' },
-            2: { type: 'line', color: 'red' } },
+            series: {
+                1: { type: 'line', color: 'black' },
+                2: { type: 'line', color: 'red' }
+            },
             //colors: ['red', 'blue'],
             //indexAxis: 'y',//?
             //barValueSpacing: 2000,//?
             //axis: 'vertical',//?
         };
-
-
-        ret.darr.unshift(["bk", "avg", { role: 'style' }, "Ruah", "Nefesh"])
         var data = google.visualization.arrayToDataTable(ret.darr);
 
         // Instantiate and draw the chart.
