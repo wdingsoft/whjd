@@ -42,36 +42,13 @@
       function drawChart1() {
          // Define the chart to be drawn.
          var data = google.visualization.arrayToDataTable([
-            ['Fruit', 'Jane',  { role: 'style' }, 'Average', { role: 'style' }],
-            ['Apples',  30,'gray', 2.5, 'red'],
-            ['Oranges', 30,'blue', 2.5, 'yellow'],
-            ['Pears',   30,'gray', 3, 'red'],
-            ['Bananas', 30,'gray', 6, 'red'],
-            ['Plums',   40,'gray', 3, 'red'],
+            ['Fruit', 'Jane',  { role: 'style' }, 'Average'],
+            ['Apples',  30,'gray', 2.5],
+            ['Oranges', 30,'blue', 2.5],
+            ['Pears',   30,'gray', 3],
+            ['Bananas', 30,'gray', 6],
+            ['Plums',   40,'gray', 3],
 
-            ['Apples',  30,'gray', 2.5, 'red'],
-            ['Oranges', 30,'blue', 2.5, 'yellow'],
-            ['Pears',   30,'gray', 3, 'red'],
-            ['Bananas', 30,'gray', 6, 'red'],
-            ['Plums',   40,'gray', 3, 'red'],
-
-            ['Apples',  30,'gray', 2.5, 'red'],
-            ['Oranges', 30,'blue', 2.5, 'yellow'],
-            ['Pears',   30,'gray', 3, 'red'],
-            ['Bananas', 30,'gray', 6, 'red'],
-            ['Plums',   40,'gray', 3, 'red'],
-
-            ['Apples',  30,'gray', 2.5, 'red'],
-            ['Oranges', 30,'blue', 2.5, 'yellow'],
-            ['Pears',   30,'gray', 3, 'red'],
-            ['Bananas', 30,'gray', 6, 'red'],
-            ['Plums',   40,'gray', 3, 'red'],
-
-            ['Apples',  30,'gray', 2.5, 'red'],
-            ['Oranges', 30,'blue', 2.5, 'yellow'],
-            ['Pears',   30,'gray', 3, 'red'],
-            ['Bananas', 30,'gray', 6, 'red'],
-            ['Plums',   40,'gray', 3, 'red'],
            
 
          ]);
@@ -82,7 +59,7 @@
             vAxis: { title: 'Fruits' },
             hAxis: { title: 'Person' },
             seriesType: 'bars',
-            series: { 1: { type: 'line' } },
+            series: { 1: { type: 'line' , color:'blue'} },
             colors: ['red', 'blue'],
             indexAxis: 'y',//?
             barValueSpacing: 2000,//?

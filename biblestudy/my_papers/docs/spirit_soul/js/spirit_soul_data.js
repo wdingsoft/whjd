@@ -417,7 +417,7 @@ var BlueLetter_WordFrq_DB = {
 
 
 
-var BlueLetterBibleCode_Stats_Init = {
+var BlueLetterBibleCode_Bks_Ary = {
     "Gen": [],//     "Gen": "Gen",
     "Exo": [],//     "Exo": "Exo",
     "Lev": [],//     "Lev": "Lev",

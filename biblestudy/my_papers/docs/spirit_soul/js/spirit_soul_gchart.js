@@ -108,3 +108,94 @@ function gen_barchart(eid, icol) {
     }
     google.charts.setOnLoadCallback(drawChart);
 }
+
+function gen_ComboChart(eid, icol) {
+    function drawChart1() {
+        // Define the chart to be drawn.
+        var dat = [
+            ['Fruit', 'Jane', { role: 'style' }, 'Average'],
+            ['Apples', 30, 'gray', 2.5],
+            ['Oranges', 30, 'blue', 2.5],
+            ['Pears', 30, 'gray', 3],
+            ['Bananas', 30, 'gray', 6],
+            ['Plums', 40, 'gray', 3],
+        ]
+        //var dat = [["Frq Rate", "Books", {role:'style', }, "-", {role:'style'}]]
+
+
+        var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
+
+
+        // Set chart options
+        var options = {
+            title: 'Frq Rate Distribution',
+            vAxis: { title: 'Frq Rate (%)' },
+            hAxis: { title: 'Index of Books' },
+            seriesType: 'bars',
+            //series: { 1: { type: 'line', color: 'blue' } },
+            //colors: ['red', 'blue'],
+            //indexAxis: 'y',//?
+            //barValueSpacing: 2000,//?
+            //axis: 'vertical',//?
+        };
+
+        var dat = tabvw.output_BarChart_Arr_by_icol(icol, function (kname) {
+            options.title = kname;//+ " in " + options.title
+        })
+        var data = google.visualization.arrayToDataTable(dat);
+
+
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.ComboChart(document.getElementById(eid));
+        chart.draw(data, options);
+    }
+
+    google.charts.setOnLoadCallback(drawChart1);
+}
+
+
+
+function gen_ComboChart_group(eid, icolary) {
+    function drawChart1() {
+        // Define the chart to be drawn.
+        var dat = [
+            ['Fruit', 'Jane', { role: 'style' }, 'Average'],
+            ['Apples', 30, 'gray', 2.5],
+            ['Oranges', 30, 'blue', 2.5],
+            ['Pears', 30, 'gray', 3],
+            ['Bananas', 30, 'gray', 6],
+            ['Plums', 40, 'gray', 3],
+        ]
+        //var dat = [["Frq Rate", "Books", {role:'style', }, "-", {role:'style'}]]
+
+
+        var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
+        var ret = tabvw.getBooksArry(icolary)
+
+
+        // Set chart options
+        var options = {
+            title: ret.names.join("."),
+            vAxis: { title: 'Frq Rate (%)' },
+            hAxis: { title: 'Index of Books' },
+            seriesType: 'bars',
+            series: { 1: { type: 'line', color: 'black' },
+            2: { type: 'line', color: 'red' } },
+            //colors: ['red', 'blue'],
+            //indexAxis: 'y',//?
+            //barValueSpacing: 2000,//?
+            //axis: 'vertical',//?
+        };
+
+
+        ret.darr.unshift(["bk", "avg", { role: 'style' }, "Ruah", "Nefesh"])
+        var data = google.visualization.arrayToDataTable(ret.darr);
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.ComboChart(document.getElementById(eid));
+        chart.draw(data, options);
+    }
+
+    google.charts.setOnLoadCallback(drawChart1);
+}

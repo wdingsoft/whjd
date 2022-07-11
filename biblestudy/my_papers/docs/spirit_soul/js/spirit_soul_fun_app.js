@@ -13,31 +13,46 @@ var DatViewerApp = function (wordFrqsDb) {
 DatViewerApp.prototype.Set = function (wordFrqsDb) {
     var fullView_Stats = {}
     var fullView_Rates = {}
-    var fullView_Total = {}
+    var kword_TotFrq = {}
+    var kword_TotRat = {}
+
+    var books_FreqAry = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
+    var books_RateAry = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
 
     Object.keys(wordFrqsDb).forEach(function (keyWord) {
-        fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
-        fullView_Rates[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Stats_Init))
+        fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
+        fullView_Rates[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
 
         var obj = wordFrqsDb[keyWord]
-        fullView_Total[keyWord] = 0
+        kword_TotFrq[keyWord] = 0
+        kword_TotRat[keyWord] = 0
         Object.keys(obj).forEach(function (book) {
             if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
             fullView_Rates[keyWord][book] = 0
 
-            fullView_Stats[keyWord][book] = obj[book]
-            fullView_Rates[keyWord][book] = (obj[book] * 100 / BooksTotalWords[book]).toFixed(2, 2)
-            fullView_Total[keyWord] += obj[book]
+            var frq = obj[book]
+            var rate = (frq * 100 / BooksTotalWords[book])
+            fullView_Stats[keyWord][book] = frq
+            fullView_Rates[keyWord][book] = rate.toFixed(2, 2)
+            kword_TotFrq[keyWord] += frq
+            kword_TotRat[keyWord] += (rate)
+
+            books_FreqAry[book].push(frq)
+            books_RateAry[book].push(rate)
         })
     });;;;/////////////
 
     this.KeyWord_BooksFrq = fullView_Stats;
     this.KeyWord_BooksRat = fullView_Rates;
-    this.KeyWord_BooksSum = fullView_Total;
+    this.KeyWord_TotFrq = kword_TotFrq;
+    this.KeyWord_TotRat = kword_TotRat;
+
+    this.Books_FreqAry = books_FreqAry
+    this.Books_RateAry = books_RateAry
 };
 
 DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
-    var fullView_Total = this.KeyWord_BooksSum
+    var fullView_Total = this.KeyWord_TotFrq
 
     var theader = "<thead>"
 
@@ -70,15 +85,15 @@ DatViewerApp.prototype.output_dat2table = function (caption, key_booksval) {
 
     var tab = `<caption>${caption}</caption>${theader}<tbody>`
     var idx = 1
-    Object.keys(BlueLetterBibleCode_Stats_Init).forEach(function (book) {
-        var tr = `<tr><td class='${BooksCatalogs[book][0]}' title='${BooksCatalogs[book][0]}'>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
+    Object.keys(BlueLetterBibleCode_Bks_Ary).forEach(function (book) {
+        var str = `<tr><td class='${BooksCatalogs[book][0]}' title='${BooksCatalogs[book][0]}'>${idx++}</td><td class='bkid'>${book}</td><td>${BooksTotalWords[book]}</td>`
         Object.keys(BlueLetter_WordFrq_DB).forEach(function (keyword) {
             var frq = key_booksval[keyword][book]
             if (frq <= 0) frq = ""
-            tr += `<td class='frqval'>${frq}</td>`
+            str += `<td class='frqval'>${frq}</td>`
         })
-        tr += "</tr>"
-        tab += tr
+        str += "</tr>"
+        tab += str
     })
     tab += "</tbody>"
     return tab;
@@ -100,7 +115,7 @@ DatViewerApp.prototype.output_chart_data = function (cbf) {
 
     var arow = Array(1 + Object.keys(word_booksRate).length).fill(0);
 
-    var chart_booksValarr = Array(Object.keys(BlueLetterBibleCode_Stats_Init).length + 1).fill(0);
+    var chart_booksValarr = Array(Object.keys(BlueLetterBibleCode_Bks_Ary).length + 1).fill(0);
     for (var i = 0; i < chart_booksValarr.length; i++) {
         chart_booksValarr[i] = JSON.parse(JSON.stringify(arow))
         chart_booksValarr[i][0] = i
@@ -168,7 +183,7 @@ DatViewerApp.prototype.output_BarChart_Arr = function (kword, cbf) {
     //    ['Bible', 'Frq Rate(1000%)', { role: 'style' }, '-', { role: 'style' }],
     //    ['2012', 10000, "red", 10000, "blue"],]
     var arr = []
-    arr.push(['Bible', 'Frq Rate(%)', { role: 'style' }, '-', { role: 'style' }])
+    arr.push(['Bible', '-', { role: 'style' }, '-', { role: 'style' }])
     Object.keys(booksRate).forEach(function (book, i) {
         if (!booksRate[book]) booksRate[book] = 0
         if (i >= 39) return
@@ -184,4 +199,61 @@ DatViewerApp.prototype.output_BarChart_Arr_by_icol = function (icol, cbf) {
     var kword = Object.keys(this.KeyWord_BooksRat)[icol]
     if (cbf) cbf(kword)
     return this.output_BarChart_Arr(kword, cbf);
+}
+
+
+DatViewerApp.prototype.getKwordsAry = function (icolary) {
+    var kword_obj = this.KeyWord_BooksRat
+
+    var nary = []
+    icolary.forEach(function (icol, i) {
+        nary.push(Object.keys(kword_obj)[icol])
+    })
+    return nary
+}
+DatViewerApp.prototype.getAvgRate = function (icolary) {
+    var books_ary = this.Books_RateAry
+    var overallrat = 0, itot = 0
+    Object.keys(books_ary).forEach(function (book, i) {
+        if (i >= 39) return
+        var bary = books_ary[book]
+        icolary.forEach(function (icol, i) {
+            var val = bary[icol]
+            overallrat += val
+            itot++
+        })
+    })
+    return overallrat / itot
+}
+DatViewerApp.prototype.getBooksArry = function (icolary, cbf) {
+    var books_ary = this.Books_RateAry
+    var kword_totrat = this.KeyWord_TotRat
+    //[
+    //    ['Bible', 'Frq Rate(1000%)', { role: 'style' }, '-', { role: 'style' }],
+    //    ['2012', 10000, "red", 10000, "blue"],]
+    var darr = []
+    //arr.push(['Bible', '-', { role: 'style' }, '-', { role: 'style' }])
+
+
+    var avgRat = this.getAvgRate(icolary)
+    Object.keys(books_ary).forEach(function (book, i) {
+        if (i >= 39) return
+        var bary = books_ary[book]
+        var ary = [book]
+        icolary.forEach(function (icol, i) {
+            var val = bary[icol]
+            //ary.push(kword_totrat[nary[icol]]);//, parseFloat(val))
+            if (0 === i) {
+                ary.push(avgRat);
+                ary.push(BooksCatalogs[book][1])
+            }
+            ary.push(parseFloat(val))
+        })
+
+        //var ary = [`${(1 + i)}-${book}`, frat, BooksCatalogs[book][1], frat, 'blue']
+        darr.push(ary)
+
+    })
+
+    return { darr: darr, names: this.getKwordsAry(icolary) };
 }
