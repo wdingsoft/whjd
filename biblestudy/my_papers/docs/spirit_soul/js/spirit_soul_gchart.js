@@ -203,7 +203,7 @@ function gen_ComboChart_group(eid, icolary) {
             //barValueSpacing: 2000,//?
             //axis: 'vertical',//?
         };
-        var linecolrs = ['green', 'blue', 'yellow', 'cyan', 'gray', 'orange', 'purple', 'bisque', 'black', 'lightgray', 'azure', 'lightgray']
+        var linecolrs = ['green', 'blue', 'darkgreen', 'cyan', 'gray', 'orange', 'purple', 'bisque', 'black', 'lightgray', 'darkblue', 'lightgray']
         linecolrs.forEach(function (clrs, idx) {
             options.series[1 + idx] = { type: 'line', color: clrs };
         })
