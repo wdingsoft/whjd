@@ -10,30 +10,31 @@ var DatViewerApp = function (wordFrqsDb) {
     this.Set(wordFrqsDb)
 }
 
-DatViewerApp.prototype.Set = function (wordFrqsDb) {
-    var fullView_Stats = {}
-    var fullView_Rates = {}
+DatViewerApp.prototype.Set = function (word_BooksFrqsOb) {
+    var keyWord_booksFrq = {}
+    var keyWord_booksRat = {}
     var kword_TotFrq = {}
     var kword_TotRat = {}
 
     var books_FreqAry = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
     var books_RateAry = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
 
-    Object.keys(wordFrqsDb).forEach(function (keyWord) {
-        fullView_Stats[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
-        fullView_Rates[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
+    Object.keys(word_BooksFrqsOb).forEach(function (keyWord) {
+        keyWord_booksFrq[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
+        keyWord_booksRat[keyWord] = JSON.parse(JSON.stringify(BlueLetterBibleCode_Bks_Ary))
 
-        var obj = wordFrqsDb[keyWord]
+        var obj = word_BooksFrqsOb[keyWord]
         kword_TotFrq[keyWord] = 0
         kword_TotRat[keyWord] = 0
-        Object.keys(obj).forEach(function (book) {
-            if (!fullView_Stats[keyWord][book]) { alert(keyWord + "=" + book) }
-            fullView_Rates[keyWord][book] = 0
+        Object.keys(BlueLetterBibleCode_Bks_Ary).forEach(function (book) {
+            if (!keyWord_booksFrq[keyWord][book]) { alert(keyWord + "=" + book) }
+            keyWord_booksRat[keyWord][book] = 0
 
             var frq = obj[book]
+            if (undefined === frq) frq = 0
             var rate = (frq * 100 / BooksTotalWords[book])
-            fullView_Stats[keyWord][book] = frq
-            fullView_Rates[keyWord][book] = rate.toFixed(2, 2)
+            keyWord_booksFrq[keyWord][book] = frq
+            keyWord_booksRat[keyWord][book] = rate.toFixed(2, 2)
             kword_TotFrq[keyWord] += frq
             kword_TotRat[keyWord] += (rate)
 
@@ -42,8 +43,8 @@ DatViewerApp.prototype.Set = function (wordFrqsDb) {
         })
     });;;;/////////////
 
-    this.KeyWord_BooksFrq = fullView_Stats;
-    this.KeyWord_BooksRat = fullView_Rates;
+    this.KeyWord_BooksFrq = keyWord_booksFrq;
+    this.KeyWord_BooksRat = keyWord_booksRat;
     this.KeyWord_TotFrq = kword_TotFrq;
     this.KeyWord_TotRat = kword_TotRat;
 
@@ -202,10 +203,14 @@ DatViewerApp.prototype.output_BarChart_Arr_by_icol = function (icol, cbf) {
 }
 
 
-DatViewerApp.prototype.getKwordsAry = function (icolary) {
+
+
+
+
+DatViewerApp.prototype.getHeadersAry = function (icolary) {
     var kword_obj = this.KeyWord_BooksRat
 
-    var nary = []
+    var nary = ["bk", "avg", { role: 'style' }]
     icolary.forEach(function (icol, i) {
         nary.push(Object.keys(kword_obj)[icol])
     })
@@ -227,19 +232,18 @@ DatViewerApp.prototype.getAvgRate = function (icolary) {
 }
 DatViewerApp.prototype.getBooksArry = function (icolary, cbf) {
     var books_ary = this.Books_RateAry
-    var kword_totrat = this.KeyWord_TotRat
+    //var kword_totrat = this.KeyWord_TotRat
     //[
     //    ['Bible', 'Frq Rate(1000%)', { role: 'style' }, '-', { role: 'style' }],
     //    ['2012', 10000, "red", 10000, "blue"],]
     var darr = []
     //arr.push(['Bible', '-', { role: 'style' }, '-', { role: 'style' }])
 
-
     var avgRat = this.getAvgRate(icolary)
     Object.keys(books_ary).forEach(function (book, i) {
         if (i >= 39) return
         var bary = books_ary[book]
-        var ary = [book]
+        var ary = [`${i+1}.${book}`]
         icolary.forEach(function (icol, i) {
             var val = bary[icol]
             //ary.push(kword_totrat[nary[icol]]);//, parseFloat(val))
@@ -252,8 +256,9 @@ DatViewerApp.prototype.getBooksArry = function (icolary, cbf) {
 
         //var ary = [`${(1 + i)}-${book}`, frat, BooksCatalogs[book][1], frat, 'blue']
         darr.push(ary)
-
     })
 
-    return { darr: darr, names: this.getKwordsAry(icolary) };
+    darr.unshift(this.getHeadersAry(icolary))
+
+    return { darr: darr, names: this.getHeadersAry(icolary).slice(3) };
 }

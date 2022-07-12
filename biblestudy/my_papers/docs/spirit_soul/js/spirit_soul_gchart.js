@@ -1,3 +1,4 @@
+
 function gen_chart(eid, icol) {
 
     var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
@@ -157,6 +158,8 @@ function gen_ComboChart(eid, icol) {
 
 
 function gen_ComboChart_group(eid, icolary) {
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+
     function drawChart1() {
         // Define the chart to be drawn.
         var dat = [
@@ -172,24 +175,39 @@ function gen_ComboChart_group(eid, icolary) {
 
         var tabvw = new DatViewerApp(BlueLetter_WordFrq_DB);
         var ret = tabvw.getBooksArry(icolary)
-        ret.darr.unshift(["bk", "avg", { role: 'style' }, "Ruah", "Nefesh"])
+        //ret.darr.unshift(ret.headers)
 
 
         // Set chart options
         var options = {
-            title: ret.names.join("|"),
+            title: ret.names.join(" : "),
             vAxis: { title: 'Frq Rate (%)' },
             hAxis: { title: 'Index of Books' },
             seriesType: 'bars',
             series: {
-                1: { type: 'line', color: 'black' },
-                2: { type: 'line', color: 'red' }
+                1: { type: 'line', color: 'red' },
+                2: { type: 'line', color: 'black' },
+                3: { type: 'line', color: 'black' },
+                4: { type: 'line', color: 'black' },
+                5: { type: 'line', color: 'black' },
+                6: { type: 'line', color: 'black' },
+                7: { type: 'line', color: 'black' },
+                8: { type: 'line', color: 'black' },
+                9: { type: 'line', color: 'black' },
+                10: { type: 'line', color: 'black' },
+                11: { type: 'line', color: 'black' },
+
             },
-            //colors: ['red', 'blue'],
+            colors: ['lightgray', 'blue'],
             //indexAxis: 'y',//?
             //barValueSpacing: 2000,//?
             //axis: 'vertical',//?
         };
+        var linecolrs = ['green', 'blue', 'yellow', 'cyan', 'gray', 'orange', 'purple', 'bisque', 'black', 'lightgray', 'azure', 'lightgray']
+        linecolrs.forEach(function (clrs, idx) {
+            options.series[1 + idx] = { type: 'line', color: clrs };
+        })
+
         var data = google.visualization.arrayToDataTable(ret.darr);
 
         // Instantiate and draw the chart.
