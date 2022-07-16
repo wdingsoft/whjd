@@ -60,7 +60,7 @@
                 $(this).find(".rangeinput").val(pos_val - neg_val)
             })
 
-            $("table").tablesorter()
+            //$("table").tablesorter()
         })
     </script>
 </head>
