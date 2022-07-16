@@ -1,10 +1,11 @@
 
-var Fruits = {
+var NineFruits = {
     Love: {
         chn: "仁爱",
         href: "https://www.blueletterbible.org/lexicon/g26/kjv/tr/0-1/",
         gre: "ἀγάπη",
         lit: "agapē",
+
         positive: [
             "Love God",
             "Love Jesus",
@@ -18,25 +19,29 @@ var Fruits = {
             "Love your Mission",
         ],
         negative: [
-            "Status quo",
-            "Food/Clothes",
-            "Houses/Cars",
-            "Fames/brand",
-            "Money",
-            "your Family",
-            "your work",
+            "love the world",
+            "food/clothes",
+            "houses/cars",
+            "fames/brand/reputation",
+            "money/treature",
+            "your family",
+            "your work/nation/party",
             "patriotism",
-            "self-sensational pleasure",
+            "self-flesh pleasure",
             "hobbies/ametures",
         ],
     },
-    joy: {
+    Joy: {
         chn: `喜乐`,
         href: "https://www.blueletterbible.org/lexicon/g5479/kjv/tr/0-1/",
         gre: "χαρά",
         lit: "chara",
+
         positive: [
-            "personal Christian life",
+            "Love relationship",
+            "peaceful Christian life",
+            "private Christian life",
+            "patient life",
             "church life",
             "fellowship life",
             "missionary life",
@@ -47,19 +52,23 @@ var Fruits = {
         negative: [
             "rich material",
             "new house",
+            "new car",
             "successful career",
-            "nice fame/name",
+            "nice fame/reputation",
             "money",
             "family",
             "children",
+            "win a game",
+            "join a party"
         ],
     },
 
-    peace: {
+    Peace: {
         chn: `和平`,
         href: "https://www.blueletterbible.org/lexicon/g1515/kjv/tr/0-1/",
         gre: "εἰρήνη",
         lit: "eirēnē",
+
         positive: [
             "God",
             "Jesus",
@@ -68,6 +77,9 @@ var Fruits = {
             "Faith",
             "Persecution",
             "Disasters",
+            "seachange",
+            "harmony/conflict relationship",
+            "unexpected"
         ],
         negative: [
             "Competative",
@@ -81,11 +93,12 @@ var Fruits = {
     },
 
 
-    patience: {
+    Patience: {
         chn: `忍耐`,
         href: "https://www.blueletterbible.org/lexicon/g3115/kjv/tr/0-1/",
         gre: "μακροθυμία",
         lit: "makrothymia",
+
         positive: [
             "longsuffering",
             "endurance",
@@ -106,11 +119,12 @@ var Fruits = {
     },
 
 
-    kindness: {
+    Kindness: {
         chn: "恩慈",
         href: "https://www.blueletterbible.org/lexicon/g5544/kjv/tr/0-1/",
         gre: "χρηστότης",
         lit: "khray-stot'-ace",
+
         positive: [
             "employed",
             "useful",
@@ -137,7 +151,7 @@ var Fruits = {
         ],
     },
 
-    goodness: {
+    Goodness: {
         chn: `良善`,
         href: "https://www.blueletterbible.org/lexicon/g19/kjv/tr/0-1/",
         gre: "ἀγαθωσύνη",
@@ -151,6 +165,7 @@ var Fruits = {
             "kindness",
             "virtue",
             "beneficence",
+            "fair"
 
         ],
         negative: [
@@ -164,7 +179,7 @@ var Fruits = {
         ],
     },
 
-    faithful: {
+    Faithful: {
         chn: `信实`,
         href: "https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/",
         gre: "πίστις",
@@ -189,7 +204,7 @@ var Fruits = {
 
     },
 
-    gentleness: {
+    Gentleness: {
         chn: `温柔`,
         href: "https://www.blueletterbible.org/lexicon/g4236/kjv/tr/0-1/",
         gre: "πραότης",
@@ -210,7 +225,7 @@ var Fruits = {
         ],
     },
 
-    "self-controll": {
+    "Self-controll": {
         chn: `节制`,
         href: "https://www.blueletterbible.org/lexicon/g1466/kjv/tr/0-1/",
         gre: "ἐγκράτεια",
@@ -231,4 +246,11 @@ var Fruits = {
             "for culture",
         ],
     },
+}
+
+
+
+var takeaways={
+    "the results not the goal.":"",
+    "outer visible not inner faith":""
 }

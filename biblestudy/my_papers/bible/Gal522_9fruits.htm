@@ -7,6 +7,7 @@
     <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
     <script src="./js/jq.js"></script>
     <script src="./js/jq_tablesorter.js"></script>
+    <script src="./Gal522_9fruits.js"></script>
     <style type="text/css">
         .hili {
             background-color: grey;
@@ -18,6 +19,10 @@
 
         .hiliTR {
             border: 9px solid red;
+        }
+
+        th {
+            background-color: gray;
         }
 
         td[contenteditable] {
@@ -35,7 +40,30 @@
                 var nChecked = $(this).parentsUntil("tr").find("input[type='checkbox']:checked").length
                 //$(this).parentsUntil("tbody").find(".rangeinput").val(100 * nChecked / tot)
             })
+
+            gen_trs()
         })
+
+        function gen_trs() {
+
+            function checkary(ary) {
+                var os = "<ol>"
+                ary.forEach(function (val) {
+                    os += `<li><input type='checkbox'>${val}</input></li>`
+                })
+                os += "</ol>"
+                return os
+            }
+
+            var trs = ""
+            Object.keys(NineFruits).forEach(function (key, i) {
+                var obj = NineFruits[key]
+                trs += `<tr><td>${1+i}</td><td>${key}<br>${obj.chn}<br><a href='${obj.href}'>${obj.gre}</a><br>${obj.lit}</td>`
+                trs += `<td>${checkary(obj.positive)}</td><td>${checkary(obj.negative)}</td></tr>`
+            });
+
+            $("#tbd").html(trs)
+        }
     </script>
     <script>
         ////////////////
@@ -67,23 +95,28 @@
 
 <body>
 
+    <p>Gal 5:22</p>
+    <ol>
+        <li>
+            <p>(CUV) 圣灵所结的果子、就是 仁爱、喜乐、和平、忍耐、恩慈、良善、信实、温柔、节制. 这样的事、没有律法禁止。</p>
 
+        </li>
+        <li>
+            <p>(NIV) But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
+                gentleness and self-control. Against such things there is no law.</p>
 
-    <table border="1"
-        class="wikitable sortable jquery-tablesorter tablesorter tablesorter-default tablesorter855b59fe62b49" style=""
-        role="grid" aria-labelledby="tablesorter855b59fe62b49caption">
-        <caption id="tablesorter855b59fe62b49caption"> The Fruits of the Spirit <br>(Gal 5:22-3)</caption>
+        </li>
+    </ol>
+
+    <table border="1">
+        <caption id="tablesorter855b59fe62b49caption"> Nine Fruits of the Spirit <br>(Gal 5:22-3)</caption>
         <thead>
             <tr class="tablesorter-headerRow hiliTR">
                 <th>
                     <div>#</div>
                 </th>
                 <th>
-                    <div>Fruit
-                    </div>
-                </th>
-                <th>
-                    <div>- +
+                    <div>Fruits
                     </div>
                 </th>
                 <th>
@@ -96,534 +129,17 @@
                         Worldly Meaning
                     </div>
                 </th>
-                <th>
-                    <div>
-                    </div>
-                </th>
-                <th>
-                    <div></div>
-                </th>
-                <th>
-                    <div></div>
-                </th>
-                <th>
-                    <div></div>
-                </th>
+
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td><a>Love</a> <br>仁爱
-                    <br>
-                    <a href="https://www.blueletterbible.org/lexicon/g26/kjv/tr/0-1/">ἀγάπη<br>agapē</a>
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
+        <tbody id="tbd">
 
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">Love God</input></li>
-                        <li><input type="checkbox">Love Jesus</input></li>
-                        <li><input type="checkbox">Love the Spirit</input></li>
-                        <li><input type="checkbox">Love the Word (Logos) </input></li>
-                        <li><input type="checkbox">Love the Gospels</input></li>
-                        <li><input type="checkbox">Love Neighbors</input></li>
-                        <li><input type="checkbox">Love Church</input></li>
-                        <li><input type="checkbox">Love Kingdom of Heaven</input></li>
-                        <li><input type="checkbox">Love your Service</input></li>
-                        <li><input type="checkbox">Love your Mission</input></li>
-
-                    </ol>
-
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Status quo</input></li>
-                        <li><input type="checkbox">Food/Clothes</input></li>
-                        <li><input type="checkbox">Houses/Cars</input></li>
-                        <li><input type="checkbox">Fames/brand</input></li>
-                        <li><input type="checkbox">Money</input></li>
-                        <li><input type="checkbox">your Family</input></li>
-                        <li><input type="checkbox">your work</input></li>
-                        <li><input type="checkbox">patriotism</input></li>
-                        <li><input type="checkbox">self-sensational pleasure</input></li>
-                        <li><input type="checkbox">hobbies/ametures</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>joy <br>
-                    喜乐<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g5479/kjv/tr/0-1/">χαρά<br>
-                        chara
-                    </a>
-
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    Joyful in
-                    <ol class="positive">
-                        <li><input type="checkbox">personal Christian life</input></li>
-                        <li><input type="checkbox">church life</input></li>
-                        <li><input type="checkbox">fellowship life</input></li>
-                        <li><input type="checkbox">missionary life</input></li>
-                        <li><input type="checkbox">service life</input></li>
-                        <li><input type="checkbox">family whorship life</input></li>
-                        <li><input type="checkbox">faithful life</input></li>
-
-                    </ol>
-
-                </td>
-                <td>
-                    Joyful in worldly life
-                    <ol class="negative">
-                        <li><input type="checkbox">rich material</input></li>
-                        <li><input type="checkbox">new house</input></li>
-                        <li><input type="checkbox">successful career</input></li>
-                        <li><input type="checkbox">nice fame/name</input></li>
-                        <li><input type="checkbox">money</input></li>
-                        <li><input type="checkbox">family</input></li>
-                        <li><input type="checkbox">children</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>peace <br>
-                    和平<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g1515/kjv/tr/0-1/">εἰρήνη<br>eirēnē
-                    </a>
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    peace in
-                    <ol class="positive">
-                        <li><input type="checkbox">God</input></li>
-                        <li><input type="checkbox">Jesus</input></li>
-                        <li><input type="checkbox">the Word</input></li>
-                        <li><input type="checkbox">the Spirit</input></li>
-                        <li><input type="checkbox">Faith</input></li>
-                        <li><input type="checkbox">Persecution</input></li>
-                        <li><input type="checkbox">Disasters</input></li>
-                    </ol>
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>patience<br>
-                    忍耐<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g3115/kjv/tr/0-1/">μακροθυμία<br>makrothymia
-                    </a>
-
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">longsuffering</input><br></li>
-                        <li><input type="checkbox">endurance</input><br></li>
-                        <li><input type="checkbox">constancy</input><br></li>
-                        <li><input type="checkbox">steadfastness</input><br></li>
-                        <li><input type="checkbox">perseverance</input><br></li>
-                        <li><input type="checkbox">forbearance</input><br></li>
-                        <li><input type="checkbox">slowness in persecution</input><br></li>
-
-                    </ol>
-
-
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>kindness<br>
-
-                    恩慈<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g5544/kjv/tr/0-1/">χρηστότης<br>khray-stot'-ace</a>
-                </td>
-
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-
-                    is
-                    <ol class="positive">
-                        <li><input type="checkbox">employed</input></li>
-                        <li><input type="checkbox">useful</input></li>
-                        <li><input type="checkbox">better</input></li>
-                        <li><input type="checkbox">easy</input></li>
-                        <li><input type="checkbox">gracious</input></li>
-                        <li><input type="checkbox">fit for use</input></li>
-                        <li><input type="checkbox">virtuous</input></li>
-                        <li><input type="checkbox">good</input></li>
-                        <li><input type="checkbox">manageable</input></li>
-                        <li><input type="checkbox">mild</input></li>
-                        <li><input type="checkbox">pleasant (as opp. to harsh, hard sharp, bitter)</input></li>
-                        <li><input type="checkbox">benevolent</input></li>
-                    </ol>
-
-
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>goodness<br>
-                    良善<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g19/kjv/tr/0-1/">ἀγαθωσύνη
-                        <br>(ag-ath-o-soo'-nay)</a>
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">uprightness</input></li>
-                        <li><input type="checkbox">righteousness</input></li>
-                        <li><input type="checkbox">just</input></li>
-                        <li><input type="checkbox">goodness</input></li>
-                        <li><input type="checkbox">kindness</input></li>
-                        <li><input type="checkbox">virtue</input></li>
-                        <li><input type="checkbox">beneficence</input></li>
-
-                    </ol>
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>faithful<br>信实
-                    <br>
-                    <a href="https://www.blueletterbible.org/lexicon/g4102/kjv/tr/0-1/">πίστις<br>pistis</a>
-
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">fidelity</input></li>
-                        <li><input type="checkbox">belief</input></li>
-                        <li><input type="checkbox">trust </input></li>
-                        <li><input type="checkbox">living life</input></li>
-                        <li><input type="checkbox">action</input></li>
-
-
-                    </ol>
-
-
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>gentleness<br>
-                    温柔<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g4236/kjv/tr/0-1/">
-                        πραότης<br>prah-ot'-ace
-
-                    </a>
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">mildness</input></li>
-                        <li><input type="checkbox">meekness</input></li>
-                        <li><input type="checkbox">gentleness</input></li>
-                    </ol>
-
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>self-controll<br>节制<br>
-                    <a href="https://www.blueletterbible.org/lexicon/g1466/kjv/tr/0-1/">
-                        ἐγκράτεια<br>eng-krat'-i-ah</a>
-                </td>
-                <td>
-                    <input class="rangeinput" type="range" list="tickmarks">
-                    <datalist id="tickmarks">
-                        <option value="0" label="0%"></option>
-                        <option value="10"></option>
-                        <option value="20"></option>
-                        <option value="30"></option>
-                        <option value="40"></option>
-                        <option value="50" label="50%"></option>
-                        <option value="60"></option>
-                        <option value="70"></option>
-                        <option value="80"></option>
-                        <option value="90"></option>
-                        <option value="100" label="100%"></option>
-                    </datalist>
-
-
-                </td>
-                <td>
-                    <ol class="positive">
-                        <li><input type="checkbox">masters desires</input></li>
-                        <li><input type="checkbox">masters passions</input></li>
-                        <li><input type="checkbox">masters sensual appetites</input></li>
-
-
-                    </ol>
-                </td>
-                <td>
-                    <ol class="negative">
-                        <li><input type="checkbox">Competative</input></li>
-                        <li><input type="checkbox">for prosperity(wealth)</input></li>
-                        <li><input type="checkbox">for smooth life</input></li>
-                        <li><input type="checkbox">for elder life</input></li>
-                        <li><input type="checkbox">for personal happiness</input></li>
-                        <li><input type="checkbox">for nation development</input></li>
-                        <li><input type="checkbox">for culture</input></li>
-                    </ol>
-                </td>
-                <td>&nbsp;</td>
-                <td></td>
-                <td></td>
-                <td>&nbsp;</td>
-            </tr>
         </tbody>
         <tfoot>
         </tfoot>
     </table>
 
-    <p>Notes:</p>
-    <ol>
-        <li>
-            <p>(CUV) 圣灵所结的果子、就是 仁爱、喜乐、和平、忍耐、恩慈、良善、信实、温柔、节制. 这样的事、没有律法禁止。</p>
 
-        </li>
-        <li>
-            <p>(NIV) But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
-                gentleness and self-control. Against such things there is no law.</p>
-
-        </li>
-    </ol>
 
 
 
