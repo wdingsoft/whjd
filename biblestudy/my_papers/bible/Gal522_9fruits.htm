@@ -9,10 +9,11 @@
     <script src="./js/jq_tablesorter.js"></script>
     <script src="./Gal522_9fruits.js"></script>
     <style type="text/css">
-        body{
+        body {
             align: center;
             width: 700px;
         }
+
         .hili {
             background-color: grey;
         }
@@ -32,10 +33,12 @@
         td[contenteditable] {
             background-color: lightyellow;
         }
-        .mtrx, dmtrx{
+
+        .mtrx,
+        dmtrx {
             margin-left: auto;
             margin-right: auto;
-            
+
             text-align: center;
         }
     </style>
@@ -53,6 +56,7 @@
 
             gen_trs()
             gen_matrix()
+            gen_agape16()
         })
 
         function gen_trs() {
@@ -69,19 +73,37 @@
             var trs = ""
             Object.keys(NineFruits).forEach(function (key, i) {
                 var obj = NineFruits[key]
-                trs += `<tr><td>${1+i}</td><td>${key}<br>${obj.chn}<br><a href='${obj.href}'>${obj.gre}</a><br>${obj.lit}</td>`
+                trs += `<tr><td>${1 + i}</td><td>${key}<br>${obj.chn}<br><a href='${obj.href}'>${obj.gre}</a><br>${obj.lit}</td>`
                 trs += `<td>${checkary(obj.positive)}</td><td>${checkary(obj.negative)}</td></tr>`
             });
 
             $("#tbd").html(trs)
         }
 
-        function gen_matrix(){
+        function gen_matrix() {
             Object.keys(NineFruits).forEach(function (key, i) {
                 var obj = NineFruits[key]
                 var hts = `<div class='dmtrx'>${key}<br>${obj.chn}<br><a href='${obj.href}'>${obj.gre}</a><br>${obj.lit}</div>`
                 $(`.mtrx:eq(${i})`).html(hts)
             });
+        }
+        function gen_agape16() {
+            var trs = ""
+            Object.keys(Agape16v).forEach(function (key, i) {
+                var ar = Agape16v[key]
+                trs += `<tr><td>${1 + i}</td><td><input type='checkbox'></input></td><td>${key}</td>`;
+                ar.forEach(function (val) {
+                    trs += `<td>${val}</td>`
+                })
+
+                trs += `<td>`
+                Agape16_cases.case1.forEach(function (val) {
+                    trs += `<input type='checkbox'>${val}</input>`
+                })
+                trs += `</td>`
+                trs += `</tr>`
+            });
+            $("#agape16").html(trs)
         }
     </script>
     <script>
@@ -211,9 +233,18 @@
 
 
 
-  
 
-<br>
+    <table border="1">
+        <caption>16 Agapes (1Col 13)</caption>
+        <thead>
+            <tr><th>#</th><th>check</th><th>CUV</th><th>NIV</th><th>ESV</th><th>Cases</th></tr>
+        </thead>
+        <tbody id="agape16">
+
+        </tbody>
+    </table>
+
+    <br>
 
     <div><button id="output">expoert schedule</button><button id="loaddata">import schedule</button><br />
         <textarea id="outxt">

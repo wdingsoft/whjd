@@ -142,7 +142,7 @@ var NineFruits = {
             "mild",
             "pleasant (as opp. to harsh, hard sharp, bitter)",
             "benevolent",
-           
+
         ],
 
         negative: [
@@ -275,8 +275,29 @@ var NineFruits = {
 }
 
 
+var Agape16v = {
+    "恒久忍耐": ["patient", ""],
+    "有恩慈": ["kind", ""],
+    "不嫉妒": ["not envy", ""],
+    "不自夸": ["not boast", ""],
+    "不张狂": ["not proud", "not arrogant"],
+    "不作害羞的事": ["not rude", ""],
+    "不求自己的益处": ["not self-seeking", "does not insist on its own way"],
+    "不轻易发怒": ["not easily angered", "not irritable"],
+    "不计算人的恶": ["keeps no record of wrongs", "not resentful"],
+    "不喜欢不义": ["not delight in evil", "not rejoice at wrongdoing"],
+    "只喜欢真理．": ["rejoices with the truth", "rejoices with the truth"],
+    "凡事包容": ["always protects", "bears all things"],
+    "凡事相信": ["always trusts", " believes all things"],
+    "凡事盼望": ["always hopes", "hopes all things"],
+    "凡事忍耐": ["always perseveres", "endures all things"],
+    "永不止息": ["never fails", "never ends"],
+}
+var Agape16_cases = {
+    "case1": ["in church", "in service", "in missionary", "in work", "in family"],
+}
 
-var takeaways={
-    "the results not the goal.":"",
-    "outer visible not inner faith":""
+var takeaways = {
+    "the results not the goal.": "",
+    "outer visible not inner faith": ""
 }
