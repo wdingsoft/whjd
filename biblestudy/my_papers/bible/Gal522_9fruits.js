@@ -106,7 +106,11 @@ var NineFruits = {
             "steadfastness",
             "perseverance",
             "forbearance",
-            "slowness in persecution",],
+            "slowness in persecution",
+            "toleracne of the world",
+            "keep pure in wick",
+            "insistance of true in lying world"
+        ],
         negative: [
             "Competative",
             "for prosperity(wealth)",
@@ -138,6 +142,7 @@ var NineFruits = {
             "mild",
             "pleasant (as opp. to harsh, hard sharp, bitter)",
             "benevolent",
+           
         ],
 
         negative: [
@@ -165,7 +170,9 @@ var NineFruits = {
             "kindness",
             "virtue",
             "beneficence",
-            "fair"
+            "fair",
+            "advice",
+            "teaching"
 
         ],
         negative: [
@@ -191,6 +198,11 @@ var NineFruits = {
             "trust ",
             "living life",
             "action",
+            "honest",
+            "integret",
+            "keep promise",
+            "keep words",
+            "layal"
         ],
         negative: [
             "Competative",
@@ -213,6 +225,13 @@ var NineFruits = {
             "mildness",
             "meekness",
             "gentleness",
+            "obeyance",
+            "sweet",
+            "soft",
+            "listening",
+            "understanding",
+            "heart",
+            ""
         ],
         negative: [
             "Competative",
@@ -235,6 +254,13 @@ var NineFruits = {
             "masters desires",
             "masters passions",
             "masters sensual appetites",
+            "following the laws",
+            "following the rules",
+            "abide the consitituion",
+            "abide the principles",
+            "abide the cultural customs",
+            "control anger",
+            "control wanton"
         ],
         negative: [
             "Competative",
