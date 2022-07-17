@@ -1,7 +1,7 @@
 
 var NineFruits = {
     Love: {
-        chn: "仁爱",
+        chn: "神爱",
         href: "https://www.blueletterbible.org/lexicon/g26/kjv/tr/0-1/",
         gre: "ἀγάπη",
         lit: "agapē",

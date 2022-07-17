@@ -9,6 +9,10 @@
     <script src="./js/jq_tablesorter.js"></script>
     <script src="./Gal522_9fruits.js"></script>
     <style type="text/css">
+        body{
+            align: center;
+            width: 700px;
+        }
         .hili {
             background-color: grey;
         }
@@ -28,6 +32,12 @@
         td[contenteditable] {
             background-color: lightyellow;
         }
+        .mtrx, dmtrx{
+            margin-left: auto;
+            margin-right: auto;
+            
+            text-align: center;
+        }
     </style>
     <script>
         //auto gen only
@@ -42,6 +52,7 @@
             })
 
             gen_trs()
+            gen_matrix()
         })
 
         function gen_trs() {
@@ -63,6 +74,14 @@
             });
 
             $("#tbd").html(trs)
+        }
+
+        function gen_matrix(){
+            Object.keys(NineFruits).forEach(function (key, i) {
+                var obj = NineFruits[key]
+                var hts = `<div class='dmtrx'>${key}<br>${obj.chn}<br><a href='${obj.href}'>${obj.gre}</a><br>${obj.lit}</div>`
+                $(`.mtrx:eq(${i})`).html(hts)
+            });
         }
     </script>
     <script>
@@ -109,9 +128,60 @@
     </ol>
 
     <table border="1">
-        <caption id="tablesorter855b59fe62b49caption"> Nine Fruits of the Spirit <br>(Gal 5:22-3)</caption>
+        <caption id=""> Matrix of Nine Fruits of the Spirit <br>(Gal 5:22-3)</caption>
         <thead>
-            <tr class="tablesorter-headerRow hiliTR">
+            <tr class="">
+                <th>
+                    <div>#</div>
+                </th>
+                <th>
+                    <div>Personality
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        Heart
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        Friendship
+                    </div>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody id="tbdMtrx">
+            <tr>
+                <td></td>
+                <td id="mtrx1" class="mtrx"></td>
+                <td id="mtrx2" class="mtrx"></td>
+                <td id="mtrx3" class="mtrx"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td id="mtrx4" class="mtrx"></td>
+                <td id="mtrx5" class="mtrx"></td>
+                <td id="mtrx6" class="mtrx"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="mtrx7" class="mtrx"></td>
+                <td id="mtrx8" class="mtrx"></td>
+                <td id="mtrx9" class="mtrx"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+
+
+
+    <table border="1">
+        <caption id=""> Nine Fruits of the Spirit <br>(Gal 5:22-3)</caption>
+        <thead>
+            <tr class="">
                 <th>
                     <div>#</div>
                 </th>
@@ -141,7 +211,9 @@
 
 
 
+  
 
+<br>
 
     <div><button id="output">expoert schedule</button><button id="loaddata">import schedule</button><br />
         <textarea id="outxt">
