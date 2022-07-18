@@ -294,7 +294,7 @@ var Agape16v = {
     "永不止息": ["never fails", "never ends"],
 }
 var Agape16_cases = {
-    "case1": ["in church", "in service", "in missionary", "in work", "in family"],
+    "case1": ["church", "service", "missionary", "work", "family", "community", "society"],
 }
 
 var takeaways = {
