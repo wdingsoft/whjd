@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>9fruits</title>
+    <base target="_blank" />
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+    <script src="../js/jq.js"></script>
+    <script src="../js/jq_tablesorter.js"></script>
+    <script src="./js/prov_uti.js"></script>
+    <script src="./js/chn/prov_pro.js"></script>
+    <script src="./js/chn/prov_exp.js"></script>
+    <script src="./js/chn/prov_quo.js"></script>
+    <style>
+        .clrodd {
+            background-color: rgb(212, 249, 249);
+        }
+
+        .clreven {
+            background-color: rgb(211, 193, 243);
+        }
+
+        .hili {
+            background-color: red;
+        }
+    </style>
+    <script>
+
+        $(function () {
+            gen_tbd()
+            contenteditable_event_bind()
+            contenteditable_storage()
+        })
+
+        function gen_tbd() {
+            var Bobj = CUVS_Pro.Pro
+            var attrs = "contenteditable='true'"
+            var trs = "", idx = 0
+            for (chp in Bobj) {
+                var oddeven = parseInt(chp) % 2 === 0 ? "even" : "odd"
+                for (vrs in Bobj[chp]) {
+                    //console.log(chp, vrs)
+                    trs += `<tr><td>${++idx}</td><td  class='clr${oddeven}'>${chp}</td><td   class='clr${oddeven}'>${vrs}</td><td>${Bobj[chp][vrs]}</td><td ${attrs}></td><td ${attrs}></td></tr>`
+                }
+            }
+            $("#tbd").html(trs)
+        }
+        function contenteditable_event_bind() {
+            $("body").bind("keyup", function () {
+                contenteditable_storage("true")
+            })
+
+            $("td").bind("click", function () {
+                $(this).toggleClass("hili")
+            })
+        }
+        function contenteditable_storage(bStore) {
+            $("*[contenteditable='true']").each(function (i) {
+                var itm = "edi_" + i
+                if (bStore === "true") {
+                    var txt = $(this).text()
+                    localStorage.setItem(itm, txt)
+                } else {
+                    var txt = localStorage.getItem(itm)
+                    $(this).text(txt)
+                }
+                console.log(i, txt)
+            })
+        }
+
+
+
+        function export_editable() {
+            $("#tbd tr").each(function () {
+                var chp = $(this).find("td:eq(1)").text()
+                var vrs = $(this).find("td:eq(2)").text()
+                var cat = $(this).find("td:eq(4)").text()
+                var nts = $(this).find("td:eq(5)").text()
+                CUVS_Exp.Pro[chp][vrs] = [cat, nts]
+            })
+            var str = JSON.stringify(CUVS_Exp, null, 4)
+            $("#txt").val(str)
+        }
+
+        function export_hili_idx() {
+            var out = {}
+            $("#tbd tr").each(function () {
+                if ($(this).find("td:eq(0)").hasClass("hili")) {
+                    var chp = $(this).find("td:eq(1)").text()
+                    var vrs = $(this).find("td:eq(2)").text()
+                    var nts = $(this).find("td:eq(3)").text()
+                    out[`${chp}:${vrs}`] = nts
+                }
+            })
+            var str = JSON.stringify(out, null, 4)
+            $("#txt").val(str)
+        }
+    </script>
+</head>
+
+<body>
+    <textarea id="txt"></textarea><br />
+    <button onclick="export_editable()">export_editable</button>
+    <button onclick="export_hili_idx()">export_hili_idx</button>
+    <hr />
+
+    <table border="1" id="BibOut">
+        <caption>
+            <p>Total Verses 915</p>
+
+            <p>&nbsp;</p>
+        </caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Chp</th>
+                <th>Vrs</th>
+                <th>text</th>
+
+                <th>Class</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody id="tbd">
+
+        </tbody>
+    </table>
+
+
+
+    <hr />
+
+   
+   
+</body>
+
+</html>
+<script>
+   
+    $(function(){
+        
+
+    })
+</script>
