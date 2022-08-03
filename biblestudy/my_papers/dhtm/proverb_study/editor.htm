@@ -9,6 +9,8 @@
     <script src="../js/jq_tablesorter.js"></script>
     <script src="./js/prov_uti.js"></script>
     <script src="./js/chn/CUVS_Pro.js"></script>
+    <script src="./js/eng/KJV_Pro.js"></script>
+    <script src="./js/eng/NIV_Pro.js"></script>
     <script src="./js/chn/prov_exp.js"></script>
     <script src="./js/chn/prov_quo.js"></script>
     <style>
@@ -40,7 +42,9 @@
                 var oddeven = parseInt(chp) % 2 === 0 ? "even" : "odd"
                 for (vrs in Bobj[chp]) {
                     //console.log(chp, vrs)
-                    trs += `<tr><td>${++idx}</td><td  class='clr${oddeven}'>${chp}</td><td   class='clr${oddeven}'>${vrs}</td><td>${Bobj[chp][vrs]}</td><td ${attrs}></td><td ${attrs}></td></tr>`
+                    var txt = `${Bobj[chp][vrs]}`
+                    txt+=`<br>${KJV_pro[chp][vrs]}`
+                    trs += `<tr><td>${++idx}</td><td  class='clr${oddeven}'>${chp}</td><td class='clr${oddeven}'>${vrs}</td><td>${txt}</td><td ${attrs}></td><td ${attrs}></td></tr>`
                 }
             }
             $("#tbd").html(trs)
@@ -130,15 +134,15 @@
 
     <hr />
 
-   
-   
+
+
 </body>
 
 </html>
 <script>
-   
-    $(function(){
-        
+
+    $(function () {
+
 
     })
 </script>
