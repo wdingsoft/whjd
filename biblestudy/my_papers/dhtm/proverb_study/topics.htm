@@ -27,111 +27,49 @@
     <script>
 
         $(function () {
-            gen_tbd()
-            contenteditable_event_bind()
-            contenteditable_storage()
+
         })
 
-        function gen_tbd() {
-            var Bobj = CUVS_Pro.Pro
-            var attrs = "contenteditable='true'"
-            var trs = "", idx = 0
-            for (chp in Bobj) {
-                var oddeven = parseInt(chp) % 2 === 0 ? "even" : "odd"
-                for (vrs in Bobj[chp]) {
-                    //console.log(chp, vrs)
-                    trs += `<tr><td>${++idx}</td><td  class='clr${oddeven}'>${chp}</td><td   class='clr${oddeven}'>${vrs}</td><td>${Bobj[chp][vrs]}</td><td ${attrs}></td><td ${attrs}></td></tr>`
-                }
-            }
-            $("#tbd").html(trs)
-        }
-        function contenteditable_event_bind() {
-            $("body").bind("keyup", function () {
-                contenteditable_storage("true")
-            })
-
-            $("td").bind("click", function () {
-                $(this).toggleClass("hili")
-            })
-        }
-        function contenteditable_storage(bStore) {
-            $("*[contenteditable='true']").each(function (i) {
-                var itm = "edi_" + i
-                if (bStore === "true") {
-                    var txt = $(this).text()
-                    localStorage.setItem(itm, txt)
-                } else {
-                    var txt = localStorage.getItem(itm)
-                    $(this).text(txt)
-                }
-                console.log(i, txt)
-            })
-        }
-
-
-
-        function export_editable() {
-            $("#tbd tr").each(function () {
-                var chp = $(this).find("td:eq(1)").text()
-                var vrs = $(this).find("td:eq(2)").text()
-                var cat = $(this).find("td:eq(4)").text()
-                var nts = $(this).find("td:eq(5)").text()
-                CUVS_Exp.Pro[chp][vrs] = [cat, nts]
-            })
-            var str = JSON.stringify(CUVS_Exp, null, 4)
-            $("#txt").val(str)
-        }
-
-        function export_hili_idx() {
-            var out = {}
-            $("#tbd tr").each(function () {
-                if ($(this).find("td:eq(0)").hasClass("hili")) {
-                    var chp = $(this).find("td:eq(1)").text()
-                    var vrs = $(this).find("td:eq(2)").text()
-                    var nts = $(this).find("td:eq(3)").text()
-                    out[`${chp}:${vrs}`] = nts
-                }
-            })
-            var str = JSON.stringify(out, null, 4)
-            $("#txt").val(str)
-        }
     </script>
 </head>
 
 <body>
-  
+
 
     <h1>Topics</h1>
     <div id="topics"></div>
 
-    <hr/>
+    <hr />
 
 
 
 
     <hr />
 
-   
-   
+
+
 </body>
 
 </html>
 <script>
-    function list_prov_quo(){
-        var tabs=""
-        for(topic in prov_quo){
-            var idx=0
-            tabs+=`<table border='1'><caption>${topic}</caption><tbody>`
+    function list_prov_quo() {
+        var tabs = ""
+        for (topic in prov_quo) {
+            var idx = 0
+            tabs += `<table border='1'><caption>${topic}</caption><tbody>`
             var oj = prov_quo[topic]
-            for(vrs in oj){
-                tabs+=`<tr><td>${++idx}</td><td>${vrs}</td><td>${oj[vrs]}</td>`
+            for (vrs in oj) {
+                tabs += `<tr><td>${++idx}</td><td>${vrs}</td><td>${oj[vrs]}</td>`
             }
-            tabs+=`</tbody></table>`
+            tabs += `</tbody></table>`
         }
         $("#topics").html(tabs)
     }
-    $(function(){
+    $(function () {
         list_prov_quo()
 
+        $("td").bind("click", function () {
+            $(this).toggleClass("hili")
+        })
     })
 </script>
