@@ -11,6 +11,8 @@
     <script src="./js/chn/prov_pro.js"></script>
     <script src="./js/chn/prov_exp.js"></script>
     <script src="./js/chn/prov_quo.js"></script>
+    <script src="./js/chn/prov_frq1.js"></script>
+    <script src="./js/chn/prov_frq2.js"></script>
     <style>
         .clrodd {
             background-color: rgb(212, 249, 249);
@@ -22,6 +24,9 @@
 
         .hili {
             background-color: red;
+        }
+        #topics1,#topics2{
+            float: left;
         }
     </style>
     <script>
@@ -37,7 +42,8 @@
 
 
     <h1>Topics</h1>
-    <div id="topics"></div>
+    <div id="topics1" ></div>
+    <div id="topics2"></div>
 
     <hr />
 
@@ -52,21 +58,20 @@
 
 </html>
 <script>
-    function list_prov_quo() {
+    function list_prov_frq(frqObj, eid) {
         var tabs = ""
-        for (topic in prov_quo) {
-            var idx = 0
-            tabs += `<table border='1'><caption>${topic}</caption><tbody>`
-            var oj = prov_quo[topic]
-            for (vrs in oj) {
-                tabs += `<tr><td>${++idx}</td><td>${vrs}</td><td>${oj[vrs]}</td>`
-            }
-            tabs += `</tbody></table>`
+        var idx = 0
+        tabs += `<table border='1'><caption>frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
+        for (topic in frqObj) {
+            var frq = frqObj[topic]
+            tabs += `<tr><td>${++idx}</td><td>${topic}</td><td>${frq}</td>`
         }
-        $("#topics").html(tabs)
+        tabs += `</tbody></table>`
+        $(eid).html(tabs)
     }
     $(function () {
-        list_prov_quo()
+        list_prov_frq(prov_frq1.sortedZiFrqObj, "#topics1")
+        list_prov_frq(prov_frq2.sortedMeaningfulPhrasewFrq2, "#topics2")
 
         $("td").bind("click", function () {
             $(this).toggleClass("hili")

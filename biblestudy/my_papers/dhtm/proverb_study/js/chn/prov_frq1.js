@@ -1,4 +1,4 @@
-var tmpObj=
+var prov_frq1=
 {
     "status": {
         "generator": "frq_analyzer_chn.htm"
