@@ -13,6 +13,7 @@
     <script src="./js/dat/prov_quo.js"></script>
     <script src="./js/dat/prov_frq1.js"></script>
     <script src="./js/dat/prov_frq2.js"></script>
+    <script src="./js/dat/prov_frq3.js"></script>
     <style>
         .clrodd {
             background-color: rgb(212, 249, 249);
@@ -25,15 +26,18 @@
         .hili {
             background-color: red;
         }
-        .hili_txt{
+
+        .hili_txt {
             background-color: lightblue;
         }
 
         #topics1,
-        #topics2 {
+        #topics2,
+        #topics3 {
             float: left;
         }
-        table{
+
+        table {
             margin-right: 10px;
         }
     </style>
@@ -50,8 +54,10 @@
 
 
     <h1>Topics</h1>
+    <textarea id="outext"></textarea>
     <div id="topics1"></div>
     <div id="topics2"></div>
+    <div id="topics3"></div>
     <div id="txtable"></div>
 
     <hr />
@@ -81,6 +87,7 @@
     $(function () {
         list_prov_frq(prov_frq1.sortedZiFrqObj, "#topics1")
         list_prov_frq(prov_frq2.sortedMeaningfulPhrasewFrq2, "#topics2")
+        list_prov_frq(prov_frq3.sortedZiFrqObj, "#topics3")
 
         $("td").bind("click", function () {
             $(this).toggleClass("hili")
@@ -94,6 +101,7 @@
 
 
     function gen_table_with_zici(zici) {
+        var outObj = {}
         var tabs = ""
         var idx = 0
         tabs += `<table border='1'><caption>Verses</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
@@ -102,13 +110,17 @@
             for (vrs in obj) {
                 var txt = obj[vrs]
                 if (txt.indexOf(zici) < 0) continue
+                outObj[`${chp}:${vrs}`] = txt
+
                 txt = txt.replace(zici, `<font color='red'>${zici}</font>`)
                 tabs += `<tr><td>${++idx}</td><td>${chp}:${vrs}</td><td>${txt}</td></tr>`
+
             }
         }
         tabs += `</tbody></table>`
-        $("#txtable").html(tabs).find("td").on("click",function(){
+        $("#txtable").html(tabs).find("td").on("click", function () {
             $(this).toggleClass("hili_txt")
         })
+        $("#outext").val(JSON.stringify(outObj,null,4))
     }
 </script>
