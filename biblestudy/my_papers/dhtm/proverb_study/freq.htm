@@ -25,8 +25,16 @@
         .hili {
             background-color: red;
         }
-        #topics1,#topics2{
+        .hili_txt{
+            background-color: lightblue;
+        }
+
+        #topics1,
+        #topics2 {
             float: left;
+        }
+        table{
+            margin-right: 10px;
         }
     </style>
     <script>
@@ -42,8 +50,9 @@
 
 
     <h1>Topics</h1>
-    <div id="topics1" ></div>
+    <div id="topics1"></div>
     <div id="topics2"></div>
+    <div id="txtable"></div>
 
     <hr />
 
@@ -64,7 +73,7 @@
         tabs += `<table border='1'><caption>frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
         for (topic in frqObj) {
             var frq = frqObj[topic]
-            tabs += `<tr><td>${++idx}</td><td>${topic}</td><td>${frq}</td>`
+            tabs += `<tr><td>${++idx}</td><td class='zici'>${topic}</td><td>${frq}</td>`
         }
         tabs += `</tbody></table>`
         $(eid).html(tabs)
@@ -76,5 +85,30 @@
         $("td").bind("click", function () {
             $(this).toggleClass("hili")
         })
+
+        $(".zici").on("click", function () {
+            var txt = $(this).text()
+            gen_table_with_zici(txt)
+        })
     })
+
+
+    function gen_table_with_zici(zici) {
+        var tabs = ""
+        var idx = 0
+        tabs += `<table border='1'><caption>Verses</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
+        for (chp in CUVS_Pro) {
+            var obj = CUVS_Pro[chp]
+            for (vrs in obj) {
+                var txt = obj[vrs]
+                if (txt.indexOf(zici) < 0) continue
+                txt = txt.replace(zici, `<font color='red'>${zici}</font>`)
+                tabs += `<tr><td>${++idx}</td><td>${chp}:${vrs}</td><td>${txt}</td></tr>`
+            }
+        }
+        tabs += `</tbody></table>`
+        $("#txtable").html(tabs).find("td").on("click",function(){
+            $(this).toggleClass("hili_txt")
+        })
+    }
 </script>
