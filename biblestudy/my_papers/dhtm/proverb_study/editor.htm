@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Proverb</title>
+    <title>edit</title>
     <base target="_blank" />
     <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
     <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
@@ -24,6 +24,11 @@
 
         .hili {
             background-color: red;
+        }
+        #opanel{
+            position: fixed;
+            right: 10px;
+            top:10px;
         }
     </style>
     <script>
@@ -106,9 +111,12 @@
 </head>
 
 <body>
-    <textarea id="txt"></textarea><br />
-    <button onclick="export_editable()">export_editable</button>
-    <button onclick="export_hili_idx()">export_hili_idx</button>
+    <div id="opanel">
+        <textarea id="txt"></textarea><br />
+        <button onclick="export_editable()">export_editable</button>
+        <button onclick="export_hili_idx()">export_hili_idx</button>
+    </div>
+   
     <hr />
 
     <table border="1" id="BibOut">
