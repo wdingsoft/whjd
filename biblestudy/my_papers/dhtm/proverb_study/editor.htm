@@ -25,10 +25,11 @@
         .hili {
             background-color: red;
         }
-        #opanel{
+
+        #opanel {
             position: fixed;
             right: 10px;
-            top:10px;
+            top: 10px;
         }
     </style>
     <script>
@@ -48,8 +49,8 @@
                 for (vrs in Bobj[chp]) {
                     //console.log(chp, vrs)
                     var txt = `${Bobj[chp][vrs]}`
-                    txt+=`<br>${KJV_Pro[chp][vrs]}`
-                    txt+=`<br>${NIV_Pro[chp][vrs]}`
+                    txt += `<br>${KJV_Pro[chp][vrs]}`
+                    txt += `<br>${NIV_Pro[chp][vrs]}`
                     trs += `<tr><td>${++idx}</td><td  class='clr${oddeven}'>${chp}</td><td class='clr${oddeven}'>${vrs}</td><td>${txt}</td><td ${attrs}></td><td ${attrs}></td></tr>`
                 }
             }
@@ -58,7 +59,7 @@
 
 
         function contenteditable_event_bind() {
-            $("body").bind("keyup", function () {
+            $("body").bind("keyup, click", function () {
                 contenteditable_storage("true")
             })
 
@@ -68,13 +69,19 @@
         }
         function contenteditable_storage(bStore) {
             $("*[contenteditable='true']").each(function (i) {
-                var itm = "edi_" + i
+                var itm = "edi_" + i, cls = `cls_${i}`
                 if (bStore === "true") {
                     var txt = $(this).text()
                     localStorage.setItem(itm, txt)
+                    ////
+                    var ctr = $(this).attr("class")
+                    localStorage.setItem(cls, ctr)
                 } else {
                     var txt = localStorage.getItem(itm)
                     $(this).text(txt)
+                    ////
+                    var cls = localStorage.getItem(cls)
+                    $(this).addClass(cls)
                 }
                 console.log(i, txt)
             })
@@ -116,7 +123,7 @@
         <button onclick="export_editable()">export_editable</button>
         <button onclick="export_hili_idx()">export_hili_idx</button>
     </div>
-   
+
     <hr />
 
     <table border="1" id="BibOut">
