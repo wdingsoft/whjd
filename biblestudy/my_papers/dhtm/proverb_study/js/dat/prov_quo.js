@@ -127,6 +127,10 @@ var prov_quo = {
         "27:17": "铁磨铁、磨出刃来．朋友相感、〔原文作磨朋友的脸〕也是如此。"
     },
 
+    "Jesus": {
+
+    },
+
     "口 Language Art":
     {
         "18:4": "人口中的言语、如同深水．智慧的泉源、好像涌流的河水。The words of a man's mouth are as deep waters, and the wellspring of wisdom as a flowing brook.The words of a man's mouth are deep waters, but the fountain of wisdom is a bubbling brook.",
@@ -250,6 +254,14 @@ var prov_quo = {
         "31:26": "他开口就发智慧．他舌上有仁慈的法则．She openeth her mouth with wisdom; and in her tongue is the law of kindness.She speaks with wisdom, and faithful instruction is on her tongue.",
         "31:28": "他的儿女起来称他有福．他的丈夫也称赞他、Her children arise up, and call her blessed; her husband also, and he praiseth her.Her children arise and call her blessed; her husband also, and he praises her:",
         "31:29": "说、才德的女子很多、惟独你超过一切。Many daughters have done virtuously, but thou excellest them all.\"Many women do noble things, but you surpass them all.\""
-        
+
+    },
+
+    "State/Politics": {
+
+    },
+
+    "Sex/Adultery": {
+
     }
 }
