@@ -12,7 +12,7 @@
     <script src="./js/dat/wis_frq1.js"></script>
     <script src="./js/dat/wis_frq2.js"></script>
     <script src="./js/dat/wis_frq3.js"></script>
-   
+
     <style>
         .clrodd {
             background-color: rgb(212, 249, 249);
@@ -54,6 +54,7 @@
 
     <h1>Wisdom Word Frq</h1>
     <textarea id="outext"></textarea>
+    <button >Hili-Ary</button><br>
     <div id="topics1"></div>
     <div id="topics2"></div>
     <div id="topics3"></div>
@@ -75,7 +76,7 @@
     function list_prov_frq(frqObj, eid) {
         var tabs = ""
         var idx = 0
-        tabs += `<table border='1'><caption>frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
+        tabs += `<table border='1'><caption>Words-Frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
         for (topic in frqObj) {
             var frq = frqObj[topic]
             tabs += `<tr><td>${++idx}</td><td class='zici'>${topic}</td><td>${frq}</td>`
@@ -95,6 +96,15 @@
         $(".zici").on("click", function () {
             var txt = $(this).text()
             gen_table_with_zici(txt, wis_simp)
+        })
+
+        $("caption").bind("click", function () {
+            var ar=[]
+            $(this).parent().find(".hili").each(function () {
+                var txt = $(this).text()
+                ar.push(txt)
+            })
+            $("#outext").val(JSON.stringify(ar,0,4))
         })
     })
 
@@ -120,6 +130,6 @@
         $("#txtable").html(tabs).find("td").on("click", function () {
             $(this).toggleClass("hili_txt")
         })
-        $("#outext").val(JSON.stringify(outObj,null,4))
+        $("#outext").val(JSON.stringify(outObj, null, 4))
     }
 </script>
