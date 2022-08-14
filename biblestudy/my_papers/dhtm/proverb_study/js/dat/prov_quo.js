@@ -128,7 +128,42 @@ var prov_quo = {
     },
 
     "Jesus": {
-
+        "8:1": "智慧岂不呼叫、聪明岂不发声。Doth not wisdom cry? and understanding put forth her voice?Does not wisdom call out? Does not understanding raise her voice?",
+        "8:2": "他在道旁高处的顶上、在十字路口站立．She standeth in the top of high places, by the way in the places of the paths.On the heights along the way, where the paths meet, she takes her stand;",
+        "8:3": "在城门旁、在城门口、在城门洞、大声说、She crieth at the gates, at the entry of the city, at the coming in at the doors.beside the gates leading into the city, at the entrances, she cries aloud:",
+        "8:4": "众人哪、我呼叫你们．我向世人发声。Unto you, O men, I call; and my voice is to the sons of man.\"To you, O men, I call out; I raise my voice to all mankind.",
+        "8:5": "说、愚蒙人哪、你们要会悟灵明．愚昧人哪、你们当心里明白。O ye simple, understand wisdom: and, ye fools, be ye of an understanding heart.You who are simple, gain prudence; you who are foolish, gain understanding.",
+        "8:6": "你们当听、因我要说极美的话．我张嘴要论正直的事。Hear; for I will speak of excellent things; and the opening of my lips shall be right things.Listen, for I have worthy things to say; I open my lips to speak what is right.",
+        "8:7": "我的口要发出真理．我的嘴憎恶邪恶。For my mouth shall speak truth; and wickedness is an abomination to my lips.My mouth speaks what is true, for my lips detest wickedness.",
+        "8:8": "我口中的言语、都是公义、并无弯曲乖僻。All the words of my mouth are in righteousness; there is nothing froward or perverse in them.All the words of my mouth are just; none of them is crooked or perverse.",
+        "8:9": "有聪明的以为明显、得知识的以为正直．They are all plain to him that understandeth, and right to them that find knowledge.To the discerning all of them are right; they are faultless to those who have knowledge.",
+        "8:10": "你们当受我的教训、不受白银．宁得知识、胜过黄金。Receive my instruction, and not silver; and knowledge rather than choice gold.Choose my instruction instead of silver, knowledge rather than choice gold,",
+        "8:11": "因为智慧比珍珠〔或作红宝石〕更美．一切可喜爱的、都不足与比较。For wisdom is better than rubies; and all the things that may be desired are not to be compared to it.for wisdom is more precious than rubies, and nothing you desire can compare with her.",
+        "8:12": "我智慧以灵明为居所、又寻得知识和谋略。I wisdom dwell with prudence, and find out knowledge of witty inventions.\"I, wisdom, dwell together with prudence; I possess knowledge and discretion.",
+        "8:13": "敬畏耶和华、在乎恨恶邪恶．那骄傲、狂妄、并恶道、以及乖谬的口、都为我所恨恶。The fear of the LORD is to hate evil: pride, and arrogancy, and the evil way, and the froward mouth, do I hate.To fear the Lord is to hate evil; I hate pride and arrogance, evil behavior and perverse speech.",
+        "8:14": "我有谋略、和真知识．我乃聪明．我有能力。Counsel is mine, and sound wisdom: I am understanding; I have strength.Counsel and sound judgment are mine; I have understanding and power.",
+        "8:15": "帝王借我坐国位．君王借我定公平。By me kings reign, and princes decree justice.By me kings reign and rulers make laws that are just;",
+        "8:16": "王子和首领、世上一切的审判官、都是借我掌权。By me princes rule, and nobles, even all the judges of the earth.by me princes govern, and all nobles who rule on earth.",
+        "8:17": "爱我的、我也爱他．恳切寻求我的、必寻得见。I love them that love me; and those that seek me early shall find me.I love those who love me, and those who seek me find me.",
+        "8:18": "丰富尊荣在我．恒久的财并公义也在我。Riches and honour are with me; yea, durable riches and righteousness.With me are riches and honor, enduring wealth and prosperity.",
+        "8:19": "我的果实胜过黄金．强如精金．我的出产超乎高银。My fruit is better than gold, yea, than fine gold; and my revenue than choice silver.My fruit is better than fine gold; what I yield surpasses choice silver.",
+        "8:20": "我在公义的道上走、在公平的路中行．I lead in the way of righteousness, in the midst of the paths of judgment:I walk in the way of righteousness, along the paths of justice,",
+        "8:21": "使爱我的承受货财、并充满他们的府库。That I may cause those that love me to inherit substance; and I will fill their treasures.bestowing wealth on those who love me and making their treasuries full.",
+        "8:22": "在耶和华造化的起头、在太初创造万物之先、就有了我。The LORD possessed me in the beginning of his way, before his works of old.\"The Lord brought me forth as the first of his works, , before his deeds of old;",
+        "8:23": "从亘古、从太初、未有世界以前、我已被立。I was set up from everlasting, from the beginning, or ever the earth was.I was appointed from eternity, from the beginning, before the world began.",
+        "8:24": "没有深渊、没有大水的泉源、我已生出。When there were no depths, I was brought forth; when there were no fountains abounding with water.When there were no oceans, I was given birth, when there were no springs abounding with water;",
+        "8:25": "大山未曾奠定、小山未有之先、我已生出。Before the mountains were settled, before the hills was I brought forth:before the mountains were settled in place, before the hills, I was given birth,",
+        "8:26": "耶和华还没有创造大地、和田野、并世上的土质、我已生出。While as yet he had not made the earth, nor the fields, nor the highest part of the dust of the world.before he made the earth or its fields or any of the dust of the world.",
+        "8:27": "他立高天、我在那里．他在渊面的周围、画出圆圈、When he prepared the heavens, I was there: when he set a compass upon the face of the depth:I was there when he set the heavens in place, when he marked out the horizon on the face of the deep,",
+        "8:28": "上使穹苍坚硬、下使渊源稳固、When he established the clouds above: when he strengthened the fountains of the deep:when he established the clouds above and fixed securely the fountains of the deep,",
+        "8:29": "为沧海定出界限、使水不越过他的命令、立定大地的根基．When he gave to the sea his decree, that the waters should not pass his commandment: when he appointed the foundations of the earth:when he gave the sea its boundary so the waters would not overstep his command, and when he marked out the foundations of the earth.",
+        "8:30": "那时、我在他那里为工师、日日为他所喜爱、常常在他面前踊跃、Then I was by him, as one brought up with him: and I was daily his delight, rejoicing always before him;Then I was the craftsman at his side. I was filled with delight day after day, rejoicing always in his presence,",
+        "8:31": "踊跃在他为人预备可住之地、也喜悦住在世人之间。Rejoicing in the habitable part of his earth; and my delights were with the sons of men.rejoicing in his whole world and delighting in mankind.",
+        "8:32": "众子阿、现在要听从我．因为谨守我道的、便为有福。Now therefore hearken unto me, O ye children: for blessed are they that keep my ways.\"Now then, my sons, listen to me; blessed are those who keep my ways.",
+        "8:33": "要听教训、就得智慧、不可弃绝。Hear instruction, and be wise, and refuse it not.Listen to my instruction and be wise; do not ignore it.",
+        "8:34": "听从我、日日在我门口仰望、在我门框旁边等候的、那人便为有福。Blessed is the man that heareth me, watching daily at my gates, waiting at the posts of my doors.Blessed is the man who listens to me, watching daily at my doors, waiting at my doorway.",
+        "8:35": "因为寻得我的、就寻得生命、也必蒙耶和华的恩惠。For whoso findeth me findeth life, and shall obtain favour of the LORD.For whoever finds me finds life and receives favor from the Lord .",
+        "8:36": "得罪我的、却害了自己的性命．恨恶我的、都喜爱死亡。But he that sinneth against me wrongeth his own soul: all they that hate me love death.But whoever fails to find me harms himself; all who hate me love death.\""
     },
 
     "口 Language Art":
@@ -257,8 +292,57 @@ var prov_quo = {
 
     },
 
-    "State/Politics": {
-
+    "State/Politics":
+    {
+        "6:7": "蚂蚁没有元帅、没有官长、没有君王、Which having no guide, overseer, or ruler,It has no commander, no overseer or ruler,",
+        "8:15": "帝王借我坐国位．君王借我定公平。By me kings reign, and princes decree justice.By me kings reign and rulers make laws that are just;",
+        "8:16": "王子和首领、世上一切的审判官、都是借我掌权。By me princes rule, and nobles, even all the judges of the earth.by me princes govern, and all nobles who rule on earth.",
+        "14:28": "帝王荣耀在乎民多．君王衰败在乎民少。In the multitude of people is the king's honour: but in the want of people is the destruction of the prince.A large population is a king's glory, but without subjects a prince is ruined.",
+        "14:35": "智慧的臣子、蒙王恩惠．贻羞的仆人、遭其震怒。The king's favour is toward a wise servant: but his wrath is against him that causeth shame.A king delights in a wise servant, but a shameful servant incurs his wrath.",
+        "16:10": "王的嘴中有神语．审判之时、他的口、必不差错。A divine sentence is in the lips of the king: his mouth transgresseth not in judgment.The lips of a king speak as an oracle, and his mouth should not betray justice.",
+        "16:12": "作恶为王所憎恶．因国位是靠公义坚立。It is an abomination to kings to commit wickedness: for the throne is established by righteousness.Kings detest wrongdoing, for a throne is established through righteousness.",
+        "16:13": "公义的嘴、为王所喜悦．说正直话的、为王所喜爱。Righteous lips are the delight of kings; and they love him that speaketh right.Kings take pleasure in honest lips; they value a man who speaks the truth.",
+        "16:14": "王的震怒、如杀人的使者．但智慧人能止息王怒。The wrath of a king is as messengers of death: but a wise man will pacify it.A king's wrath is a messenger of death, but a wise man will appease it.",
+        "16:15": "王的脸光、使人有生命．王的恩典、好像春云时雨。In the light of the king's countenance is life; and his favour is as a cloud of the latter rain.When a king's face brightens, it means life; his favor is like a rain cloud in spring.",
+        "17:7": "愚顽人说美言本不相宜、何况君王说谎话呢。Excellent speech becometh not a fool: much less do lying lips a prince.Arrogant lips are unsuited to a foolhow much worse lying lips to a ruler!",
+        "19:10": "愚昧人宴乐度日、是不合宜的．何况仆人管辖王子呢。Delight is not seemly for a fool; much less for a servant to have rule over princes.It is not fitting for a fool to live in luxury- how much worse for a slave to rule over princes!",
+        "19:12": "王的忿怒、好像狮子吼叫．他的恩典、却如草上的甘露。The king's wrath is as the roaring of a lion; but his favour is as dew upon the grass.A king's rage is like the roar of a lion, but his favor is like dew on the grass.",
+        "20:2": "王的威吓如同狮子吼叫．惹动他怒的、是自害己命。The fear of a king is as the roaring of a lion: whoso provoketh him to anger sinneth against his own soul.A king's wrath is like the roar of a lion; he who angers him forfeits his life.",
+        "20:8": "王坐在审判的位上、以眼目驱散诸恶。A king that sitteth in the throne of judgment scattereth away all evil with his eyes.When a king sits on his throne to judge, he winnows out all evil with his eyes.",
+        "20:26": "智慧的王、簸散恶人、用碌碡滚轧他们。A wise king scattereth the wicked, and bringeth the wheel over them.A wise king winnows out the wicked; he drives the threshing wheel over them.",
+        "20:28": "王因仁慈和诚实、得以保全他的国位、也因仁慈立稳。Mercy and truth preserve the king: and his throne is upholden by mercy.Love and faithfulness keep a king safe; through love his throne is made secure.",
+        "21:1": "王的心在耶和华手中、好像陇沟的水、随意流转。The king's heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will.The king's heart is in the hand of the Lord ; he directs it like a watercourse wherever he pleases.",
+        "22:11": "喜爱清心的人、因他嘴上的恩言、王必与他为友。He that loveth pureness of heart, for the grace of his lips the king shall be his friend.He who loves a pure heart and whose speech is gracious will have the king for his friend.",
+        "22:29": "你看见办事殷勤的人么、他必站在君王面前．必不站在下贱人面前。Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men.Do you see a man skilled in his work? He will serve before kings; he will not serve before obscure men.",
+        "24:21": "我儿、你要敬畏耶和华与君王．不要与反复无常的人结交．My son, fear thou the LORD and the king: and meddle not with them that are given to change:Fear the Lord and the king, my son, and do not join with the rebellious,",
+        "24:22": "因为他们的灾难、必忽然而起．耶和华与君王所施行的毁灭、谁能知道呢。For their calamity shall rise suddenly; and who knoweth the ruin of them both?for those two will send sudden destruction upon them, and who knows what calamities they can bring? Further Sayings of the Wise",
+        "25:2": "将事隐秘、乃　神的荣耀．将事察清、乃君王的荣耀。It is the glory of God to conceal a thing: but the honour of kings is to search out a matter.It is the glory of God to conceal a matter; to search out a matter is the glory of kings.",
+        "25:3": "天之高、地之厚、君王之心也测不透。The heaven for height, and the earth for depth, and the heart of kings is unsearchable.As the heavens are high and the earth is deep, so the hearts of kings are unsearchable.",
+        "25:5": "除去王面前的恶人、国位就靠公义坚立。Take away the wicked from before the king, and his throne shall be established in righteousness.remove the wicked from the king's presence, and his throne will be established through righteousness.",
+        "25:6": "不要在王面前妄自尊大．不要在大人的位上站立。Put not forth thyself in the presence of the king, and stand not in the place of great men:Do not exalt yourself in the king's presence, and do not claim a place among great men;",
+        "25:7": "宁可有人说请你上来、强如在你觐见的王子面前、叫你退下。For better it is that it be said unto thee, Come up hither; than that thou shouldest be put lower in the presence of the prince whom thine eyes have seen.it is better for him to say to you, \"Come up here,\" than for him to humiliate you before a nobleman. What you have seen with your eyes",
+        "25:15": "恒常忍耐、可以劝动君王．柔和的舌头、能折断骨头。By long forbearing is a prince persuaded, and a soft tongue breaketh the bone.Through patience a ruler can be persuaded, and a gentle tongue can break a bone.",
+        "28:2": "邦国因有罪过、君王就多更换．因有聪明知识的人、国必长存。For the transgression of a land many are the princes thereof: but by a man of understanding and knowledge the state thereof shall be prolonged.When a country is rebellious, it has many rulers, but a man of understanding and knowledge maintains order.",
+        "28:15": "暴虐的君王辖制贫民．好像吼叫的狮子、觅食的熊。As a roaring lion, and a ranging bear; so is a wicked ruler over the poor people.Like a roaring lion or a charging bear is a wicked man ruling over a helpless people.",
+        "29:4": "王借公平、使国坚定．索要贿赂、使国倾败。The king by judgment establisheth the land: but he that receiveth gifts overthroweth it.By justice a king gives a country stability, but one who is greedy for bribes tears it down.",
+        "29:12": "君王若听谎言、他一切臣仆都是奸恶。If a ruler hearken to lies, all his servants are wicked.If a ruler listens to lies, all his officials become wicked.",
+        "29:14": "君王凭诚实判断穷人．他的国位、必永远坚立。The king that faithfully judgeth the poor, his throne shall be established for ever.If a king judges the poor with fairness, his throne will always be secure.",
+        "29:26": "求王恩的人多．定人事乃在耶和华。Many seek the ruler's favour; but every man's judgment cometh from the LORD.Many seek an audience with a ruler, but it is from the Lord that man gets justice.",
+        "30:31": "猎狗、公山羊、和无人能敌的君王。A greyhound; an he goat also; and a king, against whom there is no rising up.a strutting rooster, a he-goat, and a king with his army around him.",
+        "31:3": "不要将你的精力给妇女、也不要有败坏君王的行为。Give not thy strength unto women, nor thy ways to that which destroyeth kings.do not spend your strength on women, your vigor on those who ruin kings.",
+        "31:4": "利慕伊勒阿、君王喝酒、君王喝酒不相宜．王子说、浓酒在那里也不相宜．It is not for kings, O Lemuel, it is not for kings to drink wine; nor for princes strong drink:\"It is not for kings, O Lemuel- not for kings to drink wine, not for rulers to crave beer,"
+    },
+    "citizen":
+    {
+        "11:14": "无智谋、民就败落．谋士多、人便安居。",
+        "11:26": "屯粮不卖的、民必咒诅他．情愿出卖的、人必为他祝福。",
+        "14:28": "帝王荣耀在乎民多．君王衰败在乎民少。",
+        "14:34": "公义使邦国高举．罪恶是人民的羞辱。",
+        "24:24": "对恶人说、你是义人的、这人万民必咒诅、列邦必憎恶。",
+        "28:3": "穷人欺压贫民、好像暴雨冲没粮食。",
+        "28:15": "暴虐的君王辖制贫民．好像吼叫的狮子、觅食的熊。",
+        "29:2": "义人增多、民就喜乐．恶人掌权、民就叹息。",
+        "29:18": "没有异象、〔或作默示〕民就放肆．惟遵守律法的、便为有福。"
     },
 
     "Sex/Adultery": {

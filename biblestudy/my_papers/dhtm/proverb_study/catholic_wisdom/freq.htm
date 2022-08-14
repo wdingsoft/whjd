@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>frq</title>
+    <base target="_blank" />
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+    <script src="../../js/jq.js"></script>
+    <script src="../../js/jq_tablesorter.js"></script>
+    <script src="./js/uti/func.js"></script>
+    <script src="./js/src/wis_simp.js"></script>
+    <script src="./js/dat/wis_frq1.js"></script>
+    <script src="./js/dat/wis_frq2.js"></script>
+    <script src="./js/dat/wis_frq3.js"></script>
+   
+    <style>
+        .clrodd {
+            background-color: rgb(212, 249, 249);
+        }
+
+        .clreven {
+            background-color: rgb(211, 193, 243);
+        }
+
+        .hili {
+            background-color: red;
+        }
+
+        .hili_txt {
+            background-color: lightblue;
+        }
+
+        #topics1,
+        #topics2,
+        #topics3 {
+            float: left;
+        }
+
+        table {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+
+        $(function () {
+
+        })
+
+    </script>
+</head>
+
+<body>
+
+
+    <h1>Wisdom Word Frq</h1>
+    <textarea id="outext"></textarea>
+    <div id="topics1"></div>
+    <div id="topics2"></div>
+    <div id="topics3"></div>
+    <div id="txtable"></div>
+
+    <hr />
+
+
+
+
+    <hr />
+
+
+
+</body>
+
+</html>
+<script>
+    function list_prov_frq(frqObj, eid) {
+        var tabs = ""
+        var idx = 0
+        tabs += `<table border='1'><caption>frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
+        for (topic in frqObj) {
+            var frq = frqObj[topic]
+            tabs += `<tr><td>${++idx}</td><td class='zici'>${topic}</td><td>${frq}</td>`
+        }
+        tabs += `</tbody></table>`
+        $(eid).html(tabs)
+    }
+    $(function () {
+        list_prov_frq(wis_frq1.sortedZiFrqObj, "#topics1")
+        list_prov_frq(wis_frq2.sortedZiFrqObj, "#topics2")
+        list_prov_frq(wis_frq3.sortedZiFrqObj, "#topics3")
+
+        $("td").bind("click", function () {
+            $(this).toggleClass("hili")
+        })
+
+        $(".zici").on("click", function () {
+            var txt = $(this).text()
+            gen_table_with_zici(txt, wis_simp)
+        })
+    })
+
+
+    function gen_table_with_zici(zici, CUVS_Pro) {
+        var outObj = {}
+        var tabs = ""
+        var idx = 0
+        tabs += `<table border='1'><caption>Verses</caption><thead><tr><th>#</th><th>chp:vrs</th><th>text</th></tr></thead><tbody>`
+        for (chp in CUVS_Pro) {
+            var obj = CUVS_Pro[chp]
+            for (vrs in obj) {
+                var txt = obj[vrs]
+                if (txt.indexOf(zici) < 0) continue
+                outObj[`${chp}:${vrs}`] = txt
+
+                txt = txt.replace(zici, `<font color='red'>${zici}</font>`)
+                tabs += `<tr><td>${++idx}</td><td>${chp}:${vrs}</td><td>${txt}</td></tr>`
+
+            }
+        }
+        tabs += `</tbody></table>`
+        $("#txtable").html(tabs).find("td").on("click", function () {
+            $(this).toggleClass("hili_txt")
+        })
+        $("#outext").val(JSON.stringify(outObj,null,4))
+    }
+</script>
