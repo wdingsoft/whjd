@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>frq</title>
+    <title>frq-wis</title>
     <base target="_blank" />
     <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
     <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
@@ -11,9 +11,13 @@
     <script src="./js/src/wis_simp.js"></script>
     <script src="./js/dat/wis_frq1.js"></script>
     <script src="./js/dat/wis_frq2.js"></script>
+    <script src="./js/dat/wis_frq2_keyword.js"></script>
     <script src="./js/dat/wis_frq3.js"></script>
 
     <style>
+        body{
+            background-color: rgb(193, 240, 224);
+        }
         .clrodd {
             background-color: rgb(212, 249, 249);
         }
@@ -24,6 +28,10 @@
 
         .hili {
             background-color: red;
+        }
+
+        .hili_row {
+            background-color: rgb(32, 208, 32);
         }
 
         .hili_txt {
@@ -52,9 +60,9 @@
 <body>
 
 
-    <h1>Wisdom Word Frq</h1>
+    <h1>Wisdom Word Frq, zi=6891, tot=13651</h1>
     <textarea id="outext"></textarea>
-    <button >Hili-Ary</button><br>
+    <button>Hili-Ary</button><br>
     <div id="topics1"></div>
     <div id="topics2"></div>
     <div id="topics3"></div>
@@ -76,7 +84,8 @@
     function list_prov_frq(frqObj, eid) {
         var tabs = ""
         var idx = 0
-        tabs += `<table border='1'><caption>Words-Frq</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
+        var caps = "<button class='hili_load'>hili_load</button><button class='hili_Export'>Export</button>"
+        tabs += `<table border='1'><caption>${caps}</caption><thead><tr><th>#</th><th>chn</th><th>frq</th></tr></thead><tbody>`
         for (topic in frqObj) {
             var frq = frqObj[topic]
             tabs += `<tr><td>${++idx}</td><td class='zici'>${topic}</td><td>${frq}</td>`
@@ -98,13 +107,24 @@
             gen_table_with_zici(txt, wis_simp)
         })
 
-        $("caption").bind("click", function () {
-            var ar=[]
-            $(this).parent().find(".hili").each(function () {
+        $(".hili_Export").bind("click", function () {
+            var ar = []
+            $(this).parentsUntil("table").parent().find(".hili").each(function () {
                 var txt = $(this).text()
                 ar.push(txt)
             })
-            $("#outext").val(JSON.stringify(ar,0,4))
+            $("#outext").val(JSON.stringify(ar, 0, 4))
+        })
+        $(".hili_load").bind("click", function () {
+            var ar = []
+            $(this).parentsUntil("table").parent().find("tbody tr").each(function () {
+                var td1 = $(this).find("td:eq(1)")
+                var txt = $(td1).text()
+                if (wis_frq2_keyword.indexOf(txt) >= 0) {
+                    $(td1).addClass("hili")
+                }
+            })
+            $("#outext").val(JSON.stringify(ar, 0, 4))
         })
     })
 
