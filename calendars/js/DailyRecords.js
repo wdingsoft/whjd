@@ -17,7 +17,7 @@ var DailyRecords =
     "22_09_02": "Seattle: arrived<div><br><div><br></div></div>",
     "22_09_03": "hiking",
     "22_09_04": "Moderna:Safeway",
-    "22_09_05": "less food, more sleep",
+    "22_09_05": "Reaction: less food, more sleep",
     "22_09_06": "normal<div><br></div>",
     "22_09_07": "test===="
 }
