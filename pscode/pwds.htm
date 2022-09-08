@@ -22,36 +22,39 @@
     <script>
         $(function () {
             $(".encrptA").on("click", function () {
-                var DECODEA = {
-                    o: 0, a: 1, t: 2, r: 3, f: 4, v: 5, x: 6, s: 7, e: 8, n: 9,
-                    O: 0, A: 1, T: 2, R: 3, F: 4, V: 5, X: 6, S: 7, E: 8, N: 9,
-                    ' ': ' '
-                }
-                var ENCODEA = {
-                    0: "o", 1: "a", 2: "t", 3: "r", 4: "f", 5: "v", 6: "x", 7: "s", 8: "e", 9: "n",
-                    0: "O", 1: "A", 2: "T", 3: "R", 4: "F", 5: "V", 6: "X", 7: "S", 8: "E", 9: "N",
-                    ' ': ' '
-                }
                 var tx = $(this).text()
-                var tx2 = ""
                 var cdtype = $(this).attr("codtype")
-                var MyCoding = {}
+                var tx2 = Coding_A(tx, cdtype)
                 if (cdtype === "DECODEA" || cdtype === undefined) {
-                    MyCoding = DECODEA
                     $(this).attr("codtype", "ENCODEA")
                 } else {
-                    MyCoding = ENCODEA
                     $(this).attr("codtype", "DECODEA")
                 }
-                for (var i = 0; i < tx.length; i++) {
-                    tx2 += MyCoding[tx[i]]
-                };
                 $(this).text(tx2)
             })
 
         })
-        function Coding_A(codestr,codetype){
+        function Coding_A(codestr, cdtype) {
+            var DECODEA = {
+                o: 0, a: 1, t: 2, r: 3, f: 4, v: 5, x: 6, s: 7, e: 8, n: 9,
+                O: 0, A: 1, T: 2, R: 3, F: 4, V: 5, X: 6, S: 7, E: 8, N: 9,
+            }
+            var ENCODEA = {
+                0: "o", 1: "a", 2: "t", 3: "r", 4: "f", 5: "v", 6: "x", 7: "s", 8: "e", 9: "n",
+                //0: "O", 1: "A", 2: "T", 3: "R", 4: "F", 5: "V", 6: "X", 7: "S", 8: "E", 9: "N",
+            }
+            var MyCoding = {}
+            if (cdtype === "DECODEA" || cdtype === undefined) {
+                MyCoding = DECODEA
+            } else {
+                MyCoding = ENCODEA
+            }
+            var tx2 = ""
+            for (var i = 0; i < codestr.length; i++) {
+                tx2 += MyCoding[codestr[i]] === undefined ? codestr[i] : MyCoding[codestr[i]]
+            };
 
+            return tx2;
         }
 
     </script>
