@@ -19,5 +19,6 @@ var DailyRecords =
     "22_09_04": "Moderna:Safeway",
     "22_09_05": "Reaction: less food, more sleep",
     "22_09_06": "normal<div><br></div>",
-    "22_09_07": "throat sounds but no pain or uncomfort<div>hiking 3 hrs</div>"
+    "22_09_07": "throat sounds but no pain or uncomfort",
+    "22_09_27": "flight to Atlanta"
 }
