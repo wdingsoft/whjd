@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <title onclick="alert();">Calendar</title>
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+
+    <script src="./jq/jquery.js" xxxsrc="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!------->
+    <base target="_blank" />
+
+    <style>
+        .wding {
+            background-color: antiquewhite;
+        }
+
+        .jinxian {
+            background-color: darkorange;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(".encrptA").on("click", function () {
+                var DECODEA = {
+                    o: 0, a: 1, t: 2, r: 3, f: 4, v: 5, x: 6, s: 7, e: 8, n: 9,
+                    O: 0, A: 1, T: 2, R: 3, F: 4, V: 5, X: 6, S: 7, E: 8, N: 9,
+                    ' ': ' '
+                }
+                var ENCODEA = {
+                    0: "o", 1: "a", 2: "t", 3: "r", 4: "f", 5: "v", 6: "x", 7: "s", 8: "e", 9: "n",
+                    0: "O", 1: "A", 2: "T", 3: "R", 4: "F", 5: "V", 6: "X", 7: "S", 8: "E", 9: "N",
+                    ' ': ' '
+                }
+                var tx = $(this).text()
+                var tx2 = ""
+                var cdtype = $(this).attr("codtype")
+                var MyCoding = {}
+                if (cdtype === "DECODEA" || cdtype === undefined) {
+                    MyCoding = DECODEA
+                    $(this).attr("codtype", "ENCODEA")
+                } else {
+                    MyCoding = ENCODEA
+                    $(this).attr("codtype", "DECODEA")
+                }
+                for (var i = 0; i < tx.length; i++) {
+                    tx2 += MyCoding[tx[i]]
+                };
+                $(this).text(tx2)
+            })
+
+        })
+        function Coding_A(codestr,codetype){
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <section class="wding">
+        <h1> Set(Buffer)</h1>
+
+
+        <h5>
+            WeChat
+        </h5>
+        <ol>
+            <li>
+
+                AppLogin:Matthe<a onclick="$(this).text('w');">-</a>2237
+            </li>
+            <li>
+
+                <a>PayID</a>:660101
+            </li>
+        </ol>
+
+        <h5>
+            ZhiFuBao
+        </h5>
+        <ol>
+            <li>
+                BindCard:**0321
+            </li>
+            <li>
+
+                mobile:15210849127
+
+            </li>
+        </ol>
+        <hr />
+
+
+
+        <h5>Buffer-Icbc-7app</h5>
+        <ol>
+
+
+            <li>62155802****152-0321
+            </li>
+            <li>
+                #:<a class="encrptA">Xtavve otoooo avt orta</a>
+            </li>
+            <li>Matthew22:37 (app-pwd)
+            </li>
+            <li>Mob:1521***9127
+            </li>
+            <li>6berciymd (Acode)
+            </li>
+            <li>630601 (transfer zhifu Mima)
+            </li>
+        </ol>
+
+
+        <br>
+        <br>AbcApp
+        <br>1. 6228-48**-1910-588-4373
+        <br>2. xtte-fezz-onoz-vee frsr
+        <br>3. stte-fe00-1n10-Fee-frve
+        <br>4. 8b-wd-4y2m2d(app-pwd)
+        <br>5. 6berciymd (Acode)
+        <br>
+        <br>CcbApp
+        <br>1. 6217-0000-*****-262670
+        <br>2. Xtos zzzz ozoe ztxt xsz
+        <br>3. 321102****0416
+        <br>4. erci6bymd(app-pwd)
+        <br>5. 6b-erci-ymd (Acode)
+        <br>
+        <br>ZhaoshangApp
+        <br>1. 15210849127
+        <br>2. 6214-****-2789-8416
+        <br>3. xtof -eF01-tSen-ef1s
+        <br>4. 6b-erci-ymd (app-pwd)
+        <br>5. 6b-erci-ymd (Acode)
+        <br>6. 0126b<<.查询秘码 <br>
+            <br>Zhongxing
+            <br>1. 15210849127
+            <br>2. Xton-nrzn-rrnt-tnre
+            <br>3. 630601jcw (app-pwd)
+            <br>4. 6b-erci-ymd (acode)
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-----Jx---->
+    <section class="jinxian">
+
+        <br> Jx-WeChat
+        <br> 1. Jx. Iphone7
+        <br> 2. 1236b123 (screen)
+        <br> 3. 123Jx123（WeChat pwd）
+        <br> 4. 660101 （payid）
+        <br> 5. 110108-*-3723 sfz
+        <br>
+        <br>
+        <br>
+        <br> IcbcApp7.0
+        <br> 1. 152***9127
+        <br> 2. 123Jx123 (apcode)
+        <br> 3. Erci6bymd
+        <br> 4. Payid660101
+        <br>
+        <br> Icbc jx 借记
+        <br> 1. Bind Phone: 15201651507
+        <br> 2. Book to card. 6215580200001522087
+        <br> 3. (4<<6b4<<) obsoleted. <br> 4. 1236b123 (acode)
+            <br> 5.
+            <br>
+            <br> Icbc salary
+            <br> 1. 0200201901002116935.
+            <br> 2. 4<<6b4<< <br> 3. 521,129.85(22/6/10)
+                <br>
+                <br> icbc 定期
+                <br> 1. 0200****2445
+                <br> 2. 4<<6b4<< <br> 3. 426,800.00(22/6/10)
+                    <br>
+                    <br>
+                    <br> Bob:北京银行 借记dcard
+                    <br> 1. 15210849127(wd binding bj debt card）
+                    <br> 2. 6214-6800-9329-5044（北京）
+                    <br> 3. 0126b4<< (acode) <br> 4. 123Jx123 (apwd)
+                        <br>
+                        <br>
+                        <br> BRAC 北京农商银行(union pay)
+                        <br> 1. 6210676855971185490
+                        <br> 2. 0126b4<< <br>
+                            <br>
+                            <br>
+                            <br> 招商cmb-jx:
+                            <br> 1. 15201651507
+                            <br> 2. 1236b1<< (app-pwd) <br> 3. Xtof-evzo-tsff-vvtr
+                                <br> 4. 0126b4<<. (Acode) <br>
+                                    <br> 中国银行Bank of China
+                                    <br> 1. 4140700-0188-056385-2
+                                    <br> 2. 012-789 (code)
+
+    </section>
+
+    <pre>
+
+    WD-Chat-set
+
+
+WeChat
+1. Login-per:Matthe-2237
+2. Payid:660101
+
+Zfb 
+1. Binding:**0321
+2. 15210849127
+3. 
+
+
+Icbc7app
+1. 62155802****152-0321
+2. Xtovve ztzzzz ovt zrto 
+3. Matthew22:37 (app-pwd)
+4. Mob:1521***9127
+5. 6berciymd (Acode)
+6. 630601 (transfer zhifu Mima)
+
+AbcApp
+1. 6228-48**-1910-588-4373 
+2. xtte-fezz-onoz-vee frsr 
+3. stte-fe00-1n10-Fee-frve 
+4. 8b-wd-4y2m2d(app-pwd)
+5. 6berciymd (Acode) 
+
+CcbApp
+1. 6217-0000-*****-262670
+2. Xtos zzzz ozoe ztxt xsz 
+3. 321102****0416
+4. erci6bymd(app-pwd)
+5. 6b-erci-ymd (Acode)
+
+ZhaoshangApp
+1. 15210849127
+2. 6214-****-2789-8416
+3. xtof -eF01-tSen-ef1s 
+4. 6b-erci-ymd (app-pwd)
+5. 6b-erci-ymd (Acode)
+6. 0126b<<.查询秘码
+
+Zhongxing
+1. 15210849127
+2. Xton-nrzn-rrnt-tnre 
+3. 630601jcw (app-pwd)
+4. 6b-erci-ymd (acode)
+
+
+
+——————————
+///////////////////////////////
+——————————
+JxAccount
+——————————
+Mobile phone: 1086
+
+WeChat
+1. Jx. Iphone7
+2. 1236b123 (screen)
+3. 123Jx123（WeChat pwd）
+4. 660101 （payid）
+5. 110108-*-3723 sfz
+
+
+
+IcbcApp7.0
+1. 152***9127
+2. 123Jx123 (apcode)
+3. Erci6bymd
+4. Payid660101
+
+Icbc jx 借记
+1. Bind Phone: 15201651507
+2. Book to card. 6215580200001522087 
+3. (4<<6b4<<) qukuanmima 
+4. 
+5. 
+
+Icbc salary 
+1. 0200201901002116935. 
+2. 4<<6b4<<
+3. 521,129.85(22/6/10)
+
+icbc 定期
+1. 0200****2445
+2. 4<<6b4<<
+3. 426,800.00(22/6/10)
+
+
+Bob:北京银行 借记dcard
+1. 15210849127(wd binding bj debt card）
+2. 6214-6800-9329-5044（北京）
+3. 0126b4<< (acode)
+4. 123Jx123 (apwd)
+
+
+BRAC 北京农商银行(union pay)
+1. 6210676855971185490
+2. 0126b4<<
+
+
+
+招商cmb-jx:
+1. 15201651507
+2. 1236b1<< (app-pwd)
+3. Xtof-evzo-tsff-vvtr 
+4. 0126b4<<. (Acode)
+
+中国银行Bank of China
+1. 4140700-0188-056385-2
+2. 012-789 (code)
+
+——-
+
+————————————-
+————————————-
+williamwding@126.com
+8B0099oogG
+15210849127
+Mail.126.com
+
+Williamwding@yahoo.com
+1qaz2wsx3
+
+
+
+———————————
+0123456789
+ZOTRFVXSEN
+zotrfvxsen
+
+OATRFVXSEN
+oatrfvxsen
+
+
+—————————————————
+erci-icbc=xtttoe-ofotoov-nroaos. 
+01/25
+—————/——-/———————-
+Wells Fargo Bank
+Swift code: WFBIUS6S
+My acc: 3615371709
+Acc:rxafrsason
+JINGCI LI
+———————————————-
+</pre>
+
+
+</body>
+
+</html>
