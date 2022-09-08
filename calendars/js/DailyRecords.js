@@ -18,6 +18,6 @@ var DailyRecords =
     "22_09_03": "hiking",
     "22_09_04": "Moderna:Safeway",
     "22_09_05": "Reaction: less food, more sleep",
-    "22_09_06": "normal<div>痰 phlegm </div>",
+    "22_09_06": "normal<div>痰 phlegm/sputum/Spittle </div>",
     "22_09_07": "throat sounds but no pain or uncomfort<div>hiking 3 hrs</div>"
 }
