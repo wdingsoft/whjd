@@ -8,6 +8,7 @@ var DailyRecords =
     "22_09_07": "throat sounds but no pain or uncomfort<div>hiking 3 hrs</div>",
     "22_09_08": "hiking 3hr<div>RoomTemp=97</div>",
     "22_09_09": "Timberlake Park, 5 hrs 5 mi.",
-    "22_09_10": "Golden Beach, Bonatic Garden.&nbsp;",
+    "22_09_10": "Golden Beach; Botanical Garden.&nbsp;",
+    "22_09_11": "crossroad church",
     "22_09_27": "flight 2 atlanta"
 }
