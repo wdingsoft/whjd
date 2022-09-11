@@ -9,6 +9,6 @@ var DailyRecords =
     "22_09_08": "hiking 3hr<div>RoomTemp=97</div>",
     "22_09_09": "Timberlake Park, 5 hrs 5 mi.",
     "22_09_10": "Golden Beach; Botanical Garden.&nbsp;",
-    "22_09_11": "crossroad church",
+    "22_09_11": "crossroad church:Heb10:25",
     "22_09_27": "flight 2 atlanta"
 }
