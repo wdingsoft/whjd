@@ -1,4 +1,4 @@
-var DailyRecords = 
+var DailyRecords =
 {
     "21_12_08": "$20 ESL Gordon",
     "21_12_09": "Hose ord",
@@ -19,5 +19,9 @@ var DailyRecords =
     "22_09_04": "Moderna:Safeway",
     "22_09_05": "Reaction: less food, more sleep",
     "22_09_06": "normal<div>痰 phlegm/sputum/Spittle </div>",
-    "22_09_07": "throat sounds but no pain or uncomfort<div>hiking 3 hrs</div>"
+    "22_09_07": "throat sounds but no pain or uncomfort<div>hiking 3 hrs</div>",
+    "22_09_08": "hiking 3hr",
+    "22_09_09": "Timberlake Park, 5 hrs 5 mi.",
+    "22_09_10": "Golden Beach, Bonatic Garden.&nbsp;",
+    "22_09_27": "flight 2 atlanta"
 }
