@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title onclick="alert();">Calendar</title>
+    <title onclick="alert();">Pwd</title>
     <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
     <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
 
@@ -20,7 +20,10 @@
         }
 
         .jcli {
-            background-color: cadetblue
+            background-color: cadetblue;
+        }
+        .familast3{
+            font-size: xx-small;
         }
     </style>
     <script>
@@ -35,6 +38,18 @@
                     $(this).attr("codtype", "DECODEA")
                 }
                 $(this).text(tx2)
+            })
+
+
+            $(".Jclunarbirthday").on("click",function(){
+                $(this).text("0721")
+            })
+            $(".familast3").on("click",function(){
+                $(this).text("cwj")
+                $(this).removeClass("familast3")
+            })
+            $(".williamsname").on("click",function(){
+                $(this).text("williamwding")
             })
 
         })
@@ -184,7 +199,44 @@
             <li>Bnkode:6b-erci-ymd (acode)
             </li>
         </ol>
+
+        <h5>Schwab <a href="https://client.schwab.com/"> . </a></h5>
+        <ol>
+            <li>
+                login:<a class="williamsname">w***ng</a>
+            </li>
+            <li>
+                app-pwd:<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>
+            </li>
+            <li>
+                <a href="https://client.schwab.com/">.</a>
+            </li>
+        </ol>
+
+        <h5>eTrade<a href="https://us.etrade.com/"> . </a></h5>
+        <ol>
+            <li>
+                login:<a class="williamsname">w***ng</a>
+            </li>
+            <li>
+                app-pwd:<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>@ 
+            </li>
+            <li>
+
+                
+            </li>
+        </ol>
     </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
