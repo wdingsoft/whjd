@@ -22,8 +22,15 @@
         .jcli {
             background-color: cadetblue;
         }
-        .familast3{
+
+        .familast3 {
             font-size: xx-small;
+        }
+        .pretxt{
+            background-color: cyan;
+        }
+        .othertxt{
+            visibility:hidden;
         }
     </style>
     <script>
@@ -41,15 +48,23 @@
             })
 
 
-            $(".Jclunarbirthday").on("click",function(){
+            $(".Jclunarbirthday").on("click", function () {
                 $(this).text("0721")
             })
-            $(".familast3").on("click",function(){
+            $(".familast3").on("click", function () {
                 $(this).text("cwj")
                 $(this).removeClass("familast3")
             })
-            $(".williamsname").on("click",function(){
+            $(".williamsname").on("click", function () {
                 $(this).text("williamwding")
+            })
+
+            $(".togclick").on("click", function () {
+                $(this).text($(this).attr("val"))
+            })
+
+            $('.togglenext').on("click",function(){
+                $(this).next().toggleClass("othertxt")
             })
 
         })
@@ -200,6 +215,11 @@
             </li>
         </ol>
 
+
+
+
+
+
         <h5>Schwab <a href="https://client.schwab.com/"> . </a></h5>
         <ol>
             <li>
@@ -211,6 +231,9 @@
             <li>
                 <a href="https://client.schwab.com/">.</a>
             </li>
+            <li>
+                <a>7398 broak account, </a>
+            </li>
         </ol>
 
         <h5>eTrade<a href="https://us.etrade.com/"> . </a></h5>
@@ -219,11 +242,11 @@
                 login:<a class="williamsname">w***ng</a>
             </li>
             <li>
-                app-pwd:<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>@ 
+                app-pwd:<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>@
             </li>
             <li>
 
-                
+
             </li>
         </ol>
     </section>
@@ -374,7 +397,7 @@
 
         <h5>Wells Fargo Bank</h5>
         <ol>
-            <li>Swift code: WFBIUS6S
+            <li>Swift code: <a class="togclick" val="WFBIUS6S">WF**US6S</a>
             </li>
             <li>My acc:<a>36*****709</a>
             </li>
@@ -396,7 +419,9 @@
         </ol>
     </section>
 
-    <pre>
+    <section class="pretxt">
+        <h5 class="togglenext">others</h5>
+        <pre class="othertxt">
 
 
 
@@ -427,6 +452,10 @@ erci-icbc=xtttoe-ofotoov-nroaos.
 —————/——-/———————-
 
 </pre>
+    </section>
+
+
+
 
 
 </body>
