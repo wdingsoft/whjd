@@ -26,14 +26,21 @@
         .familast3 {
             font-size: xx-small;
         }
-        .pretxt{
+
+        .pretxt {
             background-color: cyan;
         }
-        .othertxt{
-            visibility:hidden;
+
+        .othertxt {
+            visibility: hidden;
         }
 
-        .capton_hili{
+        .capton {
+            font-size: large;
+            margin-right: 10px;
+        }
+
+        .capton_hili {
             background-color: rgb(250, 215, 215);
         }
     </style>
@@ -67,19 +74,19 @@
                 $(this).text($(this).attr("val"))
             })
 
-            $('.togglenext').on("click",function(){
+            $('.togglenext').on("click", function () {
                 $(this).next().toggleClass("othertxt")
             })
 
 
-            $(".capton").on("click",function(){
+            $(".capton").on("click", function () {
                 $(this).toggleClass("capton_hili")
-                var txt=$(this).text()
+                var txt = $(this).text()
                 $(`section.${txt}`).slideToggle()
 
             })
 
-            $("section").slideToggle()
+            $("section").hide()
 
         })
         function Coding_A(codestr, cdtype) {
@@ -110,7 +117,8 @@
 
 <body>
 
-    <button class="capton">Buffer</button><button  class="capton">jinxian</button><button class="capton">jcli</button><button class="capton">pretxt</button>
+    <button class="capton">Buffer</button><button class="capton">jinxian</button><button
+        class="capton">jcli</button><button class="capton">pretxt</button>
 
     <section class="Buffer">
         <h1> Set(Buffer)</h1>
@@ -122,7 +130,7 @@
         <ol>
             <li>
 
-                AppLogin:Matthe<a onclick="$(this).text('w');">-</a><a class='encrptA'>ttrs</a> 
+                AppLogin:Matthe<a onclick="$(this).text('w');">-</a><a class='encrptA'>ttrs</a>
             </li>
             <li>
 
