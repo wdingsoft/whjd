@@ -31,6 +31,10 @@
         .hili {
             background-color: chartreuse;
         }
+
+        #ytspeed {
+            width: 50px;
+        }
     </style>
     <script>
         $(function () {
@@ -48,8 +52,9 @@
                 var surl = $(this).attr("href_vid")
                 const urlParams = new URL(surl);
                 var vid = urlParams.searchParams.get("v")
+                var speed = $("#ytspeedop").val()
 
-                $("iframe").attr("src", "yt_iframe_videoID.htm?vid=" + vid)
+                $("iframe").attr("src", `./yt_iframe_app/yt_iframe_videoID.htm?vid=${vid}&speed=${speed}`)
             })
         })
 
@@ -59,9 +64,21 @@
 
 <body>
     <iframe xsrc="./ElderEnglish_YouTubeSpeedx0.75.htm" frameborder="1" class="" width="650" height="400"></iframe>
+    <br>
+
 
     <div id="TableOfContent">
-
+        <div name="yt_ctr">
+            <a>Speed:</a>
+            <select name="ytspeed" id="ytspeedop">
+                <option value="0.75">0.75</option>
+                <option value="1.00">1.00</option>
+                <option value="1.25">1.25</option>
+                <option value="1.50">1.50</option>
+                <option value="1.75">1.75</option>
+                <option value="2.00">2.00</option>
+            </select>
+        </div>
 
         <ol>
 

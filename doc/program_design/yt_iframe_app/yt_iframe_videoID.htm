@@ -11,7 +11,22 @@
     <style>
 
     </style>
-
+    <script>
+        function get_videoID_from_url() {
+            const urlParams = new URLSearchParams("" + window.location.search);
+            var vid = urlParams.get("vid")
+            console.log("vid=", vid)
+            if (!vid) {
+                alert("yt_iframe_videoID.htm?vid= is empty.\n Use default 'vid=M7lc1UVf-VE' \n (for test only)")
+                vid = 'M7lc1UVf-VE'
+            }
+            var speed = urlParams.get("speed")
+            if (!speed) speed = 1
+            console.log("speed=", speed)
+            return { vid: vid, fspeed: parseFloat(speed) }
+        }
+        var inparam = get_videoID_from_url()
+    </script>
 
 </head>
 
@@ -23,17 +38,6 @@
 </html>
 
 <script>
-    function get_videoID_from_url() {
-        const urlParams = new URLSearchParams("" + window.location.search);
-        var vid = urlParams.get("vid")
-        console.log("vid=", vid)
-        if (!vid) {
-            alert("yt_iframe_videoID.htm?vid= is empty.\n Use default 'vid=M7lc1UVf-VE' \n (for test only)")
-            vid = 'M7lc1UVf-VE'
-        }
-        return vid
-    }
-
 
     //https://developers.google.com/youtube/iframe_api_reference
     // 2. This code loads the IFrame Player API code asynchronously.
@@ -51,10 +55,11 @@
         player = new YT.Player('player', {
             height: '390',
             width: '640',
-            videoId: get_videoID_from_url(),// 'M7lc1UVf-VE',
+            videoId: inparam.vid,// 'M7lc1UVf-VE',
             playerVars: {
-                autoplay: 1, //issue?
+                autoplay: 1, //issue? not work
                 controls: 1, //show yt contrls.
+                loop: 1,  //repeat not work. https://developers.google.com/youtube/player_parameters
             },
             events: {
                 'onReady': onPlayerReady,
@@ -66,8 +71,10 @@
 
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
-        player.setPlaybackRate(.75);
+        console.log("setPlaybackRate : speed", inparam.fspeed)
+        player.setPlaybackRate(inparam.fspeed); //0.75
         event.target.playVideo();
+
     }
     function onPlayEnded(event) {
         console.log(event)
