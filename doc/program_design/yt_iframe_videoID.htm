@@ -23,17 +23,19 @@
 </html>
 
 <script>
-    const urlParams = new URLSearchParams("" + window.location.search);
-    var vid = urlParams.get("vid")
-    console.log("vid=", vid)
-    if (!vid) {
-        alert("?vid= is empty. Use default M7lc1UVf-VE")
-        vid = 'M7lc1UVf-VE'
+    function get_videoID_from_url() {
+        const urlParams = new URLSearchParams("" + window.location.search);
+        var vid = urlParams.get("vid")
+        console.log("vid=", vid)
+        if (!vid) {
+            alert("yt_iframe_videoID.htm?vid= is empty.\n Use default 'vid=M7lc1UVf-VE' \n (for test only)")
+            vid = 'M7lc1UVf-VE'
+        }
+        return vid
     }
 
+
     //https://developers.google.com/youtube/iframe_api_reference
-
-
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
 
@@ -49,7 +51,7 @@
         player = new YT.Player('player', {
             height: '390',
             width: '640',
-            videoId: vid,// 'M7lc1UVf-VE',
+            videoId: get_videoID_from_url(),// 'M7lc1UVf-VE',
             playerVars: {
                 autoplay: 1, //issue?
                 controls: 1, //show yt contrls.
@@ -69,9 +71,9 @@
     }
     function onPlayEnded(event) {
         console.log(event)
-        if (event.data === 0) {
+        if (event.data === 0) {//refet: https://developers.google.com/youtube/iframe_api_reference
             console.log("onStateChange : onPlayEnded")
-            setTimeout(function(){
+            setTimeout(function () {
                 console.log("onStateChange : repeat")
                 event.target.playVideo();
             }, 10000)
