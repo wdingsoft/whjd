@@ -23,6 +23,8 @@
                 $(this).next().slideToggle()
             })
         })
+        //https://developers.google.com/youtube/iframe_api_reference
+        
 
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -45,7 +47,7 @@
                     controls:1
                 },
                 events: {
-                    'onReady': onPlayerReady
+                    'onReady': onPlayerReady,
                 },
                 
             });
