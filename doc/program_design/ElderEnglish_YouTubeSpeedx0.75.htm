@@ -8,13 +8,7 @@
     <script src="./jq/jquery-2_1_3.min.js"></script>
 
     <style>
-        .about_I {
-            background-color: red;
-        }
-
-        .plus {
-            background-color: antiquewhite
-        }
+      
     </style>
     <script>
         $(function () {
@@ -24,7 +18,7 @@
             })
         })
         //https://developers.google.com/youtube/iframe_api_reference
-        
+
 
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -32,24 +26,24 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
+
         // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            //tag.src="https://www.youtube.com/watch?v=c0IhZeHvj0w&list=PLEJKF_V6_xtg_jaIWoBIbHpEbDdjjux4v&ab_channel=Nate-OnionEnglish";
+        //    after the API code downloads.
+        //tag.src="https://www.youtube.com/watch?v=c0IhZeHvj0w&list=PLEJKF_V6_xtg_jaIWoBIbHpEbDdjjux4v&ab_channel=Nate-OnionEnglish";
         var player;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 height: '390',
                 width: '640',
-                videoId:'c0IhZeHvj0w',// 'M7lc1UVf-VE',
-                playerVars:{
-                    autoplay:1,
-                    controls:1
+                videoId: 'c0IhZeHvj0w',// 'M7lc1UVf-VE',
+                playerVars: {
+                    autoplay: 1, //issue?
+                    controls: 1, //show yt contrls.
                 },
                 events: {
                     'onReady': onPlayerReady,
                 },
-                
+
             });
         }
 
