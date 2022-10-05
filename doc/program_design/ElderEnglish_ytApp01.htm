@@ -15,17 +15,20 @@
         .plus {
             background-color: antiquewhite
         }
-        #TableOfContent{
+
+        #TableOfContent {
             background-color: rgb(239, 238, 238);
             height: 600px;
             overflow: scroll;
             border: 1px solid black;
         }
-        a[href_vid]{
-            
+
+        a[href_vid] {
+
             font-size: large;
         }
-        .hili{
+
+        .hili {
             background-color: chartreuse;
         }
     </style>
@@ -39,7 +42,7 @@
             $("a").on("click", function () {
                 $(".hili").removeClass("hili")
                 $(this).addClass("hili")
-                
+
                 var surl = $(this).attr("href_vid")
                 const urlParams = new URL(surl);
                 var vid = urlParams.searchParams.get("v")
