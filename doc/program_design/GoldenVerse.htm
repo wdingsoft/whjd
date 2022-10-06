@@ -31,7 +31,7 @@
 		function gen_tbody(obj) {
 			var trs = ""
 			Object.keys(obj).forEach(function (key,i) {
-				trs += `<tr><td>${i}</td><td>${key}</td><td>${obj[key][0]}</td>`
+				trs += `<tr><td>${i}</td><td>${key}</td><td>${obj[key][0]}</td><td>${obj[key][1]}</td></tr>`
 			})
 			return trs;
 		}
