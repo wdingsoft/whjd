@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<title>GoldenVerese</title>
+	<META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+	<META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+
+
+	<script src="./jq/jquery-2_1_3.min.js"></script>
+	<script src="./js/golden_verese.js"></script>
+	<style>
+		table {
+			float: left;
+			background-color: gold;
+			margin-left: 10px;
+		}
+
+		td {
+			contexteditable: Yes;
+		}
+	</style>
+	<script>
+		$(function () {
+			$("td").on("click", function () {
+				$(this).attr("contenteditable", "true")
+			})
+
+			$("#tby").html(gen_tbody(golden_verese))
+
+		})
+		function gen_tbody(obj) {
+			var trs = ""
+			Object.keys(obj).forEach(function (key,i) {
+				trs += `<tr><td>${i}</td><td>${key}</td><td>${obj[key][0]}</td>`
+			})
+			return trs;
+		}
+	</script>
+</head>
+
+<body>
+
+
+	<table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+		<caption>Golden Verses</caption>
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>Verses</td>
+				<td>Scripture</td>
+			</tr>
+		</thead>
+		<tbody id="tby">
+
+		</tbody>
+	</table>
+</body>
+
+</html>
