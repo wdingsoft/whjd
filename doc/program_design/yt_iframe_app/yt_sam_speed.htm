@@ -23,8 +23,8 @@
 
             $("p").on("click",function(){
                 var vid=$(this).text()
-                
-                $("iframe").attr("src","./yt_iframe_videoID.htm?vid="+vid)
+                var speed = $("#ytspeedop").val()
+                $("iframe").attr("src",`./yt_iframe_videoID.htm?vid=${vid}&speed=${speed}`)
             })
         })
     </script>
