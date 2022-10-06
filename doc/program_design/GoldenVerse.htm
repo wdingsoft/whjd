@@ -21,11 +21,11 @@
 	</style>
 	<script>
 		$(function () {
+			$("#tby").html(gen_tbody(golden_verese))
+
 			$("td").on("click", function () {
 				$(this).attr("contenteditable", "true")
 			})
-
-			$("#tby").html(gen_tbody(golden_verese))
 
 		})
 		function gen_tbody(obj) {
@@ -45,9 +45,10 @@
 		<caption>Golden Verses</caption>
 		<thead>
 			<tr>
-				<td>#</td>
-				<td>Verses</td>
-				<td>Scripture</td>
+				<th>#</th>
+				<th>Verses</th>
+				<th>Chinese</th>
+				<th>English</th>
 			</tr>
 		</thead>
 		<tbody id="tby">
