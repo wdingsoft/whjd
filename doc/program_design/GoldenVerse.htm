@@ -21,21 +21,26 @@
 		td {
 			contexteditable: Yes;
 		}
+
+		.hili {
+			background-color: red;
+		}
 	</style>
 	<script>
 		$(function () {
 			$("#tby").html(gen_tbody(golden_verese))
 
 			$("td").on("click", function () {
-				$(this).attr("contenteditable", "true")
+				$(".hili").removeClass("hili")
+				$(this).attr("contenteditable", "true").addClass("hili")
 			})
 
 		})
 		function gen_tbody(obj) {
 			var trs = ""
-			Object.keys(obj).forEach(function (key,i) {
+			obj.GoldenVerses.forEach(function (key, i) {
 				var mat = key.match(/(.{3})([0-9]+)\:([0-9]+)/)
-				if(mat){
+				if (mat) {
 					console.log(mat)
 					trs += `<tr><td>${i}</td><td>${key}</td><td>${CUVS[mat[1]][mat[2]][mat[3]]}</td><td>${NIV[mat[1]][mat[2]][mat[3]]}</td></tr>`
 				}
