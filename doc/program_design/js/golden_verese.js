@@ -79,7 +79,8 @@ var golden_verese =
 
         "Eph2:10",
         "Pro15:21",
-        "Gal5:16"
+        "Gal5:16",
+        "1Jn5:1"
     ]
 }
 
