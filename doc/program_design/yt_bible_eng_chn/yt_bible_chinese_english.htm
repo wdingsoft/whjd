@@ -50,7 +50,7 @@
             gen_lst()
         })
 
-        function bind_yt_player(){
+        function bind_yt_player() {
             $("a[href_vid]").on("click", function () {
                 $(".hili").removeClass("hili")
                 $(this).addClass("hili")
@@ -62,18 +62,35 @@
 
                 var speed = $("#ytspeedop").val()
                 var url = `./yt_iframe_app/yt_iframe_videoID.htm?vid=${vid}&speed=${speed}&startSeconds=${startSeconds}`
-                console.log("url=",url)
+                console.log("url=", url)
 
                 $("iframe").attr("src", url)
             })
         }
 
 
-        function gen_lst(){
-            var str="", idx=0
-            for(const [ur,ar] of Object.entries(yt_data)){
-                if(!ur) continue;
-                str+=`<tr><td>${idx++}</td><td><a href_vid='${ur}' startSeconds='${ar[1].startSeconds}'>${ar[0]}</a></td></tr>`
+        function gen_lst() {
+
+            function get_sec(mm_ss) {
+                if (!mm_ss) return 0
+                var sec = 0;
+                var mat = mm_ss.match(/(\d):(\d)/)
+                if (mat) {
+                    var sec = parseFloat(mat[1])
+                    sec *= 60
+                    sec += parseFloat(mat[2])
+                }
+                return sec;
+            }
+
+
+            var str = "", idx = 0
+            for (const [ur, ar] of Object.entries(yt_data)) {
+                if (!ur) continue;
+                var start = ar[1].start;
+
+                var startSeconds = get_sec(start)
+                str += `<tr><td>${idx++}</td><td><a href_vid='${ur}' startSeconds='${startSeconds}'>${ar[0]} (${start})</a></td></tr>`
 
             }
             $("#mylist").html(`<table border='1'>${str}</table>`)
@@ -103,10 +120,10 @@
     </div>
 
     <div id="TableOfContent">
-            <h1>读《圣经》,学英文</h1>
-            <a>The purpose to study any language is to know the Bible.</a>
+        <h1>读《圣经》,学英文</h1>
+        <a>The purpose to study any language is to know the Bible.</a>
 
-            <div id="mylist"></div>
+        <div id="mylist"></div>
 
 
     </div>
