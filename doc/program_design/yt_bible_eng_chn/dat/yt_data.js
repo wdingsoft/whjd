@@ -10,7 +10,7 @@ var yt_data = {
         ["如何正确的拼读圣经书卷的英文名字？（新约篇）", {}],
 
     "https://www.youtube.com/watch?v=uuZQGdtG6pg&list=PLWSCg8eZ6bzB5KbXEIxkax9ozcQRn6HoF&index=4&ab_channel=%E6%9B%BC%E8%BF%AA%E7%9A%84%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0":
-        ["如何正确的拼读圣经书卷的英文名字？（旧约篇）", {}],
+        ["如何正确的拼读圣经书卷的英文名字？（旧约篇） Nehemiah, Ecclesiaister,  ", {}],
 
     "https://www.youtube.com/watch?v=YaodkOIIwSM&list=PLWSCg8eZ6bzB5KbXEIxkax9ozcQRn6HoF&index=5&ab_channel=%E6%9B%BC%E8%BF%AA%E7%9A%84%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0":
         ["圣经英文谚语丨区分良莠 separate the sheep from the goats", {}],
