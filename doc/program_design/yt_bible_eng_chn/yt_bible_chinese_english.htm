@@ -7,6 +7,7 @@
 
     <script src="../jq/jquery-2_1_3.min.js"></script>
     <script src="./dat/yt_data.js"></script>
+    <script src="./dat/yt_data_English_5perday.js"></script>
 
     <style>
         .about_I {
@@ -47,7 +48,7 @@
                     .attr("contenteditable", "true")
             })
 
-            gen_lst()
+            gen_lst([yt_data, yt_data_English_5perday])
         })
 
         function bind_yt_player() {
@@ -68,8 +69,7 @@
             })
         }
 
-
-        function gen_lst() {
+        function get_trs(yt_obj) {
 
             function get_sec(mm_ss) {
                 if (!mm_ss) return 0
@@ -85,7 +85,7 @@
 
 
             var str = "", idx = 0
-            for (const [ur, ar] of Object.entries(yt_data)) {
+            for (const [ur, ar] of Object.entries(yt_obj)) {
                 if (!ur) continue;
                 var start = ar[1].start;
 
@@ -93,6 +93,16 @@
                 str += `<tr><td>${idx++}</td><td><a href_vid='${ur}' startSeconds='${startSeconds}'>${ar[0]} (${start})</a></td></tr>`
 
             }
+            return str;
+        }
+
+        function gen_lst(yt_obj_ary) {
+            var str = ""
+
+            for (var i = 0; i < yt_obj_ary.length; i++) {
+                str += get_trs(yt_obj_ary[i])
+            }
+
             $("#mylist").html(`<table border='1'>${str}</table>`)
 
             bind_yt_player()
