@@ -3,6 +3,18 @@
 var yt_data = {
 
 
+
+    "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?projector=1":
+    ["圣经书卷名称中英对照(发音Pronunciation)——滚动字幕",{}],
+
+    "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?projector=1":
+    ["用中文和英文讀聖經(二) (馬太福音第一章:1-19)",{}],
+
+
+    "https://www.youtube.com/watch?v=RQSzMNAZcas&ab_channel=%5B%E8%81%BD%E8%81%96%E7%B6%93%E5%AD%B8%E8%8B%B1%E8%AA%9EListentoBible%5D%E4%B8%AD%E8%8B%B1%E8%81%96%E7%B6%93":
+    ["",{}],
+
+
     "https://www.youtube.com/watch?v=T3ho1lL5eSU&ab_channel=%E6%9B%BC%E8%BF%AA%E7%9A%84%E5%9C%A3%E7%BB%8F%E7%AC%94%E8%AE%B0":
         ["去英文教会必知的十个单词", {}],
 
