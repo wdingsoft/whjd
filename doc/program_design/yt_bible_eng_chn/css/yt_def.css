@@ -1,0 +1,32 @@
+.about_I {
+    background-color: red;
+}
+
+.plus {
+    background-color: antiquewhite
+}
+
+#TableOfContent {
+    background-color: rgb(239, 238, 238);
+    height: 600px;
+    overflow: scroll;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+a[href_vid] {
+
+    font-size: large;
+}
+
+.hili {
+    background-color: chartreuse;
+}
+
+.hili_old {
+    color: blue;
+}
+
+#ytspeed {
+    width: 50px;
+}

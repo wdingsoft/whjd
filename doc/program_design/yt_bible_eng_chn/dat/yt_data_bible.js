@@ -1,6 +1,6 @@
 
 
-var yt_data = {
+var yt_data_bible = {
 
 
 
