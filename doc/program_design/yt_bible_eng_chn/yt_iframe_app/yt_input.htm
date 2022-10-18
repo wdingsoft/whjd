@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <base target="_blank" />
+    <META http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <META name="viewport" content="width=device-witdh, initial-scale=1, maximum-scale=1, user-scale=0">
+
+    <script src="./jq/jquery-2_1_3.min.js"></script>
+
+
+    <style>
+        .about_I {
+            background-color: red;
+        }
+
+        .plus {
+            background-color: antiquewhite
+        }
+        #ytinput{
+            width: 700px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+
+            $("p").on("click", function () {
+                var vid = $(this).text()
+                var speed = $("#ytspeedop").val()
+                $("iframe").attr("src", `./yt_iframe_videoID.htm?vid=${vid}&speed=${speed}`)
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <iframe xsrc="./ElderEnglish_YouTubeSpeedx0.75.htm" frameborder="1" class="" width="650" height="400"></iframe>
+    <div name="yt_ctr">
+       
+        <div name="ytspeed" id="ytspeedop"> 
+            <a>Speed:</a>
+            <input type="radio" class="vtspeed" name="ytspeed" value="0.75">0.75</input>
+            <input type="radio" class="vtspeed" name="ytspeed" value="1.00">1.00</input>
+            <input type="radio" class="vtspeed" name="ytspeed" value="1.25">1.25</input>
+            <input type="radio" class="vtspeed" name="ytspeed" value="1.50">1.50</input>
+            <input type="radio" class="vtspeed" name="ytspeed" value="1.75">1.75</input>
+            <input type="radio" class="vtspeed" name="ytspeed" value="2.00">2.00</input>
+        </div>
+    </div>
+
+    <div>
+        <label>url:</label> <input list="datalist_id" id="ytinput">
+    </div>
+    <datalist id="datalist_id">
+        <option value="c0IhZeHvj0w"></option>
+
+    </datalist>
+    </input>
+    <div xxid="player"></div>
+    <p>o8Y8uLRE-uE</p>
+    <p>c0IhZeHvj0w</p>
+</body>
+
+</html>
