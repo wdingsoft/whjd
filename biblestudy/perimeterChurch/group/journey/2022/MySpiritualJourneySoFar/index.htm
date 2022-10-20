@@ -62,7 +62,7 @@
             var trs = "", idx = 0
             Object.keys(obj).forEach(function (yr, i) {
                 var lev = obj[yr][0], des = obj[yr][1]
-                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="levelChange(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${lev}"></input><a id="ilevel">${lev}</a></td><td contenteditable='true'>${des}</td></tr>`
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="levelChange(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${lev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
             })
             document.getElementById('tbid').innerHTML = trs;
         }
@@ -84,7 +84,7 @@
         function levelChange(evt) {
             var val = evt.value
             console.log(val)
-            evt.nextSibling.innerHTML = val
+            evt.parentElement.nextSibling.innerHTML = val
 
         }
         function toggleNextVisibility(evt) {
@@ -99,6 +99,7 @@
         function storage_save() {
             var str = document.getElementById("tbid").innerHTML.trim()
             if (!str) return alert("nothing to save")
+            else if (!confirm("Save to local storage.\nSure?")) return
             var obj = get_data_fr_table()
             localStorage.setItem("tbid", JSON.stringify(obj))
             document.getElementById("tout").value = JSON.stringify(obj, null, 4)
@@ -111,6 +112,8 @@
             var obj = JSON.parse(str)
             document.getElementById("tout").value = JSON.stringify(obj, null, 4)
             gen_tbody_by_obj(obj)
+            var dat = obj_to_chart_data(obj)
+            update_chart(dat)
         }
         function get_data_fr_table() {
             var ar = document.getElementsByTagName("tr")
@@ -118,8 +121,8 @@
             for (var i = 1; i < ar.length; i++) {
                 var etds = ar[i].children
                 var yrs = etds[1].textContent
-                var lev = etds[2].textContent
-                var txt = etds[3].textContent
+                var lev = etds[3].textContent
+                var txt = etds[4].textContent
                 obj[yrs] = [lev, txt]
             }
 
@@ -158,14 +161,14 @@
     <div>
         <canvas id="myChart"></canvas>
     </div>
-    <button onclick="gen_table_new();">Year Start:</button><input id="StartYear" value="1964"></input></button><button
+    <a>Year Start:</a> <input id="StartYear" value="1964"></input><button onclick="gen_table_new();">New</button></button><button
         onclick="storage_save();">save</button><button onclick="storage_load();">load</button><br>
     <table border="1">
         <thead>
             <tr>
                 <th>Age</th>
                 <th>Year</th>
-                <th>Level</th>
+                <th colspan="2">Level</th>
                 <th>Description</th>
             </tr>
         </thead>
