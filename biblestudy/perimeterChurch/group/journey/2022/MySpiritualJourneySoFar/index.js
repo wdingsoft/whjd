@@ -146,12 +146,12 @@ var obj =
         ""
     ],
     "2000": [
-        "-11",
+        "",
         ""
     ],
     "2001": [
         "-37",
-        "laid off (3) "
+        "(1) got citizenship. (2)laid off "
     ],
     "2002": [
         "-48",
@@ -159,19 +159,19 @@ var obj =
     ],
     "2003": [
         "-91",
-        "(1) got citizenship.(2) laid off (3) family war broke out.(4) found a job in Ligos Software in Savannah GA."
+        "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
         "50",
         "baptized at ACCC."
     ],
     "2005": [
-        "",
-        ""
+        "24",
+        "(1) family burged. (2) children game"
     ],
     "2006": [
-        "",
-        ""
+        "64",
+        "Shacco-Spring Retreat"
     ],
     "2007": [
         "",
@@ -190,8 +190,8 @@ var obj =
         ""
     ],
     "2011": [
-        "",
-        ""
+        "48",
+        "Work alone at Huntsville. join CCCM"
     ],
     "2012": [
         "",
@@ -210,8 +210,8 @@ var obj =
         ""
     ],
     "2016": [
-        "99",
-        "(1) quitted Emerson, left Huntsville to go to CIU seminary school.(2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.' (Gen12:1 NIV)  "
+        "89",
+        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.' (Gen12:1 NIV)  "
     ],
     "2017": [
         "",
@@ -222,20 +222,20 @@ var obj =
         ""
     ],
     "2019": [
-        "",
-        ""
+        "71",
+        "graduated fr CIU."
     ],
     "2020": [
         "",
         ""
     ],
     "2021": [
-        "",
-        ""
+        "73",
+        "pandemic serve in school,"
     ],
     "2022": [
-        "",
-        ""
+        "85",
+        "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
         "",

@@ -5,6 +5,20 @@
         .Hili {
             background-color: red;
         }
+
+        input, td[contenteditable] {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #table_holder {
+            overflow-y: scroll;
+            display: block;
+            background-color: antiquewhite;
+            height: 100px;
+        }
+        .mystorage{
+            float: right;
+        }
     </style>
     <script src="./js/chart.js" xxsrc="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -15,7 +29,7 @@
         ];
         labels = []
         for (var yr = 1964; yr <= 2025; yr++) {
-            labels.push(""+yr)
+            labels.push("" + yr)
         }
 
         var my_test_ary = [{ x: 1964, y: -100 }, { x: 1964, y: 100 }, { x: 1964, y: 0 }, { x: 1967, y: -50 }]
@@ -32,7 +46,7 @@
                     data: null
                 },
                 {
-                    label: 'Empty',
+                    label: 'Middle-line',
                     backgroundColor: 'rgb(15, 99, 132)',
                     borderColor: 'rgb(100, 99, 132)',
                     //data: [-50, 10, 5, 2, 20, 30, 45],
@@ -51,10 +65,10 @@
     <script>
         function gen_table_new() {
             var yrs = document.getElementById("StartYear").value
-            var sofar = 3+parseInt((new Date).getFullYear())
+            var sofar = 3 + parseInt((new Date).getFullYear())
             var obj = {}
             for (var yr = parseInt(yrs); yr <= sofar; yr++) {
-                obj[""+yr] = ["", ""]
+                obj["" + yr] = ["", ""]
             }
             gen_tbody_by_obj(obj)
         }
@@ -62,7 +76,8 @@
             var trs = "", idx = 0
             Object.keys(obj).forEach(function (yr, i) {
                 var lev = obj[yr][0], des = obj[yr][1]
-                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="levelChange(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${lev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
+                var dlev = lev.length === 0 ? -100 : lev
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${dlev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
             })
             document.getElementById('tbid').innerHTML = trs;
         }
@@ -81,11 +96,19 @@
         }
 
 
-        function levelChange(evt) {
+        function on_level_input(evt) {
             var val = evt.value
             console.log(val)
+            if (parseInt(val) <= -100) val = ''
             evt.parentElement.nextSibling.innerHTML = val
-
+        }
+        function on_level_Change(evt) {
+            //update graphic
+            var obj = get_data_fr_table()
+            //localStorage.setItem("tbid", JSON.stringify(obj))
+            //document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            var dat = obj_to_chart_data(obj)
+            update_chart(dat)
         }
         function toggleNextVisibility(evt) {
             var val = evt.nextSibling.firstChild.style.visibility === "hidden" ? "visible" : "hidden"
@@ -125,7 +148,6 @@
                 var txt = etds[4].textContent
                 obj[yrs] = [lev, txt]
             }
-
             return obj;
         }
         function update_chart(dat) {
@@ -146,10 +168,15 @@
         }
         function read_data() {
             var str = document.getElementById("tout").value
+            if(str.trim().length===0) return alert("no data to read. Please paste your data here.")
+            try{
             var obj = JSON.parse(str);
             var dat = obj_to_chart_data(obj)
             gen_tbody_by_obj(obj)
             update_chart(dat)
+            }catch{
+                alert("json data error.")
+            }
         }
 
     </script>
@@ -161,22 +188,30 @@
     <div>
         <canvas id="myChart"></canvas>
     </div>
-    <a>Year Start:</a> <input id="StartYear" value="1964"></input><button onclick="gen_table_new();">New</button></button><button
-        onclick="storage_save();">save</button><button onclick="storage_load();">load</button><br>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Age</th>
-                <th>Year</th>
-                <th colspan="2">Level</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody id="tbid">
+   
+    <div id="table_holder">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Year</th>
+                    <th colspan="2">Level</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tbid">
 
-        </tbody>
-    </table>
-    <textarea id="tout"></textarea><button onclick="read_data();">read</button>
+            </tbody>
+        </table>
+    </div>
+
+    <a>Year Start:</a> <input id="StartYear" value="1964"></input><button
+    onclick="gen_table_new();">New</button></button>
+   
+    <textarea class="mystorage"  id="tout"></textarea>
+    <button class="mystorage"  onclick="read_data();">Read</button>
+    <button class="mystorage" onclick="storage_load();">Load</button>
+    <button class="mystorage" onclick="storage_save();">Save</button>
 
 </body>
 
