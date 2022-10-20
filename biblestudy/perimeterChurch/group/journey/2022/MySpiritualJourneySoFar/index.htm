@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <style>
+        .Hili {
+            background-color: red;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var labels = [
+            'January',
+            'February',
+        ];
+        labels = []
+        for (var yr = 1964; yr <= 2025; yr++) {
+            labels.push(""+yr)
+        }
+
+        var my_test_ary = [{ x: 1964, y: -100 }, { x: 1964, y: 100 }, { x: 1964, y: 0 }, { x: 1967, y: -50 }]
+        my_test_ary = [{ x: "1964", y: -100 }, { x: "1964", y: 100 }, { x: "1964", y: 0 }, { x: "2025", y: 0 }]
+
+        var data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'My Spiritual Journey So Far',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    //data: [-50, 10, 5, 2, 20, 30, 45],
+                    data: null
+                },
+                {
+                    label: 'Empty',
+                    backgroundColor: 'rgb(15, 99, 132)',
+                    borderColor: 'rgb(100, 99, 132)',
+                    //data: [-50, 10, 5, 2, 20, 30, 45],
+                    data: my_test_ary
+                },
+            ]
+        };
+
+        var config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+    </script>
+
+    <script>
+        function gen_table_new() {
+            var yrs = document.getElementById("StartYear").value
+            var sofar = 3+parseInt((new Date).getFullYear())
+            var obj = {}
+            for (var yr = parseInt(yrs); yr <= sofar; yr++) {
+                obj[""+yr] = ["", ""]
+            }
+            gen_tbody_by_obj(obj)
+        }
+        function gen_tbody_by_obj(obj) {
+            var trs = "", idx = 0
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="levelChange(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${lev}"></input><a id="ilevel">${lev}</a></td><td contenteditable='true'>${des}</td></tr>`
+            })
+            document.getElementById('tbid').innerHTML = trs;
+        }
+        function obj_to_chart_data(obj) {
+            var ary = []
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                if (lev) {
+                    var pobj = { x: (yr), y: parseInt(lev) }
+                    ary.push(pobj)
+                }
+
+            })
+            //data.datasets.data = ary
+            return ary;
+        }
+
+
+        function levelChange(evt) {
+            var val = evt.value
+            console.log(val)
+            evt.nextSibling.innerHTML = val
+
+        }
+        function toggleNextVisibility(evt) {
+            var val = evt.nextSibling.firstChild.style.visibility === "hidden" ? "visible" : "hidden"
+            evt.nextSibling.firstChild.style.visibility = val
+            var elms = document.getElementsByClassName("Hili")
+            for (var i = 0; i < elms.length; i++) {
+                elms[i].classList.remove("Hili")
+            };
+            evt.classList.add("Hili");
+        }
+        function storage_save() {
+            var str = document.getElementById("tbid").innerHTML.trim()
+            if (!str) return alert("nothing to save")
+            var obj = get_data_fr_table()
+            localStorage.setItem("tbid", JSON.stringify(obj))
+            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            var dat = obj_to_chart_data(obj)
+            update_chart(dat)
+        }
+        function storage_load() {
+            var str = localStorage.getItem("tbid")
+            if (!str) return
+            var obj = JSON.parse(str)
+            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            gen_tbody_by_obj(obj)
+        }
+        function get_data_fr_table() {
+            var ar = document.getElementsByTagName("tr")
+            var obj = {}
+            for (var i = 1; i < ar.length; i++) {
+                var etds = ar[i].children
+                var yrs = etds[1].textContent
+                var lev = etds[2].textContent
+                var txt = etds[3].textContent
+                obj[yrs] = [lev, txt]
+            }
+
+            return obj;
+        }
+        function update_chart(dat) {
+            // JS - Destroy exiting Chart Instance to reuse <canvas> element
+            let chartStatus = Chart.getChart("myChart"); // <canvas> id
+            if (chartStatus != undefined) {
+                chartStatus.destroy();
+            }
+
+            console.log(dat)
+            config.data.datasets[0].data = dat
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+            //myChart.destroy();
+
+        }
+        function read_data() {
+            var str = document.getElementById("tout").value
+            var obj = JSON.parse(str);
+            var dat = obj_to_chart_data(obj)
+            gen_tbody_by_obj(obj)
+            update_chart(dat)
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <button onclick="gen_table_new();">Year Start:</button><input id="StartYear" value="1964"></input></button><button
+        onclick="storage_save();">save</button><button onclick="storage_load();">load</button><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Age</th>
+                <th>Year</th>
+                <th>Level</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="tbid">
+
+        </tbody>
+    </table>
+    <textarea id="tout"></textarea><button onclick="read_data();">read</button>
+
+</body>
+
+</html>
+
+<script>
+
+
+    update_chart(my_test_ary)
+    update_chart(my_test_ary)
+
+</script>
