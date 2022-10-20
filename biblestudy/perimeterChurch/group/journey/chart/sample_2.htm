@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var labels = [
+            'January',
+            'February',
+        ];
+        labels = []
+        for (var yr = 1964; yr <= 2020; yr++) {
+            labels.push(yr)
+        }
+
+
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'My Spiritual Journey So Far',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                //data: [-50, 10, 5, 2, 20, 30, 45],
+
+                data: [{ x: 1964, y: -100 }, { x: 1964, y: 100 }, { x: 1964, y: 0 }, { x: 1967, y: -50 }]
+
+            }]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+    </script>
+
+</head>
+
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    //labels = []
+    for (var yr = 1964; yr <= 2020; yr++) {
+        //labels.push(yr)
+    }
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
