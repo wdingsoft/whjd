@@ -108,7 +108,7 @@
             var sofar = 3 + parseInt((new Date).getFullYear())
             var obj = {}
             for (var yr = parseInt(yrs); yr <= sofar; yr++) {
-                obj["" + yr] = ["0", ""]
+                obj["" + yr] = ["", ""]
             }
             gen_tbody_by_obj(obj)
             //var dat = obj_to_chart_data(obj)
@@ -119,7 +119,7 @@
             Object.keys(obj).forEach(function (yr, i) {
                 var lev = obj[yr][0], des = obj[yr][1]
                 var dlev = lev.length === 0 ? -100 : lev
-                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${dlev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-101" max="100" value="${dlev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
             })
             document.getElementById('tbid').innerHTML = trs;
         }
@@ -141,7 +141,7 @@
         function on_level_input(evt) {
             var val = evt.value
             console.log(val)
-            if (parseInt(val) <= -100) val = ''
+            if (parseInt(val) <= -101) val = ''
             evt.parentElement.nextSibling.innerHTML = val
         }
         function on_level_Change(evt) {
