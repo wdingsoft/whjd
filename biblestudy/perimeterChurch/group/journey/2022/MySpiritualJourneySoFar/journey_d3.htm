@@ -1,0 +1,405 @@
+<html>
+
+<head>
+    <style>
+        .Hili {
+            background-color: red;
+        }
+
+        input,
+        td[contenteditable] {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #table_holder {
+            overflow-y: scroll;
+            display: block;
+            background-color: antiquewhite;
+            height: 300px;
+        }
+
+        .mystorage {
+            float: right;
+        }
+    </style>
+
+    <style>
+        /* d3 set the CSS */
+
+        .line {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 2px;
+        }
+
+        .grid line {
+            stroke: lightgrey;
+            stroke-opacity: 0.7;
+            shape-rendering: crispEdges;
+        }
+
+        .grid path {
+            stroke-width: 0;
+        }
+
+        .axis {
+            stroke: red;
+            stroke-opacity: 0.1;
+            stroke-width: 1px;
+            /**-weid-**/
+        }
+
+        .axis--x {
+            stroke: black;
+        }
+    </style>
+    <script src="./js/chart.js" xxsrc="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./journey_data.js"></script>
+    <script src="./js/d3.v4.min.js" xxxxsrc="https://d3js.org/d3.v4.min.js"></script>
+
+    <script>
+        var labels = [
+            'January',
+            'February',
+        ];
+        labels = []
+        for (var yr = 1964; yr <= 2025; yr++) {
+            labels.push("" + yr)
+        }
+
+        var my_test_ary = [{ x: 1964, y: -100 }, { x: 1964, y: 100 }, { x: 1964, y: 0 }, { x: 1967, y: -50 }]
+        my_test_ary = [{ x: "1964", y: -100 }, { x: "1964", y: 100 }, { x: "1964", y: 0 }, { x: "1966", y: null }, { x: "2025", y: 0 }]
+
+        var data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'My Spiritual Journey So Far',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    //data: [-50, 10, 5, 2, 20, 30, 45],
+                    data: null
+                },
+                {
+                    label: 'Middle-line',
+                    backgroundColor: 'rgb(15, 99, 132)',
+                    borderColor: 'rgb(100, 99, 132)',
+                    //data: [-50, 10, 5, 2, 20, 30, 45],
+                    data: my_test_ary
+                },
+            ]
+        };
+
+        var config = {
+            type: 'line',
+            data: data,
+            options: {}
+        };
+    </script>
+
+    <script>
+        function gen_table_new() {
+            var yrs = document.getElementById("StartYear").value
+            var sofar = 3 + parseInt((new Date).getFullYear())
+            var obj = {}
+            for (var yr = parseInt(yrs); yr <= sofar; yr++) {
+                obj["" + yr] = ["0", ""]
+            }
+            gen_tbody_by_obj(obj)
+            var dat = obj_to_chart_data(obj)
+            update_graph(dat, 1)
+        }
+        function gen_tbody_by_obj(obj) {
+            var trs = "", idx = 0
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                var dlev = lev.length === 0 ? -100 : lev
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-100" max="100" value="${dlev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
+            })
+            document.getElementById('tbid').innerHTML = trs;
+        }
+        function obj_to_chart_data(obj) {
+            var ary = []
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                if (lev) {
+                    var pobj = { x: (yr), y: parseInt(lev) }
+                    ary.push(pobj)
+                }
+
+            })
+            //data.datasets.data = ary
+            return ary;
+        }
+
+
+        function on_level_input(evt) {
+            var val = evt.value
+            console.log(val)
+            if (parseInt(val) <= -100) val = ''
+            evt.parentElement.nextSibling.innerHTML = val
+        }
+        function on_level_Change(evt) {
+            //update graphic
+            var obj = get_data_fr_table()
+            //localStorage.setItem("tbid", JSON.stringify(obj))
+            //document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            var dat = obj_to_chart_data(obj)
+            update_graph(dat)
+        }
+        function toggleNextVisibility(evt) {
+            var val = evt.nextSibling.firstChild.style.visibility === "hidden" ? "visible" : "hidden"
+            evt.nextSibling.firstChild.style.visibility = val
+            var elms = document.getElementsByClassName("Hili")
+            for (var i = 0; i < elms.length; i++) {
+                elms[i].classList.remove("Hili")
+            };
+            evt.classList.add("Hili");
+        }
+        function storage_save() {
+            var str = document.getElementById("tbid").innerHTML.trim()
+            if (!str) return alert("nothing to save")
+            else if (!confirm("Save to local storage.\nSure?")) return
+            var obj = get_data_fr_table()
+            localStorage.setItem("tbid", JSON.stringify(obj))
+            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            var dat = obj_to_chart_data(obj)
+            update_graph(dat)
+        }
+        function storage_load() {
+            var str = localStorage.getItem("tbid")
+            if (!str) return
+            var obj = JSON.parse(str)
+            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            gen_tbody_by_obj(obj)
+            var dat = obj_to_chart_data(obj)
+            update_graph(dat)
+        }
+        function get_data_fr_table() {
+            var ar = document.getElementsByTagName("tr")
+            var obj = {}
+            for (var i = 1; i < ar.length; i++) {
+                var etds = ar[i].children
+                var yrs = etds[1].textContent
+                var lev = etds[3].textContent
+                var txt = etds[4].textContent
+                obj[yrs] = [lev, txt]
+            }
+            return obj;
+        }
+        function update_graph(datary, iLine) {
+            //update_by_chart(datary, iLine)
+            var dat = get_d3_data(journey_data_obj) //////==>weid
+            Run_d3(dat)
+        }
+        function update_by_d3(datary, iLine) {
+        }
+        function update_by_chart(datary, iLine) {
+            if (undefined === iLine) iLine = 0
+            // JS - Destroy exiting Chart Instance to reuse <canvas> element
+            let chartStatus = Chart.getChart("myChart"); // <canvas> id
+            if (chartStatus != undefined) {
+                chartStatus.destroy();
+            }
+
+            //restart 
+            labels = []
+            datary.forEach(function (obj) {
+                labels.push("" + obj.x)
+            })
+            console.log(datary)
+            config.data.datasets[iLine].data = datary
+            //config.data.datasets[1].data = datary
+            config.data.labels = labels
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        }
+        function read_data() {
+            var str = document.getElementById("tout").value
+            if (str.trim().length === 0) return alert("no data to read. Please paste your data here.")
+            try {
+                var obj = JSON.parse(str);
+                var dat = obj_to_chart_data(obj)
+                gen_tbody_by_obj(obj)
+                update_graph(dat)
+            } catch {
+                alert("json data error.")
+            }
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+        <svg width="800" height="350"></svg>
+    </div>
+
+    <div id="table_holder">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Year</th>
+                    <th colspan="2">Level</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tbid">
+
+            </tbody>
+        </table>
+    </div>
+
+    <a>Year Start:</a> <input id="StartYear" value="1964"></input><button
+        onclick="gen_table_new();">New</button></button>
+
+    <textarea class="mystorage" id="tout"></textarea>
+    <button class="mystorage" onclick="read_data();">Read</button>
+    <button class="mystorage" onclick="storage_load();">Load</button>
+    <button class="mystorage" onclick="storage_save();">Save</button>
+
+</body>
+
+</html>
+
+<script>
+
+
+    //update_graph(my_test_ary)
+    //update_graph(my_test_ary)
+
+</script>
+
+<script>
+    function get_d3_data_fr_tbdat(tbobj) {
+        var d3ar = []
+        Object.keys(tbobj).forEach(function (yrs) {
+            var x = parseFloat(yrs)
+            var y = tbobj[yrs][0]
+            if (y.length > 0) {
+                y = parseFloat(y)
+                d3ar.push([x, y])
+            }
+        })
+        return d3ar
+    }
+    function Run_d3(d3ary) {
+
+        var svg = d3.select("svg"),
+            margin = { top: 20, right: 20, bottom: 30, left: 50 },
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom;
+
+
+        let points = d3.range(1, 10).map(function (i) {
+            return [i * width / 10, 50 + Math.random() * (height - 100)];
+        });
+        points = d3ary;//get_d3_data(journey_data_obj) //////==>weid
+
+
+        var x = d3.scaleLinear()
+            .rangeRound([0, width]);
+
+        var y = d3.scaleLinear()
+            .rangeRound([height, 0]);
+
+
+        var xAxis = d3.axisBottom(x),
+            yAxis = d3.axisLeft(y);
+        var xAxis = d3.axisBottom(x)
+            //.ticks((width + 2) / (height + 2) * 10)
+            .tickSize(-height) //directiong
+            .tickPadding(height + 5 - height)//string location ||
+            .tickFormat(d3.format("d")) //D3 remove comma delimiters for thousands
+
+        var yAxis = d3.axisLeft(y) //=
+            .tickSize(-width) //directiong
+            .tickPadding(width + 5 - width);//string location;
+
+
+
+        var line = d3.line()
+            .x(function (d) { return x(d[0]); })
+            .y(function (d) { return y(d[1]); });
+
+        let drag = d3.drag()
+            .on('start', dragstarted)
+            .on('drag', dragged)
+            .on('end', dragended);
+
+        svg.append('rect')
+            .attr('class', 'zoom')
+            .attr('cursor', 'move')
+            .attr('fill', 'none')
+            .attr('pointer-events', 'all')
+            .attr('width', width)
+            .attr('height', height)
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+
+        var focus = svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        x.domain(d3.extent(points, function (d) { return d[0]; }));
+        y.domain(d3.extent(points, function (d) { return d[1]; }));
+
+        focus.append("path")
+            .datum(points)
+            .attr("fill", "none")
+            .attr("stroke", "steelblue")
+            .attr("stroke-linejoin", "round")
+            .attr("stroke-linecap", "round")
+            .attr("stroke-width", 1.5)
+            .attr("d", line);
+
+        focus.selectAll('circle')
+            .data(points)
+            .enter()
+            .append('circle')
+            .attr('r', 5.0)
+            .attr('cx', function (d) { return x(d[0]); })
+            .attr('cy', function (d) { return y(d[1]); })
+            .style('cursor', 'pointer')
+            .style('fill', 'steelblue');
+
+        focus.selectAll('circle')
+            .call(drag);
+
+        focus.append('g')
+            .attr('class', 'axis axis--x')
+            .attr('transform', 'translate(0,' + height + ')')
+            .call(xAxis);
+
+        focus.append('g')
+            .attr('class', 'axis axis--y')
+            .call(yAxis);
+
+        function dragstarted(d) {
+            d3.select(this).raise().classed('active', true);
+        }
+
+        function dragged(d) {
+            d[0] = x.invert(d3.event.x);
+            d[1] = y.invert(d3.event.y);
+            d3.select(this)
+                .attr('cx', x(d[0]))
+                .attr('cy', y(d[1]))
+            focus.select('path').attr('d', line);
+            console.log("dragged=", d)
+        }
+
+        function dragended(d) {
+            d3.select(this).classed('active', false);
+            console.log("dragended=", d)
+            console.log(JSON.stringify(points, null, 4))
+        }
+
+        console.log(JSON.stringify(points, null, 4))
+
+    }
+</script>
