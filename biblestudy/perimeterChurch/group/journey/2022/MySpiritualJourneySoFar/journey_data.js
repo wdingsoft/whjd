@@ -7,7 +7,7 @@ var journey_data_obj =
         "born in Beijing"
     ],
     "1965": [
-        "-26",
+        "-36",
         "sent to old town."
     ],
     "1966": [
@@ -75,7 +75,7 @@ var journey_data_obj =
         ""
     ],
     "1982": [
-        "-29",
+        "-39",
         "College life. during the period, influenced by Chinese Daoism(Laozi/Zhuangzi). (2) in 1986, I continued to pursue the master's degree major in vibration control."
     ],
     "1983": [
@@ -111,8 +111,8 @@ var journey_data_obj =
         ""
     ],
     "1991": [
-        "",
-        ""
+        "-30",
+        "UIC trainning in Binghamton NY."
     ],
     "1992": [
         "-74",
@@ -127,7 +127,7 @@ var journey_data_obj =
         ""
     ],
     "1995": [
-        "-15",
+        "-11",
         "USA dream."
     ],
     "1996": [
@@ -159,7 +159,7 @@ var journey_data_obj =
         "stayed at home"
     ],
     "2003": [
-        "-100",
+        "-91",
         "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
@@ -231,16 +231,16 @@ var journey_data_obj =
         ""
     ],
     "2021": [
-        "100",
+        "36",
         "pandemic serve in school,"
     ],
     "2022": [
-        "85",
+        "58",
         "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
-        "",
-        ""
+        "30",
+        "doomsday future"
     ],
     "2024": [
         "",

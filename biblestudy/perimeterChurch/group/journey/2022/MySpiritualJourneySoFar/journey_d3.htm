@@ -103,6 +103,7 @@
 
     <script>
         function gen_table_new() {
+            yearStar.save()
             var yrs = document.getElementById("StartYear").value
             var sofar = 3 + parseInt((new Date).getFullYear())
             var obj = {}
@@ -148,8 +149,8 @@
             var obj = get_data_fr_table()
             //localStorage.setItem("tbid", JSON.stringify(obj))
             //document.getElementById("tout").value = JSON.stringify(obj, null, 4)
-            var dat = obj_to_chart_data(obj)
-            update_graph(dat)
+            //var dat = obj_to_chart_data(obj)
+            update_graph(obj)
         }
         function toggleNextVisibility(evt) {
             var val = evt.nextSibling.firstChild.style.visibility === "hidden" ? "visible" : "hidden"
@@ -160,15 +161,15 @@
             };
             evt.classList.add("Hili");
         }
-        function on_GenerateData(){
+        function on_GenerateData() {
             var obj = get_data_fr_table()
-            if(Object.keys(obj).length===0) return alert("Please create a table first.")
+            if (Object.keys(obj).length === 0) return alert("Please create a table first.")
             document.getElementById("tout").value = JSON.stringify(obj, null, 4)
         }
         function storage_save() {
             var str = document.getElementById("tout").value.toString().trim()
             var obj = get_data_fr_table()
-            if (str.length<=2) {
+            if (str.length <= 2) {
                 if (confirm("Get data from table.\nSure?")) {
                     document.getElementById("tout").value = JSON.stringify(obj, null, 4)
                 }
@@ -210,9 +211,31 @@
             var dat = obj_to_chart_data(obj)
             //update_by_chart(dat, iLine)
             var dat = get_d3_data_fr_tbdat(obj);//journey_data_obj) //////==>weid
-            Run_d3(dat)
+            Run_d3(dat, function (ptrs) {
+                var ptrObj = {}
+                for (var i = 0; i < ptrs.length; i++) {
+                    var x = ptrs[i][0]
+                    var y = ptrs[i][1]
+                    ptrObj["" + x] = "" + y
+                }
+                var years = Object.keys(obj).sort()
+                for (var i = 0; i < years.length; i++) {
+                    var yrs = years[i]
+                    var val = obj[yrs][0]
+
+                    if (val.length > 0 && ptrObj[yrs] != val) {
+                        obj[yrs][0] = ptrObj[yrs]
+                        break;
+                    }
+                }
+                gen_tbody_by_obj(obj)
+                tr_scrollIntoView(i+1)
+            })
         }
-        function update_by_d3(datary, iLine) {
+        function tr_scrollIntoView(idx) {
+            var trs = document.getElementsByTagName("tr");
+            trs.item(idx).scrollIntoView(false)
+            trs.item(idx).classList.add("Hili")
         }
         function update_by_chart(datary, iLine) {
             if (undefined === iLine) iLine = 0
@@ -236,7 +259,7 @@
                 config
             );
         }
-        function read_data() {
+        function on_view_data() {
             var str = document.getElementById("tout").value
             if (str.trim().length === 0) return alert("no data to read. Please paste or load your data here.")
             try {
@@ -248,6 +271,25 @@
                 alert("json data error.")
             }
         }
+
+        function MyStorage(id) {
+            this.m_id = id
+            this.load()
+        }
+        MyStorage.prototype.load = function () {
+            var val = localStorage.getItem(this.m_id)
+            if (!val) {
+                val = 1960
+
+            }
+            var ttt = document.getElementById(this.m_id)
+            document.getElementById(this.m_id).value = val
+            return val;
+        }
+        MyStorage.prototype.save = function () {
+            localStorage.setItem(this.m_id, document.getElementById(this.m_id).value)
+        }
+
 
     </script>
 
@@ -277,16 +319,16 @@
     </div>
 
     <hr>
-    <a>Year Start:</a> <input id="StartYear" value="1964"></input><button
+    <a>Year Start:</a> <input id="StartYear" value=""></input><button
         onclick="gen_table_new();">CreateTableEditable</button></button>
-        <hr>
+    <hr>
 
-        <button class="mystoragex" onclick="on_GenerateData();">GenerateData</button>
-        <button class="mystoragex" onclick="read_data();">View</button>
-        <button class="mystoragex" onclick="storage_save();">Save</button>
-        <button class="mystoragex" onclick="storage_load();">Load</button>
-        <br>
-        <textarea class="mystoragex" id="tout" cols="60"></textarea>
+    <button class="mystoragex" onclick="on_GenerateData();">GenerateData</button>
+    <button class="mystoragex" onclick="on_view_data();">View</button>
+    <button class="mystoragex" onclick="storage_save();">Save</button>
+    <button class="mystoragex" onclick="storage_load();">Load</button>
+    <br>
+    <textarea class="mystoragex" id="tout" cols="60"></textarea>
 
 </body>
 
@@ -295,6 +337,7 @@
 <script>
 
 
+    var yearStar = new MyStorage("StartYear")
     //update_graph(my_test_ary)
     //update_graph(my_test_ary)
 
@@ -313,13 +356,15 @@
         })
         return d3ar
     }
-    function Run_d3(d3ary) {
+    function Run_d3(d3ary, cbf_dragend) {
 
+        //var svg = d3.select("svg");
         var svg = d3.select("svg"),
             margin = { top: 20, right: 20, bottom: 30, left: 50 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
+        svg.selectAll("*").remove() //refresh weid
 
         let points = d3.range(1, 10).map(function (i) {
             return [i * width / 10, 50 + Math.random() * (height - 100)];
@@ -355,7 +400,8 @@
         let drag = d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
-            .on('end', dragended);
+            .on('end', dragended)
+
 
         svg.append('rect')
             .attr('class', 'zoom')
@@ -408,22 +454,24 @@
         }
 
         function dragged(d) {
-            d[0] = x.invert(d3.event.x);
+            //d[0] = x.invert(d3.event.x); //weid. allow y move only.
             d[1] = y.invert(d3.event.y);
             d3.select(this)
                 .attr('cx', x(d[0]))
                 .attr('cy', y(d[1]))
             focus.select('path').attr('d', line);
-            console.log("dragged=", d)
+            //console.log("dragged=", d)
         }
 
         function dragended(d) {
             d3.select(this).classed('active', false);
             console.log("dragended=", d)
             console.log(JSON.stringify(points, null, 4))
+            if (cbf_dragend) cbf_dragend(points, d3ary)
         }
 
         console.log(JSON.stringify(points, null, 4))
 
+        //svg.remove()
     }
 </script>
