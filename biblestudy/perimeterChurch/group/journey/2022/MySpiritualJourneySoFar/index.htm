@@ -6,7 +6,8 @@
             background-color: red;
         }
 
-        input, td[contenteditable] {
+        input,
+        td[contenteditable] {
             background-color: lightgoldenrodyellow;
         }
 
@@ -14,9 +15,10 @@
             overflow-y: scroll;
             display: block;
             background-color: antiquewhite;
-            height: 100px;
+            height: 300px;
         }
-        .mystorage{
+
+        .mystorage {
             float: right;
         }
     </style>
@@ -33,7 +35,7 @@
         }
 
         var my_test_ary = [{ x: 1964, y: -100 }, { x: 1964, y: 100 }, { x: 1964, y: 0 }, { x: 1967, y: -50 }]
-        my_test_ary = [{ x: "1964", y: -100 }, { x: "1964", y: 100 }, { x: "1964", y: 0 }, { x: "2025", y: 0 }]
+        my_test_ary = [{ x: "1964", y: -100 }, { x: "1964", y: 100 }, { x: "1964", y: 0 },{ x: "1966", y: null }, { x: "2025", y: 0 }]
 
         var data = {
             labels: labels,
@@ -68,9 +70,11 @@
             var sofar = 3 + parseInt((new Date).getFullYear())
             var obj = {}
             for (var yr = parseInt(yrs); yr <= sofar; yr++) {
-                obj["" + yr] = ["", ""]
+                obj["" + yr] = ["0", ""]
             }
             gen_tbody_by_obj(obj)
+            var dat = obj_to_chart_data(obj)
+            update_chart(dat, 1)
         }
         function gen_tbody_by_obj(obj) {
             var trs = "", idx = 0
@@ -150,31 +154,37 @@
             }
             return obj;
         }
-        function update_chart(dat) {
+        function update_chart(datary, iLine) {
+            if (undefined === iLine) iLine = 0
             // JS - Destroy exiting Chart Instance to reuse <canvas> element
             let chartStatus = Chart.getChart("myChart"); // <canvas> id
             if (chartStatus != undefined) {
                 chartStatus.destroy();
             }
 
-            console.log(dat)
-            config.data.datasets[0].data = dat
+            //restart 
+            labels = []
+            datary.forEach(function (obj) {
+                labels.push("" + obj.x)
+            })
+            console.log(datary)
+            config.data.datasets[iLine].data = datary
+            //config.data.datasets[1].data = datary
+            config.data.labels = labels
             const myChart = new Chart(
                 document.getElementById('myChart'),
                 config
             );
-            //myChart.destroy();
-
         }
         function read_data() {
             var str = document.getElementById("tout").value
-            if(str.trim().length===0) return alert("no data to read. Please paste your data here.")
-            try{
-            var obj = JSON.parse(str);
-            var dat = obj_to_chart_data(obj)
-            gen_tbody_by_obj(obj)
-            update_chart(dat)
-            }catch{
+            if (str.trim().length === 0) return alert("no data to read. Please paste your data here.")
+            try {
+                var obj = JSON.parse(str);
+                var dat = obj_to_chart_data(obj)
+                gen_tbody_by_obj(obj)
+                update_chart(dat)
+            } catch {
                 alert("json data error.")
             }
         }
@@ -188,7 +198,7 @@
     <div>
         <canvas id="myChart"></canvas>
     </div>
-   
+
     <div id="table_holder">
         <table border="1">
             <thead>
@@ -206,10 +216,10 @@
     </div>
 
     <a>Year Start:</a> <input id="StartYear" value="1964"></input><button
-    onclick="gen_table_new();">New</button></button>
-   
-    <textarea class="mystorage"  id="tout"></textarea>
-    <button class="mystorage"  onclick="read_data();">Read</button>
+        onclick="gen_table_new();">New</button></button>
+
+    <textarea class="mystorage" id="tout"></textarea>
+    <button class="mystorage" onclick="read_data();">Read</button>
     <button class="mystorage" onclick="storage_load();">Load</button>
     <button class="mystorage" onclick="storage_save();">Save</button>
 
@@ -220,7 +230,7 @@
 <script>
 
 
-    update_chart(my_test_ary)
-    update_chart(my_test_ary)
+    //update_chart(my_test_ary)
+    //update_chart(my_test_ary)
 
 </script>
