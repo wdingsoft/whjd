@@ -3,6 +3,7 @@
 <!-- Thanks to Mark - https://stackoverflow.com/users/16363/mark -->
 <svg width="500" height="350"></svg>
 <script src="./js/d3.v4.min.js" xxxxsrc="https://d3js.org/d3.v4.min.js"></script>
+<script src="./journey_data.js"></script>
 <script>
 
 var svg = d3.select("svg"),
@@ -14,45 +15,7 @@ var svg = d3.select("svg"),
 let points = d3.range(1, 10).map(function(i) {
     return [i * width / 10, 50 + Math.random() * (height - 100)];
 });
-points=[
-    [
-        43,
-        -101.24873643543526
-    ],
-    [
-        86,
-        30.11347352446032
-    ],
-    [
-        129,
-        54.57156028448287
-    ],
-    [
-        172,
-        25.34891396206237
-    ],
-    [
-        215,
-        9.242586650626
-    ],
-    [
-        258,
-        23.15909233685173
-    ],
-    [
-        301,
-        43.91723795906256
-    ],
-    [
-        344,
-        58.20740971134675
-    ],
-    [
-        387,
-        99.72004606753123
-    ]
-]
-
+points=get_d3_data(journey_data_obj)
 
 
 var x = d3.scaleLinear()
@@ -143,4 +106,6 @@ function dragended(d) {
 }
 
 console.log(JSON.stringify(points,null,4))
+
+
 </script>
