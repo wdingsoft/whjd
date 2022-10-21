@@ -159,7 +159,7 @@ var journey_data_obj =
         "stayed at home"
     ],
     "2003": [
-        "-91",
+        "-100",
         "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
@@ -231,7 +231,7 @@ var journey_data_obj =
         ""
     ],
     "2021": [
-        "73",
+        "100",
         "pandemic serve in school,"
     ],
     "2022": [

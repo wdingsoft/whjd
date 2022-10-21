@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.axis path {
+    display: none;
+}
+
+.axis line {
+    stroke-opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+svg,
+#chart-container {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+</style>
+
+<body>
+    <div id="chart-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.js"></script>
+    <script>
+    // select chart div and get the width and height of it.
+    var containerStyle = document.querySelector('#chart-container').getBoundingClientRect();
+    var svg = null,
+        width = containerStyle.width,
+        height = containerStyle.height,
+        gX = null,
+        gY = null;
+      // append svg to div
+    svg = d3.select("#chart-container").append('svg');
+        
+     // domain is the actual viewport center point and the start and end of the 
+     // range is the length visible - see docs https://github.com/d3/d3-scale/blob/master/README.md#_continuous
+    //var xScale = d3.scaleLinear()
+      //  .domain([-width / 2, width / 2])
+      //  .range([0, width]);
+        
+    // we'll do the same thing for the y axis except the positive values start from the top with height first in the range
+     // this allows us to have all positive coordinates (e.g [2,2]) in the top right hand corner.
+    //var yScale = d3.scaleLinear()
+     //   .domain([-height / 2, height / 2])
+      //  .range([height, 0]);
+    // this allows us to configure our axis and frequency of the lines in th grid,
+     // notice the tick size streteches the length of the canvas. 
+    var xAxis = d3.axisBottom( 
+        d3.scaleLinear()
+        .domain([-width / 2, width / 2])
+        .range([0, width])
+        )
+        .ticks((width + 2) / (height + 2) * 10)
+        .tickSize(height)
+        .tickPadding(8 - height);
+    //var yAxis = d3.axisRight(yScale)
+    //    .ticks(10)
+     //   .tickSize(width)
+      //  .tickPadding(8 - width);
+        // finally we can append our axis onto an svg group tag. 
+    gX = svg.append("g")
+        //.attr("class", "axis axis--x")
+        .call(xAxis);
+    //gY = svg.append("g")
+        //.attr("class", "axis axis--y")
+        //.call(yAxis);
+    </script>
+</body>
+
+</html>
