@@ -2,6 +2,10 @@
 
 <head>
     <style>
+        body {
+            margin-bottom: 600px;
+        }
+
         .Hili {
             background-color: red;
         }
@@ -106,8 +110,8 @@
                 obj["" + yr] = ["0", ""]
             }
             gen_tbody_by_obj(obj)
-            var dat = obj_to_chart_data(obj)
-            update_graph(dat, 1)
+            //var dat = obj_to_chart_data(obj)
+            update_graph(obj, 1)
         }
         function gen_tbody_by_obj(obj) {
             var trs = "", idx = 0
@@ -156,24 +160,39 @@
             };
             evt.classList.add("Hili");
         }
-        function storage_save() {
-            var str = document.getElementById("tbid").innerHTML.trim()
-            if (!str) return alert("nothing to save")
-            else if (!confirm("Save to local storage.\nSure?")) return
+        function on_GenerateData(){
             var obj = get_data_fr_table()
-            localStorage.setItem("tbid", JSON.stringify(obj))
+            if(Object.keys(obj).length===0) return alert("Please create a table first.")
             document.getElementById("tout").value = JSON.stringify(obj, null, 4)
-            var dat = obj_to_chart_data(obj)
-            update_graph(dat)
+        }
+        function storage_save() {
+            var str = document.getElementById("tout").value.toString().trim()
+            var obj = get_data_fr_table()
+            if (str.length<=2) {
+                if (confirm("Get data from table.\nSure?")) {
+                    document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+                }
+                return;
+            } else {
+                try {
+                    obj = JSON.parse(str)
+                } catch {
+                    return alert("JSON parse ERR.")
+                }
+                if (!confirm("Overwrite date?")) return
+            }
+
+            localStorage.setItem("tbid", JSON.stringify(obj))
+            document.getElementById("tout").value = ""
         }
         function storage_load() {
             var str = localStorage.getItem("tbid")
             if (!str) return
             var obj = JSON.parse(str)
             document.getElementById("tout").value = JSON.stringify(obj, null, 4)
-            gen_tbody_by_obj(obj)
-            var dat = obj_to_chart_data(obj)
-            update_graph(dat)
+            //gen_tbody_by_obj(obj)
+            //var dat = obj_to_chart_data(obj)
+            //update_graph(obj)
         }
         function get_data_fr_table() {
             var ar = document.getElementsByTagName("tr")
@@ -187,9 +206,10 @@
             }
             return obj;
         }
-        function update_graph(datary, iLine) {
-            //update_by_chart(datary, iLine)
-            var dat = get_d3_data(journey_data_obj) //////==>weid
+        function update_graph(obj, iLine) {
+            var dat = obj_to_chart_data(obj)
+            //update_by_chart(dat, iLine)
+            var dat = get_d3_data_fr_tbdat(obj);//journey_data_obj) //////==>weid
             Run_d3(dat)
         }
         function update_by_d3(datary, iLine) {
@@ -218,12 +238,12 @@
         }
         function read_data() {
             var str = document.getElementById("tout").value
-            if (str.trim().length === 0) return alert("no data to read. Please paste your data here.")
+            if (str.trim().length === 0) return alert("no data to read. Please paste or load your data here.")
             try {
                 var obj = JSON.parse(str);
-                var dat = obj_to_chart_data(obj)
+                //var dat = obj_to_chart_data(obj)
                 gen_tbody_by_obj(obj)
-                update_graph(dat)
+                update_graph(obj)
             } catch {
                 alert("json data error.")
             }
@@ -256,13 +276,17 @@
         </table>
     </div>
 
+    <hr>
     <a>Year Start:</a> <input id="StartYear" value="1964"></input><button
-        onclick="gen_table_new();">New</button></button>
+        onclick="gen_table_new();">CreateTableEditable</button></button>
+        <hr>
 
-    <textarea class="mystorage" id="tout"></textarea>
-    <button class="mystorage" onclick="read_data();">Read</button>
-    <button class="mystorage" onclick="storage_load();">Load</button>
-    <button class="mystorage" onclick="storage_save();">Save</button>
+        <button class="mystoragex" onclick="on_GenerateData();">GenerateData</button>
+        <button class="mystoragex" onclick="read_data();">View</button>
+        <button class="mystoragex" onclick="storage_save();">Save</button>
+        <button class="mystoragex" onclick="storage_load();">Load</button>
+        <br>
+        <textarea class="mystoragex" id="tout" cols="60"></textarea>
 
 </body>
 
@@ -282,7 +306,7 @@
         Object.keys(tbobj).forEach(function (yrs) {
             var x = parseFloat(yrs)
             var y = tbobj[yrs][0]
-            if (y.length > 0) {
+            if (y && y.length > 0) {
                 y = parseFloat(y)
                 d3ar.push([x, y])
             }
