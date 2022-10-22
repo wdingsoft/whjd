@@ -1,22 +1,23 @@
 
 
 var journey_data =
+
 {
     "1964": [
         "0.0",
-        "According to my mother's account, I was born in Beijing Xuanwu Hospital in 1964. The hospital is close to The Xuanwu Gate Catholic Church that was built by Matteo Ricci in 1605. (http://oa.upm.es/33835/1/SHAN_HUANG.pdf).  I visited both sites in Dec 2019."
+        "According to my mother's account, I was born in Beijing Xuanwu Hospital in 1964. The hospital is close to The Xuanwu Gate Catholic Church that was built by Matteo Ricci in 1605. (http://oa.upm.es/33835/1/SHAN_HUANG.pdf).  I visited both sites in Dec 2019."
     ],
     "1965": [
         "",
-        "sent to old town."
+        ""
     ],
     "1966": [
         "",
         ""
     ],
     "1967": [
-        "-29",
-        "At the age of three, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
+        "-29.0",
+        "At the age of three, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
     ],
     "1968": [
         "",
@@ -127,7 +128,7 @@ var journey_data =
         ""
     ],
     "1995": [
-        "-11.0",
+        "-16.0",
         "USA dream."
     ],
     "1996": [
@@ -159,7 +160,7 @@ var journey_data =
         "stayed at home"
     ],
     "2003": [
-        "-91.0",
+        "-100.0",
         "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
@@ -211,8 +212,8 @@ var journey_data =
         ""
     ],
     "2016": [
-        "89.0",
-        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.' (Gen12:1 NIV)"
+        "100.0",
+        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'Ã‚Â (Gen12:1 NIV)"
     ],
     "2017": [
         "",

@@ -351,6 +351,20 @@
                 alert("json data error.")
             }
         }
+        function on_Copy_Text2_clipboard() {
+            // Get the text field
+            var copyText = document.getElementById("tout");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            //alert("Copied the text: " + copyText.value);
+        }
 
         function MyStorage(id) {
             this.m_id = id
@@ -414,6 +428,7 @@
     <button class="mystoragex" onclick="storage_save();">SaveToCookies</button>
     <button class="mystoragex" onclick="storage_load();">LoadCookies</button>
     <button class="mystoragex" onclick="on_load_file();">journey_data.js</button>
+    <button class="mystoragex" onclick="on_Copy_Text2_clipboard();">copy</button>
     <br>
     <textarea class="mystoragex" id="tout" cols="60" style="height:200px"></textarea>
 
