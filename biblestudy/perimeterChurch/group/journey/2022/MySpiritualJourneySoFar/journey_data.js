@@ -212,7 +212,7 @@ var journey_data =
     ],
     "2016": [
         "100",
-        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'Ã‚Â (Gen12:1 NIV)"
+        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'  (Gen12:1 NIV)"
     ],
     "2017": [
         "",
