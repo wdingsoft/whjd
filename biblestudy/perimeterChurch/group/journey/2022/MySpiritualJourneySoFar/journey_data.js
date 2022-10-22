@@ -1,7 +1,6 @@
 
 
-var journey_data_obj =
-{
+var journey_data ={
     "1964": [
         "0",
         "born in Beijing"
@@ -76,7 +75,7 @@ var journey_data_obj =
     ],
     "1982": [
         "-39",
-        "College life. during the period, influenced by Chinese Daoism(Laozi/Zhuangzi). (2) in 1986, I continued to pursue the master's degree major in vibration control."
+        "College life. during the period, influenced byÂ Chinese Daoism(Laozi/Zhuangzi).Â (2) in 1986, I continued to pursue the master's degree major in vibration control."
     ],
     "1983": [
         "",
@@ -104,7 +103,7 @@ var journey_data_obj =
     ],
     "1989": [
         "-93",
-        "Tiananmen massacre. a tough decision to make between the master's degree diploma and the freedom, justice or truth, between the surviving and death. (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatred in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
+        "Tiananmen massacre. a tough decision to make between the master's degree diploma and theÂ freedom, justice orÂ truth, between the survivingÂ and death.Â (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatredÂ in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
     ],
     "1990": [
         "",
@@ -152,7 +151,7 @@ var journey_data_obj =
     ],
     "2001": [
         "-37",
-        "(1) got citizenship. (2)laid off "
+        "(1)Â got citizenship. (2)laid offÂ "
     ],
     "2002": [
         "-48",
@@ -160,7 +159,7 @@ var journey_data_obj =
     ],
     "2003": [
         "-91",
-        "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
+        "(1) family conflict. (2) found a job inÂ Ligos Software in SavannahÂ GA."
     ],
     "2004": [
         "50",
@@ -191,7 +190,7 @@ var journey_data_obj =
         ""
     ],
     "2011": [
-        "48",
+        "39.25333333333334",
         "Work alone at Huntsville. join CCCM"
     ],
     "2012": [
@@ -212,7 +211,7 @@ var journey_data_obj =
     ],
     "2016": [
         "89",
-        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.' (Gen12:1 NIV)  "
+        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3)Â on the crossroad inÂ the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'Â (Gen12:1 NIV)Â Â "
     ],
     "2017": [
         "",
@@ -235,7 +234,7 @@ var journey_data_obj =
         "pandemic serve in school,"
     ],
     "2022": [
-        "58",
+        "62.91333333333333",
         "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
@@ -251,19 +250,3 @@ var journey_data_obj =
         ""
     ]
 }
-
-function get_d3_data(obj) {
-    var d3ar = []
-    Object.keys(obj).forEach(function (yrs) {
-        var x = parseFloat(yrs)
-        var y = obj[yrs][0]
-        if (y.length > 0) {
-            y = parseFloat(y)
-            d3ar.push([x, y])
-        }
-    })
-    return d3ar
-}
-
-console.log(JSON.stringify(get_d3_data(journey_data_obj),null,4))
-

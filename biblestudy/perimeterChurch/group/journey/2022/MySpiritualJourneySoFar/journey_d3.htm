@@ -15,7 +15,7 @@
             background-color: lightgoldenrodyellow;
         }
 
-        #table_holder {
+        .table_holder_edit {
             overflow-y: scroll;
             display: block;
             background-color: antiquewhite;
@@ -118,10 +118,17 @@
             var trs = "", idx = 0
             Object.keys(obj).forEach(function (yr, i) {
                 var lev = obj[yr][0], des = obj[yr][1]
-                var dlev = lev.length === 0 ? -100 : lev
-                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-101" max="100" value="${dlev}"></input></td><td>${lev}</td><td contenteditable='true'>${des}</td></tr>`
+                var dlev = lev.length === 0 ? -101 : lev
+                var slev = lev.length === 0 ? "" : parseFloat(lev).toFixed(1)
+
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-101" max="100" value="${dlev}"></input></td><td>${slev}</td><td onkeyup='on_edit_change()' contenteditable='true'>${des}</td></tr>`
             })
             document.getElementById('tbid').innerHTML = trs;
+        }
+        function on_edit_change() {
+            var obj = get_data_fr_table()
+            tout_set_value(obj)
+            storage_save_forced()
         }
         function obj_to_chart_data(obj) {
             var ary = []
@@ -148,7 +155,8 @@
             //update graphic
             var obj = get_data_fr_table()
             //localStorage.setItem("tbid", JSON.stringify(obj))
-            //document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            tout_set_value(obj)
+            storage_save_forced()
             //var dat = obj_to_chart_data(obj)
             update_graph(obj)
         }
@@ -161,17 +169,20 @@
             };
             evt.classList.add("Hili");
         }
+        function on_FullTableView(){
+            document.getElementById("table_holder").classList.toggle("table_holder_edit")
+        }
         function on_GenerateData() {
             var obj = get_data_fr_table()
             if (Object.keys(obj).length === 0) return alert("Please create a table first.")
-            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            tout_set_value(obj)
         }
         function storage_save() {
             var str = document.getElementById("tout").value.toString().trim()
             var obj = get_data_fr_table()
             if (str.length <= 2) {
                 if (confirm("Get data from table.\nSure?")) {
-                    document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+                    tout_set_value(obj)
                 }
                 return;
             } else {
@@ -186,14 +197,21 @@
             localStorage.setItem("tbid", JSON.stringify(obj))
             document.getElementById("tout").value = ""
         }
+        function storage_save_forced() {
+            var str = document.getElementById("tout").value.toString().trim()
+            localStorage.setItem("tbid", str)
+        }
         function storage_load() {
             var str = localStorage.getItem("tbid")
             if (!str) return
             var obj = JSON.parse(str)
-            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+            tout_set_value(obj)
             //gen_tbody_by_obj(obj)
             //var dat = obj_to_chart_data(obj)
             //update_graph(obj)
+        }
+        function on_load_file() {
+            document.getElementById("tout").value = JSON.stringify(journey_data, null, 4)
         }
         function get_data_fr_table() {
             var ar = document.getElementsByTagName("tr")
@@ -207,10 +225,10 @@
             }
             return obj;
         }
-        function update_graph(obj, iLine) {
-            var dat = obj_to_chart_data(obj)
+        function update_graph(tobj, iLine) {
+            var dat = obj_to_chart_data(tobj)
             //update_by_chart(dat, iLine)
-            var dat = get_d3_data_fr_tbdat(obj);//journey_data_obj) //////==>weid
+            var dat = get_d3_data_fr_tbdat(tobj);//journey_data_obj) //////==>weid
             Run_d3(dat, function (ptrs) {
                 var ptrObj = {}
                 for (var i = 0; i < ptrs.length; i++) {
@@ -218,22 +236,30 @@
                     var y = ptrs[i][1]
                     ptrObj["" + x] = "" + y
                 }
-                var years = Object.keys(obj).sort()
+                var idx = -1, years = Object.keys(tobj).sort()
                 for (var i = 0; i < years.length; i++) {
-                    var yrs = years[i]
-                    var val = obj[yrs][0]
+                    var tyrs = "" + years[i]
+                    var tval = "" + tobj[tyrs][0]
 
-                    if (val.length > 0 && ptrObj[yrs] != val) {
-                        obj[yrs][0] = ptrObj[yrs]
-                        break;
+                    if (tval.length > 0 && ptrObj[tyrs] !== tval) {
+                        tobj[tyrs][0] = "" + (ptrObj[tyrs])
+                        idx = i;
                     }
                 }
-                gen_tbody_by_obj(obj)
-                tr_scrollIntoView(i+1)
+                gen_tbody_by_obj(tobj)
+                tr_scrollIntoView(idx + 1)
+                tout_set_value(tobj)
+                storage_save_forced()
+
             })
         }
+        function tout_set_value(obj) {
+            document.getElementById("tout").value = JSON.stringify(obj, null, 4)
+        }
         function tr_scrollIntoView(idx) {
+            if (idx <= 0) return
             var trs = document.getElementsByTagName("tr");
+            if (idx >= trs.length) return
             trs.item(idx).scrollIntoView(false)
             trs.item(idx).classList.add("Hili")
         }
@@ -302,7 +328,7 @@
         <svg width="800" height="350"></svg>
     </div>
 
-    <div id="table_holder">
+    <div id="table_holder" class="table_holder_edit">
         <table border="1">
             <thead>
                 <tr>
@@ -320,15 +346,17 @@
 
     <hr>
     <a>Year Start:</a> <input id="StartYear" value=""></input><button
-        onclick="gen_table_new();">CreateTableEditable</button></button>
+        onclick="gen_table_new();">CreateNewTableEditable</button></button>
+    <button class="mystoragex" onclick="on_GenerateData();">GenerateDataFrTable</button>
+    <button class="mystorage" onclick="on_FullTableView();">FullTableView</button>
     <hr>
 
-    <button class="mystoragex" onclick="on_GenerateData();">GenerateData</button>
-    <button class="mystoragex" onclick="on_view_data();">View</button>
-    <button class="mystoragex" onclick="storage_save();">Save</button>
-    <button class="mystoragex" onclick="storage_load();">Load</button>
+    <button class="mystoragex" onclick="on_view_data();">DrawData</button>
+    <button class="mystoragex" onclick="storage_save();">SaveToCookies</button>
+    <button class="mystoragex" onclick="storage_load();">LoadCookies</button>
+    <button class="mystoragex" onclick="on_load_file();">journey_data.js</button>
     <br>
-    <textarea class="mystoragex" id="tout" cols="60"></textarea>
+    <textarea class="mystoragex" id="tout" cols="60" style="height:200px"></textarea>
 
 </body>
 
@@ -340,6 +368,10 @@
     var yearStar = new MyStorage("StartYear")
     //update_graph(my_test_ary)
     //update_graph(my_test_ary)
+    storage_load()
+    setTimeout(function () {
+        on_view_data()
+    }, 100)
 
 </script>
 
