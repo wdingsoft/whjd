@@ -25,9 +25,21 @@
         .mystorage {
             float: right;
         }
-        h3{
+
+        h3 {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .printable {
+            background-color: aliceblue;
+
+        }
+
+        @media print {
+            footer {
+                page-break-after: always;
+            }
         }
     </style>
 
@@ -119,16 +131,9 @@
             update_graph(obj, 1)
         }
         function gen_tbody_by_obj(obj) {
-            var trs = "", idx = 0
-            Object.keys(obj).forEach(function (yr, i) {
-                var lev = obj[yr][0], des = obj[yr][1]
-                var dlev = lev.length === 0 ? -101 : lev
-                var slev = lev.length === 0 ? "" : parseFloat(lev).toFixed(1)
-
-                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-101" max="100" value="${dlev}"></input></td><td>${slev}</td><td onkeyup='on_edit_change()' contenteditable='true'>${des}</td></tr>`
-            })
-            document.getElementById('tbid').innerHTML = trs;
+            gen_tbody_by_obj_editable(obj)
         }
+
         function on_edit_change() {
             var obj = get_data_fr_table()
             tout_set_value(obj)
@@ -173,8 +178,44 @@
             };
             evt.classList.add("Hili");
         }
-        function on_FullTableView() {
+        function Printable_table() {
             document.getElementById("table_holder").classList.toggle("table_holder_edit")
+            var ar = document.getElementsByClassName("table_holder_edit")
+            var obj = storage_save_forced()
+            if (ar.length > 0) {
+                gen_tbody_by_obj_editable(obj)
+                document.getElementById("Printable_tableBtn").innerHTML = "Printable"
+            } else {
+                gen_tbody_by_obj_printable(obj)
+                document.getElementById("Printable_tableBtn").innerHTML = "Editable"
+            }
+        }
+        function gen_tbody_by_obj_editable(obj) {
+            var trs = "", idx = 0
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                var dlev = lev.length === 0 ? -101 : lev
+                var slev = lev.length === 0 ? "" : parseFloat(lev).toFixed(1)
+
+                trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td><input oninput="on_level_input(this);" onchange="on_level_Change(this);" class="level" style="visibility:visible;" type="range" min="-101" max="100" value="${dlev}"></input></td><td>${slev}</td><td onkeyup='on_edit_change()' contenteditable='true'>${des}</td></tr>`
+            })
+            var tab = `<table border='1' id="tbid"><thead><tr><th>Age</th><th>Year</th><th colspan='2'>Level</th><th>desc</th></tr></thead><tbody>${trs}</tbody></table>`
+            document.getElementById('table_holder').innerHTML = tab;
+        }
+        function gen_tbody_by_obj_printable(obj) {
+            var trs = "", idx = 0
+            Object.keys(obj).forEach(function (yr, i) {
+                var lev = obj[yr][0], des = obj[yr][1]
+                var dlev = lev.length === 0 ? -101 : lev
+                var slev = lev.length === 0 ? "" : parseFloat(lev).toFixed(1)
+
+                if (lev.length > 0) {
+                    trs += `<tr><td>${i++}</td><td onclick="toggleNextVisibility(this);">${yr}</td><td>${slev}</td><td>${des}</td></tr>`
+                }
+            })
+            var tab = `<table border='1' class='printable'><thead><tr><th>Age</th><th>Year</th><th>Level</th><th>desc</th></tr></thead><tbody>${trs}</tbody></table>`
+            document.getElementById('table_holder').innerHTML = tab;
+            //document.getElementById('table_holder').classList.toggle("table_holder_edit")
         }
         function on_GenerateData() {
             var obj = get_data_fr_table()
@@ -204,6 +245,14 @@
         function storage_save_forced() {
             var str = document.getElementById("tout").value.toString().trim()
             localStorage.setItem("tbid", str)
+            if (str.length <= 2) return null
+            var obj = null;
+            try {
+                obj = JSON.parse(str)
+            } catch {
+                alert("error in textarea")
+            }
+            return obj
         }
         function storage_load() {
             var str = localStorage.getItem("tbid")
@@ -213,6 +262,7 @@
             //gen_tbody_by_obj(obj)
             //var dat = obj_to_chart_data(obj)
             //update_graph(obj)
+            return obj
         }
         function on_load_file() {
             document.getElementById("tout").value = JSON.stringify(journey_data, null, 4)
@@ -327,10 +377,12 @@
 
 
 <body>
-    <center><h3>My Spiritual Journey So far</h3></center>
+    <center>
+        <strong onclick="Printable_table()">My Spiritual Journey So far</strong>
+    </center>
     <div>
-        
-        <svg width="1000" height="350"></svg>
+
+        <svg width="1000" height="450"></svg>
     </div>
 
     <div id="table_holder" class="table_holder_edit">
@@ -349,11 +401,13 @@
         </table>
     </div>
 
+    <footer></footer>
+
     <hr>
     <a>Year Start:</a> <input id="StartYear" value=""></input><button
         onclick="gen_table_new();">CreateNewTableEditable</button></button>
     <button class="mystoragex" onclick="on_GenerateData();">GenerateDataFrTable</button>
-    <button class="mystorage" onclick="on_FullTableView();">FullTableView</button>
+    <button class="mystorage" id="Printable_tableBtn" onclick="Printable_table();">Printable</button>
     <hr>
 
     <button class="mystoragex" onclick="on_view_data();">DrawData</button>
@@ -397,7 +451,7 @@
 
         //var svg = d3.select("svg");
         var svg = d3.select("svg"),
-            margin = { top: 30, right: 50, bottom: 30, left: 50 },
+            margin = { top: 30, right: 50, bottom: 30, left: 30 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -485,7 +539,7 @@
             .text(function (d) { return d[0] }) //text year.
             .attr("dx", 1) //x offset of point
             .attr("dy", -10) //y offset of point
-            .attr("transform", function(d){return `translate(${x(d[0])},${y(d[1])})`}) //position text
+            .attr("transform", function (d) { return `translate(${x(d[0])},${y(d[1])})` }) //position text
         ////////////////////////////////////////////////////////////////////////////////
 
         focus.append('g')
