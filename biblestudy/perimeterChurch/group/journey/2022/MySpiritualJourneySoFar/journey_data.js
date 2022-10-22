@@ -1,12 +1,13 @@
 
 
-var journey_data ={
+var journey_data =
+{
     "1964": [
-        "0",
-        "born in Beijing"
+        "0.0",
+        "According to my mother's account, I was born in Beijing Xuanwu Hospital in 1964. The hospital is close to The Xuanwu Gate Catholic Church that was built by Matteo Ricci in 1605. (http://oa.upm.es/33835/1/SHAN_HUANG.pdf).  I visited both sites in Dec 2019."
     ],
     "1965": [
-        "-36",
+        "",
         "sent to old town."
     ],
     "1966": [
@@ -14,8 +15,8 @@ var journey_data ={
         ""
     ],
     "1967": [
-        "",
-        ""
+        "-29",
+        "At the age of three, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
     ],
     "1968": [
         "",
@@ -34,8 +35,8 @@ var journey_data ={
         ""
     ],
     "1972": [
-        "-51",
-        "back to Beijing w/ parents"
+        "-35.4",
+        "back to Beijing to live w/ parents"
     ],
     "1973": [
         "",
@@ -74,8 +75,8 @@ var journey_data ={
         ""
     ],
     "1982": [
-        "-39",
-        "College life. during the period, influenced byÂ Chinese Daoism(Laozi/Zhuangzi).Â (2) in 1986, I continued to pursue the master's degree major in vibration control."
+        "-38.4",
+        "College life. during the period, influenced by Chinese Daoism(Laozi/Zhuangzi).(2) in 1986, I continued to pursue the master's degree major in vibration control."
     ],
     "1983": [
         "",
@@ -102,19 +103,19 @@ var journey_data ={
         ""
     ],
     "1989": [
-        "-93",
-        "Tiananmen massacre. a tough decision to make between the master's degree diploma and theÂ freedom, justice orÂ truth, between the survivingÂ and death.Â (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatredÂ in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
+        "-93.0",
+        "Tiananmen massacre. a tough decision to make between the master's degree diploma and the freedom, justice or truth, between the surviving and death. (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatred in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
     ],
     "1990": [
         "",
         ""
     ],
     "1991": [
-        "-30",
+        "-30.0",
         "UIC trainning in Binghamton NY."
     ],
     "1992": [
-        "-74",
+        "-74.0",
         "marriage. visited USA,"
     ],
     "1993": [
@@ -126,7 +127,7 @@ var journey_data ={
         ""
     ],
     "1995": [
-        "-11",
+        "-11.0",
         "USA dream."
     ],
     "1996": [
@@ -138,7 +139,7 @@ var journey_data ={
         ""
     ],
     "1998": [
-        "-24",
+        "-24.0",
         "First job"
     ],
     "1999": [
@@ -150,27 +151,27 @@ var journey_data ={
         ""
     ],
     "2001": [
-        "-37",
-        "(1)Â got citizenship. (2)laid offÂ "
+        "-37.0",
+        "(1) got citizenship. (2)laid off"
     ],
     "2002": [
-        "-48",
+        "-48.0",
         "stayed at home"
     ],
     "2003": [
-        "-91",
-        "(1) family conflict. (2) found a job inÂ Ligos Software in SavannahÂ GA."
+        "-91.0",
+        "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
-        "50",
+        "50.0",
         "baptized at ACCC."
     ],
     "2005": [
-        "24",
+        "24.0",
         "(1) family burged. (2) children game"
     ],
     "2006": [
-        "64",
+        "64.0",
         "Shacco-Spring Retreat"
     ],
     "2007": [
@@ -190,7 +191,7 @@ var journey_data ={
         ""
     ],
     "2011": [
-        "39.25333333333334",
+        "39.3",
         "Work alone at Huntsville. join CCCM"
     ],
     "2012": [
@@ -210,8 +211,8 @@ var journey_data ={
         ""
     ],
     "2016": [
-        "89",
-        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3)Â on the crossroad inÂ the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'Â (Gen12:1 NIV)Â Â "
+        "89.0",
+        "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.' (Gen12:1 NIV)"
     ],
     "2017": [
         "",
@@ -222,7 +223,7 @@ var journey_data ={
         ""
     ],
     "2019": [
-        "71",
+        "71.0",
         "graduated fr CIU."
     ],
     "2020": [
@@ -230,15 +231,15 @@ var journey_data ={
         ""
     ],
     "2021": [
-        "36",
+        "36.0",
         "pandemic serve in school,"
     ],
     "2022": [
-        "62.91333333333333",
+        "62.9",
         "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
-        "30",
+        "30.0",
         "doomsday future"
     ],
     "2024": [
