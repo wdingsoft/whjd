@@ -327,7 +327,7 @@
 
 
 <body>
-    <center><h3>Spiritual Journey Sofar</h3></center>
+    <center><h3>My Spiritual Journey So far</h3></center>
     <div>
         
         <svg width="1000" height="350"></svg>
@@ -397,7 +397,7 @@
 
         //var svg = d3.select("svg");
         var svg = d3.select("svg"),
-            margin = { top: 30, right: 30, bottom: 30, left: 50 },
+            margin = { top: 30, right: 50, bottom: 30, left: 50 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -483,8 +483,8 @@
             .enter()
             .append('text')
             .text(function (d) { return d[0] }) //text year.
-            .attr("dx", -10) //offset of point
-            .attr("dy", -10)
+            .attr("dx", 1) //x offset of point
+            .attr("dy", -10) //y offset of point
             .attr("transform", function(d){return `translate(${x(d[0])},${y(d[1])})`}) //position text
         ////////////////////////////////////////////////////////////////////////////////
 
