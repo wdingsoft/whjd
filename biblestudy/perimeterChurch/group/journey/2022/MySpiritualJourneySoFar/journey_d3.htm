@@ -25,6 +25,10 @@
         .mystorage {
             float: right;
         }
+        h3{
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
     <style>
@@ -48,7 +52,7 @@
 
         .axis {
             stroke: black;
-            stroke-opacity: 1.0;
+            stroke-opacity: 0.5;
             stroke-width: 1px;
             /**-weid-**/
         }
@@ -169,7 +173,7 @@
             };
             evt.classList.add("Hili");
         }
-        function on_FullTableView(){
+        function on_FullTableView() {
             document.getElementById("table_holder").classList.toggle("table_holder_edit")
         }
         function on_GenerateData() {
@@ -323,8 +327,9 @@
 
 
 <body>
+    <center><h3>Spiritual Journey Sofar</h3></center>
     <div>
-        <canvas id="myChart"></canvas>
+        
         <svg width="1000" height="350"></svg>
     </div>
 
@@ -392,7 +397,7 @@
 
         //var svg = d3.select("svg");
         var svg = d3.select("svg"),
-            margin = { top: 20, right: 20, bottom: 30, left: 50 },
+            margin = { top: 30, right: 30, bottom: 30, left: 50 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -472,6 +477,17 @@
         focus.selectAll('circle')
             .call(drag);
 
+        /////// weid: add text on circle /////////////////////
+        focus.selectAll("text")
+            .data(points)
+            .enter()
+            .append('text')
+            .text(function (d) { return d[0] }) //text year.
+            .attr("dx", -10) //offset of point
+            .attr("dy", -10)
+            .attr("transform", function(d){return `translate(${x(d[0])},${y(d[1])})`}) //position text
+        ////////////////////////////////////////////////////////////////////////////////
+
         focus.append('g')
             .attr('class', 'axis axis--x')
             .attr('transform', 'translate(0,' + height + ')')
@@ -505,5 +521,7 @@
         console.log(JSON.stringify(points, null, 4))
 
         //svg.remove()
+
+
     }
 </script>
