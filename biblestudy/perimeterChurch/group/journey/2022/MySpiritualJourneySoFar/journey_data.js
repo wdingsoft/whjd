@@ -1,10 +1,9 @@
 
 
 var journey_data =
-
 {
     "1964": [
-        "0.0",
+        "0",
         "According to my mother's account, I was born in Beijing Xuanwu Hospital in 1964. The hospital is close to The Xuanwu Gate Catholic Church that was built by Matteo Ricci in 1605. (http://oa.upm.es/33835/1/SHAN_HUANG.pdf).  I visited both sites in Dec 2019."
     ],
     "1965": [
@@ -16,7 +15,7 @@ var journey_data =
         ""
     ],
     "1967": [
-        "-29.0",
+        "-29",
         "At the age of three, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
     ],
     "1968": [
@@ -36,7 +35,7 @@ var journey_data =
         ""
     ],
     "1972": [
-        "-35.4",
+        "-48.205128205128204",
         "back to Beijing to live w/ parents"
     ],
     "1973": [
@@ -104,7 +103,7 @@ var journey_data =
         ""
     ],
     "1989": [
-        "-93.0",
+        "-93",
         "Tiananmen massacre. a tough decision to make between the master's degree diploma and the freedom, justice or truth, between the surviving and death. (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatred in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
     ],
     "1990": [
@@ -112,11 +111,11 @@ var journey_data =
         ""
     ],
     "1991": [
-        "-30.0",
+        "-30",
         "UIC trainning in Binghamton NY."
     ],
     "1992": [
-        "-74.0",
+        "-74",
         "marriage. visited USA,"
     ],
     "1993": [
@@ -128,7 +127,7 @@ var journey_data =
         ""
     ],
     "1995": [
-        "-16.0",
+        "-16",
         "USA dream."
     ],
     "1996": [
@@ -140,7 +139,7 @@ var journey_data =
         ""
     ],
     "1998": [
-        "-24.0",
+        "-24",
         "First job"
     ],
     "1999": [
@@ -152,27 +151,27 @@ var journey_data =
         ""
     ],
     "2001": [
-        "-37.0",
+        "-37",
         "(1) got citizenship. (2)laid off"
     ],
     "2002": [
-        "-48.0",
+        "-48",
         "stayed at home"
     ],
     "2003": [
-        "-100.0",
+        "-100",
         "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
-        "50.0",
+        "50",
         "baptized at ACCC."
     ],
     "2005": [
-        "24.0",
+        "24",
         "(1) family burged. (2) children game"
     ],
     "2006": [
-        "64.0",
+        "64",
         "Shacco-Spring Retreat"
     ],
     "2007": [
@@ -212,7 +211,7 @@ var journey_data =
         ""
     ],
     "2016": [
-        "100.0",
+        "100",
         "(1) quitted Emerson in Huntsville to go to CIU. (2) visited Beijing in Dec 2019.(3) on the crossroad in the missionary: My vision: 'Leave your country, your people and your father's household and go to the land I will show you.'Ã‚Â (Gen12:1 NIV)"
     ],
     "2017": [
@@ -224,7 +223,7 @@ var journey_data =
         ""
     ],
     "2019": [
-        "71.0",
+        "71",
         "graduated fr CIU."
     ],
     "2020": [
@@ -232,7 +231,7 @@ var journey_data =
         ""
     ],
     "2021": [
-        "36.0",
+        "36",
         "pandemic serve in school,"
     ],
     "2022": [
@@ -240,7 +239,7 @@ var journey_data =
         "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
-        "30.0",
+        "30",
         "doomsday future"
     ],
     "2024": [
