@@ -47,8 +47,8 @@
         }
 
         .axis {
-            stroke: red;
-            stroke-opacity: 0.1;
+            stroke: black;
+            stroke-opacity: 1.0;
             stroke-width: 1px;
             /**-weid-**/
         }
@@ -325,7 +325,7 @@
 <body>
     <div>
         <canvas id="myChart"></canvas>
-        <svg width="800" height="350"></svg>
+        <svg width="1000" height="350"></svg>
     </div>
 
     <div id="table_holder" class="table_holder_edit">
@@ -456,7 +456,7 @@
             .attr("stroke", "steelblue")
             .attr("stroke-linejoin", "round")
             .attr("stroke-linecap", "round")
-            .attr("stroke-width", 1.5)
+            .attr("stroke-width", 1.5) //
             .attr("d", line);
 
         focus.selectAll('circle')
