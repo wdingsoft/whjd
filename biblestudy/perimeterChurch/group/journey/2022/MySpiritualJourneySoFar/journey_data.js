@@ -1,22 +1,24 @@
 
 
 var journey_data =
+
+
 {
     "1964": [
         "0",
         "According to my mother's account, I was born in Beijing Xuanwu Hospital in 1964. The hospital is close to The Xuanwu Gate Catholic Church that was built by Matteo Ricci in 1605. (http://oa.upm.es/33835/1/SHAN_HUANG.pdf).  I visited both sites in Dec 2019."
     ],
     "1965": [
-        "",
-        ""
+        "-47",
+        "In Oct at age of one, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
     ],
     "1966": [
         "",
         ""
     ],
     "1967": [
-        "-29",
-        "At the age of three, due to the movement of the cultural revolution, I was sent to my grandmom's family in a small Buddha town at Yiwu of Zhejiang Province."
+        "",
+        ""
     ],
     "1968": [
         "",
@@ -35,7 +37,7 @@ var journey_data =
         ""
     ],
     "1972": [
-        "-48.2",
+        "-53.3",
         "back to Beijing to live w/ parents"
     ],
     "1973": [
@@ -75,7 +77,7 @@ var journey_data =
         ""
     ],
     "1982": [
-        "-38.4",
+        "-46.2",
         "College life. during the period, influenced by Chinese Daoism(Laozi/Zhuangzi).(2) in 1986, I continued to pursue the master's degree major in vibration control."
     ],
     "1983": [
@@ -103,16 +105,16 @@ var journey_data =
         ""
     ],
     "1989": [
-        "-93",
-        "Tiananmen massacre. a tough decision to make between the master's degree diploma and the freedom, justice or truth, between the surviving and death. (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatred in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma."
+        "-88.7",
+        "Tiananmen massacre. a tough decision to make between the master's degree diploma and the freedom, justice or truth, between the surviving and death. (2) It is a turning point of my original materialism, marxism and communism faith. The three love became three hatred in my life. My goal of life was to leave China forever. Trump is my reminder of such trauma. (3) Work in Capital Iron & Steel Coop (CISC). "
     ],
     "1990": [
         "",
         ""
     ],
     "1991": [
-        "-30",
-        "UIC trainning in Binghamton NY."
+        "-40",
+        "(1)Left CISC. (2) UIC trainning in Binghamton NY."
     ],
     "1992": [
         "-74",
@@ -127,7 +129,7 @@ var journey_data =
         ""
     ],
     "1995": [
-        "-22.051282051282058",
+        "-29.7",
         "USA dream."
     ],
     "1996": [
@@ -139,7 +141,7 @@ var journey_data =
         ""
     ],
     "1998": [
-        "-14.35897435897435",
+        "-25.1",
         "First job"
     ],
     "1999": [
@@ -151,11 +153,11 @@ var journey_data =
         ""
     ],
     "2001": [
-        "-37",
+        "-22.6",
         "(1) got citizenship. (2)laid off"
     ],
     "2002": [
-        "-76.41025641025641",
+        "-80",
         "stayed at home"
     ],
     "2003": [
@@ -163,15 +165,15 @@ var journey_data =
         "(1) family conflict. (2) found a job in Ligos Software in Savannah GA."
     ],
     "2004": [
-        "50",
+        "21.5",
         "baptized at ACCC."
     ],
     "2005": [
-        "24",
+        "9.7",
         "(1) family burged. (2) children game"
     ],
     "2006": [
-        "64",
+        "46.7",
         "Shacco-Spring Retreat"
     ],
     "2007": [
@@ -224,7 +226,7 @@ var journey_data =
     ],
     "2019": [
         "71",
-        "graduated fr CIU."
+        "graduated fr CIU. Visit BJ with mission. "
     ],
     "2020": [
         "",
@@ -235,7 +237,7 @@ var journey_data =
         "pandemic serve in school,"
     ],
     "2022": [
-        "62.9",
+        "69.74358974358975",
         "(1)Journey in Beijing (2)missionary calling."
     ],
     "2023": [
