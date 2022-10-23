@@ -472,7 +472,7 @@
 
         //var svg = d3.select("svg");
         var svg = d3.select("svg"),
-            margin = { top: 30, right: 50, bottom: 30, left: 30 },
+            margin = { top: 30, right: 50, bottom: 30, left: 35 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -561,6 +561,29 @@
             .attr("dx", 1) //x offset of point
             .attr("dy", -10) //y offset of point
             .attr("transform", function (d) { return `translate(${x(d[0])},${y(d[1])})` }) //position text
+        ////////////////////////////////////////////////////////////////////////////////
+        //  weid: add title on axis
+        focus.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - margin.left - 6)
+            .attr("x", 0 - (height / 5))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("Positive Spiritual Experiences");
+        focus.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - margin.left - 6)
+            .attr("x", 0 - (height*4/5))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("Negative Spiritual ");
+        focus.append("text")
+            .attr("transform", "")
+            .attr("y", height-10 )
+            .attr("x", width+20)
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("Years");
         ////////////////////////////////////////////////////////////////////////////////
 
         focus.append('g')

@@ -35,7 +35,7 @@ var journey_data =
         ""
     ],
     "1972": [
-        "-48.205128205128204",
+        "-48.2",
         "back to Beijing to live w/ parents"
     ],
     "1973": [
@@ -127,7 +127,7 @@ var journey_data =
         ""
     ],
     "1995": [
-        "-16",
+        "-22.051282051282058",
         "USA dream."
     ],
     "1996": [
@@ -139,7 +139,7 @@ var journey_data =
         ""
     ],
     "1998": [
-        "-24",
+        "-14.35897435897435",
         "First job"
     ],
     "1999": [
@@ -155,7 +155,7 @@ var journey_data =
         "(1) got citizenship. (2)laid off"
     ],
     "2002": [
-        "-48",
+        "-76.41025641025641",
         "stayed at home"
     ],
     "2003": [
