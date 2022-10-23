@@ -2,7 +2,6 @@
 
 var journey_data =
 
-
 {
     "1964": [
         "0",
@@ -37,7 +36,7 @@ var journey_data =
         ""
     ],
     "1972": [
-        "-53.3",
+        "-70.76923076923077",
         "back to Beijing to live w/ parents"
     ],
     "1973": [
