@@ -75,8 +75,23 @@
             /**-weid-**/
         }
 
+        .axis line {
+            stroke: grey !important;
+            opacity: 0.5;
+        }
+
         .axis--x {
             stroke: black;
+        }
+
+        .axis--y {
+            stroke: black;
+            /**-weid: scale numbers-**/
+        }
+        .axis_bar_middle_horz {
+            stroke-width: 2px;
+            stroke-opacity: 1;
+            /**-weid: middle dark line-**/
         }
     </style>
     <script src="./js/chart.js" xxsrc="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -153,7 +168,6 @@
                     var pobj = { x: (yr), y: parseInt(lev) }
                     ary.push(pobj)
                 }
-
             })
             //data.datasets.data = ary
             return ary;
@@ -472,7 +486,7 @@
 
         //var svg = d3.select("svg");
         var svg = d3.select("svg"),
-            margin = { top: 30, right: 50, bottom: 30, left: 35 },
+            margin = { top: 30, right: 50, bottom: 30, left: 40 },
             width = +svg.attr("width") - margin.left - margin.right,
             height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -501,7 +515,8 @@
 
         var yAxis = d3.axisLeft(y) //=
             .tickSize(-width) //directiong
-            .tickPadding(width + 5 - width);//string location;
+            .tickPadding(width + 5 - width)//;//string location;
+
 
 
 
@@ -562,25 +577,26 @@
             .attr("dy", -10) //y offset of point
             .attr("transform", function (d) { return `translate(${x(d[0])},${y(d[1])})` }) //position text
         ////////////////////////////////////////////////////////////////////////////////
+      
         //  weid: add title on axis
         focus.append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 0 - margin.left - 6)
-            .attr("x", 0 - (height / 5))
+            .attr("y", 0 - margin.left - 3)
+            .attr("x", -10 - (height / 5))
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text("Positive Spiritual Experiences");
         focus.append("text")
             .attr("transform", "rotate(-90)")
-            .attr("y", 0 - margin.left - 6)
-            .attr("x", 0 - (height*4/5))
+            .attr("y", 0 - margin.left - 5)
+            .attr("x", 0 - (height * 4 / 5))
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text("Negative Spiritual ");
         focus.append("text")
             .attr("transform", "")
-            .attr("y", height-10 )
-            .attr("x", width+20)
+            .attr("y", height - 10)
+            .attr("x", width + 20)
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text("Years");
@@ -590,10 +606,15 @@
             .attr('class', 'axis axis--x')
             .attr('transform', 'translate(0,' + height + ')')
             .call(xAxis);
+            
 
         focus.append('g')
-            .attr('class', 'axis axis--y')
-            .call(yAxis);
+            .attr('class', 'axis axis--y') //y-axis scale numbers.
+            .call(yAxis)
+            .call(g => g.selectAll(".tick:nth-last-of-type(6) line")
+                .attr("class", " axis_bar_middle_horz") //weid added.
+                );
+
 
         function dragstarted(d) {
             d3.select(this).raise().classed('active', true);
