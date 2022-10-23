@@ -1,10 +1,13 @@
 var idxobj = {
     "./": [
         {
-            "idxobj.json.js": 99649
+            "idxobj.json.js": 106675
         },
         {
             "idxor.html": 1455
+        },
+        {
+            "idxpublished.html": 2180
         }
     ],
     "biblestudy": [],
@@ -401,34 +404,215 @@ var idxobj = {
             "___maverick.editor.html": 17816
         }
     ],
-    "biblestudy/my_papers/bible": [
+    "biblestudy/my_papers/dhtm": [
         {
-            "fruits.htm": 29214
+            "10Cmd_order.htm": 2037
+        },
+        {
+            "Gal522_9fruits.htm": 18649
+        },
+        {
+            "Gal522_9fruits.js": 8148
         },
         {
             "parables.htm": 57249
         }
     ],
-    "biblestudy/my_papers/bible/js": [
+    "biblestudy/my_papers/dhtm/family_missionary": [
+        {
+            "adventureOfMissionary.htm": 781
+        },
+        {
+            "my_family_mission.htm": 6092
+        },
+        {
+            "my_family_tree.htm": 4726
+        },
+        {
+            "statements.htm": 31698
+        }
+    ],
+    "biblestudy/my_papers/dhtm/family_missionary/codebase": [
+        {
+            "diagram.css": 0
+        },
+        {
+            "diagram.js": 0
+        }
+    ],
+    "biblestudy/my_papers/dhtm/js": [
         {
             "jq.js": 89475
         },
         {
             "jq_tablesorter.js": 142134
+        },
+        {
+            "orgtree.js": 204655
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study": [
+        {
+            "editor.htm": 4705
+        },
+        {
+            "freq.htm": 3322
+        },
+        {
+            "index.htm": 10359
+        },
+        {
+            "prov15.htm": 107427
+        },
+        {
+            "topics.htm": 1677
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom": [
+        {
+            "freq.htm": 4315
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom/htm": [
+        {
+            "catholic_wisdom_pre.htm": 50852
+        },
+        {
+            "catholic_wisdom_simp.htm": 82741
+        },
+        {
+            "catholic_wisdom_trad.htm": 82611
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom/js": [],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom/js/dat": [
+        {
+            "wis_frq1.js": 29443
+        },
+        {
+            "wis_frq2.js": 158772
+        },
+        {
+            "wis_frq2_keyword.js": 978
+        },
+        {
+            "wis_frq3.js": 226124
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom/js/src": [
+        {
+            "wis_simp.js": 55187
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/catholic_wisdom/js/uti": [
+        {
+            "func.js": 496
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/js": [
+        {
+            "prov_uti.js": 47
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/js/dat": [
+        {
+            "prov_cat.js": 74899
+        },
+        {
+            "prov_exp.js": 74899
+        },
+        {
+            "prov_frq1.js": 29427
+        },
+        {
+            "prov_frq2.js": 171099
+        },
+        {
+            "prov_frq3.js": 233631
+        },
+        {
+            "prov_quo.js": 59418
+        }
+    ],
+    "biblestudy/my_papers/dhtm/proverb_study/js/eng": [
+        {
+            "CUVS_Pro.js": 72930
+        },
+        {
+            "KJV_Pro.js": 92029
+        },
+        {
+            "NIV_Pro.js": 88790
+        }
+    ],
+    "biblestudy/my_papers/dhtm/wangyongbin": [
+        {
+            "wyb_00.htm": 3744
+        },
+        {
+            "wyb_01.htm": 67501
+        },
+        {
+            "wyb_02.htm": 88606
         }
     ],
     "biblestudy/my_papers/docs": [
         {
-            "Spirit_Soul.docx": 33218
+            "Hope_Faith.docx": 25503
         },
         {
-            "Spirit_Soul.pdf": 145057
+            "Law_Proverb.docx": 18360
         },
         {
-            "aboutCUV-englishnames_version.docx": 21094
+            "Spirit_Soul.docx": 53378
+        },
+        {
+            "Spirit_Soul.pdf": 270199
+        },
+        {
+            "aboutCUV-englishnames_version.docx": 21137
         },
         {
             "aboutCUV-englishnames_version.pdf": 52986
+        },
+        {
+            "valuable_heritage.docx": 16530
+        }
+    ],
+    "biblestudy/my_papers/docs/spirit_soul": [
+        {
+            "chart_sample.htm": 2405
+        },
+        {
+            "chart_sample2.htm": 1644
+        },
+        {
+            "chart_sample3.htm": 1797
+        },
+        {
+            "chart_sample4.htm": 1527
+        },
+        {
+            "main.htm": 9051
+        },
+        {
+            "spirit_soul_chart.htm": 1473
+        }
+    ],
+    "biblestudy/my_papers/docs/spirit_soul/charts": [
+        {
+            "loader.js": 67015
+        }
+    ],
+    "biblestudy/my_papers/docs/spirit_soul/js": [
+        {
+            "spirit_soul_data.js": 18210
+        },
+        {
+            "spirit_soul_fun_app.js": 8045
+        },
+        {
+            "spirit_soul_gchart.js": 8078
         }
     ],
     "biblestudy/my_papers/fg-east2": [
@@ -581,6 +765,9 @@ var idxobj = {
         },
         {
             "spiritual_journey.htm___wordfreq.json": 3513
+        },
+        {
+            "spiritual_journey_2022-10.htm": 3839
         }
     ],
     "biblestudy/perimeterChurch/group/journey/2020": [
@@ -615,6 +802,77 @@ var idxobj = {
         },
         {
             "note.htm___wordfreq.json": 274
+        }
+    ],
+    "biblestudy/perimeterChurch/group/journey/2022": [],
+    "biblestudy/perimeterChurch/group/journey/2022/MySpiritualJourneySoFar": [
+        {
+            "index.htm": 409
+        },
+        {
+            "index.js": 3980
+        },
+        {
+            "journey_chart.htm": 7811
+        },
+        {
+            "journey_d3.htm": 21639
+        },
+        {
+            "journey_data.js": 4549
+        }
+    ],
+    "biblestudy/perimeterChurch/group/journey/2022/MySpiritualJourneySoFar/js": [
+        {
+            "chart.js": 199559
+        },
+        {
+            "d3.v4.min.js": 221957
+        }
+    ],
+    "biblestudy/perimeterChurch/group/journey/chart": [
+        {
+            "sample.htm": 803
+        },
+        {
+            "sample_2.htm": 1137
+        },
+        {
+            "sample_3.htm": 1163
+        }
+    ],
+    "biblestudy/perimeterChurch/group/journey/chart/d3v4": [
+        {
+            "d3_grid_sam01.htm": 1399
+        },
+        {
+            "d3_grid_sam02.htm": 2076
+        },
+        {
+            "d3_grid_sam02_x.htm": 2201
+        },
+        {
+            "d3_grids.htm": 4423
+        },
+        {
+            "data.cvs": 441
+        },
+        {
+            "journey.htm": 2926
+        },
+        {
+            "journey_data.js": 4340
+        },
+        {
+            "journey_grid.htm": 3994
+        },
+        {
+            "sample.htm": 3321
+        }
+    ],
+    "biblestudy/perimeterChurch/group/journey/chart/d3v4/js": [
+        {
+            "d3.v4.min.js": 221957
         }
     ],
     "cf": [],
@@ -668,7 +926,7 @@ var idxobj = {
             "github_home.htm": 867
         },
         {
-            "index.htm": 6666
+            "index.htm": 7016
         },
         {
             "index.html": 8451
@@ -681,6 +939,12 @@ var idxobj = {
         },
         {
             "index_watch.nod.js": 11031
+        },
+        {
+            "indobj.json.js": 511
+        },
+        {
+            "indusr.js": 24
         },
         {
             "~make_htm.nd.js": 1587
@@ -696,6 +960,9 @@ var idxobj = {
         },
         {
             "sample_chart_curves.htm": 2244
+        },
+        {
+            "sample_chart_curves2.htm": 2453
         },
         {
             "test.htm": 1021
@@ -717,7 +984,7 @@ var idxobj = {
             "--.docx": 2780965
         },
         {
-            "HandbookofOBI_ShamanicCodeOfGospel.docx": 3313292
+            "HandbookofOBI_ShamanicCodeOfGospel.docx": 3315297
         },
         {
             "HandbookofOBI_ShamanicCodeOfGospel.htm": 3
@@ -726,7 +993,10 @@ var idxobj = {
             "HowToDecipherOBI.docx": 2795133
         },
         {
-            "Plan.docx": 18866
+            "Plan.docx": 552438
+        },
+        {
+            "Plan.html": 72870
         },
         {
             "PurposeOfOBI.docx": 22450
@@ -735,10 +1005,68 @@ var idxobj = {
             "references.htm": 3
         },
         {
-            "~$ndbookofOBI_ShamanicCodeOfGospel.docx": 162
+            "~$wToDecipherOBI.docx": 162
+        }
+    ],
+    "thesis/weid/docs/How2Decipher/Plan.fld": [
+        {
+            "colorschememapping.xml": 314
         },
         {
-            "~$wToDecipherOBI.docx": 162
+            "filelist.xml": 622
+        },
+        {
+            "header.html": 1552
+        },
+        {
+            "image001.jpg": 44663
+        },
+        {
+            "image002.jpg": 35492
+        },
+        {
+            "image003.jpg": 43977
+        },
+        {
+            "image004.jpg": 45324
+        },
+        {
+            "image005.jpg": 49786
+        },
+        {
+            "image006.jpg": 49749
+        },
+        {
+            "image007.jpg": 40165
+        },
+        {
+            "image008.jpg": 56272
+        },
+        {
+            "image009.jpg": 79763
+        },
+        {
+            "image010.jpg": 79763
+        },
+        {
+            "item0017.xml": 289
+        },
+        {
+            "props018.xml": 341
+        },
+        {
+            "themedata.thmx": 3339
+        }
+    ],
+    "thesis/weid/docs/How2Decipher/pic": [
+        {
+            "OpticalIllusionSpotBullsMastersFace.jpeg": 68896
+        },
+        {
+            "SpotGirlFaceinRoseOpticalIllusion.jpg": 64792
+        },
+        {
+            "SpotmancatchingFishOpticalIllusion.jpeg": 73509
         }
     ],
     "thesis/weid/docs/How2Decipher/ref": [
