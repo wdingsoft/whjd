@@ -98,18 +98,19 @@ var yt_data_English_5perday = {
     "":
         ["", { start: "0:00" },],
 
-    "":
-        ["", { start: "0:00" },],
-    "":
-        ["", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=ZKUydDR4NGU&ab_channel=English%E7%9F%AD%E8%A6%96%E9%A0%BB%E8%8B%B1%E8%AA%9E":
+        ["每天學几句】零基础学英语｜日常生活口语｜初级入门｜每天进步一点点", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=sABvHJWUuM8&ab_channel=%E5%A4%A7%E5%A5%8E%E6%81%A9%E8%8B%B1%E8%AF%AD-Quin%26Education":
+        [" 学英语：每天五句话（第一集）大奎恩英文", { start: "0:00" },],
 
     "":
         ["", { start: "0:00" },],
-    "":
-        ["", { start: "0:00" },],
 
-    "":
-        ["", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=tsxx9Q6W0wk&ab_channel=%E7%9F%A5%E5%BF%83%E8%8B%B1%E6%96%87":
+        ["把英文讲得像母语者一样自然：模仿老外平常说话的句子结构，英语句型25个", { start: "0:00" },],
+
+    "https://www.youtube.com/watch?v=1usCP_lD3Wk&ab_channel=SeaLightEnglish%E6%B5%B7%E4%B9%8B%E5%85%89%E8%8B%B1%E8%AF%AD":
+        ["让你受用一生的45个高频万能英语句型 | 轻轻松松从Broken English到畅所欲言 | 英语听力口语必备<br>Who is, ", { start: "04:00" },],
     "":
         ["", { start: "0:00" },],
 
