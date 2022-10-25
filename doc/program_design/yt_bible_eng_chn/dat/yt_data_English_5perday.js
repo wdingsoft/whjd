@@ -93,7 +93,7 @@ var yt_data_English_5perday = {
         ["", { start: "0:00" },],
 
     "https://www.youtube.com/watch?v=MrfMvCxhwlk&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8":
-        ["=1800 english", { "2210251254"}],
+        ["=1800 english", { start: "0"}],
 
     "":
         ["", { start: "0:00" },],
