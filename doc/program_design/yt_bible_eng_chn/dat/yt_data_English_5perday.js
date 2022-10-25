@@ -91,6 +91,10 @@ var yt_data_English_5perday = {
 
     "":
         ["", { start: "0:00" },],
+
+    "https://www.youtube.com/watch?v=P5dd9EkE1_I&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8": [2,
+        "=1800 english", "2210251254"],
+
     "":
         ["", { start: "0:00" },],
 
