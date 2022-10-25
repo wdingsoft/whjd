@@ -25,8 +25,8 @@ var yt_data_English_5perday = {
 
     "https://www.youtube.com/watch?v=XhGT6mvxAyk&list=PL827lgFexiNlS1MvKUfRaCIfgYqlGn746&index=4&ab_channel=%E6%9F%98%E5%88%A9%E8%8B%B1%E8%AF%AD%F0%9D%90%99%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1":
         ["Forget it. Good luck. I decline. I promise. Of course.", { start: "0:00" },],
-   
-        
+
+
 
     "https://www.youtube.com/watch?v=ViNK_BEsYAk&list=PL827lgFexiNlS1MvKUfRaCIfgYqlGn746&index=6&ab_channel=%E6%9F%98%E5%88%A9%E8%8B%B1%E8%AF%AD%F0%9D%90%99%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1":
         ["What's up?. Be careful. Bottoms up. DOn't move. Guest what?", { start: "0:00" },],
@@ -92,8 +92,8 @@ var yt_data_English_5perday = {
     "":
         ["", { start: "0:00" },],
 
-    "https://www.youtube.com/watch?v=MrfMvCxhwlk&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8": 
-    [ "=1800 english", {"2210251254"}],
+    "https://www.youtube.com/watch?v=MrfMvCxhwlk&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8":
+        ["=1800 english", { "2210251254"}],
 
     "":
         ["", { start: "0:00" },],
@@ -111,16 +111,17 @@ var yt_data_English_5perday = {
 
     "https://www.youtube.com/watch?v=1usCP_lD3Wk&ab_channel=SeaLightEnglish%E6%B5%B7%E4%B9%8B%E5%85%89%E8%8B%B1%E8%AF%AD":
         ["让你受用一生的45个高频万能英语句型 | 轻轻松松从Broken English到畅所欲言 | 英语听力口语必备<br>Who is, ", { start: "04:00" },],
-    "":
-        ["", { start: "0:00" },],
 
-    "":
-        ["", { start: "0:00" },],
-    "":
-        ["", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=VJsLKaPxMTs&ab_channel=Kendra%27sLanguageSchool":
+        ["高效練耳朵英語聽力（中高級篇・帶中文音頻）－ 提高您的英語聽力技能", { start: "0:00" },],
 
-    "":
-        ["", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=lDwbTo0jSg4&ab_channel=Kendra%27sLanguageSchool":
+        ["從早到晚沉浸式英語聽力練習 — 15小時耐久訓練", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=jTMatEZVEEU&t=196s&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["從早聽到晚！一輩子夠用的英語口語大全2700句（時長10小時）", { start: "0:00" },],
+
+    "https://www.youtube.com/watch?v=XrMMvSOIRDk&t=303s&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["大量反復式超高效英語跟读訓練500句 (帶中文翻譯，英語讀三遍）", { start: "0:00" },],
     "":
         ["", { start: "0:00" },],
 
@@ -318,9 +319,150 @@ var yt_data_English_5perday = {
         ["和老外交流最常用的1000句口语】学完这1000句，口语流利赛老外！【第一集", { start: "0:00" }],
 
 
+    "":
+        ["", { start: "04:00" },],
 
+    "":
+        ["", { start: "04:00" }],
 
+    "":
+        ["", { start: "04:00" },],
 
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "https://www.youtube.com/watch?v=S0ivXRQweqg&ab_channel=STEnglish":
+        ["坚持这样练习英语听力3个月，你也能听懂90%", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
+
+    "":
+        ["", { start: "04:00" }],
+
+    "":
+        ["", { start: "04:00" },],
 
 
 
