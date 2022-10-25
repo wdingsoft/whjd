@@ -60,10 +60,12 @@
 
 
             $(".Jclunarbirthday").on("click", function () {
-                $(this).text("0721")
+                var str = prompt("JcLunarBirthMonthDayEncoded(4b):")
+                $(this).text(Coding_A(str, "DECODEA"))
             })
             $(".familast3").on("click", function () {
-                $(this).text("cwj")
+                var str = prompt("childadma(3b):")
+                $(this).text(str)
                 $(this).removeClass("familast3")
             })
             $(".williamsname").on("click", function () {
@@ -260,7 +262,7 @@
                 :<a class="williamsname">w***ng</a>
             </li>
             <li>
-                :<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>
+                :<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">JclunarbirthdayMMDD</a>
             </li>
             <li>
                 <a href="https://client.schwab.com/">.</a>
@@ -276,7 +278,7 @@
                 :<a class="williamsname">w***ng</a>
             </li>
             <li>
-                :<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">Jclunarbirthday</a>@
+                :<a>HHP</a><a class="familast3">Family3</a><a class="Jclunarbirthday">JclunarbirthdayMMDD</a>@
             </li>
             <li>
 
