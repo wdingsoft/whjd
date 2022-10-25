@@ -92,8 +92,8 @@ var yt_data_English_5perday = {
     "":
         ["", { start: "0:00" },],
 
-    "https://www.youtube.com/watch?v=P5dd9EkE1_I&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8": [2,
-        "=1800 english", "2210251254"],
+    "https://www.youtube.com/watch?v=MrfMvCxhwlk&ab_channel=%E8%80%81%E5%8F%8B%E8%A8%98%E8%8C%B6%E9%A4%A8": 
+    [ "=1800 english", {"2210251254"}],
 
     "":
         ["", { start: "0:00" },],
@@ -293,23 +293,22 @@ var yt_data_English_5perday = {
     "":
         ["", { start: "04:00" }],
 
-    "":
-        ["", { start: "04:00" },],
+    "https://www.youtube.com/watch?v=gujSdtvH-eU&ab_channel=%E7%9F%A5%E5%BF%83%E8%8B%B1%E6%96%87":
+        ["想说又不会说的生活英语口语200句 表达能力上升一个层次", { start: "04:00" },],
 
-    "":
-        ["", { start: "04:00" }],
+    "https://www.youtube.com/watch?v=5VxLIgjW_5M&t=160s&ab_channel=%E5%AE%89%E7%94%9F%E8%8B%B1%E8%AA%9E":
+        ["初學者一定要會的英語 50 句, 半小時循環不停學英文", { start: "00:00" }],
 
-    "":
-        ["", { start: "04:00" },],
+    "https://www.youtube.com/watch?v=AsW8MeMIeKw&t=227s&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["睡前英語泛聽 — 英語實用表達350句（時長1個小時）", { start: "00:00" },],
 
-    "":
-        ["", { start: "04:00" }],
+    "https://www.youtube.com/watch?v=C69gAEwjFuA&t=16s&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["邊睡泛聽！生活英語口語200句", { start: "00:00" }],
 
-    "":
-        ["", { start: "04:00" },],
+    "https://www.youtube.com/watch?v=jTMatEZVEEU&t=144s&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["從早聽到晚！一輩子夠用的英語口語大全2700句（時長10小時）", { start: "00:00" },],
 
-    "https://www.youtube.com/watch?v=ZhfxSOaGxiU&list=PL827lgFexiNlS1MvKUfRaCIfgYqlGn746&ab_channel=%E6%9F%98%E5%88%A9%E8%8B%B1%E8%AF%AD%F0%9D%90%99%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1":
-        ["怎样学英语口语？【每天学5句】5 Sentences a Day", { start: "0:00" }],
+
 
     "https://www.youtube.com/watch?v=gXRBWED0P-E&ab_channel=%E6%9F%98%E5%88%A9%E8%8B%B1%E8%AF%AD%F0%9D%90%99%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1":
         ["零基础学英语一定要学的100个短小精悍的句子！句句都是精华！学完日常简单对话轻松应付！", { start: "0:00" },],
