@@ -319,8 +319,8 @@ var yt_data_English_5perday = {
         ["和老外交流最常用的1000句口语】学完这1000句，口语流利赛老外！【第一集", { start: "0:00" }],
 
 
-    "":
-        ["", { start: "04:00" },],
+    "https://www.youtube.com/watch?v=KjoBihzWqY8&ab_channel=LearnEnglishandmorewithMs.Tomato":
+        ["邊睡邊記！超有用英語口語500句", { start: "04:00" },],
 
     "":
         ["", { start: "04:00" }],

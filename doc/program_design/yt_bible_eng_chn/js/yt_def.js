@@ -32,7 +32,7 @@ function get_trs(yt_obj) {
         var start = ar[1].start;
 
         var startSeconds = get_sec(start)
-        str += `<tr><td>${idx++}</td><td><a href_vid='${ur}' startSeconds='${startSeconds}'>${ar[0]} (${start})</a></td></tr>`
+        str += `<tr><td>${idx++}</td><td><a href_vid='${ur}' startSeconds='${startSeconds}' idx='${idx}'>${ar[0]} (${start})</a></td></tr>`
 
     }
     return str;
@@ -54,6 +54,9 @@ function bind_yt_player() {
         $(".hili").removeClass("hili")
         $(this).addClass("hili hili_old")
 
+        var idx = $(this).attr("idx")
+        localStorage.setItem("idx", idx)
+
         var surl = $(this).attr("href_vid")
         const urlParams = new URL(surl);
         var vid = urlParams.searchParams.get("v")
@@ -65,4 +68,9 @@ function bind_yt_player() {
 
         $("iframe").attr("src", url)
     })
+
+    var idx = localStorage.getItem("idx")
+    if (idx) {
+        $(`a[idx='${idx}'`).addClass("hili")[0].scrollIntoView(true)
+    }
 }
