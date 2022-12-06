@@ -122,8 +122,8 @@ var yt_data_English_5perday = {
 
     "https://www.youtube.com/watch?v=XrMMvSOIRDk&t=303s&ab_channel=LearnEnglishandmorewithMs.Tomato":
         ["大量反復式超高效英語跟读訓練500句 (帶中文翻譯，英語讀三遍）", { start: "0:00" },],
-    "":
-        ["", { start: "0:00" },],
+    "https://www.youtube.com/watch?v=Ck9ObtnXH-8&ab_channel=APP%E8%8B%B1%E8%AF%ADEnglish":
+        ["【零基础学英语】一定要会的英语短句，日常英语短句65句，从最简单实用的句子开始学", { start: "0:00" },],
 
     "":
         ["", { start: "0:00" },],
