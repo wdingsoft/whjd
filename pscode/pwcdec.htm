@@ -116,7 +116,7 @@
         function gen_list() {
             var key = prompt("private key:")
             try {
-                var decdatstr = decodeURIComponent(escape(atob(encdatary.join(key))))
+                var decdatstr = decodeURIComponent(escape(atob(encdatary.reverse().join(key))))
                 var decdatObj = JSON.parse(decdatstr)
             } catch (err) {
                 console.error(err)
@@ -149,9 +149,9 @@
         ——————————
         0123456789
         ——————————
-        OATRFVXSENey
+        OATRFVXSEN
         ——————————
-        oatrfvxsen
+        oatrfvxsenIj
         ——————————
 
 
