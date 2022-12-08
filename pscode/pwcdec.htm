@@ -58,6 +58,7 @@
     <script>
         $(function () {
 
+            init()
             gen_list()
         })
         function init() {
@@ -102,54 +103,16 @@
                 $(`section.${txt}`).slideToggle()
 
             })
-        }
-        function Coding_A(codestr, cdtype) {
-            var DECODEA = {
-                o: 0, a: 1, t: 2, r: 3, f: 4, v: 5, x: 6, s: 7, e: 8, n: 9,
-                O: 0, A: 1, T: 2, R: 3, F: 4, V: 5, X: 6, S: 7, E: 8, N: 9,
-            }
-            var ENCODEA = {
-                0: "o", 1: "a", 2: "t", 3: "r", 4: "f", 5: "v", 6: "x", 7: "s", 8: "e", 9: "n",
-                //0: "O", 1: "A", 2: "T", 3: "R", 4: "F", 5: "V", 6: "X", 7: "S", 8: "E", 9: "N",
-            }
-            var MyCoding = {}
-            if (cdtype === "DECODEA" || cdtype === undefined) {
-                MyCoding = DECODEA
-            } else {
-                MyCoding = ENCODEA
-            }
-            var tx2 = ""
-            for (var i = 0; i < codestr.length; i++) {
-                tx2 += MyCoding[codestr[i]] === undefined ? codestr[i] : MyCoding[codestr[i]]
-            };
 
-            return tx2;
-        }
-
-        function fountmost2() {
-            const sbs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            const num = "0123456789"
-            var maxlen = -1
-            var stot = sbs + sbs.toLowerCase() + num
-            for (var i = 0; i < stot.length; i++) {
-                var cha = stot.charAt(i)
-                for (var j = 0; j < stot.length; j++) {
-                    var chb = stot.charAt(j)
-                    var searchstr = cha + chb
-                    var reg = new RegExp(searchstr, "g")
-                    var mat = encdatstr.match(reg)
-                    if (mat) {
-                        if (mat.length > maxlen) {
-                            maxlen = mat.length
-                            console.log(mat.length, searchstr)
-                        }
-                    }
+            $("#encdatstr").on("keypress", function (evt) {
+                console.log(evt)
+                if ($(this).val().trim() == "edit") {
+                    window.open("https://bsnp21.github.io/tools/", "_target")
                 }
-            }
-            var reg = new RegExp("1b", "g")
-            var mat = encdatstr.match(reg)
-            //console.log(mat)
+            })
         }
+
+
         function gen_list() {
             var key = prompt("private key:")
             try {
@@ -181,19 +144,19 @@
 </head>
 
 <body>
-    <pre>
+    <p>
 
-    ——————————
-    0123456789
-    ——————————
-    OATRFVXSENey
-    ——————————
-    oatrfvxsen
-    ——————————
-    
-    
-    
-</pre>
+        ——————————
+        0123456789
+        ——————————
+        OATRFVXSENey
+        ——————————
+        oatrfvxsen
+        ——————————
+
+
+
+    </p>
     <section class="Buffer">
 
     </section>
