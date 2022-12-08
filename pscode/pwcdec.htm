@@ -134,10 +134,6 @@
                 sli += "</section><hr/>"
             }
             $(".Buffer").html(sli)
-
-            var str = JSON.stringify(decdatObj, null, 4)
-            var arr = btoa(unescape(encodeURIComponent(str))).split("1")
-            //$("#encdatstr").val(JSON.stringify(arr, null, 4))
         }
 
     </script>
@@ -161,6 +157,7 @@
 
     </section>
 
+    Text Editor<br>
     <textarea id="encdatstr">
 
     </textarea>
