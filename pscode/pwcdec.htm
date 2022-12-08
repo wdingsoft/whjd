@@ -152,7 +152,7 @@
             //console.log(mat)
         }
         function gen_list() {
-            var key = prompt("private key:")
+            var key = prompt("private key:(li-ci-jing)")
             try{
             var decdatstr = decodeURIComponent(escape(atob(encdatary.join(key))))
             var decdatObj = JSON.parse(decdatstr)
@@ -175,7 +175,7 @@
 
             var str = JSON.stringify(decdatObj, null, 4)
             var arr = btoa(unescape(encodeURIComponent(str))).split("1")
-            $("#encdatstr").val(JSON.stringify(arr, null, 4))
+            //$("#encdatstr").val(JSON.stringify(arr, null, 4))
         }
 
     </script>
