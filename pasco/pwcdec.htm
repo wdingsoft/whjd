@@ -116,7 +116,7 @@
         function gen_list() {
             var key = prompt("private key:")
             try {
-                var decdatstr = $.decodeStraryByKey(encdatary, key);//decodeURIComponent(escape(atob(encdatary.reverse().filter(ar => { return ar.split("").reverse().join("") }).join(key))))
+                var decdatstr = decodeStraryByKey(encdatary, key);
                 var decdatObj = JSON.parse(decdatstr)
             } catch (err) {
                 console.error(err)
@@ -147,7 +147,7 @@
         ——————————
         OATRFVXSEN
         ——————————
-        oatrfvxsenI6I
+        oatrfvxsenIiI
         ——————————
 
 
