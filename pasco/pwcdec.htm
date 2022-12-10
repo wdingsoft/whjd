@@ -114,12 +114,7 @@
 
 
         function gen_list() {
-            var encdat = private_whjdat_json.whjdat
-            try {
-                encdatary = JSON.parse(encdat.slice(encdat.indexOf("[")))
-            } catch (err) {
-                return alert(err)
-            }
+            var encdatary = private_whjdat_json.whjdat
             var key = prompt("private key:")
             try {
                 var decdatstr = decodeStraryByKey(encdatary, key);
