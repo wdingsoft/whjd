@@ -322,11 +322,11 @@ var yt_data_English_5perday = {
     "https://www.youtube.com/watch?v=KjoBihzWqY8&ab_channel=LearnEnglishandmorewithMs.Tomato":
         ["邊睡邊記！超有用英語口語500句", { start: "04:00" },],
 
-    "":
-        ["", { start: "04:00" }],
+    "https://www.youtube.com/watch?v=HHLzbuWbUH8&ab_channel=%E5%AD%A6%E8%8B%B1%E8%AF%AD%E5%88%9D%E7%BA%A7%E9%A2%91%E9%81%93":
+        ["學英語425個一定要會的短句【初學者英語口語訓練】| 大合集", { start: "04:00" }],
 
-    "":
-        ["", { start: "04:00" },],
+    "https://www.youtube.com/watch?v=9WPGRukyx5w&ab_channel=%E6%9F%98%E5%88%A9%E8%8B%B1%E8%AF%AD%F0%9D%90%99%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%A0%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A1":
+        ["语言学家研究42万人后发现：每天学这个的人，90天学会90%的日常英语！#英语口语#柘利英语#2022", { start: "04:00" },],
 
     "":
         ["", { start: "04:00" }],
